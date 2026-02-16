@@ -87,6 +87,12 @@ export default function RootLayout({
         />
       </head>
       <body className={`${inter.variable} font-sans antialiased`}>
+        <script dangerouslySetInnerHTML={{ __html: `
+          // Check for reduced motion preference
+          if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+            document.documentElement.classList.add('reduce-motion');
+          }
+        `}} />
         <a href="#main-content" className="skip-nav">
           Skip to main content
         </a>

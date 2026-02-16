@@ -31,11 +31,17 @@ const visaItems = [
 const guideItems = [
   { title: "Cost of Living", href: "/cost-of-living", description: "Detailed breakdown of monthly expenses" },
   { title: "Neighborhoods", href: "/neighborhoods", description: "Best areas to live in Buenos Aires" },
+  { title: "Dining Guide", href: "/dining", description: "Michelin-starred restaurants and fine dining" },
   { title: "Healthcare", href: "/healthcare", description: "Insurance options and medical care" },
   { title: "Banking", href: "/banking", description: "Setting up accounts and transferring money" },
   { title: "Housing", href: "/housing", description: "Renting and buying property" },
+  { title: "Learning Spanish", href: "/guides/learning-spanish", description: "Language schools and tips for mastering Spanish" },
+  { title: "Getting Your DNI", href: "/guides/getting-dni", description: "Step-by-step guide to Argentine residency ID" },
+  { title: "Food & Dining", href: "/guides/food-dining", description: "Restaurants, cafes, and Argentine cuisine" },
+  { title: "Safety", href: "/guides/safety", description: "Staying safe and avoiding scams" },
+  { title: "Weather", href: "/guides/weather-climate", description: "Seasons and what to expect" },
+  { title: "Cultural Etiquette", href: "/guides/cultural-etiquette", description: "Customs, greetings, and social norms" },
   { title: "Why Argentina?", href: "/why-argentina", description: "Honest look at why Americans are considering leaving" },
-  { title: "Expat Stories", href: "/stories", description: "Real experiences from people who've made the move" },
 ];
 
 export function Navbar() {

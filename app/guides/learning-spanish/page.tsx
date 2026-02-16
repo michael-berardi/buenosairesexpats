@@ -3,6 +3,7 @@ import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
+import { DesktopOnly, MobileOnly } from "@/components/desktop-only";
 import { 
   Languages, 
   BookOpen, 
@@ -204,32 +205,55 @@ export default function LearningSpanishPage() {
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl font-bold mb-8 text-center">Top Language Schools in Buenos Aires</h2>
-            <Card>
-              <CardContent className="pt-6">
-                <div className="overflow-x-auto">
-                  <table className="w-full">
-                    <thead>
-                      <tr className="border-b">
-                        <th className="text-left py-3 px-2">School</th>
-                        <th className="text-left py-3 px-2">Location</th>
-                        <th className="text-left py-3 px-2">Cost (20hrs/week)</th>
-                        <th className="text-left py-3 px-2">Notes</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      {languageSchools.map((school) => (
-                        <tr key={school.name} className="border-b last:border-0">
-                          <td className="py-3 px-2 font-medium">{school.name}</td>
-                          <td className="py-3 px-2">{school.location}</td>
-                          <td className="py-3 px-2">{school.cost}</td>
-                          <td className="py-3 px-2 text-sm text-muted-foreground">{school.notes}</td>
+            
+            {/* Desktop Table */}
+            <DesktopOnly>
+              <Card>
+                <CardContent className="pt-6">
+                  <div className="overflow-x-auto">
+                    <table className="w-full">
+                      <thead>
+                        <tr className="border-b">
+                          <th className="text-left py-3 px-2">School</th>
+                          <th className="text-left py-3 px-2">Location</th>
+                          <th className="text-left py-3 px-2">Cost (20hrs/week)</th>
+                          <th className="text-left py-3 px-2">Notes</th>
                         </tr>
-                      ))}
-                    </tbody>
-                  </table>
-                </div>
-              </CardContent>
-            </Card>
+                      </thead>
+                      <tbody>
+                        {languageSchools.map((school) => (
+                          <tr key={school.name} className="border-b last:border-0">
+                            <td className="py-3 px-2 font-medium">{school.name}</td>
+                            <td className="py-3 px-2">{school.location}</td>
+                            <td className="py-3 px-2">{school.cost}</td>
+                            <td className="py-3 px-2 text-sm text-muted-foreground">{school.notes}</td>
+                          </tr>
+                        ))}
+                      </tbody>
+                    </table>
+                  </div>
+                </CardContent>
+              </Card>
+            </DesktopOnly>
+            
+            {/* Mobile Cards */}
+            <MobileOnly>
+              <div className="space-y-4">
+                {languageSchools.map((school) => (
+                  <Card key={school.name}>
+                    <CardContent className="pt-4">
+                      <div className="font-semibold text-lg mb-2">{school.name}</div>
+                      <div className="grid grid-cols-2 gap-2 text-sm mb-3">
+                        <div className="text-muted-foreground">{school.location}</div>
+                        <div className="text-primary font-medium">{school.cost}</div>
+                      </div>
+                      <p className="text-sm text-muted-foreground">{school.notes}</p>
+                    </CardContent>
+                  </Card>
+                ))}
+              </div>
+            </MobileOnly>
+            
             <p className="text-sm text-muted-foreground mt-4 text-center">
               Prices are approximate for intensive group classes. Private lessons typically cost 30-50% more.
             </p>

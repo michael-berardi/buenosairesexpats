@@ -17,8 +17,9 @@ export function generateStaticParams() {
 }
 
 // Generate metadata for each story
-export function generateMetadata({ params }: { params: { id: string } }): Metadata {
-  const story = getStoryById(params.id);
+export async function generateMetadata({ params }: { params: Promise<{ id: string }> }): Promise<Metadata> {
+  const { id } = await params;
+  const story = getStoryById(id);
   
   if (!story) {
     return {
@@ -60,8 +61,9 @@ const categoryLabels: Record<StoryCategory, string> = {
   "street-life": "Street Life",
 };
 
-export default function StoryPage({ params }: { params: { id: string } }) {
-  const story = getStoryById(params.id);
+export default async function StoryPage({ params }: { params: Promise<{ id: string }> }) {
+  const { id } = await params;
+  const story = getStoryById(id);
 
   if (!story) {
     notFound();
