@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
-import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { 
@@ -179,7 +178,7 @@ export default function CostOfLivingPage() {
             </h1>
             <p className="text-xl text-white/90 mb-8 drop-shadow-md">
               Real budget breakdowns from Americans living here. From bare-bones to comfortable living, 
-              see exactly what you'll spend each month.
+              see exactly what you&apos;ll spend each month.
             </p>
             <div className="flex flex-wrap justify-center gap-4 text-sm text-white/80">
               <div className="flex items-center gap-2">
@@ -196,11 +195,11 @@ export default function CostOfLivingPage() {
       </section>
 
       {/* Monthly Budget Calculator */}
-      <section className="py-16">
+      <section className="section-padding bg-white">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-3xl font-bold mb-8 text-center">Monthly Budget Estimates</h2>
-            <p className="text-center text-muted-foreground mb-8">
+            <h2 className="heading-md mb-4 text-center">Monthly Budget Estimates</h2>
+            <p className="text-center text-body mb-8">
               For a single person living in Buenos Aires. Prices in USD.
             </p>
 
@@ -213,66 +212,64 @@ export default function CostOfLivingPage() {
 
               {Object.entries(monthlyCosts).map(([key, costs]) => (
                 <TabsContent key={key} value={key}>
-                  <Card>
-                    <CardHeader>
-                      <CardTitle className="capitalize">{key} Lifestyle</CardTitle>
-                      <CardDescription>
+                  <div className="card-feature">
+                    <div className="mb-4">
+                      <h3 className="font-semibold text-lg capitalize">{key} Lifestyle</h3>
+                      <p className="text-body-sm">
                         {key === "budget" && "Shared apartment, cooking at home, public transport"}
                         {key === "moderate" && "Private apartment, mix of cooking and dining out"}
                         {key === "comfortable" && "Nice apartment in good area, dining out, activities"}
-                      </CardDescription>
-                    </CardHeader>
-                    <CardContent>
-                      <div className="space-y-4">
-                        <div className="flex justify-between items-center py-2 border-b">
-                          <div className="flex items-center gap-2">
-                            <Home className="w-4 h-4 text-muted-foreground" />
-                            <span>Rent</span>
-                          </div>
-                          <span className="font-semibold">${costs.rent}</span>
+                      </p>
+                    </div>
+                    <div className="space-y-4">
+                      <div className="flex justify-between items-center py-2 border-b">
+                        <div className="flex items-center gap-2">
+                          <Home className="w-4 h-4 text-muted-foreground" />
+                          <span>Rent</span>
                         </div>
-                        <div className="flex justify-between items-center py-2 border-b">
-                          <div className="flex items-center gap-2">
-                            <Utensils className="w-4 h-4 text-muted-foreground" />
-                            <span>Food & Dining</span>
-                          </div>
-                          <span className="font-semibold">${costs.food}</span>
-                        </div>
-                        <div className="flex justify-between items-center py-2 border-b">
-                          <div className="flex items-center gap-2">
-                            <Bus className="w-4 h-4 text-muted-foreground" />
-                            <span>Transportation</span>
-                          </div>
-                          <span className="font-semibold">${costs.transport}</span>
-                        </div>
-                        <div className="flex justify-between items-center py-2 border-b">
-                          <div className="flex items-center gap-2">
-                            <Wifi className="w-4 h-4 text-muted-foreground" />
-                            <span>Utilities & Internet</span>
-                          </div>
-                          <span className="font-semibold">${costs.utilities}</span>
-                        </div>
-                        <div className="flex justify-between items-center py-2 border-b">
-                          <div className="flex items-center gap-2">
-                            <Heart className="w-4 h-4 text-muted-foreground" />
-                            <span>Healthcare</span>
-                          </div>
-                          <span className="font-semibold">${costs.healthcare}</span>
-                        </div>
-                        <div className="flex justify-between items-center py-2 border-b">
-                          <div className="flex items-center gap-2">
-                            <Film className="w-4 h-4 text-muted-foreground" />
-                            <span>Entertainment</span>
-                          </div>
-                          <span className="font-semibold">${costs.entertainment}</span>
-                        </div>
-                        <div className="flex justify-between items-center py-3 bg-primary/5 rounded-lg px-4">
-                          <span className="font-bold">Total Monthly</span>
-                          <span className="font-bold text-xl text-primary">${costs.total}</span>
-                        </div>
+                        <span className="font-semibold">${costs.rent}</span>
                       </div>
-                    </CardContent>
-                  </Card>
+                      <div className="flex justify-between items-center py-2 border-b">
+                        <div className="flex items-center gap-2">
+                          <Utensils className="w-4 h-4 text-muted-foreground" />
+                          <span>Food & Dining</span>
+                        </div>
+                        <span className="font-semibold">${costs.food}</span>
+                      </div>
+                      <div className="flex justify-between items-center py-2 border-b">
+                        <div className="flex items-center gap-2">
+                          <Bus className="w-4 h-4 text-muted-foreground" />
+                          <span>Transportation</span>
+                        </div>
+                        <span className="font-semibold">${costs.transport}</span>
+                      </div>
+                      <div className="flex justify-between items-center py-2 border-b">
+                        <div className="flex items-center gap-2">
+                          <Wifi className="w-4 h-4 text-muted-foreground" />
+                          <span>Utilities & Internet</span>
+                        </div>
+                        <span className="font-semibold">${costs.utilities}</span>
+                      </div>
+                      <div className="flex justify-between items-center py-2 border-b">
+                        <div className="flex items-center gap-2">
+                          <Heart className="w-4 h-4 text-muted-foreground" />
+                          <span>Healthcare</span>
+                        </div>
+                        <span className="font-semibold">${costs.healthcare}</span>
+                      </div>
+                      <div className="flex justify-between items-center py-2 border-b">
+                        <div className="flex items-center gap-2">
+                          <Film className="w-4 h-4 text-muted-foreground" />
+                          <span>Entertainment</span>
+                        </div>
+                        <span className="font-semibold">${costs.entertainment}</span>
+                      </div>
+                      <div className="flex justify-between items-center py-3 bg-sky-50 rounded-lg px-4">
+                        <span className="font-bold">Total Monthly</span>
+                        <span className="font-bold text-xl text-sky-600">${costs.total}</span>
+                      </div>
+                    </div>
+                  </div>
                 </TabsContent>
               ))}
             </Tabs>
@@ -281,197 +278,167 @@ export default function CostOfLivingPage() {
       </section>
 
       {/* Detailed Expenses */}
-      <section className="py-16 bg-muted/30">
+      <section className="section-padding bg-muted/30">
         <div className="container mx-auto px-4">
-          <h2 className="text-3xl font-bold mb-12 text-center">Detailed Expense Breakdown</h2>
+          <h2 className="heading-md mb-12 text-center">Detailed Expense Breakdown</h2>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
             {expenseCategories.map((category) => (
-              <Card key={category.title} className="h-full">
-                <CardHeader>
-                  <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center mb-3">
-                    <category.icon className="w-5 h-5 text-primary" />
-                  </div>
-                  <CardTitle>{category.title}</CardTitle>
-                  <CardDescription>{category.description}</CardDescription>
-                </CardHeader>
-                <CardContent>
-                  <ul className="space-y-2">
-                    {category.items.map((item, index) => (
-                      <li key={index} className="flex justify-between text-sm">
-                        <span className="text-muted-foreground">{item.name}</span>
-                        <span className="font-medium">{item.price}</span>
-                      </li>
-                    ))}
-                  </ul>
-                </CardContent>
-              </Card>
+              <div key={category.title} className="card-feature">
+                <div className="icon-wrapper mb-3">
+                  <category.icon className="w-5 h-5" />
+                </div>
+                <h3 className="font-semibold text-lg mb-1">{category.title}</h3>
+                <p className="text-body-sm mb-4">{category.description}</p>
+                <ul className="space-y-2 mt-auto">
+                  {category.items.map((item, index) => (
+                    <li key={index} className="flex justify-between text-sm">
+                      <span className="text-muted-foreground">{item.name}</span>
+                      <span className="font-medium">{item.price}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
             ))}
           </div>
         </div>
       </section>
 
       {/* Neighborhood Comparison */}
-      <section className="py-16">
+      <section className="section-padding bg-white">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-3xl font-bold mb-8 text-center">Rent by Neighborhood</h2>
-            <Card>
-              <CardContent className="pt-6">
-                <div className="overflow-x-auto">
-                  <table className="w-full">
-                    <thead>
-                      <tr className="border-b">
-                        <th className="text-left py-3 px-2">Neighborhood</th>
-                        <th className="text-left py-3 px-2">Rent Level</th>
-                        <th className="text-left py-3 px-2">Vibe</th>
-                        <th className="text-left py-3 px-2">Transport</th>
+            <h2 className="heading-md mb-8 text-center">Rent by Neighborhood</h2>
+            <div className="card-feature">
+              <div className="overflow-x-auto">
+                <table className="w-full">
+                  <thead>
+                    <tr className="border-b">
+                      <th className="text-left py-3 px-2">Neighborhood</th>
+                      <th className="text-left py-3 px-2">Rent Level</th>
+                      <th className="text-left py-3 px-2">Vibe</th>
+                      <th className="text-left py-3 px-2">Transport</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    {neighborhoodComparison.map((hood) => (
+                      <tr key={hood.name} className="border-b last:border-0">
+                        <td className="py-3 px-2 font-medium">
+                          <Link href={`/neighborhoods/${hood.name.toLowerCase().replace(" ", "-")}`} className="hover:text-sky-600 hover:underline">
+                            {hood.name}
+                          </Link>
+                        </td>
+                        <td className="py-3 px-2">{hood.rent}</td>
+                        <td className="py-3 px-2 text-sm text-muted-foreground">{hood.vibe}</td>
+                        <td className="py-3 px-2 text-sm">{hood.transport}</td>
                       </tr>
-                    </thead>
-                    <tbody>
-                      {neighborhoodComparison.map((hood) => (
-                        <tr key={hood.name} className="border-b last:border-0">
-                          <td className="py-3 px-2 font-medium">
-                            <Link href={`/neighborhoods/${hood.name.toLowerCase().replace(" ", "-")}`} className="hover:text-primary hover:underline">
-                              {hood.name}
-                            </Link>
-                          </td>
-                          <td className="py-3 px-2">{hood.rent}</td>
-                          <td className="py-3 px-2 text-sm text-muted-foreground">{hood.vibe}</td>
-                          <td className="py-3 px-2 text-sm">{hood.transport}</td>
-                        </tr>
-                      ))}
-                    </tbody>
-                  </table>
-                </div>
-              </CardContent>
-            </Card>
+                    ))}
+                  </tbody>
+                </table>
+              </div>
+            </div>
           </div>
         </div>
       </section>
 
       {/* Money Tips */}
-      <section className="py-16 bg-muted/30">
+      <section className="section-padding bg-muted/30">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto">
-            <h2 className="text-3xl font-bold mb-8 text-center">Money-Saving Tips</h2>
+            <h2 className="heading-md mb-8 text-center">Money-Saving Tips</h2>
             <div className="grid md:grid-cols-2 gap-6">
-              <Card>
-                <CardHeader>
-                  <CardTitle className="text-lg">Use the Blue Rate</CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <p className="text-sm text-muted-foreground">
-                    Exchange USD cash at the "blue dollar" rate for 30-50% more pesos than the official rate. 
-                    Use reputable exchange houses (cuevas) or Western Union transfers.
-                  </p>
-                </CardContent>
-              </Card>
-              <Card>
-                <CardHeader>
-                  <CardTitle className="text-lg">Shop at Local Markets</CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <p className="text-sm text-muted-foreground">
-                    Ferias and mercados offer fresh produce at much better prices than supermarkets. 
-                    Try Mercado de San Telmo or your neighborhood feria.
-                  </p>
-                </CardContent>
-              </Card>
-              <Card>
-                <CardHeader>
-                  <CardTitle className="text-lg">Take Public Transport</CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <p className="text-sm text-muted-foreground">
-                    The SUBE card works on buses, subways, and trains. It's incredibly cheap and 
-                    the subway is fast and reliable in the city center.
-                  </p>
-                </CardContent>
-              </Card>
-              <Card>
-                <CardHeader>
-                  <CardTitle className="text-lg">Eat Like a Local</CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <p className="text-sm text-muted-foreground">
-                    Menu del día lunch specials offer great value. Avoid touristy restaurants in 
-                    Puerto Madero for better prices in Palermo or San Telmo.
-                  </p>
-                </CardContent>
-              </Card>
+              <div className="card-feature">
+                <h3 className="font-semibold text-lg mb-2">Use the Blue Rate</h3>
+                <p className="text-body-sm">
+                  Exchange USD cash at the &quot;blue dollar&quot; rate for 30-50% more pesos than the official rate. 
+                  Use reputable exchange houses (cuevas) or Western Union transfers.
+                </p>
+              </div>
+              <div className="card-feature">
+                <h3 className="font-semibold text-lg mb-2">Shop at Local Markets</h3>
+                <p className="text-body-sm">
+                  Ferias and mercados offer fresh produce at much better prices than supermarkets. 
+                  Try Mercado de San Telmo or your neighborhood feria.
+                </p>
+              </div>
+              <div className="card-feature">
+                <h3 className="font-semibold text-lg mb-2">Take Public Transport</h3>
+                <p className="text-body-sm">
+                  The SUBE card works on buses, subways, and trains. It&apos;s incredibly cheap and 
+                  the subway is fast and reliable in the city center.
+                </p>
+              </div>
+              <div className="card-feature">
+                <h3 className="font-semibold text-lg mb-2">Eat Like a Local</h3>
+                <p className="text-body-sm">
+                  Menu del día lunch specials offer great value. Avoid touristy restaurants in 
+                  Puerto Madero for better prices in Palermo or San Telmo.
+                </p>
+              </div>
             </div>
           </div>
         </div>
       </section>
 
       {/* Reddit Reality Check */}
-      <section className="py-16 bg-blue-50 dark:bg-blue-950/20">
+      <section className="section-padding bg-sky-50">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto">
-            <h2 className="text-2xl font-bold mb-6 text-center">What Reddit Says (The Honest Version)</h2>
+            <h2 className="heading-sm mb-6 text-center">What Reddit Says (The Honest Version)</h2>
             <div className="space-y-4">
-              <Card>
-                <CardContent className="pt-6">
-                  <p className="text-sm text-muted-foreground italic">
-                    &quot;It&apos;s not as cheap as YouTubers claim anymore. Expect Western European prices for many things. 
-                    The blue dollar advantage isn&apos;t what it was.&quot;
-                  </p>
-                  <p className="text-xs text-muted-foreground mt-2">- r/digitalnomad, 2024</p>
-                </CardContent>
-              </Card>
-              <Card>
-                <CardContent className="pt-6">
-                  <p className="text-sm text-muted-foreground italic">
-                    &quot;Bring physical dollars if you want to rent outside Airbnb. Nobody will rent to you in pesos, 
-                    and the process of getting dollars is equally taxing.&quot;
-                  </p>
-                  <p className="text-xs text-muted-foreground mt-2">- r/digitalnomad expat</p>
-                </CardContent>
-              </Card>
-              <Card>
-                <CardContent className="pt-6">
-                  <p className="text-sm text-muted-foreground italic">
-                    &quot;Gyms are €70-90/month. Chicken breast is €13/kg. Coffee is €3-4. It&apos;s not the cheap paradise 
-                    people think it is anymore.&quot;
-                  </p>
-                  <p className="text-xs text-muted-foreground mt-2">- Recent BA resident comparison to Barcelona</p>
-                </CardContent>
-              </Card>
+              <div className="card-testimonial">
+                <p className="text-body-sm italic mb-2">
+                  &quot;It&apos;s not as cheap as YouTubers claim anymore. Expect Western European prices for many things. 
+                  The blue dollar advantage isn&apos;t what it was.&quot;
+                </p>
+                <p className="text-xs text-muted-foreground">- r/digitalnomad, 2024</p>
+              </div>
+              <div className="card-testimonial">
+                <p className="text-body-sm italic mb-2">
+                  &quot;Bring physical dollars if you want to rent outside Airbnb. Nobody will rent to you in pesos, 
+                  and the process of getting dollars is equally taxing.&quot;
+                </p>
+                <p className="text-xs text-muted-foreground">- r/digitalnomad expat</p>
+              </div>
+              <div className="card-testimonial">
+                <p className="text-body-sm italic mb-2">
+                  &quot;Gyms are €70-90/month. Chicken breast is €13/kg. Coffee is €3-4. It&apos;s not the cheap paradise 
+                  people think it is anymore.&quot;
+                </p>
+                <p className="text-xs text-muted-foreground">- Recent BA resident comparison to Barcelona</p>
+              </div>
             </div>
           </div>
         </div>
       </section>
 
       {/* Important Notice */}
-      <section className="py-16">
+      <section className="section-padding bg-white">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto">
-            <Card className="border-amber-200 bg-amber-50 dark:bg-amber-950/20">
-              <CardContent className="pt-6">
-                <div className="flex items-start gap-4">
-                  <AlertCircle className="w-6 h-6 text-amber-600 flex-shrink-0" />
-                  <div>
-                    <h3 className="font-semibold text-amber-900 dark:text-amber-100 mb-2">
-                      The Reality Check
-                    </h3>
-                    <p className="text-amber-800 dark:text-amber-200 text-sm">
-                      Prices have risen significantly in 2024-2025. While still cheaper than NYC/SF, Buenos Aires 
-                      is no longer the &quot;cheap paradise&quot; of 2020-2022. Budget $2,000-2,500/month for a comfortable 
-                      lifestyle, not $1,200. The savings are real compared to major US cities, but manage your expectations.
-                    </p>
-                  </div>
+            <div className="bg-amber-50 border border-amber-200 rounded-xl p-6">
+              <div className="flex items-start gap-4">
+                <AlertCircle className="w-6 h-6 text-amber-600 flex-shrink-0" />
+                <div>
+                  <h3 className="font-semibold text-amber-900 mb-2">
+                    The Reality Check
+                  </h3>
+                  <p className="text-amber-800 text-sm">
+                    Prices have risen significantly in 2024-2025. While still cheaper than NYC/SF, Buenos Aires 
+                    is no longer the &quot;cheap paradise&quot; of 2020-2022. Budget $2,000-2,500/month for a comfortable 
+                    lifestyle, not $1,200. The savings are real compared to major US cities, but manage your expectations.
+                  </p>
                 </div>
-              </CardContent>
-            </Card>
+              </div>
+            </div>
           </div>
         </div>
       </section>
 
       {/* CTA */}
-      <section className="py-16 bg-primary text-primary-foreground">
+      <section className="section-padding bg-primary text-primary-foreground">
         <div className="container mx-auto px-4 text-center">
           <div className="max-w-2xl mx-auto">
-            <h2 className="text-3xl font-bold mb-4">Ready to Make the Move?</h2>
+            <h2 className="heading-md mb-4">Ready to Make the Move?</h2>
             <p className="text-primary-foreground/80 mb-8">
               Explore neighborhoods, visa options, and get personalized advice for your move to Argentina.
             </p>
@@ -482,9 +449,9 @@ export default function CostOfLivingPage() {
                   <ArrowRight className="w-4 h-4 ml-2" />
                 </Link>
               </Button>
-              <Button asChild size="lg" variant="outline" className="border-primary-foreground/20 hover:bg-primary-foreground/10">
+              <Button asChild size="lg" variant="outline" className="border-primary-foreground/30 hover:bg-primary-foreground/10 text-primary-foreground">
                 <Link href="/visas/digital-nomad">
-                  Visa Guide
+                  Check Visa Options
                 </Link>
               </Button>
             </div>
