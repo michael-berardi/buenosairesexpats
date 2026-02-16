@@ -128,7 +128,7 @@ export default function DiningGuidePage() {
         <div className="absolute inset-0">
           <div className="absolute inset-0 bg-gradient-to-br from-stone-900 via-stone-800 to-amber-950" />
           <div className="absolute inset-0 opacity-30 bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-amber-500/20 via-transparent to-transparent" />
-          <div className="absolute inset-0 opacity-20 bg-[url('/images/dining-hero.jpg')] bg-cover bg-center" />
+          <div className="absolute inset-0 opacity-40 bg-[url('/images/dining-hero.jpg')] bg-cover bg-center" />
           <div className="absolute inset-0 bg-gradient-to-t from-stone-900 via-stone-900/80 to-transparent" />
         </div>
         
