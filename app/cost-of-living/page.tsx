@@ -166,7 +166,7 @@ export default function CostOfLivingPage() {
           quality={85}
           priority
         />
-        <div className="absolute inset-0 bg-gradient-to-b from-black/50 via-black/30 to-background" />
+        <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/40 to-black/30" />
         <div className="container mx-auto px-4 relative">
           <div className="max-w-3xl mx-auto text-center">
             <Badge className="mb-4 bg-white/90 text-foreground">

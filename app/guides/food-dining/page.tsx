@@ -99,30 +99,34 @@ export default function FoodDiningPage() {
       </div>
 
       {/* Hero */}
-      <section className="py-16 md:py-24 bg-gradient-to-b from-orange-50 to-white dark:from-orange-950/20 dark:to-background">
-        <div className="container mx-auto px-4">
+      <section className="relative py-16 md:py-24 overflow-hidden">
+        <div className="absolute inset-0">
+          <div className="absolute inset-0 bg-[url('/images/food-dining-hero.webp')] bg-cover bg-center" />
+          <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/40 to-background" />
+        </div>
+        <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-3xl mx-auto text-center">
-            <Badge className="mb-4" variant="secondary">
+            <Badge className="mb-4 bg-white/10 text-white border-white/20" variant="secondary">
               <Utensils className="w-3 h-3 mr-1" />
               Food Guide
             </Badge>
-            <h1 className="text-4xl md:text-5xl font-bold mb-6">
+            <h1 className="text-4xl md:text-5xl font-bold mb-6 text-white">
               Food & Dining in Buenos Aires
             </h1>
-            <p className="text-xl text-muted-foreground mb-8">
+            <p className="text-xl text-white/90 mb-8">
               From world-class parrillas to cozy cafes, discover the best of Argentine 
               cuisine and dining culture. Real recommendations from expats living here.
             </p>
-            <div className="flex flex-wrap justify-center gap-4 text-sm">
-              <div className="flex items-center gap-2 text-muted-foreground">
+            <div className="flex flex-wrap justify-center gap-4 text-sm text-white/80">
+              <div className="flex items-center gap-2 bg-black/20 px-3 py-1.5 rounded-full">
                 <DollarSign className="w-4 h-4" />
                 <span>$5-80 per meal</span>
               </div>
-              <div className="flex items-center gap-2 text-muted-foreground">
+              <div className="flex items-center gap-2 bg-black/20 px-3 py-1.5 rounded-full">
                 <Clock className="w-4 h-4" />
                 <span>Dinner starts at 9pm</span>
               </div>
-              <div className="flex items-center gap-2 text-muted-foreground">
+              <div className="flex items-center gap-2 bg-black/20 px-3 py-1.5 rounded-full">
                 <MapPin className="w-4 h-4" />
                 <span>Palermo = food hub</span>
               </div>

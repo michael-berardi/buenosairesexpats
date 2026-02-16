@@ -100,7 +100,7 @@ export default function SanTelmoPage() {
       <section className="relative py-16 md:py-24 overflow-hidden">
         <div 
           className="absolute inset-0 bg-cover bg-center"
-          style={{ backgroundImage: "url('https://images.unsplash.com/photo-1565622871630-8e453c4b6ed9?auto=format&fit=crop&q=80')" }}
+          style={{ backgroundImage: "url('/images/san-telmo-hero.webp')" }}
         />
         <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/40 to-background" />
         <div className="container mx-auto px-4 relative">

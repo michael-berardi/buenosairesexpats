@@ -100,7 +100,7 @@ export default function BelgranoPage() {
       <section className="relative py-16 md:py-24 overflow-hidden">
         <div 
           className="absolute inset-0 bg-cover bg-center"
-          style={{ backgroundImage: "url('https://images.unsplash.com/photo-1575302495926-60c24a7b7b43?auto=format&fit=crop&q=80')" }}
+          style={{ backgroundImage: "url('/images/belgrano-hero.webp')" }}
         />
         <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/40 to-background" />
         <div className="container mx-auto px-4 relative">

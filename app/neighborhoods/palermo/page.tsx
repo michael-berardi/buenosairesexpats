@@ -99,7 +99,7 @@ export default function PalermoPage() {
       <section className="relative py-16 md:py-24 overflow-hidden">
         <div 
           className="absolute inset-0 bg-cover bg-center"
-          style={{ backgroundImage: "url('https://images.unsplash.com/photo-1589909202802-8f4aadce1849?auto=format&fit=crop&q=80')" }}
+          style={{ backgroundImage: "url('/images/palermo-hero.webp')" }}
         />
         <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/40 to-background" />
         <div className="container mx-auto px-4 relative">

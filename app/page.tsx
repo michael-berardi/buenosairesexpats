@@ -115,7 +115,7 @@ export default function Home() {
           sizes="100vw"
           quality={90}
         />
-        <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/40 to-background" />
+        <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/50 to-black/30" />
         <div className="container mx-auto px-4 py-20 md:py-32 relative">
           <div className="max-w-4xl mx-auto text-center animate-fade-in-up">
             <Badge variant="secondary" className="mb-6 bg-white/95 text-foreground backdrop-blur-sm">
