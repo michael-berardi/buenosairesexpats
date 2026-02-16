@@ -173,8 +173,8 @@ export default function Home() {
                 className="card-stat animate-fade-in-up"
                 style={{ animationDelay: `${index * 100}ms` }}
               >
-                <div className="card-stat-value">{stat.value}</div>
-                <div className="card-stat-label">{stat.label}</div>
+                <div className="stat-value">{stat.value}</div>
+                <div className="stat-label">{stat.label}</div>
               </div>
             ))}
           </div>
