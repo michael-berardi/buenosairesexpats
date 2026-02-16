@@ -54,7 +54,7 @@
   --card-foreground: #1c1917;
   --popover: #ffffff;
   --popover-foreground: #1c1917;
-  --primary: #0ea5e9;
+  --primary: #0284c7;
   --primary-foreground: #ffffff;
   --secondary: #f5f5f4;
   --secondary-foreground: #44403c;
@@ -65,8 +65,8 @@
   --destructive: #ef4444;
   --border: #e7e5e4;
   --input: #e7e5e4;
-  --ring: #0ea5e9;
-  --chart-1: #0ea5e9;
+  --ring: #0284c7;
+  --chart-1: #0284c7;
   --chart-2: #fbbf24;
   --chart-3: #10b981;
   --chart-4: #f59e0b;
@@ -80,7 +80,7 @@
   --card-foreground: #fafaf9;
   --popover: #1c1917;
   --popover-foreground: #fafaf9;
-  --primary: #38bdf8;
+  --primary: #0ea5e9;
   --primary-foreground: #0c0a09;
   --secondary: #292524;
   --secondary-foreground: #fafaf9;
@@ -91,8 +91,8 @@
   --destructive: #ef4444;
   --border: #292524;
   --input: #292524;
-  --ring: #38bdf8;
-  --chart-1: #38bdf8;
+  --ring: #0ea5e9;
+  --chart-1: #0ea5e9;
   --chart-2: #fbbf24;
   --chart-3: #34d399;
   --chart-4: #fbbf24;
@@ -223,13 +223,27 @@ html {
 /* Card Variants */
 .card-feature {
   @apply bg-white border border-stone-200 rounded-xl p-6 h-full flex flex-col;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05), 0 1px 2px rgba(0, 0, 0, 0.03);
+  transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
 }
 
 .card-feature:hover {
   transform: translateY(-4px);
-  box-shadow: 0 12px 24px -8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 12px 24px -8px rgba(0, 0, 0, 0.12), 0 4px 8px rgba(0, 0, 0, 0.04);
+  border-color: #d1d5db;
+}
+
+.card-feature-guide {
+  @apply bg-white border border-stone-200 rounded-xl p-6 h-full flex flex-col;
+  border-top-width: 4px;
+  border-top-color: #0284c7;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card-feature-guide:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 24px -8px rgba(0, 0, 0, 0.12);
 }
 
 .card-testimonial {
@@ -248,11 +262,11 @@ html {
 }
 
 .stat-value {
-  @apply text-3xl md:text-4xl font-bold text-sky-600;
+  @apply text-3xl md:text-4xl font-extrabold text-sky-700 tracking-tight;
 }
 
 .stat-label {
-  @apply text-sm text-stone-600 mt-1 font-medium;
+  @apply text-sm text-stone-600 mt-2 font-semibold uppercase tracking-wide;
 }
 
 .stat-icon {
@@ -293,30 +307,53 @@ html {
 /* Buttons - Unified */
 .btn-primary {
   @apply inline-flex items-center justify-center gap-2 px-6 py-3 
-         bg-sky-600 text-white font-medium rounded-lg
-         hover:bg-sky-700 transition-all duration-200
-         shadow-sm hover:shadow-md;
+         bg-sky-700 text-white font-semibold rounded-lg
+         hover:bg-sky-800 transition-all duration-200
+         shadow-md hover:shadow-lg hover:shadow-sky-500/25;
 }
 
 .btn-secondary {
   @apply inline-flex items-center justify-center gap-2 px-6 py-3 
-         bg-white text-stone-700 font-medium rounded-lg border border-stone-300
-         hover:bg-stone-50 hover:border-stone-400 transition-all duration-200;
+         bg-white text-stone-800 font-semibold rounded-lg border-2 border-white
+         hover:bg-stone-100 hover:border-stone-200 transition-all duration-200
+         shadow-lg shadow-black/20;
+}
+
+.btn-secondary-dark {
+  @apply inline-flex items-center justify-center gap-2 px-6 py-3 
+         bg-slate-800 text-white font-semibold rounded-lg
+         hover:bg-slate-700 transition-all duration-200
+         shadow-lg shadow-black/30;
 }
 
 .btn-outline {
   @apply inline-flex items-center justify-center gap-2 px-6 py-3 
-         bg-transparent text-stone-700 font-medium rounded-lg border border-stone-300
-         hover:bg-stone-50 transition-all duration-200;
+         bg-white text-stone-800 font-semibold rounded-lg border border-stone-200
+         hover:bg-stone-50 hover:border-stone-300 hover:shadow-md transition-all duration-200;
+}
+
+.btn-outline-dark {
+  @apply inline-flex items-center justify-center gap-2 px-6 py-3 
+         bg-white/10 text-white font-semibold rounded-lg border border-white/30
+         hover:bg-white/20 hover:border-white/50 transition-all duration-200
+         backdrop-blur-sm;
 }
 
 /* Icon wrapper - Unified */
 .icon-wrapper {
-  @apply w-12 h-12 rounded-xl bg-sky-50 flex items-center justify-center mb-4;
+  @apply w-12 h-12 rounded-xl bg-sky-100 flex items-center justify-center mb-4;
 }
 
 .icon-wrapper svg {
-  @apply w-6 h-6 text-sky-600;
+  @apply w-6 h-6 text-sky-700;
+}
+
+.icon-wrapper-enhanced {
+  @apply w-14 h-14 rounded-2xl bg-gradient-to-br from-sky-100 to-sky-200 flex items-center justify-center mb-5 shadow-inner;
+}
+
+.icon-wrapper-enhanced svg {
+  @apply w-7 h-7 text-sky-700;
 }
 
 .icon-wrapper-sm {
@@ -364,11 +401,15 @@ html {
 
 /* Badge styles */
 .badge-primary {
-  @apply inline-flex items-center px-3 py-1 rounded-full text-xs font-medium bg-sky-100 text-sky-700;
+  @apply inline-flex items-center px-3 py-1.5 rounded-full text-xs font-bold bg-sky-100 text-sky-700 border border-sky-200;
 }
 
 .badge-secondary {
-  @apply inline-flex items-center px-3 py-1 rounded-full text-xs font-medium bg-stone-100 text-stone-700;
+  @apply inline-flex items-center px-3 py-1.5 rounded-full text-xs font-bold bg-stone-100 text-stone-700 border border-stone-200;
+}
+
+.badge-accent {
+  @apply inline-flex items-center px-3 py-1.5 rounded-full text-xs font-bold bg-amber-100 text-amber-800 border border-amber-200;
 }
 
 .badge-accent {

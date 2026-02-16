@@ -11,7 +11,6 @@ import {
   Heart, 
   Users, 
   ArrowRight,
-  CheckCircle,
   Globe,
   Shield,
   TrendingUp,
@@ -131,34 +130,20 @@ export default function Home() {
               neighborhood reviews, and a community of Americans who made the leap.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button asChild size="lg" className="gap-2 btn-press">
+              <Button asChild size="lg" className="gap-2 bg-sky-600 hover:bg-sky-500 text-white font-semibold shadow-lg shadow-sky-500/30 hover:shadow-xl hover:shadow-sky-500/40 transition-all duration-200">
                 <Link href="/visas/digital-nomad">
                   Explore Visa Options
                   <ArrowRight className="w-4 h-4" />
                 </Link>
               </Button>
-              <Button asChild variant="outline" size="lg" className="bg-white/10 backdrop-blur-sm border-white/20 text-white hover:bg-white/20 hover:text-white">
+              <Button asChild size="lg" className="bg-white text-slate-900 font-semibold hover:bg-slate-100 shadow-lg shadow-black/20 border-0 transition-all duration-200">
                 <Link href="/cost-of-living">
                   Calculate Costs
                 </Link>
               </Button>
             </div>
 
-            {/* Trust Badges */}
-            <div className="mt-12 flex flex-wrap items-center justify-center gap-6 text-sm text-white/90">
-              <div className="flex items-center gap-2 bg-black/20 px-3 py-1.5 rounded-full backdrop-blur-sm">
-                <CheckCircle className="w-4 h-4 text-green-400" />
-                <span>Updated 2025 Data</span>
-              </div>
-              <div className="flex items-center gap-2 bg-black/20 px-3 py-1.5 rounded-full backdrop-blur-sm">
-                <CheckCircle className="w-4 h-4 text-green-400" />
-                <span>Honest, No-BS Info</span>
-              </div>
-              <div className="flex items-center gap-2 bg-black/20 px-3 py-1.5 rounded-full backdrop-blur-sm">
-                <CheckCircle className="w-4 h-4 text-green-400" />
-                <span>By Americans, For Americans</span>
-              </div>
-            </div>
+
           </div>
         </div>
       </section>
@@ -198,21 +183,20 @@ export default function Home() {
             {features.map((feature, index) => (
               <div 
                 key={feature.title} 
-                className="card-feature animate-fade-in-up"
+                className="card-feature animate-fade-in-up group"
                 style={{ animationDelay: `${index * 100}ms` }}
               >
-                <div className="icon-wrapper">
-                  <feature.icon className="w-5 h-5" />
+                <div className="icon-wrapper-enhanced group-hover:scale-105 transition-transform duration-200">
+                  <feature.icon className="w-6 h-6" />
                 </div>
-                <h3 className="heading-sm mb-2">{feature.title}</h3>
-                <p className="text-body-sm mb-4 flex-grow">{feature.description}</p>
-                <Link 
-                  href={feature.href}
-                  className="inline-flex items-center text-sm font-medium text-sky-600 hover:text-sky-700 group/link mt-auto"
-                >
-                  Learn more
-                  <ArrowRight className="w-4 h-4 ml-1 group-hover/link:translate-x-1 transition-transform" />
-                </Link>
+                <h3 className="heading-sm mb-3">{feature.title}</h3>
+                <p className="text-body-sm mb-5 flex-grow">{feature.description}</p>
+                <Button asChild variant="outline" size="sm" className="mt-auto w-full group/btn">
+                  <Link href={feature.href}>
+                    Learn more
+                    <ArrowRight className="w-4 h-4 ml-1 group-hover/btn:translate-x-1 transition-transform" />
+                  </Link>
+                </Button>
               </div>
             ))}
           </div>
@@ -233,38 +217,38 @@ export default function Home() {
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-            <div className="card-feature">
+            <div className="card-feature-guide">
               <span className="badge-primary w-fit mb-3">Most Popular</span>
-              <h3 className="heading-sm mb-2">Argentina Digital Nomad Visa</h3>
-              <p className="text-body-sm mb-4 flex-grow">
+              <h3 className="heading-sm mb-3">Argentina Digital Nomad Visa</h3>
+              <p className="text-body-sm mb-5 flex-grow">
                 Complete guide to the 180-day remote work visa, including requirements, 
                 application process, and tips for approval.
               </p>
-              <Button asChild variant="outline" className="w-full">
+              <Button asChild className="w-full bg-sky-700 hover:bg-sky-600 text-white font-semibold">
                 <Link href="/visas/digital-nomad">Read Guide</Link>
               </Button>
             </div>
 
-            <div className="card-feature">
-              <span className="badge-secondary w-fit mb-3">Updated Monthly</span>
-              <h3 className="heading-sm mb-2">Cost of Living in Buenos Aires</h3>
-              <p className="text-body-sm mb-4 flex-grow">
+            <div className="card-feature-guide">
+              <span className="badge-accent w-fit mb-3">Updated Monthly</span>
+              <h3 className="heading-sm mb-3">Cost of Living in Buenos Aires</h3>
+              <p className="text-body-sm mb-5 flex-grow">
                 Real 2025 budget breakdowns for singles, couples, and families. 
                 Includes rent, food, healthcare, and entertainment.
               </p>
-              <Button asChild variant="outline" className="w-full">
+              <Button asChild className="w-full bg-sky-700 hover:bg-sky-600 text-white font-semibold">
                 <Link href="/cost-of-living">See Costs</Link>
               </Button>
             </div>
 
-            <div className="card-feature">
+            <div className="card-feature-guide">
               <span className="badge-secondary w-fit mb-3">Stories</span>
-              <h3 className="heading-sm mb-2">Real Expat Experiences</h3>
-              <p className="text-body-sm mb-4 flex-grow">
+              <h3 className="heading-sm mb-3">Real Expat Experiences</h3>
+              <p className="text-body-sm mb-5 flex-grow">
                 Read honest accounts from Americans who moved to Buenos Aires. 
                 Learn what worked and what didn&apos;t.
               </p>
-              <Button asChild variant="outline" className="w-full">
+              <Button asChild className="w-full bg-sky-700 hover:bg-sky-600 text-white font-semibold">
                 <Link href="/stories">Read Stories</Link>
               </Button>
             </div>
@@ -273,11 +257,11 @@ export default function Home() {
       </section>
 
       {/* Newsletter Section */}
-      <section className="section-padding bg-sky-50">
+      <section className="section-padding bg-gradient-to-br from-sky-50 via-white to-sky-50">
         <div className="container mx-auto px-4">
           <div className="max-w-2xl mx-auto text-center">
-            <div className="icon-wrapper mx-auto mb-6">
-              <Mail className="w-5 h-5" />
+            <div className="icon-wrapper-enhanced mx-auto mb-6">
+              <Mail className="w-6 h-6" />
             </div>
             <h2 className="heading-md mb-4">Get the Latest Updates</h2>
             <p className="text-body text-lg mb-6">
@@ -288,14 +272,14 @@ export default function Home() {
               <input 
                 type="email" 
                 placeholder="your@email.com" 
-                className="flex h-11 w-full rounded-lg border border-border bg-white px-4 py-2 text-sm placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-sky-500 focus-visible:ring-offset-2"
+                className="flex h-12 w-full rounded-lg border-2 border-slate-200 bg-white px-4 py-2 text-base placeholder:text-slate-400 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-sky-500 focus-visible:border-sky-500 transition-all"
               />
-              <Button className="h-11 px-6 btn-primary">
+              <Button className="h-12 px-8 bg-sky-700 hover:bg-sky-600 text-white font-semibold shadow-lg hover:shadow-xl transition-all">
                 Subscribe
                 <ArrowRight className="w-4 h-4 ml-2" />
               </Button>
             </div>
-            <p className="text-xs text-muted-foreground mt-4">
+            <p className="text-xs text-slate-500 mt-4">
               No spam, unsubscribe anytime. We respect your privacy.
             </p>
           </div>
@@ -353,13 +337,13 @@ export default function Home() {
               and community to help you figure it out.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button asChild size="lg" variant="secondary" className="btn-press">
+              <Button asChild size="lg" className="bg-white text-sky-700 hover:bg-slate-100 font-bold shadow-xl shadow-black/20 px-8">
                 <Link href="/cost-of-living">
                   See Cost Breakdown
                   <ArrowRight className="w-4 h-4 ml-2" />
                 </Link>
               </Button>
-              <Button asChild size="lg" variant="outline" className="border-white/30 bg-white/10 text-white hover:bg-white/20 hover:text-white">
+              <Button asChild size="lg" className="bg-sky-800 text-white hover:bg-sky-700 font-semibold border border-sky-600 shadow-lg shadow-black/20 px-8">
                 <Link href="/neighborhoods">
                   Explore Neighborhoods
                 </Link>

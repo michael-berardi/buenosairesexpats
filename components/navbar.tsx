@@ -121,7 +121,7 @@ export function Navbar() {
 
         {/* CTA Button */}
         <div className="hidden lg:flex items-center gap-4">
-          <Button asChild variant="default" size="sm">
+          <Button asChild size="sm" className="bg-sky-700 hover:bg-sky-600 text-white font-semibold shadow-md hover:shadow-lg transition-all">
             <Link href="/contact">Contact Us</Link>
           </Button>
         </div>
