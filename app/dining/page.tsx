@@ -87,7 +87,7 @@ const neighborhoods = [
     highlights: ["Aramburu (2 Michelin Stars)", "Elena at Four Seasons", "Duhau Restaurante"],
     restaurantCount: 8,
     michelinCount: 1,
-    image: "/images/hero-cityscape.jpg",
+    image: "/images/dining-recoleta.jpg",
     color: "from-amber-600 to-orange-700"
   },
   {
@@ -97,7 +97,7 @@ const neighborhoods = [
     highlights: ["Don Julio (1 Star)", "Crizia (1 Star)", "Tegui"],
     restaurantCount: 8,
     michelinCount: 2,
-    image: "/images/hero-cityscape.jpg",
+    image: "/images/dining-recoleta.jpg",
     color: "from-emerald-600 to-teal-700"
   },
   {
@@ -107,7 +107,7 @@ const neighborhoods = [
     highlights: ["Roux", "Corte Comedor", "La Casona de Belgrano"],
     restaurantCount: 8,
     michelinCount: 0,
-    image: "/images/hero-cityscape.jpg",
+    image: "/images/dining-recoleta.jpg",
     color: "from-slate-600 to-slate-800"
   },
 ];
@@ -128,7 +128,7 @@ export default function DiningGuidePage() {
         <div className="absolute inset-0">
           <div className="absolute inset-0 bg-gradient-to-br from-stone-900 via-stone-800 to-amber-950" />
           <div className="absolute inset-0 opacity-30 bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-amber-500/20 via-transparent to-transparent" />
-          <div className="absolute inset-0 opacity-20 bg-[url('/images/hero-cityscape.jpg')] bg-cover bg-center" />
+          <div className="absolute inset-0 opacity-40 bg-[url('/images/dining-hero.jpg')] bg-cover bg-center" />
           <div className="absolute inset-0 bg-gradient-to-t from-stone-900 via-stone-900/80 to-transparent" />
         </div>
         

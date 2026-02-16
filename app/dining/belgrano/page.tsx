@@ -166,7 +166,7 @@ export default function BelgranoDiningPage() {
       {/* Hero */}
       <section className="relative py-20 md:py-28 bg-gradient-to-b from-stone-800 via-stone-900 to-black text-white overflow-hidden">
         <div className="absolute inset-0 opacity-30">
-          <div className="absolute inset-0 bg-[url('/images/hero-cityscape.jpg')] bg-cover bg-center" />
+          <div className="absolute inset-0 bg-[url('/images/belgrano-dining.jpg')] bg-cover bg-center" />
         </div>
         <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent" />
         
