@@ -58,10 +58,10 @@ const michelinStars = [
   { 
     name: "Trescha", 
     stars: 1, 
-    neighborhood: "Villa Crespo",
+    neighborhood: "Palermo",
     cuisine: "Contemporary",
     price: "$$$$",
-    description: "Innovative tasting menus in an intimate setting. Chef Martín Molteni's creative playground where Argentine ingredients meet global techniques.",
+    description: "Innovative tasting menus in an intimate setting near Palermo. Chef Martín Molteni's creative playground where Argentine ingredients meet global techniques.",
     mustTry: ["Seasonal tasting menu", "Fire-cooked vegetables", "House-made charcuterie"],
     inspectorNote: "A hidden gem that serious food lovers seek out. The open kitchen creates a personal connection with the culinary team.",
     award: "1 Michelin Star"
