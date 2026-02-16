@@ -29,7 +29,7 @@ const michelinStars = [
     stars: 2, 
     neighborhood: "Recoleta",
     cuisine: "Contemporary",
-    description: "Argentina's only two-Michelin-starred restaurant. Chef Gonzalo Aramburu creates artistic, boundary-pushing cuisine."
+    description: "Argentina&apos;s only two-Michelin-starred restaurant. Chef Gonzalo Aramburu creates artistic, boundary-pushing cuisine."
   },
   { 
     name: "Don Julio", 
@@ -58,7 +58,7 @@ const neighborhoods = [
   {
     name: "Recoleta",
     slug: "recoleta",
-    description: "Elegant dining in Buenos Aires' most refined neighborhood. Home to Aramburu and classic luxury hotels.",
+    description: "Elegant dining in Buenos Aires&apos; most refined neighborhood. Home to Aramburu and classic luxury hotels.",
     highlights: ["Aramburu (2 Michelin Stars)", "Elena at Four Seasons", "Duhau Restaurante"],
     image: "/images/dining-recoleta.jpg"
   },
@@ -99,7 +99,7 @@ export default function DiningGuidePage() {
               <span className="block text-amber-400">Dining Guide</span>
             </h1>
             <p className="text-xl md:text-2xl text-stone-300 mb-8 leading-relaxed">
-              The definitive guide to Argentina's finest restaurants. 
+              The definitive guide to Argentina&apos;s finest restaurants. 
               From Michelin-starred temples of gastronomy to legendary parrillas.
             </p>
             <div className="flex flex-wrap justify-center gap-4 text-sm text-stone-400">
@@ -131,7 +131,7 @@ export default function DiningGuidePage() {
               </Badge>
               <h2 className="text-4xl font-bold mb-4">Michelin-Starred Restaurants</h2>
               <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-                Argentina's culinary excellence recognized by the world's most prestigious dining guide.
+                Argentina&apos;s culinary excellence recognized by the world&apos;s most prestigious dining guide.
               </p>
             </div>
 
@@ -186,7 +186,7 @@ export default function DiningGuidePage() {
               </Badge>
               <h2 className="text-4xl font-bold mb-4">Explore by Neighborhood</h2>
               <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-                Curated guides to the best dining in Buenos Aires' most prestigious neighborhoods.
+                Curated guides to the best dining in Buenos Aires&apos; most prestigious neighborhoods.
               </p>
             </div>
 
@@ -238,7 +238,7 @@ export default function DiningGuidePage() {
             <p className="text-lg text-stone-400 mb-8 leading-relaxed">
               This guide represents the pinnacle of Buenos Aires dining. Every restaurant featured 
               has been selected for its exceptional quality, unique character, and contribution 
-              to Argentina's world-renowned culinary scene. From the hallowed halls of Michelin-starred 
+              to Argentina&apos;s world-renowned culinary scene. From the hallowed halls of Michelin-starred 
               institutions to the intimate neighborhood gems, these are the restaurants that define 
               Buenos Aires as a global gastronomic destination.
             </p>

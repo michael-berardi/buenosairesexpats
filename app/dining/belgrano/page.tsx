@@ -17,11 +17,11 @@ import {
 
 export const metadata: Metadata = {
   title: "Belgrano Dining Guide | Hidden Gems & Classic Institutions | Buenos Aires",
-  description: "Discover Belgrano's finest restaurants. Sophisticated dining in a residential setting, from classic Argentine institutions to contemporary culinary gems.",
+  description: "Discover Belgrano&apos;s finest restaurants. Sophisticated dining in a residential setting, from classic Argentine institutions to contemporary culinary gems.",
   keywords: ["Belgrano restaurants", "Corte Comedor", "Roux Buenos Aires", "fine dining Belgrano", "Buenos Aires dining"],
   openGraph: {
     title: "Belgrano Dining Guide | Hidden Gems & Classic Institutions",
-    description: "Explore Belgrano's sophisticated dining scene, from classic Argentine institutions to contemporary gems.",
+    description: "Explore Belgrano&apos;s sophisticated dining scene, from classic Argentine institutions to contemporary gems.",
   },
 };
 
@@ -51,7 +51,7 @@ const restaurants = [
     phone: "+54 11 4006-0962",
     website: "https://www.cortecomedor.com",
     price: "$$$",
-    description: "A contemporary restaurant that has earned international recognition for its creative approach to Argentine cuisine. Chef Pedro Bargero's open-fire cooking and innovative presentations have made this one of Buenos Aires' most exciting dining destinations. The industrial-chic space in a converted warehouse adds to the appeal.",
+    description: "A contemporary restaurant that has earned international recognition for its creative approach to Argentine cuisine. Chef Pedro Bargero's open-fire cooking and innovative presentations have made this one of Buenos Aires&apos; most exciting dining destinations. The industrial-chic space in a converted warehouse adds to the appeal.",
     mustTry: ["Fire-grilled meats", "Creative starters", "House-made breads", "Seasonal cocktails"],
     reservations: "Recommended",
     dressCode: "Smart casual",
@@ -67,7 +67,7 @@ const restaurants = [
     phone: "+54 11 4704-4312",
     website: "https://www.elpobreluis.com",
     price: "$$",
-    description: "A beloved neighborhood institution that has been serving some of Buenos Aires' best grilled meats for decades. The no-frills atmosphere, generous portions, and consistently excellent quality have earned it a devoted following. The chorizo and morcilla are legendary.",
+    description: "A beloved neighborhood institution that has been serving some of Buenos Aires&apos; best grilled meats for decades. The no-frills atmosphere, generous portions, and consistently excellent quality have earned it a devoted following. The chorizo and morcilla are legendary.",
     mustTry: ["Chorizo criollo", "Morcilla", "Vacío", "Provoleta"],
     reservations: "Recommended for weekends",
     dressCode: "Casual",
@@ -83,7 +83,7 @@ const restaurants = [
     phone: "+54 11 4784-2205",
     website: "https://www.lacasonadebelgrano.com",
     price: "$$",
-    description: "Housed in a beautiful old mansion, La Casona offers traditional Argentine cuisine in an elegant setting. The historic building, with its stained glass and antique furnishings, provides a glimpse into Buenos Aires' past. The menu features classic dishes executed with care.",
+    description: "Housed in a beautiful old mansion, La Casona offers traditional Argentine cuisine in an elegant setting. The historic building, with its stained glass and antique furnishings, provides a glimpse into Buenos Aires&apos; past. The menu features classic dishes executed with care.",
     mustTry: ["Empanadas", "Milanesa", "Pastas caseras", "Flan casero"],
     reservations: "Recommended",
     dressCode: "Smart casual",
@@ -188,7 +188,7 @@ export default function BelgranoDiningPage() {
               <span className="block text-emerald-400">Dining Guide</span>
             </h1>
             <p className="text-xl text-stone-300 mb-8 leading-relaxed max-w-2xl">
-              Sophisticated dining in Buenos Aires' most elegant residential neighborhood. 
+              Sophisticated dining in Buenos Aires&apos; most elegant residential neighborhood. 
               Discover hidden gems and classic institutions beloved by locals.
             </p>
             <div className="flex flex-wrap gap-4 text-sm text-stone-400">
@@ -218,9 +218,9 @@ export default function BelgranoDiningPage() {
                 <Star className="w-3 h-3 mr-1" />
                 Featured Restaurants
               </Badge>
-              <h2 className="text-3xl md:text-4xl font-bold mb-4">Belgrano's Best</h2>
+              <h2 className="text-3xl md:text-4xl font-bold mb-4">Belgrano&apos;s Best</h2>
               <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-                The restaurants that define Belgrano's sophisticated dining scene.
+                The restaurants that define Belgrano&apos;s sophisticated dining scene.
               </p>
             </div>
 
@@ -320,7 +320,7 @@ export default function BelgranoDiningPage() {
               </Badge>
               <h2 className="text-3xl font-bold mb-4">Additional Recommendations</h2>
               <p className="text-lg text-muted-foreground">
-                More exceptional restaurants that showcase Belgrano's culinary diversity.
+                More exceptional restaurants that showcase Belgrano&apos;s culinary diversity.
               </p>
             </div>
 

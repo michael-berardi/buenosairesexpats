@@ -19,11 +19,11 @@ import {
 
 export const metadata: Metadata = {
   title: "Recoleta Dining Guide | Michelin Stars & Fine Dining | Buenos Aires",
-  description: "The definitive guide to Recoleta's finest restaurants. Home to Aramburu, Argentina's only two-Michelin-starred restaurant, and elegant dining at Four Seasons.",
+  description: "The definitive guide to Recoleta&apos;s finest restaurants. Home to Aramburu, Argentina&apos;s only two-Michelin-starred restaurant, and elegant dining at Four Seasons.",
   keywords: ["Recoleta restaurants", "Aramburu Buenos Aires", "Elena Four Seasons", "Michelin star Recoleta", "fine dining Buenos Aires"],
   openGraph: {
     title: "Recoleta Dining Guide | Michelin Stars & Fine Dining",
-    description: "Discover Recoleta's finest restaurants, including Aramburu - Argentina's only two-Michelin-starred restaurant.",
+    description: "Discover Recoleta&apos;s finest restaurants, including Aramburu - Argentina&apos;s only two-Michelin-starred restaurant.",
   },
 };
 
@@ -37,7 +37,7 @@ const restaurants = [
     phone: "+54 11 4305-0439",
     website: "https://www.arambururesto.com.ar",
     price: "$$$$$",
-    description: "Argentina's only two-Michelin-starred restaurant and a Relais & Châteaux property. Chef Gonzalo Aramburu creates artistic, boundary-pushing cuisine that reimagines Argentine ingredients through a contemporary lens. The intimate 18-seat dining room offers a theatrical tasting menu experience.",
+    description: "Argentina&apos;s only two-Michelin-starred restaurant and a Relais & Châteaux property. Chef Gonzalo Aramburu creates artistic, boundary-pushing cuisine that reimagines Argentine ingredients through a contemporary lens. The intimate 18-seat dining room offers a theatrical tasting menu experience.",
     mustTry: ["24-course tasting menu", "Patagonian lamb", "Artisanal bread service"],
     reservations: "Essential - book 30+ days ahead",
     dressCode: "Smart elegant",
@@ -71,7 +71,7 @@ const restaurants = [
     phone: "+54 11 5171-1234",
     website: "https://buenosaires.park.hyatt.com/en/hotel/dining/DuhauRestaurante.html",
     price: "$$$$",
-    description: "Housed in the stunning Palacio Duhau, this Michelin-selected restaurant offers sophisticated Argentine cuisine in an opulent setting. The terrace overlooking the palace gardens is one of Buenos Aires' most elegant dining spaces. The wine cellar features over 7,000 labels.",
+    description: "Housed in the stunning Palacio Duhau, this Michelin-selected restaurant offers sophisticated Argentine cuisine in an opulent setting. The terrace overlooking the palace gardens is one of Buenos Aires&apos; most elegant dining spaces. The wine cellar features over 7,000 labels.",
     mustTry: ["Grilled rib chops for two", "Patagonian lamb shoulder", "Wine cellar dinner"],
     reservations: "Recommended",
     dressCode: "Smart elegant",
@@ -119,7 +119,7 @@ const restaurants = [
     phone: "+54 11 4313-1336",
     website: "https://www.cabanalaslilas.com",
     price: "$$$$",
-    description: "While technically in Puerto Madero, this legendary steakhouse is a must-visit for serious carnivores. Their own estancia supplies premium beef, and the open-fire grilling is masterful. A classic that's been serving the city's elite for decades.",
+    description: "While technically in Puerto Madero, this legendary steakhouse is a must-visit for serious carnivores. Their own estancia supplies premium beef, and the open-fire grilling is masterful. A classic that's been serving the city&apos;s elite for decades.",
     mustTry: ["Bife de chorizo", "Ojo de bife", "Provoleta"],
     reservations: "Recommended",
     dressCode: "Smart casual",
@@ -193,8 +193,8 @@ export default function RecoletaDiningPage() {
               <span className="block text-amber-400">Dining Guide</span>
             </h1>
             <p className="text-xl text-stone-300 mb-8 leading-relaxed max-w-2xl">
-              Home to Aramburu, Argentina's only two-Michelin-starred restaurant, 
-              and the elegant dining rooms of the city's most prestigious hotels.
+              Home to Aramburu, Argentina&apos;s only two-Michelin-starred restaurant, 
+              and the elegant dining rooms of the city&apos;s most prestigious hotels.
             </p>
             <div className="flex flex-wrap gap-4 text-sm text-stone-400">
               <span className="flex items-center gap-2">
@@ -207,7 +207,7 @@ export default function RecoletaDiningPage() {
               </span>
               <span className="flex items-center gap-2">
                 <MapPin className="w-4 h-4 text-amber-400" />
-                Buenos Aires' Most Elegant
+                Buenos Aires&apos; Most Elegant
               </span>
             </div>
           </div>
@@ -225,7 +225,7 @@ export default function RecoletaDiningPage() {
               </Badge>
               <h2 className="text-3xl md:text-4xl font-bold mb-4">The Crown Jewels</h2>
               <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-                Recoleta's most exceptional dining experiences, from Michelin-starred temples 
+                Recoleta&apos;s most exceptional dining experiences, from Michelin-starred temples 
                 to legendary hotel restaurants.
               </p>
             </div>

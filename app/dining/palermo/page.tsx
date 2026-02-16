@@ -17,11 +17,11 @@ import {
 
 export const metadata: Metadata = {
   title: "Palermo Dining Guide | Don Julio & World-Class Restaurants | Buenos Aires",
-  description: "The ultimate guide to Palermo's culinary scene. Home to Don Julio, Best Restaurant in Latin America 2024, and the vibrant heart of Buenos Aires dining.",
+  description: "The ultimate guide to Palermo&apos;s culinary scene. Home to Don Julio, Best Restaurant in Latin America 2024, and the vibrant heart of Buenos Aires dining.",
   keywords: ["Palermo restaurants", "Don Julio Buenos Aires", "Crizia restaurant", "Michelin star Palermo", "best restaurants BA"],
   openGraph: {
     title: "Palermo Dining Guide | Don Julio & World-Class Restaurants",
-    description: "Discover Palermo's legendary dining scene, including Don Julio - Best Restaurant in Latin America 2024.",
+    description: "Discover Palermo&apos;s legendary dining scene, including Don Julio - Best Restaurant in Latin America 2024.",
   },
 };
 
@@ -29,7 +29,7 @@ const restaurants = [
   {
     name: "Don Julio",
     stars: 1,
-    awards: ["World's Best Steakhouse 2024", "Latin America's 50 Best #1 2024"],
+    awards: ["World&apos;s Best Steakhouse 2024", "Latin America&apos;s 50 Best #1 2024"],
     type: "Argentine Parrilla",
     chef: "Pablo Rivero",
     address: "Guatemala 4699, Palermo Soho",
@@ -52,7 +52,7 @@ const restaurants = [
     phone: "+54 11 5291-7077",
     website: "https://www.crizia.com.ar",
     price: "$$$$",
-    description: "Newly awarded a Michelin star in 2025, Crizia is Chef Gabriel Oggero's ode to fire and Argentine ingredients. The open kitchen centers around a massive wood-fired grill, where everything from vegetables to premium meats is cooked over flames. The industrial-chic space and creative menu make this one of BA's most exciting dining experiences.",
+    description: "Newly awarded a Michelin star in 2025, Crizia is Chef Gabriel Oggero's ode to fire and Argentine ingredients. The open kitchen centers around a massive wood-fired grill, where everything from vegetables to premium meats is cooked over flames. The industrial-chic space and creative menu make this one of BA&apos;s most exciting dining experiences.",
     mustTry: ["Wood-fired oysters", "Smoked beet salad", "Fire-grilled sweetbreads", "Burnt cheesecake"],
     reservations: "Essential",
     dressCode: "Smart casual",
@@ -62,14 +62,14 @@ const restaurants = [
   {
     name: "Tegui",
     stars: 0,
-    awards: ["Latin America's 50 Best"],
+    awards: ["Latin America&apos;s 50 Best"],
     type: "Contemporary Argentine",
     chef: "Germán Martitegui",
     address: "Costa Rica 5852, Palermo Hollywood",
     phone: "+54 11 5291-3330",
     website: "https://www.tegui.com.ar",
     price: "$$$$",
-    description: "A Palermo institution and longtime member of Latin America's 50 Best. Behind an unmarked facade, Tegui offers one of Buenos Aires' most refined tasting menus. Chef Germán Martitegui combines Argentine ingredients with international techniques in a sleek, contemporary space.",
+    description: "A Palermo institution and longtime member of Latin America&apos;s 50 Best. Behind an unmarked facade, Tegui offers one of Buenos Aires&apos; most refined tasting menus. Chef Germán Martitegui combines Argentine ingredients with international techniques in a sleek, contemporary space.",
     mustTry: ["Seasonal tasting menu", "Crispy langoustines", "Duck magret"],
     reservations: "Essential",
     dressCode: "Smart casual to elegant",
@@ -101,7 +101,7 @@ const restaurants = [
     phone: "+54 11 4832-0704",
     website: "https://www.lacabrera.com.ar",
     price: "$$$",
-    description: "One of Palermo's most popular parrillas, known for generous portions and an extensive wine list. The complimentary appetizers and side dishes that accompany each entrée make it excellent value. The outdoor seating on Cabrera street is perfect for people-watching.",
+    description: "One of Palermo&apos;s most popular parrillas, known for generous portions and an extensive wine list. The complimentary appetizers and side dishes that accompany each entrée make it excellent value. The outdoor seating on Cabrera street is perfect for people-watching.",
     mustTry: ["Bife de chorizo", "Ojo de bife", "Free appetizers", "Malbec selection"],
     reservations: "Recommended",
     dressCode: "Smart casual",
@@ -111,7 +111,7 @@ const restaurants = [
   {
     name: "Anafe",
     stars: 0,
-    awards: ["Latin America's 50 Best"],
+    awards: ["Latin America&apos;s 50 Best"],
     type: "Contemporary Small Plates",
     chef: "Luisa Martínez & Lula Martin del Campo",
     address: "Gorriti 4862, Palermo Soho",
@@ -128,7 +128,7 @@ const restaurants = [
   {
     name: "Mishiguene",
     stars: 0,
-    awards: ["Latin America's 50 Best"],
+    awards: ["Latin America&apos;s 50 Best"],
     type: "Jewish-Argentine",
     chef: "Tomás Kalika",
     address: "Lafinur 3368, Palermo",
@@ -184,15 +184,15 @@ export default function PalermoDiningPage() {
             
             <Badge className="mb-4 bg-amber-500/20 text-amber-300 border-amber-500/30">
               <Award className="w-3 h-3 mr-1" />
-              Latin America's Best
+              Latin America&apos;s Best
             </Badge>
             <h1 className="text-5xl md:text-6xl font-bold mb-6 tracking-tight">
               Palermo
               <span className="block text-amber-400">Dining Guide</span>
             </h1>
             <p className="text-xl text-stone-300 mb-8 leading-relaxed max-w-2xl">
-              The beating heart of Buenos Aires' culinary scene. Home to Don Julio, 
-              Best Restaurant in Latin America 2024, and the city's most vibrant dining culture.
+              The beating heart of Buenos Aires&apos; culinary scene. Home to Don Julio, 
+              Best Restaurant in Latin America 2024, and the city&apos;s most vibrant dining culture.
             </p>
             <div className="flex flex-wrap gap-4 text-sm text-stone-400">
               <span className="flex items-center gap-2">
@@ -201,7 +201,7 @@ export default function PalermoDiningPage() {
               </span>
               <span className="flex items-center gap-2">
                 <Award className="w-4 h-4 text-amber-400" />
-                World's #1 Steakhouse
+                World&apos;s #1 Steakhouse
               </span>
               <span className="flex items-center gap-2">
                 <MapPin className="w-4 h-4 text-amber-400" />
@@ -330,7 +330,7 @@ export default function PalermoDiningPage() {
               </Badge>
               <h2 className="text-3xl font-bold mb-4">Additional Recommendations</h2>
               <p className="text-lg text-muted-foreground">
-                More exceptional restaurants that define Palermo's dining scene.
+                More exceptional restaurants that define Palermo&apos;s dining scene.
               </p>
             </div>
 
