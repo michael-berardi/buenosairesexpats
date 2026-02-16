@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="none" role="img">
+  <title>Buenos Aires Expats</title>
+  <!-- Compass outer -->
+  <circle cx="256" cy="256" r="220" fill="none" stroke="currentColor" stroke-width="24"/>
+  <!-- Compass points -->
+  <path d="M256 96 L276 216 L256 236 L236 216 Z" fill="currentColor"/>
+  <path d="M256 416 L236 296 L256 276 L276 296 Z" fill="currentColor" opacity="0.6"/>
+  <path d="M96 256 L216 236 L236 256 L216 276 Z" fill="currentColor" opacity="0.6"/>
+  <path d="M416 256 L296 276 L276 256 L296 236 Z" fill="currentColor" opacity="0.6"/>
+  <!-- Center -->
+  <circle cx="256" cy="256" r="40" fill="currentColor"/>
+</svg>

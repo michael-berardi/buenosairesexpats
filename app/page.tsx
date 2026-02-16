@@ -1,7 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { StructuredData } from "@/components/structured-data";
 import { 
@@ -16,7 +15,8 @@ import {
   Globe,
   Shield,
   TrendingUp,
-  Mail
+  Mail,
+  Quote
 } from "lucide-react";
 import { generateWebSiteSchema, generateOrganizationSchema } from "@/lib/schema";
 
@@ -83,6 +83,15 @@ const testimonials = [
     role: "Retired Teacher, Former Phoenix",
   },
 ];
+
+// Reusable quote icon component
+function QuoteIcon() {
+  return (
+    <svg className="w-8 h-8 text-sky-200 mb-4" fill="currentColor" viewBox="0 0 24 24">
+      <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/>
+    </svg>
+  );
+}
 
 export default function Home() {
   // Generate structured data
@@ -173,13 +182,13 @@ export default function Home() {
       </section>
 
       {/* Features Grid */}
-      <section className="py-20 md:py-32">
+      <section className="section-padding bg-white">
         <div className="container mx-auto px-4">
           <div className="text-center max-w-2xl mx-auto mb-16 animate-fade-in-up">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">
+            <h2 className="heading-lg mb-4">
               Everything You Need to Make the Move
             </h2>
-            <p className="text-muted-foreground text-lg">
+            <p className="text-body text-lg">
               Comprehensive guides written by Americans who&apos;ve actually done this. 
               No fluff, no sugar-coating, just practical information.
             </p>
@@ -187,107 +196,91 @@ export default function Home() {
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             {features.map((feature, index) => (
-              <Card 
+              <div 
                 key={feature.title} 
-                className="group card-hover animate-fade-in-up"
+                className="card-feature animate-fade-in-up"
                 style={{ animationDelay: `${index * 100}ms` }}
               >
-                <CardHeader>
-                  <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center mb-4 group-hover:bg-primary/20 group-hover:scale-110 transition-all duration-300">
-                    <feature.icon className="w-6 h-6 text-primary" />
-                  </div>
-                  <CardTitle>{feature.title}</CardTitle>
-                  <CardDescription>{feature.description}</CardDescription>
-                </CardHeader>
-                <CardContent>
-                  <Link 
-                    href={feature.href}
-                    className="inline-flex items-center text-sm font-medium text-primary hover:underline group/link"
-                  >
-                    Learn more
-                    <ArrowRight className="w-4 h-4 ml-1 group-hover/link:translate-x-1 transition-transform" />
-                  </Link>
-                </CardContent>
-              </Card>
+                <div className="icon-wrapper">
+                  <feature.icon className="w-5 h-5" />
+                </div>
+                <h3 className="heading-sm mb-2">{feature.title}</h3>
+                <p className="text-body-sm mb-4 flex-grow">{feature.description}</p>
+                <Link 
+                  href={feature.href}
+                  className="inline-flex items-center text-sm font-medium text-sky-600 hover:text-sky-700 group/link mt-auto"
+                >
+                  Learn more
+                  <ArrowRight className="w-4 h-4 ml-1 group-hover/link:translate-x-1 transition-transform" />
+                </Link>
+              </div>
             ))}
           </div>
         </div>
       </section>
 
       {/* Popular Guides */}
-      <section className="py-20 bg-muted/30">
+      <section className="section-padding bg-muted/30">
         <div className="container mx-auto px-4">
           <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-4 mb-12">
             <div>
-              <h2 className="text-3xl font-bold mb-2">Most Popular Guides</h2>
-              <p className="text-muted-foreground">Start with these essential resources</p>
+              <h2 className="heading-md mb-2">Most Popular Guides</h2>
+              <p className="text-body">Start with these essential resources</p>
             </div>
-            <Button asChild variant="outline">
+            <Button asChild variant="outline" className="btn-outline">
               <Link href="/why-argentina">Why Buenos Aires?</Link>
             </Button>
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-            <Card className="flex flex-col card-hover">
-              <CardHeader>
-                <Badge className="w-fit mb-2">Most Popular</Badge>
-                <CardTitle>Argentina Digital Nomad Visa</CardTitle>
-                <CardDescription>
-                  Complete guide to the 180-day remote work visa, including requirements, 
-                  application process, and tips for approval.
-                </CardDescription>
-              </CardHeader>
-              <CardContent className="mt-auto">
-                <Button asChild variant="outline" className="w-full">
-                  <Link href="/visas/digital-nomad">Read Guide</Link>
-                </Button>
-              </CardContent>
-            </Card>
+            <div className="card-feature">
+              <Badge className="w-fit mb-3 bg-sky-100 text-sky-700 hover:bg-sky-100">Most Popular</Badge>
+              <h3 className="heading-sm mb-2">Argentina Digital Nomad Visa</h3>
+              <p className="text-body-sm mb-4 flex-grow">
+                Complete guide to the 180-day remote work visa, including requirements, 
+                application process, and tips for approval.
+              </p>
+              <Button asChild variant="outline" className="w-full btn-outline">
+                <Link href="/visas/digital-nomad">Read Guide</Link>
+              </Button>
+            </div>
 
-            <Card className="flex flex-col card-hover">
-              <CardHeader>
-                <Badge className="w-fit mb-2" variant="secondary">Updated Monthly</Badge>
-                <CardTitle>Cost of Living in Buenos Aires</CardTitle>
-                <CardDescription>
-                  Real 2025 budget breakdowns for singles, couples, and families. 
-                  Includes rent, food, healthcare, and entertainment.
-                </CardDescription>
-              </CardHeader>
-              <CardContent className="mt-auto">
-                <Button asChild variant="outline" className="w-full">
-                  <Link href="/cost-of-living">See Costs</Link>
-                </Button>
-              </CardContent>
-            </Card>
+            <div className="card-feature">
+              <Badge className="w-fit mb-3 bg-stone-100 text-stone-700 hover:bg-stone-100">Updated Monthly</Badge>
+              <h3 className="heading-sm mb-2">Cost of Living in Buenos Aires</h3>
+              <p className="text-body-sm mb-4 flex-grow">
+                Real 2025 budget breakdowns for singles, couples, and families. 
+                Includes rent, food, healthcare, and entertainment.
+              </p>
+              <Button asChild variant="outline" className="w-full btn-outline">
+                <Link href="/cost-of-living">See Costs</Link>
+              </Button>
+            </div>
 
-            <Card className="flex flex-col card-hover">
-              <CardHeader>
-                <Badge className="w-fit mb-2" variant="secondary">Stories</Badge>
-                <CardTitle>Real Expat Experiences</CardTitle>
-                <CardDescription>
-                  Read honest accounts from Americans who moved to Buenos Aires. 
-                  Learn what worked and what didn&apos;t.
-                </CardDescription>
-              </CardHeader>
-              <CardContent className="mt-auto">
-                <Button asChild variant="outline" className="w-full">
-                  <Link href="/stories">Read Stories</Link>
-                </Button>
-              </CardContent>
-            </Card>
+            <div className="card-feature">
+              <Badge className="w-fit mb-3 bg-stone-100 text-stone-700 hover:bg-stone-100">Stories</Badge>
+              <h3 className="heading-sm mb-2">Real Expat Experiences</h3>
+              <p className="text-body-sm mb-4 flex-grow">
+                Read honest accounts from Americans who moved to Buenos Aires. 
+                Learn what worked and what didn&apos;t.
+              </p>
+              <Button asChild variant="outline" className="w-full btn-outline">
+                <Link href="/stories">Read Stories</Link>
+              </Button>
+            </div>
           </div>
         </div>
       </section>
 
       {/* Newsletter Section */}
-      <section className="py-16 bg-sky-50">
+      <section className="section-padding bg-sky-50">
         <div className="container mx-auto px-4">
           <div className="max-w-2xl mx-auto text-center">
-            <div className="w-12 h-12 rounded-xl bg-sky-100 flex items-center justify-center mx-auto mb-6">
-              <Mail className="w-6 h-6 text-sky-600" />
+            <div className="icon-wrapper mx-auto mb-6">
+              <Mail className="w-5 h-5" />
             </div>
-            <h2 className="text-2xl md:text-3xl font-bold mb-4">Get the Latest Updates</h2>
-            <p className="text-stone-600 mb-6">
+            <h2 className="heading-md mb-4">Get the Latest Updates</h2>
+            <p className="text-body text-lg mb-6">
               Join 2,400+ expats getting weekly updates on visa changes, cost of living, 
               and insider tips for living in Buenos Aires.
             </p>
@@ -295,14 +288,14 @@ export default function Home() {
               <input 
                 type="email" 
                 placeholder="your@email.com" 
-                className="flex h-11 w-full rounded-lg border border-stone-200 bg-white px-4 py-2 text-sm placeholder:text-stone-400 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-sky-500 focus-visible:ring-offset-2"
+                className="flex h-11 w-full rounded-lg border border-border bg-white px-4 py-2 text-sm placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-sky-500 focus-visible:ring-offset-2"
               />
-              <Button className="h-11 px-6 bg-sky-600 hover:bg-sky-700 text-white">
+              <Button className="h-11 px-6 btn-primary">
                 Subscribe
                 <ArrowRight className="w-4 h-4 ml-2" />
               </Button>
             </div>
-            <p className="text-xs text-stone-500 mt-4">
+            <p className="text-xs text-muted-foreground mt-4">
               No spam, unsubscribe anytime. We respect your privacy.
             </p>
           </div>
@@ -310,11 +303,11 @@ export default function Home() {
       </section>
 
       {/* Testimonials */}
-      <section className="py-20 bg-stone-50">
+      <section className="section-padding bg-muted/30">
         <div className="container mx-auto px-4">
           <div className="text-center max-w-2xl mx-auto mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">What Expats Are Saying</h2>
-            <p className="text-stone-600 text-lg">
+            <h2 className="heading-lg mb-4">What Expats Are Saying</h2>
+            <p className="text-body text-lg">
               Real stories from Americans who made the move
             </p>
           </div>
@@ -325,13 +318,11 @@ export default function Home() {
                 className="card-testimonial animate-fade-in-up"
                 style={{ animationDelay: `${index * 100}ms` }}
               >
-                <svg className="w-8 h-8 text-sky-200 mb-4" fill="currentColor" viewBox="0 0 24 24">
-                  <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/>
-                </svg>
-                <p className="text-stone-700 mb-6 leading-relaxed">&ldquo;{testimonial.quote}&rdquo;</p>
-                <div className="pt-4 border-t border-stone-100">
-                  <p className="font-semibold text-stone-900">{testimonial.author}</p>
-                  <p className="text-sm text-stone-500">{testimonial.role}</p>
+                <QuoteIcon />
+                <p className="text-body mb-6 leading-relaxed">&ldquo;{testimonial.quote}&rdquo;</p>
+                <div className="pt-4 border-t border-border/50">
+                  <p className="font-semibold text-foreground">{testimonial.author}</p>
+                  <p className="text-sm text-muted-foreground">{testimonial.role}</p>
                 </div>
               </div>
             ))}
@@ -340,7 +331,7 @@ export default function Home() {
       </section>
 
       {/* CTA */}
-      <section className="py-20 bg-primary text-primary-foreground relative overflow-hidden">
+      <section className="section-padding bg-primary text-primary-foreground relative overflow-hidden">
         <div className="absolute inset-0 opacity-10">
           <Image
             src="/images/hero-cityscape.jpg"
@@ -354,7 +345,7 @@ export default function Home() {
         </div>
         <div className="container mx-auto px-4 text-center relative">
           <div className="max-w-2xl mx-auto">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">
+            <h2 className="heading-lg mb-4">
               Ready to Explore Your Options?
             </h2>
             <p className="text-primary-foreground/90 mb-8 text-lg">

@@ -29,7 +29,7 @@ export const metadata: Metadata = {
     title: "Buenos Aires Expats | Your Complete Guide to Living in Buenos Aires",
     description: "The ultimate resource for expats moving to Buenos Aires. Honest guides, visa information, cost of living data, and a thriving expat community.",
     images: [{
-      url: '/images/og-image.jpg',
+      url: '/og-image.svg',
       width: 1200,
       height: 630,
       alt: 'Buenos Aires Expats - Your guide to life in Argentina',
@@ -39,7 +39,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Buenos Aires Expats | Your Complete Guide to Living in Buenos Aires",
     description: "The ultimate resource for expats moving to Buenos Aires. Honest guides, visa information, cost of living data, and a thriving expat community.",
-    images: ['/images/og-image.jpg'],
+    images: ['/og-image.svg'],
   },
   robots: {
     index: true,
@@ -53,8 +53,8 @@ export const metadata: Metadata = {
     },
   },
   icons: {
-    icon: '/favicon.ico',
-    apple: '/favicon.ico',
+    icon: '/favicon.svg',
+    apple: '/favicon.svg',
   },
 };
 

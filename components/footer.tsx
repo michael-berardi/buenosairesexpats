@@ -30,8 +30,8 @@ const footerLinks = {
 
 export function Footer() {
   return (
-    <footer className="border-t bg-muted/50">
-      <div className="container mx-auto px-4 py-12 md:py-16">
+    <footer className="border-t bg-white">
+      <div className="container mx-auto px-4 py-16 md:py-20">
         <div className="grid grid-cols-2 gap-8 md:grid-cols-4 lg:grid-cols-5">
           {/* Brand */}
           <div className="col-span-2 lg:col-span-1">
@@ -49,7 +49,7 @@ export function Footer() {
 
           {/* Visas */}
           <div>
-            <h3 className="font-semibold mb-3">Visas</h3>
+            <h3 className="text-sm font-semibold text-foreground mb-3 uppercase tracking-wide">Visas</h3>
             <ul className="space-y-2">
               {footerLinks.visas.map((link) => (
                 <li key={link.href}>
@@ -66,7 +66,7 @@ export function Footer() {
 
           {/* Guides */}
           <div>
-            <h3 className="font-semibold mb-3">Guides</h3>
+            <h3 className="text-sm font-semibold text-foreground mb-3 uppercase tracking-wide">Guides</h3>
             <ul className="space-y-2">
               {footerLinks.guides.map((link) => (
                 <li key={link.href}>
@@ -83,7 +83,7 @@ export function Footer() {
 
           {/* Resources */}
           <div>
-            <h3 className="font-semibold mb-3">Resources</h3>
+            <h3 className="text-sm font-semibold text-foreground mb-3 uppercase tracking-wide">Resources</h3>
             <ul className="space-y-2">
               {footerLinks.resources.map((link) => (
                 <li key={link.href}>
@@ -100,7 +100,7 @@ export function Footer() {
 
           {/* Company */}
           <div>
-            <h3 className="font-semibold mb-3">Company</h3>
+            <h3 className="text-sm font-semibold text-foreground mb-3 uppercase tracking-wide">Company</h3>
             <ul className="space-y-2">
               {footerLinks.company.map((link) => (
                 <li key={link.href}>

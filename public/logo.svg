@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="none" role="img">
+  <title>Buenos Aires Expats</title>
+  <desc>A welcoming compass combining navigation and Argentine sun</desc>
+  <!-- Outer circle -->
+  <circle cx="256" cy="256" r="220" fill="#0EA5E9"/>
+  <!-- Inner white circle -->
+  <circle cx="256" cy="256" r="180" fill="white"/>
+  <!-- Compass points -->
+  <path d="M256 96 L276 216 L256 236 L236 216 Z" fill="#0EA5E9"/>
+  <path d="M256 416 L236 296 L256 276 L276 296 Z" fill="#64748B"/>
+  <path d="M96 256 L216 236 L236 256 L216 276 Z" fill="#64748B"/>
+  <path d="M416 256 L296 276 L276 256 L296 236 Z" fill="#64748B"/>
+  <!-- Center sun (Sol de Mayo inspired) -->
+  <circle cx="256" cy="256" r="40" fill="#FACC15"/>
+  <!-- Sun rays -->
+  <g stroke="#FACC15" stroke-width="6" stroke-linecap="round">
+    <line x1="256" y1="196" x2="256" y2="176"/>
+    <line x1="256" y1="316" x2="256" y2="336"/>
+    <line x1="196" y1="256" x2="176" y2="256"/>
+    <line x1="316" y1="256" x2="336" y2="256"/>
+    <line x1="213" y1="213" x2="199" y2="199"/>
+    <line x1="299" y1="299" x2="313" y2="313"/>
+    <line x1="213" y1="299" x2="199" y2="313"/>
+    <line x1="299" y1="213" x2="313" y2="199"/>
+  </g>
+</svg>
