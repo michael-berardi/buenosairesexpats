@@ -155,17 +155,17 @@ export default function Home() {
       </section>
 
       {/* Stats Section */}
-      <section className="border-y bg-muted/30">
+      <section className="border-y bg-white">
         <div className="container mx-auto px-4 py-12">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
             {stats.map((stat, index) => (
               <div 
                 key={stat.label} 
-                className="text-center animate-fade-in-up"
+                className="card-stat animate-fade-in-up"
                 style={{ animationDelay: `${index * 100}ms` }}
               >
-                <div className="text-3xl md:text-4xl font-bold text-primary">{stat.value}</div>
-                <div className="text-sm text-muted-foreground mt-1">{stat.label}</div>
+                <div className="card-stat-value">{stat.value}</div>
+                <div className="card-stat-label">{stat.label}</div>
               </div>
             ))}
           </div>
@@ -280,12 +280,14 @@ export default function Home() {
       </section>
 
       {/* Newsletter Section */}
-      <section className="py-16 bg-gradient-to-br from-sky-50 to-amber-50 dark:from-sky-950/20 dark:to-amber-950/10">
+      <section className="py-16 bg-sky-50">
         <div className="container mx-auto px-4">
           <div className="max-w-2xl mx-auto text-center">
-            <Mail className="w-10 h-10 text-primary mx-auto mb-4" />
+            <div className="w-12 h-12 rounded-xl bg-sky-100 flex items-center justify-center mx-auto mb-6">
+              <Mail className="w-6 h-6 text-sky-600" />
+            </div>
             <h2 className="text-2xl md:text-3xl font-bold mb-4">Get the Latest Updates</h2>
-            <p className="text-muted-foreground mb-6">
+            <p className="text-stone-600 mb-6">
               Join 2,400+ expats getting weekly updates on visa changes, cost of living, 
               and insider tips for living in Buenos Aires.
             </p>
@@ -293,14 +295,14 @@ export default function Home() {
               <input 
                 type="email" 
                 placeholder="your@email.com" 
-                className="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2"
+                className="flex h-11 w-full rounded-lg border border-stone-200 bg-white px-4 py-2 text-sm placeholder:text-stone-400 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-sky-500 focus-visible:ring-offset-2"
               />
-              <Button className="btn-press">
+              <Button className="h-11 px-6 bg-sky-600 hover:bg-sky-700 text-white">
                 Subscribe
                 <ArrowRight className="w-4 h-4 ml-2" />
               </Button>
             </div>
-            <p className="text-xs text-muted-foreground mt-4">
+            <p className="text-xs text-stone-500 mt-4">
               No spam, unsubscribe anytime. We respect your privacy.
             </p>
           </div>
@@ -308,27 +310,30 @@ export default function Home() {
       </section>
 
       {/* Testimonials */}
-      <section className="py-20">
+      <section className="py-20 bg-stone-50">
         <div className="container mx-auto px-4">
-          <h2 className="text-3xl font-bold text-center mb-4">What Expats Are Saying</h2>
-          <p className="text-center text-muted-foreground mb-12 max-w-2xl mx-auto">
-            Real stories from Americans who made the move
-          </p>
-          <div className="grid md:grid-cols-3 gap-6 max-w-5xl mx-auto">
+          <div className="text-center max-w-2xl mx-auto mb-12">
+            <h2 className="text-3xl md:text-4xl font-bold mb-4">What Expats Are Saying</h2>
+            <p className="text-stone-600 text-lg">
+              Real stories from Americans who made the move
+            </p>
+          </div>
+          <div className="grid md:grid-cols-3 gap-6 max-w-6xl mx-auto">
             {testimonials.map((testimonial, index) => (
-              <Card 
+              <div 
                 key={index} 
-                className="bg-primary/5 border-primary/10 card-hover"
+                className="card-testimonial animate-fade-in-up"
                 style={{ animationDelay: `${index * 100}ms` }}
               >
-                <CardContent className="pt-6">
-                  <p className="text-foreground mb-4 italic">&ldquo;{testimonial.quote}&rdquo;</p>
-                  <div>
-                    <p className="font-semibold">{testimonial.author}</p>
-                    <p className="text-sm text-muted-foreground">{testimonial.role}</p>
-                  </div>
-                </CardContent>
-              </Card>
+                <svg className="w-8 h-8 text-sky-200 mb-4" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/>
+                </svg>
+                <p className="text-stone-700 mb-6 leading-relaxed">&ldquo;{testimonial.quote}&rdquo;</p>
+                <div className="pt-4 border-t border-stone-100">
+                  <p className="font-semibold text-stone-900">{testimonial.author}</p>
+                  <p className="text-sm text-stone-500">{testimonial.role}</p>
+                </div>
+              </div>
             ))}
           </div>
         </div>
