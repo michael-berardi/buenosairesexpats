@@ -172,7 +172,7 @@ const restaurants = [
 const quickStats = [
   { value: "2", label: "Michelin Stars", icon: Star },
   { value: "8", label: "Curated Restaurants", icon: Utensils },
-  { value: "4", label: "Michelin-Recognized", icon: Award },
+  { value: "5", label: "Michelin-Recognized", icon: Award },
 ];
 
 export default function RecoletaDiningPage() {
@@ -185,7 +185,7 @@ export default function RecoletaDiningPage() {
       <section className="relative min-h-[60vh] flex items-center overflow-hidden">
         <div className="absolute inset-0">
           <div className="absolute inset-0 bg-gradient-to-br from-stone-900 via-stone-800 to-amber-950" />
-          <div className="absolute inset-0 opacity-20 bg-[url('/images/recoleta-dining.jpg')] bg-cover bg-center" />
+          <div className="absolute inset-0 opacity-20 bg-[url('/images/hero-cityscape.jpg')] bg-cover bg-center" />
           <div className="absolute inset-0 bg-gradient-to-t from-stone-900 via-stone-900/60 to-transparent" />
         </div>
         

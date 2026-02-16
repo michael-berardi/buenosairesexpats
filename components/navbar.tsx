@@ -37,7 +37,7 @@ const guideItems = [
   { title: "Housing", href: "/housing", description: "Renting and buying property" },
   { title: "Learning Spanish", href: "/guides/learning-spanish", description: "Language schools and tips for mastering Spanish" },
   { title: "Getting Your DNI", href: "/guides/getting-dni", description: "Step-by-step guide to Argentine residency ID" },
-  { title: "Food & Dining", href: "/guides/food-dining", description: "Restaurants, cafes, and Argentine cuisine" },
+  { title: "Local Food Guide", href: "/guides/food-dining", description: "Everyday restaurants, cafes, and Argentine cuisine" },
   { title: "Safety", href: "/guides/safety", description: "Staying safe and avoiding scams" },
   { title: "Weather", href: "/guides/weather-climate", description: "Seasons and what to expect" },
   { title: "Cultural Etiquette", href: "/guides/cultural-etiquette", description: "Customs, greetings, and social norms" },
