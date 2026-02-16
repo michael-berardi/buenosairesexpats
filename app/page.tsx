@@ -234,37 +234,37 @@ export default function Home() {
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             <div className="card-feature">
-              <Badge className="w-fit mb-3 bg-sky-100 text-sky-700 hover:bg-sky-100">Most Popular</Badge>
+              <span className="badge-primary w-fit mb-3">Most Popular</span>
               <h3 className="heading-sm mb-2">Argentina Digital Nomad Visa</h3>
               <p className="text-body-sm mb-4 flex-grow">
                 Complete guide to the 180-day remote work visa, including requirements, 
                 application process, and tips for approval.
               </p>
-              <Button asChild variant="outline" className="w-full btn-outline">
+              <Button asChild variant="outline" className="w-full">
                 <Link href="/visas/digital-nomad">Read Guide</Link>
               </Button>
             </div>
 
             <div className="card-feature">
-              <Badge className="w-fit mb-3 bg-stone-100 text-stone-700 hover:bg-stone-100">Updated Monthly</Badge>
+              <span className="badge-secondary w-fit mb-3">Updated Monthly</span>
               <h3 className="heading-sm mb-2">Cost of Living in Buenos Aires</h3>
               <p className="text-body-sm mb-4 flex-grow">
                 Real 2025 budget breakdowns for singles, couples, and families. 
                 Includes rent, food, healthcare, and entertainment.
               </p>
-              <Button asChild variant="outline" className="w-full btn-outline">
+              <Button asChild variant="outline" className="w-full">
                 <Link href="/cost-of-living">See Costs</Link>
               </Button>
             </div>
 
             <div className="card-feature">
-              <Badge className="w-fit mb-3 bg-stone-100 text-stone-700 hover:bg-stone-100">Stories</Badge>
+              <span className="badge-secondary w-fit mb-3">Stories</span>
               <h3 className="heading-sm mb-2">Real Expat Experiences</h3>
               <p className="text-body-sm mb-4 flex-grow">
                 Read honest accounts from Americans who moved to Buenos Aires. 
                 Learn what worked and what didn&apos;t.
               </p>
-              <Button asChild variant="outline" className="w-full btn-outline">
+              <Button asChild variant="outline" className="w-full">
                 <Link href="/stories">Read Stories</Link>
               </Button>
             </div>
@@ -359,7 +359,7 @@ export default function Home() {
                   <ArrowRight className="w-4 h-4 ml-2" />
                 </Link>
               </Button>
-              <Button asChild size="lg" variant="outline" className="border-primary-foreground/30 hover:bg-primary-foreground/10 text-primary-foreground">
+              <Button asChild size="lg" variant="outline" className="border-white/30 bg-white/10 text-white hover:bg-white/20 hover:text-white">
                 <Link href="/neighborhoods">
                   Explore Neighborhoods
                 </Link>

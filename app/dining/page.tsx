@@ -1,8 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
-import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
-import { Badge } from "@/components/ui/badge";
 import { 
   Utensils, 
   Star, 
@@ -10,8 +8,6 @@ import {
   Award,
   ArrowRight,
   ChefHat,
-  Wine,
-  Sparkles,
   ArrowUpRight,
   TrendingUp
 } from "lucide-react";
@@ -88,7 +84,6 @@ const neighborhoods = [
     restaurantCount: 8,
     michelinCount: 1,
     image: "/images/dining-recoleta.jpg",
-    color: "from-amber-600 to-orange-700"
   },
   {
     name: "Palermo",
@@ -98,7 +93,6 @@ const neighborhoods = [
     restaurantCount: 8,
     michelinCount: 2,
     image: "/images/dining-recoleta.jpg",
-    color: "from-emerald-600 to-teal-700"
   },
   {
     name: "Belgrano",
@@ -108,7 +102,6 @@ const neighborhoods = [
     restaurantCount: 8,
     michelinCount: 0,
     image: "/images/dining-recoleta.jpg",
-    color: "from-slate-600 to-slate-800"
   },
 ];
 
@@ -121,33 +114,28 @@ const quickStats = [
 
 export default function DiningGuidePage() {
   return (
-    <div className="flex flex-col min-h-screen bg-stone-50">
-      {/* Hero Section - Premium Zagat-style */}
+    <div className="flex flex-col min-h-screen">
+      {/* Hero Section */}
       <section className="relative min-h-[70vh] flex items-center justify-center overflow-hidden">
         {/* Background with overlay */}
         <div className="absolute inset-0">
-          <div className="absolute inset-0 bg-gradient-to-br from-stone-900 via-stone-800 to-amber-950" />
-          <div className="absolute inset-0 opacity-30 bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-amber-500/20 via-transparent to-transparent" />
+          <div className="absolute inset-0 bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900" />
           <div className="absolute inset-0 opacity-40 bg-[url('/images/dining-hero.jpg')] bg-cover bg-center" />
-          <div className="absolute inset-0 bg-gradient-to-t from-stone-900 via-stone-900/80 to-transparent" />
+          <div className="absolute inset-0 bg-gradient-to-t from-slate-900 via-slate-900/80 to-transparent" />
         </div>
-        
-        {/* Decorative elements */}
-        <div className="absolute top-20 left-10 w-32 h-32 border border-amber-500/20 rounded-full opacity-50" />
-        <div className="absolute bottom-20 right-10 w-48 h-48 border border-amber-500/10 rounded-full opacity-30" />
         
         <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-4xl mx-auto text-center">
             {/* Top badge */}
-            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-amber-500/10 border border-amber-500/20 text-amber-400 text-sm font-medium mb-8">
-              <Sparkles className="w-4 h-4" />
+            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-sky-500/10 border border-sky-500/20 text-sky-400 text-sm font-medium mb-8">
+              <Award className="w-4 h-4" />
               <span>Michelin Guide 2025</span>
             </div>
             
             {/* Main title */}
             <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold mb-6 tracking-tight">
               <span className="text-white">Buenos Aires</span>
-              <span className="block text-transparent bg-clip-text bg-gradient-to-r from-amber-400 via-amber-300 to-amber-500 mt-2">
+              <span className="block text-sky-400 mt-2">
                 Dining Guide
               </span>
             </h1>
@@ -161,142 +149,125 @@ export default function DiningGuidePage() {
             {/* Quick stats */}
             <div className="grid grid-cols-2 md:grid-cols-4 gap-6 max-w-3xl mx-auto">
               {quickStats.map((stat) => (
-                <div key={stat.label} className="text-center p-4 rounded-xl bg-white/5 backdrop-blur-sm border border-white/10">
-                  <stat.icon className="w-5 h-5 text-amber-400 mx-auto mb-2" />
-                  <div className="text-3xl font-bold text-white mb-1">{stat.value}</div>
-                  <div className="text-sm text-stone-400">{stat.label}</div>
+                <div key={stat.label} className="stat-card-dark">
+                  <stat.icon className="stat-icon-dark" />
+                  <div className="stat-value-dark">{stat.value}</div>
+                  <div className="stat-label-dark">{stat.label}</div>
                 </div>
               ))}
             </div>
           </div>
         </div>
-        
-        {/* Scroll indicator */}
-        <div className="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 text-stone-400">
-          <span className="text-xs uppercase tracking-widest">Explore</span>
-          <div className="w-px h-8 bg-gradient-to-b from-amber-400 to-transparent" />
-        </div>
       </section>
 
-      {/* Michelin Stars Section - Card-based with inspector notes */}
-      <section className="py-24 bg-white">
+      {/* Michelin Stars Section */}
+      <section className="section-padding bg-white">
         <div className="container mx-auto px-4">
           <div className="max-w-7xl mx-auto">
             {/* Section header */}
             <div className="text-center mb-16">
-              <Badge className="mb-4 bg-amber-100 text-amber-800 border-amber-200 px-4 py-1.5 text-sm">
-                <Award className="w-4 h-4 mr-2" />
+              <span className="badge-primary mb-4 inline-flex">
+                <Award className="w-3 h-3 mr-1" />
                 Michelin Guide 2025
-              </Badge>
-              <h2 className="text-4xl md:text-5xl font-bold mb-4 text-stone-900">
+              </span>
+              <h2 className="heading-lg mb-4 text-stone-900">
                 Michelin-Starred Restaurants
               </h2>
-              <p className="text-lg text-stone-600 max-w-2xl mx-auto">
+              <p className="text-body text-lg max-w-2xl mx-auto">
                 Argentina&apos;s culinary excellence recognized by the world&apos;s most prestigious dining guide.
               </p>
             </div>
 
             {/* Restaurant cards */}
             <div className="grid lg:grid-cols-2 gap-8">
-              {michelinStars.map((restaurant, index) => (
-                <Card key={restaurant.name} className="group overflow-hidden border-0 shadow-lg hover:shadow-2xl transition-all duration-500 bg-stone-50">
-                  {/* Card header with gradient */}
-                  <div className={`h-2 bg-gradient-to-r ${index % 2 === 0 ? 'from-amber-500 to-amber-600' : 'from-stone-600 to-stone-700'}`} />
+              {michelinStars.map((restaurant) => (
+                <div key={restaurant.name} className="card-highlight">
+                  {/* Award badge */}
+                  <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-sky-100 text-sky-800 text-xs font-semibold mb-3">
+                    <Star className="w-3 h-3 fill-sky-600" />
+                    {restaurant.award}
+                  </div>
                   
-                  <CardHeader className="pb-4">
-                    <div className="flex items-start justify-between">
-                      <div>
-                        {/* Award badge */}
-                        <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-amber-100 text-amber-800 text-xs font-semibold mb-3">
-                          <Star className="w-3 h-3 fill-amber-600" />
-                          {restaurant.award}
-                        </div>
-                        
-                        <CardTitle className="text-2xl font-bold text-stone-900 group-hover:text-amber-700 transition-colors">
-                          {restaurant.name}
-                        </CardTitle>
-                        <CardDescription className="text-base mt-1 text-stone-600">
-                          {restaurant.cuisine}
-                        </CardDescription>
-                      </div>
-                      
-                      {/* Stars */}
-                      <div className="flex gap-1">
-                        {Array.from({ length: restaurant.stars }).map((_, i) => (
-                          <Star key={i} className="w-7 h-7 fill-amber-400 text-amber-400" />
-                        ))}
-                      </div>
+                  <div className="flex items-start justify-between mb-2">
+                    <h3 className="text-2xl font-bold text-stone-900">
+                      {restaurant.name}
+                    </h3>
+                    {/* Stars */}
+                    <div className="flex gap-1">
+                      {Array.from({ length: restaurant.stars }).map((_, i) => (
+                        <Star key={i} className="w-6 h-6 fill-sky-500 text-sky-500" />
+                      ))}
                     </div>
-                    
-                    {/* Location & Price */}
-                    <div className="flex items-center gap-4 mt-3 text-sm text-stone-500">
-                      <span className="flex items-center gap-1.5">
-                        <MapPin className="w-4 h-4" />
-                        {restaurant.neighborhood}
-                      </span>
-                      <span className="text-stone-400">|</span>
-                      <span className="font-medium text-stone-700">{restaurant.price}</span>
-                    </div>
-                  </CardHeader>
+                  </div>
                   
-                  <CardContent className="space-y-4">
-                    {/* Description */}
-                    <p className="text-stone-600 leading-relaxed">
-                      {restaurant.description}
+                  <p className="text-stone-600 mb-3">{restaurant.cuisine}</p>
+                  
+                  {/* Location & Price */}
+                  <div className="flex items-center gap-4 mb-4 text-sm text-stone-500">
+                    <span className="flex items-center gap-1.5">
+                      <MapPin className="w-4 h-4" />
+                      {restaurant.neighborhood}
+                    </span>
+                    <span className="text-stone-400">|</span>
+                    <span className="font-medium text-stone-700">{restaurant.price}</span>
+                  </div>
+                  
+                  {/* Description */}
+                  <p className="text-stone-600 leading-relaxed mb-4">
+                    {restaurant.description}
+                  </p>
+                  
+                  {/* Inspector Note */}
+                  <div className="bg-sky-50 border-l-4 border-sky-500 p-4 rounded-r-lg mb-4">
+                    <div className="flex items-center gap-2 mb-2">
+                      <ChefHat className="w-4 h-4 text-sky-600" />
+                      <span className="text-xs font-semibold text-sky-700 uppercase tracking-wider">Inspector&apos;s Note</span>
+                    </div>
+                    <p className="text-sm text-stone-700 italic">
+                      &ldquo;{restaurant.inspectorNote}&rdquo;
                     </p>
-                    
-                    {/* Inspector Note - Michelin style */}
-                    <div className="bg-amber-50/50 border-l-4 border-amber-400 p-4 rounded-r-lg">
-                      <div className="flex items-center gap-2 mb-2">
-                        <ChefHat className="w-4 h-4 text-amber-600" />
-                        <span className="text-xs font-semibold text-amber-700 uppercase tracking-wider">Inspector&apos;s Note</span>
-                      </div>
-                      <p className="text-sm text-stone-700 italic">
-                        &ldquo;{restaurant.inspectorNote}&rdquo;
-                      </p>
+                  </div>
+                  
+                  {/* Must Try */}
+                  <div className="mb-4">
+                    <p className="text-sm font-semibold text-stone-900 mb-2">Must Try:</p>
+                    <div className="flex flex-wrap gap-2">
+                      {restaurant.mustTry.map((item) => (
+                        <span key={item} className="tag">
+                          {item}
+                        </span>
+                      ))}
                     </div>
-                    
-                    {/* Must Try */}
-                    <div>
-                      <p className="text-sm font-semibold text-stone-900 mb-2">Must Try:</p>
-                      <div className="flex flex-wrap gap-2">
-                        {restaurant.mustTry.map((item) => (
-                          <span key={item} className="px-3 py-1 bg-white border border-stone-200 rounded-full text-sm text-stone-700">
-                            {item}
-                          </span>
-                        ))}
-                      </div>
-                    </div>
-                    
-                    {/* CTA */}
-                    <Button variant="outline" className="w-full mt-4 group/btn border-stone-300 hover:border-amber-500 hover:bg-amber-50" asChild>
-                      <Link href={`/dining/${restaurant.neighborhood.toLowerCase().replace(/\s+/g, '-')}`}>
-                        View in {restaurant.neighborhood} Guide
-                        <ArrowUpRight className="w-4 h-4 ml-2 group-hover/btn:translate-x-0.5 group-hover/btn:-translate-y-0.5 transition-transform" />
-                      </Link>
-                    </Button>
-                  </CardContent>
-                </Card>
+                  </div>
+                  
+                  {/* CTA */}
+                  <Button variant="outline" className="w-full mt-auto" asChild>
+                    <Link href={`/dining/${restaurant.neighborhood.toLowerCase().replace(/\s+/g, '-')}`}>
+                      View in {restaurant.neighborhood} Guide
+                      <ArrowUpRight className="w-4 h-4 ml-2" />
+                    </Link>
+                  </Button>
+                </div>
               ))}
             </div>
           </div>
         </div>
       </section>
 
-      {/* Neighborhood Guides - Visual cards with hover effects */}
-      <section className="py-24 bg-stone-100">
+      {/* Neighborhood Guides */}
+      <section className="section-padding bg-stone-50">
         <div className="container mx-auto px-4">
           <div className="max-w-7xl mx-auto">
             {/* Section header */}
             <div className="text-center mb-16">
-              <Badge className="mb-4 bg-stone-200 text-stone-800 border-stone-300 px-4 py-1.5 text-sm">
-                <MapPin className="w-4 h-4 mr-2" />
+              <span className="badge-secondary mb-4 inline-flex">
+                <MapPin className="w-3 h-3 mr-1" />
                 Neighborhood Guides
-              </Badge>
-              <h2 className="text-4xl md:text-5xl font-bold mb-4 text-stone-900">
+              </span>
+              <h2 className="heading-lg mb-4 text-stone-900">
                 Explore by Neighborhood
               </h2>
-              <p className="text-lg text-stone-600 max-w-2xl mx-auto">
+              <p className="text-body text-lg max-w-2xl mx-auto">
                 Curated guides to the best dining in Buenos Aires&apos; most prestigious neighborhoods.
               </p>
             </div>
@@ -305,9 +276,9 @@ export default function DiningGuidePage() {
             <div className="grid md:grid-cols-3 gap-8">
               {neighborhoods.map((hood) => (
                 <Link key={hood.name} href={`/dining/${hood.slug}`} className="group">
-                  <Card className="overflow-hidden border-0 shadow-lg hover:shadow-2xl transition-all duration-500 h-full bg-white">
-                    {/* Image area with gradient */}
-                    <div className={`h-56 bg-gradient-to-br ${hood.color} relative overflow-hidden`}>
+                  <div className="card-highlight overflow-hidden h-full">
+                    {/* Header with gradient */}
+                    <div className="h-48 bg-gradient-to-br from-sky-600 to-sky-800 relative overflow-hidden -mx-6 -mt-6 mb-6">
                       <div className="absolute inset-0 bg-black/20 group-hover:bg-black/10 transition-colors" />
                       <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent" />
                       
@@ -317,8 +288,8 @@ export default function DiningGuidePage() {
                           {hood.restaurantCount} Restaurants
                         </span>
                         {hood.michelinCount > 0 && (
-                          <span className="px-3 py-1 bg-amber-400/90 backdrop-blur-sm rounded-full text-xs font-semibold text-amber-950 flex items-center gap-1">
-                            <Star className="w-3 h-3 fill-amber-950" />
+                          <span className="px-3 py-1 bg-sky-400/90 backdrop-blur-sm rounded-full text-xs font-semibold text-white flex items-center gap-1">
+                            <Star className="w-3 h-3 fill-white" />
                             {hood.michelinCount}
                           </span>
                         )}
@@ -327,29 +298,28 @@ export default function DiningGuidePage() {
                       {/* Title */}
                       <div className="absolute bottom-4 left-4 right-4">
                         <h3 className="text-3xl font-bold text-white mb-1">{hood.name}</h3>
-                        <p className="text-white/80 text-sm">{hood.description}</p>
                       </div>
                     </div>
                     
-                    <CardContent className="pt-6">
-                      {/* Highlights */}
-                      <div className="space-y-3">
-                        <p className="text-sm font-semibold text-stone-900 uppercase tracking-wider">Highlights</p>
-                        {hood.highlights.map((highlight) => (
-                          <div key={highlight} className="flex items-center gap-3 text-stone-600">
-                            <Utensils className="w-4 h-4 text-amber-500 flex-shrink-0" />
-                            <span className="text-sm">{highlight}</span>
-                          </div>
-                        ))}
-                      </div>
-                      
-                      {/* Explore link */}
-                      <div className="mt-6 flex items-center text-amber-600 font-semibold text-sm group-hover:text-amber-700 transition-colors">
-                        Explore {hood.name}
-                        <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />
-                      </div>
-                    </CardContent>
-                  </Card>
+                    <p className="text-stone-600 mb-4">{hood.description}</p>
+                    
+                    {/* Highlights */}
+                    <div className="space-y-2 mb-4">
+                      <p className="text-sm font-semibold text-stone-900 uppercase tracking-wider">Highlights</p>
+                      {hood.highlights.map((highlight) => (
+                        <div key={highlight} className="flex items-center gap-3 text-stone-600">
+                          <Utensils className="w-4 h-4 text-sky-500 flex-shrink-0" />
+                          <span className="text-sm">{highlight}</span>
+                        </div>
+                      ))}
+                    </div>
+                    
+                    {/* Explore link */}
+                    <div className="mt-auto flex items-center text-sky-600 font-semibold text-sm group-hover:text-sky-700 transition-colors">
+                      Explore {hood.name}
+                      <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />
+                    </div>
+                  </div>
                 </Link>
               ))}
             </div>
@@ -357,24 +327,17 @@ export default function DiningGuidePage() {
         </div>
       </section>
 
-      {/* Editorial Section - About the Guide */}
-      <section className="py-24 bg-stone-900 text-white relative overflow-hidden">
-        {/* Background pattern */}
-        <div className="absolute inset-0 opacity-5">
-          <div className="absolute inset-0" style={{
-            backgroundImage: `url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='1'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")`,
-          }} />
-        </div>
-        
+      {/* Editorial Section */}
+      <section className="section-padding bg-slate-900 text-white relative overflow-hidden">
         <div className="container mx-auto px-4 relative">
           <div className="max-w-4xl mx-auto text-center">
             {/* Badge */}
-            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-amber-500/10 border border-amber-500/20 text-amber-400 text-sm font-medium mb-8">
+            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-sky-500/10 border border-sky-500/20 text-sky-400 text-sm font-medium mb-8">
               <TrendingUp className="w-4 h-4" />
               <span>Curated Excellence</span>
             </div>
             
-            <h2 className="text-4xl md:text-5xl font-bold mb-8">
+            <h2 className="heading-lg mb-8">
               The Buenos Aires Dining Guide
             </h2>
             
@@ -388,16 +351,16 @@ export default function DiningGuidePage() {
             
             {/* Stats */}
             <div className="grid sm:grid-cols-3 gap-8 max-w-2xl mx-auto">
-              <div className="text-center p-6 rounded-2xl bg-white/5 backdrop-blur-sm border border-white/10">
-                <div className="text-5xl font-bold text-amber-400 mb-2">10+</div>
+              <div className="stat-card-dark">
+                <div className="text-4xl font-bold text-sky-400 mb-2">10+</div>
                 <div className="text-stone-400">Michelin-Recognized</div>
               </div>
-              <div className="text-center p-6 rounded-2xl bg-white/5 backdrop-blur-sm border border-white/10">
-                <div className="text-5xl font-bold text-amber-400 mb-2">24</div>
+              <div className="stat-card-dark">
+                <div className="text-4xl font-bold text-sky-400 mb-2">24</div>
                 <div className="text-stone-400">Curated Restaurants</div>
               </div>
-              <div className="text-center p-6 rounded-2xl bg-white/5 backdrop-blur-sm border border-white/10">
-                <div className="text-5xl font-bold text-amber-400 mb-2">3</div>
+              <div className="stat-card-dark">
+                <div className="text-4xl font-bold text-sky-400 mb-2">3</div>
                 <div className="text-stone-400">Neighborhoods</div>
               </div>
             </div>
@@ -406,24 +369,24 @@ export default function DiningGuidePage() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-16 bg-amber-500">
+      <section className="section-padding bg-sky-600 text-white">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
-            <h2 className="text-3xl md:text-4xl font-bold text-amber-950 mb-4">
+            <h2 className="heading-md mb-4">
               Ready to Experience Buenos Aires&apos; Finest?
             </h2>
-            <p className="text-lg text-amber-900/80 mb-8 max-w-2xl mx-auto">
+            <p className="text-lg text-white/90 mb-8 max-w-2xl mx-auto">
               Start exploring our curated selection of the city&apos;s best restaurants, 
               from Michelin-starred institutions to hidden local gems.
             </p>
             <div className="flex flex-wrap justify-center gap-4">
-              <Button size="lg" className="bg-stone-900 hover:bg-stone-800 text-white px-8" asChild>
+              <Button size="lg" variant="secondary" className="px-8" asChild>
                 <Link href="/dining/recoleta">
                   <Star className="w-5 h-5 mr-2" />
                   Explore Recoleta
                 </Link>
               </Button>
-              <Button size="lg" variant="outline" className="border-amber-900/30 text-amber-950 hover:bg-amber-400 px-8" asChild>
+              <Button size="lg" variant="outline" className="border-white/30 bg-white/10 text-white hover:bg-white/20 hover:text-white px-8" asChild>
                 <Link href="/dining/palermo">
                   <MapPin className="w-5 h-5 mr-2" />
                   Explore Palermo

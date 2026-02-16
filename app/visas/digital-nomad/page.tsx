@@ -1,8 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Badge } from "@/components/ui/badge";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { 
   CheckCircle, 
@@ -162,14 +160,14 @@ export default function DigitalNomadVisaPage() {
       />
 
       {/* Breadcrumb */}
-      <div className="border-b bg-muted/30">
+      <div className="border-b bg-stone-50">
         <div className="container mx-auto px-4 py-4">
-          <nav className="flex gap-2 text-sm text-muted-foreground">
-            <Link href="/" className="hover:text-foreground">Home</Link>
+          <nav className="flex gap-2 text-sm text-stone-600">
+            <Link href="/" className="hover:text-stone-900">Home</Link>
             <span>/</span>
-            <Link href="/visas" className="hover:text-foreground">Visas</Link>
+            <Link href="/visas" className="hover:text-stone-900">Visas</Link>
             <span>/</span>
-            <span className="text-foreground">Digital Nomad Visa</span>
+            <span className="text-stone-900">Digital Nomad Visa</span>
           </nav>
         </div>
       </div>
@@ -182,10 +180,10 @@ export default function DigitalNomadVisaPage() {
         </div>
         <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-3xl mx-auto text-center">
-            <Badge className="mb-4 bg-white/10 text-white border-white/20" variant="secondary">
-              <Globe className="w-3 h-3 mr-1" />
+            <span className="inline-flex items-center gap-1 px-3 py-1 rounded-full text-sm bg-white/10 text-white border border-white/20 mb-4">
+              <Globe className="w-3 h-3" />
               Remote Work Visa
-            </Badge>
+            </span>
             <h1 className="text-4xl md:text-5xl font-bold mb-6 text-white">
               Argentina Digital Nomad Visa
             </h1>
@@ -193,21 +191,21 @@ export default function DigitalNomadVisaPage() {
               Work remotely from Argentina for up to 180 days. 
               Complete guide to requirements, application, and living as a digital nomad in Buenos Aires.
             </p>
-            <div className="flex flex-wrap justify-center gap-4 text-sm mb-6">
+            <div className="flex flex-wrap justify-center gap-4 text-sm mb-6 text-white/80">
               <div className="flex items-center gap-2">
-                <Clock className="w-4 h-4 text-primary" />
+                <Clock className="w-4 h-4 text-sky-300" />
                 <span>180 days validity</span>
               </div>
               <div className="flex items-center gap-2">
-                <DollarSign className="w-4 h-4 text-primary" />
+                <DollarSign className="w-4 h-4 text-sky-300" />
                 <span>~$100-150 fee</span>
               </div>
               <div className="flex items-center gap-2">
-                <CheckCircle className="w-4 h-4 text-primary" />
+                <CheckCircle className="w-4 h-4 text-sky-300" />
                 <span>2-4 week processing</span>
               </div>
               <div className="flex items-center gap-2">
-                <BookOpen className="w-4 h-4 text-primary" />
+                <BookOpen className="w-4 h-4 text-sky-300" />
                 <span>8 min read</span>
               </div>
             </div>
@@ -217,47 +215,43 @@ export default function DigitalNomadVisaPage() {
       </section>
 
       {/* Quick Stats */}
-      <section className="py-12 border-b">
+      <section className="py-12 border-b bg-white">
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
-            <div className="text-center">
-              <div className="text-3xl font-bold text-primary">180</div>
-              <div className="text-sm text-muted-foreground">Days Valid</div>
+            <div className="stat-card">
+              <div className="stat-value">180</div>
+              <div className="stat-label">Days Valid</div>
             </div>
-            <div className="text-center">
-              <div className="text-3xl font-bold text-primary">$100-150</div>
-              <div className="text-sm text-muted-foreground">Application Fee</div>
+            <div className="stat-card">
+              <div className="stat-value">$100-150</div>
+              <div className="stat-label">Application Fee</div>
             </div>
-            <div className="text-center">
-              <div className="text-3xl font-bold text-primary">2-4</div>
-              <div className="text-sm text-muted-foreground">Weeks Processing</div>
+            <div className="stat-card">
+              <div className="stat-value">2-4</div>
+              <div className="stat-label">Weeks Processing</div>
             </div>
-            <div className="text-center">
-              <div className="text-3xl font-bold text-primary">100%</div>
-              <div className="text-sm text-muted-foreground">Online Application</div>
+            <div className="stat-card">
+              <div className="stat-value">100%</div>
+              <div className="stat-label">Online Application</div>
             </div>
           </div>
         </div>
       </section>
 
       {/* Requirements */}
-      <section className="py-16">
+      <section className="section-padding bg-white">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto">
-            <h2 className="text-3xl font-bold mb-8 text-center">Requirements</h2>
+            <h2 className="heading-md mb-8 text-center">Requirements</h2>
             <div className="grid md:grid-cols-2 gap-6">
               {requirements.map((req) => (
-                <Card key={req.title} className="hover:shadow-lg transition-shadow">
-                  <CardHeader>
-                    <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center mb-3">
-                      <req.icon className="w-5 h-5 text-primary" />
-                    </div>
-                    <CardTitle className="text-lg">{req.title}</CardTitle>
-                  </CardHeader>
-                  <CardContent>
-                    <p className="text-muted-foreground">{req.description}</p>
-                  </CardContent>
-                </Card>
+                <div key={req.title} className="card-feature">
+                  <div className="icon-wrapper mb-3">
+                    <req.icon className="w-5 h-5" />
+                  </div>
+                  <h3 className="font-semibold text-lg mb-2">{req.title}</h3>
+                  <p className="text-body-sm">{req.description}</p>
+                </div>
               ))}
             </div>
           </div>
@@ -265,21 +259,19 @@ export default function DigitalNomadVisaPage() {
       </section>
 
       {/* Application Process */}
-      <section className="py-16 bg-muted/30">
+      <section className="section-padding bg-stone-50">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto">
-            <h2 className="text-3xl font-bold mb-8 text-center">Application Process</h2>
-            <div className="space-y-6">
+            <h2 className="heading-md mb-8 text-center">Application Process</h2>
+            <div className="space-y-4">
               {applicationSteps.map((step) => (
-                <Card key={step.step} className="flex gap-4 p-6 hover:shadow-lg transition-shadow">
-                  <div className="flex-shrink-0 w-10 h-10 rounded-full bg-primary text-primary-foreground flex items-center justify-center font-bold">
-                    {step.step}
-                  </div>
+                <div key={step.step} className="step-card">
+                  <div className="step-number">{step.step}</div>
                   <div>
-                    <h3 className="font-semibold text-lg mb-2">{step.title}</h3>
-                    <p className="text-muted-foreground">{step.description}</p>
+                    <h3 className="font-semibold text-lg mb-1">{step.title}</h3>
+                    <p className="text-body-sm">{step.description}</p>
                   </div>
-                </Card>
+                </div>
               ))}
             </div>
           </div>
@@ -287,36 +279,36 @@ export default function DigitalNomadVisaPage() {
       </section>
 
       {/* Document Checklist */}
-      <section className="py-16">
+      <section className="section-padding bg-white">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto">
-            <h2 className="text-3xl font-bold mb-8 text-center">Document Checklist</h2>
-            <Card className="hover:shadow-lg transition-shadow">
-              <CardContent className="pt-6">
-                <ul className="space-y-3">
-                  {documentChecklist.map((item, index) => (
-                    <li key={index} className="flex items-start gap-3">
-                      <CheckCircle className="w-5 h-5 text-green-500 flex-shrink-0 mt-0.5" />
-                      <span>{item}</span>
-                    </li>
-                  ))}
-                </ul>
-              </CardContent>
-            </Card>
+            <h2 className="heading-md mb-8 text-center">Document Checklist</h2>
+            <div className="card-feature">
+              <ul className="space-y-3">
+                {documentChecklist.map((item, index) => (
+                  <li key={index} className="flex items-start gap-3">
+                    <CheckCircle className="w-5 h-5 text-green-500 flex-shrink-0 mt-0.5" />
+                    <span className="text-stone-700">{item}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
           </div>
         </div>
       </section>
 
       {/* FAQs */}
-      <section className="py-16 bg-muted/30">
+      <section className="section-padding bg-stone-50">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto">
-            <h2 className="text-3xl font-bold mb-8 text-center">Frequently Asked Questions</h2>
+            <h2 className="heading-md mb-8 text-center">Frequently Asked Questions</h2>
             <Accordion type="single" collapsible className="w-full">
               {faqs.map((faq, index) => (
-                <AccordionItem key={index} value={`item-${index}`}>
-                  <AccordionTrigger className="text-left">{faq.question}</AccordionTrigger>
-                  <AccordionContent className="text-muted-foreground">
+                <AccordionItem key={index} value={`item-${index}`} className="bg-white rounded-lg border border-stone-200 px-4 mb-3">
+                  <AccordionTrigger className="text-left font-semibold hover:no-underline py-4">
+                    {faq.question}
+                  </AccordionTrigger>
+                  <AccordionContent className="text-stone-600 pb-4">
                     {faq.answer}
                   </AccordionContent>
                 </AccordionItem>
@@ -327,83 +319,73 @@ export default function DigitalNomadVisaPage() {
       </section>
 
       {/* Important Notice */}
-      <section className="py-16">
+      <section className="section-padding bg-white">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto">
-            <Card className="border-amber-200 bg-amber-50 dark:bg-amber-950/20">
-              <CardContent className="pt-6">
-                <div className="flex items-start gap-4">
-                  <AlertCircle className="w-6 h-6 text-amber-600 flex-shrink-0" />
-                  <div>
-                    <h3 className="font-semibold text-amber-900 dark:text-amber-100 mb-2">
-                      Important Notice
-                    </h3>
-                    <p className="text-amber-800 dark:text-amber-200 text-sm">
-                      Visa requirements and fees change frequently. Always verify current 
-                      requirements on the official{" "}
-                      <Link href="https://www.migraciones.gov.ar" className="underline" target="_blank" rel="noopener noreferrer">
-                        Argentine Immigration website
-                      </Link>{" "}
-                      or consult with a qualified immigration attorney before applying. 
-                      This guide is for informational purposes only.
-                    </p>
-                  </div>
+            <div className="bg-amber-50 border border-amber-200 rounded-xl p-6">
+              <div className="flex items-start gap-4">
+                <AlertCircle className="w-6 h-6 text-amber-600 flex-shrink-0" />
+                <div>
+                  <h3 className="font-semibold text-amber-900 mb-2">
+                    Important Notice
+                  </h3>
+                  <p className="text-amber-800 text-sm">
+                    Visa requirements and fees change frequently. Always verify current 
+                    requirements on the official{" "}
+                    <Link href="https://www.migraciones.gov.ar" className="underline hover:text-amber-900" target="_blank" rel="noopener noreferrer">
+                      Argentine Immigration website
+                    </Link>{" "}
+                    or consult with a qualified immigration attorney before applying. 
+                    This guide is for informational purposes only.
+                  </p>
                 </div>
-              </CardContent>
-            </Card>
+              </div>
+            </div>
           </div>
         </div>
       </section>
 
       {/* Related Visas */}
-      <section className="py-16 bg-muted/30">
+      <section className="section-padding bg-stone-50">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto">
-            <h2 className="text-2xl font-bold mb-6 text-center">Explore Other Visa Options</h2>
+            <h2 className="heading-sm mb-6 text-center">Explore Other Visa Options</h2>
             <div className="grid sm:grid-cols-2 gap-4">
-              <Card className="hover:shadow-lg transition-shadow">
-                <CardHeader>
-                  <CardTitle className="text-lg">Work Visa</CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <p className="text-sm text-muted-foreground mb-4">
-                    For those with a job offer from an Argentine employer. Valid for 1-3 years.
-                  </p>
-                  <Button asChild variant="outline" size="sm">
-                    <Link href="/visas/work">
-                      Learn More
-                      <ArrowRight className="w-3 h-3 ml-2" />
-                    </Link>
-                  </Button>
-                </CardContent>
-              </Card>
-              <Card className="hover:shadow-lg transition-shadow">
-                <CardHeader>
-                  <CardTitle className="text-lg">Retirement Visa</CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <p className="text-sm text-muted-foreground mb-4">
-                    For retirees with stable pension income. Path to permanent residency.
-                  </p>
-                  <Button asChild variant="outline" size="sm">
-                    <Link href="/visas/retirement">
-                      Learn More
-                      <ArrowRight className="w-3 h-3 ml-2" />
-                    </Link>
-                  </Button>
-                </CardContent>
-              </Card>
+              <div className="card-feature">
+                <h3 className="font-semibold text-lg mb-2">Work Visa</h3>
+                <p className="text-body-sm mb-4">
+                  For those with a job offer from an Argentine employer. Valid for 1-3 years.
+                </p>
+                <Button asChild variant="outline" size="sm">
+                  <Link href="/visas/work">
+                    Learn More
+                    <ArrowRight className="w-3 h-3 ml-2" />
+                  </Link>
+                </Button>
+              </div>
+              <div className="card-feature">
+                <h3 className="font-semibold text-lg mb-2">Retirement Visa</h3>
+                <p className="text-body-sm mb-4">
+                  For retirees with stable pension income. Path to permanent residency.
+                </p>
+                <Button asChild variant="outline" size="sm">
+                  <Link href="/visas/retirement">
+                    Learn More
+                    <ArrowRight className="w-3 h-3 ml-2" />
+                  </Link>
+                </Button>
+              </div>
             </div>
           </div>
         </div>
       </section>
 
       {/* CTA */}
-      <section className="py-16 bg-primary text-primary-foreground">
+      <section className="section-padding bg-sky-600 text-white">
         <div className="container mx-auto px-4 text-center">
           <div className="max-w-2xl mx-auto">
-            <h2 className="text-3xl font-bold mb-4">Need Help With Your Visa?</h2>
-            <p className="text-primary-foreground/80 mb-8">
+            <h2 className="heading-md mb-4">Need Help With Your Visa?</h2>
+            <p className="text-white/90 mb-8">
               We&apos;ve worked with a trusted immigration partner who specializes in Argentine visas 
               and has helped many of our readers successfully navigate the Digital Nomad Visa process.
             </p>
@@ -414,7 +396,7 @@ export default function DigitalNomadVisaPage() {
                   <ArrowRight className="w-4 h-4 ml-2" />
                 </Link>
               </Button>
-              <Button asChild size="lg" variant="outline" className="border-primary-foreground/20 hover:bg-primary-foreground/10">
+              <Button asChild size="lg" variant="outline" className="border-white/30 bg-white/10 text-white hover:bg-white/20 hover:text-white">
                 <Link href="/contact">
                   Ask Us a Question
                 </Link>
