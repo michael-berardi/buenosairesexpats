@@ -74,17 +74,21 @@ export default function HealthcarePage() {
       </div>
 
       {/* Hero */}
-      <section className="py-16 md:py-24 bg-gradient-to-b from-sky-50 to-white dark:from-sky-950/20 dark:to-background">
-        <div className="container mx-auto px-4">
+      <section className="relative py-16 md:py-24 overflow-hidden">
+        <div className="absolute inset-0">
+          <div className="absolute inset-0 bg-[url('/images/healthcare-hero.jpg')] bg-cover bg-center" />
+          <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/40 to-background" />
+        </div>
+        <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-3xl mx-auto text-center">
-            <Badge className="mb-4" variant="secondary">
+            <Badge className="mb-4 bg-white/10 text-white border-white/20" variant="secondary">
               <Heart className="w-3 h-3 mr-1" />
               Healthcare Guide
             </Badge>
-            <h1 className="text-4xl md:text-5xl font-bold mb-6">
+            <h1 className="text-4xl md:text-5xl font-bold mb-6 text-white">
               Healthcare in Argentina
             </h1>
-            <p className="text-xl text-muted-foreground mb-8">
+            <p className="text-xl text-white/90 mb-8">
               Everything you need to know about health insurance (prepaga), 
               finding doctors, and accessing quality medical care in Argentina.
             </p>
