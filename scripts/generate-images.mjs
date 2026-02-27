@@ -4,7 +4,7 @@
  * generate-images.mjs
  *
  * Uses Google's Imagen 4.0 model (via @google/genai SDK) to generate
- * hero and OG images for the Buenos Aires Expats site.
+ * images for the Buenos Aires Expats homepage overhaul.
  *
  * Prerequisites:
  *   - GEMINI_API_KEY environment variable set
@@ -25,65 +25,37 @@ const PROJECT_ROOT = path.resolve(__dirname, "..");
 const OUTPUT_DIR = path.join(PROJECT_ROOT, "public", "images");
 
 // ---------------------------------------------------------------------------
-// Image definitions
+// Image definitions — homepage overhaul
 // ---------------------------------------------------------------------------
 
 const images = [
   {
-    filename: "transportation-hero.webp",
+    filename: "hero-street-cafe.webp",
     aspectRatio: "16:9",
     personGeneration: "allow_all",
     prompt:
-      "Professional photography of a Buenos Aires subte metro station with commuters, warm golden lighting, architectural details of the tiled station, rush hour atmosphere, editorial quality",
+      "A warm, authentic Buenos Aires street-level cafe scene during golden hour. Outdoor seating on a tree-lined cobblestone sidewalk in Palermo or San Telmo. Warm string lights, espresso cups on marble tables, European architecture with colorful facades in the background. People chatting and enjoying life. Cinematic, editorial photography style, shallow depth of field, rich warm tones. No text or watermarks.",
   },
   {
-    filename: "working-taxes-hero.webp",
-    aspectRatio: "16:9",
-    personGeneration: "allow_adult",
-    prompt:
-      "Professional photography of a modern coworking space in Palermo Buenos Aires, laptop and coffee on wooden desk, natural sunlight through large windows, plants and exposed brick, creative professionals in background, editorial quality",
-  },
-  {
-    filename: "getting-started-hero.webp",
-    aspectRatio: "16:9",
-    personGeneration: "allow_adult",
-    prompt:
-      "Professional photography of an expat traveler arriving at Ezeiza airport Buenos Aires, carrying luggage, city skyline visible through terminal windows, warm natural lighting, sense of new beginnings and adventure, editorial quality",
-  },
-  {
-    filename: "og-image-new.jpg",
-    aspectRatio: "16:9",
-    personGeneration: "dont_allow",
-    prompt:
-      "Aerial photography of Buenos Aires cityscape at golden hour, Puerto Madero waterfront and Obelisco visible, warm sunset tones, professional quality, social media sharing format, clear sky area for text overlay",
-  },
-  {
-    filename: "hero-cityscape-2.webp",
-    aspectRatio: "16:9",
-    personGeneration: "dont_allow",
-    prompt:
-      "Professional aerial panorama photography of Buenos Aires, Palermo parks and city skyline at sunset, warm golden and purple tones, dramatic clouds, wide format, editorial quality",
-  },
-  {
-    filename: "lucero-legal-cta-bg.webp",
-    aspectRatio: "16:9",
-    personGeneration: "dont_allow",
-    prompt:
-      "Professional interior photography of an elegant law office in Buenos Aires, warm wood furnishings mixed with modern design, large windows with city view, leather and brass details, Argentine aesthetic, warm professional atmosphere, editorial quality",
-  },
-  {
-    filename: "community-expats.webp",
+    filename: "cost-of-living-card.webp",
     aspectRatio: "16:9",
     personGeneration: "allow_all",
     prompt:
-      "Professional photography of a diverse group of international expats at an outdoor cafe in Buenos Aires, warm afternoon sunlight, genuine laughter and conversation, mixed ages and ethnicities, Palermo neighborhood setting, editorial quality",
+      "A vibrant Buenos Aires market scene at a traditional feria or food stall. Fresh fruits, empanadas, colorful produce displayed beautifully. Warm natural lighting, authentic Argentine street market atmosphere. A vendor interacting with a customer. Editorial photography style, rich saturated colors, shallow depth of field. No text or watermarks.",
   },
   {
-    filename: "dining-hero-new.webp",
+    filename: "journey-planning.webp",
     aspectRatio: "16:9",
-    personGeneration: "dont_allow",
+    personGeneration: "allow_adult",
     prompt:
-      "Professional food photography of Argentine parrilla, premium steak on traditional grill, atmospheric restaurant lighting with warm tones, rustic wood and iron elements, smoke and sizzle, editorial quality",
+      "A person researching on a laptop at a bright, modern cafe with large windows. Travel guidebooks and a passport visible on the table. Buenos Aires city map or travel notes scattered around. Warm, aspirational mood. Natural light, editorial photography style. No text or watermarks.",
+  },
+  {
+    filename: "journey-arrived.webp",
+    aspectRatio: "16:9",
+    personGeneration: "allow_adult",
+    prompt:
+      "First impressions of Buenos Aires: a person walking down a beautiful tree-lined avenue in Buenos Aires with classic European-style buildings, balconies with plants, and dappled sunlight through jacaranda trees. Sense of wonder and discovery. Golden hour light, cinematic editorial photography. No text or watermarks.",
   },
 ];
 
@@ -92,14 +64,12 @@ const images = [
 // ---------------------------------------------------------------------------
 
 async function main() {
-  // Validate API key
   const apiKey = process.env.GEMINI_API_KEY;
   if (!apiKey) {
     console.error("ERROR: GEMINI_API_KEY environment variable is not set.");
     process.exit(1);
   }
 
-  // Ensure output directory exists
   if (!fs.existsSync(OUTPUT_DIR)) {
     fs.mkdirSync(OUTPUT_DIR, { recursive: true });
     console.log(`Created output directory: ${OUTPUT_DIR}`);
@@ -153,10 +123,9 @@ async function main() {
       failCount++;
     }
 
-    console.log(""); // blank line between images
+    console.log("");
   }
 
-  // Summary
   console.log("=".repeat(60));
   console.log(`Done! ${successCount} succeeded, ${failCount} failed.`);
   console.log("=".repeat(60));

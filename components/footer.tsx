@@ -29,7 +29,6 @@ export function Footer() {
   const resourceLinks = [
     { label: t("navigation.stories") as string, href: "/stories" },
     { label: t("navigation.whyArgentina") as string, href: "/why-argentina" },
-    { label: "Newsletter", href: "/newsletter" },
   ];
 
   const companyLinks = [
@@ -59,16 +58,15 @@ export function Footer() {
       ];
 
   return (
-    <footer className="border-t bg-white">
+    <footer className="border-t bg-gradient-to-b from-slate-50 to-white">
       <div className="container mx-auto px-4 py-16 md:py-20">
         <div className="grid grid-cols-2 gap-8 md:grid-cols-4 lg:grid-cols-6">
           {/* Brand */}
           <div className="col-span-2 lg:col-span-1">
-            <Link href="/" className="flex items-center gap-2 mb-4">
-              <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-primary text-primary-foreground font-bold text-lg">
-                BA
-              </div>
-              <span className="font-bold text-xl">Buenos Aires Expats</span>
+            <Link href="/" className="flex items-center mb-4">
+              <span className="font-bold text-xl">
+                Buenos Aires <span className="text-sky-600">Expats</span>
+              </span>
             </Link>
             <p className="text-sm text-muted-foreground max-w-xs">
               {t("footer.description") as string}
@@ -82,7 +80,7 @@ export function Footer() {
 
           {/* Visas */}
           <div>
-            <h3 className="text-sm font-semibold text-foreground mb-3 uppercase tracking-wide">{t("footer.sections.visas") as string}</h3>
+            <h3 className="text-sm font-semibold text-foreground mb-3 uppercase tracking-wide text-sky-700">{t("footer.sections.visas") as string}</h3>
             <ul className="space-y-2">
               {visaLinks.map((link) => (
                 <li key={link.href}>
@@ -99,7 +97,7 @@ export function Footer() {
 
           {/* Guides */}
           <div>
-            <h3 className="text-sm font-semibold text-foreground mb-3 uppercase tracking-wide">{t("footer.sections.guides") as string}</h3>
+            <h3 className="text-sm font-semibold text-foreground mb-3 uppercase tracking-wide text-sky-700">{t("footer.sections.guides") as string}</h3>
             <ul className="space-y-2">
               {guideLinks.map((link) => (
                 <li key={link.href}>
@@ -116,7 +114,7 @@ export function Footer() {
 
           {/* Resources */}
           <div>
-            <h3 className="text-sm font-semibold text-foreground mb-3 uppercase tracking-wide">{t("footer.sections.resources") as string}</h3>
+            <h3 className="text-sm font-semibold text-foreground mb-3 uppercase tracking-wide text-sky-700">{t("footer.sections.resources") as string}</h3>
             <ul className="space-y-2">
               {resourceLinks.map((link) => (
                 <li key={link.href}>
@@ -133,7 +131,7 @@ export function Footer() {
 
           {/* Legal Services */}
           <div>
-            <h3 className="text-sm font-semibold text-foreground mb-3 uppercase tracking-wide">{t("footer.sections.legal") as string}</h3>
+            <h3 className="text-sm font-semibold text-foreground mb-3 uppercase tracking-wide text-sky-700">{t("footer.sections.legal") as string}</h3>
             <ul className="space-y-2">
               {legalServices.map((service, idx) => (
                 <li key={idx}>
@@ -155,7 +153,7 @@ export function Footer() {
 
           {/* Company */}
           <div>
-            <h3 className="text-sm font-semibold text-foreground mb-3 uppercase tracking-wide">{t("footer.sections.company") as string}</h3>
+            <h3 className="text-sm font-semibold text-foreground mb-3 uppercase tracking-wide text-sky-700">{t("footer.sections.company") as string}</h3>
             <ul className="space-y-2">
               {companyLinks.map((link) => (
                 <li key={link.href}>

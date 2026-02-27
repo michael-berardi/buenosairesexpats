@@ -5,62 +5,49 @@ import { Badge } from "@/components/ui/badge";
 import { StructuredData } from "@/components/structured-data";
 import { LuceroLegalCTA } from "@/components/lucero-legal-cta";
 import {
-  MapPin,
-  DollarSign,
-  FileText,
-  Home as HomeIcon,
-  Heart,
-  Users,
   ArrowRight,
-  Globe,
   Shield,
-  TrendingUp,
-  Mail,
-  Quote,
-  Compass,
-  CheckCircle,
-  Building
 } from "lucide-react";
 import { generateWebSiteSchema, generateOrganizationSchema } from "@/lib/schema";
 
 const features = [
   {
-    icon: FileText,
+    image: "/images/visa-digital-nomad.jpg",
     title: "Visa Guides",
     description: "Step-by-step instructions for Digital Nomad, work, retirement, and student visas.",
     href: "/visas/digital-nomad",
     cta: "Explore visas",
   },
   {
-    icon: DollarSign,
+    image: "/images/cost-of-living-card.webp",
     title: "Cost of Living",
     description: "Real budget breakdowns and cost calculators for Buenos Aires and beyond.",
     href: "/cost-of-living",
     cta: "See costs",
   },
   {
-    icon: MapPin,
+    image: "/images/neighborhoods-hero.jpg",
     title: "Neighborhood Guides",
     description: "Detailed reviews of Palermo, Recoleta, Belgrano, and other top expat areas.",
     href: "/neighborhoods",
     cta: "Compare neighborhoods",
   },
   {
-    icon: Heart,
+    image: "/images/healthcare-clinic.jpg",
     title: "Healthcare",
     description: "Navigate prepaga insurance, find English-speaking doctors, and understand the system.",
     href: "/healthcare",
     cta: "View options",
   },
   {
-    icon: HomeIcon,
+    image: "/images/housing-apartment.jpg",
     title: "Housing",
     description: "Renting tips, apartment hunting guides, and real estate advice for foreigners.",
     href: "/housing",
     cta: "Find housing",
   },
   {
-    icon: Users,
+    image: "/images/community-expats.webp",
     title: "Expat Stories",
     description: "Real experiences from expats who've made the move. Learn from their successes and mistakes.",
     href: "/stories",
@@ -69,10 +56,10 @@ const features = [
 ];
 
 const stats = [
-  { value: "40+", label: "Detailed Guides" },
-  { value: "16", label: "Real Expat Stories" },
-  { value: "6", label: "Neighborhoods Covered" },
-  { value: "6", label: "Visa Pathways" },
+  { value: "40+", label: "Guides", labelFull: "Detailed Guides" },
+  { value: "16", label: "Stories", labelFull: "Real Expat Stories" },
+  { value: "6", label: "Barrios", labelFull: "Neighborhoods Covered" },
+  { value: "6", label: "Visas", labelFull: "Visa Pathways" },
 ];
 
 const testimonials = [
@@ -80,24 +67,31 @@ const testimonials = [
     quote: "I was paying $3,200 for a studio in SF. Here I have a two-bedroom with a balcony for $900. The math just made sense.",
     author: "Sarah M.",
     role: "Software Engineer, moved from San Francisco",
+    initials: "SM",
+    color: "bg-rose-500",
   },
   {
     quote: "After Brexit, I wanted somewhere with culture, good food, and affordable living. Buenos Aires ticked every box.",
     author: "James W.",
     role: "Freelance Designer, moved from London",
+    initials: "JW",
+    color: "bg-sky-500",
   },
   {
     quote: "My teacher's pension goes three times as far here. I live better on $2,200/month than I did on $6,000 back home.",
     author: "Robert C.",
     role: "Retired Teacher, moved from Phoenix",
+    initials: "RC",
+    color: "bg-amber-500",
   },
 ];
 
 const journeyCards = [
   {
-    icon: Compass,
+    step: "01",
     title: "Planning to Move",
     description: "Research costs, compare visa options, and understand what to expect before you arrive.",
+    image: "/images/journey-planning.webp",
     links: [
       { label: "Cost of Living", href: "/cost-of-living" },
       { label: "Visa Guide", href: "/visas" },
@@ -106,9 +100,10 @@ const journeyCards = [
     ],
   },
   {
-    icon: CheckCircle,
+    step: "02",
     title: "Just Arrived",
     description: "Get set up with essentials: your DNI, healthcare, banking, and navigating the city.",
+    image: "/images/journey-arrived.webp",
     links: [
       { label: "Getting Started", href: "/guides/getting-started" },
       { label: "Getting Your DNI", href: "/guides/getting-dni" },
@@ -117,9 +112,10 @@ const journeyCards = [
     ],
   },
   {
-    icon: Building,
+    step: "03",
     title: "Already Settled",
     description: "Find permanent housing, optimize your taxes, and connect with the expat community.",
+    image: "/images/hero-couple.jpg",
     links: [
       { label: "Housing", href: "/housing" },
       { label: "Working & Taxes", href: "/guides/working-taxes" },
@@ -128,17 +124,37 @@ const journeyCards = [
   },
 ];
 
-// Reusable quote icon component
-function QuoteIcon() {
-  return (
-    <svg className="w-8 h-8 text-sky-200 mb-4" fill="currentColor" viewBox="0 0 24 24">
-      <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/>
-    </svg>
-  );
-}
+const guideCards = [
+  {
+    image: "/images/visa-digital-nomad.jpg",
+    badge: "Most Popular",
+    badgeClass: "badge-primary",
+    title: "Argentina Digital Nomad Visa",
+    description: "Complete guide to the 180-day remote work visa, including requirements, application process, and tips for approval.",
+    href: "/visas/digital-nomad",
+    cta: "Read Guide",
+  },
+  {
+    image: "/images/cost-of-living-card.webp",
+    badge: "Updated Monthly",
+    badgeClass: "badge-accent",
+    title: "Cost of Living in Buenos Aires",
+    description: "Real 2026 budget breakdowns for singles, couples, and families. Includes rent, food, healthcare, and entertainment.",
+    href: "/cost-of-living",
+    cta: "See Costs",
+  },
+  {
+    image: "/images/community-expats.webp",
+    badge: "Stories",
+    badgeClass: "badge-secondary",
+    title: "Real Expat Experiences",
+    description: "Read honest accounts from expats who moved to Buenos Aires. Learn what worked and what didn't.",
+    href: "/stories",
+    cta: "Read Stories",
+  },
+];
 
 export default function Home() {
-  // Generate structured data
   const websiteSchema = generateWebSiteSchema();
   const organizationSchema = generateOrganizationSchema();
 
@@ -151,8 +167,8 @@ export default function Home() {
       {/* Hero Section */}
       <section className="relative overflow-hidden min-h-[600px] flex items-center">
         <Image
-          src="/images/hero-cityscape-2.webp"
-          alt="Aerial view of Buenos Aires at sunset"
+          src="/images/hero-street-cafe.webp"
+          alt="Buenos Aires street cafe at golden hour in Palermo"
           fill
           priority
           className="object-cover"
@@ -160,25 +176,25 @@ export default function Home() {
           quality={90}
         />
         <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/50 to-black/30" />
-        <div className="container mx-auto px-4 py-20 md:py-32 relative">
+        <div className="container mx-auto px-5 sm:px-6 py-20 md:py-32 relative">
           <div className="max-w-4xl mx-auto text-center">
             <Badge variant="secondary" className="mb-6 bg-white/95 text-foreground backdrop-blur-sm">
-              <TrendingUp className="w-3 h-3 mr-1" />
               Updated February 2026
             </Badge>
-            <h1 className="text-4xl md:text-6xl font-bold tracking-tight mb-6 text-white drop-shadow-lg">
+            <h1 className="text-[1.75rem] sm:text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight leading-tight mb-6 text-white drop-shadow-lg">
               Your Honest Guide to{" "}
               <span className="text-sky-300">Life in Buenos Aires</span>
             </h1>
             <p className="text-xl text-white/90 mb-8 max-w-2xl mx-auto drop-shadow-md">
-              Real talk about moving to Argentina. Visa guides, cost breakdowns, 
-              neighborhood reviews, and a community of expats who made the leap.
+              Real talk about moving to Argentina — from people who&apos;ve actually done it.
+              We cover visa applications, monthly cost breakdowns, honest neighborhood reviews,
+              healthcare navigation, and housing tips. Join thousands of expats
+              who used these guides to make the leap.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button asChild size="lg" className="gap-2 bg-sky-600 hover:bg-sky-500 text-white font-semibold shadow-lg shadow-sky-500/30 hover:shadow-xl hover:shadow-sky-500/40 transition-all duration-200">
                 <Link href="/visas">
                   Explore Visa Options
-                  <ArrowRight className="w-4 h-4" />
                 </Link>
               </Button>
               <Button asChild size="lg" className="bg-white text-slate-900 font-semibold hover:bg-slate-100 shadow-lg shadow-black/20 border-0 transition-all duration-200">
@@ -188,91 +204,107 @@ export default function Home() {
               </Button>
             </div>
           </div>
-        </div>
-      </section>
 
-      {/* Stats Section */}
-      <section className="border-y bg-white">
-        <div className="container mx-auto px-4 py-12">
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
-            {stats.map((stat, index) => (
-              <div 
-                key={stat.label} 
-                className="card-stat animate-fade-in"
-                style={{ animationDelay: `${index * 100}ms` }}
-              >
-                <div className="stat-value">{stat.value}</div>
-                <div className="stat-label">{stat.label}</div>
-              </div>
-            ))}
+          {/* Stats Bar — merged into hero */}
+          <div className="mt-12 max-w-3xl mx-auto">
+            <div className="grid grid-cols-4 gap-3 sm:gap-6 bg-white/10 backdrop-blur-md rounded-2xl px-4 sm:px-8 py-5">
+              {stats.map((stat) => (
+                <div key={stat.label} className="text-center">
+                  <div className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-white tracking-tight">
+                    {stat.value}
+                  </div>
+                  <div className="text-xs sm:text-sm text-white/80 mt-1 font-medium">
+                    <span className="sm:hidden">{stat.label}</span>
+                    <span className="hidden sm:inline">{stat.labelFull}</span>
+                  </div>
+                </div>
+              ))}
+            </div>
           </div>
         </div>
       </section>
 
       {/* Features Grid */}
       <section className="section-padding bg-white">
-        <div className="container mx-auto px-4">
+        <div className="container mx-auto px-5 sm:px-6">
           <div className="text-center max-w-2xl mx-auto mb-16 animate-fade-in">
             <h2 className="heading-lg mb-4">
               Everything You Need to Make the Move
             </h2>
             <p className="text-body text-lg">
-              Comprehensive guides written by expats who&apos;ve actually done this. 
-              No fluff, no sugar-coating, just practical information.
+              Comprehensive guides written by expats who&apos;ve actually done this — not travel bloggers passing through.
+              No fluff, no sugar-coating. Just the practical information you need to navigate visas,
+              find an apartment, set up healthcare, and build a life in Buenos Aires.
             </p>
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             {features.map((feature, index) => (
-              <div 
-                key={feature.title} 
-                className="card-feature animate-fade-in group"
+              <Link
+                key={feature.title}
+                href={feature.href}
+                className="group bg-white border border-stone-200 rounded-xl overflow-hidden h-full flex flex-col animate-fade-in card-feature-image"
                 style={{ animationDelay: `${index * 100}ms` }}
               >
-                <div className="icon-wrapper-enhanced group-hover:scale-105 transition-transform duration-200">
-                  <feature.icon className="w-6 h-6" />
+                <div className="relative h-48 overflow-hidden">
+                  <Image
+                    src={feature.image}
+                    alt={feature.title}
+                    fill
+                    className="object-cover transition-transform duration-300 group-hover:scale-105"
+                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                  />
                 </div>
-                <h3 className="heading-sm mb-3">{feature.title}</h3>
-                <p className="text-body-sm mb-5 flex-grow">{feature.description}</p>
-                <Button asChild variant="outline" size="sm" className="mt-auto w-full group/btn">
-                  <Link href={feature.href}>
+                <div className="p-6 flex flex-col flex-grow">
+                  <h3 className="heading-sm mb-3">{feature.title}</h3>
+                  <p className="text-body-sm mb-5 flex-grow">{feature.description}</p>
+                  <span className="inline-flex items-center text-sm font-semibold text-sky-700 group-hover:text-sky-600 transition-colors">
                     {feature.cta}
-                    <ArrowRight className="w-4 h-4 ml-1 group-hover/btn:translate-x-1 transition-transform" />
-                  </Link>
-                </Button>
-              </div>
+                    <ArrowRight className="w-4 h-4 ml-1 group-hover:translate-x-1 transition-transform" />
+                  </span>
+                </div>
+              </Link>
             ))}
           </div>
         </div>
       </section>
 
-      {/* Explore by Situation */}
-      <section className="section-padding bg-muted/30">
-        <div className="container mx-auto px-4">
+      {/* Explore by Situation — image-backed overlay cards */}
+      <section className="section-padding bg-stone-50">
+        <div className="container mx-auto px-5 sm:px-6">
           <div className="text-center max-w-2xl mx-auto mb-12">
             <h2 className="heading-lg mb-4">Explore by Your Situation</h2>
             <p className="text-body text-lg">
-              Whether you&apos;re still researching or already here, find the guides that matter most to you.
+              Whether you&apos;re still researching from abroad, just landed at Ezeiza, or have been here for years — we have guides tailored to your stage.
+              Pick where you are in the journey and get the most relevant resources.
             </p>
           </div>
           <div className="grid md:grid-cols-3 gap-6">
             {journeyCards.map((card) => (
-              <div key={card.title} className="card-feature">
-                <div className="icon-wrapper-enhanced">
-                  <card.icon className="w-6 h-6" />
-                </div>
-                <h3 className="heading-sm mb-2">{card.title}</h3>
-                <p className="text-body-sm mb-4">{card.description}</p>
-                <div className="flex flex-wrap gap-2 mt-auto">
-                  {card.links.map((link) => (
-                    <Link
-                      key={link.href}
-                      href={link.href}
-                      className="tag hover:bg-sky-50 hover:text-sky-700 hover:border-sky-200 transition-colors"
-                    >
-                      {link.label}
-                    </Link>
-                  ))}
+              <div key={card.title} className="relative rounded-xl overflow-hidden h-full min-h-[380px] flex flex-col justify-end group">
+                <Image
+                  src={card.image}
+                  alt={card.title}
+                  fill
+                  className="object-cover transition-transform duration-300 group-hover:scale-105"
+                  sizes="(max-width: 768px) 100vw, 33vw"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent" />
+                <div className="relative p-6 text-white">
+                  <span className="text-sky-300 font-mono text-sm font-bold">{card.step}</span>
+                  <h3 className="text-xl md:text-2xl font-semibold mt-1 mb-2">{card.title}</h3>
+                  <p className="text-white/80 text-sm mb-4 leading-relaxed">{card.description}</p>
+                  <div className="flex flex-wrap gap-2">
+                    {card.links.map((link) => (
+                      <Link
+                        key={link.href}
+                        href={link.href}
+                        className="inline-flex items-center px-3 py-1.5 rounded-full text-sm font-medium bg-white/20 backdrop-blur-sm text-white hover:bg-white/30 transition-colors"
+                      >
+                        {link.label}
+                      </Link>
+                    ))}
+                  </div>
                 </div>
               </div>
             ))}
@@ -280,13 +312,13 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Popular Guides */}
-      <section className="section-padding bg-muted/30">
-        <div className="container mx-auto px-4">
+      {/* Popular Guides — image cards */}
+      <section className="section-padding bg-white">
+        <div className="container mx-auto px-5 sm:px-6">
           <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-4 mb-12">
             <div>
               <h2 className="heading-md mb-2">Most Popular Guides</h2>
-              <p className="text-body">Start with these essential resources</p>
+              <p className="text-body">These three guides are where most expats start their research. They cover the biggest questions about visas, monthly budgets, and what daily life is really like on the ground in Buenos Aires.</p>
             </div>
             <Button asChild variant="outline" className="btn-outline">
               <Link href="/why-argentina">Why Buenos Aires?</Link>
@@ -294,98 +326,69 @@ export default function Home() {
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-            <div className="card-feature-guide">
-              <span className="badge-primary w-fit mb-3">Most Popular</span>
-              <h3 className="heading-sm mb-3">Argentina Digital Nomad Visa</h3>
-              <p className="text-body-sm mb-5 flex-grow">
-                Complete guide to the 180-day remote work visa, including requirements, 
-                application process, and tips for approval.
-              </p>
-              <Button asChild className="w-full bg-sky-700 hover:bg-sky-600 text-white font-semibold">
-                <Link href="/visas/digital-nomad">Read Guide</Link>
-              </Button>
-            </div>
-
-            <div className="card-feature-guide">
-              <span className="badge-accent w-fit mb-3">Updated Monthly</span>
-              <h3 className="heading-sm mb-3">Cost of Living in Buenos Aires</h3>
-              <p className="text-body-sm mb-5 flex-grow">
-                Real 2026 budget breakdowns for singles, couples, and families.
-                Includes rent, food, healthcare, and entertainment.
-              </p>
-              <Button asChild className="w-full bg-sky-700 hover:bg-sky-600 text-white font-semibold">
-                <Link href="/cost-of-living">See Costs</Link>
-              </Button>
-            </div>
-
-            <div className="card-feature-guide">
-              <span className="badge-secondary w-fit mb-3">Stories</span>
-              <h3 className="heading-sm mb-3">Real Expat Experiences</h3>
-              <p className="text-body-sm mb-5 flex-grow">
-                Read honest accounts from expats who moved to Buenos Aires. 
-                Learn what worked and what didn&apos;t.
-              </p>
-              <Button asChild className="w-full bg-sky-700 hover:bg-sky-600 text-white font-semibold">
-                <Link href="/stories">Read Stories</Link>
-              </Button>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Newsletter Section */}
-      <section className="section-padding bg-gradient-to-br from-sky-50 via-white to-sky-50">
-        <div className="container mx-auto px-4">
-          <div className="max-w-2xl mx-auto text-center">
-            <div className="icon-wrapper-enhanced mx-auto mb-6">
-              <Mail className="w-6 h-6" />
-            </div>
-            <h2 className="heading-md mb-4">Get the Latest Updates</h2>
-            <p className="text-body text-lg mb-6">
-              Get weekly updates on visa changes, cost of living,
-              and insider tips for living in Buenos Aires.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-3 max-w-md mx-auto">
-              <input
-                type="email"
-                placeholder="your@email.com"
-                aria-label="Email address"
-                autoComplete="email"
-                className="flex h-12 w-full rounded-lg border-2 border-slate-200 bg-white px-4 py-2 text-base placeholder:text-stone-500 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-sky-500 focus-visible:border-sky-500 transition-all"
-              />
-              <Button className="h-12 px-8 bg-sky-700 hover:bg-sky-600 text-white font-semibold shadow-lg hover:shadow-xl transition-all">
-                Subscribe
-                <ArrowRight className="w-4 h-4 ml-2" />
-              </Button>
-            </div>
-            <p className="text-xs text-stone-600 mt-4">
-              No spam, unsubscribe anytime. We respect your privacy.
-            </p>
+            {guideCards.map((guide) => (
+              <Link
+                key={guide.title}
+                href={guide.href}
+                className="group bg-white border border-stone-200 rounded-xl overflow-hidden h-full flex flex-col card-feature-image"
+              >
+                <div className="relative h-48 overflow-hidden">
+                  <Image
+                    src={guide.image}
+                    alt={guide.title}
+                    fill
+                    className="object-cover transition-transform duration-300 group-hover:scale-105"
+                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                  />
+                  <span className={`absolute top-3 left-3 ${guide.badgeClass}`}>
+                    {guide.badge}
+                  </span>
+                </div>
+                <div className="p-6 flex flex-col flex-grow">
+                  <h3 className="heading-sm mb-3">{guide.title}</h3>
+                  <p className="text-body-sm mb-5 flex-grow">{guide.description}</p>
+                  <span className="inline-flex items-center text-sm font-semibold text-sky-700 group-hover:text-sky-600 transition-colors">
+                    {guide.cta}
+                    <ArrowRight className="w-4 h-4 ml-1 group-hover:translate-x-1 transition-transform" />
+                  </span>
+                </div>
+              </Link>
+            ))}
           </div>
         </div>
       </section>
 
       {/* Testimonials */}
-      <section className="section-padding bg-muted/30">
-        <div className="container mx-auto px-4">
+      <section className="section-padding bg-stone-50">
+        <div className="container mx-auto px-5 sm:px-6">
           <div className="text-center max-w-2xl mx-auto mb-12">
             <h2 className="heading-lg mb-4">What Expats Are Saying</h2>
             <p className="text-body text-lg">
-              Real stories from expats who made the move
+              Hear directly from software engineers, designers, retirees, and freelancers who relocated to Buenos Aires.
+              Their honest takes on costs, culture shock, and daily life might surprise you — these are real people sharing unfiltered experiences.
             </p>
           </div>
           <div className="grid md:grid-cols-3 gap-6 max-w-6xl mx-auto">
             {testimonials.map((testimonial, index) => (
-              <div 
-                key={index} 
-                className="card-testimonial animate-fade-in"
-                style={{ animationDelay: `${index * 100}ms` }}
+              <div
+                key={index}
+                className="bg-white rounded-2xl p-8 animate-fade-in"
+                style={{
+                  animationDelay: `${index * 100}ms`,
+                  boxShadow: "0 4px 12px rgba(0, 0, 0, 0.06)",
+                }}
               >
-                <QuoteIcon />
-                <p className="text-body mb-6 leading-relaxed">&ldquo;{testimonial.quote}&rdquo;</p>
-                <div className="pt-4 border-t border-border/50">
-                  <p className="font-semibold text-foreground">{testimonial.author}</p>
-                  <p className="text-sm text-muted-foreground">{testimonial.role}</p>
+                <p className="text-body mb-6 leading-relaxed italic">
+                  &ldquo;{testimonial.quote}&rdquo;
+                </p>
+                <div className="flex items-center gap-3 pt-4 border-t border-stone-100">
+                  <div className={`w-10 h-10 rounded-full ${testimonial.color} flex items-center justify-center text-white font-bold text-sm`}>
+                    {testimonial.initials}
+                  </div>
+                  <div>
+                    <p className="font-semibold text-foreground">{testimonial.author}</p>
+                    <p className="text-sm text-muted-foreground">{testimonial.role}</p>
+                  </div>
                 </div>
               </div>
             ))}
@@ -395,14 +398,14 @@ export default function Home() {
 
       {/* Lucero Legal CTA */}
       <section className="section-padding">
-        <div className="container mx-auto px-4 max-w-4xl">
+        <div className="container mx-auto px-5 sm:px-6 max-w-4xl">
           <LuceroLegalCTA variant="full" utm_content="homepage" />
         </div>
       </section>
 
       {/* Legal Disclaimer */}
       <section className="py-8 border-t">
-        <div className="container mx-auto px-4">
+        <div className="container mx-auto px-5 sm:px-6">
           <div className="flex items-start gap-3 max-w-3xl mx-auto text-sm text-muted-foreground">
             <Shield className="w-5 h-5 flex-shrink-0 mt-0.5" />
             <p>

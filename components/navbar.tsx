@@ -73,15 +73,13 @@ export function Navbar() {
   };
 
   return (
-    <header className="sticky top-0 z-50 w-full border-b border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
+    <header className="sticky top-0 z-50 w-full border-b border-border/40 bg-background/95 backdrop-blur-md supports-[backdrop-filter]:bg-background/70 shadow-sm">
       <div className="container mx-auto flex h-16 items-center justify-between px-4">
         {/* Logo */}
-        <Link href="/" className="flex items-center gap-2">
-          <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-primary text-primary-foreground font-bold text-lg">
-            BA
-          </div>
-          <span className="hidden font-bold text-xl sm:inline-block">
-            Buenos Aires Expats
+        <Link href="/" className="flex items-center">
+          <span className="font-bold text-xl sm:hidden">BA Expats</span>
+          <span className="hidden sm:inline font-bold text-xl">
+            Buenos Aires <span className="text-sky-600">Expats</span>
           </span>
         </Link>
 
@@ -179,12 +177,9 @@ export function Navbar() {
           <SheetContent side="right" className="w-[300px] sm:w-[400px]">
             <div className="flex flex-col gap-6 py-6">
               <div className="flex items-center justify-between">
-                <div className="flex items-center gap-2">
-                  <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-primary text-primary-foreground font-bold text-lg">
-                    BA
-                  </div>
-                  <span className="font-bold text-xl">Buenos Aires Expats</span>
-                </div>
+                <span className="font-bold text-xl">
+                  Buenos Aires <span className="text-sky-600">Expats</span>
+                </span>
                 <Button
                   variant="ghost"
                   size="sm"

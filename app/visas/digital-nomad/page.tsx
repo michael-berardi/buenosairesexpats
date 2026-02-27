@@ -18,22 +18,22 @@ import { LuceroLegalCTA } from "@/components/lucero-legal-cta";
 import { generateArticleSchema, generateHowToSchema, generateFAQPageSchema } from "@/lib/schema";
 
 export const metadata: Metadata = {
-  title: "Argentina Digital Nomad Visa - Complete 2026 Guide",
+  title: "Argentina Digital Nomad Visa - Complete 2025 Guide",
   description: "Everything you need to know about Argentina's Digital Nomad Visa. Requirements, application process, costs, and tips for remote workers in 2026.",
   keywords: ["Argentina digital nomad visa", "remote work Argentina", "digital nomad Buenos Aires", "Argentina visa 2026"],
   openGraph: {
-    title: "Argentina Digital Nomad Visa - Complete 2026 Guide",
+    title: "Argentina Digital Nomad Visa - Complete 2025 Guide",
     description: "Work remotely from Argentina for up to 180 days. Step-by-step application guide.",
     type: "article",
-    publishedTime: "2026-02-26",
-    modifiedTime: "2026-02-26",
+    publishedTime: "2025-02-27",
+    modifiedTime: "2025-02-27",
   },
   alternates: {
     canonical: "https://buenosairesexpats.com/visas/digital-nomad",
   },
 };
 
-const LAST_UPDATED = "2026-02-26";
+const LAST_UPDATED = "2025-02-27";
 
 const requirements = [
   {
@@ -176,7 +176,7 @@ export default function DigitalNomadVisaPage() {
       {/* Hero */}
       <section className="relative py-16 md:py-24 overflow-hidden">
         <div className="absolute inset-0">
-          <div className="absolute inset-0 bg-[url('/images/visa-digital-nomad.jpg')] bg-cover bg-center" />
+          <div className="absolute inset-0 bg-[url('/images/digital-nomad-workspace.jpg')] bg-cover bg-center" />
           <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/50 to-black/40" />
         </div>
         <div className="container mx-auto px-4 relative z-10">

@@ -23,7 +23,7 @@ export const metadata: Metadata = {
     title: "Buenos Aires Dining Guide | Michelin-Starred & Fine Dining",
     description: "The definitive dining guide to Buenos Aires. Michelin-starred restaurants and world-class culinary experiences.",
     images: [{
-      url: "/images/dining-og.jpg",
+      url: "/images/og-image.jpg",
       width: 1200,
       height: 630,
       alt: "Buenos Aires Dining Guide"
@@ -98,7 +98,7 @@ const neighborhoods = [
     highlights: ["Don Julio (1 Star)", "Crizia (1 Star)", "Tegui"],
     restaurantCount: 8,
     michelinCount: 2,
-    image: "/images/dining-recoleta.jpg",
+    image: "/images/dining-palermo.jpg",
   },
   {
     name: "Belgrano",
@@ -107,7 +107,7 @@ const neighborhoods = [
     highlights: ["Roux", "Corte Comedor", "La Casona de Belgrano"],
     restaurantCount: 8,
     michelinCount: 0,
-    image: "/images/dining-recoleta.jpg",
+    image: "/images/dining-belgrano.jpg",
   },
 ];
 

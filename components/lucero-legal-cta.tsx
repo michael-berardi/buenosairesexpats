@@ -1,5 +1,6 @@
 import Link from "next/link";
-import { Scale, ArrowRight, ExternalLink } from "lucide-react";
+import Image from "next/image";
+import { ArrowRight, ExternalLink } from "lucide-react";
 
 interface LuceroLegalCTAProps {
   variant: "full" | "compact" | "inline";
@@ -41,9 +42,6 @@ export function LuceroLegalCTA({
     return (
       <div className="bg-sky-50 border border-sky-200 rounded-xl p-6">
         <div className="flex items-start gap-4">
-          <div className="w-10 h-10 rounded-lg bg-sky-100 flex items-center justify-center flex-shrink-0">
-            <Scale className="w-5 h-5 text-sky-700" />
-          </div>
           <div className="flex-1">
             <h3 className="font-semibold text-stone-900 mb-1">
               {headline || "Need Immigration Help?"}
@@ -69,11 +67,15 @@ export function LuceroLegalCTA({
 
   // variant === "full"
   return (
-    <section className="bg-gradient-to-br from-sky-700 to-sky-900 rounded-2xl p-8 md:p-12 text-white">
-      <div className="max-w-3xl mx-auto text-center">
-        <div className="w-14 h-14 rounded-2xl bg-white/10 flex items-center justify-center mx-auto mb-6 backdrop-blur-sm">
-          <Scale className="w-7 h-7 text-white" />
-        </div>
+    <section className="relative bg-gradient-to-br from-sky-700 to-sky-900 rounded-2xl p-8 md:p-12 text-white overflow-hidden">
+      <Image
+        src="/images/lucero-legal-cta-bg.webp"
+        alt="Lucero Legal office in Buenos Aires"
+        fill
+        className="object-cover opacity-20 mix-blend-overlay"
+        sizes="(max-width: 768px) 100vw, 800px"
+      />
+      <div className="relative max-w-3xl mx-auto text-center">
         <h2 className="text-2xl md:text-3xl font-bold mb-4">
           {headline || "Ready to Make Your Move to Buenos Aires?"}
         </h2>
