@@ -271,7 +271,7 @@ export default function AboutPage() {
                   Explore Visa Options
                 </Link>
               </Button>
-              <Button asChild size="lg" variant="outline" className="border-primary-foreground/20 hover:bg-primary-foreground/10">
+              <Button asChild size="lg" className="border border-white/40 text-white bg-transparent hover:bg-white/10 hover:text-white">
                 <Link href="/cost-of-living">
                   Calculate Costs
                 </Link>
