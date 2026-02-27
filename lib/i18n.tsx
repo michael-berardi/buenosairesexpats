@@ -3,11 +3,12 @@
 import React, { createContext, useContext, useState, useEffect, ReactNode } from 'react';
 import en from '@/messages/en.json';
 import es from '@/messages/es.json';
+import pt from '@/messages/pt.json';
 
-type Locale = 'en' | 'es';
+type Locale = 'en' | 'es' | 'pt';
 type Translations = typeof en;
 
-const translations: Record<Locale, Translations> = { en, es };
+const translations: Record<Locale, Translations> = { en, es, pt };
 
 interface I18nContextType {
   locale: Locale;
@@ -60,12 +61,14 @@ export function I18nProvider({ children }: { children: ReactNode }) {
   useEffect(() => {
     setMounted(true);
     const savedLocale = localStorage.getItem('locale') as Locale;
-    if (savedLocale && (savedLocale === 'en' || savedLocale === 'es')) {
+    if (savedLocale && (savedLocale === 'en' || savedLocale === 'es' || savedLocale === 'pt')) {
       setLocaleState(savedLocale);
     } else {
       const browserLang = navigator.language.split('-')[0];
       if (browserLang === 'es') {
         setLocaleState('es');
+      } else if (browserLang === 'pt') {
+        setLocaleState('pt');
       }
     }
   }, []);

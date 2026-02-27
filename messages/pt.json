@@ -1,0 +1,230 @@
+{
+  "navigation": {
+    "visas": "Vistos",
+    "guides": "Guias",
+    "stories": "Histórias",
+    "about": "Sobre",
+    "freeConsultation": "Consulta Grátis",
+    "whyArgentina": "Por que Argentina?"
+  },
+  "visaItems": {
+    "digitalNomad": {
+      "title": "Visto Nômade Digital",
+      "description": "Trabalhe remotamente da Argentina por até 180 dias"
+    },
+    "work": {
+      "title": "Visto de Trabalho",
+      "description": "Opções de residência baseadas em emprego"
+    },
+    "retirement": {
+      "title": "Visto de Aposentadoria",
+      "description": "Residência baseada em pensão para aposentados"
+    },
+    "student": {
+      "title": "Visto de Estudante",
+      "description": "Estude em universidades argentinas"
+    },
+    "investment": {
+      "title": "Visto de Investimento",
+      "description": "Caminhos de negócios e investimento"
+    },
+    "nationality": {
+      "title": "Visto por Nacionalidade",
+      "description": "Verifique requisitos para seu país"
+    },
+    "quiz": {
+      "title": "Encontre seu Visto",
+      "description": "Faça nosso quiz para encontrar o melhor visto para você"
+    }
+  },
+  "guideItems": {
+    "costOfLiving": {
+      "title": "Custo de Vida",
+      "description": "Detalhamento detalhado de despesas mensais"
+    },
+    "neighborhoods": {
+      "title": "Bairros",
+      "description": "Melhores áreas para morar em Buenos Aires"
+    },
+    "dining": {
+      "title": "Guia Gastronômico",
+      "description": "Restaurantes com estrela Michelin e alta cozinha"
+    },
+    "healthcare": {
+      "title": "Saúde",
+      "description": "Opções de seguros e atendimento médico"
+    },
+    "banking": {
+      "title": "Banco",
+      "description": "Configurar contas e transferir dinheiro"
+    },
+    "housing": {
+      "title": "Moradia",
+      "description": "Aluguel e compra de imóveis"
+    },
+    "learningSpanish": {
+      "title": "Aprender Espanhol",
+      "description": "Escolas de idiomas e dicas para dominar o espanhol"
+    },
+    "gettingDNI": {
+      "title": "Obter seu DNI",
+      "description": "Guia passo a passo para o ID de residência argentina"
+    },
+    "foodDining": {
+      "title": "Guia de Comida Local",
+      "description": "Restaurantes do dia a dia, cafés e culinária argentina"
+    },
+    "safety": {
+      "title": "Segurança",
+      "description": "Mantenha-se seguro e evite golpes"
+    },
+    "weather": {
+      "title": "Clima",
+      "description": "Estações e o que esperar"
+    },
+    "culturalEtiquette": {
+      "title": "Etiqueta Cultural",
+      "description": "Costumes, saudações e normas sociais"
+    },
+    "transportation": {
+      "title": "Transporte",
+      "description": "Subte, ônibus, táxis e como se locomover"
+    },
+    "workingTaxes": {
+      "title": "Trabalho e Impostos",
+      "description": "Trabalho remoto, monotributo e obrigações fiscais"
+    },
+    "gettingStarted": {
+      "title": "Primeiros Passos",
+      "description": "Lista de verificação para seus primeiros 90 dias"
+    },
+    "whyArgentina": {
+      "title": "Por que Argentina?",
+      "description": "Olhar honesto do porquê expats estão escolhendo Buenos Aires"
+    }
+  },
+  "homepage": {
+    "hero": {
+      "badge": "Atualizado Fevereiro 2026",
+      "title": "Seu Guia Honesto para a Vida em Buenos Aires",
+      "subtitle": "Conversa real sobre mudar para a Argentina. Guias de vistos, detalhamento de custos, avaliações de bairros e uma comunidade de expats que deram o salto.",
+      "exploreVisas": "Explorar Opções de Visto",
+      "freeConsultation": "Consulta Legal Grátis"
+    },
+    "stats": {
+      "guides": "Guias Detalhadas",
+      "stories": "Histórias Reais de Expats",
+      "neighborhoods": "Bairros Cobertos",
+      "visaPathways": "Caminhos de Visto"
+    },
+    "features": {
+      "title": "Tudo que Você Precisa para se Mudar",
+      "subtitle": "Guias completas escritas por expats que realmente fizeram isso. Sem enchimento, sem açúcar, apenas informação prática.",
+      "visaGuides": {
+        "title": "Guias de Vistos",
+        "description": "Instruções passo a passo para vistos de Nômade Digital, trabalho, aposentadoria e estudante.",
+        "cta": "Explorar vistos"
+      },
+      "costOfLiving": {
+        "title": "Custo de Vida",
+        "description": "Detalhamento real de orçamentos e calculadoras de custo para Buenos Aires e além.",
+        "cta": "Ver custos"
+      },
+      "neighborhoods": {
+        "title": "Guias de Bairros",
+        "description": "Avaliações detalhadas de Palermo, Recoleta, Belgrano e outras áreas top para expats.",
+        "cta": "Comparar bairros"
+      },
+      "healthcare": {
+        "title": "Saúde",
+        "description": "Navegue seguros de prepaga, encontre médicos que falam inglês e entenda o sistema.",
+        "cta": "Ver opções"
+      },
+      "housing": {
+        "title": "Moradia",
+        "description": "Dicas de aluguel, guias de busca de apartamentos e conselhos imobiliários para estrangeiros.",
+        "cta": "Encontrar moradia"
+      },
+      "expatStories": {
+        "title": "Histórias de Expats",
+        "description": "Experiências reais de expats que se mudaram. Aprenda com seus sucessos e erros.",
+        "cta": "Ler histórias"
+      }
+    },
+    "situation": {
+      "title": "Explore por sua Situação",
+      "subtitle": "Seja você ainda está pesquisando ou já está aqui, encontre os guias que mais importam para você.",
+      "planning": {
+        "title": "Planejando Mudar",
+        "description": "Pesquise custos, compare opções de visto e entenda o que esperar antes de chegar."
+      },
+      "arrived": {
+        "title": "Recém Chegado",
+        "description": "Configure-se com o essencial: seu DNI, saúde, banco e navegando a cidade."
+      },
+      "settled": {
+        "title": "Já Estabelecido",
+        "description": "Encontre moradia permanente, otimize seus impostos e conecte-se com a comunidade expat."
+      }
+    },
+    "popular": {
+      "title": "Guias Mais Populares",
+      "subtitle": "Comece com esses recursos essenciais",
+      "whyBA": "Por que Buenos Aires?",
+      "digitalNomad": {
+        "badge": "Mais Popular",
+        "title": "Visto Nômade Digital Argentina",
+        "description": "Guia completo do visto de trabalho remoto de 180 dias, incluindo requisitos, processo de aplicação e dicas para aprovação.",
+        "cta": "Ler Guia"
+      },
+      "costOfLiving": {
+        "badge": "Atualizado Mensalmente",
+        "title": "Custo de Vida em Buenos Aires",
+        "description": "Orçamentos reais 2026 para solteiros, casais e famílias. Inclui aluguel, comida, saúde e entretenimento.",
+        "cta": "Ver Custos"
+      },
+      "expatStories": {
+        "badge": "Histórias",
+        "title": "Experiências Reais de Expats",
+        "description": "Leia relatos honestos de expats que se mudaram para Buenos Aires. Aprenda o que funcionou e o que não.",
+        "cta": "Ler Histórias"
+      }
+    },
+    "newsletter": {
+      "title": "Receba as Últimas Atualizações",
+      "subtitle": "Receba atualizações semanais sobre mudanças de visto, custo de vida e dicas internas para viver em Buenos Aires.",
+      "placeholder": "seu@email.com",
+      "subscribe": "Inscrever-se",
+      "privacy": "Sem spam, cancele quando quiser. Respeitamos sua privacidade."
+    },
+    "testimonials": {
+      "title": "O que os Expats Estão Dizendo",
+      "subtitle": "Histórias reais de expats que deram o passo"
+    },
+    "disclaimer": "A informação neste site é apenas para fins educativos e não constitui aconselhamento legal. As leis de imigração mudam frequentemente."
+  },
+  "footer": {
+    "description": "Recursos honestos para expats considerando mudar para Buenos Aires. Conversa real sobre vistos, custos e vida na Argentina.",
+    "sections": {
+      "visas": "Vistos",
+      "guides": "Guias",
+      "resources": "Recursos",
+      "legal": "Serviços Legais",
+      "company": "Empresa"
+    },
+    "legalServices": [
+      { "label": "Consulta Grátis" },
+      { "label": "Assistência de Visto" },
+      { "label": "Ajuda de Residência" }
+    ],
+    "viaLucero": "via Lucero Legal",
+    "copyright": "Todos os direitos reservados.",
+    "educational": "A informação fornecida é apenas para fins educativos. Para assistência de visto, recomendamos",
+    "luceroLegal": "Lucero Legal"
+  },
+  "common": {
+    "readMore": "Ler Mais",
+    "learnMore": "Saber Mais",
+    "getStarted": "Começar"
+  }
+}

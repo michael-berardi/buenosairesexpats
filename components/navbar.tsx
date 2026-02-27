@@ -24,8 +24,13 @@ export function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   const { locale, setLocale, t } = useTranslation();
 
+  const locales = ["en", "es", "pt"] as const;
+  const currentIndex = locales.indexOf(locale as "en" | "es" | "pt");
+  const nextIndex = (currentIndex + 1) % locales.length;
+  const nextLocale = locales[nextIndex];
+
   const toggleLocale = () => {
-    setLocale(locale === "en" ? "es" : "en");
+    setLocale(nextLocale);
   };
 
   const visaItems = [
@@ -154,7 +159,7 @@ export function Navbar() {
             className="flex items-center gap-1.5"
           >
             <Globe className="w-4 h-4" />
-            <span className="font-medium">{locale === "en" ? "ES" : "EN"}</span>
+            <span className="font-medium">{nextLocale.toUpperCase()}</span>
           </Button>
           <Button asChild size="sm" className="bg-sky-700 hover:bg-sky-600 text-white font-semibold shadow-md hover:shadow-lg transition-all">
             <Link href="https://lucerolegal.org?utm_source=buenosairesexpats&utm_medium=navbar" target="_blank" rel="noopener noreferrer">
@@ -187,7 +192,7 @@ export function Navbar() {
                   className="flex items-center gap-1"
                 >
                   <Globe className="w-4 h-4" />
-                  {locale === "en" ? "ES" : "EN"}
+                  {nextLocale.toUpperCase()}
                 </Button>
               </div>
 
