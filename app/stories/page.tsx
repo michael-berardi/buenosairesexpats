@@ -5,11 +5,16 @@ import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/com
 import { Badge } from "@/components/ui/badge";
 import { Quote, ArrowRight, MapPin, Briefcase, Heart, AlertTriangle, Laugh, Sparkles, Building2, Users } from "lucide-react";
 import { stories, getAllCategories, type StoryCategory } from "@/lib/stories-data";
+import { StructuredData } from "@/components/structured-data";
+import { generateBreadcrumbSchema } from "@/lib/schema";
 
 export const metadata: Metadata = {
   title: "Real Expat Stories - Buenos Aires Experiences",
   description: "Authentic stories from expats who moved to Buenos Aires. Successes, struggles, culture shocks, scams, romances, and business ventures - the real unfiltered truth about life in Argentina.",
   keywords: ["expat stories Buenos Aires", "moving to Argentina", "real experiences", "culture shock", "expat life"],
+  alternates: {
+    canonical: "https://buenosairesexpats.com/stories",
+  },
 };
 
 const categoryIcons: Record<StoryCategory, typeof Heart> = {
@@ -33,8 +38,13 @@ const categoryColors: Record<StoryCategory, string> = {
 };
 
 export default function StoriesPage() {
+  const breadcrumbSchema = generateBreadcrumbSchema([
+    { name: "Home", item: "https://buenosairesexpats.com" },
+    { name: "Expat Stories" },
+  ]);
+
   const categories = getAllCategories();
-  
+
   // Get featured stories (mix of categories)
   const featuredStories = [
     stories.find(s => s.id === "erin-15-year-love-affair"),
@@ -45,6 +55,8 @@ export default function StoriesPage() {
 
   return (
     <div className="flex flex-col min-h-screen">
+      <StructuredData data={breadcrumbSchema} />
+
       {/* Breadcrumb */}
       <div className="border-b bg-muted/30">
         <div className="container mx-auto px-4 py-4">
@@ -258,7 +270,7 @@ export default function StoriesPage() {
                       <p className="text-sm text-muted-foreground">
                         "I didn't even like the taste of mate - hot grass water, basically. But I almost felt like I was insulting someone not taking a sip. 
                         After COVID it's fine not to accept the shared straw, but when I first moved here, refusing felt like a social crime."
-                        <span className="text-xs text-muted-foreground block mt-1">- American expat in Palermo</span>
+                        <span className="text-xs text-muted-foreground block mt-1">- Expat in Palermo</span>
                       </p>
                     </div>
                   </div>
@@ -290,7 +302,7 @@ export default function StoriesPage() {
                       <p className="text-sm text-muted-foreground">
                         "I heard a girl call her boyfriend 'negro' repeatedly and nearly had a heart attack. She explained it's like 'nigga' in the US - 
                         a term of affection. I had to explain that word is VERY different where I'm from. Cultural translation is hard."
-                        <span className="text-xs text-muted-foreground block mt-1">- American expat in San Telmo</span>
+                        <span className="text-xs text-muted-foreground block mt-1">- Expat in San Telmo</span>
                       </p>
                     </div>
                   </div>
@@ -323,7 +335,7 @@ export default function StoriesPage() {
                         "Coming from the US where I never carried cash, I had to learn to carry stacks of pesos everywhere. 
                         Nothing works without physical money - not the bus, not the corner store, not the guy selling empanadas. 
                         My wallet went from slim to George Costanza status."
-                        <span className="text-xs text-muted-foreground block mt-1">- American expat in Villa Crespo</span>
+                        <span className="text-xs text-muted-foreground block mt-1">- Expat in Villa Crespo</span>
                       </p>
                     </div>
                   </div>

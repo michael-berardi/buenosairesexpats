@@ -15,12 +15,15 @@ import {
 } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Best Neighborhoods in Buenos Aires for Expats 2025",
+  title: "Best Neighborhoods in Buenos Aires for Expats 2026",
   description: "Complete guide to Buenos Aires neighborhoods for expats. Compare Palermo, Recoleta, Belgrano, San Telmo and more. Safety, rent prices, and lifestyle factors.",
   keywords: ["Buenos Aires neighborhoods", "best areas expats Buenos Aires", "Palermo Recoleta Belgrano", "where to live Buenos Aires"],
   openGraph: {
     title: "Best Neighborhoods in Buenos Aires for Expats",
     description: "Find your perfect neighborhood in Buenos Aires. Detailed guides to Palermo, Recoleta, Belgrano, and more.",
+  },
+  alternates: {
+    canonical: "https://buenosairesexpats.com/neighborhoods",
   },
 };
 
@@ -29,7 +32,7 @@ const neighborhoods = [
     name: "Palermo",
     subareas: ["Soho", "Hollywood", "Botánico"],
     rentLevel: "High",
-    rentPrice: "$700-1,500",
+    rentPrice: "$950-1,750",
     safety: "Very Good",
     transport: "Excellent",
     expatScore: 10,
@@ -41,7 +44,7 @@ const neighborhoods = [
   {
     name: "Recoleta",
     rentLevel: "High",
-    rentPrice: "$800-1,600",
+    rentPrice: "$950-1,850",
     safety: "Excellent",
     transport: "Excellent",
     expatScore: 9,
@@ -53,7 +56,7 @@ const neighborhoods = [
   {
     name: "Belgrano",
     rentLevel: "Medium-High",
-    rentPrice: "$600-1,200",
+    rentPrice: "$700-1,400",
     safety: "Very Good",
     transport: "Very Good",
     expatScore: 8,
@@ -65,7 +68,7 @@ const neighborhoods = [
   {
     name: "San Telmo",
     rentLevel: "Medium",
-    rentPrice: "$500-900",
+    rentPrice: "$600-1,050",
     safety: "Moderate",
     transport: "Good",
     expatScore: 7,
@@ -77,7 +80,7 @@ const neighborhoods = [
   {
     name: "Villa Crespo",
     rentLevel: "Medium",
-    rentPrice: "$500-900",
+    rentPrice: "$600-1,050",
     safety: "Good",
     transport: "Good",
     expatScore: 7,
@@ -89,7 +92,7 @@ const neighborhoods = [
   {
     name: "Puerto Madero",
     rentLevel: "Very High",
-    rentPrice: "$1,000-2,500",
+    rentPrice: "$1,175-2,900",
     safety: "Excellent",
     transport: "Moderate",
     expatScore: 6,

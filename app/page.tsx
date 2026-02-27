@@ -3,19 +3,23 @@ import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { StructuredData } from "@/components/structured-data";
-import { 
-  MapPin, 
-  DollarSign, 
-  FileText, 
-  Home as HomeIcon, 
-  Heart, 
-  Users, 
+import { LuceroLegalCTA } from "@/components/lucero-legal-cta";
+import {
+  MapPin,
+  DollarSign,
+  FileText,
+  Home as HomeIcon,
+  Heart,
+  Users,
   ArrowRight,
   Globe,
   Shield,
   TrendingUp,
   Mail,
-  Quote
+  Quote,
+  Compass,
+  CheckCircle,
+  Building
 } from "lucide-react";
 import { generateWebSiteSchema, generateOrganizationSchema } from "@/lib/schema";
 
@@ -53,33 +57,67 @@ const features = [
   {
     icon: Users,
     title: "Expat Stories",
-    description: "Real experiences from Americans who've made the move. Learn from their successes and mistakes.",
+    description: "Real experiences from expats who've made the move. Learn from their successes and mistakes.",
     href: "/stories",
   },
 ];
 
 const stats = [
-  { value: "50+", label: "In-depth Guides" },
-  { value: "500+", label: "Community Members" },
-  { value: "100+", label: "Verified Resources" },
-  { value: "2025", label: "Latest Data" },
+  { value: "40+", label: "Detailed Guides" },
+  { value: "16", label: "Real Expat Stories" },
+  { value: "6", label: "Neighborhoods Covered" },
+  { value: "6", label: "Visa Pathways" },
 ];
 
 const testimonials = [
   {
     quote: "I was paying $3,200 for a studio in SF. Here I have a two-bedroom with a balcony for $900. The math just made sense.",
     author: "Sarah M.",
-    role: "Software Engineer, Former SF",
+    role: "Software Engineer, moved from San Francisco",
   },
   {
-    quote: "The political climate in Texas was affecting my mental health. Here I feel like I can just live without everything being a culture war battle.",
-    author: "Marcus T.",
-    role: "Former Austin, TX",
+    quote: "After Brexit, I wanted somewhere with culture, good food, and affordable living. Buenos Aires ticked every box.",
+    author: "James W.",
+    role: "Freelance Designer, moved from London",
   },
   {
-    quote: "My teacher's pension goes three times as far here. I live better on $2,200/month than I did on $6,000 in Arizona.",
+    quote: "My teacher's pension goes three times as far here. I live better on $2,200/month than I did on $6,000 back home.",
     author: "Robert C.",
-    role: "Retired Teacher, Former Phoenix",
+    role: "Retired Teacher, moved from Phoenix",
+  },
+];
+
+const journeyCards = [
+  {
+    icon: Compass,
+    title: "Planning to Move",
+    description: "Research costs, compare visa options, and understand what to expect before you arrive.",
+    links: [
+      { label: "Cost of Living", href: "/cost-of-living" },
+      { label: "Visa Guide", href: "/visas" },
+      { label: "Why Buenos Aires?", href: "/why-argentina" },
+    ],
+  },
+  {
+    icon: CheckCircle,
+    title: "Just Arrived",
+    description: "Get set up with essentials: your DNI, healthcare, banking, and navigating the city.",
+    links: [
+      { label: "Getting Started", href: "/guides/getting-started" },
+      { label: "Getting Your DNI", href: "/guides/getting-dni" },
+      { label: "Healthcare", href: "/healthcare" },
+      { label: "Banking", href: "/banking" },
+    ],
+  },
+  {
+    icon: Building,
+    title: "Already Settled",
+    description: "Find permanent housing, optimize your taxes, and connect with the expat community.",
+    links: [
+      { label: "Housing", href: "/housing" },
+      { label: "Working & Taxes", href: "/guides/working-taxes" },
+      { label: "Expat Stories", href: "/stories" },
+    ],
   },
 ];
 
@@ -119,7 +157,7 @@ export default function Home() {
           <div className="max-w-4xl mx-auto text-center animate-fade-in-up">
             <Badge variant="secondary" className="mb-6 bg-white/95 text-foreground backdrop-blur-sm">
               <TrendingUp className="w-3 h-3 mr-1" />
-              Updated February 2025
+              Updated February 2026
             </Badge>
             <h1 className="text-4xl md:text-6xl font-bold tracking-tight mb-6 text-white drop-shadow-lg">
               Your Honest Guide to{" "}
@@ -127,23 +165,21 @@ export default function Home() {
             </h1>
             <p className="text-xl text-white/90 mb-8 max-w-2xl mx-auto drop-shadow-md">
               Real talk about moving to Argentina. Visa guides, cost breakdowns, 
-              neighborhood reviews, and a community of Americans who made the leap.
+              neighborhood reviews, and a community of expats who made the leap.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button asChild size="lg" className="gap-2 bg-sky-600 hover:bg-sky-500 text-white font-semibold shadow-lg shadow-sky-500/30 hover:shadow-xl hover:shadow-sky-500/40 transition-all duration-200">
-                <Link href="/visas/digital-nomad">
+                <Link href="/visas">
                   Explore Visa Options
                   <ArrowRight className="w-4 h-4" />
                 </Link>
               </Button>
               <Button asChild size="lg" className="bg-white text-slate-900 font-semibold hover:bg-slate-100 shadow-lg shadow-black/20 border-0 transition-all duration-200">
-                <Link href="/cost-of-living">
-                  Calculate Costs
+                <Link href="https://lucerolegal.org?utm_source=buenosairesexpats&utm_medium=hero" target="_blank" rel="noopener noreferrer">
+                  Free Legal Consultation
                 </Link>
               </Button>
             </div>
-
-
           </div>
         </div>
       </section>
@@ -174,7 +210,7 @@ export default function Home() {
               Everything You Need to Make the Move
             </h2>
             <p className="text-body text-lg">
-              Comprehensive guides written by Americans who&apos;ve actually done this. 
+              Comprehensive guides written by expats who&apos;ve actually done this. 
               No fluff, no sugar-coating, just practical information.
             </p>
           </div>
@@ -197,6 +233,40 @@ export default function Home() {
                     <ArrowRight className="w-4 h-4 ml-1 group-hover/btn:translate-x-1 transition-transform" />
                   </Link>
                 </Button>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Explore by Situation */}
+      <section className="section-padding bg-muted/30">
+        <div className="container mx-auto px-4">
+          <div className="text-center max-w-2xl mx-auto mb-12">
+            <h2 className="heading-lg mb-4">Explore by Your Situation</h2>
+            <p className="text-body text-lg">
+              Whether you&apos;re still researching or already here, find the guides that matter most to you.
+            </p>
+          </div>
+          <div className="grid md:grid-cols-3 gap-6">
+            {journeyCards.map((card) => (
+              <div key={card.title} className="card-feature">
+                <div className="icon-wrapper-enhanced">
+                  <card.icon className="w-6 h-6" />
+                </div>
+                <h3 className="heading-sm mb-2">{card.title}</h3>
+                <p className="text-body-sm mb-4">{card.description}</p>
+                <div className="flex flex-wrap gap-2 mt-auto">
+                  {card.links.map((link) => (
+                    <Link
+                      key={link.href}
+                      href={link.href}
+                      className="tag hover:bg-sky-50 hover:text-sky-700 hover:border-sky-200 transition-colors"
+                    >
+                      {link.label}
+                    </Link>
+                  ))}
+                </div>
               </div>
             ))}
           </div>
@@ -233,7 +303,7 @@ export default function Home() {
               <span className="badge-accent w-fit mb-3">Updated Monthly</span>
               <h3 className="heading-sm mb-3">Cost of Living in Buenos Aires</h3>
               <p className="text-body-sm mb-5 flex-grow">
-                Real 2025 budget breakdowns for singles, couples, and families. 
+                Real 2026 budget breakdowns for singles, couples, and families.
                 Includes rent, food, healthcare, and entertainment.
               </p>
               <Button asChild className="w-full bg-sky-700 hover:bg-sky-600 text-white font-semibold">
@@ -245,7 +315,7 @@ export default function Home() {
               <span className="badge-secondary w-fit mb-3">Stories</span>
               <h3 className="heading-sm mb-3">Real Expat Experiences</h3>
               <p className="text-body-sm mb-5 flex-grow">
-                Read honest accounts from Americans who moved to Buenos Aires. 
+                Read honest accounts from expats who moved to Buenos Aires. 
                 Learn what worked and what didn&apos;t.
               </p>
               <Button asChild className="w-full bg-sky-700 hover:bg-sky-600 text-white font-semibold">
@@ -265,7 +335,7 @@ export default function Home() {
             </div>
             <h2 className="heading-md mb-4">Get the Latest Updates</h2>
             <p className="text-body text-lg mb-6">
-              Join 2,400+ expats getting weekly updates on visa changes, cost of living, 
+              Get weekly updates on visa changes, cost of living,
               and insider tips for living in Buenos Aires.
             </p>
             <div className="flex flex-col sm:flex-row gap-3 max-w-md mx-auto">
@@ -292,7 +362,7 @@ export default function Home() {
           <div className="text-center max-w-2xl mx-auto mb-12">
             <h2 className="heading-lg mb-4">What Expats Are Saying</h2>
             <p className="text-body text-lg">
-              Real stories from Americans who made the move
+              Real stories from expats who made the move
             </p>
           </div>
           <div className="grid md:grid-cols-3 gap-6 max-w-6xl mx-auto">
@@ -314,42 +384,10 @@ export default function Home() {
         </div>
       </section>
 
-      {/* CTA */}
-      <section className="section-padding bg-primary text-primary-foreground relative overflow-hidden">
-        <div className="absolute inset-0 opacity-10">
-          <Image
-            src="/images/hero-cityscape.jpg"
-            alt=""
-            fill
-            className="object-cover"
-            sizes="100vw"
-            quality={80}
-            aria-hidden="true"
-          />
-        </div>
-        <div className="container mx-auto px-4 text-center relative">
-          <div className="max-w-2xl mx-auto">
-            <h2 className="heading-lg mb-4">
-              Ready to Explore Your Options?
-            </h2>
-            <p className="text-primary-foreground/90 mb-8 text-lg">
-              Whether you&apos;re just curious or already packing, we&apos;ve got the resources 
-              and community to help you figure it out.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button asChild size="lg" className="bg-white text-sky-700 hover:bg-slate-100 font-bold shadow-xl shadow-black/20 px-8">
-                <Link href="/cost-of-living">
-                  See Cost Breakdown
-                  <ArrowRight className="w-4 h-4 ml-2" />
-                </Link>
-              </Button>
-              <Button asChild size="lg" className="bg-sky-800 text-white hover:bg-sky-700 font-semibold border border-sky-600 shadow-lg shadow-black/20 px-8">
-                <Link href="/neighborhoods">
-                  Explore Neighborhoods
-                </Link>
-              </Button>
-            </div>
-          </div>
+      {/* Lucero Legal CTA */}
+      <section className="section-padding">
+        <div className="container mx-auto px-4 max-w-4xl">
+          <LuceroLegalCTA variant="full" />
         </div>
       </section>
 
@@ -359,13 +397,9 @@ export default function Home() {
           <div className="flex items-start gap-3 max-w-3xl mx-auto text-sm text-muted-foreground">
             <Shield className="w-5 h-5 flex-shrink-0 mt-0.5" />
             <p>
-              <strong>Important:</strong> The information on this site is for educational purposes only 
-              and does not constitute legal advice. Immigration laws change frequently. 
-              For personalized visa assistance, we recommend{" "}
-              <Link href="https://argentinavisalaw.com" className="underline hover:text-foreground">
-                argentinavisalaw.com
-              </Link>. 
-              Katarina and her team have helped many of our readers navigate the process successfully.
+              <strong>Disclaimer:</strong> The information on this site is for educational purposes only
+              and does not constitute legal advice. Immigration laws change frequently.{" "}
+              <LuceroLegalCTA variant="inline" />
             </p>
           </div>
         </div>

@@ -26,6 +26,9 @@ export const metadata: Metadata = {
     title: "Palermo Buenos Aires - Complete Neighborhood Guide for Expats",
     description: "The ultimate guide to Palermo, Buenos Aires' most popular neighborhood for expats.",
   },
+  alternates: {
+    canonical: "https://buenosairesexpats.com/neighborhoods/palermo",
+  },
 };
 
 const subAreas = [
@@ -50,10 +53,10 @@ const subAreas = [
 ];
 
 const rentPrices = [
-  { type: "Studio", price: "$600-900", notes: "Small, often older buildings" },
-  { type: "1 Bedroom", price: "$800-1,200", notes: "Standard for young professionals" },
-  { type: "2 Bedroom", price: "$1,200-1,800", notes: "Good for couples or sharing" },
-  { type: "3+ Bedroom", price: "$1,800-2,500+", notes: "Luxury buildings with amenities" },
+  { type: "Studio", price: "$700-1,050", notes: "Small, often older buildings" },
+  { type: "1 Bedroom", price: "$950-1,400", notes: "Standard for young professionals" },
+  { type: "2 Bedroom", price: "$1,400-2,100", notes: "Good for couples or sharing" },
+  { type: "3+ Bedroom", price: "$2,100-2,900+", notes: "Luxury buildings with amenities" },
 ];
 
 const highlights = [
@@ -75,12 +78,13 @@ export default function PalermoPage() {
     description: "The ultimate guide to Palermo, Buenos Aires' most popular neighborhood for expats. Soho, Hollywood, Botánico - find your perfect area.",
     url: "https://buenosairesexpats.com/neighborhoods/palermo",
     datePublished: "2025-02-16",
-    dateModified: "2025-02-16",
+    dateModified: "2026-02-26",
   });
 
   return (
     <div className="flex flex-col min-h-screen">
       <StructuredData data={articleSchema} />
+
 
       {/* Breadcrumb */}
       <div className="border-b bg-muted/30">
@@ -142,7 +146,7 @@ export default function PalermoPage() {
               <div className="text-sm text-muted-foreground">Expat Score</div>
             </div>
             <div>
-              <div className="text-3xl font-bold text-primary">$800-1,800</div>
+              <div className="text-3xl font-bold text-primary">$950-2,100</div>
               <div className="text-sm text-muted-foreground">Rent Range</div>
             </div>
             <div>
@@ -357,6 +361,11 @@ export default function PalermoPage() {
                   See Cost Breakdown
                 </Link>
               </Button>
+            </div>
+            <div className="flex flex-wrap justify-center gap-4 mt-6 text-sm text-primary-foreground/70">
+              <Link href="/housing" className="hover:text-primary-foreground underline underline-offset-2">Housing Guide</Link>
+              <span>|</span>
+              <Link href="/dining" className="hover:text-primary-foreground underline underline-offset-2">Dining Guide</Link>
             </div>
           </div>
         </div>

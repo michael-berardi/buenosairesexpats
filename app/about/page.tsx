@@ -17,6 +17,9 @@ export const metadata: Metadata = {
   title: "About Us - Expats Argentina",
   description: "Learn about Expats Argentina, your trusted resource for moving to and living in Argentina. Our mission, values, and team.",
   keywords: ["about Expats Argentina", "Argentina expat resource", "Buenos Aires guide"],
+  alternates: {
+    canonical: "https://buenosairesexpats.com/about",
+  },
 };
 
 const values = [
@@ -43,7 +46,7 @@ const values = [
 ];
 
 const stats = [
-  { value: "50+", label: "In-depth Guides" },
+  { value: "40+", label: "In-depth Guides" },
   { value: "500+", label: "Community Members" },
   { value: "100+", label: "Verified Resources" },
   { value: "2025", label: "Founded" },
@@ -72,10 +75,10 @@ export default function AboutPage() {
               About Us
             </Badge>
             <h1 className="text-4xl md:text-5xl font-bold mb-6">
-              Honest Info for Americans Considering Argentina
+              Honest Info for Expats Considering Argentina
             </h1>
             <p className="text-xl text-muted-foreground mb-8">
-              Buenos Aires Expats was created to give Americans the real story: 
+              Buenos Aires Expats was created to give expats the real story: 
               honest, practical information from people who've actually made the move.
             </p>
           </div>
@@ -103,13 +106,13 @@ export default function AboutPage() {
             <h2 className="text-3xl font-bold mb-6">Our Story</h2>
             <div className="prose prose-lg max-w-none text-muted-foreground">
               <p className="mb-4">
-                Buenos Aires Expats began with a simple frustration: finding reliable, honest information 
-                about moving to Argentina from the US was nearly impossible. Outdated blog posts, 
+                Buenos Aires Expats began with a simple frustration: finding reliable, honest information
+                about moving to Argentina was nearly impossible. Outdated blog posts,
                 conflicting visa advice, and cost estimates that didn't match reality.
               </p>
               <p className="mb-4">
                 After navigating the move ourselves and helping dozens of friends do the same, we realized 
-                Americans needed a resource that told the truth: both the good and the challenging parts 
+                Expats needed a resource that told the truth: both the good and the challenging parts 
                 of life in Buenos Aires.
               </p>
               <p className="mb-4">
@@ -156,7 +159,7 @@ export default function AboutPage() {
             <Card>
               <CardContent className="pt-6">
                 <p className="text-muted-foreground mb-4">
-                  Buenos Aires Expats is an independent resource created by Americans who&apos;ve 
+                  Buenos Aires Expats is an independent resource created by expats who&apos;ve 
                   actually made the move. We&apos;re not sponsored by any law firm or business, 
                   which means we can give you the unfiltered truth about life in Argentina.
                 </p>

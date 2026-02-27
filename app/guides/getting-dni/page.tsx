@@ -3,10 +3,12 @@ import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { 
-  IdCard, 
-  FileText, 
-  Clock, 
+import { StructuredData } from "@/components/structured-data";
+import { generateBreadcrumbSchema, generateArticleSchema } from "@/lib/schema";
+import {
+  IdCard,
+  FileText,
+  Clock,
   AlertTriangle,
   CheckCircle,
   AlertCircle,
@@ -20,9 +22,12 @@ import {
 } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Getting Your DNI in Argentina - Step-by-Step Guide 2025",
+  title: "Getting Your DNI in Argentina - Step-by-Step Guide 2026",
   description: "Complete step-by-step guide to obtaining your DNI (Documento Nacional de Identidad) in Argentina. Requirements by visa type, document checklist, and timeline.",
   keywords: ["DNI Argentina", "Documento Nacional de Identidad", "Argentina residency", "DNI application", "RENAPER"],
+  alternates: {
+    canonical: "https://buenosairesexpats.com/guides/getting-dni",
+  },
   openGraph: {
     title: "Getting Your DNI in Argentina - Step-by-Step Guide",
     description: "Complete guide to obtaining your Argentine DNI. Requirements, documents, timeline, and common pitfalls.",
@@ -154,8 +159,25 @@ const commonPitfalls = [
 ];
 
 export default function GettingDNIPage() {
+  const breadcrumbSchema = generateBreadcrumbSchema([
+    { name: "Home", item: "https://buenosairesexpats.com" },
+    { name: "Guides", item: "https://buenosairesexpats.com/guides" },
+    { name: "Getting DNI" },
+  ]);
+
+  const articleSchema = generateArticleSchema({
+    headline: "Getting Your DNI in Argentina - Step-by-Step Guide",
+    description: "Complete step-by-step guide to obtaining your DNI (Documento Nacional de Identidad) in Argentina. Requirements by visa type, document checklist, and timeline.",
+    url: "https://buenosairesexpats.com/guides/getting-dni",
+    datePublished: "2025-01-15",
+    dateModified: "2026-02-26",
+  });
+
   return (
     <div className="flex flex-col min-h-screen">
+      <StructuredData data={breadcrumbSchema} />
+      <StructuredData data={articleSchema} />
+
       {/* Breadcrumb */}
       <div className="border-b bg-muted/30">
         <div className="container mx-auto px-4 py-4">

@@ -3,21 +3,26 @@ import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { 
-  DollarSign, 
-  Building, 
-  ArrowRightLeft, 
+import { LuceroLegalCTA } from "@/components/lucero-legal-cta";
+import {
+  DollarSign,
+  Building,
+  ArrowRightLeft,
   CreditCard,
   AlertCircle,
   CheckCircle,
   ArrowRight,
-  Wallet
+  Wallet,
+  Smartphone
 } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Banking & Money in Argentina - Expat Guide 2025",
+  title: "Banking & Money in Argentina - Expat Guide 2026",
   description: "Complete guide to banking in Argentina for expats. Opening accounts, transferring money, the blue dollar, and managing finances.",
   keywords: ["banking Argentina expats", "blue dollar Argentina", "transfer money Argentina", "Argentina bank account"],
+  alternates: {
+    canonical: "https://buenosairesexpats.com/banking",
+  },
 };
 
 const banks = [
@@ -101,27 +106,36 @@ export default function BankingPage() {
       <section className="py-16">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto">
-            <h2 className="text-3xl font-bold mb-6">Understanding the Blue Dollar</h2>
+            <h2 className="text-3xl font-bold mb-6">Understanding the Dollar in 2026</h2>
             <Card className="mb-6">
               <CardContent className="pt-6">
                 <p className="text-muted-foreground mb-4">
-                  Argentina has multiple exchange rates, which can be confusing for newcomers. 
-                  The "blue dollar" (dólar blue) is the unofficial exchange rate for USD cash, 
-                  typically 30-50% higher than the official rate.
+                  Argentina has historically had multiple exchange rates, but under President Milei&apos;s
+                  economic reforms, the landscape has changed dramatically. The gap between the official
+                  and blue dollar rates has narrowed to just 5-10% in 2026, down from over 100% in
+                  previous years. The government&apos;s crawling peg devaluation and capital controls
+                  relaxation have brought the rates much closer together.
                 </p>
-                <div className="grid md:grid-cols-2 gap-4">
+                <div className="grid md:grid-cols-3 gap-4">
                   <div className="p-4 bg-muted rounded-lg">
                     <div className="font-semibold mb-2">Official Rate</div>
                     <p className="text-sm text-muted-foreground">
-                      The government-set rate. You'll get this at banks and ATMs. 
-                      Not recommended for exchanging money.
+                      The bank rate. Now much closer to market value under
+                      Milei&apos;s reforms. ATM withdrawals are more reasonable than before.
                     </p>
                   </div>
                   <div className="p-4 bg-green-50 dark:bg-green-950/20 rounded-lg border border-green-200">
-                    <div className="font-semibold mb-2 text-green-700 dark:text-green-300">Blue Rate</div>
+                    <div className="font-semibold mb-2 text-green-700 dark:text-green-300">MEP Dollar</div>
                     <p className="text-sm text-muted-foreground">
-                      The unofficial market rate. Access through Western Union, 
-                      exchange houses (cuevas), or crypto. Much better for your USD.
+                      The main legal way to buy USD at market rates. Accessed through
+                      Argentine brokerage accounts (ALyCs). Small spread over official rate.
+                    </p>
+                  </div>
+                  <div className="p-4 bg-blue-50 dark:bg-blue-950/20 rounded-lg border border-blue-200">
+                    <div className="font-semibold mb-2 text-blue-700 dark:text-blue-300">Blue Rate</div>
+                    <p className="text-sm text-muted-foreground">
+                      Still exists but the gap is now only 5-10%. Less relevant
+                      than before. Cuevas still operate but the arbitrage advantage is minimal.
                     </p>
                   </div>
                 </div>
@@ -132,9 +146,10 @@ export default function BankingPage() {
                 <AlertCircle className="w-5 h-5 text-amber-600 flex-shrink-0 mt-0.5" />
                 <div>
                   <p className="text-sm text-amber-800 dark:text-amber-200">
-                    <strong>Important:</strong> Always check current rates before exchanging. 
-                    The gap between official and blue rates changes constantly. 
-                    Use sites like Blue Dollar.net or ask in expat groups for current rates.
+                    <strong>2026 Update:</strong> The dollar gap has narrowed significantly under Milei&apos;s
+                    reforms. The old advice of &quot;always use the blue rate&quot; is less critical now.
+                    The MEP dollar through a local brokerage is the recommended legal approach
+                    for getting the best rate. Check current rates at Blue Dollar.net or DolarHoy.com.
                   </p>
                 </div>
               </div>
@@ -245,8 +260,82 @@ export default function BankingPage() {
         </div>
       </section>
 
-      {/* Essential Tips */}
+      {/* Fintech & Digital Wallets */}
       <section className="py-16 bg-muted/30">
+        <div className="container mx-auto px-4">
+          <div className="max-w-3xl mx-auto">
+            <h2 className="text-3xl font-bold mb-6 text-center">Fintech & Digital Wallets</h2>
+            <p className="text-muted-foreground mb-8 text-center">
+              Argentina has a thriving fintech scene. These digital options are often easier to set up
+              than traditional bank accounts and widely accepted for everyday payments.
+            </p>
+            <div className="grid md:grid-cols-2 gap-6">
+              <Card>
+                <CardHeader>
+                  <CardTitle className="flex items-center gap-2 text-lg">
+                    <Smartphone className="w-5 h-5 text-primary" />
+                    Mercado Pago
+                  </CardTitle>
+                  <CardDescription>Argentina&apos;s most popular digital wallet</CardDescription>
+                </CardHeader>
+                <CardContent>
+                  <ul className="space-y-2 text-sm text-muted-foreground">
+                    <li className="flex items-start gap-2">
+                      <CheckCircle className="w-4 h-4 text-green-500 flex-shrink-0 mt-0.5" />
+                      <span>Accepted almost everywhere (QR payments)</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <CheckCircle className="w-4 h-4 text-green-500 flex-shrink-0 mt-0.5" />
+                      <span>Easy to set up with passport + local phone</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <CheckCircle className="w-4 h-4 text-green-500 flex-shrink-0 mt-0.5" />
+                      <span>Pay bills, transfer money, buy in MercadoLibre</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <CheckCircle className="w-4 h-4 text-green-500 flex-shrink-0 mt-0.5" />
+                      <span>Free virtual debit card included</span>
+                    </li>
+                  </ul>
+                </CardContent>
+              </Card>
+
+              <Card>
+                <CardHeader>
+                  <CardTitle className="flex items-center gap-2 text-lg">
+                    <CreditCard className="w-5 h-5 text-primary" />
+                    Uala
+                  </CardTitle>
+                  <CardDescription>Digital bank, foreigner-friendly</CardDescription>
+                </CardHeader>
+                <CardContent>
+                  <ul className="space-y-2 text-sm text-muted-foreground">
+                    <li className="flex items-start gap-2">
+                      <CheckCircle className="w-4 h-4 text-green-500 flex-shrink-0 mt-0.5" />
+                      <span>Open account with passport (no DNI required)</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <CheckCircle className="w-4 h-4 text-green-500 flex-shrink-0 mt-0.5" />
+                      <span>Free Mastercard debit card (physical + virtual)</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <CheckCircle className="w-4 h-4 text-green-500 flex-shrink-0 mt-0.5" />
+                      <span>Works with Apple Pay and Google Pay</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <CheckCircle className="w-4 h-4 text-green-500 flex-shrink-0 mt-0.5" />
+                      <span>Investment features and USD account available</span>
+                    </li>
+                  </ul>
+                </CardContent>
+              </Card>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Essential Tips */}
+      <section className="py-16">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto">
             <h2 className="text-3xl font-bold mb-8 text-center">Essential Money Tips</h2>
@@ -262,6 +351,15 @@ export default function BankingPage() {
                 </ul>
               </CardContent>
             </Card>
+          </div>
+        </div>
+      </section>
+
+      {/* Lucero Legal CTA */}
+      <section className="py-16">
+        <div className="container mx-auto px-4">
+          <div className="max-w-3xl mx-auto">
+            <LuceroLegalCTA variant="compact" />
           </div>
         </div>
       </section>

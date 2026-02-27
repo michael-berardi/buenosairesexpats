@@ -4,11 +4,13 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { DesktopOnly, MobileOnly } from "@/components/desktop-only";
-import { 
-  Languages, 
-  BookOpen, 
-  GraduationCap, 
-  Globe, 
+import { StructuredData } from "@/components/structured-data";
+import { generateBreadcrumbSchema, generateArticleSchema } from "@/lib/schema";
+import {
+  Languages,
+  BookOpen,
+  GraduationCap,
+  Globe,
   MessageCircle,
   DollarSign,
   Clock,
@@ -20,9 +22,12 @@ import {
 } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Learning Spanish in Argentina - Complete Guide 2025",
+  title: "Learning Spanish in Argentina - Complete Guide 2026",
   description: "Master Argentine Spanish with our complete guide. Learn about voseo, lunfardo slang, best language schools in Buenos Aires, and tips for accelerated learning.",
   keywords: ["learn Spanish Argentina", "Argentine Spanish", "voseo", "lunfardo", "Spanish classes Buenos Aires", "Porteño slang"],
+  alternates: {
+    canonical: "https://buenosairesexpats.com/guides/learning-spanish",
+  },
   openGraph: {
     title: "Learning Spanish in Argentina - Complete Guide",
     description: "Master Argentine Spanish: voseo, lunfardo, and Porteño slang explained. Best schools and learning resources.",
@@ -65,8 +70,25 @@ const voseoExamples = [
 ];
 
 export default function LearningSpanishPage() {
+  const breadcrumbSchema = generateBreadcrumbSchema([
+    { name: "Home", item: "https://buenosairesexpats.com" },
+    { name: "Guides", item: "https://buenosairesexpats.com/guides" },
+    { name: "Learning Spanish" },
+  ]);
+
+  const articleSchema = generateArticleSchema({
+    headline: "Learning Spanish in Argentina - Complete Guide",
+    description: "Master Argentine Spanish with our complete guide. Learn about voseo, lunfardo slang, best language schools in Buenos Aires, and tips for accelerated learning.",
+    url: "https://buenosairesexpats.com/guides/learning-spanish",
+    datePublished: "2025-01-15",
+    dateModified: "2026-02-26",
+  });
+
   return (
     <div className="flex flex-col min-h-screen">
+      <StructuredData data={breadcrumbSchema} />
+      <StructuredData data={articleSchema} />
+
       {/* Breadcrumb */}
       <div className="border-b bg-muted/30">
         <div className="container mx-auto px-4 py-4">

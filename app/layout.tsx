@@ -17,7 +17,7 @@ export const metadata: Metadata = {
     template: "%s | Buenos Aires Expats",
   },
   description: "The ultimate resource for expats moving to Buenos Aires. Honest guides, visa information, cost of living data, neighborhood reviews, and a thriving expat community.",
-  keywords: ["Buenos Aires expats", "living in Buenos Aires", "move to Buenos Aires", "Argentina expats", "Buenos Aires visa", "digital nomad Buenos Aires", "why leave America"],
+  keywords: ["Buenos Aires expats", "living in Buenos Aires", "move to Buenos Aires", "Argentina expats", "Buenos Aires visa", "digital nomad Buenos Aires", "expat life Buenos Aires"],
   authors: [{ name: "Buenos Aires Expats" }],
   creator: "Buenos Aires Expats",
   metadataBase: new URL("https://buenosairesexpats.com"),
@@ -29,7 +29,7 @@ export const metadata: Metadata = {
     title: "Buenos Aires Expats | Your Complete Guide to Living in Buenos Aires",
     description: "The ultimate resource for expats moving to Buenos Aires. Honest guides, visa information, cost of living data, and a thriving expat community.",
     images: [{
-      url: '/og-image.svg',
+      url: '/images/og-image.jpg',
       width: 1200,
       height: 630,
       alt: 'Buenos Aires Expats - Your guide to life in Argentina',
@@ -39,7 +39,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Buenos Aires Expats | Your Complete Guide to Living in Buenos Aires",
     description: "The ultimate resource for expats moving to Buenos Aires. Honest guides, visa information, cost of living data, and a thriving expat community.",
-    images: ['/og-image.svg'],
+    images: ['/images/og-image.jpg'],
   },
   robots: {
     index: true,

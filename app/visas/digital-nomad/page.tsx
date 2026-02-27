@@ -14,25 +14,26 @@ import {
   BookOpen
 } from "lucide-react";
 import { LastUpdated } from "@/components/last-updated";
+import { LuceroLegalCTA } from "@/components/lucero-legal-cta";
 import { generateArticleSchema, generateHowToSchema, generateFAQPageSchema } from "@/lib/schema";
 
 export const metadata: Metadata = {
-  title: "Argentina Digital Nomad Visa - Complete 2025 Guide",
-  description: "Everything you need to know about Argentina's Digital Nomad Visa. Requirements, application process, costs, and tips for remote workers in 2025.",
-  keywords: ["Argentina digital nomad visa", "remote work Argentina", "digital nomad Buenos Aires", "Argentina visa 2025"],
+  title: "Argentina Digital Nomad Visa - Complete 2026 Guide",
+  description: "Everything you need to know about Argentina's Digital Nomad Visa. Requirements, application process, costs, and tips for remote workers in 2026.",
+  keywords: ["Argentina digital nomad visa", "remote work Argentina", "digital nomad Buenos Aires", "Argentina visa 2026"],
   openGraph: {
-    title: "Argentina Digital Nomad Visa - Complete 2025 Guide",
+    title: "Argentina Digital Nomad Visa - Complete 2026 Guide",
     description: "Work remotely from Argentina for up to 180 days. Step-by-step application guide.",
     type: "article",
     publishedTime: "2025-02-16",
-    modifiedTime: "2025-02-16",
+    modifiedTime: "2026-02-26",
   },
   alternates: {
     canonical: "https://buenosairesexpats.com/visas/digital-nomad",
   },
 };
 
-const LAST_UPDATED = "2025-02-16";
+const LAST_UPDATED = "2026-02-26";
 
 const requirements = [
   {
@@ -123,8 +124,8 @@ const documentChecklist = [
 export default function DigitalNomadVisaPage() {
   // Generate structured data
   const articleSchema = generateArticleSchema({
-    headline: "Argentina Digital Nomad Visa - Complete 2025 Guide",
-    description: "Everything you need to know about Argentina's Digital Nomad Visa. Requirements, application process, costs, and tips for remote workers in 2025.",
+    headline: "Argentina Digital Nomad Visa - Complete 2026 Guide",
+    description: "Everything you need to know about Argentina's Digital Nomad Visa. Requirements, application process, costs, and tips for remote workers in 2026.",
     url: "https://buenosairesexpats.com/visas/digital-nomad",
     datePublished: "2025-02-16",
     dateModified: LAST_UPDATED,
@@ -381,27 +382,10 @@ export default function DigitalNomadVisaPage() {
       </section>
 
       {/* CTA */}
-      <section className="section-padding bg-sky-600 text-white">
-        <div className="container mx-auto px-4 text-center">
-          <div className="max-w-2xl mx-auto">
-            <h2 className="heading-md mb-4">Need Help With Your Visa?</h2>
-            <p className="text-white/90 mb-8">
-              We&apos;ve worked with a trusted immigration partner who specializes in Argentine visas 
-              and has helped many of our readers successfully navigate the Digital Nomad Visa process.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button asChild size="lg" variant="secondary">
-                <Link href="https://argentinavisalaw.com" target="_blank" rel="noopener noreferrer">
-                  Get Professional Help
-                  <ArrowRight className="w-4 h-4 ml-2" />
-                </Link>
-              </Button>
-              <Button asChild size="lg" variant="outline" className="border-white/30 bg-white/10 text-white hover:bg-white/20 hover:text-white">
-                <Link href="/contact">
-                  Ask Us a Question
-                </Link>
-              </Button>
-            </div>
+      <section className="section-padding">
+        <div className="container mx-auto px-4">
+          <div className="max-w-3xl mx-auto">
+            <LuceroLegalCTA variant="full" />
           </div>
         </div>
       </section>

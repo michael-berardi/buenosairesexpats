@@ -6,6 +6,8 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Mail, MessageSquare, ArrowRight, CheckCircle, Loader2, AlertCircle } from "lucide-react";
+import { StructuredData } from "@/components/structured-data";
+import { generateBreadcrumbSchema } from "@/lib/schema";
 
 interface FormData {
   name: string;
@@ -105,8 +107,15 @@ export default function ContactPage() {
     }
   };
 
+  const breadcrumbSchema = generateBreadcrumbSchema([
+    { name: "Home", item: "https://buenosairesexpats.com" },
+    { name: "Contact" },
+  ]);
+
   return (
     <div className="flex flex-col min-h-screen">
+      <StructuredData data={breadcrumbSchema} />
+
       {/* Breadcrumb */}
       <div className="border-b bg-muted/30">
         <div className="container mx-auto px-4 py-4">
@@ -340,7 +349,7 @@ export default function ContactPage() {
                       For visa and immigration help, we recommend a trusted partner who has assisted many of our readers:
                     </p>
                     <Button asChild variant="outline">
-                      <Link href="https://argentinavisalaw.com" target="_blank" rel="noopener noreferrer">
+                      <Link href="https://lucerolegal.org" target="_blank" rel="noopener noreferrer">
                         Get Visa Help
                         <ArrowRight className="w-4 h-4 ml-2" />
                       </Link>

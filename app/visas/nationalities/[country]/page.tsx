@@ -41,7 +41,7 @@ export function generateMetadata({ params }: { params: { country: string } }): M
     : "Visa required";
 
   return {
-    title: `${country.name} Citizens: Argentina Visa Requirements 2025`,
+    title: `${country.name} Citizens: Argentina Visa Requirements 2026`,
     description: `${country.flag} Complete guide for ${country.name} citizens traveling to Argentina. ${visaStatusText}. Requirements, application process, and FAQs.`,
     keywords: [
       `${country.name} Argentina visa`,
@@ -56,7 +56,7 @@ export function generateMetadata({ params }: { params: { country: string } }): M
   };
 }
 
-const LAST_UPDATED = "2025-02-16";
+const LAST_UPDATED = "2026-02-26";
 
 export default function NationalityPage({ params }: { params: { country: string } }) {
   const country = getCountryBySlug(params.country);
@@ -69,7 +69,7 @@ export default function NationalityPage({ params }: { params: { country: string 
 
   // Generate structured data
   const articleSchema = generateArticleSchema({
-    headline: `Argentina Visa Requirements for ${country.name} Citizens - 2025 Guide`,
+    headline: `Argentina Visa Requirements for ${country.name} Citizens - 2026 Guide`,
     description: `Complete guide for ${country.name} citizens traveling to Argentina. ${isVisaExempt ? `Visa-free entry for ${country.stayDuration} days.` : "Visa required before travel."}`,
     url: `https://buenosairesexpats.com/visas/nationalities/${country.slug}`,
     datePublished: "2025-02-16",
@@ -144,7 +144,7 @@ export default function NationalityPage({ params }: { params: { country: string 
               </div>
               <div className="flex items-center gap-2">
                 <FileText className="w-4 h-4 text-primary" />
-                <span>Updated 2025</span>
+                <span>Updated 2026</span>
               </div>
             </div>
             <LastUpdated date={LAST_UPDATED} />
@@ -407,7 +407,7 @@ export default function NationalityPage({ params }: { params: { country: string 
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button asChild size="lg" variant="secondary">
-                <Link href="https://argentinavisalaw.com" target="_blank" rel="noopener noreferrer">
+                <Link href="https://lucerolegal.org" target="_blank" rel="noopener noreferrer">
                   Get Professional Help
                   <ArrowRight className="w-4 h-4 ml-2" />
                 </Link>

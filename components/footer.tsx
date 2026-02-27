@@ -14,11 +14,20 @@ const footerLinks = {
     { label: "Neighborhoods", href: "/neighborhoods" },
     { label: "Healthcare", href: "/healthcare" },
     { label: "Banking", href: "/banking" },
+    { label: "Housing", href: "/housing" },
+    { label: "Transportation", href: "/guides/transportation" },
+    { label: "Working & Taxes", href: "/guides/working-taxes" },
+    { label: "Getting Started", href: "/guides/getting-started" },
   ],
   resources: [
     { label: "Expat Stories", href: "/stories" },
     { label: "Why Argentina?", href: "/why-argentina" },
     { label: "Newsletter", href: "/newsletter" },
+  ],
+  legal: [
+    { label: "Free Consultation", href: "https://lucerolegal.org?utm_source=buenosairesexpats&utm_medium=footer", external: true },
+    { label: "Visa Assistance", href: "https://lucerolegal.org?utm_source=buenosairesexpats&utm_medium=footer", external: true },
+    { label: "Residency Help", href: "https://lucerolegal.org?utm_source=buenosairesexpats&utm_medium=footer", external: true },
   ],
   company: [
     { label: "About Us", href: "/about" },
@@ -32,7 +41,7 @@ export function Footer() {
   return (
     <footer className="border-t bg-white">
       <div className="container mx-auto px-4 py-16 md:py-20">
-        <div className="grid grid-cols-2 gap-8 md:grid-cols-4 lg:grid-cols-5">
+        <div className="grid grid-cols-2 gap-8 md:grid-cols-4 lg:grid-cols-6">
           {/* Brand */}
           <div className="col-span-2 lg:col-span-1">
             <Link href="/" className="flex items-center gap-2 mb-4">
@@ -42,7 +51,7 @@ export function Footer() {
               <span className="font-bold text-xl">Buenos Aires Expats</span>
             </Link>
             <p className="text-sm text-muted-foreground max-w-xs">
-              Honest resources for Americans considering a move to Buenos Aires. 
+              Honest resources for expats considering a move to Buenos Aires. 
               Real talk about visas, costs, and life in Argentina.
             </p>
           </div>
@@ -98,6 +107,28 @@ export function Footer() {
             </ul>
           </div>
 
+          {/* Legal Services */}
+          <div>
+            <h3 className="text-sm font-semibold text-foreground mb-3 uppercase tracking-wide">Legal Services</h3>
+            <ul className="space-y-2">
+              {footerLinks.legal.map((link) => (
+                <li key={link.label}>
+                  <Link
+                    href={link.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-sm text-muted-foreground hover:text-foreground transition-colors"
+                  >
+                    {link.label}
+                  </Link>
+                </li>
+              ))}
+              <li>
+                <span className="text-xs text-muted-foreground/60">via Lucero Legal</span>
+              </li>
+            </ul>
+          </div>
+
           {/* Company */}
           <div>
             <h3 className="text-sm font-semibold text-foreground mb-3 uppercase tracking-wide">Company</h3>
@@ -125,8 +156,8 @@ export function Footer() {
           <p className="text-xs text-muted-foreground text-center md:text-right">
             Information provided is for educational purposes only. 
             For visa assistance, we recommend{" "}
-            <Link href="https://argentinavisalaw.com" className="underline hover:text-foreground">
-              argentinavisalaw.com
+            <Link href="https://lucerolegal.org" className="underline hover:text-foreground">
+              Lucero Legal
             </Link>.
           </p>
         </div>

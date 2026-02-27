@@ -3,12 +3,14 @@ import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { 
-  FileText, 
-  Building, 
-  Scale, 
-  Heart, 
-  Plane, 
+import { StructuredData } from "@/components/structured-data";
+import { generateBreadcrumbSchema } from "@/lib/schema";
+import {
+  FileText,
+  Building,
+  Scale,
+  Heart,
+  Plane,
   Home,
   Briefcase,
   GraduationCap,
@@ -21,6 +23,9 @@ export const metadata: Metadata = {
   title: "Resources for Expats in Argentina",
   description: "Essential resources for expats moving to Argentina. Downloadable checklists, service directories, and guides for a smooth transition.",
   keywords: ["expat resources Argentina", "moving to Argentina checklist", "Buenos Aires services"],
+  alternates: {
+    canonical: "https://buenosairesexpats.com/resources",
+  },
 };
 
 const resources = [
@@ -105,8 +110,15 @@ const serviceCategories = [
 ];
 
 export default function ResourcesPage() {
+  const breadcrumbSchema = generateBreadcrumbSchema([
+    { name: "Home", item: "https://buenosairesexpats.com" },
+    { name: "Resources" },
+  ]);
+
   return (
     <div className="flex flex-col min-h-screen">
+      <StructuredData data={breadcrumbSchema} />
+
       {/* Breadcrumb */}
       <div className="border-b bg-muted/30">
         <div className="container mx-auto px-4 py-4">
@@ -274,7 +286,7 @@ export default function ResourcesPage() {
                     <p className="text-muted-foreground mb-4">
                       Years of experience helping expats navigate visas, residency, and citizenship. 
                       English-speaking support that understands the unique challenges foreigners face. 
-                      Katarina and her team have guided many of our community members through the process.
+                      Lucero Legal's team of immigration attorneys have guided many of our community members through the process.
                     </p>
                     <div className="flex flex-wrap gap-2 mb-4">
                       <Badge variant="secondary">Digital Nomad Visas</Badge>
@@ -284,7 +296,7 @@ export default function ResourcesPage() {
                     </div>
                   </div>
                   <Button asChild>
-                    <Link href="https://argentinavisalaw.com" target="_blank" rel="noopener noreferrer">
+                    <Link href="https://lucerolegal.org" target="_blank" rel="noopener noreferrer">
                       Get Help
                       <ArrowRight className="w-4 h-4 ml-2" />
                     </Link>

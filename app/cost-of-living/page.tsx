@@ -4,57 +4,63 @@ import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
-import { 
-  DollarSign, 
-  Home, 
-  Utensils, 
-  Bus, 
-  Heart, 
-  Wifi, 
+import { LuceroLegalCTA } from "@/components/lucero-legal-cta";
+import {
+  DollarSign,
+  Home,
+  Utensils,
+  Bus,
+  Heart,
+  Wifi,
   Film,
   AlertCircle,
   TrendingUp,
   ArrowRight,
-  Calculator
+  Calculator,
+  Laptop,
+  Shirt
 } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Real Cost of Living in Buenos Aires 2025 - Reddit-Verified Prices",
-  description: "Honest 2025 cost of living data from Americans living in Buenos Aires. Real Reddit-verified prices for rent, food, healthcare. Not the YouTube version.",
-  keywords: ["Buenos Aires cost of living 2025", "real prices Buenos Aires", "expat budget Reddit", "how much to live in BA"],
+  title: "Real Cost of Living in Buenos Aires 2026 - Reddit-Verified Prices",
+  description: "Honest 2026 cost of living data from expats living in Buenos Aires. Real Reddit-verified prices for rent, food, healthcare. Not the YouTube version.",
+  keywords: ["Buenos Aires cost of living 2026", "real prices Buenos Aires", "expat budget Reddit", "how much to live in BA"],
   openGraph: {
-    title: "Real Cost of Living in Buenos Aires 2025",
-    description: "Honest cost breakdowns from Americans actually living here. Reddit-verified prices.",
+    title: "Real Cost of Living in Buenos Aires 2026",
+    description: "Honest cost breakdowns from expats actually living here. Reddit-verified prices.",
+  },
+  alternates: {
+    canonical: "https://buenosairesexpats.com/cost-of-living",
   },
 };
 
 const monthlyCosts = {
   budget: {
-    rent: 400,
-    food: 200,
-    transport: 30,
-    utilities: 50,
-    healthcare: 100,
-    entertainment: 100,
-    total: 880,
+    rent: 475,
+    food: 240,
+    transport: 35,
+    utilities: 60,
+    healthcare: 120,
+    entertainment: 120,
+    total: 1050,
   },
   moderate: {
-    rent: 700,
-    food: 350,
-    transport: 50,
-    utilities: 80,
-    healthcare: 150,
-    entertainment: 200,
-    total: 1530,
+    rent: 850,
+    food: 420,
+    transport: 60,
+    utilities: 95,
+    healthcare: 180,
+    entertainment: 240,
+    total: 1845,
   },
   comfortable: {
-    rent: 1200,
-    food: 500,
-    transport: 80,
-    utilities: 120,
-    healthcare: 250,
-    entertainment: 400,
-    total: 2550,
+    rent: 1450,
+    food: 600,
+    transport: 95,
+    utilities: 145,
+    healthcare: 300,
+    entertainment: 480,
+    total: 3070,
   },
 };
 
@@ -64,10 +70,10 @@ const expenseCategories = [
     title: "Housing",
     description: "Reddit confirms: Landlords want USD cash. Airbnb is easiest for short-term. For long-term, bring physical dollars.",
     items: [
-      { name: "Studio apartment (budget area)", price: "$400-600" },
-      { name: "1-bedroom decent (Palermo/Recoleta)", price: "$700-1,000" },
-      { name: "1-bedroom nice building with amenities", price: "$1,000-1,400" },
-      { name: "2-bedroom in good area", price: "$1,000-1,800" },
+      { name: "Studio apartment (budget area)", price: "$475-700" },
+      { name: "1-bedroom decent (Palermo/Recoleta)", price: "$850-1,200" },
+      { name: "1-bedroom nice building with amenities", price: "$1,200-1,700" },
+      { name: "2-bedroom in good area", price: "$1,200-2,100" },
     ],
   },
   {
@@ -75,13 +81,13 @@ const expenseCategories = [
     title: "Food & Dining",
     description: "Reddit reality: Not as cheap as YouTubers claim. Western European prices for many things now. Beef is still a bargain.",
     items: [
-      { name: "Empanada at local spot", price: "$2-3" },
-      { name: "Coffee at café", price: "$3-5" },
-      { name: "Burger with fries", price: "$10-14" },
-      { name: "Mid-range dinner for two", price: "$50-80" },
-      { name: "Pizza (whole)", price: "$15-25" },
-      { name: "Weekly groceries (one person)", price: "$50-100" },
-      { name: "Bottle of wine (mid-range)", price: "$5-12" },
+      { name: "Empanada at local spot", price: "$2.50-4" },
+      { name: "Coffee at café", price: "$3.50-6" },
+      { name: "Burger with fries", price: "$12-17" },
+      { name: "Mid-range dinner for two", price: "$60-95" },
+      { name: "Pizza (whole)", price: "$18-30" },
+      { name: "Weekly groceries (one person)", price: "$60-120" },
+      { name: "Bottle of wine (mid-range)", price: "$6-14" },
     ],
   },
   {
@@ -89,10 +95,10 @@ const expenseCategories = [
     title: "Transportation",
     description: "Public transport is cheap. Uber works well. Avoid taxis (scam risk per Reddit).",
     items: [
-      { name: "Subway/bus ride", price: "$0.30-0.50" },
-      { name: "Monthly transport pass", price: "$25-40" },
-      { name: "Uber/Cabify (short trip)", price: "$3-8" },
-      { name: "Uber to airport (EZE)", price: "$25-40" },
+      { name: "Subway/bus ride", price: "$0.35-0.60" },
+      { name: "Monthly transport pass", price: "$30-50" },
+      { name: "Uber/Cabify (short trip)", price: "$4-10" },
+      { name: "Uber to airport (EZE)", price: "$30-50" },
     ],
   },
   {
@@ -100,34 +106,55 @@ const expenseCategories = [
     title: "Healthcare",
     description: "Reddit consensus: Private healthcare is excellent and affordable. Many expats say BETTER than US.",
     items: [
-      { name: "Basic prepaga plan", price: "$100-150/month" },
-      { name: "Premium prepaga plan", price: "$200-350/month" },
-      { name: "Doctor consultation (private)", price: "$30-60" },
-      { name: "MRI scan", price: "$150-300" },
-      { name: "Dental cleaning", price: "$40-80" },
+      { name: "Basic prepaga plan", price: "$120-180/month" },
+      { name: "Premium prepaga plan", price: "$240-420/month" },
+      { name: "Doctor consultation (private)", price: "$35-70" },
+      { name: "MRI scan", price: "$180-360" },
+      { name: "Dental cleaning", price: "$50-100" },
     ],
   },
   {
     icon: Wifi,
     title: "Utilities & Internet",
-    description: "Internet is fast and reliable. Utilities are affordable but rising with inflation.",
+    description: "Internet is fast and reliable. Utilities rising as Milei's reforms phase out subsidies.",
     items: [
-      { name: "Internet (100 Mbps)", price: "$25-40/month" },
-      { name: "Mobile plan (unlimited)", price: "$15-30/month" },
-      { name: "Electricity (small apt)", price: "$40-80/month" },
-      { name: "Gas & water", price: "$30-60/month" },
+      { name: "Internet (100 Mbps)", price: "$30-50/month" },
+      { name: "Mobile plan (unlimited)", price: "$18-35/month" },
+      { name: "Electricity (small apt)", price: "$50-100/month" },
+      { name: "Gas & water", price: "$35-70/month" },
     ],
   },
   {
     icon: Film,
     title: "Entertainment",
-    description: "Reddit note: Gym memberships are pricier than expected ($70-90/month). Nightlife is great value.",
+    description: "Reddit note: Gym memberships are pricier than expected ($80-110/month). Nightlife is great value.",
     items: [
-      { name: "Movie ticket", price: "$6-10" },
-      { name: "Gym membership (decent)", price: "$70-90/month" },
-      { name: "Beer at bar (pint)", price: "$4-7" },
-      { name: "Night out (drinks)", price: "$30-60" },
-      { name: "Tango show", price: "$40-100" },
+      { name: "Movie ticket", price: "$7-12" },
+      { name: "Gym membership (decent)", price: "$80-110/month" },
+      { name: "Beer at bar (pint)", price: "$5-8" },
+      { name: "Night out (drinks)", price: "$35-70" },
+      { name: "Tango show", price: "$50-120" },
+    ],
+  },
+  {
+    icon: Laptop,
+    title: "Coworking",
+    description: "Buenos Aires has a thriving coworking scene, especially in Palermo and Villa Crespo. Most offer fast Wi-Fi, coffee, and community events.",
+    items: [
+      { name: "Hot desk at coworking space", price: "$100-150/month" },
+      { name: "Dedicated desk", price: "$150-250/month" },
+      { name: "Day pass", price: "$10-20" },
+      { name: "Private office (small)", price: "$300-500/month" },
+    ],
+  },
+  {
+    icon: Shirt,
+    title: "Laundry",
+    description: "Most apartments don't have in-unit washers. Lavanderías (laundromats) are everywhere and affordable.",
+    items: [
+      { name: "Laundry service (lavandería)", price: "$30-50/month" },
+      { name: "Per load wash & fold", price: "$4-8" },
+      { name: "Dry cleaning (per item)", price: "$5-12" },
     ],
   },
 ];
@@ -171,13 +198,13 @@ export default function CostOfLivingPage() {
           <div className="max-w-3xl mx-auto text-center">
             <Badge className="mb-4 bg-white/90 text-foreground">
               <TrendingUp className="w-3 h-3 mr-1" />
-              Updated February 2025
+              Updated February 2026
             </Badge>
             <h1 className="text-4xl md:text-5xl font-bold mb-6 text-white drop-shadow-lg">
               Cost of Living in Buenos Aires
             </h1>
             <p className="text-xl text-white/90 mb-8 drop-shadow-md">
-              Real budget breakdowns from Americans living here. From bare-bones to comfortable living, 
+              Real budget breakdowns from expats living here. From bare-bones to comfortable living, 
               see exactly what you&apos;ll spend each month.
             </p>
             <div className="flex flex-wrap justify-center gap-4 text-sm text-white/80">
@@ -347,10 +374,12 @@ export default function CostOfLivingPage() {
             <h2 className="heading-md mb-8 text-center">Money-Saving Tips</h2>
             <div className="grid md:grid-cols-2 gap-6">
               <div className="card-feature">
-                <h3 className="font-semibold text-lg mb-2">Use the Blue Rate</h3>
+                <h3 className="font-semibold text-lg mb-2">Understand the New Dollar Reality</h3>
                 <p className="text-body-sm">
-                  Exchange USD cash at the &quot;blue dollar&quot; rate for 30-50% more pesos than the official rate. 
-                  Use reputable exchange houses (cuevas) or Western Union transfers.
+                  Under Milei&apos;s economic reforms, the gap between official and blue dollar rates has narrowed
+                  dramatically in 2026 (just 5-10% vs. 100%+ in previous years). The MEP dollar is now the main
+                  legal way to buy USD at market rates. The blue dollar still exists but the arbitrage advantage
+                  is much smaller than before.
                 </p>
               </div>
               <div className="card-feature">
@@ -423,13 +452,23 @@ export default function CostOfLivingPage() {
                     The Reality Check
                   </h3>
                   <p className="text-amber-800 text-sm">
-                    Prices have risen significantly in 2024-2025. While still cheaper than NYC/SF, Buenos Aires 
-                    is no longer the &quot;cheap paradise&quot; of 2020-2022. Budget $2,000-2,500/month for a comfortable 
+                    Prices have risen significantly in 2024-2026 as utility subsidies are phased out and the economy
+                    stabilizes under Milei&apos;s reforms. While still cheaper than NYC/SF, Buenos Aires
+                    is no longer the &quot;cheap paradise&quot; of 2020-2022. Budget $2,500-3,000/month for a comfortable
                     lifestyle, not $1,200. The savings are real compared to major US cities, but manage your expectations.
                   </p>
                 </div>
               </div>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Lucero Legal CTA */}
+      <section className="section-padding bg-white">
+        <div className="container mx-auto px-4">
+          <div className="max-w-3xl mx-auto">
+            <LuceroLegalCTA variant="compact" />
           </div>
         </div>
       </section>

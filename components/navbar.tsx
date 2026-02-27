@@ -41,7 +41,10 @@ const guideItems = [
   { title: "Safety", href: "/guides/safety", description: "Staying safe and avoiding scams" },
   { title: "Weather", href: "/guides/weather-climate", description: "Seasons and what to expect" },
   { title: "Cultural Etiquette", href: "/guides/cultural-etiquette", description: "Customs, greetings, and social norms" },
-  { title: "Why Argentina?", href: "/why-argentina", description: "Honest look at why Americans are considering leaving" },
+  { title: "Transportation", href: "/guides/transportation", description: "Subte, buses, taxis, and getting around" },
+  { title: "Working & Taxes", href: "/guides/working-taxes", description: "Remote work, monotributo, and tax obligations" },
+  { title: "Getting Started", href: "/guides/getting-started", description: "Your first 90 days checklist" },
+  { title: "Why Argentina?", href: "/why-argentina", description: "Honest look at why expats are choosing Buenos Aires" },
 ];
 
 export function Navbar() {
@@ -122,7 +125,7 @@ export function Navbar() {
         {/* CTA Button */}
         <div className="hidden lg:flex items-center gap-4">
           <Button asChild size="sm" className="bg-sky-700 hover:bg-sky-600 text-white font-semibold shadow-md hover:shadow-lg transition-all">
-            <Link href="/contact">Contact Us</Link>
+            <Link href="https://lucerolegal.org?utm_source=buenosairesexpats&utm_medium=navbar" target="_blank" rel="noopener noreferrer">Free Consultation</Link>
           </Button>
         </div>
 
@@ -191,8 +194,8 @@ export function Navbar() {
                 </SheetClose>
               </nav>
 
-              <Button asChild className="mt-4">
-                <Link href="/contact">Contact Us</Link>
+              <Button asChild className="mt-4 bg-sky-700 hover:bg-sky-600 text-white font-semibold">
+                <Link href="https://lucerolegal.org?utm_source=buenosairesexpats&utm_medium=mobile_nav" target="_blank" rel="noopener noreferrer">Free Consultation</Link>
               </Button>
             </div>
           </SheetContent>

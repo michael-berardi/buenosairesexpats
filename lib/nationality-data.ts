@@ -1,6 +1,6 @@
 // Argentina visa requirements by nationality
 // Data sourced from Argentine Ministry of Foreign Affairs and official consulate websites
-// Last updated: 2025-02-16
+// Last updated: 2026-02-26
 
 export type VisaStatus = "exempt" | "required";
 export type StayDuration = 30 | 60 | 90;

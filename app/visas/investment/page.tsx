@@ -17,26 +17,27 @@ import {
   Briefcase
 } from "lucide-react";
 import { LastUpdated } from "@/components/last-updated";
+import { LuceroLegalCTA } from "@/components/lucero-legal-cta";
 import { StructuredData } from "@/components/structured-data";
 import { generateArticleSchema, generateHowToSchema, generateFAQPageSchema } from "@/lib/schema";
 
 export const metadata: Metadata = {
-  title: "Argentina Investment Visa - Business & Investor Guide 2025",
+  title: "Argentina Investment Visa - Business & Investor Guide 2026",
   description: "Complete guide to Argentina's Investment Visa. Investment requirements, business setup, real estate options, and path to citizenship for investors.",
   keywords: ["Argentina investment visa", "Argentina business visa", "invest in Argentina", "Argentina golden visa"],
   openGraph: {
-    title: "Argentina Investment Visa - Business & Investor Guide 2025",
+    title: "Argentina Investment Visa - Business & Investor Guide 2026",
     description: "Invest in Argentina and gain residency. Requirements, business setup, and path to citizenship.",
     type: "article",
     publishedTime: "2025-02-16",
-    modifiedTime: "2025-02-16",
+    modifiedTime: "2026-02-26",
   },
   alternates: {
     canonical: "https://buenosairesexpats.com/visas/investment",
   },
 };
 
-const LAST_UPDATED = "2025-02-16";
+const LAST_UPDATED = "2026-02-26";
 
 const requirements = [
   {
@@ -161,7 +162,7 @@ const investmentOptions = [
 
 export default function InvestmentVisaPage() {
   const articleSchema = generateArticleSchema({
-    headline: "Argentina Investment Visa - Business & Investor Guide 2025",
+    headline: "Argentina Investment Visa - Business & Investor Guide 2026",
     description: "Complete guide to Argentina's Investment Visa. Investment requirements, business setup, real estate options, and path to citizenship for investors.",
     url: "https://buenosairesexpats.com/visas/investment",
     datePublished: "2025-02-16",
@@ -616,28 +617,10 @@ export default function InvestmentVisaPage() {
       </section>
 
       {/* CTA */}
-      <section className="py-16 bg-primary text-primary-foreground">
-        <div className="container mx-auto px-4 text-center">
-          <div className="max-w-2xl mx-auto">
-            <h2 className="text-3xl font-bold mb-4">Ready to Invest in Argentina?</h2>
-            <p className="text-primary-foreground/80 mb-8">
-              Investment visa applications require careful planning, business setup, and 
-              documentation. We've worked with a trusted immigration partner who specializes 
-              in investment visas and has helped many investors successfully navigate the process.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button asChild size="lg" variant="secondary">
-                <Link href="https://argentinavisalaw.com" target="_blank" rel="noopener noreferrer">
-                  Get Professional Help
-                  <ArrowRight className="w-4 h-4 ml-2" />
-                </Link>
-              </Button>
-              <Button asChild size="lg" variant="outline" className="border-primary-foreground/20 hover:bg-primary-foreground/10">
-                <Link href="/contact">
-                  Ask Us a Question
-                </Link>
-              </Button>
-            </div>
+      <section className="py-16">
+        <div className="container mx-auto px-4">
+          <div className="max-w-3xl mx-auto">
+            <LuceroLegalCTA variant="full" />
           </div>
         </div>
       </section>

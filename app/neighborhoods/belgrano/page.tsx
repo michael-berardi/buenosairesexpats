@@ -27,6 +27,9 @@ export const metadata: Metadata = {
     title: "Belgrano Buenos Aires - Family-Friendly Neighborhood Guide",
     description: "Complete guide to Belgrano, Buenos Aires' most family-friendly neighborhood.",
   },
+  alternates: {
+    canonical: "https://buenosairesexpats.com/neighborhoods/belgrano",
+  },
 };
 
 const subAreas = [
@@ -51,10 +54,10 @@ const subAreas = [
 ];
 
 const rentPrices = [
-  { type: "Studio", price: "$400-600", notes: "Limited availability" },
-  { type: "1 Bedroom", price: "$600-900", notes: "Good for singles or couples" },
-  { type: "2 Bedroom", price: "$900-1,300", notes: "Family-friendly options" },
-  { type: "3+ Bedroom", price: "$1,200-1,800+", notes: "Spacious family homes" },
+  { type: "Studio", price: "$475-700", notes: "Limited availability" },
+  { type: "1 Bedroom", price: "$700-1,050", notes: "Good for singles or couples" },
+  { type: "2 Bedroom", price: "$1,050-1,500", notes: "Family-friendly options" },
+  { type: "3+ Bedroom", price: "$1,400-2,100+", notes: "Spacious family homes" },
 ];
 
 const highlights = [
@@ -76,7 +79,7 @@ export default function BelgranoPage() {
     description: "Complete guide to Belgrano, Buenos Aires' most family-friendly neighborhood. Quiet streets, excellent schools, and authentic residential living.",
     url: "https://buenosairesexpats.com/neighborhoods/belgrano",
     datePublished: "2025-02-16",
-    dateModified: "2025-02-16",
+    dateModified: "2026-02-26",
   });
 
   return (
@@ -143,7 +146,7 @@ export default function BelgranoPage() {
               <div className="text-sm text-muted-foreground">Expat Score</div>
             </div>
             <div>
-              <div className="text-3xl font-bold text-primary">$600-1,200</div>
+              <div className="text-3xl font-bold text-primary">$700-1,500</div>
               <div className="text-sm text-muted-foreground">Rent Range</div>
             </div>
             <div>
@@ -356,6 +359,11 @@ export default function BelgranoPage() {
                   See Cost Breakdown
                 </Link>
               </Button>
+            </div>
+            <div className="flex flex-wrap justify-center gap-4 mt-6 text-sm text-primary-foreground/70">
+              <Link href="/housing" className="hover:text-primary-foreground underline underline-offset-2">Housing Guide</Link>
+              <span>|</span>
+              <Link href="/dining" className="hover:text-primary-foreground underline underline-offset-2">Dining Guide</Link>
             </div>
           </div>
         </div>

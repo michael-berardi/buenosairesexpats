@@ -3,9 +3,11 @@ import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { 
-  CloudSun, 
-  Sun, 
+import { StructuredData } from "@/components/structured-data";
+import { generateBreadcrumbSchema, generateArticleSchema } from "@/lib/schema";
+import {
+  CloudSun,
+  Sun,
   CloudRain,
   Wind,
   Thermometer,
@@ -18,9 +20,12 @@ import {
 } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Weather & Climate in Buenos Aires - Seasonal Guide 2025",
+  title: "Weather & Climate in Buenos Aires - Seasonal Guide 2026",
   description: "Complete seasonal guide to Buenos Aires weather. What to pack, best times to visit, winter heating issues, summer humidity, and clothing recommendations.",
   keywords: ["Buenos Aires weather", "Argentina climate", "BA seasons", "when to visit Buenos Aires", "Buenos Aires packing list"],
+  alternates: {
+    canonical: "https://buenosairesexpats.com/guides/weather-climate",
+  },
   openGraph: {
     title: "Weather & Climate in Buenos Aires - Seasonal Guide",
     description: "Season-by-season breakdown of Buenos Aires weather. What to expect and what to pack.",
@@ -196,8 +201,25 @@ const bestTimesToVisit = [
 ];
 
 export default function WeatherClimatePage() {
+  const breadcrumbSchema = generateBreadcrumbSchema([
+    { name: "Home", item: "https://buenosairesexpats.com" },
+    { name: "Guides", item: "https://buenosairesexpats.com/guides" },
+    { name: "Weather & Climate" },
+  ]);
+
+  const articleSchema = generateArticleSchema({
+    headline: "Weather & Climate in Buenos Aires - Seasonal Guide",
+    description: "Complete seasonal guide to Buenos Aires weather. What to pack, best times to visit, winter heating issues, summer humidity, and clothing recommendations.",
+    url: "https://buenosairesexpats.com/guides/weather-climate",
+    datePublished: "2025-01-15",
+    dateModified: "2026-02-26",
+  });
+
   return (
     <div className="flex flex-col min-h-screen">
+      <StructuredData data={breadcrumbSchema} />
+      <StructuredData data={articleSchema} />
+
       {/* Breadcrumb */}
       <div className="border-b bg-muted/30">
         <div className="container mx-auto px-4 py-4">

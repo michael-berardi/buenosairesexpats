@@ -4,10 +4,11 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
-import { 
-  Heart, 
-  Shield, 
-  DollarSign, 
+import { generateFAQPageSchema } from "@/lib/schema";
+import {
+  Heart,
+  Shield,
+  DollarSign,
   Building,
   CheckCircle,
   AlertCircle,
@@ -16,17 +17,20 @@ import {
 } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Healthcare in Argentina for Expats - Complete 2025 Guide",
+  title: "Healthcare in Argentina for Expats - Complete 2026 Guide",
   description: "Complete guide to healthcare in Argentina for expats. Health insurance options (prepaga), finding doctors, hospital recommendations, and costs.",
   keywords: ["healthcare Argentina expats", "prepaga health insurance", "Argentina hospitals", "medical care Buenos Aires"],
+  alternates: {
+    canonical: "https://buenosairesexpats.com/healthcare",
+  },
 };
 
 const insuranceProviders = [
-  { name: "OSDE", type: "Premium", monthlyCost: "$200-500", notes: "Widest network, best hospitals" },
-  { name: "Swiss Medical", type: "Premium", monthlyCost: "$180-450", notes: "Excellent service, English-speaking staff" },
-  { name: "Galeno", type: "Mid-range", monthlyCost: "$100-250", notes: "Good coverage, reasonable prices" },
-  { name: "Medicus", type: "Mid-range", monthlyCost: "$80-200", notes: "Solid coverage, widely accepted" },
-  { name: "Sancor Salud", type: "Budget", monthlyCost: "$60-150", notes: "Basic coverage, good for young/healthy" },
+  { name: "OSDE", type: "Premium", monthlyCost: "$240-600", notes: "Widest network, best hospitals" },
+  { name: "Swiss Medical", type: "Premium", monthlyCost: "$220-540", notes: "Excellent service, English-speaking staff" },
+  { name: "Galeno", type: "Mid-range", monthlyCost: "$120-300", notes: "Good coverage, reasonable prices" },
+  { name: "Medicus", type: "Mid-range", monthlyCost: "$95-240", notes: "Solid coverage, widely accepted" },
+  { name: "Sancor Salud", type: "Budget", monthlyCost: "$70-180", notes: "Basic coverage, good for young/healthy" },
 ];
 
 const topHospitals = [
@@ -43,7 +47,7 @@ const faqs = [
   },
   {
     question: "How much does health insurance cost?",
-    answer: "Basic prepaga plans start around $60-80 USD per month for young, healthy individuals. Comprehensive plans for older adults or families can range from $200-500 USD monthly. Many providers offer tiered plans so you can choose your level of coverage.",
+    answer: "Basic prepaga plans start around $70-95 USD per month for young, healthy individuals. Comprehensive plans for older adults or families can range from $240-600 USD monthly. Many providers offer tiered plans so you can choose your level of coverage.",
   },
   {
     question: "Can I use my home country's insurance?",
@@ -60,8 +64,14 @@ const faqs = [
 ];
 
 export default function HealthcarePage() {
+  const faqSchema = generateFAQPageSchema(faqs);
+
   return (
     <div className="flex flex-col min-h-screen">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+      />
       {/* Breadcrumb */}
       <div className="border-b bg-muted/30">
         <div className="container mx-auto px-4 py-4">
@@ -250,13 +260,13 @@ export default function HealthcarePage() {
               <CardContent className="pt-6">
                 <div className="space-y-4">
                   {[
-                    { service: "General doctor consultation (private)", cost: "$30-60" },
-                    { service: "Specialist consultation", cost: "$50-100" },
-                    { service: "Dental cleaning", cost: "$40-80" },
-                    { service: "Eye exam", cost: "$30-50" },
-                    { service: "Blood work panel", cost: "$50-150" },
-                    { service: "X-ray", cost: "$40-80" },
-                    { service: "Emergency room visit", cost: "$100-300" },
+                    { service: "General doctor consultation (private)", cost: "$35-70" },
+                    { service: "Specialist consultation", cost: "$60-120" },
+                    { service: "Dental cleaning", cost: "$50-100" },
+                    { service: "Eye exam", cost: "$35-60" },
+                    { service: "Blood work panel", cost: "$60-180" },
+                    { service: "X-ray", cost: "$50-100" },
+                    { service: "Emergency room visit", cost: "$120-360" },
                   ].map((item) => (
                     <div key={item.service} className="flex justify-between items-center py-2 border-b last:border-0">
                       <span className="text-muted-foreground">{item.service}</span>

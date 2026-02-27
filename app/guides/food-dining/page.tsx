@@ -4,10 +4,12 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { DesktopOnly, MobileOnly } from "@/components/desktop-only";
-import { 
-  Utensils, 
-  Beef, 
-  Leaf, 
+import { StructuredData } from "@/components/structured-data";
+import { generateBreadcrumbSchema, generateArticleSchema } from "@/lib/schema";
+import {
+  Utensils,
+  Beef,
+  Leaf,
   Coffee,
   ShoppingBag,
   Smartphone,
@@ -22,9 +24,12 @@ import {
 } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Food & Dining in Buenos Aires - Expat Guide 2025",
+  title: "Food & Dining in Buenos Aires - Expat Guide 2026",
   description: "Complete guide to food and dining in Buenos Aires. Best parrillas, vegetarian options, empanada guide, cafe culture, and delivery apps for expats.",
   keywords: ["Buenos Aires food", "Argentine cuisine", "parrillas Buenos Aires", "empanadas", "BA restaurants", "food delivery Argentina"],
+  alternates: {
+    canonical: "https://buenosairesexpats.com/guides/food-dining",
+  },
   openGraph: {
     title: "Food & Dining in Buenos Aires - Expat Guide",
     description: "Best restaurants, parrillas, cafes, and food culture in Buenos Aires. Real prices and local tips.",
@@ -83,8 +88,25 @@ const priceRanges = [
 ];
 
 export default function FoodDiningPage() {
+  const breadcrumbSchema = generateBreadcrumbSchema([
+    { name: "Home", item: "https://buenosairesexpats.com" },
+    { name: "Guides", item: "https://buenosairesexpats.com/guides" },
+    { name: "Food & Dining" },
+  ]);
+
+  const articleSchema = generateArticleSchema({
+    headline: "Food & Dining in Buenos Aires - Expat Guide",
+    description: "Complete guide to food and dining in Buenos Aires. Best parrillas, vegetarian options, empanada guide, cafe culture, and delivery apps for expats.",
+    url: "https://buenosairesexpats.com/guides/food-dining",
+    datePublished: "2025-01-15",
+    dateModified: "2026-02-26",
+  });
+
   return (
     <div className="flex flex-col min-h-screen">
+      <StructuredData data={breadcrumbSchema} />
+      <StructuredData data={articleSchema} />
+
       {/* Breadcrumb */}
       <div className="border-b bg-muted/30">
         <div className="container mx-auto px-4 py-4">

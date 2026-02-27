@@ -4,15 +4,27 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Mail, ArrowRight } from "lucide-react";
+import { StructuredData } from "@/components/structured-data";
+import { generateBreadcrumbSchema } from "@/lib/schema";
 
 export const metadata: Metadata = {
   title: "Newsletter - Buenos Aires Expats",
-  description: "Get weekly updates for Americans considering a move to Buenos Aires. Visa tips, cost updates, and real expat stories.",
+  description: "Get weekly updates for expats considering a move to Buenos Aires. Visa tips, cost updates, and real expat stories.",
+  alternates: {
+    canonical: "https://buenosairesexpats.com/newsletter",
+  },
 };
 
 export default function NewsletterPage() {
+  const breadcrumbSchema = generateBreadcrumbSchema([
+    { name: "Home", item: "https://buenosairesexpats.com" },
+    { name: "Newsletter" },
+  ]);
+
   return (
     <div className="flex flex-col min-h-screen">
+      <StructuredData data={breadcrumbSchema} />
+
       {/* Breadcrumb */}
       <div className="border-b bg-muted/30">
         <div className="container mx-auto px-4 py-4">
@@ -36,7 +48,7 @@ export default function NewsletterPage() {
               Newsletter
             </h1>
             <p className="text-xl text-muted-foreground mb-8">
-              Join Americans who are exploring life in Buenos Aires. 
+              Join expats who are exploring life in Buenos Aires. 
               Weekly tips on visas, neighborhoods, and real talk about the move.
             </p>
             <Button asChild size="lg">

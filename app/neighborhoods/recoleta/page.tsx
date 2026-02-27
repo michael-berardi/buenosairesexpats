@@ -27,6 +27,9 @@ export const metadata: Metadata = {
     title: "Recoleta Buenos Aires - Luxury Neighborhood Guide for Expats",
     description: "Complete guide to Recoleta, Buenos Aires' most elegant and upscale neighborhood.",
   },
+  alternates: {
+    canonical: "https://buenosairesexpats.com/neighborhoods/recoleta",
+  },
 };
 
 const nearbyAttractions = [
@@ -48,10 +51,10 @@ const nearbyAttractions = [
 ];
 
 const rentPrices = [
-  { type: "Studio", price: "$600-900", notes: "Rare, usually in older buildings" },
-  { type: "1 Bedroom", price: "$800-1,200", notes: "Standard luxury apartments" },
-  { type: "2 Bedroom", price: "$1,200-1,800", notes: "Family-sized with amenities" },
-  { type: "3+ Bedroom", price: "$1,600-2,500+", notes: "Premium buildings with doorman" },
+  { type: "Studio", price: "$700-1,050", notes: "Rare, usually in older buildings" },
+  { type: "1 Bedroom", price: "$950-1,400", notes: "Standard luxury apartments" },
+  { type: "2 Bedroom", price: "$1,400-2,100", notes: "Family-sized with amenities" },
+  { type: "3+ Bedroom", price: "$1,850-2,900+", notes: "Premium buildings with doorman" },
 ];
 
 const highlights = [
@@ -73,7 +76,7 @@ export default function RecoletaPage() {
     description: "Complete guide to Recoleta, Buenos Aires' most elegant and upscale neighborhood. Perfect for families and luxury living.",
     url: "https://buenosairesexpats.com/neighborhoods/recoleta",
     datePublished: "2025-02-16",
-    dateModified: "2025-02-16",
+    dateModified: "2026-02-26",
   });
 
   return (
@@ -140,7 +143,7 @@ export default function RecoletaPage() {
               <div className="text-sm text-muted-foreground">Expat Score</div>
             </div>
             <div>
-              <div className="text-3xl font-bold text-primary">$800-1,600</div>
+              <div className="text-3xl font-bold text-primary">$950-2,100</div>
               <div className="text-sm text-muted-foreground">Rent Range</div>
             </div>
             <div>
@@ -346,6 +349,11 @@ export default function RecoletaPage() {
                   See Cost Breakdown
                 </Link>
               </Button>
+            </div>
+            <div className="flex flex-wrap justify-center gap-4 mt-6 text-sm text-primary-foreground/70">
+              <Link href="/housing" className="hover:text-primary-foreground underline underline-offset-2">Housing Guide</Link>
+              <span>|</span>
+              <Link href="/dining" className="hover:text-primary-foreground underline underline-offset-2">Dining Guide</Link>
             </div>
           </div>
         </div>

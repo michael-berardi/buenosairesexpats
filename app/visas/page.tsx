@@ -14,9 +14,12 @@ import {
 } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Argentina Visa Options for Expats - Complete Guide 2025",
+  title: "Argentina Visa Options for Expats - Complete Guide 2026",
   description: "Compare all Argentina visa options for expats. Digital Nomad, Work, Retirement, Student, and Investment visas explained with requirements and costs.",
   keywords: ["Argentina visa options", "Argentina visas for expats", "move to Argentina visa", "Argentina immigration"],
+  alternates: {
+    canonical: "https://buenosairesexpats.com/visas",
+  },
 };
 
 const visaTypes = [
@@ -286,7 +289,7 @@ export default function VisasPage() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button asChild size="lg" variant="secondary">
-                <Link href="https://argentinavisalaw.com" target="_blank" rel="noopener noreferrer">
+                <Link href="https://lucerolegal.org" target="_blank" rel="noopener noreferrer">
                   Get Visa Help
                   <ArrowRight className="w-4 h-4 ml-2" />
                 </Link>

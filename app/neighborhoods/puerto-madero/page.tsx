@@ -27,6 +27,9 @@ export const metadata: Metadata = {
     title: "Puerto Madero Buenos Aires - Modern Luxury Expat Guide",
     description: "Complete guide to Puerto Madero, Buenos Aires' newest and most luxurious neighborhood.",
   },
+  alternates: {
+    canonical: "https://buenosairesexpats.com/neighborhoods/puerto-madero",
+  },
 };
 
 const highlights = [
@@ -51,10 +54,10 @@ const highlights = [
 ];
 
 const rentPrices = [
-  { type: "Studio", price: "$800-1,200", notes: "Rare, mostly in older towers" },
-  { type: "1 Bedroom", price: "$1,000-1,800", notes: "Luxury high-rises" },
-  { type: "2 Bedroom", price: "$1,800-3,000", notes: "Premium waterfront units" },
-  { type: "3+ Bedroom", price: "$2,500-5,000+", notes: "Penthouses with river views" },
+  { type: "Studio", price: "$950-1,400", notes: "Rare, mostly in older towers" },
+  { type: "1 Bedroom", price: "$1,175-2,100", notes: "Luxury high-rises" },
+  { type: "2 Bedroom", price: "$2,100-3,500", notes: "Premium waterfront units" },
+  { type: "3+ Bedroom", price: "$2,900-5,800+", notes: "Penthouses with river views" },
 ];
 
 const highlightsList = [
@@ -76,7 +79,7 @@ export default function PuertoMaderoPage() {
     description: "Complete guide to Puerto Madero, Buenos Aires' newest and most luxurious neighborhood. Waterfront living and five-star amenities.",
     url: "https://buenosairesexpats.com/neighborhoods/puerto-madero",
     datePublished: "2025-02-16",
-    dateModified: "2025-02-16",
+    dateModified: "2026-02-26",
   });
 
   return (
@@ -143,7 +146,7 @@ export default function PuertoMaderoPage() {
               <div className="text-sm text-muted-foreground">Expat Score</div>
             </div>
             <div>
-              <div className="text-3xl font-bold text-primary">$1,000-2,500</div>
+              <div className="text-3xl font-bold text-primary">$1,175-3,500</div>
               <div className="text-sm text-muted-foreground">Rent Range</div>
             </div>
             <div>
@@ -365,6 +368,11 @@ export default function PuertoMaderoPage() {
                   See Cost Breakdown
                 </Link>
               </Button>
+            </div>
+            <div className="flex flex-wrap justify-center gap-4 mt-6 text-sm text-primary-foreground/70">
+              <Link href="/housing" className="hover:text-primary-foreground underline underline-offset-2">Housing Guide</Link>
+              <span>|</span>
+              <Link href="/dining" className="hover:text-primary-foreground underline underline-offset-2">Dining Guide</Link>
             </div>
           </div>
         </div>

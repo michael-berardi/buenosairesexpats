@@ -1,10 +1,12 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
-import { 
-  Utensils, 
-  Star, 
-  MapPin, 
+import { StructuredData } from "@/components/structured-data";
+import { generateBreadcrumbSchema } from "@/lib/schema";
+import {
+  Utensils,
+  Star,
+  MapPin,
   Award,
   ArrowRight,
   ChefHat,
@@ -25,6 +27,9 @@ export const metadata: Metadata = {
       height: 630,
       alt: "Buenos Aires Dining Guide"
     }]
+  },
+  alternates: {
+    canonical: "https://buenosairesexpats.com/dining",
   },
 };
 
@@ -113,8 +118,15 @@ const quickStats = [
 ];
 
 export default function DiningGuidePage() {
+  const breadcrumbSchema = generateBreadcrumbSchema([
+    { name: "Home", item: "https://buenosairesexpats.com" },
+    { name: "Dining Guide" },
+  ]);
+
   return (
     <div className="flex flex-col min-h-screen">
+      <StructuredData data={breadcrumbSchema} />
+
       {/* Hero Section */}
       <section className="relative min-h-[70vh] flex items-center justify-center overflow-hidden">
         {/* Background with overlay */}

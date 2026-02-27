@@ -17,26 +17,27 @@ import {
   Globe
 } from "lucide-react";
 import { LastUpdated } from "@/components/last-updated";
+import { LuceroLegalCTA } from "@/components/lucero-legal-cta";
 import { StructuredData } from "@/components/structured-data";
 import { generateArticleSchema, generateHowToSchema, generateFAQPageSchema } from "@/lib/schema";
 
 export const metadata: Metadata = {
-  title: "Argentina Work Visa - Complete Guide for Expats 2025",
-  description: "Everything you need to know about Argentina's Work Visa. Requirements, employer sponsorship, application process, and tips for professionals in 2025.",
+  title: "Argentina Work Visa - Complete Guide for Expats 2026",
+  description: "Everything you need to know about Argentina's Work Visa. Requirements, employer sponsorship, application process, and tips for professionals in 2026.",
   keywords: ["Argentina work visa", "work permit Argentina", "Argentina employment visa", "trabajar en Argentina"],
   openGraph: {
-    title: "Argentina Work Visa - Complete Guide for Expats 2025",
+    title: "Argentina Work Visa - Complete Guide for Expats 2026",
     description: "Work legally in Argentina with employer sponsorship. Step-by-step application guide.",
     type: "article",
     publishedTime: "2025-02-16",
-    modifiedTime: "2025-02-16",
+    modifiedTime: "2026-02-26",
   },
   alternates: {
     canonical: "https://buenosairesexpats.com/visas/work",
   },
 };
 
-const LAST_UPDATED = "2025-02-16";
+const LAST_UPDATED = "2026-02-26";
 
 const requirements = [
   {
@@ -136,8 +137,8 @@ const documentChecklist = [
 
 export default function WorkVisaPage() {
   const articleSchema = generateArticleSchema({
-    headline: "Argentina Work Visa - Complete Guide for Expats 2025",
-    description: "Everything you need to know about Argentina's Work Visa. Requirements, employer sponsorship, application process, and tips for professionals in 2025.",
+    headline: "Argentina Work Visa - Complete Guide for Expats 2026",
+    description: "Everything you need to know about Argentina's Work Visa. Requirements, employer sponsorship, application process, and tips for professionals in 2026.",
     url: "https://buenosairesexpats.com/visas/work",
     datePublished: "2025-02-16",
     dateModified: LAST_UPDATED,
@@ -451,28 +452,10 @@ export default function WorkVisaPage() {
       </section>
 
       {/* CTA */}
-      <section className="py-16 bg-primary text-primary-foreground">
-        <div className="container mx-auto px-4 text-center">
-          <div className="max-w-2xl mx-auto">
-            <h2 className="text-3xl font-bold mb-4">Need Help With Your Work Visa?</h2>
-            <p className="text-primary-foreground/80 mb-8">
-              Work visa applications are complex and employer sponsorship adds another layer of difficulty. 
-              We've worked with a trusted immigration partner who specializes in Argentine work visas 
-              and has helped many professionals navigate the process successfully.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button asChild size="lg" variant="secondary">
-                <Link href="https://argentinavisalaw.com" target="_blank" rel="noopener noreferrer">
-                  Get Professional Help
-                  <ArrowRight className="w-4 h-4 ml-2" />
-                </Link>
-              </Button>
-              <Button asChild size="lg" variant="outline" className="border-primary-foreground/20 hover:bg-primary-foreground/10">
-                <Link href="/contact">
-                  Ask Us a Question
-                </Link>
-              </Button>
-            </div>
+      <section className="py-16">
+        <div className="container mx-auto px-4">
+          <div className="max-w-3xl mx-auto">
+            <LuceroLegalCTA variant="full" />
           </div>
         </div>
       </section>

@@ -17,26 +17,27 @@ import {
   TrendingUp
 } from "lucide-react";
 import { LastUpdated } from "@/components/last-updated";
+import { LuceroLegalCTA } from "@/components/lucero-legal-cta";
 import { StructuredData } from "@/components/structured-data";
 import { generateArticleSchema, generateHowToSchema, generateFAQPageSchema } from "@/lib/schema";
 
 export const metadata: Metadata = {
-  title: "Argentina Retirement Visa - Pensionado Visa Guide 2025",
+  title: "Argentina Retirement Visa - Pensionado Visa Guide 2026",
   description: "Complete guide to Argentina's Retirement Visa (Pensionado). Requirements, pension requirements, healthcare, and path to permanent residency for retirees.",
   keywords: ["Argentina retirement visa", "pensionado visa Argentina", "retire in Argentina", "Argentina pension visa"],
   openGraph: {
-    title: "Argentina Retirement Visa - Pensionado Visa Guide 2025",
+    title: "Argentina Retirement Visa - Pensionado Visa Guide 2026",
     description: "Retire in Argentina with your pension. Requirements, costs, and path to permanent residency.",
     type: "article",
     publishedTime: "2025-02-16",
-    modifiedTime: "2025-02-16",
+    modifiedTime: "2026-02-26",
   },
   alternates: {
     canonical: "https://buenosairesexpats.com/visas/retirement",
   },
 };
 
-const LAST_UPDATED = "2025-02-16";
+const LAST_UPDATED = "2026-02-26";
 
 const requirements = [
   {
@@ -144,7 +145,7 @@ const costComparison = [
 
 export default function RetirementVisaPage() {
   const articleSchema = generateArticleSchema({
-    headline: "Argentina Retirement Visa - Pensionado Visa Guide 2025",
+    headline: "Argentina Retirement Visa - Pensionado Visa Guide 2026",
     description: "Complete guide to Argentina's Retirement Visa (Pensionado). Requirements, pension requirements, healthcare, and path to permanent residency for retirees.",
     url: "https://buenosairesexpats.com/visas/retirement",
     datePublished: "2025-02-16",
@@ -301,7 +302,7 @@ export default function RetirementVisaPage() {
               </CardContent>
             </Card>
             <p className="text-sm text-muted-foreground mt-4 text-center">
-              Based on 2025 data. Costs vary by lifestyle and neighborhood choice.
+              Based on 2026 data. Costs vary by lifestyle and neighborhood choice.
             </p>
           </div>
         </div>
@@ -541,28 +542,10 @@ export default function RetirementVisaPage() {
       </section>
 
       {/* CTA */}
-      <section className="py-16 bg-primary text-primary-foreground">
-        <div className="container mx-auto px-4 text-center">
-          <div className="max-w-2xl mx-auto">
-            <h2 className="text-3xl font-bold mb-4">Ready to Retire in Argentina?</h2>
-            <p className="text-primary-foreground/80 mb-8">
-              The retirement visa process is straightforward but requires careful documentation. 
-              We've worked with a trusted immigration partner who has helped many retirees 
-              successfully navigate the process and start their new life in Buenos Aires.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button asChild size="lg" variant="secondary">
-                <Link href="https://argentinavisalaw.com" target="_blank" rel="noopener noreferrer">
-                  Get Professional Help
-                  <ArrowRight className="w-4 h-4 ml-2" />
-                </Link>
-              </Button>
-              <Button asChild size="lg" variant="outline" className="border-primary-foreground/20 hover:bg-primary-foreground/10">
-                <Link href="/cost-of-living">
-                  See Cost Breakdown
-                </Link>
-              </Button>
-            </div>
+      <section className="py-16">
+        <div className="container mx-auto px-4">
+          <div className="max-w-3xl mx-auto">
+            <LuceroLegalCTA variant="full" />
           </div>
         </div>
       </section>

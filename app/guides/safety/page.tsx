@@ -4,9 +4,11 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { DesktopOnly, MobileOnly } from "@/components/desktop-only";
-import { 
-  Shield, 
-  MapPin, 
+import { StructuredData } from "@/components/structured-data";
+import { generateBreadcrumbSchema, generateArticleSchema } from "@/lib/schema";
+import {
+  Shield,
+  MapPin,
   AlertTriangle,
   Phone,
   Smartphone,
@@ -21,9 +23,12 @@ import {
 } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Safety in Buenos Aires - Complete Expat Guide 2025",
+  title: "Safety in Buenos Aires - Complete Expat Guide 2026",
   description: "Complete safety guide for Buenos Aires expats. Neighborhood safety breakdown, common scams to avoid, emergency numbers, and solo travel tips.",
   keywords: ["Buenos Aires safety", "Argentina crime", "BA scams", "safe neighborhoods Buenos Aires", "solo female travel Argentina"],
+  alternates: {
+    canonical: "https://buenosairesexpats.com/guides/safety",
+  },
   openGraph: {
     title: "Safety in Buenos Aires - Complete Expat Guide",
     description: "Neighborhood safety ratings, common scams, and how to stay safe as an expat in Buenos Aires.",
@@ -113,8 +118,25 @@ const soloFemaleTips = [
 ];
 
 export default function SafetyPage() {
+  const breadcrumbSchema = generateBreadcrumbSchema([
+    { name: "Home", item: "https://buenosairesexpats.com" },
+    { name: "Guides", item: "https://buenosairesexpats.com/guides" },
+    { name: "Safety" },
+  ]);
+
+  const articleSchema = generateArticleSchema({
+    headline: "Safety in Buenos Aires - Complete Expat Guide",
+    description: "Complete safety guide for Buenos Aires expats. Neighborhood safety breakdown, common scams to avoid, emergency numbers, and solo travel tips.",
+    url: "https://buenosairesexpats.com/guides/safety",
+    datePublished: "2025-01-15",
+    dateModified: "2026-02-26",
+  });
+
   return (
     <div className="flex flex-col min-h-screen">
+      <StructuredData data={breadcrumbSchema} />
+      <StructuredData data={articleSchema} />
+
       {/* Breadcrumb */}
       <div className="border-b bg-muted/30">
         <div className="container mx-auto px-4 py-4">

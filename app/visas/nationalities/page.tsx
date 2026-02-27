@@ -19,7 +19,7 @@ import { generateArticleSchema, generateFAQPageSchema } from "@/lib/schema";
 import { countries, regions, type Region } from "@/lib/nationality-data";
 
 export const metadata: Metadata = {
-  title: "Argentina Visa Requirements by Nationality - Complete 2025 Guide",
+  title: "Argentina Visa Requirements by Nationality - Complete 2026 Guide",
   description: "Find Argentina visa requirements for your country. 120+ nationalities can visit visa-free. Check if you need a visa, how long you can stay, and entry requirements.",
   keywords: [
     "Argentina visa requirements",
@@ -33,7 +33,7 @@ export const metadata: Metadata = {
   },
 };
 
-const LAST_UPDATED = "2025-02-16";
+const LAST_UPDATED = "2026-02-26";
 
 // Stats
 const stats = {
@@ -45,7 +45,7 @@ const stats = {
 export default function NationalitiesPage() {
   // Generate structured data
   const articleSchema = generateArticleSchema({
-    headline: "Argentina Visa Requirements by Nationality - Complete 2025 Guide",
+    headline: "Argentina Visa Requirements by Nationality - Complete 2026 Guide",
     description: "Find Argentina visa requirements for your country. Check if you need a visa, how long you can stay, and entry requirements.",
     url: "https://buenosairesexpats.com/visas/nationalities",
     datePublished: "2025-02-16",
@@ -263,7 +263,7 @@ export default function NationalitiesPage() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button asChild size="lg" variant="secondary">
-                <Link href="https://argentinavisalaw.com" target="_blank" rel="noopener noreferrer">
+                <Link href="https://lucerolegal.org" target="_blank" rel="noopener noreferrer">
                   Get Professional Help
                   <ArrowRight className="w-4 h-4 ml-2" />
                 </Link>

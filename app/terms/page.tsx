@@ -3,6 +3,8 @@ import Link from "next/link";
 import { Card, CardContent } from "@/components/ui/card";
 import { FileText, ArrowLeft } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { StructuredData } from "@/components/structured-data";
+import { generateBreadcrumbSchema } from "@/lib/schema";
 
 export const metadata: Metadata = {
   title: "Terms of Service - Buenos Aires Expats",
@@ -11,11 +13,21 @@ export const metadata: Metadata = {
     index: true,
     follow: true,
   },
+  alternates: {
+    canonical: "https://buenosairesexpats.com/terms",
+  },
 };
 
 export default function TermsPage() {
+  const breadcrumbSchema = generateBreadcrumbSchema([
+    { name: "Home", item: "https://buenosairesexpats.com" },
+    { name: "Terms of Service" },
+  ]);
+
   return (
     <div className="flex flex-col min-h-screen">
+      <StructuredData data={breadcrumbSchema} />
+
       {/* Breadcrumb */}
       <div className="border-b bg-muted/30">
         <div className="container mx-auto px-4 py-4">
@@ -34,7 +46,7 @@ export default function TermsPage() {
             <FileText className="w-12 h-12 text-primary mx-auto mb-4" />
             <h1 className="text-3xl md:text-4xl font-bold mb-4">Terms of Service</h1>
             <p className="text-muted-foreground">
-              Last updated: February 16, 2025
+              Last updated: February 26, 2026
             </p>
           </div>
         </div>

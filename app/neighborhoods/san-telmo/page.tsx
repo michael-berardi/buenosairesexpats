@@ -27,6 +27,9 @@ export const metadata: Metadata = {
     title: "San Telmo Buenos Aires - Historic & Bohemian Expat Guide",
     description: "Complete guide to San Telmo, Buenos Aires' oldest neighborhood with cobblestone streets and tango culture.",
   },
+  alternates: {
+    canonical: "https://buenosairesexpats.com/neighborhoods/san-telmo",
+  },
 };
 
 const highlights = [
@@ -51,10 +54,10 @@ const highlights = [
 ];
 
 const rentPrices = [
-  { type: "Studio", price: "$350-550", notes: "Often in historic buildings" },
-  { type: "1 Bedroom", price: "$500-750", notes: "Great value for singles" },
-  { type: "2 Bedroom", price: "$700-1,000", notes: "Good for sharing" },
-  { type: "3+ Bedroom", price: "$900-1,400", notes: "Spacious older apartments" },
+  { type: "Studio", price: "$400-650", notes: "Often in historic buildings" },
+  { type: "1 Bedroom", price: "$600-875", notes: "Great value for singles" },
+  { type: "2 Bedroom", price: "$825-1,175", notes: "Good for sharing" },
+  { type: "3+ Bedroom", price: "$1,050-1,650", notes: "Spacious older apartments" },
 ];
 
 const highlightsList = [
@@ -76,7 +79,7 @@ export default function SanTelmoPage() {
     description: "Complete guide to San Telmo, Buenos Aires' oldest neighborhood. Cobblestone streets, tango culture, and authentic bohemian living.",
     url: "https://buenosairesexpats.com/neighborhoods/san-telmo",
     datePublished: "2025-02-16",
-    dateModified: "2025-02-16",
+    dateModified: "2026-02-26",
   });
 
   return (
@@ -143,7 +146,7 @@ export default function SanTelmoPage() {
               <div className="text-sm text-muted-foreground">Expat Score</div>
             </div>
             <div>
-              <div className="text-3xl font-bold text-primary">$500-900</div>
+              <div className="text-3xl font-bold text-primary">$600-1,175</div>
               <div className="text-sm text-muted-foreground">Rent Range</div>
             </div>
             <div>
@@ -359,6 +362,11 @@ export default function SanTelmoPage() {
                   See Cost Breakdown
                 </Link>
               </Button>
+            </div>
+            <div className="flex flex-wrap justify-center gap-4 mt-6 text-sm text-primary-foreground/70">
+              <Link href="/housing" className="hover:text-primary-foreground underline underline-offset-2">Housing Guide</Link>
+              <span>|</span>
+              <Link href="/dining" className="hover:text-primary-foreground underline underline-offset-2">Dining Guide</Link>
             </div>
           </div>
         </div>

@@ -17,11 +17,11 @@ import { StructuredData } from "@/components/structured-data";
 import { generateArticleSchema } from "@/lib/schema";
 
 export const metadata: Metadata = {
-  title: "Buenos Aires vs Europe - Honest Comparison for Expats 2025",
-  description: "Real comparison of Buenos Aires vs Lisbon, Barcelona, Berlin, and Paris. Cost, lifestyle, visas, and quality of life for American expats.",
+  title: "Buenos Aires vs Europe - Honest Comparison for Expats 2026",
+  description: "Real comparison of Buenos Aires vs Lisbon, Barcelona, Berlin, and Paris. Cost, lifestyle, visas, and quality of life for expats.",
   keywords: ["Buenos Aires vs Europe", "Buenos Aires vs Lisbon", "Buenos Aires vs Barcelona", "Argentina vs Europe expat"],
   openGraph: {
-    title: "Buenos Aires vs Europe - Honest Comparison for Expats 2025",
+    title: "Buenos Aires vs Europe - Honest Comparison for Expats 2026",
     description: "Real comparison of Buenos Aires vs European cities. Cost, lifestyle, and quality of life.",
   },
 };
@@ -47,7 +47,7 @@ const comparisons = [
     visa: "Digital Nomad (1 year)",
     baVisa: "Digital Nomad (6 months)",
     pros: ["Beach + city", "EU travel", "Better infrastructure"],
-    baPros: ["Much cheaper", "Better steak", "More welcoming to Americans"],
+    baPros: ["Much cheaper", "Better steak", "More welcoming to foreigners"],
     winner: "ba",
     notes: "Barcelona is BA's European cousin - similar vibe, architecture, and lifestyle. But 2-3x more expensive.",
   },
@@ -130,11 +130,11 @@ const factors = [
 
 export default function VsEuropePage() {
   const articleSchema = generateArticleSchema({
-    headline: "Buenos Aires vs Europe - Honest Comparison for Expats 2025",
-    description: "Real comparison of Buenos Aires vs Lisbon, Barcelona, Berlin, and Paris. Cost, lifestyle, visas, and quality of life for American expats.",
+    headline: "Buenos Aires vs Europe - Honest Comparison for Expats 2026",
+    description: "Real comparison of Buenos Aires vs Lisbon, Barcelona, Berlin, and Paris. Cost, lifestyle, visas, and quality of life for expats.",
     url: "https://buenosairesexpats.com/why-argentina/vs-europe",
     datePublished: "2025-02-16",
-    dateModified: "2025-02-16",
+    dateModified: "2026-02-26",
   });
 
   return (
@@ -444,7 +444,7 @@ export default function VsEuropePage() {
           <div className="max-w-2xl mx-auto">
             <h2 className="text-3xl font-bold mb-4">Still Deciding?</h2>
             <p className="text-primary-foreground/80 mb-8">
-              Read our full guide on why Americans are moving to Buenos Aires, 
+              Read our full guide on why expats are moving to Buenos Aires, 
               or explore the cost of living breakdown to see real numbers.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">

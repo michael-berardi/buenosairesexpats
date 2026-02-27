@@ -3,10 +3,11 @@ import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { 
-  Home, 
-  DollarSign, 
-  FileText, 
+import { LuceroLegalCTA } from "@/components/lucero-legal-cta";
+import {
+  Home,
+  DollarSign,
+  FileText,
   AlertTriangle,
   CheckCircle,
   ArrowRight,
@@ -14,9 +15,12 @@ import {
 } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Housing in Argentina - Renting Guide for Expats 2025",
-  description: "Complete guide to renting apartments in Buenos Aires. Contracts, guarantees, neighborhoods, and avoiding scams. Updated for 2025.",
+  title: "Housing in Argentina - Renting Guide for Expats 2026",
+  description: "Complete guide to renting apartments in Buenos Aires. Contracts, guarantees, neighborhoods, and avoiding scams. Updated for 2026.",
   keywords: ["renting Argentina", "Buenos Aires apartments", "Argentina housing", "expat housing Buenos Aires"],
+  alternates: {
+    canonical: "https://buenosairesexpats.com/housing",
+  },
 };
 
 const rentalSteps = [
@@ -176,19 +180,19 @@ export default function HousingPage() {
                   <ul className="space-y-2 text-sm">
                     <li className="flex items-start gap-2">
                       <CheckCircle className="w-4 h-4 text-green-500 flex-shrink-0 mt-0.5" />
-                      <span><strong>ZonaProp</strong> - Largest property site</span>
+                      <span><strong>ZonaProp</strong> - Largest property site, most listings</span>
                     </li>
                     <li className="flex items-start gap-2">
                       <CheckCircle className="w-4 h-4 text-green-500 flex-shrink-0 mt-0.5" />
-                      <span><strong>MercadoLibre</strong> - Classifieds section</span>
+                      <span><strong>Argenprop</strong> - Major competitor to ZonaProp, good filters</span>
                     </li>
                     <li className="flex items-start gap-2">
                       <CheckCircle className="w-4 h-4 text-green-500 flex-shrink-0 mt-0.5" />
-                      <span><strong>Properati</strong> - Good search filters</span>
+                      <span><strong>MercadoLibre Inmuebles</strong> - Classifieds with owner listings</span>
                     </li>
                     <li className="flex items-start gap-2">
                       <CheckCircle className="w-4 h-4 text-green-500 flex-shrink-0 mt-0.5" />
-                      <span><strong>Facebook Groups</strong> - Expats BA, etc.</span>
+                      <span><strong>Facebook Groups</strong> - &quot;Expats in Buenos Aires&quot;, &quot;BA Apartments for Rent&quot;, neighborhood-specific groups</span>
                     </li>
                   </ul>
                 </CardContent>
@@ -272,30 +276,133 @@ export default function HousingPage() {
 
       {/* The Guarantee Problem */}
       <section className="py-16">
-      <div className="container mx-auto px-4">
+        <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto">
-            <h2 className="text-3xl font-bold mb-6">The Guarantee (Garantía) Challenge</h2>
+            <h2 className="text-3xl font-bold mb-6">The Guarantee (Garantia) Challenge</h2>
             <div className="prose prose-lg max-w-none text-muted-foreground">
               <p className="mb-4">
-                One of the biggest challenges for expats is the "garantía" - a property guarantee 
-                required by most landlords. Traditionally, this means having a local property owner 
-                co-sign your lease, which is impossible for most foreigners.
-              </p>
-              <p className="mb-4">
-                <strong>Alternatives include:</strong>
-              </p>
-              <ul className="list-disc pl-6 mb-4 space-y-2">
-                <li>Paying a larger security deposit (3-6 months)</li>
-                <li>Using a garantía insurance company (seguro de caución)</li>
-                <li>Finding landlords who accept international guarantees</li>
-                <li>Working with expat-friendly agencies</li>
-                <li>Airbnb or temporary housing while you build local connections</li>
-              </ul>
-              <p>
-                Many landlords are becoming more flexible with foreigners, especially if you can 
-                show proof of stable foreign income and pay several months upfront.
+                The garantia is the single biggest pain point for expats renting in Buenos Aires.
+                Almost every formal lease requires one, and understanding your options is essential
+                before you start apartment hunting.
               </p>
             </div>
+
+            <div className="grid gap-4 mt-6 mb-8">
+              <Card>
+                <CardHeader>
+                  <CardTitle className="text-lg">Garantia Propietaria (Property Guarantee)</CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <p className="text-sm text-muted-foreground">
+                    The traditional option: a local property owner co-signs your lease, putting their
+                    property as collateral. This is what most landlords prefer, but it&apos;s nearly
+                    impossible for foreigners who don&apos;t have local connections with property owners.
+                  </p>
+                </CardContent>
+              </Card>
+
+              <Card>
+                <CardHeader>
+                  <CardTitle className="text-lg">Garantia Bancaria (Bank Guarantee)</CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <p className="text-sm text-muted-foreground">
+                    Some banks offer rental guarantees for their account holders. You typically need
+                    to have an established banking relationship and funds on deposit. Less common
+                    but accepted by many landlords as equivalent to a property guarantee.
+                  </p>
+                </CardContent>
+              </Card>
+
+              <Card className="border-green-200">
+                <CardHeader>
+                  <CardTitle className="text-lg text-green-700">Seguro de Caucion (Guarantee Insurance) - Best for Expats</CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <p className="text-sm text-muted-foreground mb-3">
+                    This is the most practical option for foreigners. Companies like <strong>Garantor</strong> and{" "}
+                    <strong>Finaer</strong> issue guarantee policies that landlords accept in place of a
+                    property guarantee. You pay a fee (typically 3-5% of the annual rent) and the
+                    insurance company guarantees your lease.
+                  </p>
+                  <ul className="space-y-1 text-sm text-muted-foreground">
+                    <li className="flex items-start gap-2">
+                      <CheckCircle className="w-4 h-4 text-green-500 flex-shrink-0 mt-0.5" />
+                      <span><strong>Garantor:</strong> Popular with expats, English support available, online process</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <CheckCircle className="w-4 h-4 text-green-500 flex-shrink-0 mt-0.5" />
+                      <span><strong>Finaer:</strong> Widely accepted by landlords, fast approval</span>
+                    </li>
+                  </ul>
+                </CardContent>
+              </Card>
+
+              <Card>
+                <CardHeader>
+                  <CardTitle className="text-lg">Other Options</CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <ul className="space-y-2 text-sm text-muted-foreground">
+                    <li className="flex items-start gap-2">
+                      <CheckCircle className="w-4 h-4 text-green-500 flex-shrink-0 mt-0.5" />
+                      <span><strong>Larger deposit:</strong> Some landlords accept 3-6 months upfront instead of a guarantee</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <CheckCircle className="w-4 h-4 text-green-500 flex-shrink-0 mt-0.5" />
+                      <span><strong>Expat-friendly agencies:</strong> Some agencies specialize in guarantee-free rentals (higher fees)</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <CheckCircle className="w-4 h-4 text-green-500 flex-shrink-0 mt-0.5" />
+                      <span><strong>Temporary housing first:</strong> Start with Airbnb while you build local connections and credit</span>
+                    </li>
+                  </ul>
+                </CardContent>
+              </Card>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* USD Leases Under Milei */}
+      <section className="py-16 bg-muted/30">
+        <div className="container mx-auto px-4">
+          <div className="max-w-3xl mx-auto">
+            <div className="bg-amber-50 dark:bg-amber-950/20 border border-amber-200 rounded-xl p-6">
+              <div className="flex items-start gap-4">
+                <DollarSign className="w-6 h-6 text-amber-600 flex-shrink-0" />
+                <div>
+                  <h3 className="font-semibold text-amber-900 mb-2">
+                    2026 Update: USD-Denominated Leases
+                  </h3>
+                  <p className="text-amber-800 text-sm mb-3">
+                    Under Milei&apos;s economic reforms and the deregulation of the rental market,
+                    many landlords now prefer or require USD-denominated leases. The previous rental
+                    law (Ley de Alquileres) that mandated peso-denominated contracts with annual
+                    adjustments has been repealed, giving landlords more flexibility.
+                  </p>
+                  <ul className="space-y-1 text-amber-800 text-sm">
+                    <li>-- Most expat-targeted apartments are priced in USD</li>
+                    <li>-- Payment is often accepted in physical USD cash or bank transfer</li>
+                    <li>-- Some landlords accept peso payments at the MEP dollar rate</li>
+                    <li>-- Contract terms are now freely negotiable (no mandatory 3-year minimums)</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Lucero Legal CTA */}
+      <section className="py-16">
+        <div className="container mx-auto px-4">
+          <div className="max-w-3xl mx-auto">
+            <LuceroLegalCTA
+              variant="compact"
+              headline="Need Help with Rental Contracts?"
+              description="Lucero Legal's team can review your rental contract, help with garantía requirements, and ensure your rights are protected as a tenant in Argentina."
+            />
           </div>
         </div>
       </section>

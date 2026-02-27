@@ -17,12 +17,15 @@ import {
 } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Why Americans Are Moving to Buenos Aires - Real Talk",
-  description: "Honest insights from Americans who made the move. The good, the bad, and what Reddit won't tell you about life in Buenos Aires.",
-  keywords: ["why leave America", "moving to Buenos Aires", "American expats Argentina", "Buenos Aires vs USA", "expat reality"],
+  title: "Why Expats Are Moving to Buenos Aires - Real Talk",
+  description: "Honest insights from expats who made the move. The good, the bad, and what Reddit won't tell you about life in Buenos Aires.",
+  keywords: ["moving to Buenos Aires", "expats Argentina", "Buenos Aires expat life", "Buenos Aires vs USA", "expat reality"],
   openGraph: {
-    title: "Why Americans Are Moving to Buenos Aires - Real Talk",
-    description: "Honest insights from Americans who made the move. The good, the bad, and what Reddit won't tell you.",
+    title: "Why Expats Are Moving to Buenos Aires - Real Talk",
+    description: "Honest insights from expats who made the move. The good, the bad, and what Reddit won't tell you.",
+  },
+  alternates: {
+    canonical: "https://buenosairesexpats.com/why-argentina",
   },
 };
 
@@ -57,7 +60,7 @@ const factors = [
     usSituation: "10 days vacation is standard. 'Hustle culture' glorifies overwork. Many feel guilty taking time off.",
     argentinaAdvantage: "14+ days minimum by law. Long lunches are normal. People actually take vacations. Dinner at 10pm means work ends when it should.",
     stats: "US: No mandated PTO | Argentina: 14+ days minimum",
-    redditInsight: "Reddit expats love this: 'People here work to live, not live to work. It's refreshing.' But note: 'Mañana' culture can frustrate Type-A Americans.",
+    redditInsight: "Reddit expats love this: 'People here work to live, not live to work. It's refreshing.' But note: 'Mañana' culture can frustrate Type-A expats.",
   },
   {
     icon: Home,
@@ -149,11 +152,11 @@ export default function WhyArgentinaPage() {
               Based on Real Expat Experiences
             </Badge>
             <h1 className="text-4xl md:text-5xl font-bold mb-6">
-              Why Americans Are Actually Moving to Buenos Aires
+              Why Expats Are Actually Moving to Buenos Aires
             </h1>
             <p className="text-xl text-muted-foreground mb-8">
               Not the Instagram version. Not the doom-and-gloom version. 
-              The real story from Reddit, forums, and Americans who made the leap.
+              The real story from Reddit, forums, and expats who made the leap.
             </p>
             <div className="flex flex-wrap justify-center gap-4 text-sm text-muted-foreground">
               <span>Real Reddit insights</span>
@@ -186,7 +189,7 @@ export default function WhyArgentinaPage() {
       <section className="py-16">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-3xl font-bold mb-12 text-center">What&apos;s Actually Drawing Americans</h2>
+            <h2 className="text-3xl font-bold mb-12 text-center">What&apos;s Actually Drawing Expats</h2>
             
             <div className="space-y-8">
               {factors.map((factor) => (
@@ -264,7 +267,7 @@ export default function WhyArgentinaPage() {
                   You&apos;ll get scammed at least once. Winter is gray and depressing.
                 </p>
                 <p className="text-muted-foreground">
-                  <strong>But.</strong> For Americans earning in dollars, it offers something increasingly rare: 
+                  <strong>But.</strong> For expats earning in dollars or euros, it offers something increasingly rare: 
                   the ability to live well without grinding yourself into dust. You can afford a nice apartment. 
                   You can go to the doctor without fear. You can take vacations. You can date without apps feeling like a second job.
                 </p>
@@ -338,10 +341,10 @@ export default function WhyArgentinaPage() {
           <div className="max-w-3xl mx-auto text-center text-sm text-muted-foreground">
             <p>
               Considering the move? For visa and immigration guidance, we&apos;ve worked with{" "}
-              <Link href="https://argentinavisalaw.com" className="underline hover:text-foreground">
+              <Link href="https://lucerolegal.org" className="underline hover:text-foreground">
                 a trusted immigration partner
               </Link>{" "}
-              who knows the system inside and out. Katarina and her team have helped many of our readers navigate the process.
+              who knows the system inside and out. Lucero Legal's team of immigration attorneys have helped many of our readers navigate the process.
             </p>
           </div>
         </div>

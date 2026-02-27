@@ -272,7 +272,7 @@ export default async function StoryPage({ params }: { params: Promise<{ id: stri
           <div className="max-w-2xl mx-auto">
             <h2 className="text-3xl font-bold mb-4">Have Your Own Story?</h2>
             <p className="text-primary-foreground/80 mb-8">
-              Are you an American living in Buenos Aires? We'd love to hear your experience 
+              Are you an expat living in Buenos Aires? We'd love to hear your experience 
               and possibly feature it here.
             </p>
             <Button asChild size="lg" variant="secondary">

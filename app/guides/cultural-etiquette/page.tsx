@@ -3,9 +3,11 @@ import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { 
-  Users, 
-  Hand, 
+import { StructuredData } from "@/components/structured-data";
+import { generateBreadcrumbSchema, generateArticleSchema } from "@/lib/schema";
+import {
+  Users,
+  Hand,
   Utensils,
   DollarSign,
   Clock,
@@ -19,9 +21,12 @@ import {
 } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Cultural Etiquette in Argentina - Expat Guide 2025",
+  title: "Cultural Etiquette in Argentina - Expat Guide 2026",
   description: "Complete guide to Argentine cultural etiquette. Greeting customs, dining etiquette, tipping culture, punctuality, conversation topics, and social norms for expats.",
   keywords: ["Argentina culture", "Argentine etiquette", "Buenos Aires customs", "Porteño culture", "Argentina social norms"],
+  alternates: {
+    canonical: "https://buenosairesexpats.com/guides/cultural-etiquette",
+  },
   openGraph: {
     title: "Cultural Etiquette in Argentina - Expat Guide",
     description: "Navigate Argentine social customs like a local. Greetings, dining, tipping, and conversation etiquette.",
@@ -230,8 +235,25 @@ const personalSpace = [
 ];
 
 export default function CulturalEtiquettePage() {
+  const breadcrumbSchema = generateBreadcrumbSchema([
+    { name: "Home", item: "https://buenosairesexpats.com" },
+    { name: "Guides", item: "https://buenosairesexpats.com/guides" },
+    { name: "Cultural Etiquette" },
+  ]);
+
+  const articleSchema = generateArticleSchema({
+    headline: "Cultural Etiquette in Argentina - Expat Guide",
+    description: "Complete guide to Argentine cultural etiquette. Greeting customs, dining etiquette, tipping culture, punctuality, conversation topics, and social norms for expats.",
+    url: "https://buenosairesexpats.com/guides/cultural-etiquette",
+    datePublished: "2025-01-15",
+    dateModified: "2026-02-26",
+  });
+
   return (
     <div className="flex flex-col min-h-screen">
+      <StructuredData data={breadcrumbSchema} />
+      <StructuredData data={articleSchema} />
+
       {/* Breadcrumb */}
       <div className="border-b bg-muted/30">
         <div className="container mx-auto px-4 py-4">
