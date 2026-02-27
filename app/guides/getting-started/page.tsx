@@ -395,7 +395,7 @@ export default function GettingStartedPage() {
       {/* Breadcrumb */}
       <div className="border-b bg-stone-50">
         <div className="container mx-auto px-4 py-4">
-          <nav className="flex gap-2 text-sm text-stone-600">
+          <nav className="flex gap-2 text-sm text-stone-700">
             <Link href="/" className="hover:text-stone-900">
               Home
             </Link>
@@ -432,18 +432,26 @@ export default function GettingStartedPage() {
               worth it.
             </p>
             <div className="flex flex-wrap justify-center gap-4 text-sm mb-6">
-              <div className="flex items-center gap-2 text-stone-600">
-                <BookOpen className="w-4 h-4 text-sky-500" />
+              <div className="flex items-center gap-2 text-stone-700">
+                <BookOpen className="w-4 h-4 text-sky-600" />
                 <span>15 min read</span>
               </div>
-              <div className="flex items-center gap-2 text-stone-600">
-                <CheckCircle className="w-4 h-4 text-green-500" />
+              <div className="flex items-center gap-2 text-stone-700">
+                <CheckCircle className="w-4 h-4 text-green-600" />
                 <span>30+ actionable items</span>
               </div>
-              <div className="flex items-center gap-2 text-stone-600">
-                <Clock className="w-4 h-4 text-sky-500" />
+              <div className="flex items-center gap-2 text-stone-700">
+                <Clock className="w-4 h-4 text-sky-600" />
                 <span>90-day timeline</span>
               </div>
+            </div>
+            <div className="mt-8">
+              <Button asChild size="lg" className="bg-sky-600 hover:bg-sky-500 text-white font-semibold shadow-lg">
+                <Link href="#first-week">
+                  Start Your Checklist
+                  <ArrowRight className="w-4 h-4 ml-2" />
+                </Link>
+              </Button>
             </div>
             <LastUpdated date={LAST_UPDATED} />
           </div>
@@ -454,7 +462,7 @@ export default function GettingStartedPage() {
       <section className="py-8 border-b bg-white">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto">
-            <p className="text-sm font-semibold text-stone-500 mb-3 text-center uppercase tracking-wide">
+            <p className="text-sm font-semibold text-stone-700 mb-3 text-center uppercase tracking-wide">
               Jump to Section
             </p>
             <div className="flex flex-wrap justify-center gap-2">
@@ -469,7 +477,7 @@ export default function GettingStartedPage() {
                 <Link
                   key={item.href}
                   href={item.href}
-                  className="px-3 py-1.5 text-sm rounded-full border border-stone-200 text-stone-600 hover:bg-sky-50 hover:border-sky-200 hover:text-sky-700 transition-colors"
+                  className="px-3 py-1.5 text-sm rounded-full border border-stone-200 text-stone-700 hover:bg-sky-50 hover:border-sky-200 hover:text-sky-700 transition-colors"
                 >
                   {item.label}
                 </Link>
@@ -737,7 +745,7 @@ export default function GettingStartedPage() {
                     </CardTitle>
                   </CardHeader>
                   <CardContent>
-                    <p className="text-sm text-stone-600 mb-3">{item.why}</p>
+                    <p className="text-sm text-stone-700 mb-3">{item.why}</p>
                     <div className="p-3 bg-green-50 dark:bg-green-950/20 rounded-lg">
                       <div className="flex items-start gap-2">
                         <Lightbulb className="w-4 h-4 text-green-600 flex-shrink-0 mt-0.5" />
@@ -804,7 +812,7 @@ export default function GettingStartedPage() {
                       key={item.item}
                       className="flex justify-between items-center py-2 border-b last:border-0"
                     >
-                      <span className="text-stone-600">{item.item}</span>
+                      <span className="text-stone-700">{item.item}</span>
                       <span className="font-semibold">{item.cost}</span>
                     </div>
                   ))}
@@ -816,7 +824,7 @@ export default function GettingStartedPage() {
                       $1,125-2,295
                     </span>
                   </div>
-                  <p className="text-xs text-stone-500 mt-1">
+                  <p className="text-xs text-stone-700 mt-1">
                     Costs vary significantly by neighborhood and lifestyle. See
                     our{" "}
                     <Link
@@ -935,7 +943,7 @@ export default function GettingStartedPage() {
             <h2 className="heading-md mb-4">
               You Have Got This
             </h2>
-            <p className="text-white/90 mb-4 text-lg">
+            <p className="text-white mb-4 text-lg">
               Moving to Buenos Aires is one of the most exciting decisions you
               will ever make. Yes, there will be challenges - paperwork,
               language barriers, and moments of doubt. But there is a reason
@@ -943,7 +951,7 @@ export default function GettingStartedPage() {
               warm people, the affordable lifestyle, and the energy of a city
               that never sleeps.
             </p>
-            <p className="text-white/80 mb-8">
+            <p className="text-white mb-8">
               Take it one step at a time. Follow this checklist. Ask for help
               when you need it. And most importantly - enjoy the adventure.
             </p>

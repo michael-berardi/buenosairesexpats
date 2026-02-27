@@ -332,17 +332,25 @@ export default function WorkingTaxesPage() {
             </p>
             <div className="flex flex-wrap justify-center gap-4 text-sm">
               <div className="flex items-center gap-2 text-muted-foreground">
-                <Laptop className="w-4 h-4 text-emerald-500" />
+                <Laptop className="w-4 h-4 text-emerald-600" />
                 <span>Remote work info</span>
               </div>
               <div className="flex items-center gap-2 text-muted-foreground">
-                <Calculator className="w-4 h-4 text-emerald-500" />
+                <Calculator className="w-4 h-4 text-emerald-600" />
                 <span>Tax obligations explained</span>
               </div>
               <div className="flex items-center gap-2 text-muted-foreground">
-                <Building className="w-4 h-4 text-emerald-500" />
+                <Building className="w-4 h-4 text-emerald-600" />
                 <span>Business setup guide</span>
               </div>
+            </div>
+            <div className="mt-8">
+              <Button asChild size="lg" className="bg-sky-600 hover:bg-sky-500 text-white font-semibold shadow-lg">
+                <Link href="https://lucerolegal.org?utm_source=buenosairesexpats&utm_medium=taxes-hero">
+                  Get Legal Tax Advice
+                  <ArrowRight className="w-4 h-4 ml-2" />
+                </Link>
+              </Button>
             </div>
           </div>
         </div>
@@ -353,7 +361,7 @@ export default function WorkingTaxesPage() {
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto">
             <h2 className="text-3xl font-bold mb-6 flex items-center gap-2">
-              <Laptop className="w-6 h-6 text-emerald-500" />
+              <Laptop className="w-6 h-6 text-emerald-600" />
               Remote Work Legal Status
             </h2>
             <Card className="mb-6">
@@ -437,7 +445,7 @@ export default function WorkingTaxesPage() {
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl font-bold mb-4 text-center flex items-center justify-center gap-2">
-              <Calculator className="w-6 h-6 text-emerald-500" />
+              <Calculator className="w-6 h-6 text-emerald-600" />
               Monotributo: Argentina&apos;s Simplified Tax Regime
             </h2>
             <p className="text-center text-muted-foreground mb-8 max-w-2xl mx-auto">
@@ -472,14 +480,14 @@ export default function WorkingTaxesPage() {
                             <Badge variant="secondary">{cat.category}</Badge>
                           </td>
                           <td className="py-3 px-2 text-sm">{cat.monthlyIncome}</td>
-                          <td className="py-3 px-2 font-medium text-emerald-600">{cat.monthlyCost}</td>
+                          <td className="py-3 px-2 font-medium text-emerald-700">{cat.monthlyCost}</td>
                           <td className="py-3 px-2 text-sm text-muted-foreground">{cat.bestFor}</td>
                         </tr>
                       ))}
                     </tbody>
                   </table>
                 </div>
-                <p className="text-xs text-muted-foreground mt-4">
+                <p className="text-xs text-stone-700 mt-4">
                   * ARS amounts are updated periodically by AFIP. USD equivalents are approximate
                   at blue/MEP dollar rates and fluctuate. Check with your accountant for current values.
                 </p>
@@ -489,7 +497,7 @@ export default function WorkingTaxesPage() {
             <div className="grid md:grid-cols-3 gap-4 mb-6">
               <Card>
                 <CardContent className="pt-6 text-center">
-                  <DollarSign className="w-8 h-8 mx-auto mb-2 text-emerald-500" />
+                  <DollarSign className="w-8 h-8 mx-auto mb-2 text-emerald-600" />
                   <div className="font-semibold mb-1">Tax Component</div>
                   <p className="text-sm text-muted-foreground">
                     Replaces income tax (ganancias) with a small fixed fee. Much simpler than the
@@ -499,7 +507,7 @@ export default function WorkingTaxesPage() {
               </Card>
               <Card>
                 <CardContent className="pt-6 text-center">
-                  <Shield className="w-8 h-8 mx-auto mb-2 text-blue-500" />
+                  <Shield className="w-8 h-8 mx-auto mb-2 text-blue-600" />
                   <div className="font-semibold mb-1">Social Security</div>
                   <p className="text-sm text-muted-foreground">
                     Includes retirement contributions (jubilación). After 30 years, you qualify for
@@ -509,7 +517,7 @@ export default function WorkingTaxesPage() {
               </Card>
               <Card>
                 <CardContent className="pt-6 text-center">
-                  <Users className="w-8 h-8 mx-auto mb-2 text-purple-500" />
+                  <Users className="w-8 h-8 mx-auto mb-2 text-purple-600" />
                   <div className="font-semibold mb-1">Healthcare (Obra Social)</div>
                   <p className="text-sm text-muted-foreground">
                     Access to a health plan through your chosen obra social. Covers doctor visits,
@@ -550,7 +558,7 @@ export default function WorkingTaxesPage() {
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto">
             <h2 className="text-3xl font-bold mb-6 flex items-center gap-2">
-              <Building className="w-6 h-6 text-emerald-500" />
+              <Building className="w-6 h-6 text-emerald-600" />
               Starting a Business in Argentina
             </h2>
             <p className="text-muted-foreground mb-8">
@@ -605,9 +613,9 @@ export default function WorkingTaxesPage() {
                 <div className="mt-4 p-4 bg-muted rounded-lg">
                   <div className="flex justify-between items-center">
                     <span className="font-bold">Year 1 Total (approx.)</span>
-                    <span className="font-bold text-emerald-600">$2,000-4,500</span>
+                    <span className="font-bold text-emerald-700">$2,000-4,500</span>
                   </div>
-                  <p className="text-xs text-muted-foreground mt-1">
+                  <p className="text-xs text-stone-700 mt-1">
                     Ongoing costs: $150-300/month (accountant + social charges + monotributo/taxes)
                   </p>
                 </div>
@@ -622,7 +630,7 @@ export default function WorkingTaxesPage() {
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto">
             <h2 className="text-3xl font-bold mb-6 text-center flex items-center justify-center gap-2">
-              <Scale className="w-6 h-6 text-emerald-500" />
+              <Scale className="w-6 h-6 text-emerald-600" />
               Argentine Employment Law
             </h2>
             <p className="text-center text-muted-foreground mb-8 max-w-2xl mx-auto">
@@ -634,26 +642,26 @@ export default function WorkingTaxesPage() {
               <Card>
                 <CardHeader>
                   <CardTitle className="flex items-center gap-2">
-                    <CheckCircle className="w-5 h-5 text-green-500" />
+                    <CheckCircle className="w-5 h-5 text-green-600" />
                     Employee Benefits
                   </CardTitle>
                 </CardHeader>
                 <CardContent>
                   <ul className="space-y-3 text-sm text-muted-foreground">
                     <li className="flex items-start gap-2">
-                      <DollarSign className="w-4 h-4 text-green-500 flex-shrink-0 mt-0.5" />
+                      <DollarSign className="w-4 h-4 text-green-600 flex-shrink-0 mt-0.5" />
                       <span><strong>Aguinaldo (13th month salary):</strong> Paid in two installments (June and December). Equals one full month&apos;s salary per year.</span>
                     </li>
                     <li className="flex items-start gap-2">
-                      <Clock className="w-4 h-4 text-blue-500 flex-shrink-0 mt-0.5" />
+                      <Clock className="w-4 h-4 text-blue-600 flex-shrink-0 mt-0.5" />
                       <span><strong>Vacation:</strong> 14 days minimum (under 5 years), scaling up to 35 days (over 20 years of service).</span>
                     </li>
                     <li className="flex items-start gap-2">
-                      <Shield className="w-4 h-4 text-purple-500 flex-shrink-0 mt-0.5" />
+                      <Shield className="w-4 h-4 text-purple-600 flex-shrink-0 mt-0.5" />
                       <span><strong>Termination protection:</strong> Severance equals one month&apos;s salary per year of service. Very hard to fire employees.</span>
                     </li>
                     <li className="flex items-start gap-2">
-                      <Users className="w-4 h-4 text-amber-500 flex-shrink-0 mt-0.5" />
+                      <Users className="w-4 h-4 text-amber-600 flex-shrink-0 mt-0.5" />
                       <span><strong>Maternity leave:</strong> 90 days paid. Paternity: 2 days (being expanded in many companies).</span>
                     </li>
                   </ul>
@@ -662,7 +670,7 @@ export default function WorkingTaxesPage() {
               <Card>
                 <CardHeader>
                   <CardTitle className="flex items-center gap-2">
-                    <AlertTriangle className="w-5 h-5 text-amber-500" />
+                    <AlertTriangle className="w-5 h-5 text-amber-600" />
                     Employer Costs
                   </CardTitle>
                 </CardHeader>
@@ -711,7 +719,7 @@ export default function WorkingTaxesPage() {
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl font-bold mb-8 text-center flex items-center justify-center gap-2">
-              <FileText className="w-6 h-6 text-emerald-500" />
+              <FileText className="w-6 h-6 text-emerald-600" />
               Tax Obligations by Visa Type
             </h2>
             <p className="text-center text-muted-foreground mb-8 max-w-2xl mx-auto">
@@ -741,7 +749,7 @@ export default function WorkingTaxesPage() {
                     <ul className="space-y-2">
                       {visa.details.map((detail, index) => (
                         <li key={index} className="flex items-start gap-2 text-sm text-muted-foreground">
-                          <CheckCircle className="w-4 h-4 text-muted-foreground/50 flex-shrink-0 mt-0.5" />
+                          <CheckCircle className="w-4 h-4 text-muted-foreground flex-shrink-0 mt-0.5" />
                           <span>{detail}</span>
                         </li>
                       ))}
@@ -777,7 +785,7 @@ export default function WorkingTaxesPage() {
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl font-bold mb-4 text-center flex items-center justify-center gap-2">
-              <Globe className="w-6 h-6 text-emerald-500" />
+              <Globe className="w-6 h-6 text-emerald-600" />
               Double Taxation Treaties
             </h2>
             <p className="text-center text-muted-foreground mb-8 max-w-2xl mx-auto">
@@ -833,11 +841,11 @@ export default function WorkingTaxesPage() {
                     </p>
                     <ul className="text-sm text-muted-foreground space-y-2">
                       <li className="flex items-start gap-2">
-                        <CheckCircle className="w-4 h-4 text-blue-500 flex-shrink-0 mt-0.5" />
+                        <CheckCircle className="w-4 h-4 text-blue-600 flex-shrink-0 mt-0.5" />
                         <span><strong>Foreign Earned Income Exclusion (FEIE):</strong> Exclude up to $126,500 (2026) of foreign earned income from US taxes if you meet either the Physical Presence Test (330 days abroad) or the Bona Fide Residence Test.</span>
                       </li>
                       <li className="flex items-start gap-2">
-                        <CheckCircle className="w-4 h-4 text-blue-500 flex-shrink-0 mt-0.5" />
+                        <CheckCircle className="w-4 h-4 text-blue-600 flex-shrink-0 mt-0.5" />
                         <span><strong>Foreign Tax Credit (FTC):</strong> Credit taxes paid to Argentina against your US tax bill. Useful if you earn above the FEIE threshold or have non-employment income.</span>
                       </li>
                     </ul>
@@ -858,7 +866,7 @@ export default function WorkingTaxesPage() {
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl font-bold mb-4 text-center flex items-center justify-center gap-2">
-              <Coffee className="w-6 h-6 text-emerald-500" />
+              <Coffee className="w-6 h-6 text-emerald-600" />
               Coworking Spaces in Buenos Aires
             </h2>
             <p className="text-center text-muted-foreground mb-8 max-w-2xl mx-auto">
@@ -884,7 +892,7 @@ export default function WorkingTaxesPage() {
                     <ul className="space-y-1">
                       {space.highlights.map((highlight, index) => (
                         <li key={index} className="flex items-start gap-2 text-sm text-muted-foreground">
-                          <CheckCircle className="w-3 h-3 text-emerald-500 flex-shrink-0 mt-1" />
+                          <CheckCircle className="w-3 h-3 text-emerald-600 flex-shrink-0 mt-1" />
                           <span>{highlight}</span>
                         </li>
                       ))}
@@ -918,7 +926,7 @@ export default function WorkingTaxesPage() {
                     { label: "Mobile data", cost: "$5-15/mo" },
                   ].map((option) => (
                     <div key={option.label} className="p-3 bg-muted rounded-lg text-center">
-                      <div className="text-xs text-muted-foreground">{option.label}</div>
+                      <div className="text-xs text-stone-700">{option.label}</div>
                       <div className="font-semibold text-sm">{option.cost}</div>
                     </div>
                   ))}
@@ -934,7 +942,7 @@ export default function WorkingTaxesPage() {
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl font-bold mb-4 text-center flex items-center justify-center gap-2">
-              <CreditCard className="w-6 h-6 text-emerald-500" />
+              <CreditCard className="w-6 h-6 text-emerald-600" />
               Banking & Receiving Money as a Freelancer
             </h2>
             <p className="text-center text-muted-foreground mb-8 max-w-2xl mx-auto">
@@ -999,7 +1007,7 @@ export default function WorkingTaxesPage() {
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto">
             <h2 className="text-3xl font-bold mb-6 flex items-center gap-2">
-              <BookOpen className="w-6 h-6 text-emerald-500" />
+              <BookOpen className="w-6 h-6 text-emerald-600" />
               Finding an Accountant (Contador)
             </h2>
             <Card className="mb-6">
@@ -1062,7 +1070,7 @@ export default function WorkingTaxesPage() {
             <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
               <Card className="hover:shadow-md transition-shadow">
                 <CardContent className="pt-6 text-center">
-                  <Globe className="w-8 h-8 mx-auto mb-3 text-blue-500" />
+                  <Globe className="w-8 h-8 mx-auto mb-3 text-blue-600" />
                   <h3 className="font-semibold mb-2">Digital Nomad Visa</h3>
                   <p className="text-sm text-muted-foreground mb-4">
                     180-day visa for remote workers. Requirements and application.
@@ -1077,7 +1085,7 @@ export default function WorkingTaxesPage() {
               </Card>
               <Card className="hover:shadow-md transition-shadow">
                 <CardContent className="pt-6 text-center">
-                  <Briefcase className="w-8 h-8 mx-auto mb-3 text-emerald-500" />
+                  <Briefcase className="w-8 h-8 mx-auto mb-3 text-emerald-600" />
                   <h3 className="font-semibold mb-2">Work Visa</h3>
                   <p className="text-sm text-muted-foreground mb-4">
                     Working for Argentine employers. Visa types and requirements.
@@ -1092,7 +1100,7 @@ export default function WorkingTaxesPage() {
               </Card>
               <Card className="hover:shadow-md transition-shadow">
                 <CardContent className="pt-6 text-center">
-                  <CreditCard className="w-8 h-8 mx-auto mb-3 text-purple-500" />
+                  <CreditCard className="w-8 h-8 mx-auto mb-3 text-purple-600" />
                   <h3 className="font-semibold mb-2">Banking Guide</h3>
                   <p className="text-sm text-muted-foreground mb-4">
                     Bank accounts, exchange rates, and managing money.
@@ -1107,7 +1115,7 @@ export default function WorkingTaxesPage() {
               </Card>
               <Card className="hover:shadow-md transition-shadow">
                 <CardContent className="pt-6 text-center">
-                  <DollarSign className="w-8 h-8 mx-auto mb-3 text-amber-500" />
+                  <DollarSign className="w-8 h-8 mx-auto mb-3 text-amber-600" />
                   <h3 className="font-semibold mb-2">Cost of Living</h3>
                   <p className="text-sm text-muted-foreground mb-4">
                     Complete breakdown of expenses for expats in Buenos Aires.

@@ -95,9 +95,15 @@ export default function BankingPage() {
               Banking & Money in Argentina
             </h1>
             <p className="text-xl text-muted-foreground mb-8">
-              Navigate Argentina's unique financial landscape. Understanding the blue dollar, 
+              Navigate Argentina's unique financial landscape. Understanding the blue dollar,
               transferring money, and managing your finances as an expat.
             </p>
+            <Button asChild size="lg" className="bg-sky-600 hover:bg-sky-500 text-white font-semibold">
+              <Link href="#money-transfer-methods">
+                Compare Banking Options
+                <ArrowRight className="w-4 h-4 ml-2" />
+              </Link>
+            </Button>
           </div>
         </div>
       </section>
@@ -159,7 +165,7 @@ export default function BankingPage() {
       </section>
 
       {/* Money Transfer Methods */}
-      <section className="py-16 bg-muted/30">
+      <section id="money-transfer-methods" className="py-16 bg-muted/30">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl font-bold mb-8 text-center">Transferring Money to Argentina</h2>
@@ -369,7 +375,7 @@ export default function BankingPage() {
         <div className="container mx-auto px-4 text-center">
           <div className="max-w-2xl mx-auto">
             <h2 className="text-3xl font-bold mb-4">Ready to Move?</h2>
-            <p className="text-primary-foreground/80 mb-8">
+            <p className="text-primary-foreground/90 mb-8">
               Get our complete moving checklist and cost calculator to plan your finances 
               before arriving in Argentina.
             </p>

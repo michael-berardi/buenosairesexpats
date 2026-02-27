@@ -443,7 +443,7 @@ export default function VsEuropePage() {
         <div className="container mx-auto px-4 text-center">
           <div className="max-w-2xl mx-auto">
             <h2 className="text-3xl font-bold mb-4">Still Deciding?</h2>
-            <p className="text-primary-foreground/80 mb-8">
+            <p className="text-primary-foreground/90 mb-8">
               Read our full guide on why expats are moving to Buenos Aires, 
               or explore the cost of living breakdown to see real numbers.
             </p>

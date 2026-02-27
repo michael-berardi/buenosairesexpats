@@ -139,7 +139,7 @@ export default function FoodDiningPage() {
               From world-class parrillas to cozy cafes, discover the best of Argentine 
               cuisine and dining culture. Real recommendations from expats living here.
             </p>
-            <div className="flex flex-wrap justify-center gap-4 text-sm text-white/80">
+            <div className="flex flex-wrap justify-center gap-4 text-sm text-white/90">
               <div className="flex items-center gap-2 bg-black/20 px-3 py-1.5 rounded-full">
                 <DollarSign className="w-4 h-4" />
                 <span>$5-80 per meal</span>
@@ -527,7 +527,7 @@ export default function FoodDiningPage() {
         <div className="container mx-auto px-4 text-center">
           <div className="max-w-2xl mx-auto">
             <h2 className="text-3xl font-bold mb-4">Hungry for More?</h2>
-            <p className="text-primary-foreground/80 mb-8">
+            <p className="text-primary-foreground/90 mb-8">
               Explore neighborhoods with the best food scenes and discover local 
               favorites you won't find in guidebooks.
             </p>

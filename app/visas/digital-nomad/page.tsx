@@ -192,7 +192,7 @@ export default function DigitalNomadVisaPage() {
               Work remotely from Argentina for up to 180 days. 
               Complete guide to requirements, application, and living as a digital nomad in Buenos Aires.
             </p>
-            <div className="flex flex-wrap justify-center gap-4 text-sm mb-6 text-white/80">
+            <div className="flex flex-wrap justify-center gap-4 text-sm mb-6 text-white/90">
               <div className="flex items-center gap-2">
                 <Clock className="w-4 h-4 text-sky-300" />
                 <span>180 days validity</span>

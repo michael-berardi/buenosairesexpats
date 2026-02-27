@@ -118,7 +118,7 @@ export function TableOfContents({ items }: TableOfContentsProps) {
       {/* Desktop: Sticky sidebar */}
       <nav className="hidden lg:block sticky top-24 w-64 flex-shrink-0 self-start">
         <div className="border border-stone-200 rounded-xl p-4 bg-white">
-          <h3 className="text-xs font-bold text-stone-400 uppercase tracking-wider mb-3">
+          <h3 className="text-xs font-bold text-stone-600 uppercase tracking-wider mb-3">
             On this page
           </h3>
           <ul className="space-y-1">

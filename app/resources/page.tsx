@@ -313,7 +313,7 @@ export default function ResourcesPage() {
         <div className="container mx-auto px-4 text-center">
           <div className="max-w-2xl mx-auto">
             <h2 className="text-3xl font-bold mb-4">Get Updates</h2>
-            <p className="text-primary-foreground/80 mb-8">
+            <p className="text-primary-foreground/90 mb-8">
               New resources added regularly. Subscribe to get notified when we add 
               new guides, checklists, and service providers.
             </p>

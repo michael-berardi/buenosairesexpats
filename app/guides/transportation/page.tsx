@@ -126,28 +126,36 @@ export default function TransportationPage() {
             </p>
             <div className="flex flex-wrap justify-center gap-4 text-sm">
               <div className="flex items-center gap-2 text-muted-foreground">
-                <CreditCard className="w-4 h-4 text-blue-500" />
+                <CreditCard className="w-4 h-4 text-blue-600" />
                 <span>SUBE card for all public transit</span>
               </div>
               <div className="flex items-center gap-2 text-muted-foreground">
-                <DollarSign className="w-4 h-4 text-green-500" />
+                <DollarSign className="w-4 h-4 text-green-600" />
                 <span>$0.30-0.50 per ride</span>
               </div>
               <div className="flex items-center gap-2 text-muted-foreground">
-                <Train className="w-4 h-4 text-purple-500" />
+                <Train className="w-4 h-4 text-purple-600" />
                 <span>6 subway lines + 300 bus routes</span>
               </div>
+            </div>
+            <div className="mt-8">
+              <Button asChild size="lg" className="bg-sky-600 hover:bg-sky-500 text-white font-semibold shadow-lg">
+                <Link href="#sube-card">
+                  Get Started with SUBE
+                  <ArrowRight className="w-4 h-4 ml-2" />
+                </Link>
+              </Button>
             </div>
           </div>
         </div>
       </section>
 
       {/* SUBE Card */}
-      <section className="py-16">
+      <section id="sube-card" className="py-16">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto">
             <h2 className="text-3xl font-bold mb-6 flex items-center gap-2">
-              <CreditCard className="w-7 h-7 text-blue-500" />
+              <CreditCard className="w-7 h-7 text-blue-600" />
               The SUBE Card - Your Transit Lifeline
             </h2>
             <Card className="mb-6">
@@ -212,7 +220,7 @@ export default function TransportationPage() {
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl font-bold mb-4 text-center flex items-center justify-center gap-2">
-              <Train className="w-7 h-7 text-purple-500" />
+              <Train className="w-7 h-7 text-purple-600" />
               Subte (Subway)
             </h2>
             <p className="text-muted-foreground text-center mb-8 max-w-2xl mx-auto">
@@ -259,7 +267,7 @@ export default function TransportationPage() {
                   </div>
                   <div>
                     <div className="font-semibold mb-2 flex items-center gap-2">
-                      <DollarSign className="w-4 h-4 text-green-500" />
+                      <DollarSign className="w-4 h-4 text-green-600" />
                       Cost
                     </div>
                     <p className="text-sm text-muted-foreground">
@@ -269,7 +277,7 @@ export default function TransportationPage() {
                   </div>
                   <div>
                     <div className="font-semibold mb-2 flex items-center gap-2">
-                      <AlertCircle className="w-4 h-4 text-amber-500" />
+                      <AlertCircle className="w-4 h-4 text-amber-600" />
                       Rush Hour Tips
                     </div>
                     <p className="text-sm text-muted-foreground">
@@ -313,7 +321,7 @@ export default function TransportationPage() {
               <Card>
                 <CardHeader>
                   <CardTitle className="text-lg flex items-center gap-2">
-                    <CheckCircle className="w-5 h-5 text-green-500" />
+                    <CheckCircle className="w-5 h-5 text-green-600" />
                     How to Ride
                   </CardTitle>
                 </CardHeader>
@@ -341,30 +349,30 @@ export default function TransportationPage() {
               <Card>
                 <CardHeader>
                   <CardTitle className="text-lg flex items-center gap-2">
-                    <Info className="w-5 h-5 text-blue-500" />
+                    <Info className="w-5 h-5 text-blue-600" />
                     Key Tips
                   </CardTitle>
                 </CardHeader>
                 <CardContent>
                   <ul className="space-y-2 text-sm text-muted-foreground">
                     <li className="flex items-start gap-2">
-                      <CheckCircle className="w-4 h-4 text-green-500 flex-shrink-0 mt-0.5" />
+                      <CheckCircle className="w-4 h-4 text-green-600 flex-shrink-0 mt-0.5" />
                       <span>Download <strong>BA Cómo Llego</strong> — it tells you exactly which bus to take, where to stand, and tracks the bus in real time</span>
                     </li>
                     <li className="flex items-start gap-2">
-                      <CheckCircle className="w-4 h-4 text-green-500 flex-shrink-0 mt-0.5" />
+                      <CheckCircle className="w-4 h-4 text-green-600 flex-shrink-0 mt-0.5" />
                       <span>Buses run 24/7 but frequency drops dramatically after midnight. Night buses (nocturnos) run every 20-40 minutes</span>
                     </li>
                     <li className="flex items-start gap-2">
-                      <CheckCircle className="w-4 h-4 text-green-500 flex-shrink-0 mt-0.5" />
+                      <CheckCircle className="w-4 h-4 text-green-600 flex-shrink-0 mt-0.5" />
                       <span>Cost is ~$0.30-0.50 USD depending on distance. Cheaper than the Subte for short rides</span>
                     </li>
                     <li className="flex items-start gap-2">
-                      <AlertCircle className="w-4 h-4 text-amber-500 flex-shrink-0 mt-0.5" />
+                      <AlertCircle className="w-4 h-4 text-amber-600 flex-shrink-0 mt-0.5" />
                       <span>Keep bags in front of you and be alert for pickpockets, especially on crowded routes during rush hour</span>
                     </li>
                     <li className="flex items-start gap-2">
-                      <AlertCircle className="w-4 h-4 text-amber-500 flex-shrink-0 mt-0.5" />
+                      <AlertCircle className="w-4 h-4 text-amber-600 flex-shrink-0 mt-0.5" />
                       <span>Bus stops (paradas) often have no signage. Locals just know. Use the app until you learn your routes</span>
                     </li>
                   </ul>
@@ -461,7 +469,7 @@ export default function TransportationPage() {
               <Card>
                 <CardHeader>
                   <CardTitle className="text-lg flex items-center gap-2">
-                    <CheckCircle className="w-5 h-5 text-green-500" />
+                    <CheckCircle className="w-5 h-5 text-green-600" />
                     Radio Taxis (Safer)
                   </CardTitle>
                 </CardHeader>
@@ -478,7 +486,7 @@ export default function TransportationPage() {
               <Card>
                 <CardHeader>
                   <CardTitle className="text-lg flex items-center gap-2">
-                    <AlertTriangle className="w-5 h-5 text-amber-500" />
+                    <AlertTriangle className="w-5 h-5 text-amber-600" />
                     Street Taxis (Riskier)
                   </CardTitle>
                 </CardHeader>
@@ -495,7 +503,7 @@ export default function TransportationPage() {
             </div>
 
             <h3 className="text-2xl font-bold mb-4 flex items-center gap-2">
-              <AlertTriangle className="w-5 h-5 text-red-500" />
+              <AlertTriangle className="w-5 h-5 text-red-600" />
               Common Taxi Scams
             </h3>
             <div className="space-y-3 mb-6">
@@ -505,7 +513,7 @@ export default function TransportationPage() {
                     <div className="font-medium text-red-700 dark:text-red-300 mb-1">{scam.scam}</div>
                     <p className="text-sm text-muted-foreground mb-2">{scam.description}</p>
                     <div className="flex items-start gap-2">
-                      <CheckCircle className="w-4 h-4 text-green-500 flex-shrink-0 mt-0.5" />
+                      <CheckCircle className="w-4 h-4 text-green-600 flex-shrink-0 mt-0.5" />
                       <p className="text-sm text-green-700 dark:text-green-300">{scam.prevention}</p>
                     </div>
                   </CardContent>
@@ -769,7 +777,7 @@ export default function TransportationPage() {
                     <li>• <strong>Iguazú Falls:</strong> 18 hours ($50-100)</li>
                     <li>• <strong>Bariloche:</strong> 20-22 hours ($60-120)</li>
                   </ul>
-                  <p className="text-xs text-muted-foreground mt-2">
+                  <p className="text-xs text-stone-700 mt-2">
                     Book on plataforma10.com.ar or busbud.com
                   </p>
                 </CardContent>
@@ -794,7 +802,7 @@ export default function TransportationPage() {
                     <li>• Departs from Puerto Madero terminal</li>
                     <li>• Book early for weekend deals</li>
                   </ul>
-                  <p className="text-xs text-muted-foreground mt-2">
+                  <p className="text-xs text-stone-700 mt-2">
                     Book at buquebus.com or coloniaexpress.com
                   </p>
                 </CardContent>
@@ -818,7 +826,7 @@ export default function TransportationPage() {
                     <li>• <strong>Iguazú:</strong> 2 hours ($50-130)</li>
                     <li>• <strong>Ushuaia:</strong> 3.5 hours ($80-200)</li>
                   </ul>
-                  <p className="text-xs text-muted-foreground mt-2">
+                  <p className="text-xs text-stone-700 mt-2">
                     Flybondi often has fares under $30 if booked early
                   </p>
                 </CardContent>
@@ -855,7 +863,7 @@ export default function TransportationPage() {
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto">
             <h2 className="text-3xl font-bold mb-8 text-center flex items-center justify-center gap-2">
-              <Smartphone className="w-7 h-7 text-blue-500" />
+              <Smartphone className="w-7 h-7 text-blue-600" />
               Essential Transportation Apps
             </h2>
             <p className="text-muted-foreground text-center mb-8">
@@ -905,14 +913,14 @@ export default function TransportationPage() {
                     <div key={item.mode} className="flex justify-between items-center py-2 border-b last:border-0">
                       <div>
                         <span className="text-muted-foreground">{item.mode}</span>
-                        <span className="text-xs text-muted-foreground block">{item.notes}</span>
+                        <span className="text-xs text-stone-700 block">{item.notes}</span>
                       </div>
                       <span className="font-semibold whitespace-nowrap">{item.cost}</span>
                     </div>
                   ))}
                 </div>
                 <div className="mt-4 p-4 bg-muted rounded-lg">
-                  <p className="text-xs text-muted-foreground text-center">
+                  <p className="text-xs text-stone-700 text-center">
                     All prices in USD, approximate as of February 2026. Peso-denominated fares fluctuate
                     with the exchange rate. Public transit is exceptionally affordable for dollar earners —
                     you can easily get around the entire city for under $2/day using only public transport.
@@ -933,7 +941,7 @@ export default function TransportationPage() {
               <Card>
                 <CardHeader>
                   <CardTitle className="flex items-center gap-2">
-                    <CheckCircle className="w-5 h-5 text-green-500" />
+                    <CheckCircle className="w-5 h-5 text-green-600" />
                     Do
                   </CardTitle>
                 </CardHeader>
@@ -952,7 +960,7 @@ export default function TransportationPage() {
               <Card>
                 <CardHeader>
                   <CardTitle className="flex items-center gap-2">
-                    <AlertTriangle className="w-5 h-5 text-red-500" />
+                    <AlertTriangle className="w-5 h-5 text-red-600" />
                     Don&apos;t
                   </CardTitle>
                 </CardHeader>
@@ -1027,7 +1035,7 @@ export default function TransportationPage() {
         <div className="container mx-auto px-4 text-center">
           <div className="max-w-2xl mx-auto">
             <h2 className="text-3xl font-bold mb-4">Ready to Explore Buenos Aires?</h2>
-            <p className="text-primary-foreground/80 mb-8">
+            <p className="text-primary-foreground mb-8">
               With a SUBE card in your pocket and these apps on your phone, you&apos;re ready to navigate
               the city like a local. Buenos Aires rewards exploration — every neighborhood has its own
               character, and the best way to discover them is to just go.

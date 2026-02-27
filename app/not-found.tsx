@@ -1,96 +1,61 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
-import { Card, CardContent } from "@/components/ui/card";
-import { Home, Search, MapPin, FileText, ArrowRight } from "lucide-react";
+import { MapPin, FileText, Home, Compass } from "lucide-react";
 
-const popularLinks = [
-  { title: "Digital Nomad Visa", href: "/visas/digital-nomad", icon: FileText },
-  { title: "Cost of Living Guide", href: "/cost-of-living", icon: MapPin },
-  { title: "Neighborhoods", href: "/neighborhoods", icon: MapPin },
-  { title: "Contact Us", href: "/contact", icon: Search },
-];
+export const metadata: Metadata = {
+  title: "Page Not Found",
+};
 
 export default function NotFound() {
   return (
-    <div className="flex flex-col min-h-screen">
-      <section className="flex-grow flex items-center justify-center py-20 px-4">
-        <div className="container mx-auto max-w-2xl">
-          <Card className="text-center">
-            <CardContent className="pt-12 pb-12">
-              {/* 404 Illustration */}
-              <div className="mb-8">
-                <div className="w-24 h-24 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <span className="text-5xl font-bold text-primary">404</span>
-                </div>
-              </div>
+    <div className="flex flex-col items-center justify-center min-h-[70vh] px-4 bg-background text-foreground">
+      <div className="max-w-lg mx-auto text-center">
+        <h1 className="text-6xl font-bold text-primary mb-4">404</h1>
+        <h2 className="text-2xl font-semibold mb-4">Page Not Found</h2>
+        <p className="text-muted-foreground mb-8">
+          The page you are looking for does not exist or may have been moved.
+          Try one of the links below to find what you need.
+        </p>
 
-              <h1 className="text-3xl md:text-4xl font-bold mb-4">
-                Page Not Found
-              </h1>
-              
-              <p className="text-muted-foreground text-lg mb-8 max-w-md mx-auto">
-                Looks like this page packed its bags and moved to Argentina without telling us. 
-                Let&apos;s get you back on track.
-              </p>
+        <div className="flex justify-center mb-10">
+          <Button asChild size="lg">
+            <Link href="/">
+              <Home className="w-4 h-4 mr-2" />
+              Back to Home
+            </Link>
+          </Button>
+        </div>
 
-              {/* Search suggestion */}
-              <div className="bg-muted/50 rounded-lg p-4 mb-8 max-w-md mx-auto">
-                <p className="text-sm text-muted-foreground mb-2">
-                  Looking for something specific?
-                </p>
-                <div className="flex flex-wrap justify-center gap-2">
-                  <span className="text-xs bg-background px-2 py-1 rounded">Visa guides</span>
-                  <span className="text-xs bg-background px-2 py-1 rounded">Cost of living</span>
-                  <span className="text-xs bg-background px-2 py-1 rounded">Neighborhoods</span>
-                  <span className="text-xs bg-background px-2 py-1 rounded">Housing</span>
-                </div>
-              </div>
-
-              {/* Primary CTA */}
-              <Button asChild size="lg" className="mb-8">
-                <Link href="/">
-                  <Home className="w-4 h-4 mr-2" />
-                  Back to Homepage
-                </Link>
-              </Button>
-
-              {/* Popular Links */}
-              <div className="border-t pt-8">
-                <p className="text-sm text-muted-foreground mb-4">
-                  Or check out these popular pages:
-                </p>
-                <div className="grid sm:grid-cols-2 gap-3 max-w-md mx-auto">
-                  {popularLinks.map((link) => (
-                    <Button
-                      key={link.href}
-                      asChild
-                      variant="outline"
-                      className="justify-start"
-                    >
-                      <Link href={link.href}>
-                        <link.icon className="w-4 h-4 mr-2" />
-                        {link.title}
-                        <ArrowRight className="w-3 h-3 ml-auto" />
-                      </Link>
-                    </Button>
-                  ))}
-                </div>
-              </div>
-            </CardContent>
-          </Card>
-
-          {/* Additional Help */}
-          <div className="mt-8 text-center">
-            <p className="text-sm text-muted-foreground">
-              Still can&apos;t find what you&apos;re looking for?{" "}
-              <Link href="/contact" className="text-primary hover:underline">
-                Contact us
-              </Link>{" "}
-              and we&apos;ll point you in the right direction.
-            </p>
+        <div className="border-t pt-8">
+          <h3 className="text-sm font-semibold text-muted-foreground uppercase tracking-wider mb-4">
+            Popular Sections
+          </h3>
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
+            <Link
+              href="/why-argentina"
+              className="flex items-center gap-2 p-3 rounded-lg border hover:bg-muted/50 transition-colors text-sm"
+            >
+              <Compass className="w-4 h-4 text-primary flex-shrink-0" />
+              <span>Expat Guides</span>
+            </Link>
+            <Link
+              href="/visas"
+              className="flex items-center gap-2 p-3 rounded-lg border hover:bg-muted/50 transition-colors text-sm"
+            >
+              <FileText className="w-4 h-4 text-primary flex-shrink-0" />
+              <span>Visas</span>
+            </Link>
+            <Link
+              href="/neighborhoods"
+              className="flex items-center gap-2 p-3 rounded-lg border hover:bg-muted/50 transition-colors text-sm"
+            >
+              <MapPin className="w-4 h-4 text-primary flex-shrink-0" />
+              <span>Neighborhoods</span>
+            </Link>
           </div>
         </div>
-      </section>
+      </div>
     </div>
   );
 }

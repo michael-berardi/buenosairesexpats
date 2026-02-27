@@ -59,7 +59,7 @@
   --secondary: #f5f5f4;
   --secondary-foreground: #44403c;
   --muted: #f5f5f4;
-  --muted-foreground: #57534e;
+  --muted-foreground: #44403c;
   --accent: #fbbf24;
   --accent-foreground: #1c1917;
   --destructive: #ef4444;
@@ -85,7 +85,7 @@
   --secondary: #292524;
   --secondary-foreground: #fafaf9;
   --muted: #292524;
-  --muted-foreground: #a8a29e;
+  --muted-foreground: #d6d3d1;
   --accent: #fbbf24;
   --accent-foreground: #0c0a09;
   --destructive: #ef4444;
@@ -287,7 +287,7 @@ html {
 }
 
 .stat-label-dark {
-  @apply text-sm text-white/80 mt-1 font-medium;
+  @apply text-sm text-white/90 mt-1 font-medium;
 }
 
 .stat-icon-dark {
@@ -396,11 +396,11 @@ html {
 }
 
 .text-body {
-  @apply text-base text-stone-600 leading-relaxed;
+  @apply text-base text-stone-700 leading-relaxed;
 }
 
 .text-body-sm {
-  @apply text-sm text-stone-500 leading-relaxed;
+  @apply text-sm text-stone-700 leading-relaxed;
 }
 
 /* Badge styles */
@@ -562,20 +562,77 @@ main blockquote {
   line-height: 1.6 !important;
 }
 
+/* Constrain paragraph text width for readability (fix wide text blocks >90 chars/line) */
+main p {
+  max-width: 75ch;
+}
+
+/* Standardize card border-radius: unify rounded-lg to match rounded-xl (12px) */
+main .rounded-lg {
+  border-radius: 0.75rem;
+}
+main .rounded-xl {
+  border-radius: 0.75rem;
+}
+
 /* Mobile body text minimum 16px for readability */
 @media (max-width: 768px) {
   body {
     font-size: 16px;
   }
 
-  main p, main li, main td, main th, main dd, main span:not(.badge-primary):not(.badge-secondary):not(.badge-accent):not(.tag) {
-    font-size: max(1rem, 16px);
+  /* Nuclear mobile text fix: ALL body text elements must be ≥16px */
+  main p, main li, main td, main th, main dd, main dt, main blockquote,
+  main span, main label, main div, main a,
+  footer p, footer li, footer span, footer a, footer div {
+    font-size: max(1rem, 16px) !important;
     line-height: 1.6;
   }
 
-  .text-sm {
-    font-size: 0.875rem;
+  /* Override ALL Tailwind text-sm everywhere to 16px */
+  .text-sm,
+  main .text-sm,
+  footer .text-sm,
+  [class*="text-sm"] {
+    font-size: 1rem !important; /* 16px */
     line-height: 1.6;
+  }
+
+  /* Override ALL Tailwind text-xs everywhere to 16px */
+  .text-xs,
+  main .text-xs,
+  footer .text-xs,
+  [class*="text-xs"] {
+    font-size: 1rem !important; /* 16px */
+    line-height: 1.5;
+  }
+
+  /* Ensure spans inside body text inherit parent size */
+  main p span, main li span, main td span, main dd span {
+    font-size: inherit !important;
+  }
+
+  /* text-body-sm uses text-sm, ensure it's readable on mobile */
+  main .text-body-sm,
+  .text-body-sm {
+    font-size: 1rem !important; /* 16px */
+    line-height: 1.6;
+  }
+
+  /* Badge text: ensure readable */
+  .badge-primary, .badge-secondary, .badge-accent {
+    font-size: 1rem !important; /* 16px */
+  }
+
+  /* Stat labels and tags */
+  .stat-label, .tag {
+    font-size: 1rem !important; /* 16px */
+  }
+
+  /* shadcn Card descriptions */
+  [class*="CardDescription"],
+  .text-muted-foreground {
+    font-size: 1rem !important; /* 16px */
   }
 
   /* Prevent horizontal scroll */
@@ -633,7 +690,7 @@ main blockquote {
   
   .table-wrapper table,
   .overflow-x-auto table {
-    font-size: 0.75rem;
+    font-size: 0.875rem; /* 14px min for mobile readability */
   }
   
   .table-wrapper th,

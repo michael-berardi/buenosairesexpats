@@ -401,7 +401,7 @@ export default function NationalityPage({ params }: { params: { country: string 
         <div className="container mx-auto px-4 text-center">
           <div className="max-w-2xl mx-auto">
             <h2 className="text-3xl font-bold mb-4">Need Help With Your Argentina Visa?</h2>
-            <p className="text-primary-foreground/80 mb-8">
+            <p className="text-primary-foreground/90 mb-8">
               Immigration law is complex and changes frequently. We have worked with a trusted 
               immigration partner who specializes in Argentine visas and has helped many {country.name} citizens.
             </p>

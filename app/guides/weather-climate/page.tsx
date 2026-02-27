@@ -629,7 +629,7 @@ export default function WeatherClimatePage() {
         <div className="container mx-auto px-4 text-center">
           <div className="max-w-2xl mx-auto">
             <h2 className="text-3xl font-bold mb-4">Ready to Plan Your Trip?</h2>
-            <p className="text-primary-foreground/80 mb-8">
+            <p className="text-primary-foreground/90 mb-8">
               Check out our cost of living guide and neighborhood breakdowns to plan 
               the perfect time to visit or move.
             </p>
