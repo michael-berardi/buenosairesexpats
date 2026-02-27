@@ -3,6 +3,7 @@ import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { StructuredData } from "@/components/structured-data";
 import { generateBreadcrumbSchema } from "@/lib/schema";
+import { LuceroLegalCTA } from "@/components/lucero-legal-cta";
 import {
   Utensils,
   Star,
@@ -215,12 +216,12 @@ export default function DiningGuidePage() {
                   <p className="text-stone-600 mb-3">{restaurant.cuisine}</p>
                   
                   {/* Location & Price */}
-                  <div className="flex items-center gap-4 mb-4 text-sm text-stone-500">
+                  <div className="flex items-center gap-4 mb-4 text-sm text-stone-600">
                     <span className="flex items-center gap-1.5">
                       <MapPin className="w-4 h-4" />
                       {restaurant.neighborhood}
                     </span>
-                    <span className="text-stone-400">|</span>
+                    <span className="text-stone-600">|</span>
                     <span className="font-medium text-stone-700">{restaurant.price}</span>
                   </div>
                   
@@ -365,17 +366,31 @@ export default function DiningGuidePage() {
             <div className="grid sm:grid-cols-3 gap-8 max-w-2xl mx-auto">
               <div className="stat-card-dark">
                 <div className="text-4xl font-bold text-sky-400 mb-2">10+</div>
-                <div className="text-stone-400">Michelin-Recognized</div>
+                <div className="text-stone-600">Michelin-Recognized</div>
               </div>
               <div className="stat-card-dark">
                 <div className="text-4xl font-bold text-sky-400 mb-2">24</div>
-                <div className="text-stone-400">Curated Restaurants</div>
+                <div className="text-stone-600">Curated Restaurants</div>
               </div>
               <div className="stat-card-dark">
                 <div className="text-4xl font-bold text-sky-400 mb-2">3</div>
-                <div className="text-stone-400">Neighborhoods</div>
+                <div className="text-stone-600">Neighborhoods</div>
               </div>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Legal CTA */}
+      <section className="py-12">
+        <div className="container mx-auto px-4">
+          <div className="max-w-3xl mx-auto">
+            <LuceroLegalCTA
+              variant="compact"
+              headline="Planning an Extended Stay?"
+              description="Need a visa to enjoy Buenos Aires' incredible food scene long-term? Lucero Legal can help with residency and immigration."
+              utm_content="dining-hub"
+            />
           </div>
         </div>
       </section>

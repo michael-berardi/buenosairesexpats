@@ -15,16 +15,18 @@ import {
   Trees,
   Users
 } from "lucide-react";
+import { LuceroLegalCTA } from "@/components/lucero-legal-cta";
 import { StructuredData } from "@/components/structured-data";
 import { generateArticleSchema } from "@/lib/schema";
 
 export const metadata: Metadata = {
-  title: "Palermo Buenos Aires - Complete Neighborhood Guide for Expats",
+  title: "Palermo Buenos Aires - Expat Neighborhood Guide",
   description: "The ultimate guide to Palermo, Buenos Aires' most popular neighborhood for expats. Soho, Hollywood, Botánico - find your perfect area.",
   keywords: ["Palermo Buenos Aires", "Palermo Soho", "Palermo Hollywood", "living in Palermo", "Buenos Aires neighborhoods"],
   openGraph: {
-    title: "Palermo Buenos Aires - Complete Neighborhood Guide for Expats",
+    title: "Palermo Buenos Aires - Expat Neighborhood Guide",
     description: "The ultimate guide to Palermo, Buenos Aires' most popular neighborhood for expats.",
+    images: [{ url: '/images/og-image.jpg', width: 1200, height: 630, alt: 'Buenos Aires Expats' }],
   },
   alternates: {
     canonical: "https://buenosairesexpats.com/neighborhoods/palermo",
@@ -119,7 +121,7 @@ export default function PalermoPage() {
               The heart of expat life in Buenos Aires. Trendy cafes, vibrant nightlife, 
               beautiful parks, and the largest English-speaking community.
             </p>
-            <div className="flex flex-wrap justify-center gap-4 text-sm text-white/80">
+            <div className="flex flex-wrap justify-center gap-4 text-sm text-white/90">
               <div className="flex items-center gap-2 bg-black/30 px-3 py-1.5 rounded-full">
                 <DollarSign className="w-4 h-4" />
                 <span>High rent</span>
@@ -132,6 +134,14 @@ export default function PalermoPage() {
                 <Train className="w-4 h-4" />
                 <span>Excellent transport</span>
               </div>
+            </div>
+            <div className="mt-8">
+              <Button asChild size="lg" className="bg-sky-600 hover:bg-sky-500 text-white font-semibold shadow-lg">
+                <Link href="/housing">
+                  Explore Palermo Rentals
+                  <ArrowRight className="w-4 h-4 ml-2" />
+                </Link>
+              </Button>
             </div>
           </div>
         </div>
@@ -266,7 +276,7 @@ export default function PalermoPage() {
                         <Train className="w-5 h-5 text-primary" />
                       </div>
                       <div>
-                        <h4 className="font-semibold">{t.line}</h4>
+                        <h3 className="font-semibold">{t.line}</h3>
                         <p className="text-sm text-muted-foreground">Stations: {t.stations}</p>
                         <p className="text-sm text-muted-foreground">{t.notes}</p>
                       </div>
@@ -289,7 +299,7 @@ export default function PalermoPage() {
                 <div className="flex items-start gap-4 mb-4">
                   <Shield className="w-6 h-6 text-green-500 flex-shrink-0" />
                   <div>
-                    <h4 className="font-semibold">Generally Very Safe</h4>
+                    <h3 className="font-semibold">Generally Very Safe</h3>
                     <p className="text-muted-foreground">
                       Palermo is one of Buenos Aires' safest neighborhoods. Well-lit streets, 
                       busy areas, and lots of foot traffic make it comfortable for walking day and night.
@@ -297,7 +307,7 @@ export default function PalermoPage() {
                   </div>
                 </div>
                 <div className="bg-amber-50 dark:bg-amber-950/20 rounded-lg p-4">
-                  <h4 className="font-semibold text-amber-800 dark:text-amber-200 mb-2">Standard Precautions</h4>
+                  <h3 className="font-semibold text-amber-800 dark:text-amber-200 mb-2">Standard Precautions</h3>
                   <ul className="text-sm text-amber-700 dark:text-amber-300 space-y-1">
                     <li>• Watch your phone in busy areas (Plaza Serrano)</li>
                     <li>• Don't flash expensive jewelry or electronics</li>
@@ -341,12 +351,26 @@ export default function PalermoPage() {
         </div>
       </section>
 
+      {/* Legal CTA */}
+      <section className="py-12">
+        <div className="container mx-auto px-4">
+          <div className="max-w-3xl mx-auto">
+            <LuceroLegalCTA
+              variant="compact"
+              headline="Planning Your Move to Palermo?"
+              description="Lucero Legal's immigration attorneys can help with visas, residency, and the legal paperwork for your relocation."
+              utm_content="neighborhood-palermo"
+            />
+          </div>
+        </div>
+      </section>
+
       {/* CTA */}
       <section className="py-16 bg-primary text-primary-foreground">
         <div className="container mx-auto px-4 text-center">
           <div className="max-w-2xl mx-auto">
             <h2 className="text-3xl font-bold mb-4">Ready to Move to Palermo?</h2>
-            <p className="text-primary-foreground/80 mb-8">
+            <p className="text-primary-foreground/90 mb-8">
               Explore other neighborhoods, compare costs, and get personalized advice for your move to Buenos Aires.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">

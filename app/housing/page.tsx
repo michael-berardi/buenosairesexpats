@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
@@ -113,9 +114,15 @@ export default function HousingPage() {
               Finding a Home in Argentina
             </h1>
             <p className="text-xl text-white/90 mb-8">
-              Everything you need to know about renting in Buenos Aires. 
+              Everything you need to know about renting in Buenos Aires.
               Avoid scams, understand contracts, and find your perfect apartment.
             </p>
+            <Button asChild size="lg" className="bg-sky-600 hover:bg-sky-500 text-white font-semibold">
+              <Link href="#rental-process">
+                Find Your Home
+                <ArrowRight className="w-4 h-4 ml-2" />
+              </Link>
+            </Button>
           </div>
         </div>
       </section>
@@ -145,7 +152,7 @@ export default function HousingPage() {
       </section>
 
       {/* Rental Process */}
-      <section className="py-16">
+      <section id="rental-process" className="py-16">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto">
             <h2 className="text-3xl font-bold mb-8 text-center">The Rental Process</h2>
@@ -224,6 +231,21 @@ export default function HousingPage() {
                 </CardContent>
               </Card>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Visual Break */}
+      <section className="py-8">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto rounded-2xl overflow-hidden">
+            <Image
+              src="/images/housing-apartment.jpg"
+              alt="Stylish apartment interior in Buenos Aires"
+              width={1200}
+              height={500}
+              className="w-full h-64 md:h-80 object-cover"
+            />
           </div>
         </div>
       </section>
@@ -412,7 +434,7 @@ export default function HousingPage() {
         <div className="container mx-auto px-4 text-center">
           <div className="max-w-2xl mx-auto">
             <h2 className="text-3xl font-bold mb-4">Ready to Find Your Home?</h2>
-            <p className="text-primary-foreground/80 mb-8">
+            <p className="text-primary-foreground/90 mb-8">
               Explore neighborhoods, compare costs, and connect with verified real estate agents 
               who specialize in helping expats.
             </p>

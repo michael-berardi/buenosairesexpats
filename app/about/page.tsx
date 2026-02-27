@@ -3,6 +3,7 @@ import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
+import { LuceroLegalCTA } from "@/components/lucero-legal-cta";
 import { 
   Globe, 
   Heart, 
@@ -78,9 +79,15 @@ export default function AboutPage() {
               Honest Info for Expats Considering Argentina
             </h1>
             <p className="text-xl text-muted-foreground mb-8">
-              Buenos Aires Expats was created to give expats the real story: 
+              Buenos Aires Expats was created to give expats the real story:
               honest, practical information from people who've actually made the move.
             </p>
+            <Button asChild size="lg" className="bg-sky-600 hover:bg-sky-500 text-white font-semibold">
+              <Link href="/visas">
+                Start Exploring
+                <ArrowRight className="w-4 h-4 ml-2" />
+              </Link>
+            </Button>
           </div>
         </div>
       </section>
@@ -235,18 +242,32 @@ export default function AboutPage() {
         </div>
       </section>
 
+      {/* Legal CTA */}
+      <section className="py-12">
+        <div className="container mx-auto px-4">
+          <div className="max-w-3xl mx-auto">
+            <LuceroLegalCTA
+              variant="compact"
+              headline="Our Trusted Legal Partner"
+              description="We recommend Lucero Legal for all immigration matters. Their team of attorneys has helped hundreds of our readers with visas, residency, and citizenship."
+              utm_content="about"
+            />
+          </div>
+        </div>
+      </section>
+
       {/* CTA */}
       <section className="py-16 bg-primary text-primary-foreground">
         <div className="container mx-auto px-4 text-center">
           <div className="max-w-2xl mx-auto">
             <h2 className="text-3xl font-bold mb-4">Start Your Journey</h2>
-            <p className="text-primary-foreground/80 mb-8">
-              Explore our guides, read expat stories, and get the information you need 
+            <p className="text-primary-foreground/90 mb-8">
+              Explore our guides, read expat stories, and get the information you need
               to make your move to Argentina.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button asChild size="lg" variant="secondary">
-                <Link href="/visas/digital-nomad">
+                <Link href="/visas">
                   Explore Visa Options
                 </Link>
               </Button>

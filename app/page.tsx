@@ -101,6 +101,7 @@ const journeyCards = [
     links: [
       { label: "Cost of Living", href: "/cost-of-living" },
       { label: "Visa Guide", href: "/visas" },
+      { label: "Find Your Visa", href: "/visas/quiz" },
       { label: "Why Buenos Aires?", href: "/why-argentina" },
     ],
   },
@@ -160,7 +161,7 @@ export default function Home() {
         />
         <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/50 to-black/30" />
         <div className="container mx-auto px-4 py-20 md:py-32 relative">
-          <div className="max-w-4xl mx-auto text-center animate-fade-in-up">
+          <div className="max-w-4xl mx-auto text-center">
             <Badge variant="secondary" className="mb-6 bg-white/95 text-foreground backdrop-blur-sm">
               <TrendingUp className="w-3 h-3 mr-1" />
               Updated February 2026
@@ -197,7 +198,7 @@ export default function Home() {
             {stats.map((stat, index) => (
               <div 
                 key={stat.label} 
-                className="card-stat animate-fade-in-up"
+                className="card-stat animate-fade-in"
                 style={{ animationDelay: `${index * 100}ms` }}
               >
                 <div className="stat-value">{stat.value}</div>
@@ -211,7 +212,7 @@ export default function Home() {
       {/* Features Grid */}
       <section className="section-padding bg-white">
         <div className="container mx-auto px-4">
-          <div className="text-center max-w-2xl mx-auto mb-16 animate-fade-in-up">
+          <div className="text-center max-w-2xl mx-auto mb-16 animate-fade-in">
             <h2 className="heading-lg mb-4">
               Everything You Need to Make the Move
             </h2>
@@ -225,7 +226,7 @@ export default function Home() {
             {features.map((feature, index) => (
               <div 
                 key={feature.title} 
-                className="card-feature animate-fade-in-up group"
+                className="card-feature animate-fade-in group"
                 style={{ animationDelay: `${index * 100}ms` }}
               >
                 <div className="icon-wrapper-enhanced group-hover:scale-105 transition-transform duration-200">
@@ -345,17 +346,19 @@ export default function Home() {
               and insider tips for living in Buenos Aires.
             </p>
             <div className="flex flex-col sm:flex-row gap-3 max-w-md mx-auto">
-              <input 
-                type="email" 
-                placeholder="your@email.com" 
-                className="flex h-12 w-full rounded-lg border-2 border-slate-200 bg-white px-4 py-2 text-base placeholder:text-slate-400 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-sky-500 focus-visible:border-sky-500 transition-all"
+              <input
+                type="email"
+                placeholder="your@email.com"
+                aria-label="Email address"
+                autoComplete="email"
+                className="flex h-12 w-full rounded-lg border-2 border-slate-200 bg-white px-4 py-2 text-base placeholder:text-stone-500 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-sky-500 focus-visible:border-sky-500 transition-all"
               />
               <Button className="h-12 px-8 bg-sky-700 hover:bg-sky-600 text-white font-semibold shadow-lg hover:shadow-xl transition-all">
                 Subscribe
                 <ArrowRight className="w-4 h-4 ml-2" />
               </Button>
             </div>
-            <p className="text-xs text-slate-500 mt-4">
+            <p className="text-xs text-stone-600 mt-4">
               No spam, unsubscribe anytime. We respect your privacy.
             </p>
           </div>
@@ -375,7 +378,7 @@ export default function Home() {
             {testimonials.map((testimonial, index) => (
               <div 
                 key={index} 
-                className="card-testimonial animate-fade-in-up"
+                className="card-testimonial animate-fade-in"
                 style={{ animationDelay: `${index * 100}ms` }}
               >
                 <QuoteIcon />
@@ -393,7 +396,7 @@ export default function Home() {
       {/* Lucero Legal CTA */}
       <section className="section-padding">
         <div className="container mx-auto px-4 max-w-4xl">
-          <LuceroLegalCTA variant="full" />
+          <LuceroLegalCTA variant="full" utm_content="homepage" />
         </div>
       </section>
 

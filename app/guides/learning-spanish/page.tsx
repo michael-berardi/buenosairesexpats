@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { DesktopOnly, MobileOnly } from "@/components/desktop-only";
+import { LuceroLegalCTA } from "@/components/lucero-legal-cta";
 import { StructuredData } from "@/components/structured-data";
 import { generateBreadcrumbSchema, generateArticleSchema } from "@/lib/schema";
 import {
@@ -441,12 +442,26 @@ export default function LearningSpanishPage() {
         </div>
       </section>
 
+      {/* Legal CTA */}
+      <section className="py-12">
+        <div className="container mx-auto px-4">
+          <div className="max-w-3xl mx-auto">
+            <LuceroLegalCTA
+              variant="compact"
+              headline="Making Buenos Aires Your Home?"
+              description="If you're learning Spanish to live here long-term, you'll need the right visa. Lucero Legal can help with residency and immigration."
+              utm_content="guides-learning-spanish"
+            />
+          </div>
+        </div>
+      </section>
+
       {/* CTA */}
       <section className="py-16 bg-primary text-primary-foreground">
         <div className="container mx-auto px-4 text-center">
           <div className="max-w-2xl mx-auto">
             <h2 className="text-3xl font-bold mb-4">Ready to Start Learning?</h2>
-            <p className="text-primary-foreground/80 mb-8">
+            <p className="text-primary-foreground/90 mb-8">
               Download our free Argentine Spanish cheat sheet with essential phrases, 
               slang, and pronunciation tips.
             </p>

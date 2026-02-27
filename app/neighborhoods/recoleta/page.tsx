@@ -16,16 +16,18 @@ import {
   Users,
   Crown
 } from "lucide-react";
+import { LuceroLegalCTA } from "@/components/lucero-legal-cta";
 import { StructuredData } from "@/components/structured-data";
 import { generateArticleSchema } from "@/lib/schema";
 
 export const metadata: Metadata = {
-  title: "Recoleta Buenos Aires - Luxury Neighborhood Guide for Expats",
+  title: "Recoleta Buenos Aires - Luxury Neighborhood Guide",
   description: "Complete guide to Recoleta, Buenos Aires' most elegant and upscale neighborhood. Perfect for families and luxury living with French architecture and world-class amenities.",
   keywords: ["Recoleta Buenos Aires", "living in Recoleta", "Recoleta neighborhood", "Buenos Aires luxury neighborhoods", "Recoleta expat guide"],
   openGraph: {
-    title: "Recoleta Buenos Aires - Luxury Neighborhood Guide for Expats",
+    title: "Recoleta Buenos Aires - Luxury Neighborhood Guide",
     description: "Complete guide to Recoleta, Buenos Aires' most elegant and upscale neighborhood.",
+    images: [{ url: '/images/og-image.jpg', width: 1200, height: 630, alt: 'Buenos Aires Expats' }],
   },
   alternates: {
     canonical: "https://buenosairesexpats.com/neighborhoods/recoleta",
@@ -116,7 +118,7 @@ export default function RecoletaPage() {
               Buenos Aires' most elegant neighborhood. French architecture, upscale shopping, 
               world-class museums, and the safest streets in the city.
             </p>
-            <div className="flex flex-wrap justify-center gap-4 text-sm text-white/80">
+            <div className="flex flex-wrap justify-center gap-4 text-sm text-white/90">
               <div className="flex items-center gap-2 bg-black/30 px-3 py-1.5 rounded-full">
                 <DollarSign className="w-4 h-4" />
                 <span>Most expensive</span>
@@ -329,12 +331,26 @@ export default function RecoletaPage() {
         </div>
       </section>
 
+      {/* Legal CTA */}
+      <section className="py-12">
+        <div className="container mx-auto px-4">
+          <div className="max-w-3xl mx-auto">
+            <LuceroLegalCTA
+              variant="compact"
+              headline="Planning Your Move to Recoleta?"
+              description="Lucero Legal's immigration attorneys can help with visas, residency, and the legal paperwork for your relocation."
+              utm_content="neighborhood-recoleta"
+            />
+          </div>
+        </div>
+      </section>
+
       {/* CTA */}
       <section className="py-16 bg-primary text-primary-foreground">
         <div className="container mx-auto px-4 text-center">
           <div className="max-w-2xl mx-auto">
             <h2 className="text-3xl font-bold mb-4">Ready to Move to Recoleta?</h2>
-            <p className="text-primary-foreground/80 mb-8">
+            <p className="text-primary-foreground/90 mb-8">
               Explore other neighborhoods, compare costs, and get personalized advice for your move to Buenos Aires.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">

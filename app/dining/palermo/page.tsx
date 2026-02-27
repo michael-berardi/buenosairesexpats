@@ -3,6 +3,7 @@ import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
+import { LuceroLegalCTA } from "@/components/lucero-legal-cta";
 import { 
   Star, 
   MapPin, 
@@ -194,7 +195,7 @@ export default function PalermoDiningPage() {
               The beating heart of Buenos Aires&apos; culinary scene. Home to Don Julio, 
               Best Restaurant in Latin America 2024, and the city&apos;s most vibrant dining culture.
             </p>
-            <div className="flex flex-wrap gap-4 text-sm text-stone-400">
+            <div className="flex flex-wrap gap-4 text-sm text-stone-600">
               <span className="flex items-center gap-2">
                 <Star className="w-4 h-4 text-amber-400" />
                 2 Michelin Stars
@@ -284,10 +285,10 @@ export default function PalermoDiningPage() {
                             <Clock className="w-4 h-4" />
                             {restaurant.hours}
                           </div>
-                          <div className="flex items-center gap-2 text-muted-foreground">
+                          <a href={`tel:${restaurant.phone}`} className="flex items-center gap-2 text-muted-foreground hover:text-foreground">
                             <Phone className="w-4 h-4" />
                             {restaurant.phone}
-                          </div>
+                          </a>
                         </div>
                       </div>
 
@@ -391,12 +392,26 @@ export default function PalermoDiningPage() {
         </div>
       </section>
 
+      {/* Legal CTA */}
+      <section className="py-12">
+        <div className="container mx-auto px-4">
+          <div className="max-w-3xl mx-auto">
+            <LuceroLegalCTA
+              variant="compact"
+              headline="Planning an Extended Stay?"
+              description="Need a visa to enjoy Buenos Aires' incredible food scene long-term? Lucero Legal can help with residency and immigration."
+              utm_content="dining-palermo"
+            />
+          </div>
+        </div>
+      </section>
+
       {/* CTA */}
       <section className="py-16 bg-stone-900 text-white">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto text-center">
             <h2 className="text-3xl font-bold mb-4">Explore More Neighborhoods</h2>
-            <p className="text-stone-400 mb-8">
+            <p className="text-stone-600 mb-8">
               Discover the best dining in Recoleta and Belgrano.
             </p>
             <div className="flex flex-wrap justify-center gap-4">

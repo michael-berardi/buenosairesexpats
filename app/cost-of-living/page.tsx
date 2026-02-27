@@ -176,7 +176,7 @@ export default function CostOfLivingPage() {
       <div className="border-b bg-muted/30">
         <div className="container mx-auto px-4 py-4">
           <nav className="flex gap-2 text-sm text-muted-foreground">
-            <Link href="/" className="hover:text-foreground">Home</Link>
+            <Link href="/" className="hover:text-foreground inline-flex items-center min-h-[44px]">Home</Link>
             <span>/</span>
             <span className="text-foreground">Cost of Living</span>
           </nav>
@@ -184,18 +184,12 @@ export default function CostOfLivingPage() {
       </div>
 
       {/* Hero */}
-      <section className="relative py-16 md:py-24 overflow-hidden min-h-[400px] flex items-center">
-        <Image
-          src="/images/housing-apartment.jpg"
-          alt="Buenos Aires apartment"
-          fill
-          className="object-cover"
-          sizes="100vw"
-          quality={85}
-          priority
-        />
-        <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/40 to-black/30" />
-        <div className="container mx-auto px-4 relative">
+      <section className="relative py-16 md:py-24 overflow-hidden">
+        <div className="absolute inset-0">
+          <div className="absolute inset-0 bg-[url('/images/housing-apartment.jpg')] bg-cover bg-center" />
+          <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/40 to-background" />
+        </div>
+        <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-3xl mx-auto text-center">
             <Badge className="mb-4 bg-white/90 text-foreground">
               <TrendingUp className="w-3 h-3 mr-1" />
@@ -208,7 +202,13 @@ export default function CostOfLivingPage() {
               Real budget breakdowns from expats living here. From bare-bones to comfortable living, 
               see exactly what you&apos;ll spend each month.
             </p>
-            <div className="flex flex-wrap justify-center gap-4 text-sm text-white/80">
+            <Button asChild size="lg" className="bg-sky-600 hover:bg-sky-500 text-white font-semibold mb-6">
+              <Link href="#budget-comparison">
+                Calculate Your Budget
+                <ArrowRight className="w-4 h-4 ml-2" />
+              </Link>
+            </Button>
+            <div className="flex flex-wrap justify-center gap-4 text-sm text-white/90">
               <div className="flex items-center gap-2">
                 <DollarSign className="w-4 h-4 text-sky-300" />
                 <span>USD pricing</span>
@@ -223,7 +223,7 @@ export default function CostOfLivingPage() {
       </section>
 
       {/* Monthly Budget Calculator */}
-      <section className="section-padding bg-white">
+      <section id="budget-comparison" className="section-padding bg-white">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <h2 className="heading-md mb-4 text-center">Monthly Budget Estimates</h2>
@@ -242,7 +242,7 @@ export default function CostOfLivingPage() {
                 <TabsContent key={key} value={key}>
                   <div className="card-feature">
                     <div className="mb-4">
-                      <h3 className="font-semibold text-lg capitalize">{key} Lifestyle</h3>
+                      <h3 className="font-semibold text-lg">{key.charAt(0).toUpperCase() + key.slice(1)} Lifestyle</h3>
                       <p className="text-body-sm">
                         {key === "budget" && "Shared apartment, cooking at home, public transport"}
                         {key === "moderate" && "Private apartment, mix of cooking and dining out"}
@@ -309,9 +309,9 @@ export default function CostOfLivingPage() {
       <section className="section-padding bg-muted/30">
         <div className="container mx-auto px-4">
           <h2 className="heading-md mb-12 text-center">Detailed Expense Breakdown</h2>
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto items-stretch">
             {expenseCategories.map((category) => (
-              <div key={category.title} className="card-feature">
+              <div key={category.title} className="card-feature h-full flex flex-col">
                 <div className="icon-wrapper mb-3">
                   <category.icon className="w-5 h-5" />
                 </div>
@@ -327,6 +327,21 @@ export default function CostOfLivingPage() {
                 </ul>
               </div>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Visual Break */}
+      <section className="py-8">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto rounded-2xl overflow-hidden">
+            <Image
+              src="/images/community-expats.webp"
+              alt="Expats enjoying life in Buenos Aires"
+              width={1200}
+              height={500}
+              className="w-full h-64 md:h-80 object-cover"
+            />
           </div>
         </div>
       </section>
@@ -351,7 +366,7 @@ export default function CostOfLivingPage() {
                     {neighborhoodComparison.map((hood) => (
                       <tr key={hood.name} className="border-b last:border-0">
                         <td className="py-3 px-2 font-medium">
-                          <Link href={`/neighborhoods/${hood.name.toLowerCase().replace(" ", "-")}`} className="hover:text-sky-600 hover:underline">
+                          <Link href={`/neighborhoods/${hood.name.toLowerCase().replace(" ", "-")}`} className="hover:text-sky-600 hover:underline inline-flex items-center min-h-[44px]">
                             {hood.name}
                           </Link>
                         </td>
@@ -373,8 +388,8 @@ export default function CostOfLivingPage() {
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto">
             <h2 className="heading-md mb-8 text-center">Money-Saving Tips</h2>
-            <div className="grid md:grid-cols-2 gap-6">
-              <div className="card-feature">
+            <div className="grid md:grid-cols-2 gap-6 items-stretch">
+              <div className="card-feature h-full">
                 <h3 className="font-semibold text-lg mb-2">Understand the New Dollar Reality</h3>
                 <p className="text-body-sm">
                   Under Milei&apos;s economic reforms, the gap between official and blue dollar rates has narrowed
@@ -383,21 +398,21 @@ export default function CostOfLivingPage() {
                   is much smaller than before.
                 </p>
               </div>
-              <div className="card-feature">
+              <div className="card-feature h-full">
                 <h3 className="font-semibold text-lg mb-2">Shop at Local Markets</h3>
                 <p className="text-body-sm">
                   Ferias and mercados offer fresh produce at much better prices than supermarkets. 
                   Try Mercado de San Telmo or your neighborhood feria.
                 </p>
               </div>
-              <div className="card-feature">
+              <div className="card-feature h-full">
                 <h3 className="font-semibold text-lg mb-2">Take Public Transport</h3>
                 <p className="text-body-sm">
                   The SUBE card works on buses, subways, and trains. It&apos;s incredibly cheap and 
                   the subway is fast and reliable in the city center.
                 </p>
               </div>
-              <div className="card-feature">
+              <div className="card-feature h-full">
                 <h3 className="font-semibold text-lg mb-2">Eat Like a Local</h3>
                 <p className="text-body-sm">
                   Menu del día lunch specials offer great value. Avoid touristy restaurants in 

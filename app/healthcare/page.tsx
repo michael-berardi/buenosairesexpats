@@ -1,8 +1,10 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
+import { LuceroLegalCTA } from "@/components/lucero-legal-cta";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { generateFAQPageSchema } from "@/lib/schema";
 import {
@@ -17,7 +19,7 @@ import {
 } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Healthcare in Argentina for Expats 2026",
+  title: "Healthcare in Argentina for Expats",
   description: "Complete guide to healthcare in Argentina for expats. Health insurance options (prepaga), finding doctors, hospital recommendations, and costs.",
   keywords: ["healthcare Argentina expats", "prepaga health insurance", "Argentina hospitals", "medical care Buenos Aires"],
   alternates: {
@@ -99,9 +101,15 @@ export default function HealthcarePage() {
               Healthcare in Argentina
             </h1>
             <p className="text-xl text-white/90 mb-8">
-              Everything you need to know about health insurance (prepaga), 
+              Everything you need to know about health insurance (prepaga),
               finding doctors, and accessing quality medical care in Argentina.
             </p>
+            <Button asChild size="lg" className="bg-sky-600 hover:bg-sky-500 text-white font-semibold">
+              <Link href="#insurance-providers">
+                Browse Healthcare Options
+                <ArrowRight className="w-4 h-4 ml-2" />
+              </Link>
+            </Button>
           </div>
         </div>
       </section>
@@ -188,7 +196,7 @@ export default function HealthcarePage() {
       </section>
 
       {/* Insurance Providers */}
-      <section className="py-16 bg-muted/30">
+      <section id="insurance-providers" className="py-16 bg-muted/30">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl font-bold mb-8 text-center">Major Insurance Providers</h2>
@@ -225,6 +233,21 @@ export default function HealthcarePage() {
             <p className="text-sm text-muted-foreground mt-4 text-center">
               Prices are approximate for a single person in their 30s-40s. Actual costs vary by age, coverage level, and pre-existing conditions.
             </p>
+          </div>
+        </div>
+      </section>
+
+      {/* Visual Break */}
+      <section className="py-8">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto rounded-2xl overflow-hidden">
+            <Image
+              src="/images/healthcare-clinic.jpg"
+              alt="Modern healthcare clinic in Buenos Aires"
+              width={1200}
+              height={500}
+              className="w-full h-64 md:h-80 object-cover"
+            />
           </div>
         </div>
       </section>
@@ -313,21 +336,35 @@ export default function HealthcarePage() {
               </CardHeader>
               <CardContent>
                 <div className="grid md:grid-cols-3 gap-4">
-                  <div className="text-center p-4 bg-white dark:bg-background rounded-lg">
+                  <a href="tel:107" className="text-center p-4 bg-white dark:bg-background rounded-lg hover:ring-2 hover:ring-red-300 transition-shadow block">
                     <div className="text-2xl font-bold text-red-600">107</div>
                     <div className="text-sm text-muted-foreground">Ambulance (SAME)</div>
-                  </div>
-                  <div className="text-center p-4 bg-white dark:bg-background rounded-lg">
+                  </a>
+                  <a href="tel:911" className="text-center p-4 bg-white dark:bg-background rounded-lg hover:ring-2 hover:ring-red-300 transition-shadow block">
                     <div className="text-2xl font-bold text-red-600">911</div>
                     <div className="text-sm text-muted-foreground">General Emergency</div>
-                  </div>
-                  <div className="text-center p-4 bg-white dark:bg-background rounded-lg">
+                  </a>
+                  <a href="tel:101" className="text-center p-4 bg-white dark:bg-background rounded-lg hover:ring-2 hover:ring-red-300 transition-shadow block">
                     <div className="text-2xl font-bold text-red-600">101</div>
                     <div className="text-sm text-muted-foreground">Police</div>
-                  </div>
+                  </a>
                 </div>
               </CardContent>
             </Card>
+          </div>
+        </div>
+      </section>
+
+      {/* Legal CTA */}
+      <section className="py-12">
+        <div className="container mx-auto px-4">
+          <div className="max-w-3xl mx-auto">
+            <LuceroLegalCTA
+              variant="compact"
+              headline="Need Residency for Healthcare Access?"
+              description="Legal residents get access to Argentina's public healthcare system. Lucero Legal can help with your visa and residency paperwork."
+              utm_content="healthcare"
+            />
           </div>
         </div>
       </section>
@@ -337,7 +374,7 @@ export default function HealthcarePage() {
         <div className="container mx-auto px-4 text-center">
           <div className="max-w-2xl mx-auto">
             <h2 className="text-3xl font-bold mb-4">Need Help Choosing Insurance?</h2>
-            <p className="text-primary-foreground/80 mb-8">
+            <p className="text-primary-foreground/90 mb-8">
               Our partners can help you compare plans and find the right coverage for your needs and budget.
             </p>
             <Button asChild size="lg" variant="secondary">

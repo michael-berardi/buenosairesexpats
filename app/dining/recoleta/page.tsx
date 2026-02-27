@@ -3,6 +3,7 @@ import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
+import { LuceroLegalCTA } from "@/components/lucero-legal-cta";
 import { 
   Star, 
   MapPin, 
@@ -321,15 +322,15 @@ export default function RecoletaDiningPage() {
                             <Clock className="w-4 h-4 mt-0.5 flex-shrink-0" />
                             {restaurant.hours}
                           </div>
-                          <div className="flex items-start gap-2 text-stone-600">
+                          <a href={`tel:${restaurant.phone}`} className="flex items-start gap-2 text-stone-600 hover:text-stone-800">
                             <Phone className="w-4 h-4 mt-0.5 flex-shrink-0" />
                             {restaurant.phone}
-                          </div>
+                          </a>
                         </div>
                       </div>
                       
                       {/* Meta info */}
-                      <div className="flex flex-wrap gap-4 text-sm text-stone-500 mb-6 pt-4 border-t border-stone-100">
+                      <div className="flex flex-wrap gap-4 text-sm text-stone-600 mb-6 pt-4 border-t border-stone-100">
                         <span><strong>Reservations:</strong> {restaurant.reservations}</span>
                         <span className="hidden sm:inline">|</span>
                         <span><strong>Dress Code:</strong> {restaurant.dressCode}</span>
@@ -398,7 +399,7 @@ export default function RecoletaDiningPage() {
                   </CardHeader>
                   <CardContent className="flex-grow">
                     <p className="text-sm text-stone-600 mb-4">{restaurant.description}</p>
-                    <div className="space-y-2 text-sm text-stone-500 mb-4">
+                    <div className="space-y-2 text-sm text-stone-600 mb-4">
                       <div className="flex items-center gap-2">
                         <MapPin className="w-4 h-4" />
                         {restaurant.address}
@@ -430,12 +431,26 @@ export default function RecoletaDiningPage() {
         </div>
       </section>
 
+      {/* Legal CTA */}
+      <section className="py-12">
+        <div className="container mx-auto px-4">
+          <div className="max-w-3xl mx-auto">
+            <LuceroLegalCTA
+              variant="compact"
+              headline="Planning an Extended Stay?"
+              description="Need a visa to enjoy Buenos Aires' incredible food scene long-term? Lucero Legal can help with residency and immigration."
+              utm_content="dining-recoleta"
+            />
+          </div>
+        </div>
+      </section>
+
       {/* CTA */}
       <section className="py-16 bg-stone-900 text-white">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto text-center">
             <h2 className="text-3xl font-bold mb-4">Explore More Neighborhoods</h2>
-            <p className="text-stone-400 mb-8">
+            <p className="text-stone-600 mb-8">
               Discover the best dining in Palermo and Belgrano.
             </p>
             <div className="flex flex-wrap justify-center gap-4">

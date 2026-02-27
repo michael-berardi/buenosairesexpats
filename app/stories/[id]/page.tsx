@@ -4,6 +4,7 @@ import { notFound } from "next/navigation";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
+import { LuceroLegalCTA } from "@/components/lucero-legal-cta";
 import { ArrowLeft, ArrowRight, MapPin, Briefcase, Clock, Quote } from "lucide-react";
 import { stories, getStoryById, getAllCategories, type StoryCategory } from "@/lib/stories-data";
 import { StructuredData } from "@/components/structured-data";
@@ -266,13 +267,27 @@ export default async function StoryPage({ params }: { params: Promise<{ id: stri
         </section>
       )}
 
+      {/* Legal CTA */}
+      <section className="py-12">
+        <div className="container mx-auto px-4">
+          <div className="max-w-3xl mx-auto">
+            <LuceroLegalCTA
+              variant="compact"
+              headline="Inspired? Get Help With Your Move"
+              description="Ready to start your own Buenos Aires chapter? Lucero Legal's immigration team can help with visas, residency, and all the legal paperwork."
+              utm_content="story-detail"
+            />
+          </div>
+        </div>
+      </section>
+
       {/* CTA */}
       <section className="py-16 bg-primary text-primary-foreground">
         <div className="container mx-auto px-4 text-center">
           <div className="max-w-2xl mx-auto">
             <h2 className="text-3xl font-bold mb-4">Have Your Own Story?</h2>
-            <p className="text-primary-foreground/80 mb-8">
-              Are you an expat living in Buenos Aires? We'd love to hear your experience 
+            <p className="text-primary-foreground/90 mb-8">
+              Are you an expat living in Buenos Aires? We&apos;d love to hear your experience
               and possibly feature it here.
             </p>
             <Button asChild size="lg" variant="secondary">

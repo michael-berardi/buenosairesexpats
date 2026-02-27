@@ -3,6 +3,7 @@ import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
+import { LuceroLegalCTA } from "@/components/lucero-legal-cta";
 import { StructuredData } from "@/components/structured-data";
 import { generateBreadcrumbSchema, generateArticleSchema } from "@/lib/schema";
 import {
@@ -480,28 +481,16 @@ export default function GettingDNIPage() {
         </div>
       </section>
 
-      {/* CTA */}
-      <section className="py-16 bg-primary text-primary-foreground">
-        <div className="container mx-auto px-4 text-center">
-          <div className="max-w-2xl mx-auto">
-            <h2 className="text-3xl font-bold mb-4">Need Help With Your DNI?</h2>
-            <p className="text-primary-foreground/80 mb-8">
-              Our vetted immigration lawyers can guide you through the process and 
-              handle the paperwork. Free initial consultation.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button asChild size="lg" variant="secondary">
-                <Link href="/resources">
-                  Find Immigration Lawyers
-                  <ArrowRight className="w-4 h-4 ml-2" />
-                </Link>
-              </Button>
-              <Button asChild size="lg" variant="outline" className="border-primary-foreground/20 hover:bg-primary-foreground/10">
-                <Link href="/visas">
-                  Explore Visa Options
-                </Link>
-              </Button>
-            </div>
+      {/* Legal CTA */}
+      <section className="py-12">
+        <div className="container mx-auto px-4">
+          <div className="max-w-3xl mx-auto">
+            <LuceroLegalCTA
+              variant="full"
+              headline="Need Help With Your DNI?"
+              description="The DNI process can be confusing and paperwork-intensive. Lucero Legal's immigration attorneys handle DNI applications daily and can guide you through every step."
+              utm_content="guides-getting-dni"
+            />
           </div>
         </div>
       </section>

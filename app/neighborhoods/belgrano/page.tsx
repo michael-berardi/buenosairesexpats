@@ -16,6 +16,7 @@ import {
   Users,
   School
 } from "lucide-react";
+import { LuceroLegalCTA } from "@/components/lucero-legal-cta";
 import { StructuredData } from "@/components/structured-data";
 import { generateArticleSchema } from "@/lib/schema";
 
@@ -26,6 +27,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Belgrano Buenos Aires - Family-Friendly Neighborhood Guide",
     description: "Complete guide to Belgrano, Buenos Aires' most family-friendly neighborhood.",
+    images: [{ url: '/images/og-image.jpg', width: 1200, height: 630, alt: 'Buenos Aires Expats' }],
   },
   alternates: {
     canonical: "https://buenosairesexpats.com/neighborhoods/belgrano",
@@ -119,7 +121,7 @@ export default function BelgranoPage() {
               The perfect neighborhood for families and long-term expats. Peaceful streets, 
               excellent schools, and authentic Buenos Aires living away from the tourist crowds.
             </p>
-            <div className="flex flex-wrap justify-center gap-4 text-sm text-white/80">
+            <div className="flex flex-wrap justify-center gap-4 text-sm text-white/90">
               <div className="flex items-center gap-2 bg-black/30 px-3 py-1.5 rounded-full">
                 <DollarSign className="w-4 h-4" />
                 <span>Moderate rent</span>
@@ -339,12 +341,26 @@ export default function BelgranoPage() {
         </div>
       </section>
 
+      {/* Legal CTA */}
+      <section className="py-12">
+        <div className="container mx-auto px-4">
+          <div className="max-w-3xl mx-auto">
+            <LuceroLegalCTA
+              variant="compact"
+              headline="Planning Your Move to Belgrano?"
+              description="Lucero Legal's immigration attorneys can help with visas, residency, and the legal paperwork for your relocation."
+              utm_content="neighborhood-belgrano"
+            />
+          </div>
+        </div>
+      </section>
+
       {/* CTA */}
       <section className="py-16 bg-primary text-primary-foreground">
         <div className="container mx-auto px-4 text-center">
           <div className="max-w-2xl mx-auto">
             <h2 className="text-3xl font-bold mb-4">Ready to Move to Belgrano?</h2>
-            <p className="text-primary-foreground/80 mb-8">
+            <p className="text-primary-foreground/90 mb-8">
               Explore other neighborhoods, compare costs, and get personalized advice for your move to Buenos Aires.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">

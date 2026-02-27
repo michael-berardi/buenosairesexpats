@@ -3,10 +3,11 @@ import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { 
-  Heart, 
-  Scale, 
-  DollarSign, 
+import { LuceroLegalCTA } from "@/components/lucero-legal-cta";
+import {
+  Heart,
+  Scale,
+  DollarSign,
   Briefcase,
   Home,
   ArrowRight,
@@ -23,6 +24,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Why Expats Are Moving to Buenos Aires - Real Talk",
     description: "Honest insights from expats who made the move. The good, the bad, and what Reddit won't tell you.",
+    images: [{ url: '/images/og-image.jpg', width: 1200, height: 630, alt: 'Buenos Aires Expats' }],
   },
   alternates: {
     canonical: "https://buenosairesexpats.com/why-argentina",
@@ -115,7 +117,7 @@ const redditWarnings = [
   {
     title: "It's Not As Cheap As You Think Anymore",
     detail: "Prices have risen significantly. One recent Reddit post: 'Expect Western European prices for many things.' The blue dollar advantage isn't what it was. Budget $2,000-2,500 for a comfortable lifestyle, not $1,000.",
-    source: "r/digitalnomad 2024-2025 updates",
+    source: "r/digitalnomad 2024-2026 updates",
   },
   {
     title: "Customer Service Is... Different",
@@ -164,6 +166,14 @@ export default function WhyArgentinaPage() {
               <span>The good AND the bad</span>
               <span>•</span>
               <span>No sugar-coating</span>
+            </div>
+            <div className="mt-8">
+              <Button asChild size="lg" className="bg-sky-600 hover:bg-sky-500 text-white font-semibold shadow-lg">
+                <Link href="/visas">
+                  Explore Visa Options
+                  <ArrowRight className="w-4 h-4 ml-2" />
+                </Link>
+              </Button>
             </div>
           </div>
         </div>
@@ -234,7 +244,7 @@ export default function WhyArgentinaPage() {
           <div className="max-w-4xl mx-auto">
             <div className="flex items-center gap-3 mb-8">
               <AlertTriangle className="w-8 h-8 text-amber-600" />
-              <h2 className="text-3xl font-bold">What Reddit Warns About (That Other Sites Won&apos;t Tell You)</h2>
+              <h2 className="text-3xl font-bold">What Reddit Warns About (That Other Sites Won&apos;t&nbsp;Tell&nbsp;You)</h2>
             </div>
             
             <div className="space-y-4">
@@ -335,17 +345,16 @@ export default function WhyArgentinaPage() {
         </div>
       </section>
 
-      {/* Legal Partner Note */}
-      <section className="py-8 border-t">
+      {/* Legal CTA */}
+      <section className="py-12">
         <div className="container mx-auto px-4">
-          <div className="max-w-3xl mx-auto text-center text-sm text-muted-foreground">
-            <p>
-              Considering the move? For visa and immigration guidance, we&apos;ve worked with{" "}
-              <Link href="https://lucerolegal.org" className="underline hover:text-foreground">
-                a trusted immigration partner
-              </Link>{" "}
-              who knows the system inside and out. Lucero Legal's team of immigration attorneys have helped many of our readers navigate the process.
-            </p>
+          <div className="max-w-3xl mx-auto">
+            <LuceroLegalCTA
+              variant="full"
+              headline="Ready to Make the Move?"
+              description="Lucero Legal's immigration attorneys have helped hundreds of expats navigate Argentine visas, residency, and citizenship. Get expert guidance for your situation."
+              utm_content="why-argentina"
+            />
           </div>
         </div>
       </section>

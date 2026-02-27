@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { DesktopOnly, MobileOnly } from "@/components/desktop-only";
+import { LuceroLegalCTA } from "@/components/lucero-legal-cta";
 import { StructuredData } from "@/components/structured-data";
 import { generateBreadcrumbSchema, generateArticleSchema } from "@/lib/schema";
 import {
@@ -358,7 +359,7 @@ export default function SafetyPage() {
               {emergencyNumbers.map((emergency) => (
                 <Card key={emergency.number} className="border-red-200">
                   <CardContent className="pt-6 text-center">
-                    <div className="text-3xl font-bold text-red-600 mb-2">{emergency.number}</div>
+                    <a href={`tel:${emergency.number}`} className="text-3xl font-bold text-red-600 mb-2 block hover:underline">{emergency.number}</a>
                     <div className="font-semibold">{emergency.service}</div>
                     <p className="text-xs text-muted-foreground mt-1">{emergency.notes}</p>
                   </CardContent>
@@ -549,12 +550,26 @@ export default function SafetyPage() {
         </div>
       </section>
 
+      {/* Legal CTA */}
+      <section className="py-12">
+        <div className="container mx-auto px-4">
+          <div className="max-w-3xl mx-auto">
+            <LuceroLegalCTA
+              variant="compact"
+              headline="Legal Residency = Better Protection"
+              description="Legal residents have full access to Argentine police and legal systems. Lucero Legal can help you get proper residency status."
+              utm_content="guides-safety"
+            />
+          </div>
+        </div>
+      </section>
+
       {/* CTA */}
       <section className="py-16 bg-primary text-primary-foreground">
         <div className="container mx-auto px-4 text-center">
           <div className="max-w-2xl mx-auto">
             <h2 className="text-3xl font-bold mb-4">Choose a Safe Neighborhood</h2>
-            <p className="text-primary-foreground/80 mb-8">
+            <p className="text-primary-foreground/90 mb-8">
               Explore our detailed neighborhood guides to find the best area for your 
               lifestyle and safety preferences.
             </p>

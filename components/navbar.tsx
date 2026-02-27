@@ -26,6 +26,7 @@ const visaItems = [
   { title: "Student Visa", href: "/visas/student", description: "Study at Argentine universities" },
   { title: "Investment Visa", href: "/visas/investment", description: "Business and investment pathways" },
   { title: "Visa by Nationality", href: "/visas/nationalities", description: "Check requirements for your country" },
+  { title: "Find Your Visa", href: "/visas/quiz", description: "Take our quiz to find the best visa for you" },
 ];
 
 const guideItems = [

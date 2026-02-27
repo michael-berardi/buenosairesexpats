@@ -3,6 +3,7 @@ import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
+import { LuceroLegalCTA } from "@/components/lucero-legal-cta";
 import { 
   MapPin, 
   DollarSign, 
@@ -355,25 +356,39 @@ export default function NeighborhoodsPage() {
         </div>
       </section>
 
+      {/* Legal CTA */}
+      <section className="py-12">
+        <div className="container mx-auto px-4">
+          <div className="max-w-3xl mx-auto">
+            <LuceroLegalCTA
+              variant="compact"
+              headline="Moving to a New Barrio?"
+              description="Need help with your visa or rental contracts? Lucero Legal's immigration attorneys can guide you through the legal side of relocating to Buenos Aires."
+              utm_content="neighborhoods-hub"
+            />
+          </div>
+        </div>
+      </section>
+
       {/* CTA */}
       <section className="py-16 bg-primary text-primary-foreground">
         <div className="container mx-auto px-4 text-center">
           <div className="max-w-2xl mx-auto">
             <h2 className="text-3xl font-bold mb-4">Still Deciding?</h2>
-            <p className="text-primary-foreground/80 mb-8">
-              Get our detailed neighborhood comparison guide and personalized recommendations 
+            <p className="text-primary-foreground/90 mb-8">
+              Get our detailed neighborhood comparison guide and personalized recommendations
               based on your budget and lifestyle preferences.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button asChild size="lg" variant="secondary">
-                <Link href="/newsletter">
-                  Get the Guide
+                <Link href="/cost-of-living">
+                  Compare Costs
                   <ArrowRight className="w-4 h-4 ml-2" />
                 </Link>
               </Button>
               <Button asChild size="lg" variant="outline" className="border-primary-foreground/20 hover:bg-primary-foreground/10">
-                <Link href="/cost-of-living">
-                  Compare Costs
+                <Link href="/visas">
+                  Explore Visa Options
                 </Link>
               </Button>
             </div>

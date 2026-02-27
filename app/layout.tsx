@@ -4,6 +4,7 @@ import { Analytics } from "@vercel/analytics/react";
 import "./globals.css";
 import { Navbar } from "@/components/navbar";
 import { Footer } from "@/components/footer";
+import { StickyCTA } from "@/components/sticky-cta";
 import { generateOrganizationSchema, generateWebSiteSchema } from "@/lib/schema";
 
 const inter = Inter({
@@ -102,6 +103,7 @@ export default function RootLayout({
         <Navbar />
         <main id="main-content">{children}</main>
         <Footer />
+        <StickyCTA />
         <Analytics />
       </body>
     </html>

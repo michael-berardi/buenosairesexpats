@@ -6,6 +6,7 @@ interface LuceroLegalCTAProps {
   headline?: string;
   description?: string;
   utm_source?: string;
+  utm_content?: string;
 }
 
 export function LuceroLegalCTA({
@@ -13,9 +14,10 @@ export function LuceroLegalCTA({
   headline,
   description,
   utm_source = "buenosairesexpats",
+  utm_content,
 }: LuceroLegalCTAProps) {
   const baseUrl = "https://lucerolegal.org";
-  const trackingUrl = `${baseUrl}?utm_source=${utm_source}&utm_medium=referral`;
+  const trackingUrl = `${baseUrl}?utm_source=${utm_source}&utm_medium=referral${utm_content ? `&utm_content=${utm_content}` : ""}`;
 
   if (variant === "inline") {
     return (
