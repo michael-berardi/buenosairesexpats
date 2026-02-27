@@ -546,19 +546,42 @@ a:focus-visible,
   scroll-behavior: auto;
 }
 
+/* WCAG 1.4.12: Body text line-height must be >= 1.5x font size */
+/* Tailwind's text-xl defaults to line-height 1.4 (28px/20px) — override for body text */
+p, li, td, th, dd, dt, label, span, blockquote {
+  line-height: 1.6;
+}
+
+/* Ensure text-xl and text-lg body text elements meet WCAG line-height */
+main p,
+main li,
+main td,
+main th,
+main dd,
+main blockquote {
+  line-height: 1.6 !important;
+}
+
 /* Mobile body text minimum 16px for readability */
 @media (max-width: 768px) {
   body {
     font-size: 16px;
   }
 
-  p, li, td, th {
-    font-size: 1rem;
+  main p, main li, main td, main th, main dd, main span:not(.badge-primary):not(.badge-secondary):not(.badge-accent):not(.tag) {
+    font-size: max(1rem, 16px);
+    line-height: 1.6;
   }
 
   .text-sm {
     font-size: 0.875rem;
     line-height: 1.6;
+  }
+
+  /* Prevent horizontal scroll */
+  html, body {
+    overflow-x: hidden;
+    max-width: 100vw;
   }
 }
 

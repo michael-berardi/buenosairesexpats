@@ -442,7 +442,7 @@ export default function CostOfLivingPage() {
       </section>
 
       {/* Important Notice */}
-      <section className="section-padding bg-white">
+      <section className="py-8 md:py-12 bg-white">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto">
             <div className="bg-amber-50 border border-amber-200 rounded-xl p-6">
@@ -452,7 +452,7 @@ export default function CostOfLivingPage() {
                   <h3 className="font-semibold text-amber-900 mb-2">
                     The Reality Check
                   </h3>
-                  <p className="text-amber-800 text-sm">
+                  <p className="text-amber-800">
                     Prices have risen significantly in 2024-2026 as utility subsidies are phased out and the economy
                     stabilizes under Milei&apos;s reforms. While still cheaper than NYC/SF, Buenos Aires
                     is no longer the &quot;cheap paradise&quot; of 2020-2022. Budget $2,500-3,000/month for a comfortable
@@ -465,36 +465,28 @@ export default function CostOfLivingPage() {
         </div>
       </section>
 
-      {/* Lucero Legal CTA */}
-      <section className="section-padding bg-white">
-        <div className="container mx-auto px-4">
-          <div className="max-w-3xl mx-auto">
-            <LuceroLegalCTA variant="compact" />
-          </div>
-        </div>
-      </section>
-
       {/* CTA */}
-      <section className="section-padding bg-primary text-primary-foreground">
-        <div className="container mx-auto px-4 text-center">
-          <div className="max-w-2xl mx-auto">
+      <section className="py-12 md:py-16 bg-white">
+        <div className="container mx-auto px-4">
+          <div className="max-w-3xl mx-auto text-center">
             <h2 className="heading-md mb-4">Ready to Make the Move?</h2>
-            <p className="text-primary-foreground/80 mb-8">
+            <p className="text-body mb-8">
               Explore neighborhoods, visa options, and get personalized advice for your move to Argentina.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button asChild size="lg" variant="secondary">
+            <div className="flex flex-col sm:flex-row gap-4 justify-center mb-10">
+              <Button asChild size="lg" variant="default">
                 <Link href="/neighborhoods">
                   Explore Neighborhoods
                   <ArrowRight className="w-4 h-4 ml-2" />
                 </Link>
               </Button>
-              <Button asChild size="lg" variant="outline" className="border-primary-foreground/30 hover:bg-primary-foreground/10 text-primary-foreground">
+              <Button asChild size="lg" variant="outline">
                 <Link href="/visas/digital-nomad">
                   Check Visa Options
                 </Link>
               </Button>
             </div>
+            <LuceroLegalCTA variant="compact" />
           </div>
         </div>
       </section>
