@@ -13,10 +13,13 @@ const inter = Inter({
 
 export const metadata: Metadata = {
   title: {
-    default: "Buenos Aires Expats | Your Complete Guide to Living in Buenos Aires",
+    default: "Buenos Aires Expats | Guide to Living in Buenos Aires",
     template: "%s | Buenos Aires Expats",
   },
-  description: "The ultimate resource for expats moving to Buenos Aires. Honest guides, visa information, cost of living data, neighborhood reviews, and a thriving expat community.",
+  description: "The ultimate resource for expats moving to Buenos Aires. Honest guides, visa info, cost of living data, neighborhoods, and expat community.",
+  alternates: {
+    canonical: "https://buenosairesexpats.com",
+  },
   keywords: ["Buenos Aires expats", "living in Buenos Aires", "move to Buenos Aires", "Argentina expats", "Buenos Aires visa", "digital nomad Buenos Aires", "expat life Buenos Aires"],
   authors: [{ name: "Buenos Aires Expats" }],
   creator: "Buenos Aires Expats",
@@ -26,8 +29,8 @@ export const metadata: Metadata = {
     locale: "en_US",
     url: "https://buenosairesexpats.com",
     siteName: "Buenos Aires Expats",
-    title: "Buenos Aires Expats | Your Complete Guide to Living in Buenos Aires",
-    description: "The ultimate resource for expats moving to Buenos Aires. Honest guides, visa information, cost of living data, and a thriving expat community.",
+    title: "Buenos Aires Expats | Guide to Living in Buenos Aires",
+    description: "The ultimate resource for expats moving to Buenos Aires. Honest guides, visa info, cost of living, and expat community.",
     images: [{
       url: '/images/og-image.jpg',
       width: 1200,
@@ -37,8 +40,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Buenos Aires Expats | Your Complete Guide to Living in Buenos Aires",
-    description: "The ultimate resource for expats moving to Buenos Aires. Honest guides, visa information, cost of living data, and a thriving expat community.",
+    title: "Buenos Aires Expats | Guide to Living in Buenos Aires",
+    description: "The ultimate resource for expats moving to Buenos Aires. Honest guides, visa info, cost of living, and expat community.",
     images: ['/images/og-image.jpg'],
   },
   robots: {

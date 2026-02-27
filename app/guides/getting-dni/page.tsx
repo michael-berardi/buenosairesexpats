@@ -184,7 +184,7 @@ export default function GettingDNIPage() {
           <nav className="flex gap-2 text-sm text-muted-foreground">
             <Link href="/" className="hover:text-foreground">Home</Link>
             <span>/</span>
-            <Link href="/guides" className="hover:text-foreground">Guides</Link>
+            <Link href="/guides/getting-started" className="hover:text-foreground">Guides</Link>
             <span>/</span>
             <span className="text-foreground">Getting DNI</span>
           </nav>
@@ -491,7 +491,7 @@ export default function GettingDNIPage() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button asChild size="lg" variant="secondary">
-                <Link href="/resources/directory">
+                <Link href="/resources">
                   Find Immigration Lawyers
                   <ArrowRight className="w-4 h-4 ml-2" />
                 </Link>

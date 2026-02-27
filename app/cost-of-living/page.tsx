@@ -22,12 +22,13 @@ import {
 } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Real Cost of Living in Buenos Aires 2026 - Reddit-Verified Prices",
+  title: "Cost of Living in Buenos Aires 2026",
   description: "Honest 2026 cost of living data from expats living in Buenos Aires. Real Reddit-verified prices for rent, food, healthcare. Not the YouTube version.",
   keywords: ["Buenos Aires cost of living 2026", "real prices Buenos Aires", "expat budget Reddit", "how much to live in BA"],
   openGraph: {
-    title: "Real Cost of Living in Buenos Aires 2026",
+    title: "Cost of Living in Buenos Aires 2026",
     description: "Honest cost breakdowns from expats actually living here. Reddit-verified prices.",
+    images: [{ url: '/images/og-image.jpg', width: 1200, height: 630, alt: 'Buenos Aires Expats' }],
   },
   alternates: {
     canonical: "https://buenosairesexpats.com/cost-of-living",

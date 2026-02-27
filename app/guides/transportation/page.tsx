@@ -26,8 +26,8 @@ import {
 } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Getting Around Buenos Aires - Complete Transportation Guide 2026",
-  description: "Complete guide to Buenos Aires transportation. SUBE card, Subte subway, colectivos (buses), Uber, taxis, cycling, airport transfers, and essential transit apps for expats.",
+  title: "Buenos Aires Transportation Guide 2026",
+  description: "Guide to Buenos Aires transportation: SUBE card, Subte subway, colectivos, Uber, taxis, cycling, airport transfers, and transit apps.",
   keywords: [
     "Buenos Aires transportation",
     "SUBE card Buenos Aires",
@@ -41,8 +41,9 @@ export const metadata: Metadata = {
     "getting around Buenos Aires"
   ],
   openGraph: {
-    title: "Getting Around Buenos Aires - Complete Transportation Guide 2026",
+    title: "Buenos Aires Transportation Guide 2026",
     description: "Everything you need to know about Buenos Aires transportation. SUBE card, Subte, buses, ride-hailing, cycling, and airport transfers.",
+    images: [{ url: '/images/og-image.jpg', width: 1200, height: 630, alt: 'Buenos Aires Expats' }],
   },
   alternates: {
     canonical: "https://buenosairesexpats.com/guides/transportation",
@@ -99,7 +100,7 @@ export default function TransportationPage() {
           <nav className="flex gap-2 text-sm text-muted-foreground">
             <Link href="/" className="hover:text-foreground">Home</Link>
             <span>/</span>
-            <Link href="/guides" className="hover:text-foreground">Guides</Link>
+            <Link href="/guides/getting-started" className="hover:text-foreground">Guides</Link>
             <span>/</span>
             <span className="text-foreground">Transportation</span>
           </nav>

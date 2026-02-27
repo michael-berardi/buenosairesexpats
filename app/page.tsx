@@ -29,36 +29,42 @@ const features = [
     title: "Visa Guides",
     description: "Step-by-step instructions for Digital Nomad, work, retirement, and student visas.",
     href: "/visas/digital-nomad",
+    cta: "Explore visas",
   },
   {
     icon: DollarSign,
     title: "Cost of Living",
     description: "Real budget breakdowns and cost calculators for Buenos Aires and beyond.",
     href: "/cost-of-living",
+    cta: "See costs",
   },
   {
     icon: MapPin,
     title: "Neighborhood Guides",
     description: "Detailed reviews of Palermo, Recoleta, Belgrano, and other top expat areas.",
     href: "/neighborhoods",
+    cta: "Compare neighborhoods",
   },
   {
     icon: Heart,
     title: "Healthcare",
     description: "Navigate prepaga insurance, find English-speaking doctors, and understand the system.",
     href: "/healthcare",
+    cta: "View options",
   },
   {
     icon: HomeIcon,
     title: "Housing",
     description: "Renting tips, apartment hunting guides, and real estate advice for foreigners.",
     href: "/housing",
+    cta: "Find housing",
   },
   {
     icon: Users,
     title: "Expat Stories",
     description: "Real experiences from expats who've made the move. Learn from their successes and mistakes.",
     href: "/stories",
+    cta: "Read stories",
   },
 ];
 
@@ -144,8 +150,8 @@ export default function Home() {
       {/* Hero Section */}
       <section className="relative overflow-hidden min-h-[600px] flex items-center">
         <Image
-          src="/images/hero-cityscape.jpg"
-          alt="Buenos Aires cityscape"
+          src="/images/hero-cityscape-2.webp"
+          alt="Aerial view of Buenos Aires at sunset"
           fill
           priority
           className="object-cover"
@@ -229,7 +235,7 @@ export default function Home() {
                 <p className="text-body-sm mb-5 flex-grow">{feature.description}</p>
                 <Button asChild variant="outline" size="sm" className="mt-auto w-full group/btn">
                   <Link href={feature.href}>
-                    Learn more
+                    {feature.cta}
                     <ArrowRight className="w-4 h-4 ml-1 group-hover/btn:translate-x-1 transition-transform" />
                   </Link>
                 </Button>

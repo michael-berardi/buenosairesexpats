@@ -34,14 +34,14 @@ const resources = [
     title: "Moving Checklist",
     description: "Complete step-by-step checklist for moving to Argentina. From visa application to finding an apartment.",
     download: true,
-    href: "/resources/checklist",
+    href: "/guides/getting-started",
   },
   {
     icon: Building,
     title: "Service Directory",
     description: "Verified lawyers, accountants, real estate agents, and other service providers who specialize in helping expats.",
     download: false,
-    href: "/resources/directory",
+    href: "/resources",
   },
   {
     icon: Scale,
@@ -215,7 +215,7 @@ export default function ResourcesPage() {
 
             <div className="text-center mt-8">
               <Button asChild size="lg">
-                <Link href="/resources/checklist">
+                <Link href="/guides/getting-started">
                   <Download className="w-4 h-4 mr-2" />
                   Download Full Checklist
                 </Link>
@@ -256,7 +256,7 @@ export default function ResourcesPage() {
 
             <div className="text-center mt-8">
               <Button asChild variant="outline" size="lg">
-                <Link href="/resources/directory">
+                <Link href="/resources">
                   Browse All Services
                   <ArrowRight className="w-4 h-4 ml-2" />
                 </Link>

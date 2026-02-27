@@ -17,7 +17,7 @@ import {
 } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Healthcare in Argentina for Expats - Complete 2026 Guide",
+  title: "Healthcare in Argentina for Expats 2026",
   description: "Complete guide to healthcare in Argentina for expats. Health insurance options (prepaga), finding doctors, hospital recommendations, and costs.",
   keywords: ["healthcare Argentina expats", "prepaga health insurance", "Argentina hospitals", "medical care Buenos Aires"],
   alternates: {
@@ -341,7 +341,7 @@ export default function HealthcarePage() {
               Our partners can help you compare plans and find the right coverage for your needs and budget.
             </p>
             <Button asChild size="lg" variant="secondary">
-              <Link href="/resources/directory">
+              <Link href="/resources">
                 Find Insurance Brokers
                 <ArrowRight className="w-4 h-4 ml-2" />
               </Link>

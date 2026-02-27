@@ -15,7 +15,7 @@ import {
 } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Housing in Argentina - Renting Guide for Expats 2026",
+  title: "Housing & Renting in Argentina 2026",
   description: "Complete guide to renting apartments in Buenos Aires. Contracts, guarantees, neighborhoods, and avoiding scams. Updated for 2026.",
   keywords: ["renting Argentina", "Buenos Aires apartments", "Argentina housing", "expat housing Buenos Aires"],
   alternates: {
@@ -424,7 +424,7 @@ export default function HousingPage() {
                 </Link>
               </Button>
               <Button asChild size="lg" variant="outline" className="border-primary-foreground/20 hover:bg-primary-foreground/10">
-                <Link href="/resources/directory">
+                <Link href="/resources">
                   Find Agents
                   <ArrowRight className="w-4 h-4 ml-2" />
                 </Link>

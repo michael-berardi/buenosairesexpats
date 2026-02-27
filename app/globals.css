@@ -59,7 +59,7 @@
   --secondary: #f5f5f4;
   --secondary-foreground: #44403c;
   --muted: #f5f5f4;
-  --muted-foreground: #78716c;
+  --muted-foreground: #57534e;
   --accent: #fbbf24;
   --accent-foreground: #1c1917;
   --destructive: #ef4444;
@@ -105,6 +105,10 @@
   }
   body {
     @apply bg-background text-foreground;
+    line-height: 1.6;
+  }
+  p, li, td, th, dd, dt, label, span {
+    line-height: 1.6;
   }
 }
 
@@ -540,6 +544,22 @@ a:focus-visible,
 
 .reduce-motion html {
   scroll-behavior: auto;
+}
+
+/* Mobile body text minimum 16px for readability */
+@media (max-width: 768px) {
+  body {
+    font-size: 16px;
+  }
+
+  p, li, td, th {
+    font-size: 1rem;
+  }
+
+  .text-sm {
+    font-size: 0.875rem;
+    line-height: 1.6;
+  }
 }
 
 /* Responsive table wrappers */

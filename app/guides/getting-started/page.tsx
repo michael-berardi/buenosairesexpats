@@ -38,9 +38,9 @@ import {
 } from "@/lib/schema";
 
 export const metadata: Metadata = {
-  title: "Getting Started in Buenos Aires - Your First 90 Days Checklist (2026)",
+  title: "Getting Started in Buenos Aires 2026",
   description:
-    "The complete getting started checklist for moving to Buenos Aires. Step-by-step guide covering your first 24 hours, first week, first month, and first 3 months as an expat in Argentina.",
+    "The complete checklist for moving to Buenos Aires. Step-by-step guide covering your first 24 hours, first week, and first 3 months as an expat.",
   keywords: [
     "moving to Buenos Aires",
     "Buenos Aires expat checklist",
@@ -52,12 +52,13 @@ export const metadata: Metadata = {
     "Buenos Aires arrival guide",
   ],
   openGraph: {
-    title: "Getting Started in Buenos Aires - Your First 90 Days Checklist",
+    title: "Getting Started in Buenos Aires 2026",
     description:
       "Everything you need to do in your first 90 days in Buenos Aires. From landing at EZE to building your new life in Argentina.",
     type: "article",
     publishedTime: "2025-06-01",
     modifiedTime: "2026-02-26",
+    images: [{ url: '/images/og-image.jpg', width: 1200, height: 630, alt: 'Buenos Aires Expats' }],
   },
   alternates: {
     canonical: "https://buenosairesexpats.com/guides/getting-started",
@@ -399,7 +400,7 @@ export default function GettingStartedPage() {
               Home
             </Link>
             <span>/</span>
-            <Link href="/guides" className="hover:text-stone-900">
+            <Link href="/guides/getting-started" className="hover:text-stone-900">
               Guides
             </Link>
             <span>/</span>

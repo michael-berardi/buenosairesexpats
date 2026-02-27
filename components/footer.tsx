@@ -51,8 +51,13 @@ export function Footer() {
               <span className="font-bold text-xl">Buenos Aires Expats</span>
             </Link>
             <p className="text-sm text-muted-foreground max-w-xs">
-              Honest resources for expats considering a move to Buenos Aires. 
+              Honest resources for expats considering a move to Buenos Aires.
               Real talk about visas, costs, and life in Argentina.
+            </p>
+            <p className="text-sm text-muted-foreground mt-2">
+              <a href="mailto:hello@buenosairesexpats.com" className="hover:text-foreground transition-colors">
+                hello@buenosairesexpats.com
+              </a>
             </p>
           </div>
 

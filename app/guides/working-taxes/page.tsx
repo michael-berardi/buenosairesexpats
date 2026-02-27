@@ -30,8 +30,8 @@ import { LuceroLegalCTA } from "@/components/lucero-legal-cta";
 import { generateArticleSchema, generateBreadcrumbSchema } from "@/lib/schema";
 
 export const metadata: Metadata = {
-  title: "Working & Taxes in Argentina - Complete Expat Guide 2026",
-  description: "Complete guide to working and taxes in Argentina for expats. Monotributo, remote work legality, starting a business, tax obligations by visa type, double taxation treaties, and coworking spaces in Buenos Aires.",
+  title: "Working & Taxes in Argentina 2026",
+  description: "Guide to working and taxes in Argentina for expats. Monotributo, remote work, starting a business, tax obligations, and coworking in BA.",
   keywords: [
     "working in Argentina",
     "Argentina taxes expats",
@@ -45,11 +45,12 @@ export const metadata: Metadata = {
     "coworking Buenos Aires",
   ],
   openGraph: {
-    title: "Working & Taxes in Argentina - Complete Expat Guide 2026",
+    title: "Working & Taxes in Argentina 2026",
     description: "Everything expats need to know about working legally in Argentina: monotributo, business setup, tax obligations, and practical tips for remote workers.",
     type: "article",
     publishedTime: "2025-06-15",
     modifiedTime: "2026-02-26",
+    images: [{ url: '/images/og-image.jpg', width: 1200, height: 630, alt: 'Buenos Aires Expats' }],
   },
   alternates: {
     canonical: "https://buenosairesexpats.com/guides/working-taxes",
@@ -302,7 +303,7 @@ export default function WorkingTaxesPage() {
           <nav className="flex gap-2 text-sm text-muted-foreground">
             <Link href="/" className="hover:text-foreground">Home</Link>
             <span>/</span>
-            <Link href="/guides" className="hover:text-foreground">Guides</Link>
+            <Link href="/guides/getting-started" className="hover:text-foreground">Guides</Link>
             <span>/</span>
             <span className="text-foreground">Working & Taxes</span>
           </nav>

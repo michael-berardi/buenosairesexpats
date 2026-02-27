@@ -95,7 +95,7 @@ export default function LearningSpanishPage() {
           <nav className="flex gap-2 text-sm text-muted-foreground">
             <Link href="/" className="hover:text-foreground">Home</Link>
             <span>/</span>
-            <Link href="/guides" className="hover:text-foreground">Guides</Link>
+            <Link href="/guides/getting-started" className="hover:text-foreground">Guides</Link>
             <span>/</span>
             <span className="text-foreground">Learning Spanish</span>
           </nav>
