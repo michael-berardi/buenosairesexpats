@@ -56,7 +56,7 @@ export const metadata: Metadata = {
     description:
       "Everything you need to do in your first 90 days in Buenos Aires. From landing at EZE to building your new life in Argentina.",
     type: "article",
-    publishedTime: "2025-06-01",
+    publishedTime: "2026-02-26",
     modifiedTime: "2026-02-26",
     images: [{ url: '/images/og-image.jpg', width: 1200, height: 630, alt: 'Buenos Aires Expats' }],
   },
@@ -317,7 +317,7 @@ export default function GettingStartedPage() {
     description:
       "The complete getting started checklist for moving to Buenos Aires. Step-by-step guide covering your first 24 hours, first week, first month, and first 3 months as an expat in Argentina.",
     url: "https://buenosairesexpats.com/guides/getting-started",
-    datePublished: "2025-06-01",
+    datePublished: "2026-02-26",
     dateModified: LAST_UPDATED,
   });
 

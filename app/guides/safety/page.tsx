@@ -128,7 +128,7 @@ export default function SafetyPage() {
     headline: "Safety in Buenos Aires - Complete Expat Guide",
     description: "Complete safety guide for Buenos Aires expats. Neighborhood safety breakdown, common scams to avoid, emergency numbers, and solo travel tips.",
     url: "https://buenosairesexpats.com/guides/safety",
-    datePublished: "2025-01-15",
+    datePublished: "2026-02-26",
     dateModified: "2026-02-26",
   });
 

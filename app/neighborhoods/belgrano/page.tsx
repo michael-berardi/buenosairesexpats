@@ -78,7 +78,7 @@ export default function BelgranoPage() {
     headline: "Belgrano Buenos Aires - Family-Friendly Neighborhood Guide",
     description: "Complete guide to Belgrano, Buenos Aires' most family-friendly neighborhood. Quiet streets, excellent schools, and authentic residential living.",
     url: "https://buenosairesexpats.com/neighborhoods/belgrano",
-    datePublished: "2025-02-16",
+    datePublished: "2026-02-26",
     dateModified: "2026-02-26",
   });
 

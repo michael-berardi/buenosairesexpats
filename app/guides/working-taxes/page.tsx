@@ -48,7 +48,7 @@ export const metadata: Metadata = {
     title: "Working & Taxes in Argentina 2026",
     description: "Everything expats need to know about working legally in Argentina: monotributo, business setup, tax obligations, and practical tips for remote workers.",
     type: "article",
-    publishedTime: "2025-06-15",
+    publishedTime: "2026-02-26",
     modifiedTime: "2026-02-26",
     images: [{ url: '/images/og-image.jpg', width: 1200, height: 630, alt: 'Buenos Aires Expats' }],
   },
@@ -275,7 +275,7 @@ export default function WorkingTaxesPage() {
     headline: "Working & Taxes in Argentina - Complete Expat Guide 2026",
     description: "Complete guide to working and taxes in Argentina for expats. Monotributo, remote work legality, starting a business, tax obligations by visa type, and practical tips.",
     url: "https://buenosairesexpats.com/guides/working-taxes",
-    datePublished: "2025-06-15",
+    datePublished: "2026-02-26",
     dateModified: "2026-02-26",
   });
 

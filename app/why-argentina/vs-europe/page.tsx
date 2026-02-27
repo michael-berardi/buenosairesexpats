@@ -133,7 +133,7 @@ export default function VsEuropePage() {
     headline: "Buenos Aires vs Europe - Honest Comparison for Expats 2026",
     description: "Real comparison of Buenos Aires vs Lisbon, Barcelona, Berlin, and Paris. Cost, lifestyle, visas, and quality of life for expats.",
     url: "https://buenosairesexpats.com/why-argentina/vs-europe",
-    datePublished: "2025-02-16",
+    datePublished: "2026-02-26",
     dateModified: "2026-02-26",
   });
 

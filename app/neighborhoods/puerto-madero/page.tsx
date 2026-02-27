@@ -78,7 +78,7 @@ export default function PuertoMaderoPage() {
     headline: "Puerto Madero Buenos Aires - Modern Luxury Expat Guide",
     description: "Complete guide to Puerto Madero, Buenos Aires' newest and most luxurious neighborhood. Waterfront living and five-star amenities.",
     url: "https://buenosairesexpats.com/neighborhoods/puerto-madero",
-    datePublished: "2025-02-16",
+    datePublished: "2026-02-26",
     dateModified: "2026-02-26",
   });
 

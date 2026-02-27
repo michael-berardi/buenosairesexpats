@@ -29,7 +29,7 @@ export const metadata: Metadata = {
     title: "Argentina Student Visa - Complete Guide for International Students 2026",
     description: "Study at Argentine universities. Visa requirements, work permissions, and post-graduation options.",
     type: "article",
-    publishedTime: "2025-02-16",
+    publishedTime: "2026-02-26",
     modifiedTime: "2026-02-26",
   },
   alternates: {
@@ -149,7 +149,7 @@ export default function StudentVisaPage() {
     headline: "Argentina Student Visa - Complete Guide for International Students 2026",
     description: "Complete guide to Argentina's Student Visa. University requirements, application process, work permissions, and post-graduation options for international students.",
     url: "https://buenosairesexpats.com/visas/student",
-    datePublished: "2025-02-16",
+    datePublished: "2026-02-26",
     dateModified: LAST_UPDATED,
   });
 

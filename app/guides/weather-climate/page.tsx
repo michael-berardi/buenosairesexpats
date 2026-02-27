@@ -211,7 +211,7 @@ export default function WeatherClimatePage() {
     headline: "Weather & Climate in Buenos Aires - Seasonal Guide",
     description: "Complete seasonal guide to Buenos Aires weather. What to pack, best times to visit, winter heating issues, summer humidity, and clothing recommendations.",
     url: "https://buenosairesexpats.com/guides/weather-climate",
-    datePublished: "2025-01-15",
+    datePublished: "2026-02-26",
     dateModified: "2026-02-26",
   });
 

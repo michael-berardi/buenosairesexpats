@@ -29,7 +29,7 @@ export const metadata: Metadata = {
     title: "Argentina Work Visa - Complete Guide for Expats 2026",
     description: "Work legally in Argentina with employer sponsorship. Step-by-step application guide.",
     type: "article",
-    publishedTime: "2025-02-16",
+    publishedTime: "2026-02-26",
     modifiedTime: "2026-02-26",
   },
   alternates: {
@@ -140,7 +140,7 @@ export default function WorkVisaPage() {
     headline: "Argentina Work Visa - Complete Guide for Expats 2026",
     description: "Everything you need to know about Argentina's Work Visa. Requirements, employer sponsorship, application process, and tips for professionals in 2026.",
     url: "https://buenosairesexpats.com/visas/work",
-    datePublished: "2025-02-16",
+    datePublished: "2026-02-26",
     dateModified: LAST_UPDATED,
   });
 

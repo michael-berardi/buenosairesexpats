@@ -29,7 +29,7 @@ export const metadata: Metadata = {
     title: "Argentina Investment Visa - Business & Investor Guide 2026",
     description: "Invest in Argentina and gain residency. Requirements, business setup, and path to citizenship.",
     type: "article",
-    publishedTime: "2025-02-16",
+    publishedTime: "2026-02-26",
     modifiedTime: "2026-02-26",
   },
   alternates: {
@@ -165,7 +165,7 @@ export default function InvestmentVisaPage() {
     headline: "Argentina Investment Visa - Business & Investor Guide 2026",
     description: "Complete guide to Argentina's Investment Visa. Investment requirements, business setup, real estate options, and path to citizenship for investors.",
     url: "https://buenosairesexpats.com/visas/investment",
-    datePublished: "2025-02-16",
+    datePublished: "2026-02-26",
     dateModified: LAST_UPDATED,
   });
 

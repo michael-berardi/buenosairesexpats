@@ -72,7 +72,7 @@ export default function NationalityPage({ params }: { params: { country: string 
     headline: `Argentina Visa Requirements for ${country.name} Citizens - 2026 Guide`,
     description: `Complete guide for ${country.name} citizens traveling to Argentina. ${isVisaExempt ? `Visa-free entry for ${country.stayDuration} days.` : "Visa required before travel."}`,
     url: `https://buenosairesexpats.com/visas/nationalities/${country.slug}`,
-    datePublished: "2025-02-16",
+    datePublished: "2026-02-26",
     dateModified: LAST_UPDATED,
   });
 

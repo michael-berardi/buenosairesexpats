@@ -77,7 +77,7 @@ export default function PalermoPage() {
     headline: "Palermo Buenos Aires - Complete Neighborhood Guide for Expats",
     description: "The ultimate guide to Palermo, Buenos Aires' most popular neighborhood for expats. Soho, Hollywood, Botánico - find your perfect area.",
     url: "https://buenosairesexpats.com/neighborhoods/palermo",
-    datePublished: "2025-02-16",
+    datePublished: "2026-02-26",
     dateModified: "2026-02-26",
   });
 

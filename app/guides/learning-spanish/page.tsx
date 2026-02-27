@@ -80,7 +80,7 @@ export default function LearningSpanishPage() {
     headline: "Learning Spanish in Argentina - Complete Guide",
     description: "Master Argentine Spanish with our complete guide. Learn about voseo, lunfardo slang, best language schools in Buenos Aires, and tips for accelerated learning.",
     url: "https://buenosairesexpats.com/guides/learning-spanish",
-    datePublished: "2025-01-15",
+    datePublished: "2026-02-26",
     dateModified: "2026-02-26",
   });
 

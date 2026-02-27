@@ -98,7 +98,7 @@ export default function FoodDiningPage() {
     headline: "Food & Dining in Buenos Aires - Expat Guide",
     description: "Complete guide to food and dining in Buenos Aires. Best parrillas, vegetarian options, empanada guide, cafe culture, and delivery apps for expats.",
     url: "https://buenosairesexpats.com/guides/food-dining",
-    datePublished: "2025-01-15",
+    datePublished: "2026-02-26",
     dateModified: "2026-02-26",
   });
 

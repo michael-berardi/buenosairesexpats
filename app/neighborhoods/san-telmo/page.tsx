@@ -78,7 +78,7 @@ export default function SanTelmoPage() {
     headline: "San Telmo Buenos Aires - Historic & Bohemian Expat Guide",
     description: "Complete guide to San Telmo, Buenos Aires' oldest neighborhood. Cobblestone streets, tango culture, and authentic bohemian living.",
     url: "https://buenosairesexpats.com/neighborhoods/san-telmo",
-    datePublished: "2025-02-16",
+    datePublished: "2026-02-26",
     dateModified: "2026-02-26",
   });
 

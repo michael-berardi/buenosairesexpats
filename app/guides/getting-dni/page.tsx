@@ -169,7 +169,7 @@ export default function GettingDNIPage() {
     headline: "Getting Your DNI in Argentina - Step-by-Step Guide",
     description: "Complete step-by-step guide to obtaining your DNI (Documento Nacional de Identidad) in Argentina. Requirements by visa type, document checklist, and timeline.",
     url: "https://buenosairesexpats.com/guides/getting-dni",
-    datePublished: "2025-01-15",
+    datePublished: "2026-02-26",
     dateModified: "2026-02-26",
   });
 

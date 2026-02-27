@@ -48,7 +48,7 @@ export default function NationalitiesPage() {
     headline: "Argentina Visa Requirements by Nationality - Complete 2026 Guide",
     description: "Find Argentina visa requirements for your country. Check if you need a visa, how long you can stay, and entry requirements.",
     url: "https://buenosairesexpats.com/visas/nationalities",
-    datePublished: "2025-02-16",
+    datePublished: "2026-02-26",
     dateModified: LAST_UPDATED,
   });
 

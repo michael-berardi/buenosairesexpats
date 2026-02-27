@@ -75,7 +75,7 @@ export default function RecoletaPage() {
     headline: "Recoleta Buenos Aires - Luxury Neighborhood Guide for Expats",
     description: "Complete guide to Recoleta, Buenos Aires' most elegant and upscale neighborhood. Perfect for families and luxury living.",
     url: "https://buenosairesexpats.com/neighborhoods/recoleta",
-    datePublished: "2025-02-16",
+    datePublished: "2026-02-26",
     dateModified: "2026-02-26",
   });
 

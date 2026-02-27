@@ -245,7 +245,7 @@ export default function CulturalEtiquettePage() {
     headline: "Cultural Etiquette in Argentina - Expat Guide",
     description: "Complete guide to Argentine cultural etiquette. Greeting customs, dining etiquette, tipping culture, punctuality, conversation topics, and social norms for expats.",
     url: "https://buenosairesexpats.com/guides/cultural-etiquette",
-    datePublished: "2025-01-15",
+    datePublished: "2026-02-26",
     dateModified: "2026-02-26",
   });
 

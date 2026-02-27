@@ -29,7 +29,7 @@ export const metadata: Metadata = {
     title: "Argentina Retirement Visa - Pensionado Visa Guide 2026",
     description: "Retire in Argentina with your pension. Requirements, costs, and path to permanent residency.",
     type: "article",
-    publishedTime: "2025-02-16",
+    publishedTime: "2026-02-26",
     modifiedTime: "2026-02-26",
   },
   alternates: {
@@ -148,7 +148,7 @@ export default function RetirementVisaPage() {
     headline: "Argentina Retirement Visa - Pensionado Visa Guide 2026",
     description: "Complete guide to Argentina's Retirement Visa (Pensionado). Requirements, pension requirements, healthcare, and path to permanent residency for retirees.",
     url: "https://buenosairesexpats.com/visas/retirement",
-    datePublished: "2025-02-16",
+    datePublished: "2026-02-26",
     dateModified: LAST_UPDATED,
   });
 

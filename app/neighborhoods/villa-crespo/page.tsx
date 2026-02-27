@@ -78,7 +78,7 @@ export default function VillaCrespoPage() {
     headline: "Villa Crespo Buenos Aires - Up-and-Coming Value Guide",
     description: "Complete guide to Villa Crespo, Buenos Aires' best value neighborhood. Next to Palermo with outlet shopping and authentic character.",
     url: "https://buenosairesexpats.com/neighborhoods/villa-crespo",
-    datePublished: "2025-02-16",
+    datePublished: "2026-02-26",
     dateModified: "2026-02-26",
   });
 
