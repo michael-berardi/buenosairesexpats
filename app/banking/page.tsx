@@ -95,7 +95,7 @@ export default function BankingPage() {
               Banking & Money in Argentina
             </h1>
             <p className="text-xl text-muted-foreground mb-8">
-              Navigate Argentina's unique financial landscape. Understanding the blue dollar,
+              Navigate Argentina's unique financial system. Understanding the blue dollar,
               transferring money, and managing your finances as an expat.
             </p>
             <Button asChild size="lg" className="bg-sky-600 hover:bg-sky-500 text-white font-semibold">

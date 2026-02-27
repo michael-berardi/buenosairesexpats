@@ -114,7 +114,7 @@ const journeyCards = [
   {
     step: "03",
     title: "Already Settled",
-    description: "Find permanent housing, optimize your taxes, and connect with the expat community.",
+    description: "Find permanent housing, set up your taxes efficiently, and connect with the expat community.",
     image: "/images/hero-couple.jpg",
     links: [
       { label: "Housing", href: "/housing" },
@@ -275,7 +275,7 @@ export default function Home() {
           <div className="text-center max-w-2xl mx-auto mb-12">
             <h2 className="heading-lg mb-4">Explore by Your Situation</h2>
             <p className="text-body text-lg">
-              Whether you&apos;re still researching from abroad, just landed at Ezeiza, or have been here for years — we have guides tailored to your stage.
+              Whether you&apos;re still researching from abroad, just landed at Ezeiza, or have been here for years — we have guides for your specific situation.
               Pick where you are in the journey and get the most relevant resources.
             </p>
           </div>

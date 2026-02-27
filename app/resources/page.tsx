@@ -285,7 +285,7 @@ export default function ResourcesPage() {
                     <h3 className="text-xl font-bold mb-2">Immigration Support</h3>
                     <p className="text-muted-foreground mb-4">
                       Years of experience helping expats navigate visas, residency, and citizenship. 
-                      English-speaking support that understands the unique challenges foreigners face. 
+                      English-speaking support that understands the specific issues foreigners face. 
                       Lucero Legal's team of immigration attorneys have guided many of our community members through the process.
                     </p>
                     <div className="flex flex-wrap gap-2 mb-4">

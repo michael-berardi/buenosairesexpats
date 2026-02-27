@@ -323,7 +323,7 @@ export default function WorkingTaxesPage() {
             </h1>
             <p className="text-xl text-muted-foreground mb-4">
               The complete expat guide to working legally, understanding taxes, and navigating
-              Argentina&apos;s unique economic landscape in 2026.
+              Argentina&apos;s unique economic situation in 2026.
             </p>
             <p className="text-muted-foreground mb-8">
               Whether you&apos;re a remote worker, freelancer, or planning to start a business -
