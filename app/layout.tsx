@@ -5,6 +5,7 @@ import "./globals.css";
 import { Navbar } from "@/components/navbar";
 import { Footer } from "@/components/footer";
 import { StickyCTA } from "@/components/sticky-cta";
+import { I18nProvider } from "@/lib/i18n";
 import { generateOrganizationSchema, generateWebSiteSchema } from "@/lib/schema";
 
 const inter = Inter({
@@ -97,14 +98,16 @@ export default function RootLayout({
             document.documentElement.classList.add('reduce-motion');
           }
         `}} />
-        <a href="#main-content" className="skip-nav">
-          Skip to main content
-        </a>
-        <Navbar />
-        <main id="main-content">{children}</main>
-        <Footer />
-        <StickyCTA />
-        <Analytics />
+        <I18nProvider>
+          <a href="#main-content" className="skip-nav">
+            Skip to main content
+          </a>
+          <Navbar />
+          <main id="main-content">{children}</main>
+          <Footer />
+          <StickyCTA />
+          <Analytics />
+        </I18nProvider>
       </body>
     </html>
   );

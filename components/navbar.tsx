@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { useState } from "react";
-import { Menu, X, ChevronDown } from "lucide-react";
+import { Menu, Globe } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import {
   Sheet,
@@ -18,38 +18,54 @@ import {
   NavigationMenuList,
   NavigationMenuTrigger,
 } from "@/components/ui/navigation-menu";
-
-const visaItems = [
-  { title: "Digital Nomad Visa", href: "/visas/digital-nomad", description: "Work remotely from Argentina for up to 180 days" },
-  { title: "Work Visa", href: "/visas/work", description: "Employment-based residency options" },
-  { title: "Retirement Visa", href: "/visas/retirement", description: "Pension-based residency for retirees" },
-  { title: "Student Visa", href: "/visas/student", description: "Study at Argentine universities" },
-  { title: "Investment Visa", href: "/visas/investment", description: "Business and investment pathways" },
-  { title: "Visa by Nationality", href: "/visas/nationalities", description: "Check requirements for your country" },
-  { title: "Find Your Visa", href: "/visas/quiz", description: "Take our quiz to find the best visa for you" },
-];
-
-const guideItems = [
-  { title: "Cost of Living", href: "/cost-of-living", description: "Detailed breakdown of monthly expenses" },
-  { title: "Neighborhoods", href: "/neighborhoods", description: "Best areas to live in Buenos Aires" },
-  { title: "Dining Guide", href: "/dining", description: "Michelin-starred restaurants and fine dining" },
-  { title: "Healthcare", href: "/healthcare", description: "Insurance options and medical care" },
-  { title: "Banking", href: "/banking", description: "Setting up accounts and transferring money" },
-  { title: "Housing", href: "/housing", description: "Renting and buying property" },
-  { title: "Learning Spanish", href: "/guides/learning-spanish", description: "Language schools and tips for mastering Spanish" },
-  { title: "Getting Your DNI", href: "/guides/getting-dni", description: "Step-by-step guide to Argentine residency ID" },
-  { title: "Local Food Guide", href: "/guides/food-dining", description: "Everyday restaurants, cafes, and Argentine cuisine" },
-  { title: "Safety", href: "/guides/safety", description: "Staying safe and avoiding scams" },
-  { title: "Weather", href: "/guides/weather-climate", description: "Seasons and what to expect" },
-  { title: "Cultural Etiquette", href: "/guides/cultural-etiquette", description: "Customs, greetings, and social norms" },
-  { title: "Transportation", href: "/guides/transportation", description: "Subte, buses, taxis, and getting around" },
-  { title: "Working & Taxes", href: "/guides/working-taxes", description: "Remote work, monotributo, and tax obligations" },
-  { title: "Getting Started", href: "/guides/getting-started", description: "Your first 90 days checklist" },
-  { title: "Why Argentina?", href: "/why-argentina", description: "Honest look at why expats are choosing Buenos Aires" },
-];
+import { useTranslation } from "@/lib/i18n";
 
 export function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
+  const { locale, setLocale, t } = useTranslation();
+
+  const toggleLocale = () => {
+    setLocale(locale === "en" ? "es" : "en");
+  };
+
+  const visaItems = [
+    { key: "digitalNomad", href: "/visas/digital-nomad" },
+    { key: "work", href: "/visas/work" },
+    { key: "retirement", href: "/visas/retirement" },
+    { key: "student", href: "/visas/student" },
+    { key: "investment", href: "/visas/investment" },
+    { key: "nationality", href: "/visas/nationalities" },
+    { key: "quiz", href: "/visas/quiz" },
+  ];
+
+  const guideItems = [
+    { key: "costOfLiving", href: "/cost-of-living" },
+    { key: "neighborhoods", href: "/neighborhoods" },
+    { key: "dining", href: "/dining" },
+    { key: "healthcare", href: "/healthcare" },
+    { key: "banking", href: "/banking" },
+    { key: "housing", href: "/housing" },
+    { key: "learningSpanish", href: "/guides/learning-spanish" },
+    { key: "gettingDNI", href: "/guides/getting-dni" },
+    { key: "foodDining", href: "/guides/food-dining" },
+    { key: "safety", href: "/guides/safety" },
+    { key: "weather", href: "/guides/weather-climate" },
+    { key: "culturalEtiquette", href: "/guides/cultural-etiquette" },
+    { key: "transportation", href: "/guides/transportation" },
+    { key: "workingTaxes", href: "/guides/working-taxes" },
+    { key: "gettingStarted", href: "/guides/getting-started" },
+    { key: "whyArgentina", href: "/why-argentina" },
+  ];
+
+  const getVisaItem = (key: string) => {
+    const items = t(`visaItems.${key}`) as Record<string, string>;
+    return items || { title: key, description: "" };
+  };
+
+  const getGuideItem = (key: string) => {
+    const items = t(`guideItems.${key}`) as Record<string, string>;
+    return items || { title: key, description: "" };
+  };
 
   return (
     <header className="sticky top-0 z-50 w-full border-b border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
@@ -69,64 +85,81 @@ export function Navbar() {
           <NavigationMenu>
             <NavigationMenuList>
               <NavigationMenuItem>
-                <NavigationMenuTrigger>Visas</NavigationMenuTrigger>
+                <NavigationMenuTrigger>{t("navigation.visas") as string}</NavigationMenuTrigger>
                 <NavigationMenuContent>
                   <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2">
-                    {visaItems.map((item) => (
-                      <li key={item.title}>
-                        <NavigationMenuLink asChild>
-                          <Link
-                            href={item.href}
-                            className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground"
-                          >
-                            <div className="text-sm font-medium leading-none">{item.title}</div>
-                            <p className="line-clamp-2 text-sm leading-snug text-muted-foreground">
-                              {item.description}
-                            </p>
-                          </Link>
-                        </NavigationMenuLink>
-                      </li>
-                    ))}
+                    {visaItems.map((item) => {
+                      const visaData = getVisaItem(item.key);
+                      return (
+                        <li key={item.key}>
+                          <NavigationMenuLink asChild>
+                            <Link
+                              href={item.href}
+                              className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground"
+                            >
+                              <div className="text-sm font-medium leading-none">{visaData.title}</div>
+                              <p className="line-clamp-2 text-sm leading-snug text-muted-foreground">
+                                {visaData.description}
+                              </p>
+                            </Link>
+                          </NavigationMenuLink>
+                        </li>
+                      );
+                    })}
                   </ul>
                 </NavigationMenuContent>
               </NavigationMenuItem>
 
               <NavigationMenuItem>
-                <NavigationMenuTrigger>Guides</NavigationMenuTrigger>
+                <NavigationMenuTrigger>{t("navigation.guides") as string}</NavigationMenuTrigger>
                 <NavigationMenuContent>
                   <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2">
-                    {guideItems.map((item) => (
-                      <li key={item.title}>
-                        <NavigationMenuLink asChild>
-                          <Link
-                            href={item.href}
-                            className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground"
-                          >
-                            <div className="text-sm font-medium leading-none">{item.title}</div>
-                            <p className="line-clamp-2 text-sm leading-snug text-muted-foreground">
-                              {item.description}
-                            </p>
-                          </Link>
-                        </NavigationMenuLink>
-                      </li>
-                    ))}
+                    {guideItems.map((item) => {
+                      const guideData = getGuideItem(item.key);
+                      return (
+                        <li key={item.key}>
+                          <NavigationMenuLink asChild>
+                            <Link
+                              href={item.href}
+                              className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground"
+                            >
+                              <div className="text-sm font-medium leading-none">{guideData.title}</div>
+                              <p className="line-clamp-2 text-sm leading-snug text-muted-foreground">
+                                {guideData.description}
+                              </p>
+                            </Link>
+                          </NavigationMenuLink>
+                        </li>
+                      );
+                    })}
                   </ul>
                 </NavigationMenuContent>
               </NavigationMenuItem>
 
               <NavigationMenuItem>
                 <Link href="/stories" className="group inline-flex h-10 w-max items-center justify-center rounded-md bg-background px-4 py-2 text-sm font-medium transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground focus:outline-none disabled:pointer-events-none disabled:opacity-50">
-                  Stories
+                  {t("navigation.stories") as string}
                 </Link>
               </NavigationMenuItem>
             </NavigationMenuList>
           </NavigationMenu>
         </div>
 
-        {/* CTA Button */}
-        <div className="hidden lg:flex items-center gap-4">
+        {/* CTA Button & Language Switcher */}
+        <div className="hidden lg:flex items-center gap-2">
+          <Button
+            variant="ghost"
+            size="sm"
+            onClick={toggleLocale}
+            className="flex items-center gap-1.5"
+          >
+            <Globe className="w-4 h-4" />
+            <span className="font-medium">{locale === "en" ? "ES" : "EN"}</span>
+          </Button>
           <Button asChild size="sm" className="bg-sky-700 hover:bg-sky-600 text-white font-semibold shadow-md hover:shadow-lg transition-all">
-            <Link href="https://lucerolegal.org?utm_source=buenosairesexpats&utm_medium=navbar" target="_blank" rel="noopener noreferrer">Free Consultation</Link>
+            <Link href="https://lucerolegal.org?utm_source=buenosairesexpats&utm_medium=navbar" target="_blank" rel="noopener noreferrer">
+              {t("navigation.freeConsultation") as string}
+            </Link>
           </Button>
         </div>
 
@@ -140,63 +173,82 @@ export function Navbar() {
           </SheetTrigger>
           <SheetContent side="right" className="w-[300px] sm:w-[400px]">
             <div className="flex flex-col gap-6 py-6">
-              <div className="flex items-center gap-2">
-                <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-primary text-primary-foreground font-bold text-lg">
-                  BA
+              <div className="flex items-center justify-between">
+                <div className="flex items-center gap-2">
+                  <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-primary text-primary-foreground font-bold text-lg">
+                    BA
+                  </div>
+                  <span className="font-bold text-xl">Buenos Aires Expats</span>
                 </div>
-                <span className="font-bold text-xl">Buenos Aires Expats</span>
+                <Button
+                  variant="ghost"
+                  size="sm"
+                  onClick={toggleLocale}
+                  className="flex items-center gap-1"
+                >
+                  <Globe className="w-4 h-4" />
+                  {locale === "en" ? "ES" : "EN"}
+                </Button>
               </div>
 
               <nav className="flex flex-col gap-4">
                 <div className="text-sm font-semibold text-muted-foreground uppercase tracking-wider">
-                  Visas
+                  {t("navigation.visas") as string}
                 </div>
-                {visaItems.map((item) => (
-                  <SheetClose asChild key={item.title}>
-                    <Link
-                      href={item.href}
-                      className="text-foreground hover:text-primary transition-colors"
-                    >
-                      {item.title}
-                    </Link>
-                  </SheetClose>
-                ))}
+                {visaItems.map((item) => {
+                  const visaData = getVisaItem(item.key);
+                  return (
+                    <SheetClose asChild key={item.key}>
+                      <Link
+                        href={item.href}
+                        className="text-foreground hover:text-primary transition-colors"
+                      >
+                        {visaData.title}
+                      </Link>
+                    </SheetClose>
+                  );
+                })}
 
                 <div className="text-sm font-semibold text-muted-foreground uppercase tracking-wider mt-4">
-                  Guides
+                  {t("navigation.guides") as string}
                 </div>
-                {guideItems.map((item) => (
-                  <SheetClose asChild key={item.title}>
-                    <Link
-                      href={item.href}
-                      className="text-foreground hover:text-primary transition-colors"
-                    >
-                      {item.title}
-                    </Link>
-                  </SheetClose>
-                ))}
+                {guideItems.map((item) => {
+                  const guideData = getGuideItem(item.key);
+                  return (
+                    <SheetClose asChild key={item.key}>
+                      <Link
+                        href={item.href}
+                        className="text-foreground hover:text-primary transition-colors"
+                      >
+                        {guideData.title}
+                      </Link>
+                    </SheetClose>
+                  );
+                })}
 
                 <div className="border-t border-border my-4" />
 
                 <SheetClose asChild>
                   <Link href="/stories" className="text-foreground hover:text-primary transition-colors">
-                    Stories
+                    {t("navigation.stories") as string}
                   </Link>
                 </SheetClose>
                 <SheetClose asChild>
                   <Link href="/why-argentina" className="text-foreground hover:text-primary transition-colors">
-                    Why Argentina?
+                    {t("navigation.whyArgentina") as string}
                   </Link>
                 </SheetClose>
                 <SheetClose asChild>
                   <Link href="/about" className="text-foreground hover:text-primary transition-colors">
-                    About
+                    {t("navigation.about") as string}
                   </Link>
                 </SheetClose>
               </nav>
 
               <Button asChild className="mt-4 bg-sky-700 hover:bg-sky-600 text-white font-semibold">
-                <Link href="https://lucerolegal.org?utm_source=buenosairesexpats&utm_medium=mobile_nav" target="_blank" rel="noopener noreferrer">Free Consultation</Link>
+                <Link href="https://lucerolegal.org?utm_source=buenosairesexpats&utm_medium=mobile_nav" target="_blank" rel="noopener noreferrer">
+                  {t("navigation.freeConsultation") as string}
+                </Link>
               </Button>
             </div>
           </SheetContent>

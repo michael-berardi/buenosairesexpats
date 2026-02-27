@@ -1,0 +1,230 @@
+{
+  "navigation": {
+    "visas": "Visas",
+    "guides": "Guías",
+    "stories": "Historias",
+    "about": "Nosotros",
+    "freeConsultation": "Consulta Gratis",
+    "whyArgentina": "¿Por qué Argentina?"
+  },
+  "visaItems": {
+    "digitalNomad": {
+      "title": "Visa Nómada Digital",
+      "description": "Trabaja remotamente desde Argentina hasta 180 días"
+    },
+    "work": {
+      "title": "Visa de Trabajo",
+      "description": "Opciones de residencia basadas en empleo"
+    },
+    "retirement": {
+      "title": "Visa de Jubilación",
+      "description": "Residencia basada en pensión para jubilados"
+    },
+    "student": {
+      "title": "Visa de Estudiante",
+      "description": "Estudia en universidades argentinas"
+    },
+    "investment": {
+      "title": "Visa de Inversión",
+      "description": "Vías de negocios e inversión"
+    },
+    "nationality": {
+      "title": "Visa por Nacionalidad",
+      "description": "Verifica requisitos para tu país"
+    },
+    "quiz": {
+      "title": "Encuentra tu Visa",
+      "description": "Toma nuestro quiz para encontrar la mejor visa para ti"
+    }
+  },
+  "guideItems": {
+    "costOfLiving": {
+      "title": "Costo de Vida",
+      "description": "Desglose detallado de gastos mensuales"
+    },
+    "neighborhoods": {
+      "title": "Barrios",
+      "description": "Mejores áreas para vivir en Buenos Aires"
+    },
+    "dining": {
+      "title": "Guía Gastronómica",
+      "description": "Restaurantes con estrella Michelin y alta cocina"
+    },
+    "healthcare": {
+      "title": "Salud",
+      "description": "Opciones de seguros y atención médica"
+    },
+    "banking": {
+      "title": "Banca",
+      "description": "Configurar cuentas y transferir dinero"
+    },
+    "housing": {
+      "title": "Vivienda",
+      "description": "Alquiler y compra de propiedades"
+    },
+    "learningSpanish": {
+      "title": "Aprender Español",
+      "description": "Escuelas de idiomas y consejos para dominar el español"
+    },
+    "gettingDNI": {
+      "title": "Obtener tu DNI",
+      "description": "Guía paso a paso para el ID de residencia argentina"
+    },
+    "foodDining": {
+      "title": "Guía de Comida Local",
+      "description": "Restaurantes cotidianos, cafés y cocina argentina"
+    },
+    "safety": {
+      "title": "Seguridad",
+      "description": "Mantente seguro y evita estafas"
+    },
+    "weather": {
+      "title": "Clima",
+      "description": "Estaciones y qué esperar"
+    },
+    "culturalEtiquette": {
+      "title": "Etiqueta Cultural",
+      "description": "Costumbres, saludos y normas sociales"
+    },
+    "transportation": {
+      "title": "Transporte",
+      "description": "Subte, colectivos, taxis y cómo moverse"
+    },
+    "workingTaxes": {
+      "title": "Trabajo e Impuestos",
+      "description": "Trabajo remoto, monotributo y obligaciones fiscales"
+    },
+    "gettingStarted": {
+      "title": "Primeros Pasos",
+      "description": "Lista de verificación para tus primeros 90 días"
+    },
+    "whyArgentina": {
+      "title": "¿Por qué Argentina?",
+      "description": "Mirada honesta de por qué expats eligen Buenos Aires"
+    }
+  },
+  "homepage": {
+    "hero": {
+      "badge": "Actualizado Febrero 2026",
+      "title": "Tu Guía Honesta para la Vida en Buenos Aires",
+      "subtitle": "Información real sobre mudarse a Argentina. Guías de visas, desglose de costos, reseñas de barrios y una comunidad de expats que dieron el salto.",
+      "exploreVisas": "Explorar Opciones de Visa",
+      "freeConsultation": "Consulta Legal Gratis"
+    },
+    "stats": {
+      "guides": "Guías Detalladas",
+      "stories": "Historias Reales",
+      "neighborhoods": "Barrios Cubiertos",
+      "visaPathways": "Vías de Visa"
+    },
+    "features": {
+      "title": "Todo lo que Necesitas para Mudarte",
+      "subtitle": "Guías completas escritas por expats que realmente lo hicieron. Sin relleno, sin azúcar, solo información práctica.",
+      "visaGuides": {
+        "title": "Guías de Visas",
+        "description": "Instrucciones paso a paso para visas de Nómada Digital, trabajo, jubilación y estudiante.",
+        "cta": "Explorar visas"
+      },
+      "costOfLiving": {
+        "title": "Costo de Vida",
+        "description": "Desglose real de presupuestos y calculadoras de costos para Buenos Aires y más allá.",
+        "cta": "Ver costos"
+      },
+      "neighborhoods": {
+        "title": "Guías de Barrios",
+        "description": "Reseñas detalladas de Palermo, Recoleta, Belgrano y otras áreas top para expats.",
+        "cta": "Comparar barrios"
+      },
+      "healthcare": {
+        "title": "Salud",
+        "description": "Navega seguros de prepaga, encuentra médicos que hablan inglés y entiende el sistema.",
+        "cta": "Ver opciones"
+      },
+      "housing": {
+        "title": "Vivienda",
+        "description": "Consejos de alquiler, guías de búsqueda de apartamentos y asesoramiento inmobiliario para extranjeros.",
+        "cta": "Encontrar vivienda"
+      },
+      "expatStories": {
+        "title": "Historias de Expats",
+        "description": "Experiencias reales de expats que se mudaron. Aprende de sus éxitos y errores.",
+        "cta": "Leer historias"
+      }
+    },
+    "situation": {
+      "title": "Explora según tu Situación",
+      "subtitle": "Ya sea que aún estés investigando o ya estés aquí, encuentra las guías que más te importan.",
+      "planning": {
+        "title": "Planeando Mudarme",
+        "description": "Investiga costos, compara opciones de visa y entiende qué esperar antes de llegar."
+      },
+      "arrived": {
+        "title": "Recién Llegado",
+        "description": "Configúrate con lo esencial: tu DNI, salud, banca y navegar la ciudad."
+      },
+      "settled": {
+        "title": "Ya Establecido",
+        "description": "Encuentra vivienda permanente, optimiza tus impuestos y conecta con la comunidad expat."
+      }
+    },
+    "popular": {
+      "title": "Guías Más Populares",
+      "subtitle": "Comienza con estos recursos esenciales",
+      "whyBA": "¿Por qué Buenos Aires?",
+      "digitalNomad": {
+        "badge": "Más Popular",
+        "title": "Visa Nómada Digital Argentina",
+        "description": "Guía completa de la visa de trabajo remoto de 180 días, incluyendo requisitos, proceso de aplicación y consejos para aprobación.",
+        "cta": "Leer Guía"
+      },
+      "costOfLiving": {
+        "badge": "Actualizado Mensual",
+        "title": "Costo de Vida en Buenos Aires",
+        "description": "Presupuestos reales 2026 para solteros, parejas y familias. Incluye alquiler, comida, salud y entretenimiento.",
+        "cta": "Ver Costos"
+      },
+      "expatStories": {
+        "badge": "Historias",
+        "title": "Experiencias Reales de Expats",
+        "description": "Lee relatos honestos de expats que se mudaron a Buenos Aires. Aprende qué funcionó y qué no.",
+        "cta": "Leer Historias"
+      }
+    },
+    "newsletter": {
+      "title": "Recibe las Últimas Actualizaciones",
+      "subtitle": "Recibe actualizaciones semanales sobre cambios de visa, costo de vida y consejos internos para vivir en Buenos Aires.",
+      "placeholder": "tu@email.com",
+      "subscribe": "Suscribirse",
+      "privacy": "Sin spam, cancela cuando quieras. Respetamos tu privacidad."
+    },
+    "testimonials": {
+      "title": "Lo que Dicen los Expats",
+      "subtitle": "Historias reales de expats que dieron el paso"
+    },
+    "disclaimer": "La información en este sitio es solo para fines educativos y no constituye asesoramiento legal. Las leyes de inmigración cambian frecuentemente."
+  },
+  "footer": {
+    "description": "Recursos honestos para expats considerando mudarse a Buenos Aires. Información real sobre visas, costos y vida en Argentina.",
+    "sections": {
+      "visas": "Visas",
+      "guides": "Guías",
+      "resources": "Recursos",
+      "legal": "Servicios Legales",
+      "company": "Empresa"
+    },
+    "legalServices": [
+      { "label": "Consulta Gratis" },
+      { "label": "Asistencia de Visa" },
+      { "label": "Ayuda de Residencia" }
+    ],
+    "viaLucero": "vía Lucero Legal",
+    "copyright": "Todos los derechos reservados.",
+    "educational": "La información proporcionada es solo para fines educativos. Para asistencia de visa, recomendamos",
+    "luceroLegal": "Lucero Legal"
+  },
+  "common": {
+    "readMore": "Leer Más",
+    "learnMore": "Saber Más",
+    "getStarted": "Comenzar"
+  }
+}

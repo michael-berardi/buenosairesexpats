@@ -1,43 +1,63 @@
+"use client";
+
 import Link from "next/link";
 import { Separator } from "@/components/ui/separator";
+import { useTranslation } from "@/lib/i18n";
 
-const footerLinks = {
-  visas: [
-    { label: "Digital Nomad Visa", href: "/visas/digital-nomad" },
-    { label: "Work Visa", href: "/visas/work" },
-    { label: "Retirement Visa", href: "/visas/retirement" },
-    { label: "Student Visa", href: "/visas/student" },
-    { label: "Visa by Nationality", href: "/visas/nationalities" },
-  ],
-  guides: [
-    { label: "Cost of Living", href: "/cost-of-living" },
-    { label: "Neighborhoods", href: "/neighborhoods" },
-    { label: "Healthcare", href: "/healthcare" },
-    { label: "Banking", href: "/banking" },
-    { label: "Housing", href: "/housing" },
-    { label: "Transportation", href: "/guides/transportation" },
-    { label: "Working & Taxes", href: "/guides/working-taxes" },
-    { label: "Getting Started", href: "/guides/getting-started" },
-  ],
-  resources: [
-    { label: "Expat Stories", href: "/stories" },
-    { label: "Why Argentina?", href: "/why-argentina" },
+export function Footer() {
+  const { t } = useTranslation();
+
+  const visaLinks = [
+    { key: "digitalNomad", href: "/visas/digital-nomad" },
+    { key: "work", href: "/visas/work" },
+    { key: "retirement", href: "/visas/retirement" },
+    { key: "student", href: "/visas/student" },
+    { key: "nationality", href: "/visas/nationalities" },
+  ];
+
+  const guideLinks = [
+    { key: "costOfLiving", href: "/cost-of-living" },
+    { key: "neighborhoods", href: "/neighborhoods" },
+    { key: "healthcare", href: "/healthcare" },
+    { key: "banking", href: "/banking" },
+    { key: "housing", href: "/housing" },
+    { key: "transportation", href: "/guides/transportation" },
+    { key: "workingTaxes", href: "/guides/working-taxes" },
+    { key: "gettingStarted", href: "/guides/getting-started" },
+  ];
+
+  const resourceLinks = [
+    { label: t("navigation.stories") as string, href: "/stories" },
+    { label: t("navigation.whyArgentina") as string, href: "/why-argentina" },
     { label: "Newsletter", href: "/newsletter" },
-  ],
-  legal: [
-    { label: "Free Consultation", href: "https://lucerolegal.org?utm_source=buenosairesexpats&utm_medium=footer", external: true },
-    { label: "Visa Assistance", href: "https://lucerolegal.org?utm_source=buenosairesexpats&utm_medium=footer", external: true },
-    { label: "Residency Help", href: "https://lucerolegal.org?utm_source=buenosairesexpats&utm_medium=footer", external: true },
-  ],
-  company: [
-    { label: "About Us", href: "/about" },
+  ];
+
+  const companyLinks = [
+    { label: t("footer.sections.company") as string, href: "/about" },
     { label: "Contact", href: "/contact" },
     { label: "Privacy Policy", href: "/privacy" },
     { label: "Terms", href: "/terms" },
-  ],
-};
+  ];
 
-export function Footer() {
+  const getVisaLabel = (key: string) => {
+    const item = t(`visaItems.${key}`) as Record<string, string>;
+    return item?.title || key;
+  };
+
+  const getGuideLabel = (key: string) => {
+    const item = t(`guideItems.${key}`) as Record<string, string>;
+    return item?.title || key;
+  };
+
+  const legalResult = t("footer.legalServices");
+  const legalServices: { label: string }[] = Array.isArray(legalResult) 
+    ? legalResult as { label: string }[]
+    : [
+        { label: "Free Consultation" },
+        { label: "Visa Assistance" },
+        { label: "Residency Help" },
+      ];
+
   return (
     <footer className="border-t bg-white">
       <div className="container mx-auto px-4 py-16 md:py-20">
@@ -51,8 +71,7 @@ export function Footer() {
               <span className="font-bold text-xl">Buenos Aires Expats</span>
             </Link>
             <p className="text-sm text-muted-foreground max-w-xs">
-              Honest resources for expats considering a move to Buenos Aires.
-              Real talk about visas, costs, and life in Argentina.
+              {t("footer.description") as string}
             </p>
             <p className="text-sm text-muted-foreground mt-2">
               <a href="mailto:hello@buenosairesexpats.com" className="hover:text-foreground transition-colors">
@@ -63,15 +82,15 @@ export function Footer() {
 
           {/* Visas */}
           <div>
-            <h3 className="text-sm font-semibold text-foreground mb-3 uppercase tracking-wide">Visas</h3>
+            <h3 className="text-sm font-semibold text-foreground mb-3 uppercase tracking-wide">{t("footer.sections.visas") as string}</h3>
             <ul className="space-y-2">
-              {footerLinks.visas.map((link) => (
+              {visaLinks.map((link) => (
                 <li key={link.href}>
                   <Link
                     href={link.href}
                     className="text-sm text-muted-foreground hover:text-foreground transition-colors"
                   >
-                    {link.label}
+                    {getVisaLabel(link.key)}
                   </Link>
                 </li>
               ))}
@@ -80,15 +99,15 @@ export function Footer() {
 
           {/* Guides */}
           <div>
-            <h3 className="text-sm font-semibold text-foreground mb-3 uppercase tracking-wide">Guides</h3>
+            <h3 className="text-sm font-semibold text-foreground mb-3 uppercase tracking-wide">{t("footer.sections.guides") as string}</h3>
             <ul className="space-y-2">
-              {footerLinks.guides.map((link) => (
+              {guideLinks.map((link) => (
                 <li key={link.href}>
                   <Link
                     href={link.href}
                     className="text-sm text-muted-foreground hover:text-foreground transition-colors"
                   >
-                    {link.label}
+                    {getGuideLabel(link.key)}
                   </Link>
                 </li>
               ))}
@@ -97,9 +116,9 @@ export function Footer() {
 
           {/* Resources */}
           <div>
-            <h3 className="text-sm font-semibold text-foreground mb-3 uppercase tracking-wide">Resources</h3>
+            <h3 className="text-sm font-semibold text-foreground mb-3 uppercase tracking-wide">{t("footer.sections.resources") as string}</h3>
             <ul className="space-y-2">
-              {footerLinks.resources.map((link) => (
+              {resourceLinks.map((link) => (
                 <li key={link.href}>
                   <Link
                     href={link.href}
@@ -114,31 +133,31 @@ export function Footer() {
 
           {/* Legal Services */}
           <div>
-            <h3 className="text-sm font-semibold text-foreground mb-3 uppercase tracking-wide">Legal Services</h3>
+            <h3 className="text-sm font-semibold text-foreground mb-3 uppercase tracking-wide">{t("footer.sections.legal") as string}</h3>
             <ul className="space-y-2">
-              {footerLinks.legal.map((link) => (
-                <li key={link.label}>
+              {legalServices.map((service, idx) => (
+                <li key={idx}>
                   <Link
-                    href={link.href}
+                    href="https://lucerolegal.org?utm_source=buenosairesexpats&utm_medium=footer"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-sm text-muted-foreground hover:text-foreground transition-colors"
                   >
-                    {link.label}
+                    {service.label}
                   </Link>
                 </li>
               ))}
               <li>
-                <span className="text-xs text-muted-foreground/60">via Lucero Legal</span>
+                <span className="text-xs text-muted-foreground/60">{t("footer.viaLucero") as string}</span>
               </li>
             </ul>
           </div>
 
           {/* Company */}
           <div>
-            <h3 className="text-sm font-semibold text-foreground mb-3 uppercase tracking-wide">Company</h3>
+            <h3 className="text-sm font-semibold text-foreground mb-3 uppercase tracking-wide">{t("footer.sections.company") as string}</h3>
             <ul className="space-y-2">
-              {footerLinks.company.map((link) => (
+              {companyLinks.map((link) => (
                 <li key={link.href}>
                   <Link
                     href={link.href}
@@ -156,13 +175,12 @@ export function Footer() {
 
         <div className="flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="text-sm text-muted-foreground">
-            © {new Date().getFullYear()} Buenos Aires Expats. All rights reserved.
+            © {new Date().getFullYear()} Buenos Aires Expats. {t("footer.copyright") as string}
           </p>
           <p className="text-xs text-muted-foreground text-center md:text-right">
-            Information provided is for educational purposes only. 
-            For visa assistance, we recommend{" "}
+            {t("footer.educational") as string}{" "}
             <Link href="https://lucerolegal.org" className="underline hover:text-foreground">
-              Lucero Legal
+              {t("footer.luceroLegal") as string}
             </Link>.
           </p>
         </div>
