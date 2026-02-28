@@ -15,25 +15,26 @@ import {
 } from "lucide-react";
 import { LastUpdated } from "@/components/last-updated";
 import { LuceroLegalCTA } from "@/components/lucero-legal-cta";
+import { StructuredData } from "@/components/structured-data";
 import { generateArticleSchema, generateHowToSchema, generateFAQPageSchema } from "@/lib/schema";
 
 export const metadata: Metadata = {
-  title: "Argentina Digital Nomad Visa - Complete 2025 Guide",
+  title: "Argentina Digital Nomad Visa - Complete 2026 Guide",
   description: "Everything you need to know about Argentina's Digital Nomad Visa. Requirements, application process, costs, and tips for remote workers in 2026.",
   keywords: ["Argentina digital nomad visa", "remote work Argentina", "digital nomad Buenos Aires", "Argentina visa 2026"],
   openGraph: {
-    title: "Argentina Digital Nomad Visa - Complete 2025 Guide",
+    title: "Argentina Digital Nomad Visa - Complete 2026 Guide",
     description: "Work remotely from Argentina for up to 180 days. Step-by-step application guide.",
     type: "article",
-    publishedTime: "2025-02-27",
-    modifiedTime: "2025-02-27",
+    publishedTime: "2026-02-27",
+    modifiedTime: "2026-02-27",
   },
   alternates: {
     canonical: "https://buenosairesexpats.com/visas/digital-nomad",
   },
 };
 
-const LAST_UPDATED = "2025-02-27";
+const LAST_UPDATED = "2026-02-27";
 
 const requirements = [
   {
@@ -147,18 +148,9 @@ export default function DigitalNomadVisaPage() {
   return (
     <div className="flex flex-col min-h-screen">
       {/* Structured Data */}
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(howToSchema) }}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
-      />
+      <StructuredData data={articleSchema} />
+      <StructuredData data={howToSchema} />
+      <StructuredData data={faqSchema} />
 
       {/* Breadcrumb */}
       <div className="border-b bg-stone-50">

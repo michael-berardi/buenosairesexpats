@@ -5,6 +5,7 @@ import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/com
 import { Badge } from "@/components/ui/badge";
 import { LuceroLegalCTA } from "@/components/lucero-legal-cta";
 import { StructuredData } from "@/components/structured-data";
+import { LastUpdated } from "@/components/last-updated";
 import { generateBreadcrumbSchema, generateArticleSchema } from "@/lib/schema";
 import {
   Users,
@@ -31,8 +32,11 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Cultural Etiquette in Argentina - Expat Guide",
     description: "Navigate Argentine social customs like a local. Greetings, dining, tipping, and conversation etiquette.",
+    type: "article",
   },
 };
+
+const LAST_UPDATED = "2026-02-26";
 
 const greetingCustoms = [
   {
@@ -293,6 +297,7 @@ export default function CulturalEtiquettePage() {
                 <span>Punctuality is... flexible</span>
               </div>
             </div>
+            <LastUpdated date={LAST_UPDATED} />
           </div>
         </div>
       </section>
@@ -466,7 +471,7 @@ export default function CulturalEtiquettePage() {
                     <div className="flex items-center justify-between">
                       <CardTitle className="text-lg">{topic.topic}</CardTitle>
                       <div className="flex items-center gap-2">
-                        <topic.icon className={`w-5 h-5 text-${topic.color}-500`} />
+                        <topic.icon className={`w-5 h-5 ${topic.color === "green" ? "text-green-500" : topic.color === "amber" ? "text-amber-500" : "text-red-500"}`} />
                         <Badge variant={topic.color === "green" ? "default" : topic.color === "amber" ? "secondary" : "destructive"}>
                           {topic.status}
                         </Badge>

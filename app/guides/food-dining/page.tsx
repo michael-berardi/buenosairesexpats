@@ -3,8 +3,8 @@ import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { DesktopOnly, MobileOnly } from "@/components/desktop-only";
 import { StructuredData } from "@/components/structured-data";
+import { LastUpdated } from "@/components/last-updated";
 import { generateBreadcrumbSchema, generateArticleSchema } from "@/lib/schema";
 import {
   Utensils,
@@ -19,8 +19,7 @@ import {
   Star,
   AlertCircle,
   ArrowRight,
-  Flame,
-  ChefHat
+  Flame
 } from "lucide-react";
 
 export const metadata: Metadata = {
@@ -33,8 +32,11 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Food & Dining in Buenos Aires - Expat Guide",
     description: "Best restaurants, parrillas, cafes, and food culture in Buenos Aires. Real prices and local tips.",
+    type: "article",
   },
 };
+
+const LAST_UPDATED = "2026-02-26";
 
 const parrillas = [
   { name: "Don Julio", neighborhood: "Palermo", price: "$$$$", notes: "World-famous, book weeks ahead", specialty: "Bife de chorizo" },
@@ -153,6 +155,7 @@ export default function FoodDiningPage() {
                 <span>Palermo = food hub</span>
               </div>
             </div>
+            <LastUpdated date={LAST_UPDATED} />
           </div>
         </div>
       </section>

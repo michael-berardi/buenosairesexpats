@@ -18,6 +18,11 @@ export const metadata: Metadata = {
   title: "Argentina Visa Options for Expats",
   description: "Compare all Argentina visa options for expats. Digital Nomad, Work, Retirement, Student, and Investment visas explained with requirements and costs.",
   keywords: ["Argentina visa options", "Argentina visas for expats", "move to Argentina visa", "Argentina immigration"],
+  openGraph: {
+    title: "Argentina Visa Options for Expats",
+    description: "Compare all Argentina visa options. Digital Nomad, Work, Retirement, Student, and Investment visas explained.",
+    images: [{ url: "/images/og-image.jpg", width: 1200, height: 630, alt: "Argentina Visa Options" }],
+  },
   alternates: {
     canonical: "https://buenosairesexpats.com/visas",
   },

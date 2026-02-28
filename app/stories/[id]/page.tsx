@@ -38,6 +38,9 @@ export async function generateMetadata({ params }: { params: Promise<{ id: strin
       type: "article",
       publishedTime: story.publishedAt,
     },
+    alternates: {
+      canonical: `https://buenosairesexpats.com/stories/${id}`,
+    },
   };
 }
 

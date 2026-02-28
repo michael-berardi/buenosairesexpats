@@ -80,8 +80,8 @@ export default function NewsletterPage() {
               The Buenos Aires Expats Newsletter
             </h1>
             <p className="text-xl text-muted-foreground mb-8">
-              Join thousands of expats exploring life in Buenos Aires. Weekly tips on visas, 
-              neighborhoods, cost of living updates, and real talk about making the move to Argentina.
+              Get weekly tips on visas, neighborhoods, cost of living updates, and real talk
+              about making the move to Argentina. Be the first to know when we launch.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button asChild size="lg" className="bg-sky-600 hover:bg-sky-500">
@@ -101,7 +101,7 @@ export default function NewsletterPage() {
       </section>
 
       {/* What You'll Get */}
-      <section className="py-16 md:py-20 bg-white">
+      <section className="py-16 md:py-20 bg-background">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <div className="text-center mb-12">
@@ -135,9 +135,9 @@ export default function NewsletterPage() {
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto">
             <div className="text-center mb-12">
-              <h2 className="text-3xl font-bold mb-4">Recent Topics We've Covered</h2>
+              <h2 className="text-3xl font-bold mb-4">Topics We'll Cover</h2>
               <p className="text-muted-foreground">
-                A sample of the practical advice and updates our subscribers receive.
+                A preview of the practical advice and updates you'll receive.
               </p>
             </div>
 
@@ -158,7 +158,7 @@ export default function NewsletterPage() {
       </section>
 
       {/* Why Subscribe */}
-      <section className="py-16 bg-white">
+      <section className="py-16 bg-background">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto text-center">
             <h2 className="text-3xl font-bold mb-6">Why Subscribe?</h2>
@@ -189,7 +189,7 @@ export default function NewsletterPage() {
             <Mail className="w-12 h-12 mx-auto mb-6 text-sky-200" />
             <h2 className="text-3xl md:text-4xl font-bold mb-4">Ready to Stay Informed?</h2>
             <p className="text-sky-100 text-lg mb-8">
-              Join our community of future and current Buenos Aires expats. 
+              Be among the first to receive our Buenos Aires expat newsletter.
               No spam, unsubscribe anytime.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">

@@ -12,6 +12,7 @@ export function Footer() {
     { key: "work", href: "/visas/work" },
     { key: "retirement", href: "/visas/retirement" },
     { key: "student", href: "/visas/student" },
+    { key: "investment", href: "/visas/investment" },
     { key: "nationality", href: "/visas/nationalities" },
   ];
 
@@ -29,11 +30,14 @@ export function Footer() {
   const resourceLinks = [
     { label: t("navigation.stories") as string, href: "/stories" },
     { label: t("navigation.whyArgentina") as string, href: "/why-argentina" },
+    { label: "Resources", href: "/resources" },
+    { label: "Dining Guide", href: "/dining" },
   ];
 
   const companyLinks = [
-    { label: t("footer.sections.company") as string, href: "/about" },
+    { label: "About Us", href: "/about" },
     { label: "Contact", href: "/contact" },
+    { label: "Newsletter", href: "/newsletter" },
     { label: "Privacy Policy", href: "/privacy" },
     { label: "Terms", href: "/terms" },
   ];

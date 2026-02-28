@@ -22,6 +22,10 @@ export const metadata: Metadata = {
   title: "Healthcare in Argentina for Expats",
   description: "Complete guide to healthcare in Argentina for expats. Health insurance options (prepaga), finding doctors, hospital recommendations, and costs.",
   keywords: ["healthcare Argentina expats", "prepaga health insurance", "Argentina hospitals", "medical care Buenos Aires"],
+  openGraph: {
+    title: "Healthcare in Argentina for Expats",
+    description: "Complete guide to healthcare in Argentina for expats. Health insurance options, finding doctors, and hospital recommendations.",
+  },
   alternates: {
     canonical: "https://buenosairesexpats.com/healthcare",
   },

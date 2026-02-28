@@ -27,6 +27,7 @@ import {
   MapPin
 } from "lucide-react";
 import { LuceroLegalCTA } from "@/components/lucero-legal-cta";
+import { LastUpdated } from "@/components/last-updated";
 import { generateArticleSchema, generateBreadcrumbSchema } from "@/lib/schema";
 
 export const metadata: Metadata = {
@@ -56,6 +57,8 @@ export const metadata: Metadata = {
     canonical: "https://buenosairesexpats.com/guides/working-taxes",
   },
 };
+
+const LAST_UPDATED = "2026-02-26";
 
 const monotributoCategories = [
   {
@@ -352,6 +355,7 @@ export default function WorkingTaxesPage() {
                 </Link>
               </Button>
             </div>
+            <LastUpdated date={LAST_UPDATED} />
           </div>
         </div>
       </section>
@@ -730,7 +734,7 @@ export default function WorkingTaxesPage() {
 
             <div className="space-y-6">
               {taxObligationsByVisa.map((visa) => (
-                <Card key={visa.visa} className={`border-${visa.color}-200`}>
+                <Card key={visa.visa} className={visa.color === "green" ? "border-green-200" : visa.color === "blue" ? "border-blue-200" : visa.color === "amber" ? "border-amber-200" : "border-red-200"}>
                   <CardHeader>
                     <div className="flex flex-wrap items-center gap-3">
                       <CardTitle className="text-lg">{visa.visa}</CardTitle>
@@ -842,7 +846,7 @@ export default function WorkingTaxesPage() {
                     <ul className="text-sm text-muted-foreground space-y-2">
                       <li className="flex items-start gap-2">
                         <CheckCircle className="w-4 h-4 text-blue-600 flex-shrink-0 mt-0.5" />
-                        <span><strong>Foreign Earned Income Exclusion (FEIE):</strong> Exclude up to $126,500 (2026) of foreign earned income from US taxes if you meet either the Physical Presence Test (330 days abroad) or the Bona Fide Residence Test.</span>
+                        <span><strong>Foreign Earned Income Exclusion (FEIE):</strong> Exclude over $130,000 (adjusted annually for inflation) of foreign earned income from US taxes if you meet either the Physical Presence Test (330 days abroad) or the Bona Fide Residence Test.</span>
                       </li>
                       <li className="flex items-start gap-2">
                         <CheckCircle className="w-4 h-4 text-blue-600 flex-shrink-0 mt-0.5" />

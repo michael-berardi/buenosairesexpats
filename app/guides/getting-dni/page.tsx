@@ -5,6 +5,7 @@ import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/com
 import { Badge } from "@/components/ui/badge";
 import { LuceroLegalCTA } from "@/components/lucero-legal-cta";
 import { StructuredData } from "@/components/structured-data";
+import { LastUpdated } from "@/components/last-updated";
 import { generateBreadcrumbSchema, generateArticleSchema } from "@/lib/schema";
 import {
   IdCard,
@@ -32,8 +33,11 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Getting Your DNI in Argentina - Step-by-Step Guide",
     description: "Complete guide to obtaining your Argentine DNI. Requirements, documents, timeline, and common pitfalls.",
+    type: "article",
   },
 };
+
+const LAST_UPDATED = "2026-02-26";
 
 const requirementsByVisa = [
   {
@@ -42,7 +46,7 @@ const requirementsByVisa = [
     validity: "1 year (renewable)",
     requirements: [
       "Valid passport",
-      "Proof of remote income ($2,700+/month)",
+      "Proof of remote income ($1,500-2,500+/month)",
       "Criminal background check (apostilled)",
       "Proof of health insurance",
       "Entry stamp showing legal entry",
@@ -208,9 +212,10 @@ export default function GettingDNIPage() {
               (National Identity Document).
             </p>
             <p className="text-muted-foreground">
-              The DNI is your official Argentine ID card - essential for banking, signing contracts, 
+              The DNI is your official Argentine ID card - essential for banking, signing contracts,
               and daily life as a resident.
             </p>
+            <LastUpdated date={LAST_UPDATED} />
           </div>
         </div>
       </section>

@@ -4,10 +4,12 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { LuceroLegalCTA } from "@/components/lucero-legal-cta";
-import { 
-  Star, 
-  MapPin, 
-  Clock, 
+import { StructuredData } from "@/components/structured-data";
+import { generateArticleSchema, generateBreadcrumbSchema } from "@/lib/schema";
+import {
+  Star,
+  MapPin,
+  Clock,
   Phone,
   Globe,
   Award,
@@ -18,11 +20,14 @@ import {
 
 export const metadata: Metadata = {
   title: "Palermo Dining Guide | Don Julio & World-Class Restaurants | Buenos Aires",
-  description: "The ultimate guide to Palermo&apos;s culinary scene. Home to Don Julio, Best Restaurant in Latin America 2024, and the vibrant heart of Buenos Aires dining.",
+  description: "The ultimate guide to Palermo's culinary scene. Home to Don Julio, Best Restaurant in Latin America 2024, and the vibrant heart of Buenos Aires dining.",
   keywords: ["Palermo restaurants", "Don Julio Buenos Aires", "Crizia restaurant", "Michelin star Palermo", "best restaurants BA"],
   openGraph: {
     title: "Palermo Dining Guide | Don Julio & World-Class Restaurants",
-    description: "Discover Palermo&apos;s legendary dining scene, including Don Julio - Best Restaurant in Latin America 2024.",
+    description: "Discover Palermo's legendary dining scene, including Don Julio - Best Restaurant in Latin America 2024.",
+  },
+  alternates: {
+    canonical: "https://buenosairesexpats.com/dining/palermo",
   },
 };
 
@@ -30,7 +35,7 @@ const restaurants = [
   {
     name: "Don Julio",
     stars: 1,
-    awards: ["World&apos;s Best Steakhouse 2024", "Latin America&apos;s 50 Best #1 2024"],
+    awards: ["World's Best Steakhouse 2024", "Latin America's 50 Best #1 2024"],
     type: "Argentine Parrilla",
     chef: "Pablo Rivero",
     address: "Guatemala 4699, Palermo Soho",
@@ -53,7 +58,7 @@ const restaurants = [
     phone: "+54 11 5291-7077",
     website: "https://www.crizia.com.ar",
     price: "$$$$",
-    description: "Newly awarded a Michelin star in 2025, Crizia is Chef Gabriel Oggero's ode to fire and Argentine ingredients. The open kitchen centers around a massive wood-fired grill, where everything from vegetables to premium meats is cooked over flames. The industrial-chic space and creative menu make this one of BA&apos;s most exciting dining experiences.",
+    description: "Newly awarded a Michelin star in 2025, Crizia is Chef Gabriel Oggero's ode to fire and Argentine ingredients. The open kitchen centers around a massive wood-fired grill, where everything from vegetables to premium meats is cooked over flames. The industrial-chic space and creative menu make this one of BA's most exciting dining experiences.",
     mustTry: ["Wood-fired oysters", "Smoked beet salad", "Fire-grilled sweetbreads", "Burnt cheesecake"],
     reservations: "Essential",
     dressCode: "Smart casual",
@@ -63,14 +68,14 @@ const restaurants = [
   {
     name: "Tegui",
     stars: 0,
-    awards: ["Latin America&apos;s 50 Best"],
+    awards: ["Latin America's 50 Best"],
     type: "Contemporary Argentine",
     chef: "Germán Martitegui",
     address: "Costa Rica 5852, Palermo Hollywood",
     phone: "+54 11 5291-3330",
     website: "https://www.tegui.com.ar",
     price: "$$$$",
-    description: "A Palermo institution and longtime member of Latin America&apos;s 50 Best. Behind an unmarked facade, Tegui offers one of Buenos Aires&apos; most refined tasting menus. Chef Germán Martitegui combines Argentine ingredients with international techniques in a sleek, contemporary space.",
+    description: "A Palermo institution and longtime member of Latin America's 50 Best. Behind an unmarked facade, Tegui offers one of Buenos Aires' most refined tasting menus. Chef Germán Martitegui combines Argentine ingredients with international techniques in a sleek, contemporary space.",
     mustTry: ["Seasonal tasting menu", "Crispy langoustines", "Duck magret"],
     reservations: "Essential",
     dressCode: "Smart casual to elegant",
@@ -102,7 +107,7 @@ const restaurants = [
     phone: "+54 11 4832-0704",
     website: "https://www.lacabrera.com.ar",
     price: "$$$",
-    description: "One of Palermo&apos;s most popular parrillas, known for generous portions and an extensive wine list. The complimentary appetizers and side dishes that accompany each entrée make it excellent value. The outdoor seating on Cabrera street is perfect for people-watching.",
+    description: "One of Palermo's most popular parrillas, known for generous portions and an extensive wine list. The complimentary appetizers and side dishes that accompany each entrée make it excellent value. The outdoor seating on Cabrera street is perfect for people-watching.",
     mustTry: ["Bife de chorizo", "Ojo de bife", "Free appetizers", "Malbec selection"],
     reservations: "Recommended",
     dressCode: "Smart casual",
@@ -112,7 +117,7 @@ const restaurants = [
   {
     name: "Anafe",
     stars: 0,
-    awards: ["Latin America&apos;s 50 Best"],
+    awards: ["Latin America's 50 Best"],
     type: "Contemporary Small Plates",
     chef: "Luisa Martínez & Lula Martin del Campo",
     address: "Gorriti 4862, Palermo Soho",
@@ -129,7 +134,7 @@ const restaurants = [
   {
     name: "Mishiguene",
     stars: 0,
-    awards: ["Latin America&apos;s 50 Best"],
+    awards: ["Latin America's 50 Best"],
     type: "Jewish-Argentine",
     chef: "Tomás Kalika",
     address: "Lafinur 3368, Palermo",
@@ -165,8 +170,38 @@ export default function PalermoDiningPage() {
   const featuredRestaurants = restaurants.filter(r => r.featured);
   const otherRestaurants = restaurants.filter(r => !r.featured);
 
+  const articleSchema = generateArticleSchema({
+    headline: "Palermo Dining Guide | Don Julio & World-Class Restaurants",
+    description: "The ultimate guide to Palermo's culinary scene featuring Don Julio and Michelin-starred restaurants.",
+    url: "https://buenosairesexpats.com/dining/palermo",
+    datePublished: "2026-02-26",
+    dateModified: "2026-02-26",
+  });
+
+  const breadcrumbSchema = generateBreadcrumbSchema([
+    { name: "Home", item: "https://buenosairesexpats.com" },
+    { name: "Dining", item: "https://buenosairesexpats.com/dining" },
+    { name: "Palermo" },
+  ]);
+
   return (
     <div className="flex flex-col min-h-screen">
+      <StructuredData data={articleSchema} />
+      <StructuredData data={breadcrumbSchema} />
+
+      {/* Breadcrumb */}
+      <div className="border-b bg-muted/30">
+        <div className="container mx-auto px-4 py-4">
+          <nav className="flex gap-2 text-sm text-muted-foreground">
+            <Link href="/" className="hover:text-foreground">Home</Link>
+            <span>/</span>
+            <Link href="/dining" className="hover:text-foreground">Dining</Link>
+            <span>/</span>
+            <span className="text-foreground">Palermo</span>
+          </nav>
+        </div>
+      </div>
+
       {/* Hero */}
       <section className="relative py-20 md:py-28 bg-gradient-to-b from-amber-950 via-amber-900 to-stone-900 text-white overflow-hidden">
         <div className="absolute inset-0 opacity-30">
@@ -195,7 +230,7 @@ export default function PalermoDiningPage() {
               The beating heart of Buenos Aires&apos; culinary scene. Home to Don Julio, 
               Best Restaurant in Latin America 2024, and the city&apos;s most vibrant dining culture.
             </p>
-            <div className="flex flex-wrap gap-4 text-sm text-stone-600">
+            <div className="flex flex-wrap gap-4 text-sm text-stone-400">
               <span className="flex items-center gap-2">
                 <Star className="w-4 h-4 text-amber-400" />
                 2 Michelin Stars
@@ -411,7 +446,7 @@ export default function PalermoDiningPage() {
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto text-center">
             <h2 className="text-3xl font-bold mb-4">Explore More Neighborhoods</h2>
-            <p className="text-stone-600 mb-8">
+            <p className="text-stone-400 mb-8">
               Discover the best dining in Recoleta and Belgrano.
             </p>
             <div className="flex flex-wrap justify-center gap-4">

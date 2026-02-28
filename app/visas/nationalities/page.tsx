@@ -3,13 +3,11 @@ import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { Input } from "@/components/ui/input";
-import { 
-  Globe, 
-  CheckCircle, 
+import {
+  Globe,
+  CheckCircle,
   AlertCircle,
   ArrowRight,
-  Search,
   MapPin,
   Info
 } from "lucide-react";
@@ -28,6 +26,10 @@ export const metadata: Metadata = {
     "Argentina entry requirements",
     "Argentina tourist visa"
   ],
+  openGraph: {
+    title: "Argentina Visa Requirements by Nationality - 2026 Guide",
+    description: "Find Argentina visa requirements for your country. 120+ nationalities can visit visa-free.",
+  },
   alternates: {
     canonical: "https://buenosairesexpats.com/visas/nationalities",
   },

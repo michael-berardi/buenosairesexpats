@@ -433,10 +433,6 @@ html {
   @apply inline-flex items-center px-3 py-1.5 rounded-full text-xs font-bold bg-amber-100 text-amber-800 border border-amber-200;
 }
 
-.badge-accent {
-  @apply inline-flex items-center px-3 py-1 rounded-full text-xs font-medium bg-amber-100 text-amber-800;
-}
-
 /* Tag/Pill styles */
 .tag {
   @apply inline-flex items-center px-3 py-1.5 rounded-full text-sm font-medium bg-stone-100 text-stone-700 border border-stone-200;

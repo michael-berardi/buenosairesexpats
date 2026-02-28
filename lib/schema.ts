@@ -97,7 +97,7 @@ export function generateOrganizationSchema(): OrganizationSchema {
     "@type": "Organization",
     name: "Buenos Aires Expats",
     url: "https://buenosairesexpats.com",
-    logo: "https://buenosairesexpats.com/logo.png",
+    logo: "https://buenosairesexpats.com/favicon.svg",
     description: "The ultimate resource for expats moving to Buenos Aires. Honest guides, visa information, cost of living data, and a thriving expat community.",
     sameAs: [
       // Add social media URLs when available
@@ -112,11 +112,7 @@ export function generateWebSiteSchema(): WebSiteSchema {
     name: "Buenos Aires Expats",
     url: "https://buenosairesexpats.com",
     description: "Your complete guide to living in Buenos Aires. Visa guides, cost of living data, neighborhood reviews, and expert advice.",
-    potentialAction: {
-      "@type": "SearchAction",
-      target: "https://buenosairesexpats.com/search?q={search_term_string}",
-      "query-input": "required name=search_term_string",
-    },
+    // No search page currently available
   };
 }
 
@@ -152,10 +148,10 @@ export function generateArticleSchema({
       name: "Buenos Aires Expats",
       logo: {
         "@type": "ImageObject",
-        url: "https://buenosairesexpats.com/logo.png",
+        url: "https://buenosairesexpats.com/favicon.svg",
       },
     },
-    image: image || "https://buenosairesexpats.com/og-image.jpg",
+    image: image || "https://buenosairesexpats.com/images/og-image.jpg",
   };
 }
 

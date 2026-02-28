@@ -41,7 +41,7 @@ const resources = [
     title: "Service Directory",
     description: "Verified lawyers, accountants, real estate agents, and other service providers who specialize in helping expats.",
     download: false,
-    href: "/resources",
+    href: "#service-directory",
   },
   {
     icon: Scale,
@@ -226,7 +226,7 @@ export default function ResourcesPage() {
       </section>
 
       {/* Service Directory Preview */}
-      <section className="py-16">
+      <section id="service-directory" className="py-16">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <div className="text-center mb-12">
@@ -255,12 +255,9 @@ export default function ResourcesPage() {
             </div>
 
             <div className="text-center mt-8">
-              <Button asChild variant="outline" size="lg">
-                <Link href="/resources">
-                  Browse All Services
-                  <ArrowRight className="w-4 h-4 ml-2" />
-                </Link>
-              </Button>
+              <p className="text-sm text-muted-foreground">
+                Full directory coming soon. For immigration help, see our trusted partner below.
+              </p>
             </div>
           </div>
         </div>

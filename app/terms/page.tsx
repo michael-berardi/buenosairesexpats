@@ -13,6 +13,10 @@ export const metadata: Metadata = {
     index: true,
     follow: true,
   },
+  openGraph: {
+    title: "Terms of Service - Buenos Aires Expats",
+    description: "Our terms of service outline the rules and regulations for using Buenos Aires Expats.",
+  },
   alternates: {
     canonical: "https://buenosairesexpats.com/terms",
   },

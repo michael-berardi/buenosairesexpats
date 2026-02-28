@@ -15,9 +15,9 @@ import {
 } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "About Us - Expats Argentina",
-  description: "Learn about Expats Argentina, your trusted resource for moving to and living in Argentina. Our mission, values, and team.",
-  keywords: ["about Expats Argentina", "Argentina expat resource", "Buenos Aires guide"],
+  title: "About Us - Buenos Aires Expats",
+  description: "Learn about Buenos Aires Expats, your trusted resource for moving to and living in Argentina. Our mission, values, and team.",
+  keywords: ["about Buenos Aires Expats", "Argentina expat resource", "Buenos Aires guide"],
   alternates: {
     canonical: "https://buenosairesexpats.com/about",
   },
@@ -123,7 +123,7 @@ export default function AboutPage() {
                 of life in Buenos Aires.
               </p>
               <p className="mb-4">
-                Today, Expats Argentina is read by thousands of people each month. We've partnered with 
+                Today, Buenos Aires Expats is read by thousands of people each month. We've partnered with 
                 immigration lawyers, real estate professionals, and long-term expats to provide the most 
                 accurate and helpful information possible.
               </p>

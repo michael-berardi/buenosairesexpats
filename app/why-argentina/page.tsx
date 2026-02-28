@@ -336,6 +336,11 @@ export default function WhyArgentinaPage() {
                 </Link>
               </Button>
               <Button asChild variant="outline" size="lg">
+                <Link href="/why-argentina/vs-europe">
+                  Compare With Europe
+                </Link>
+              </Button>
+              <Button asChild variant="outline" size="lg">
                 <Link href="/neighborhoods">
                   Explore Neighborhoods
                 </Link>

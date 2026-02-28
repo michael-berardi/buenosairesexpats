@@ -24,6 +24,9 @@ export const metadata: Metadata = {
     title: "Buenos Aires vs Europe - Honest Comparison for Expats 2026",
     description: "Real comparison of Buenos Aires vs European cities. Cost, lifestyle, and quality of life.",
   },
+  alternates: {
+    canonical: "https://buenosairesexpats.com/why-argentina/vs-europe",
+  },
 };
 
 const comparisons = [
@@ -296,7 +299,7 @@ export default function VsEuropePage() {
                         <div className="flex items-center justify-between mb-2">
                           <h3 className="font-semibold text-lg">{factor.title}</h3>
                           <Badge variant={factor.winner === "Argentina" ? "default" : factor.winner === "Europe" ? "secondary" : "outline"}>
-                            {factor.winner} Wins
+                            {factor.winner === "Depends" || factor.winner === "Tie" ? factor.winner : `${factor.winner} Wins`}
                           </Badge>
                         </div>
                         <div className="grid md:grid-cols-2 gap-4 text-sm">

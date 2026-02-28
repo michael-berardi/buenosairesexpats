@@ -4,16 +4,15 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { StructuredData } from "@/components/structured-data";
+import { LastUpdated } from "@/components/last-updated";
 import { generateBreadcrumbSchema, generateArticleSchema } from "@/lib/schema";
 import {
   CloudSun,
   Sun,
   CloudRain,
-  Wind,
   Thermometer,
   Calendar,
   Shirt,
-  Umbrella,
   ArrowRight,
   AlertCircle,
   CheckCircle
@@ -29,8 +28,11 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Weather & Climate in Buenos Aires - Seasonal Guide",
     description: "Season-by-season breakdown of Buenos Aires weather. What to expect and what to pack.",
+    type: "article",
   },
 };
+
+const LAST_UPDATED = "2026-02-26";
 
 const seasons = [
   {
@@ -258,6 +260,7 @@ export default function WeatherClimatePage() {
                 <span>Best: Sep-Nov</span>
               </div>
             </div>
+            <LastUpdated date={LAST_UPDATED} />
           </div>
         </div>
       </section>
@@ -281,12 +284,25 @@ export default function WeatherClimatePage() {
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
             <div className="grid md:grid-cols-2 gap-6">
-              {seasons.map((season) => (
+              {seasons.map((season) => {
+                const bgColorMap: Record<string, string> = {
+                  orange: "bg-orange-100",
+                  amber: "bg-amber-100",
+                  blue: "bg-blue-100",
+                  green: "bg-green-100",
+                };
+                const textColorMap: Record<string, string> = {
+                  orange: "text-orange-600",
+                  amber: "text-amber-600",
+                  blue: "text-blue-600",
+                  green: "text-green-600",
+                };
+                return (
                 <Card key={season.name} className="h-full">
                   <CardHeader>
                     <div className="flex items-center gap-3">
-                      <div className={`w-10 h-10 rounded-lg bg-${season.color}-100 flex items-center justify-center`}>
-                        <season.icon className={`w-5 h-5 text-${season.color}-600`} />
+                      <div className={`w-10 h-10 rounded-lg ${bgColorMap[season.color] || "bg-sky-100"} flex items-center justify-center`}>
+                        <season.icon className={`w-5 h-5 ${textColorMap[season.color] || "text-sky-600"}`} />
                       </div>
                       <div>
                         <CardTitle>{season.name}</CardTitle>
@@ -329,7 +345,8 @@ export default function WeatherClimatePage() {
                     </div>
                   </CardContent>
                 </Card>
-              ))}
+                );
+              })}
             </div>
           </div>
         </div>

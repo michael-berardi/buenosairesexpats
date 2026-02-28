@@ -314,8 +314,8 @@ export default function InvestmentVisaPage() {
                 </CardHeader>
                 <CardContent>
                   <p className="text-muted-foreground">
-                    $150K minimum vs $500K+ for US EB-5 or European Golden Visas. 
-                    Significantly more accessible.
+                    $150K minimum vs $800K for US EB-5. Many European Golden Visas
+                    are ending or restricting. Argentina remains accessible.
                   </p>
                 </CardContent>
               </Card>
@@ -516,13 +516,13 @@ export default function InvestmentVisaPage() {
                       </tr>
                       <tr className="border-b">
                         <td className="py-3 px-2">Portugal (Golden Visa)</td>
-                        <td className="py-3 px-2">€250,000</td>
-                        <td className="py-3 px-2">5-6 years</td>
+                        <td className="py-3 px-2">€500,000+</td>
+                        <td className="py-3 px-2">5-6 years <span className="text-xs text-amber-600">(real estate route ended 2023)</span></td>
                       </tr>
                       <tr className="border-b">
                         <td className="py-3 px-2">Spain (Golden Visa)</td>
-                        <td className="py-3 px-2">€500,000</td>
-                        <td className="py-3 px-2">10 years</td>
+                        <td className="py-3 px-2 text-muted-foreground line-through">€500,000</td>
+                        <td className="py-3 px-2"><span className="text-xs text-red-600">Program ended April 2025</span></td>
                       </tr>
                       <tr className="border-b">
                         <td className="py-3 px-2">USA (EB-5)</td>
@@ -531,7 +531,7 @@ export default function InvestmentVisaPage() {
                       </tr>
                       <tr className="border-b">
                         <td className="py-3 px-2">Greece (Golden Visa)</td>
-                        <td className="py-3 px-2">€250,000</td>
+                        <td className="py-3 px-2">€250,000-500,000</td>
                         <td className="py-3 px-2">7 years</td>
                       </tr>
                     </tbody>

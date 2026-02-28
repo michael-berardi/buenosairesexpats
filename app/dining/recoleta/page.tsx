@@ -4,10 +4,12 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { LuceroLegalCTA } from "@/components/lucero-legal-cta";
-import { 
-  Star, 
-  MapPin, 
-  Clock, 
+import { StructuredData } from "@/components/structured-data";
+import { generateArticleSchema, generateBreadcrumbSchema } from "@/lib/schema";
+import {
+  Star,
+  MapPin,
+  Clock,
   Phone,
   Globe,
   Award,
@@ -15,8 +17,7 @@ import {
   ChefHat,
   Utensils,
   ArrowUpRight,
-  Sparkles,
-  Wine
+  Sparkles
 } from "lucide-react";
 
 export const metadata: Metadata = {
@@ -26,6 +27,9 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Recoleta Dining Guide | Michelin Stars & Fine Dining",
     description: "Discover Recoleta's finest restaurants, including Aramburu - Argentina's only two-Michelin-starred restaurant.",
+  },
+  alternates: {
+    canonical: "https://buenosairesexpats.com/dining/recoleta",
   },
 };
 
@@ -180,8 +184,38 @@ export default function RecoletaDiningPage() {
   const featuredRestaurants = restaurants.filter(r => r.featured);
   const otherRestaurants = restaurants.filter(r => !r.featured);
 
+  const articleSchema = generateArticleSchema({
+    headline: "Recoleta Dining Guide | Michelin Stars & Fine Dining",
+    description: "The definitive guide to Recoleta's finest restaurants including Aramburu, Argentina's only two-Michelin-starred restaurant.",
+    url: "https://buenosairesexpats.com/dining/recoleta",
+    datePublished: "2026-02-26",
+    dateModified: "2026-02-26",
+  });
+
+  const breadcrumbSchema = generateBreadcrumbSchema([
+    { name: "Home", item: "https://buenosairesexpats.com" },
+    { name: "Dining", item: "https://buenosairesexpats.com/dining" },
+    { name: "Recoleta" },
+  ]);
+
   return (
     <div className="flex flex-col min-h-screen bg-stone-50">
+      <StructuredData data={articleSchema} />
+      <StructuredData data={breadcrumbSchema} />
+
+      {/* Breadcrumb */}
+      <div className="border-b bg-muted/30">
+        <div className="container mx-auto px-4 py-4">
+          <nav className="flex gap-2 text-sm text-muted-foreground">
+            <Link href="/" className="hover:text-foreground">Home</Link>
+            <span>/</span>
+            <Link href="/dining" className="hover:text-foreground">Dining</Link>
+            <span>/</span>
+            <span className="text-foreground">Recoleta</span>
+          </nav>
+        </div>
+      </div>
+
       {/* Hero - Premium Style */}
       <section className="relative min-h-[60vh] flex items-center overflow-hidden">
         <div className="absolute inset-0">
@@ -450,7 +484,7 @@ export default function RecoletaDiningPage() {
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto text-center">
             <h2 className="text-3xl font-bold mb-4">Explore More Neighborhoods</h2>
-            <p className="text-stone-600 mb-8">
+            <p className="text-stone-400 mb-8">
               Discover the best dining in Palermo and Belgrano.
             </p>
             <div className="flex flex-wrap justify-center gap-4">

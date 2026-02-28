@@ -89,7 +89,7 @@ const neighborhoods = [
     highlights: ["Aramburu (2 Michelin Stars)", "Elena at Four Seasons", "Duhau Restaurante"],
     restaurantCount: 8,
     michelinCount: 1,
-    image: "/images/dining-recoleta.jpg",
+    image: "/images/recoleta-dining.jpg",
   },
   {
     name: "Palermo",
@@ -98,7 +98,7 @@ const neighborhoods = [
     highlights: ["Don Julio (1 Star)", "Crizia (1 Star)", "Tegui"],
     restaurantCount: 8,
     michelinCount: 2,
-    image: "/images/dining-palermo.jpg",
+    image: "/images/palermo-dining.jpg",
   },
   {
     name: "Belgrano",
@@ -107,7 +107,7 @@ const neighborhoods = [
     highlights: ["Roux", "Corte Comedor", "La Casona de Belgrano"],
     restaurantCount: 8,
     michelinCount: 0,
-    image: "/images/dining-belgrano.jpg",
+    image: "/images/belgrano-dining.jpg",
   },
 ];
 

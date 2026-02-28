@@ -13,6 +13,10 @@ export const metadata: Metadata = {
     index: true,
     follow: true,
   },
+  openGraph: {
+    title: "Privacy Policy - Buenos Aires Expats",
+    description: "Our privacy policy explains how we collect, use, and protect your personal information.",
+  },
   alternates: {
     canonical: "https://buenosairesexpats.com/privacy",
   },

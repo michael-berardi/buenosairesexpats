@@ -467,8 +467,8 @@ export default function LearningSpanishPage() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button asChild size="lg" variant="secondary">
-                <Link href="/resources/spanish-guide">
-                  Get Free Cheat Sheet
+                <Link href="/resources">
+                  Browse Resources
                   <ArrowRight className="w-4 h-4 ml-2" />
                 </Link>
               </Button>

@@ -20,6 +20,10 @@ export const metadata: Metadata = {
   title: "Banking & Money in Argentina 2026",
   description: "Complete guide to banking in Argentina for expats. Opening accounts, transferring money, the blue dollar, and managing finances.",
   keywords: ["banking Argentina expats", "blue dollar Argentina", "transfer money Argentina", "Argentina bank account"],
+  openGraph: {
+    title: "Banking & Money in Argentina 2026",
+    description: "Complete guide to banking in Argentina for expats. Opening accounts, transferring money, the blue dollar, and managing finances.",
+  },
   alternates: {
     canonical: "https://buenosairesexpats.com/banking",
   },

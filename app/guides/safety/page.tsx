@@ -36,19 +36,23 @@ export const metadata: Metadata = {
   },
 };
 
+const neighborhoodsWithPages = new Set([
+  "palermo", "recoleta", "belgrano", "puerto-madero", "san-telmo", "villa-crespo"
+]);
+
 const neighborhoodSafety = [
-  { name: "Palermo", safety: "Very Safe", day: "Very Safe", night: "Safe", notes: "Touristy, well-lit, police presence" },
-  { name: "Recoleta", safety: "Very Safe", day: "Very Safe", night: "Safe", notes: "Upscale, residential, secure" },
-  { name: "Belgrano", safety: "Very Safe", day: "Very Safe", night: "Very Safe", notes: "Family area, quiet at night" },
-  { name: "Puerto Madero", safety: "Very Safe", day: "Very Safe", night: "Safe", notes: "Modern, monitored, some empty areas" },
-  { name: "San Telmo", safety: "Moderate", day: "Safe", night: "Caution", notes: "Touristy but watch belongings" },
-  { name: "Microcentro", safety: "Moderate", day: "Safe", night: "Avoid", notes: "Empty at night, some sketchy blocks" },
-  { name: "Villa Crespo", safety: "Moderate", day: "Safe", night: "Caution", notes: "Up-and-coming, varies by block" },
-  { name: "Caballito", safety: "Moderate", day: "Safe", night: "Caution", notes: "Residential, generally fine" },
-  { name: "La Boca", safety: "Caution", day: "Safe (Caminito only)", night: "Avoid", notes: "Stay on tourist path, don't wander" },
-  { name: "Constitución", safety: "Caution", day: "Caution", night: "Avoid", notes: "Transit hub, be alert" },
-  { name: "Once/Abasto", safety: "Caution", day: "Caution", night: "Avoid", notes: "Crowded, watch your pockets" },
-  { name: "Retiro (near station)", safety: "Caution", day: "Caution", night: "Avoid", notes: "Villa 31 nearby, stay alert" },
+  { name: "Palermo", slug: "palermo", safety: "Very Safe", day: "Very Safe", night: "Safe", notes: "Touristy, well-lit, police presence" },
+  { name: "Recoleta", slug: "recoleta", safety: "Very Safe", day: "Very Safe", night: "Safe", notes: "Upscale, residential, secure" },
+  { name: "Belgrano", slug: "belgrano", safety: "Very Safe", day: "Very Safe", night: "Very Safe", notes: "Family area, quiet at night" },
+  { name: "Puerto Madero", slug: "puerto-madero", safety: "Very Safe", day: "Very Safe", night: "Safe", notes: "Modern, monitored, some empty areas" },
+  { name: "San Telmo", slug: "san-telmo", safety: "Moderate", day: "Safe", night: "Caution", notes: "Touristy but watch belongings" },
+  { name: "Microcentro", slug: "microcentro", safety: "Moderate", day: "Safe", night: "Avoid", notes: "Empty at night, some sketchy blocks" },
+  { name: "Villa Crespo", slug: "villa-crespo", safety: "Moderate", day: "Safe", night: "Caution", notes: "Up-and-coming, varies by block" },
+  { name: "Caballito", slug: "caballito", safety: "Moderate", day: "Safe", night: "Caution", notes: "Residential, generally fine" },
+  { name: "La Boca", slug: "la-boca", safety: "Caution", day: "Safe (Caminito only)", night: "Avoid", notes: "Stay on tourist path, don't wander" },
+  { name: "Constitución", slug: "constitucion", safety: "Caution", day: "Caution", night: "Avoid", notes: "Transit hub, be alert" },
+  { name: "Once/Abasto", slug: "once-abasto", safety: "Caution", day: "Caution", night: "Avoid", notes: "Crowded, watch your pockets" },
+  { name: "Retiro", slug: "retiro", safety: "Caution", day: "Caution", night: "Avoid", notes: "Near bus station, stay alert" },
 ];
 
 const commonScams = [
@@ -251,13 +255,17 @@ export default function SafetyPage() {
                         {neighborhoodSafety.map((hood) => (
                           <tr key={hood.name} className="border-b last:border-0">
                             <td className="py-3 px-2 font-medium">
-                              <Link href={`/neighborhoods/${hood.name.toLowerCase().replace(/\s+/g, '-').replace('/', '-')}`} className="hover:text-primary hover:underline">
-                                {hood.name}
-                              </Link>
+                              {neighborhoodsWithPages.has(hood.slug) ? (
+                                <Link href={`/neighborhoods/${hood.slug}`} className="hover:text-primary hover:underline">
+                                  {hood.name}
+                                </Link>
+                              ) : (
+                                <span>{hood.name}</span>
+                              )}
                             </td>
                             <td className="py-3 px-2">
                               <Badge variant={
-                                hood.safety === "Very Safe" ? "default" : 
+                                hood.safety === "Very Safe" ? "default" :
                                 hood.safety === "Moderate" ? "secondary" : "destructive"
                               }>
                                 {hood.safety}
@@ -282,12 +290,16 @@ export default function SafetyPage() {
                   <Card key={hood.name}>
                     <CardContent className="pt-4 pb-4">
                       <div className="flex items-center justify-between mb-2">
-                        <Link 
-                          href={`/neighborhoods/${hood.name.toLowerCase().replace(/\s+/g, '-').replace('/', '-')}`} 
-                          className="font-semibold hover:text-primary hover:underline"
-                        >
-                          {hood.name}
-                        </Link>
+                        {neighborhoodsWithPages.has(hood.slug) ? (
+                          <Link
+                            href={`/neighborhoods/${hood.slug}`}
+                            className="font-semibold hover:text-primary hover:underline"
+                          >
+                            {hood.name}
+                          </Link>
+                        ) : (
+                          <span className="font-semibold">{hood.name}</span>
+                        )}
                         <Badge variant={
                           hood.safety === "Very Safe" ? "default" : 
                           hood.safety === "Moderate" ? "secondary" : "destructive"

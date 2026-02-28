@@ -166,7 +166,7 @@ const neighborhoodComparison = [
   { name: "Belgrano", rent: "$$", vibe: "Residential, quiet, families", transport: "Very Good", slug: "belgrano" },
   { name: "San Telmo", rent: "$$", vibe: "Bohemian, touristy, artsy", transport: "Good", slug: "san-telmo" },
   { name: "Villa Crespo", rent: "$", vibe: "Up-and-coming, authentic, younger", transport: "Good", slug: "villa-crespo" },
-  { name: "Puerto Madero", rent: "$$$$", vibe: "Luxury, modern, waterfront", transport: "Good", slug: "puerto-madero" },
+  { name: "Puerto Madero", rent: "$$$$", vibe: "Luxury, modern, waterfront", transport: "Moderate", slug: "puerto-madero" },
 ];
 
 export default function CostOfLivingPage() {
@@ -223,7 +223,7 @@ export default function CostOfLivingPage() {
       </section>
 
       {/* Monthly Budget Calculator */}
-      <section id="budget-comparison" className="section-padding bg-white">
+      <section id="budget-comparison" className="section-padding bg-background">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <h2 className="heading-md mb-4 text-center">Monthly Budget Estimates</h2>
@@ -292,7 +292,7 @@ export default function CostOfLivingPage() {
                         </div>
                         <span className="font-semibold">${costs.entertainment}</span>
                       </div>
-                      <div className="flex justify-between items-center py-3 bg-sky-50 rounded-lg px-4">
+                      <div className="flex justify-between items-center py-3 bg-sky-50 dark:bg-sky-950/30 rounded-lg px-4">
                         <span className="font-bold">Total Monthly</span>
                         <span className="font-bold text-xl text-sky-600">${costs.total}</span>
                       </div>
@@ -347,7 +347,7 @@ export default function CostOfLivingPage() {
       </section>
 
       {/* Neighborhood Comparison */}
-      <section className="section-padding bg-white">
+      <section className="section-padding bg-background">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <h2 className="heading-md mb-8 text-center">Rent by Neighborhood</h2>
@@ -425,7 +425,7 @@ export default function CostOfLivingPage() {
       </section>
 
       {/* Reddit Reality Check */}
-      <section className="section-padding bg-sky-50">
+      <section className="section-padding bg-sky-50 dark:bg-sky-950/20">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto">
             <h2 className="heading-sm mb-6 text-center">What Reddit Says (The Honest Version)</h2>
@@ -457,7 +457,7 @@ export default function CostOfLivingPage() {
       </section>
 
       {/* Important Notice */}
-      <section className="py-8 md:py-12 bg-white">
+      <section className="py-8 md:py-12 bg-background">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto">
             <div className="bg-amber-50 border border-amber-200 rounded-xl p-6">
@@ -481,7 +481,7 @@ export default function CostOfLivingPage() {
       </section>
 
       {/* CTA */}
-      <section className="py-12 md:py-16 bg-white">
+      <section className="py-12 md:py-16 bg-background">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto text-center">
             <h2 className="heading-md mb-4">Ready to Make the Move?</h2>

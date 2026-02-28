@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { StructuredData } from "@/components/structured-data";
+import { LastUpdated } from "@/components/last-updated";
 import { generateArticleSchema, generateBreadcrumbSchema } from "@/lib/schema";
 import { LuceroLegalCTA } from "@/components/lucero-legal-cta";
 import {
@@ -49,6 +50,8 @@ export const metadata: Metadata = {
     canonical: "https://buenosairesexpats.com/guides/transportation",
   },
 };
+
+const LAST_UPDATED = "2026-02-26";
 
 const subteLines = [
   { line: "A", color: "bg-cyan-500", route: "Plaza de Mayo - San Pedrito", notes: "Oldest subway line in South America (opened 1913). Runs through Av. de Mayo and connects key political/historical sites.", stations: 18 },
@@ -146,6 +149,7 @@ export default function TransportationPage() {
                 </Link>
               </Button>
             </div>
+            <LastUpdated date={LAST_UPDATED} />
           </div>
         </div>
       </section>
@@ -291,10 +295,10 @@ export default function TransportationPage() {
 
             <div className="mt-4 p-4 bg-muted rounded-lg">
               <p className="text-sm text-muted-foreground text-center">
-                <strong>Insider tip:</strong> Line A still has some of the original 1913 Belgian
-                wooden cars running on certain schedules. If you spot one, ride it — it&apos;s like
-                stepping into a museum. The old cars have beautiful wooden interiors and brass
-                fittings. They&apos;re slowly being retired, so catch them while you can.
+                <strong>Insider tip:</strong> Line A is the oldest metro line in Latin America,
+                opening in 1913. The original Belgian wooden cars were retired in 2013, but some
+                are preserved at the Polvorín museum station. The current modernized fleet still
+                runs through beautifully preserved early 20th-century stations worth seeing.
               </p>
             </div>
           </div>

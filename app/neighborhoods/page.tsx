@@ -173,7 +173,9 @@ export default function NeighborhoodsPage() {
         <div className="container mx-auto px-4">
           <h2 className="text-3xl font-bold mb-12 text-center">Neighborhood Guides</h2>
           <div className="grid lg:grid-cols-2 gap-8 max-w-6xl mx-auto">
-            {neighborhoods.map((hood) => (
+            {neighborhoods.map((hood) => {
+              const slug = hood.name.toLowerCase().replace(/\s+/g, '-');
+              return (
               <Card key={hood.name} className="h-full flex flex-col">
                 <CardHeader>
                   <div className="flex items-start justify-between mb-2">
@@ -250,9 +252,19 @@ export default function NeighborhoodsPage() {
                       </ul>
                     </div>
                   </div>
+
+                  <div className="mt-6 pt-4 border-t">
+                    <Button asChild variant="outline" className="w-full">
+                      <Link href={`/neighborhoods/${slug}`}>
+                        Explore {hood.name} Guide
+                        <ArrowRight className="w-4 h-4 ml-2" />
+                      </Link>
+                    </Button>
+                  </div>
                 </CardContent>
               </Card>
-            ))}
+              );
+            })}
           </div>
         </div>
       </section>
