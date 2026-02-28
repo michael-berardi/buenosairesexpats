@@ -43,11 +43,11 @@ export const stories: ExpatStory[] = [
     readTime: "12 min read",
     publishedAt: "2024-01-15",
     source: "Sol Salute blog",
-    heroImage: "/images/stories/erin-palermo-cafe.jpg",
-    heroImageAlt: "Erin working at a Palermo cafe, representing expat life in Buenos Aires",
+    heroImage: "/images/stories/erin-15-year-love-affair-hero.jpg",
+    heroImageAlt: "Erin's 15-year love affair with Buenos Aires",
     galleryImages: [
-      { src: "/images/stories/palermo-soho-street.jpg", alt: "Palermo Soho neighborhood where Erin lives", caption: "Palermo Soho - Erin's neighborhood for 15+ years" },
-      { src: "/images/stories/expat-family-bilingual.jpg", alt: "Bilingual family life in Buenos Aires", caption: "Raising bilingual kids in Argentina" }
+      { src: "/images/stories/erin-15-year-love-affair-gallery-1.jpg", alt: "Erin exploring Buenos Aires", caption: "15 years of memories in Buenos Aires" },
+      { src: "/images/stories/erin-15-year-love-affair-gallery-2.jpg", alt: "Erin's life in Palermo", caption: "Building a life in Palermo" }
     ],
     content: `
 ## The Honeymoon That Never Ended
@@ -105,11 +105,11 @@ Would she do it again? "In a heartbeat. But I'd also understand that 'in a heart
     readTime: "10 min read",
     publishedAt: "2024-02-01",
     source: "Startups.com interview",
-    heroImage: "/images/stories/lisa-startup-buenos-aires.jpg",
-    heroImageAlt: "Lisa Besserman, founder of Startup Buenos Aires",
+    heroImage: "/images/stories/lisa-journey-to-citizenship-hero.jpg",
+    heroImageAlt: "Lisa's journey to citizenship in Buenos Aires",
     galleryImages: [
-      { src: "/images/stories/startup-community-event.jpg", alt: "Startup Buenos Aires community event", caption: "Building Argentina's startup ecosystem" },
-      { src: "/images/stories/coworking-space-palermo.jpg", alt: "Coworking space in Palermo", caption: "Where SUBA community connects" }
+      { src: "/images/stories/lisa-journey-to-citizenship-gallery-1.jpg", alt: "Lisa building her business in BA", caption: "From startup founder to Argentine citizen" },
+      { src: "/images/stories/lisa-journey-to-citizenship-gallery-2.jpg", alt: "Lisa's life in Palermo", caption: "Building community in Buenos Aires" }
     ],
     content: `
 ## From Digital Nomad to Ecosystem Builder
@@ -172,11 +172,11 @@ Lisa also found personal happiness in Buenos Aires - marrying "an Argentine man 
     readTime: "9 min read",
     publishedAt: "2025-07-05",
     source: "Business Insider",
-    heroImage: "/images/stories/digital-nomad-budget-life.jpg",
-    heroImageAlt: "Affordable living in Buenos Aires - cost comparison for digital nomads",
+    heroImage: "/images/stories/sofia-digital-nomad-life-hero.jpg",
+    heroImageAlt: "Digital nomad life in Buenos Aires",
     galleryImages: [
-      { src: "/images/stories/palermo-apartment-budget.jpg", alt: "Budget apartment in Palermo", caption: "$400/month apartment in Palermo" },
-      { src: "/images/stories/expat-loneliness.jpg", alt: "Solo expat experience", caption: "The isolation many digital nomads face" }
+      { src: "/images/stories/sofia-digital-nomad-life-gallery-1.jpg", alt: "Working remotely in Buenos Aires", caption: "The digital nomad experience" },
+      { src: "/images/stories/sofia-digital-nomad-life-gallery-2.jpg", alt: "Finding balance as a nomad", caption: "Navigating work and life abroad" }
     ],
     content: `
 ## The Math Made Perfect Sense
@@ -231,11 +231,11 @@ His advice? "You can't be prepared for everything when you move abroad. You hand
     readTime: "8 min read",
     publishedAt: "2024-08-01",
     source: "The Photography Confidential",
-    heroImage: "/images/stories/german-argentine-couple.jpg",
-    heroImageAlt: "Intercultural couple - German and Argentine love story in Buenos Aires",
+    heroImage: "/images/stories/diego-returning-home-hero.jpg",
+    heroImageAlt: "Returning home to Buenos Aires",
     galleryImages: [
-      { src: "/images/stories/recoleta-neighborhood.jpg", alt: "Recoleta neighborhood", caption: "Tina's home in Recoleta" },
-      { src: "/images/stories/podcast-recording.jpg", alt: "Recording International Love Story podcast", caption: "Sharing intercultural relationship stories" }
+      { src: "/images/stories/diego-returning-home-gallery-1.jpg", alt: "Reconnecting with Buenos Aires", caption: "Finding love across continents" },
+      { src: "/images/stories/diego-returning-home-gallery-2.jpg", alt: "Building a life in BA", caption: "A German-Argentine love story" }
     ],
     content: `
 ## A Miami Origin Story
@@ -296,6 +296,12 @@ Would she recommend the move? "Absolutely. But understand that Buenos Aires play
     readTime: "4 min read",
     publishedAt: "2018-02-13",
     source: "Sol Salute blog",
+    heroImage: "/images/stories/erin-15-year-love-affair-hero.jpg",
+    heroImageAlt: "Erin's adventures in Buenos Aires",
+    galleryImages: [
+      { src: "/images/stories/erin-15-year-love-affair-gallery-1.jpg", alt: "Erin navigating the city", caption: "Subway adventures in Buenos Aires" },
+      { src: "/images/stories/erin-15-year-love-affair-gallery-2.jpg", alt: "Erin's Buenos Aires moments", caption: "The kindness of Porteños" }
+    ],
     content: `
 ## Mind the Gap
 
@@ -359,11 +365,11 @@ The story has become one of her most-shared expat moments - a perfect encapsulat
     readTime: "7 min read",
     publishedAt: "2024-08-07",
     source: "Vamos Spanish Academy",
-    heroImage: "/images/stories/british-expat-cricket.jpg",
-    heroImageAlt: "Buenos Aires Cricket Club - British expat community in Argentina",
+    heroImage: "/images/stories/alex-navigating-long-distance-hero.jpg",
+    heroImageAlt: "Alex navigating long-distance life in Buenos Aires",
     galleryImages: [
-      { src: "/images/stories/london-vs-buenos-aires.jpg", alt: "London compared to Buenos Aires", caption: "From London hustle to BA rhythm" },
-      { src: "/images/stories/spanish-academy.jpg", alt: "Learning Spanish at Vamos Academy", caption: "Mastering Spanish in Buenos Aires" }
+      { src: "/images/stories/alex-navigating-long-distance-gallery-1.jpg", alt: "Finding community in BA", caption: "From London to Buenos Aires" },
+      { src: "/images/stories/alex-navigating-long-distance-gallery-2.jpg", alt: "Life as a British expat", caption: "Building connections across cultures" }
     ],
     content: `
 ## Why Leave London?
@@ -430,6 +436,12 @@ Alex misses British efficiency, order, and "the ability to queue without being p
     readTime: "15 min read",
     publishedAt: "2017-10-19",
     source: "Career Gappers blog",
+    heroImage: "/images/stories/emma-solo-adventure-hero.jpg",
+    heroImageAlt: "Solo traveler navigating Buenos Aires challenges",
+    galleryImages: [
+      { src: "/images/stories/emma-solo-adventure-gallery-1.jpg", alt: "Traveling through Buenos Aires", caption: "The realities of travel in BA" },
+      { src: "/images/stories/emma-solo-adventure-gallery-2.jpg", alt: "Overcoming travel setbacks", caption: "Resilience on the road" }
+    ],
     content: `
 ## The Setup
 
@@ -522,6 +534,12 @@ The "mustard scam" or "bird poop scam" is classic distraction theft. Someone squ
     readTime: "6 min read",
     publishedAt: "2019-03-24",
     source: "Vía País Editorial",
+    heroImage: "/images/stories/marina-creative-porteno-hero.jpg",
+    heroImageAlt: "Creative Porteño artists expressing themselves through dance",
+    galleryImages: [
+      { src: "/images/stories/marina-creative-porteno-gallery-1.jpg", alt: "Artistic expression in Buenos Aires", caption: "The creative spirit of San Telmo" },
+      { src: "/images/stories/marina-creative-porteno-gallery-2.jpg", alt: "Dance and art in BA", caption: "Where passion meets creativity" }
+    ],
     content: `
 ## On Wheels and Without Limits
 
@@ -586,11 +604,11 @@ On Brenda's wheels, there are no complexes nor limits. One more dancer. A differ
     readTime: "8 min read",
     publishedAt: "2024-01-20",
     source: "Expat Entrepreneur Stories",
-    heroImage: "/images/stories/tango-entrepreneur.jpg",
-    heroImageAlt: "Tango fashion designer and entrepreneur in San Telmo",
+    heroImage: "/images/stories/pedro-entrepreneurial-spirit-hero.jpg",
+    heroImageAlt: "Entrepreneurial spirit in Buenos Aires",
     galleryImages: [
-      { src: "/images/stories/san-telmo-tango.jpg", alt: "Tango in San Telmo", caption: "San Telmo - the heart of tango" },
-      { src: "/images/stories/bed-breakfast-buenos-aires.jpg", alt: "B&B in San Telmo", caption: "Deby's Bed & Breakfast business" }
+      { src: "/images/stories/pedro-entrepreneurial-spirit-gallery-1.jpg", alt: "Building a business in BA", caption: "From Silicon Valley to San Telmo" },
+      { src: "/images/stories/pedro-entrepreneurial-spirit-gallery-2.jpg", alt: "Entrepreneur life in Argentina", caption: "Tango and entrepreneurship" }
     ],
     content: `
 ## The Rhythm of Life
@@ -659,6 +677,12 @@ And learn Spanish: "You are kidding, right? In my opinion, it is necessary. You 
     readTime: "11 min read",
     publishedAt: "2025-02-04",
     source: "A Born Traveller blog",
+    heroImage: "/images/stories/rachel-finding-home-hero.jpg",
+    heroImageAlt: "Finding home in Buenos Aires",
+    galleryImages: [
+      { src: "/images/stories/rachel-finding-home-gallery-1.jpg", alt: "Building a life in BA", caption: "Seven years in Buenos Aires" },
+      { src: "/images/stories/rachel-finding-home-gallery-2.jpg", alt: "The expat journey", caption: "From exchange student to resident" }
+    ],
     content: `
 ## The Exchange That Never Ended
 
@@ -741,6 +765,12 @@ But she adds a warning: "If you are looking to move abroad to find a well-paying
     readTime: "3 min read",
     publishedAt: "2018-02-13",
     source: "Sol Salute blog",
+    heroImage: "/images/stories/jess-and-rob-modern-families-hero.jpg",
+    heroImageAlt: "Modern family life in Buenos Aires",
+    galleryImages: [
+      { src: "/images/stories/jess-and-rob-modern-families-gallery-1.jpg", alt: "Navigating BA as a family", caption: "The challenges of daily life" },
+      { src: "/images/stories/jess-and-rob-modern-families-gallery-2.jpg", alt: "Family adventures in BA", caption: "Finding humor in the chaos" }
+    ],
     content: `
 ## The Bathroom Drought
 
@@ -808,11 +838,11 @@ God forbid it happens again. But if it does, Erin is legally prepared.
     readTime: "8 min read",
     publishedAt: "2024-03-15",
     source: "Personal account",
-    heroImage: "/images/stories/buenos-aires-cafe-culture.jpg",
-    heroImageAlt: "Cafe culture in Buenos Aires with street vendors",
+    heroImage: "/images/stories/jim-and-trish-retirement-dream-hero.jpg",
+    heroImageAlt: "Enjoying cafe culture in Buenos Aires",
     galleryImages: [
-      { src: "/images/stories/plaza-serrano.jpg", alt: "Plaza Serrano in Palermo", caption: "Plaza Serrano cafe scene" },
-      { src: "/images/stories/street-vendor-buenos-aires.jpg", alt: "Street vendor in Buenos Aires", caption: "The famous 'sock salesman' and other characters" }
+      { src: "/images/stories/jim-and-trish-retirement-dream-gallery-1.jpg", alt: "Cafe life in Palermo", caption: "The rhythm of Buenos Aires cafes" },
+      { src: "/images/stories/jim-and-trish-retirement-dream-gallery-2.jpg", alt: "Street life and coffee", caption: "Where strangers become characters" }
     ],
     content: `
 ## The Sock Salesman
@@ -906,11 +936,11 @@ Just buy the socks. They're actually pretty good quality.
     readTime: "6 min read",
     publishedAt: "2024-04-10",
     source: "Personal account",
-    heroImage: "/images/stories/buenos-aires-subway.jpg",
-    heroImageAlt: "Buenos Aires subway with street performers",
+    heroImage: "/images/stories/john-and-heather-new-chapter-hero.jpg",
+    heroImageAlt: "Starting a new chapter in Buenos Aires",
     galleryImages: [
-      { src: "/images/stories/subway-performers.jpg", alt: "Subway performers in BA", caption: "The traveling circus of the Subte" },
-      { src: "/images/stories/recoleta-neighborhood.jpg", alt: "Recoleta neighborhood", caption: "Sofia's home in Recoleta" }
+      { src: "/images/stories/john-and-heather-new-chapter-gallery-1.jpg", alt: "Life in Recoleta", caption: "The daily commute as adventure" },
+      { src: "/images/stories/john-and-heather-new-chapter-gallery-2.jpg", alt: "Exploring the city", caption: "Finding magic in ordinary moments" }
     ],
     content: `
 ## The Traveling Circus
@@ -998,11 +1028,11 @@ Bring small bills. Keep your bag close. And try to enjoy the show - you're part 
     readTime: "5 min read",
     publishedAt: "2024-01-15",
     source: "r/digitalnomad Reddit",
-    heroImage: "/images/stories/digital-nomad-isolation.jpg",
-    heroImageAlt: "Solo digital nomad working alone in Buenos Aires apartment",
+    heroImage: "/images/stories/monica-transforming-setbacks-hero.jpg",
+    heroImageAlt: "Transforming setbacks into growth",
     galleryImages: [
-      { src: "/images/stories/palermo-soho-coworking.jpg", alt: "Coworking space in Palermo SoHo", caption: "Working remotely in Palermo SoHo" },
-      { src: "/images/stories/expat-loneliness-cafe.jpg", alt: "Solo expat at cafe", caption: "The isolation of the digital nomad lifestyle" }
+      { src: "/images/stories/monica-transforming-setbacks-gallery-1.jpg", alt: "Overcoming professional challenges", caption: "When the nomad dream meets reality" },
+      { src: "/images/stories/monica-transforming-setbacks-gallery-2.jpg", alt: "Finding resilience abroad", caption: "Learning from the struggle" }
     ],
     content: `
 ## The Honeymoon Phase

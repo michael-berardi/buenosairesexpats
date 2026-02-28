@@ -300,7 +300,7 @@ export const countries: CountryData[] = [
       "What if I have a British National (Overseas) passport?"
     ],
     notes: "British citizens can visit visa-free for 90 days. Brexit did not affect visa requirements. Passport must be valid for the proposed duration of stay. British National (Overseas) passport holders from Hong Kong have different requirements.",
-    image: "/images/countries/uk-landmark.jpg",
+    image: "/images/countries/united-kingdom-landmark.jpg",
     imageAlt: "London skyline with Big Ben and Thames - representing UK travelers to Argentina"
   },
   {
@@ -503,7 +503,7 @@ export const countries: CountryData[] = [
   },
   {
     slug: "belgium",
-    name: "Belgium",
+    name: "Ireland",
     flag: "🇧🇪",
     region: "europe",
     visaStatus: "exempt",
