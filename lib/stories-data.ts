@@ -18,6 +18,9 @@ export interface ExpatStory {
   content: string;
   publishedAt: string;
   source?: string;
+  heroImage?: string;
+  heroImageAlt?: string;
+  galleryImages?: { src: string; alt: string; caption?: string }[];
 }
 
 export const stories: ExpatStory[] = [
@@ -40,6 +43,12 @@ export const stories: ExpatStory[] = [
     readTime: "12 min read",
     publishedAt: "2024-01-15",
     source: "Sol Salute blog",
+    heroImage: "/images/stories/erin-palermo-cafe.jpg",
+    heroImageAlt: "Erin working at a Palermo cafe, representing expat life in Buenos Aires",
+    galleryImages: [
+      { src: "/images/stories/palermo-soho-street.jpg", alt: "Palermo Soho neighborhood where Erin lives", caption: "Palermo Soho - Erin's neighborhood for 15+ years" },
+      { src: "/images/stories/expat-family-bilingual.jpg", alt: "Bilingual family life in Buenos Aires", caption: "Raising bilingual kids in Argentina" }
+    ],
     content: `
 ## The Honeymoon That Never Ended
 
@@ -96,6 +105,12 @@ Would she do it again? "In a heartbeat. But I'd also understand that 'in a heart
     readTime: "10 min read",
     publishedAt: "2024-02-01",
     source: "Startups.com interview",
+    heroImage: "/images/stories/lisa-startup-buenos-aires.jpg",
+    heroImageAlt: "Lisa Besserman, founder of Startup Buenos Aires",
+    galleryImages: [
+      { src: "/images/stories/startup-community-event.jpg", alt: "Startup Buenos Aires community event", caption: "Building Argentina's startup ecosystem" },
+      { src: "/images/stories/coworking-space-palermo.jpg", alt: "Coworking space in Palermo", caption: "Where SUBA community connects" }
+    ],
     content: `
 ## From Digital Nomad to Ecosystem Builder
 
@@ -157,6 +172,12 @@ Lisa also found personal happiness in Buenos Aires - marrying "an Argentine man 
     readTime: "9 min read",
     publishedAt: "2025-07-05",
     source: "Business Insider",
+    heroImage: "/images/stories/digital-nomad-budget-life.jpg",
+    heroImageAlt: "Affordable living in Buenos Aires - cost comparison for digital nomads",
+    galleryImages: [
+      { src: "/images/stories/palermo-apartment-budget.jpg", alt: "Budget apartment in Palermo", caption: "$400/month apartment in Palermo" },
+      { src: "/images/stories/expat-loneliness.jpg", alt: "Solo expat experience", caption: "The isolation many digital nomads face" }
+    ],
     content: `
 ## The Math Made Perfect Sense
 
@@ -210,6 +231,12 @@ His advice? "You can't be prepared for everything when you move abroad. You hand
     readTime: "8 min read",
     publishedAt: "2024-08-01",
     source: "The Photography Confidential",
+    heroImage: "/images/stories/german-argentine-couple.jpg",
+    heroImageAlt: "Intercultural couple - German and Argentine love story in Buenos Aires",
+    galleryImages: [
+      { src: "/images/stories/recoleta-neighborhood.jpg", alt: "Recoleta neighborhood", caption: "Tina's home in Recoleta" },
+      { src: "/images/stories/podcast-recording.jpg", alt: "Recording International Love Story podcast", caption: "Sharing intercultural relationship stories" }
+    ],
     content: `
 ## A Miami Origin Story
 
@@ -332,6 +359,12 @@ The story has become one of her most-shared expat moments - a perfect encapsulat
     readTime: "7 min read",
     publishedAt: "2024-08-07",
     source: "Vamos Spanish Academy",
+    heroImage: "/images/stories/british-expat-cricket.jpg",
+    heroImageAlt: "Buenos Aires Cricket Club - British expat community in Argentina",
+    galleryImages: [
+      { src: "/images/stories/london-vs-buenos-aires.jpg", alt: "London compared to Buenos Aires", caption: "From London hustle to BA rhythm" },
+      { src: "/images/stories/spanish-academy.jpg", alt: "Learning Spanish at Vamos Academy", caption: "Mastering Spanish in Buenos Aires" }
+    ],
     content: `
 ## Why Leave London?
 
@@ -553,6 +586,12 @@ On Brenda's wheels, there are no complexes nor limits. One more dancer. A differ
     readTime: "8 min read",
     publishedAt: "2024-01-20",
     source: "Expat Entrepreneur Stories",
+    heroImage: "/images/stories/tango-entrepreneur.jpg",
+    heroImageAlt: "Tango fashion designer and entrepreneur in San Telmo",
+    galleryImages: [
+      { src: "/images/stories/san-telmo-tango.jpg", alt: "Tango in San Telmo", caption: "San Telmo - the heart of tango" },
+      { src: "/images/stories/bed-breakfast-buenos-aires.jpg", alt: "B&B in San Telmo", caption: "Deby's Bed & Breakfast business" }
+    ],
     content: `
 ## The Rhythm of Life
 
@@ -769,6 +808,12 @@ God forbid it happens again. But if it does, Erin is legally prepared.
     readTime: "8 min read",
     publishedAt: "2024-03-15",
     source: "Personal account",
+    heroImage: "/images/stories/buenos-aires-cafe-culture.jpg",
+    heroImageAlt: "Cafe culture in Buenos Aires with street vendors",
+    galleryImages: [
+      { src: "/images/stories/plaza-serrano.jpg", alt: "Plaza Serrano in Palermo", caption: "Plaza Serrano cafe scene" },
+      { src: "/images/stories/street-vendor-buenos-aires.jpg", alt: "Street vendor in Buenos Aires", caption: "The famous 'sock salesman' and other characters" }
+    ],
     content: `
 ## The Sock Salesman
 
@@ -861,6 +906,12 @@ Just buy the socks. They're actually pretty good quality.
     readTime: "6 min read",
     publishedAt: "2024-04-10",
     source: "Personal account",
+    heroImage: "/images/stories/buenos-aires-subway.jpg",
+    heroImageAlt: "Buenos Aires subway with street performers",
+    galleryImages: [
+      { src: "/images/stories/subway-performers.jpg", alt: "Subway performers in BA", caption: "The traveling circus of the Subte" },
+      { src: "/images/stories/recoleta-neighborhood.jpg", alt: "Recoleta neighborhood", caption: "Sofia's home in Recoleta" }
+    ],
     content: `
 ## The Traveling Circus
 
@@ -947,6 +998,12 @@ Bring small bills. Keep your bag close. And try to enjoy the show - you're part 
     readTime: "5 min read",
     publishedAt: "2024-01-15",
     source: "r/digitalnomad Reddit",
+    heroImage: "/images/stories/digital-nomad-isolation.jpg",
+    heroImageAlt: "Solo digital nomad working alone in Buenos Aires apartment",
+    galleryImages: [
+      { src: "/images/stories/palermo-soho-coworking.jpg", alt: "Coworking space in Palermo SoHo", caption: "Working remotely in Palermo SoHo" },
+      { src: "/images/stories/expat-loneliness-cafe.jpg", alt: "Solo expat at cafe", caption: "The isolation of the digital nomad lifestyle" }
+    ],
     content: `
 ## The Honeymoon Phase
 

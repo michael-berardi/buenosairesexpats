@@ -9,6 +9,8 @@ import {
   SheetContent,
   SheetTrigger,
   SheetClose,
+  SheetTitle,
+  SheetDescription,
 } from "@/components/ui/sheet";
 import {
   NavigationMenu,
@@ -179,7 +181,11 @@ export function Navbar() {
               <span className="sr-only">Toggle menu</span>
             </Button>
           </SheetTrigger>
-          <SheetContent side="right" className="w-[300px] sm:w-[400px] overflow-y-auto">
+          <SheetContent side="right" className="w-full sm:w-[400px] max-w-full overflow-y-auto">
+            <SheetTitle className="sr-only">Main Navigation Menu</SheetTitle>
+            <SheetDescription className="sr-only">
+              Navigate to visa guides, cost of living information, neighborhoods, and other resources for expats moving to Buenos Aires.
+            </SheetDescription>
             <div className="flex flex-col gap-6 py-6">
               <div className="flex items-center justify-between">
                 <span className="font-bold text-xl">
@@ -251,11 +257,6 @@ export function Navbar() {
                 <SheetClose asChild>
                   <Link href="/contact" className="text-foreground hover:text-primary transition-colors">
                     Contact
-                  </Link>
-                </SheetClose>
-                <SheetClose asChild>
-                  <Link href="/newsletter" className="text-foreground hover:text-primary transition-colors">
-                    Newsletter
                   </Link>
                 </SheetClose>
               </nav>

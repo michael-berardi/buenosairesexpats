@@ -305,18 +305,18 @@ export default function ResourcesPage() {
         </div>
       </section>
 
-      {/* Newsletter CTA */}
-      <section className="py-16 bg-primary text-primary-foreground">
+      {/* Lucero Legal CTA */}
+      <section className="py-16 bg-sky-600 text-white">
         <div className="container mx-auto px-4 text-center">
           <div className="max-w-2xl mx-auto">
-            <h2 className="text-3xl font-bold mb-4">Get Updates</h2>
-            <p className="text-primary-foreground/90 mb-8">
-              New resources added regularly. Subscribe to get notified when we add 
-              new guides, checklists, and service providers.
+            <h2 className="text-3xl font-bold mb-4">Need Legal Help?</h2>
+            <p className="text-sky-100 mb-8">
+              For complex visa cases, business immigration, or legal advice, 
+              our partner Lucero Legal specializes in expat immigration in Argentina.
             </p>
-            <Button asChild size="lg" variant="secondary">
-              <Link href="/newsletter">
-                Subscribe to Newsletter
+            <Button asChild size="lg" variant="secondary" className="bg-white text-sky-700 hover:bg-sky-50">
+              <Link href="https://lucerolegal.org?utm_source=buenosairesexpats&utm_medium=resources-cta" target="_blank" rel="noopener noreferrer">
+                Get Free Consultation
                 <ArrowRight className="w-4 h-4 ml-2" />
               </Link>
             </Button>

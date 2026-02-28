@@ -195,10 +195,10 @@ export default function CostOfLivingPage() {
               <TrendingUp className="w-3 h-3 mr-1" />
               Updated February 2026
             </Badge>
-            <h1 className="text-4xl md:text-5xl font-bold mb-6 text-white drop-shadow-lg">
+            <h1 className="text-4xl md:text-5xl font-bold mb-6 text-white drop-shadow-lg" style={{ textShadow: '0 2px 8px rgba(0,0,0,0.6)' }}>
               Cost of Living in Buenos Aires
             </h1>
-            <p className="text-xl text-white/90 mb-8 drop-shadow-md">
+            <p className="text-xl text-white/90 mb-8" style={{ textShadow: '0 1px 4px rgba(0,0,0,0.6)' }}>
               Real budget breakdowns from expats living here. From bare-bones to comfortable living, 
               see exactly what you&apos;ll spend each month.
             </p>
@@ -351,7 +351,28 @@ export default function CostOfLivingPage() {
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <h2 className="heading-md mb-8 text-center">Rent by Neighborhood</h2>
-            <div className="card-feature">
+            
+            {/* Mobile Card Layout */}
+            <div className="block md:hidden space-y-4">
+              {neighborhoodComparison.map((hood) => (
+                <div key={hood.name} className="card-feature">
+                  <div className="flex items-start justify-between mb-2">
+                    <Link href={`/neighborhoods/${hood.slug}`} className="font-medium text-lg hover:text-sky-600 hover:underline inline-flex items-center min-h-[44px]">
+                      {hood.name}
+                    </Link>
+                    <span className="text-sky-600 font-semibold">{hood.rent}</span>
+                  </div>
+                  <p className="text-sm text-muted-foreground mb-1">{hood.vibe}</p>
+                  <div className="flex items-center gap-2 text-sm">
+                    <span className="text-muted-foreground">Transport:</span>
+                    <span>{hood.transport}</span>
+                  </div>
+                </div>
+              ))}
+            </div>
+
+            {/* Desktop Table Layout */}
+            <div className="hidden md:block card-feature">
               <div className="overflow-x-auto">
                 <table className="w-full">
                   <thead>

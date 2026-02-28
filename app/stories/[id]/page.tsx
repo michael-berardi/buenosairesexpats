@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { Button } from "@/components/ui/button";
@@ -37,6 +38,10 @@ export async function generateMetadata({ params }: { params: Promise<{ id: strin
       description: story.summary,
       type: "article",
       publishedTime: story.publishedAt,
+      images: story.heroImage ? [{
+        url: story.heroImage,
+        alt: story.heroImageAlt || `${story.name}'s expat story`,
+      }] : undefined,
     },
     alternates: {
       canonical: `https://buenosairesexpats.com/stories/${id}`,
@@ -109,16 +114,31 @@ export default async function StoryPage({ params }: { params: Promise<{ id: stri
       </div>
 
       {/* Hero */}
-      <section className="py-12 md:py-16 bg-gradient-to-b from-sky-50 to-white dark:from-sky-950/20 dark:to-background">
-        <div className="container mx-auto px-4">
+      <section className={`relative ${story.heroImage ? 'min-h-[400px] flex items-end' : 'py-12 md:py-16 bg-gradient-to-b from-sky-50 to-white dark:from-sky-950/20 dark:to-background'}`}>
+        {/* Hero Image Background */}
+        {story.heroImage && (
+          <>
+            <Image
+              src={story.heroImage}
+              alt={story.heroImageAlt || `${story.name}'s story`}
+              fill
+              className="object-cover"
+              priority
+              sizes="100vw"
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-black/30" />
+          </>
+        )}
+        
+        <div className={`container mx-auto px-4 ${story.heroImage ? 'relative z-10 pb-12' : ''}`}>
           <div className="max-w-3xl mx-auto">
-            <Badge className={`mb-4 ${categoryColors[story.category]}`}>
+            <Badge className={`mb-4 ${story.heroImage ? 'bg-white/90 text-foreground' : categoryColors[story.category]}`}>
               {categoryLabels[story.category]}
             </Badge>
-            <h1 className="text-3xl md:text-4xl font-bold mb-4">
+            <h1 className={`text-3xl md:text-4xl font-bold mb-4 ${story.heroImage ? 'text-white' : ''}`}>
               {story.name}: {story.from} to Buenos Aires
             </h1>
-            <p className="text-lg text-muted-foreground mb-6">{story.summary}</p>
+            <p className={`text-lg mb-6 ${story.heroImage ? 'text-white/90' : 'text-muted-foreground'}`}>{story.summary}</p>
             
             <div className="flex flex-wrap gap-4 text-sm">
               <div className="flex items-center gap-2">
@@ -178,6 +198,33 @@ export default async function StoryPage({ params }: { params: Promise<{ id: stri
                 </ul>
               </CardContent>
             </Card>
+
+            {/* Gallery Images */}
+            {story.galleryImages && story.galleryImages.length > 0 && (
+              <div className="mb-8">
+                <h3 className="text-lg font-semibold mb-4">Photo Gallery</h3>
+                <div className="grid md:grid-cols-2 gap-4">
+                  {story.galleryImages.map((image, index) => (
+                    <figure key={index} className="rounded-lg overflow-hidden border">
+                      <div className="relative aspect-video">
+                        <Image
+                          src={image.src}
+                          alt={image.alt}
+                          fill
+                          className="object-cover"
+                          sizes="(max-width: 768px) 100vw, 50vw"
+                        />
+                      </div>
+                      {image.caption && (
+                        <figcaption className="px-3 py-2 text-sm text-muted-foreground bg-muted">
+                          {image.caption}
+                        </figcaption>
+                      )}
+                    </figure>
+                  ))}
+                </div>
+              </div>
+            )}
 
             {/* Story Content */}
             <div className="prose prose-lg max-w-none">

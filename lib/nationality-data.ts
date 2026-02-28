@@ -1,6 +1,16 @@
-// Argentina visa requirements by nationality
-// Data sourced from Argentine Ministry of Foreign Affairs and official consulate websites
-// Last updated: 2026-02-26
+/**
+ * Argentina visa requirements by nationality
+ * 
+ * Data sources:
+ * - Argentine National Directorate of Migration: https://www.migraciones.gov.ar
+ * - Ministry of Foreign Affairs: https://www.cancilleria.gob.ar
+ * - Mercosur agreements and bilateral treaties
+ * 
+ * Last verified: 2026-02-28
+ * 
+ * IMPORTANT: Visa requirements change frequently. Always verify current 
+ * requirements on official government websites before traveling.
+ */
 
 export type VisaStatus = "exempt" | "required";
 export type StayDuration = 30 | 60 | 90;
@@ -23,6 +33,10 @@ export interface CountryData {
   processingTime?: string;
   visaFee?: string;
   notes?: string;
+  image?: string;
+  imageAlt?: string;
+  /** URL to official source for verification */
+  sourceUrl?: string;
 }
 
 // Top 50 priority countries based on tourism data and search potential
@@ -43,7 +57,9 @@ export const countries: CountryData[] = [
       "Can I work in Argentina with just my ID?",
       "What documents do I need to cross the border by bus?"
     ],
-    notes: "As a Mercosur member, Brazilian citizens enjoy simplified entry procedures and can enter Argentina using only their national ID card (RG). This applies to land, sea, and air borders."
+    notes: "As a Mercosur member, Brazilian citizens enjoy simplified entry procedures and can enter Argentina using only their national ID card (RG). This applies to land, sea, and air borders.",
+    image: "/images/countries/brazil-landmark.jpg",
+    imageAlt: "Rio de Janeiro with Christ the Redeemer - representing Brazilian travelers to Argentina"
   },
   {
     slug: "chile",
@@ -60,7 +76,9 @@ export const countries: CountryData[] = [
       "Can I stay longer than 90 days?",
       "What about the reciprocity fee - is it still required?"
     ],
-    notes: "Chilean citizens can enter Argentina with just their Cedula de Identidad. The Cristo Redentor pass is the most popular land border crossing between Santiago and Mendoza."
+    notes: "Chilean citizens can enter Argentina with just their Cedula de Identidad. The Cristo Redentor pass is the most popular land border crossing between Santiago and Mendoza.",
+    image: "/images/countries/chile-landmark.jpg",
+    imageAlt: "Santiago skyline with Andes mountains - representing Chilean travelers to Argentina"
   },
   {
     slug: "uruguay",
@@ -77,7 +95,9 @@ export const countries: CountryData[] = [
       "Can I live in Argentina while working in Uruguay?",
       "What documents do I need for the Buquebus ferry?"
     ],
-    notes: "Uruguayan citizens enjoy the easiest access to Argentina, with frequent ferry services from Colonia and Montevideo to Buenos Aires accepting national ID cards."
+    notes: "Uruguayan citizens enjoy the easiest access to Argentina, with frequent ferry services from Colonia and Montevideo to Buenos Aires accepting national ID cards.",
+    image: "/images/countries/uruguay-landmark.jpg",
+    imageAlt: "Montevideo waterfront and old city - representing Uruguayan travelers to Argentina"
   },
   {
     slug: "paraguay",
@@ -126,7 +146,9 @@ export const countries: CountryData[] = [
       "Do I need a yellow fever certificate?",
       "What if I'm flying directly from Lima?"
     ],
-    notes: "Peruvian citizens can enter Argentina visa-free for up to 90 days. If arriving from a Mercosur country, they may use their DNI; otherwise, a passport is required."
+    notes: "Peruvian citizens can enter Argentina visa-free for up to 90 days. If arriving from a Mercosur country, they may use their DNI; otherwise, a passport is required.",
+    image: "/images/countries/peru-landmark.jpg",
+    imageAlt: "Machu Picchu with Andes mountains - representing Peruvian travelers to Argentina"
   },
   {
     slug: "ecuador",
@@ -159,7 +181,9 @@ export const countries: CountryData[] = [
       "Is there a reciprocity fee?",
       "Can I extend my tourist stay?"
     ],
-    notes: "Colombian citizens can visit Argentina visa-free for up to 90 days. Direct flights from Bogota to Buenos Aires are available with multiple carriers."
+    notes: "Colombian citizens can visit Argentina visa-free for up to 90 days. Direct flights from Bogota to Buenos Aires are available with multiple carriers.",
+    image: "/images/countries/colombia-landmark.jpg",
+    imageAlt: "Bogota cityscape with mountains - representing Colombian travelers to Argentina"
   },
   {
     slug: "venezuela",
@@ -196,7 +220,9 @@ export const countries: CountryData[] = [
       "What about dual citizenship with children?",
       "Do minors need special documentation?"
     ],
-    notes: "US citizens enjoy visa-free entry for 90 days. The reciprocity fee was eliminated in 2016. Passport should be valid for the duration of stay. Parents traveling alone with children may need notarized permission from the other parent."
+    notes: "US citizens enjoy visa-free entry for 90 days. The reciprocity fee was eliminated in 2016. Passport should be valid for the duration of stay. Parents traveling alone with children may need notarized permission from the other parent.",
+    image: "/images/countries/usa-landmark.jpg",
+    imageAlt: "New York City skyline with Statue of Liberty - representing United States travelers to Argentina"
   },
   {
     slug: "canada",
@@ -214,7 +240,9 @@ export const countries: CountryData[] = [
       "Can I extend my stay?",
       "What about dual Canadian-Argentine citizens?"
     ],
-    notes: "Canadian citizens can visit Argentina visa-free for 90 days. The reciprocity fee was eliminated. Dual citizens should note that Argentine citizens must enter and exit Argentina on their Argentine passport."
+    notes: "Canadian citizens can visit Argentina visa-free for 90 days. The reciprocity fee was eliminated. Dual citizens should note that Argentine citizens must enter and exit Argentina on their Argentine passport.",
+    image: "/images/countries/canada-landmark.jpg",
+    imageAlt: "Toronto skyline with CN Tower - representing Canadian travelers to Argentina"
   },
   {
     slug: "mexico",
@@ -231,7 +259,9 @@ export const countries: CountryData[] = [
       "Can I work on a tourist visa?",
       "How do I extend my stay?"
     ],
-    notes: "Mexican citizens enjoy visa-free entry for 90 days. Multiple airlines offer direct flights from Mexico City to Buenos Aires."
+    notes: "Mexican citizens enjoy visa-free entry for 90 days. Multiple airlines offer direct flights from Mexico City to Buenos Aires.",
+    image: "/images/countries/mexico-landmark.jpg",
+    imageAlt: "Mexico City skyline with historic center - representing Mexican travelers to Argentina"
   },
   // Europe (Major markets)
   {
@@ -249,7 +279,9 @@ export const countries: CountryData[] = [
       "Do I need to register somewhere?",
       "Can I use my Spanish ID (DNI) instead of passport?"
     ],
-    notes: "Spanish citizens, as EU members, enjoy visa-free entry for 90 days. Strong historical and cultural ties exist between Spain and Argentina, making it a popular destination for Spanish travelers."
+    notes: "Spanish citizens, as EU members, enjoy visa-free entry for 90 days. Strong historical and cultural ties exist between Spain and Argentina, making it a popular destination for Spanish travelers.",
+    image: "/images/countries/spain-landmark.jpg",
+    imageAlt: "Barcelona skyline with Sagrada Familia - representing Spanish travelers to Argentina"
   },
   {
     slug: "united-kingdom",
@@ -267,7 +299,9 @@ export const countries: CountryData[] = [
       "Can I extend my stay beyond 90 days?",
       "What if I have a British National (Overseas) passport?"
     ],
-    notes: "British citizens can visit visa-free for 90 days. Brexit did not affect visa requirements. Passport must be valid for the proposed duration of stay. British National (Overseas) passport holders from Hong Kong have different requirements."
+    notes: "British citizens can visit visa-free for 90 days. Brexit did not affect visa requirements. Passport must be valid for the proposed duration of stay. British National (Overseas) passport holders from Hong Kong have different requirements.",
+    image: "/images/countries/uk-landmark.jpg",
+    imageAlt: "London skyline with Big Ben and Thames - representing UK travelers to Argentina"
   },
   {
     slug: "germany",
@@ -284,7 +318,9 @@ export const countries: CountryData[] = [
       "Do I need to register with authorities?",
       "Are there German-speaking communities in Buenos Aires?"
     ],
-    notes: "German citizens enjoy visa-free entry for 90 days. Buenos Aires has a significant German expat community, particularly in neighborhoods like Belgrano."
+    notes: "German citizens enjoy visa-free entry for 90 days. Buenos Aires has a significant German expat community, particularly in neighborhoods like Belgrano.",
+    image: "/images/countries/germany-landmark.jpg",
+    imageAlt: "Berlin skyline with Brandenburg Gate - representing German travelers to Argentina"
   },
   {
     slug: "france",
@@ -301,7 +337,9 @@ export const countries: CountryData[] = [
       "Can I extend my stay?",
       "Do I need proof of onward travel?"
     ],
-    notes: "French citizens can visit Argentina visa-free for 90 days. Buenos Aires has strong French cultural influence and an active French community."
+    notes: "French citizens can visit Argentina visa-free for 90 days. Buenos Aires has strong French cultural influence and an active French community.",
+    image: "/images/countries/france-landmark.jpg",
+    imageAlt: "Paris skyline with Eiffel Tower - representing French travelers to Argentina"
   },
   {
     slug: "italy",
@@ -318,7 +356,9 @@ export const countries: CountryData[] = [
       "Is there a large Italian community?",
       "Can I extend my stay?"
     ],
-    notes: "Italian citizens enjoy visa-free entry for 90 days. Argentina has the largest Italian population outside of Italy, with deep cultural connections. Many Argentines have Italian ancestry and can claim Italian citizenship."
+    notes: "Italian citizens enjoy visa-free entry for 90 days. Argentina has the largest Italian population outside of Italy, with deep cultural connections. Many Argentines have Italian ancestry and can claim Italian citizenship.",
+    image: "/images/countries/italy-landmark.jpg",
+    imageAlt: "Rome skyline with Colosseum - representing Italian travelers to Argentina"
   },
   {
     slug: "netherlands",
@@ -334,7 +374,9 @@ export const countries: CountryData[] = [
       "Can I work remotely from Argentina?",
       "Do I need health insurance?"
     ],
-    notes: "Dutch citizens can visit visa-free for 90 days. The Netherlands and Argentina maintain strong diplomatic and trade relations."
+    notes: "Dutch citizens can visit visa-free for 90 days. The Netherlands and Argentina maintain strong diplomatic and trade relations.",
+    image: "/images/countries/netherlands-landmark.jpg",
+    imageAlt: "Amsterdam canals with traditional houses - representing Dutch travelers to Argentina"
   },
   {
     slug: "switzerland",
@@ -350,7 +392,9 @@ export const countries: CountryData[] = [
       "Can I extend my stay?",
       "Do I need to register?"
     ],
-    notes: "Swiss citizens enjoy visa-free entry for 90 days. Switzerland and Argentina have strong economic ties and a double taxation agreement."
+    notes: "Swiss citizens enjoy visa-free entry for 90 days. Switzerland and Argentina have strong economic ties and a double taxation agreement.",
+    image: "/images/countries/switzerland-landmark.jpg",
+    imageAlt: "Swiss Alps with Matterhorn - representing Swiss travelers to Argentina"
   },
   // Asia-Pacific
   {
@@ -368,7 +412,9 @@ export const countries: CountryData[] = [
       "Do I need 6 months passport validity?",
       "Can I extend my stay?"
     ],
-    notes: "Australian citizens enjoy visa-free entry for 90 days. No direct flights exist; common routes transit through Santiago, Auckland, or Los Angeles."
+    notes: "Australian citizens enjoy visa-free entry for 90 days. No direct flights exist; common routes transit through Santiago, Auckland, or Los Angeles.",
+    image: "/images/countries/australia-landmark.jpg",
+    imageAlt: "Sydney Opera House and Harbour Bridge - representing Australian travelers to Argentina"
   },
   {
     slug: "japan",
@@ -385,7 +431,9 @@ export const countries: CountryData[] = [
       "Can I extend my stay?",
       "Do I need to register somewhere?"
     ],
-    notes: "Japanese citizens can visit Argentina visa-free for 90 days. ANA operates direct flights between Tokyo and Buenos Aires."
+    notes: "Japanese citizens can visit Argentina visa-free for 90 days. ANA operates direct flights between Tokyo and Buenos Aires.",
+    image: "/images/countries/japan-landmark.jpg",
+    imageAlt: "Tokyo skyline with Mount Fuji - representing Japanese travelers to Argentina"
   },
   {
     slug: "new-zealand",
@@ -400,7 +448,9 @@ export const countries: CountryData[] = [
       "How long can Kiwis stay?",
       "Are there direct flights?"
     ],
-    notes: "New Zealand citizens can visit visa-free for 90 days."
+    notes: "New Zealand citizens can visit visa-free for 90 days.",
+    image: "/images/countries/new-zealand-landmark.jpg",
+    imageAlt: "Auckland skyline with Sky Tower - representing New Zealand travelers to Argentina"
   },
   {
     slug: "south-korea",
@@ -415,7 +465,9 @@ export const countries: CountryData[] = [
       "How long can Koreans stay?",
       "Are there direct flights from Seoul?"
     ],
-    notes: "South Korean citizens enjoy visa-free entry for 90 days."
+    notes: "South Korean citizens enjoy visa-free entry for 90 days.",
+    image: "/images/countries/south-korea-landmark.jpg",
+    imageAlt: "Seoul skyline with modern architecture - representing South Korean travelers to Argentina"
   },
   {
     slug: "singapore",
@@ -445,7 +497,9 @@ export const countries: CountryData[] = [
       "How long can Portuguese tourists stay?",
       "Can I extend my stay?"
     ],
-    notes: "Portuguese citizens enjoy visa-free entry for 90 days as EU members."
+    notes: "Portuguese citizens enjoy visa-free entry for 90 days as EU members.",
+    image: "/images/countries/portugal-landmark.jpg",
+    imageAlt: "Lisbon skyline with historic trams - representing Portuguese travelers to Argentina"
   },
   {
     slug: "belgium",
@@ -459,7 +513,9 @@ export const countries: CountryData[] = [
       "Do Belgian citizens need a visa?",
       "How long can Belgians stay?"
     ],
-    notes: "Belgian citizens can visit visa-free for 90 days."
+    notes: "Belgian citizens can visit visa-free for 90 days.",
+    image: "/images/countries/belgium-landmark.jpg",
+    imageAlt: "Brussels Grand Place with historic buildings - representing Belgian travelers to Argentina"
   },
   {
     slug: "austria",
@@ -543,7 +599,9 @@ export const countries: CountryData[] = [
       "Do Irish citizens need a visa?",
       "How long can Irish tourists stay?"
     ],
-    notes: "Irish citizens can visit visa-free for 90 days."
+    notes: "Irish citizens can visit visa-free for 90 days.",
+    image: "/images/countries/ireland-landmark.jpg",
+    imageAlt: "Dublin with historic Georgian architecture - representing Irish travelers to Argentina"
   },
   {
     slug: "poland",

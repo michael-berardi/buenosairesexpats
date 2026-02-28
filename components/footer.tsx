@@ -37,7 +37,6 @@ export function Footer() {
   const companyLinks = [
     { label: "About Us", href: "/about" },
     { label: "Contact", href: "/contact" },
-    { label: "Newsletter", href: "/newsletter" },
     { label: "Privacy Policy", href: "/privacy" },
     { label: "Terms", href: "/terms" },
   ];
@@ -64,9 +63,9 @@ export function Footer() {
   return (
     <footer className="border-t bg-gradient-to-b from-slate-50 to-white">
       <div className="container mx-auto px-4 py-16 md:py-20">
-        <div className="grid grid-cols-2 gap-8 md:grid-cols-4 lg:grid-cols-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 md:grid-cols-4 lg:grid-cols-6">
           {/* Brand */}
-          <div className="col-span-2 lg:col-span-1">
+          <div className="col-span-1 sm:col-span-2 lg:col-span-1">
             <Link href="/" className="flex items-center mb-4">
               <span className="font-bold text-xl">
                 Buenos Aires <span className="text-sky-600">Expats</span>
@@ -90,7 +89,7 @@ export function Footer() {
                 <li key={link.href}>
                   <Link
                     href={link.href}
-                    className="text-sm text-muted-foreground hover:text-foreground transition-colors"
+                    className="text-sm text-muted-foreground hover:text-foreground transition-colors inline-flex items-center min-h-[44px]"
                   >
                     {getVisaLabel(link.key)}
                   </Link>
@@ -107,7 +106,7 @@ export function Footer() {
                 <li key={link.href}>
                   <Link
                     href={link.href}
-                    className="text-sm text-muted-foreground hover:text-foreground transition-colors"
+                    className="text-sm text-muted-foreground hover:text-foreground transition-colors inline-flex items-center min-h-[44px]"
                   >
                     {getGuideLabel(link.key)}
                   </Link>
@@ -124,7 +123,7 @@ export function Footer() {
                 <li key={link.href}>
                   <Link
                     href={link.href}
-                    className="text-sm text-muted-foreground hover:text-foreground transition-colors"
+                    className="text-sm text-muted-foreground hover:text-foreground transition-colors inline-flex items-center min-h-[44px]"
                   >
                     {link.label}
                   </Link>
@@ -163,7 +162,7 @@ export function Footer() {
                 <li key={link.href}>
                   <Link
                     href={link.href}
-                    className="text-sm text-muted-foreground hover:text-foreground transition-colors"
+                    className="text-sm text-muted-foreground hover:text-foreground transition-colors inline-flex items-center min-h-[44px]"
                   >
                     {link.label}
                   </Link>

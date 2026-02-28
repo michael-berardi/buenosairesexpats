@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { Button } from "@/components/ui/button";
@@ -113,8 +114,27 @@ export default function NationalityPage({ params }: { params: { country: string 
       </div>
 
       {/* Hero */}
-      <section className="py-16 md:py-24 bg-gradient-to-b from-sky-50 to-white dark:from-sky-950/20 dark:to-background">
-        <div className="container mx-auto px-4">
+      <section className="relative py-16 md:py-24 overflow-hidden">
+        {/* Background Image */}
+        {country.image && (
+          <div className="absolute inset-0">
+            <Image
+              src={country.image}
+              alt={country.imageAlt || `${country.name} landscape`}
+              fill
+              className="object-cover"
+              priority
+              sizes="100vw"
+            />
+            <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/50 to-black/70" />
+          </div>
+        )}
+        {/* Fallback Gradient */}
+        {!country.image && (
+          <div className="absolute inset-0 bg-gradient-to-b from-sky-50 to-white dark:from-sky-950/20 dark:to-background" />
+        )}
+        
+        <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-3xl mx-auto text-center">
             <div className="text-6xl mb-4">{country.flag}</div>
             <Badge className="mb-4" variant={isVisaExempt ? "default" : "secondary"}>
@@ -124,26 +144,26 @@ export default function NationalityPage({ params }: { params: { country: string 
                 <><AlertCircle className="w-3 h-3 mr-1" /> Visa Required</>
               )}
             </Badge>
-            <h1 className="text-4xl md:text-5xl font-bold mb-6">
+            <h1 className={`text-4xl md:text-5xl font-bold mb-6 ${country.image ? 'text-white' : ''}`}>
               Argentina Visa Requirements for {country.name} Citizens
             </h1>
-            <p className="text-xl text-muted-foreground mb-6">
+            <p className={`text-xl mb-6 ${country.image ? 'text-white/90' : 'text-muted-foreground'}`}>
               {isVisaExempt 
                 ? `${country.name} citizens can visit Argentina visa-free for up to ${country.stayDuration} days for tourism or business.`
                 : `${country.name} citizens must obtain a visa before traveling to Argentina. Here's everything you need to know.`
               }
             </p>
-            <div className="flex flex-wrap justify-center gap-4 text-sm mb-6">
+            <div className={`flex flex-wrap justify-center gap-4 text-sm mb-6 ${country.image ? 'text-white/80' : ''}`}>
               <div className="flex items-center gap-2">
-                <Clock className="w-4 h-4 text-primary" />
+                <Clock className={`w-4 h-4 ${country.image ? 'text-sky-300' : 'text-primary'}`} />
                 <span>{country.stayDuration} days max stay</span>
               </div>
               <div className="flex items-center gap-2">
-                <Globe className="w-4 h-4 text-primary" />
+                <Globe className={`w-4 h-4 ${country.image ? 'text-sky-300' : 'text-primary'}`} />
                 <span>{isVisaExempt ? "No visa required" : "Apply at consulate"}</span>
               </div>
               <div className="flex items-center gap-2">
-                <FileText className="w-4 h-4 text-primary" />
+                <FileText className={`w-4 h-4 ${country.image ? 'text-sky-300' : 'text-primary'}`} />
                 <span>Updated 2026</span>
               </div>
             </div>
