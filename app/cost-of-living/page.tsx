@@ -161,12 +161,12 @@ const expenseCategories = [
 ];
 
 const neighborhoodComparison = [
-  { name: "Palermo", rent: "$$$", vibe: "Trendy, nightlife, young professionals", transport: "Excellent" },
-  { name: "Recoleta", rent: "$$$", vibe: "Upscale, historic, families", transport: "Excellent" },
-  { name: "Belgrano", rent: "$$", vibe: "Residential, quiet, families", transport: "Very Good" },
-  { name: "San Telmo", rent: "$$", vibe: "Bohemian, touristy, artsy", transport: "Good" },
-  { name: "Villa Crespo", rent: "$", vibe: "Up-and-coming, authentic, younger", transport: "Good" },
-  { name: "Caballito", rent: "$", vibe: "Traditional, residential, local", transport: "Very Good" },
+  { name: "Palermo", rent: "$$$", vibe: "Trendy, nightlife, young professionals", transport: "Excellent", slug: "palermo" },
+  { name: "Recoleta", rent: "$$$", vibe: "Upscale, historic, families", transport: "Excellent", slug: "recoleta" },
+  { name: "Belgrano", rent: "$$", vibe: "Residential, quiet, families", transport: "Very Good", slug: "belgrano" },
+  { name: "San Telmo", rent: "$$", vibe: "Bohemian, touristy, artsy", transport: "Good", slug: "san-telmo" },
+  { name: "Villa Crespo", rent: "$", vibe: "Up-and-coming, authentic, younger", transport: "Good", slug: "villa-crespo" },
+  { name: "Puerto Madero", rent: "$$$$", vibe: "Luxury, modern, waterfront", transport: "Good", slug: "puerto-madero" },
 ];
 
 export default function CostOfLivingPage() {
@@ -366,7 +366,7 @@ export default function CostOfLivingPage() {
                     {neighborhoodComparison.map((hood) => (
                       <tr key={hood.name} className="border-b last:border-0">
                         <td className="py-3 px-2 font-medium">
-                          <Link href={`/neighborhoods/${hood.name.toLowerCase().replace(" ", "-")}`} className="hover:text-sky-600 hover:underline inline-flex items-center min-h-[44px]">
+                          <Link href={`/neighborhoods/${hood.slug}`} className="hover:text-sky-600 hover:underline inline-flex items-center min-h-[44px]">
                             {hood.name}
                           </Link>
                         </td>

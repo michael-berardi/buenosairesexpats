@@ -21,6 +21,11 @@ export const metadata: Metadata = {
   description: "The ultimate resource for expats moving to Buenos Aires. Honest guides, visa info, cost of living data, neighborhoods, and expat community.",
   alternates: {
     canonical: "https://buenosairesexpats.com",
+    languages: {
+      'en': 'https://buenosairesexpats.com',
+      'en-US': 'https://buenosairesexpats.com',
+      'x-default': 'https://buenosairesexpats.com',
+    },
   },
   keywords: ["Buenos Aires expats", "living in Buenos Aires", "move to Buenos Aires", "Argentina expats", "Buenos Aires visa", "digital nomad Buenos Aires", "expat life Buenos Aires"],
   authors: [{ name: "Buenos Aires Expats" }],

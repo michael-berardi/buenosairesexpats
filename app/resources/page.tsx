@@ -48,7 +48,7 @@ const resources = [
     title: "Legal Resources",
     description: "Understanding Argentine law, contracts, and your rights as a foreign resident.",
     download: false,
-    href: "/resources/legal",
+    href: "/guides/getting-started",
   },
   {
     icon: Heart,
@@ -61,8 +61,8 @@ const resources = [
     icon: Plane,
     title: "Arrival Guide",
     description: "What to do in your first week in Argentina. Setting up your phone, bank account, and more.",
-    download: true,
-    href: "/resources/arrival",
+    download: false,
+    href: "/guides/getting-started",
   },
   {
     icon: Home,
