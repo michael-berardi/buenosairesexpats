@@ -125,9 +125,9 @@ export default function StoriesPage() {
                 return (
                   <Card key={story.id} className="h-full flex flex-col group hover:shadow-lg transition-shadow">
                     <CardHeader>
-                      <div className="flex items-start justify-between mb-2">
-                        <div>
-                          <div className="flex items-center gap-2 mb-1">
+                      <div className="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-2 mb-2">
+                        <div className="min-w-0">
+                          <div className="flex flex-wrap items-center gap-2 mb-1">
                             <CardTitle className="text-xl">{story.name}</CardTitle>
                             <Badge className={categoryColors[story.category]}>
                               <Icon className="w-3 h-3 mr-1" />
@@ -136,7 +136,7 @@ export default function StoriesPage() {
                           </div>
                           <CardDescription>{story.from} • {story.duration}</CardDescription>
                         </div>
-                        <Badge variant="outline">{story.readTime}</Badge>
+                        <Badge variant="outline" className="self-start flex-shrink-0">{story.readTime}</Badge>
                       </div>
                       
                       <div className="flex flex-wrap gap-2 mt-3">
