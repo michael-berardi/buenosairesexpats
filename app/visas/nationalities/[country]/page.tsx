@@ -28,8 +28,9 @@ export function generateStaticParams() {
 }
 
 // Generate metadata for each country
-export function generateMetadata({ params }: { params: { country: string } }): Metadata {
-  const country = getCountryBySlug(params.country);
+export async function generateMetadata({ params }: { params: Promise<{ country: string }> }): Promise<Metadata> {
+  const { country: countrySlug } = await params;
+  const country = getCountryBySlug(countrySlug);
   
   if (!country) {
     return {
@@ -59,8 +60,9 @@ export function generateMetadata({ params }: { params: { country: string } }): M
 
 const LAST_UPDATED = "2026-02-26";
 
-export default function NationalityPage({ params }: { params: { country: string } }) {
-  const country = getCountryBySlug(params.country);
+export default async function NationalityPage({ params }: { params: Promise<{ country: string }> }) {
+  const { country: countrySlug } = await params;
+  const country = getCountryBySlug(countrySlug);
 
   if (!country) {
     notFound();
