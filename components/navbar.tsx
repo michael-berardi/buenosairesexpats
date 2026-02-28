@@ -59,7 +59,6 @@ export function Navbar() {
     { key: "transportation", href: "/guides/transportation" },
     { key: "workingTaxes", href: "/guides/working-taxes" },
     { key: "gettingStarted", href: "/guides/getting-started" },
-    { key: "whyArgentina", href: "/why-argentina" },
   ];
 
   const getVisaItem = (key: string) => {
@@ -180,7 +179,7 @@ export function Navbar() {
               <span className="sr-only">Toggle menu</span>
             </Button>
           </SheetTrigger>
-          <SheetContent side="right" className="w-[300px] sm:w-[400px]">
+          <SheetContent side="right" className="w-[300px] sm:w-[400px] overflow-y-auto">
             <div className="flex flex-col gap-6 py-6">
               <div className="flex items-center justify-between">
                 <span className="font-bold text-xl">
