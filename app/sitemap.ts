@@ -1,5 +1,6 @@
 import { MetadataRoute } from "next";
 import { getAllSlugs } from "@/lib/nationality-data";
+import { expatProfiles } from "@/lib/expat-profiles-data";
 
 export const dynamic = "force-static";
 
@@ -201,6 +202,19 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: "monthly",
       priority: 0.5,
     },
-    ...nationalityPages,
+        ...nationalityPages,
+    // Expat Profiles
+    {
+      url: `${baseUrl}/expat-profiles`,
+      lastModified: now,
+      changeFrequency: "weekly",
+      priority: 0.8,
+    },
+    ...expatProfiles.map((profile) => ({
+      url: `${baseUrl}/expat-profiles/${profile.id}`,
+      lastModified: now,
+      changeFrequency: "monthly" as const,
+      priority: 0.6,
+    })),
   ];
 }

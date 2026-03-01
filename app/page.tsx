@@ -57,7 +57,7 @@ const features = [
 
 const stats = [
   { value: "40+", label: "Guides", labelFull: "Detailed Guides" },
-  { value: "16", label: "Stories", labelFull: "Real Expat Stories" },
+  { value: "64+", label: "Profiles", labelFull: "Expat Profiles" },
   { value: "6", label: "Barrios", labelFull: "Neighborhoods Covered" },
   { value: "6", label: "Visas", labelFull: "Visa Pathways" },
 ];

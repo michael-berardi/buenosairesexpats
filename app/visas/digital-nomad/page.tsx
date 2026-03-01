@@ -168,7 +168,7 @@ export default function DigitalNomadVisaPage() {
       {/* Hero */}
       <section className="relative py-16 md:py-24 overflow-hidden">
         <div className="absolute inset-0">
-          <div className="absolute inset-0 bg-[url('/images/digital-nomad-workspace.jpg')] bg-cover bg-center" />
+          <div className="absolute inset-0 bg-cover bg-center" style={{ backgroundImage: "url('/images/digital-nomad-workspace.jpg')" }} />
           <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/50 to-black/40" />
         </div>
         <div className="container mx-auto px-4 relative z-10">

@@ -147,6 +147,12 @@ export function Navbar() {
               </NavigationMenuItem>
 
               <NavigationMenuItem>
+                <Link href="/expat-profiles" className="group inline-flex h-10 w-max items-center justify-center rounded-md bg-background px-4 py-2 text-sm font-medium transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground focus:outline-none disabled:pointer-events-none disabled:opacity-50">
+                  Expat Profiles
+                </Link>
+              </NavigationMenuItem>
+
+              <NavigationMenuItem>
                 <Link href="/about" className="group inline-flex h-10 w-max items-center justify-center rounded-md bg-background px-4 py-2 text-sm font-medium transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground focus:outline-none disabled:pointer-events-none disabled:opacity-50">
                   {t("navigation.about") as string}
                 </Link>
@@ -242,6 +248,11 @@ export function Navbar() {
                 <SheetClose asChild>
                   <Link href="/stories" className="text-foreground hover:text-primary transition-colors">
                     {t("navigation.stories") as string}
+                  </Link>
+                </SheetClose>
+                <SheetClose asChild>
+                  <Link href="/expat-profiles" className="text-foreground hover:text-primary transition-colors">
+                    Expat Profiles
                   </Link>
                 </SheetClose>
                 <SheetClose asChild>

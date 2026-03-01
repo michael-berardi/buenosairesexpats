@@ -40,3 +40,6 @@ playwright-report/
 playwright/.cache/
 .vercel
 .env*.local
+
+# QA screenshots
+qa-*.png

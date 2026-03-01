@@ -205,7 +205,7 @@ export default function PalermoDiningPage() {
       {/* Hero */}
       <section className="relative py-20 md:py-28 bg-gradient-to-b from-amber-950 via-amber-900 to-stone-900 text-white overflow-hidden">
         <div className="absolute inset-0 opacity-30">
-          <div className="absolute inset-0 bg-[url('/images/palermo-dining.jpg')] bg-cover bg-center" />
+          <div className="absolute inset-0 bg-cover bg-center" style={{ backgroundImage: "url('/images/palermo-dining.jpg')" }} />
         </div>
         <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent" />
         

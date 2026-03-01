@@ -133,7 +133,7 @@ export default function DiningGuidePage() {
         {/* Background with overlay */}
         <div className="absolute inset-0">
           <div className="absolute inset-0 bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900" />
-          <div className="absolute inset-0 opacity-40 bg-[url('/images/dining-hero.jpg')] bg-cover bg-center" />
+          <div className="absolute inset-0 opacity-40 bg-cover bg-center" style={{ backgroundImage: "url('/images/dining-hero.jpg')" }} />
           <div className="absolute inset-0 bg-gradient-to-t from-slate-900 via-slate-900/80 to-transparent" />
         </div>
         
