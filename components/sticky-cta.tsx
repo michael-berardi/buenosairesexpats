@@ -35,15 +35,15 @@ export function StickyCTA() {
 
   return (
     <div className="fixed bottom-0 left-0 right-0 z-40 lg:hidden animate-in slide-in-from-bottom duration-300">
-      <div className="bg-sky-700 text-white px-4 py-3 flex items-center justify-between gap-3 shadow-lg shadow-black/20">
+      <div className="bg-stone-800 text-white px-4 py-2.5 flex items-center justify-between gap-3 shadow-lg">
         <Link
-          href="https://lucerolegal.org?utm_source=buenosairesexpats&utm_medium=sticky-cta"
+          href="https://lucerolegal.com?utm_source=buenosairesexpats&utm_medium=sticky-cta"
           target="_blank"
           rel="noopener noreferrer"
-          className="flex-1 flex items-center justify-center gap-2 font-semibold text-sm"
+          className="flex-1 flex items-center justify-center gap-2 text-sm"
         >
-          Free Legal Consultation
-          <ArrowRight className="w-4 h-4" />
+          Need visa help? Talk to an attorney
+          <ArrowRight className="w-3.5 h-3.5" />
         </Link>
         <button
           onClick={handleDismiss}

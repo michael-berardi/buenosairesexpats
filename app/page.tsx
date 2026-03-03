@@ -197,9 +197,9 @@ export default function Home() {
                   Explore Visa Options
                 </Link>
               </Button>
-              <Button asChild size="lg" className="bg-white text-slate-900 font-semibold hover:bg-slate-100 shadow-lg shadow-black/20 border-0 transition-all duration-200">
-                <Link href="https://lucerolegal.org?utm_source=buenosairesexpats&utm_medium=hero" target="_blank" rel="noopener noreferrer">
-                  Free Legal Consultation
+              <Button asChild size="lg" variant="outline" className="bg-white/10 text-white font-semibold border border-white/30 hover:bg-white/20 transition-all duration-200">
+                <Link href="https://lucerolegal.com?utm_source=buenosairesexpats&utm_medium=hero" target="_blank" rel="noopener noreferrer">
+                  Talk to an Attorney
                 </Link>
               </Button>
             </div>
@@ -396,10 +396,10 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Lucero Legal CTA */}
+      {/* Immigration Help */}
       <section className="section-padding">
         <div className="container mx-auto px-5 sm:px-6 max-w-4xl">
-          <LuceroLegalCTA variant="full" utm_content="homepage" />
+          <LuceroLegalCTA variant="compact" utm_content="homepage" />
         </div>
       </section>
 

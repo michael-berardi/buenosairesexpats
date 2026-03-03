@@ -777,9 +777,8 @@ export function QuizClient() {
 
             {/* Lucero Legal CTA */}
             <LuceroLegalCTA
-              variant="full"
-              headline="Get Expert Guidance for Your Visa"
-              description="Navigating Argentina's immigration system can be complex. Lucero Legal's immigration attorneys can guide you through the entire process -- from choosing the right visa to completing your application."
+              variant="compact"
+              description="Navigating Argentina's immigration system can be complex. An experienced immigration attorney can guide you through the entire process, from choosing the right visa to completing your application."
               utm_content="visa-quiz-result"
             />
 

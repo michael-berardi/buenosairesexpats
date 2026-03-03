@@ -448,8 +448,7 @@ export default function LearningSpanishPage() {
           <div className="max-w-3xl mx-auto">
             <LuceroLegalCTA
               variant="compact"
-              headline="Making Buenos Aires Your Home?"
-              description="If you're learning Spanish to live here long-term, you'll need the right visa. Lucero Legal can help with residency and immigration."
+              description="If you're learning Spanish to live here long-term, you'll need the right visa. An immigration attorney can help with residency and immigration."
               utm_content="guides-learning-spanish"
             />
           </div>

@@ -323,8 +323,7 @@ export default async function StoryPage({ params }: { params: Promise<{ id: stri
           <div className="max-w-3xl mx-auto">
             <LuceroLegalCTA
               variant="compact"
-              headline="Inspired? Get Help With Your Move"
-              description="Ready to start your own Buenos Aires chapter? Lucero Legal's immigration team can help with visas, residency, and all the legal paperwork."
+              description="Ready to start your own Buenos Aires chapter? An immigration attorney can help with visas, residency, and all the legal paperwork."
               utm_content="story-detail"
             />
           </div>

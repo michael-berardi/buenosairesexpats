@@ -281,9 +281,8 @@ export default function ResourcesPage() {
                   <div className="flex-grow">
                     <h3 className="text-xl font-bold mb-2">Immigration Support</h3>
                     <p className="text-muted-foreground mb-4">
-                      Years of experience helping expats navigate visas, residency, and citizenship. 
-                      English-speaking support that understands the specific issues foreigners face. 
-                      Lucero Legal's team of immigration attorneys have guided many of our community members through the process.
+                      An experienced immigration attorney can help navigate visas, residency, and citizenship.
+                      English-speaking support that understands the specific issues foreigners face in Argentina.
                     </p>
                     <div className="flex flex-wrap gap-2 mb-4">
                       <Badge variant="secondary">Digital Nomad Visas</Badge>
@@ -292,9 +291,9 @@ export default function ResourcesPage() {
                       <Badge variant="secondary">Business Setup</Badge>
                     </div>
                   </div>
-                  <Button asChild>
-                    <Link href="https://lucerolegal.org" target="_blank" rel="noopener noreferrer">
-                      Get Help
+                  <Button asChild variant="outline">
+                    <Link href="https://lucerolegal.com?utm_source=buenosairesexpats&utm_medium=resources" target="_blank" rel="noopener noreferrer">
+                      Learn More
                       <ArrowRight className="w-4 h-4 ml-2" />
                     </Link>
                   </Button>
@@ -305,21 +304,17 @@ export default function ResourcesPage() {
         </div>
       </section>
 
-      {/* Lucero Legal CTA */}
-      <section className="py-16 bg-sky-600 text-white">
+      {/* Immigration Help Note */}
+      <section className="py-12 border-t">
         <div className="container mx-auto px-4 text-center">
           <div className="max-w-2xl mx-auto">
-            <h2 className="text-3xl font-bold mb-4">Need Legal Help?</h2>
-            <p className="text-sky-100 mb-8">
-              For complex visa cases, business immigration, or legal advice, 
-              our partner Lucero Legal specializes in expat immigration in Argentina.
+            <p className="text-sm text-muted-foreground">
+              For complex visa cases, business immigration, or legal advice, consider{" "}
+              <Link href="https://lucerolegal.com?utm_source=buenosairesexpats&utm_medium=resources-cta" target="_blank" rel="noopener noreferrer" className="text-sky-700 underline underline-offset-2 hover:text-sky-600">
+                speaking with an immigration attorney
+              </Link>{" "}
+              who specializes in Argentine immigration law.
             </p>
-            <Button asChild size="lg" variant="secondary" className="bg-white text-sky-700 hover:bg-sky-50">
-              <Link href="https://lucerolegal.org?utm_source=buenosairesexpats&utm_medium=resources-cta" target="_blank" rel="noopener noreferrer">
-                Get Free Consultation
-                <ArrowRight className="w-4 h-4 ml-2" />
-              </Link>
-            </Button>
           </div>
         </div>
       </section>

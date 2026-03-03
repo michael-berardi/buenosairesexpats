@@ -1027,8 +1027,8 @@ export default function TransportationPage() {
 
             <LuceroLegalCTA
               variant="compact"
-              headline="Planning Your Move?"
-              description="Need help with your visa to start exploring Buenos Aires? Lucero Legal can guide you through the process."
+              description="Need help with your visa to start exploring Buenos Aires? An immigration attorney can guide you through the process."
+              utm_content="guides-transportation"
             />
           </div>
         </div>

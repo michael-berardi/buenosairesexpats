@@ -350,8 +350,7 @@ export default function SanTelmoPage() {
           <div className="max-w-3xl mx-auto">
             <LuceroLegalCTA
               variant="compact"
-              headline="Planning Your Move to San Telmo?"
-              description="Lucero Legal's immigration attorneys can help with visas, residency, and the legal paperwork for your relocation."
+              description="Planning your move to San Telmo? An immigration attorney can help with visas, residency, and the legal paperwork for your relocation."
               utm_content="neighborhood-san-telmo"
             />
           </div>

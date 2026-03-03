@@ -439,8 +439,7 @@ export default async function ExpatProfilePage({
           <div className="max-w-4xl mx-auto">
             <LuceroLegalCTA
               variant="compact"
-              headline="Inspired to Make the Move?"
-              description={`Ready to follow in ${profile.name}'s footsteps? Lucero Legal's immigration team can help with visas, residency, and all the legal paperwork.`}
+              description={`Inspired by ${profile.name}'s story? An immigration attorney can help with visas, residency, and all the legal paperwork for your move.`}
               utm_content="expat-profile-detail"
             />
           </div>

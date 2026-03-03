@@ -640,12 +640,12 @@ export default function GettingStartedPage() {
               ))}
             </div>
 
-            {/* Lucero Legal CTA after visa section */}
+            {/* Immigration help note */}
             <div className="mt-8">
               <LuceroLegalCTA
                 variant="compact"
-                headline="Ready to Make It Official?"
-                description="From tourist to resident - Lucero Legal can help you find the right visa path for your situation."
+                description="From tourist to resident -- an immigration attorney can help you find the right visa path for your situation."
+                utm_content="guides-getting-started"
               />
             </div>
           </div>

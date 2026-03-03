@@ -129,9 +129,9 @@ export default function VisasPage() {
                   <ArrowRight className="w-4 h-4 ml-2" />
                 </Link>
               </Button>
-              <Button asChild size="lg" className="bg-white/10 text-white font-semibold border border-white/30 hover:bg-white/20">
-                <Link href="https://lucerolegal.org?utm_source=buenosairesexpats&utm_medium=visas-hero" target="_blank" rel="noopener noreferrer">
-                  Free Legal Consultation
+              <Button asChild size="lg" variant="outline" className="bg-white/10 text-white border border-white/30 hover:bg-white/20">
+                <Link href="https://lucerolegal.com?utm_source=buenosairesexpats&utm_medium=visas-hero" target="_blank" rel="noopener noreferrer">
+                  Talk to an Attorney
                 </Link>
               </Button>
             </div>
@@ -324,9 +324,8 @@ export default function VisasPage() {
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto">
             <LuceroLegalCTA
-              variant="full"
-              headline="Need Help With Your Visa?"
-              description="Immigration law is complex and changes frequently. Lucero Legal's team of immigration attorneys specializes in Argentine visas and has helped hundreds of expats navigate the process."
+              variant="compact"
+              description="Immigration law is complex and changes frequently. An experienced immigration attorney can help you navigate Argentine visas and residency."
               utm_content="visas-hub"
             />
           </div>

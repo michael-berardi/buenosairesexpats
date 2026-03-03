@@ -172,8 +172,8 @@ export function Navbar() {
             <Globe className="w-4 h-4" />
             <span className="font-medium">{nextLocale.toUpperCase()}</span>
           </Button>
-          <Button asChild size="sm" className="bg-sky-700 hover:bg-sky-600 text-white font-semibold shadow-md hover:shadow-lg transition-all">
-            <Link href="https://lucerolegal.org?utm_source=buenosairesexpats&utm_medium=navbar" target="_blank" rel="noopener noreferrer">
+          <Button asChild variant="outline" size="sm">
+            <Link href="https://lucerolegal.com?utm_source=buenosairesexpats&utm_medium=navbar" target="_blank" rel="noopener noreferrer">
               {t("navigation.freeConsultation") as string}
             </Link>
           </Button>
@@ -272,8 +272,8 @@ export function Navbar() {
                 </SheetClose>
               </nav>
 
-              <Button asChild className="mt-4 bg-sky-700 hover:bg-sky-600 text-white font-semibold">
-                <Link href="https://lucerolegal.org?utm_source=buenosairesexpats&utm_medium=mobile_nav" target="_blank" rel="noopener noreferrer">
+              <Button asChild variant="outline" className="mt-4">
+                <Link href="https://lucerolegal.com?utm_source=buenosairesexpats&utm_medium=mobile_nav" target="_blank" rel="noopener noreferrer">
                   {t("navigation.freeConsultation") as string}
                 </Link>
               </Button>

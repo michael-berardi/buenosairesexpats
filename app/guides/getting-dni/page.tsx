@@ -491,9 +491,8 @@ export default function GettingDNIPage() {
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto">
             <LuceroLegalCTA
-              variant="full"
-              headline="Need Help With Your DNI?"
-              description="The DNI process can be confusing and paperwork-intensive. Lucero Legal's immigration attorneys handle DNI applications daily and can guide you through every step."
+              variant="compact"
+              description="The DNI process can be confusing and paperwork-intensive. An immigration attorney who handles DNI applications regularly can guide you through every step."
               utm_content="guides-getting-dni"
             />
           </div>

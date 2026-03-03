@@ -377,7 +377,7 @@ export default function DigitalNomadVisaPage() {
       <section className="section-padding">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto">
-            <LuceroLegalCTA variant="full" />
+            <LuceroLegalCTA variant="compact" utm_content="visa-digital-nomad" />
           </div>
         </div>
       </section>

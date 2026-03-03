@@ -347,8 +347,7 @@ export default function BelgranoPage() {
           <div className="max-w-3xl mx-auto">
             <LuceroLegalCTA
               variant="compact"
-              headline="Planning Your Move to Belgrano?"
-              description="Lucero Legal's immigration attorneys can help with visas, residency, and the legal paperwork for your relocation."
+              description="Planning your move to Belgrano? An immigration attorney can help with visas, residency, and the legal paperwork for your relocation."
               utm_content="neighborhood-belgrano"
             />
           </div>

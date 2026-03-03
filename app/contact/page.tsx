@@ -341,8 +341,8 @@ export default function ContactPage() {
                       For visa and immigration help, we recommend a trusted partner who has assisted many of our readers:
                     </p>
                     <Button asChild variant="outline">
-                      <Link href="https://lucerolegal.org" target="_blank" rel="noopener noreferrer">
-                        Get Visa Help
+                      <Link href="https://lucerolegal.com?utm_source=buenosairesexpats&utm_medium=contact" target="_blank" rel="noopener noreferrer">
+                        Talk to an Attorney
                         <ArrowRight className="w-4 h-4 ml-2" />
                       </Link>
                     </Button>

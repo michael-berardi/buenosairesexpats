@@ -621,8 +621,7 @@ export default function CulturalEtiquettePage() {
           <div className="max-w-3xl mx-auto">
             <LuceroLegalCTA
               variant="compact"
-              headline="Making Buenos Aires Home?"
-              description="Ready to commit to life in Argentina? Lucero Legal can help with visas, residency, and all the legal steps for your move."
+              description="Ready to commit to life in Argentina? An immigration attorney can help with visas, residency, and all the legal steps for your move."
               utm_content="guides-cultural-etiquette"
             />
           </div>

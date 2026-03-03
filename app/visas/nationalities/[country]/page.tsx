@@ -429,8 +429,8 @@ export default async function NationalityPage({ params }: { params: Promise<{ co
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button asChild size="lg" variant="secondary">
-                <Link href="https://lucerolegal.org" target="_blank" rel="noopener noreferrer">
-                  Get Professional Help
+                <Link href="https://lucerolegal.com?utm_source=buenosairesexpats&utm_medium=nationality-detail" target="_blank" rel="noopener noreferrer">
+                  Talk to an Attorney
                   <ArrowRight className="w-4 h-4 ml-2" />
                 </Link>
               </Button>

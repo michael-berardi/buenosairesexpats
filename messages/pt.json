@@ -209,18 +209,10 @@
       "visas": "Vistos",
       "guides": "Guias",
       "resources": "Recursos",
-      "legal": "Serviços Legais",
       "company": "Empresa"
     },
-    "legalServices": [
-      { "label": "Consulta Grátis" },
-      { "label": "Assistência de Visto" },
-      { "label": "Ajuda de Residência" }
-    ],
-    "viaLucero": "via Lucero Legal",
     "copyright": "Todos os direitos reservados.",
-    "educational": "A informação fornecida é apenas para fins educativos. Para assistência de visto, recomendamos",
-    "luceroLegal": "Lucero Legal"
+    "educational": "A informação fornecida é apenas para fins educativos e não constitui aconselhamento legal."
   },
   "common": {
     "readMore": "Ler Mais",

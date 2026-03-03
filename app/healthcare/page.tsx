@@ -365,8 +365,7 @@ export default function HealthcarePage() {
           <div className="max-w-3xl mx-auto">
             <LuceroLegalCTA
               variant="compact"
-              headline="Need Residency for Healthcare Access?"
-              description="Legal residents get access to Argentina's public healthcare system. Lucero Legal can help with your visa and residency paperwork."
+              description="Legal residents get access to Argentina's public healthcare system. An immigration attorney can help with your visa and residency paperwork."
               utm_content="healthcare"
             />
           </div>

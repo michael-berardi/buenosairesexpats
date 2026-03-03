@@ -232,8 +232,8 @@ export default function AboutPage() {
                 </Link>
               </Button>
               <Button asChild variant="outline">
-                <Link href="https://lucerolegal.org?utm_source=buenosairesexpats&utm_medium=about-cta" target="_blank" rel="noopener noreferrer">
-                  Get Legal Help
+                <Link href="https://lucerolegal.com?utm_source=buenosairesexpats&utm_medium=about-cta" target="_blank" rel="noopener noreferrer">
+                  Immigration Help
                   <ArrowRight className="w-4 h-4 ml-2" />
                 </Link>
               </Button>
@@ -248,8 +248,7 @@ export default function AboutPage() {
           <div className="max-w-3xl mx-auto">
             <LuceroLegalCTA
               variant="compact"
-              headline="Our Trusted Legal Partner"
-              description="We recommend Lucero Legal for all immigration matters. Their team of attorneys has helped hundreds of our readers with visas, residency, and citizenship."
+              description="For immigration matters, we recommend working with an experienced attorney who specializes in Argentine visas and residency."
               utm_content="about"
             />
           </div>

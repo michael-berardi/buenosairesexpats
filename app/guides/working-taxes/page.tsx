@@ -348,9 +348,9 @@ export default function WorkingTaxesPage() {
               </div>
             </div>
             <div className="mt-8">
-              <Button asChild size="lg" className="bg-sky-600 hover:bg-sky-500 text-white font-semibold shadow-lg">
-                <Link href="https://lucerolegal.org?utm_source=buenosairesexpats&utm_medium=taxes-hero">
-                  Get Legal Tax Advice
+              <Button asChild size="lg" variant="outline">
+                <Link href="https://lucerolegal.com?utm_source=buenosairesexpats&utm_medium=taxes-hero" target="_blank" rel="noopener noreferrer">
+                  Talk to a Tax Attorney
                   <ArrowRight className="w-4 h-4 ml-2" />
                 </Link>
               </Button>
@@ -1142,9 +1142,9 @@ export default function WorkingTaxesPage() {
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <LuceroLegalCTA
-              variant="full"
-              headline="Need Legal Help with Work Permits?"
-              description="Working legally in Argentina requires the right visa and tax setup. Lucero Legal's immigration attorneys can help you navigate residency, work permits, and tax compliance."
+              variant="compact"
+              description="Working legally in Argentina requires the right visa and tax setup. An immigration attorney can help you navigate residency, work permits, and tax compliance."
+              utm_content="guides-working-taxes"
             />
           </div>
         </div>

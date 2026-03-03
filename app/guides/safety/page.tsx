@@ -568,8 +568,7 @@ export default function SafetyPage() {
           <div className="max-w-3xl mx-auto">
             <LuceroLegalCTA
               variant="compact"
-              headline="Legal Residency = Better Protection"
-              description="Legal residents have full access to Argentine police and legal systems. Lucero Legal can help you get proper residency status."
+              description="Legal residents have full access to Argentine police and legal systems. An immigration attorney can help you get proper residency status."
               utm_content="guides-safety"
             />
           </div>

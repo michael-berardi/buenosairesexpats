@@ -426,8 +426,8 @@ export default function HousingPage() {
           <div className="max-w-3xl mx-auto">
             <LuceroLegalCTA
               variant="compact"
-              headline="Need Help with Rental Contracts?"
-              description="Lucero Legal's team can review your rental contract, help with garantía requirements, and ensure your rights are protected as a tenant in Argentina."
+              description="Need help with rental contracts or garantia requirements? An immigration attorney can also assist with visa and residency paperwork."
+              utm_content="housing"
             />
           </div>
         </div>

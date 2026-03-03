@@ -620,7 +620,7 @@ export default function InvestmentVisaPage() {
       <section className="py-16">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto">
-            <LuceroLegalCTA variant="full" />
+            <LuceroLegalCTA variant="compact" utm_content="visa-investment" />
           </div>
         </div>
       </section>

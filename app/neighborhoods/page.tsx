@@ -374,8 +374,7 @@ export default function NeighborhoodsPage() {
           <div className="max-w-3xl mx-auto">
             <LuceroLegalCTA
               variant="compact"
-              headline="Moving to a New Barrio?"
-              description="Need help with your visa or rental contracts? Lucero Legal's immigration attorneys can guide you through the legal side of relocating to Buenos Aires."
+              description="Need help with your visa or rental contracts? An immigration attorney can guide you through the legal side of relocating to Buenos Aires."
               utm_content="neighborhoods-hub"
             />
           </div>

@@ -355,9 +355,8 @@ export default function WhyArgentinaPage() {
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto">
             <LuceroLegalCTA
-              variant="full"
-              headline="Ready to Make the Move?"
-              description="Lucero Legal's immigration attorneys have helped hundreds of expats navigate Argentine visas, residency, and citizenship. Get expert guidance for your situation."
+              variant="compact"
+              description="Ready to make the move? An experienced immigration attorney can help with visas, residency, and citizenship in Argentina."
               utm_content="why-argentina"
             />
           </div>

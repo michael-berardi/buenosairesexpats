@@ -423,8 +423,7 @@ export default function BelgranoDiningPage() {
           <div className="max-w-3xl mx-auto">
             <LuceroLegalCTA
               variant="compact"
-              headline="Planning an Extended Stay?"
-              description="Need a visa to enjoy Buenos Aires' incredible food scene long-term? Lucero Legal can help with residency and immigration."
+              description="Planning an extended stay to enjoy Buenos Aires' food scene? An immigration attorney can help with the right visa for you."
               utm_content="dining-belgrano"
             />
           </div>

@@ -353,8 +353,7 @@ export default function ExpatProfilesPage() {
           <div className="max-w-3xl mx-auto">
             <LuceroLegalCTA
               variant="compact"
-              headline="Join the Expat Community"
-              description="Ready to start your own Buenos Aires story? Lucero Legal can help you navigate Argentine immigration so you can focus on building your new life."
+              description="Ready to start your own Buenos Aires story? An immigration attorney can help you navigate Argentine immigration so you can focus on building your new life."
               utm_content="expat-profiles-hub"
             />
           </div>

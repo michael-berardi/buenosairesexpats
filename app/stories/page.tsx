@@ -390,8 +390,7 @@ export default function StoriesPage() {
           <div className="max-w-3xl mx-auto">
             <LuceroLegalCTA
               variant="compact"
-              headline="Ready to Write Your Own Story?"
-              description="Every expat journey starts with the right visa. Lucero Legal can help you navigate Argentine immigration so you can focus on building your new life."
+              description="Every expat journey starts with the right visa. An immigration attorney can help you navigate Argentine immigration so you can focus on building your new life."
               utm_content="stories-hub"
             />
           </div>
