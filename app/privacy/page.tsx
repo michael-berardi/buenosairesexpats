@@ -75,7 +75,6 @@ export default function PrivacyPage() {
                   We may collect personal information that you voluntarily provide to us when you:
                 </p>
                 <ul className="list-disc list-inside text-muted-foreground mb-6 space-y-2">
-                  <li>Subscribe to our newsletter</li>
                   <li>Contact us through our contact form</li>
                   <li>Submit your expat story</li>
                   <li>Participate in surveys or community discussions</li>
@@ -101,7 +100,6 @@ export default function PrivacyPage() {
                 <p className="text-muted-foreground mb-4">We use the information we collect to:</p>
                 <ul className="list-disc list-inside text-muted-foreground mb-6 space-y-2">
                   <li>Provide and maintain our Site</li>
-                  <li>Send newsletters and updates you&apos;ve subscribed to</li>
                   <li>Respond to your comments and questions</li>
                   <li>Improve our content and user experience</li>
                   <li>Analyze usage patterns and trends</li>
@@ -121,7 +119,6 @@ export default function PrivacyPage() {
                 </p>
                 <ul className="list-disc list-inside text-muted-foreground mb-6 space-y-2">
                   <li><strong>Vercel Analytics:</strong> For website analytics and performance monitoring</li>
-                  <li><strong>Email Service Providers:</strong> For newsletter delivery</li>
                 </ul>
                 <p className="text-muted-foreground mb-6">
                   These services have their own privacy policies and may collect information 

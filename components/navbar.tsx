@@ -173,7 +173,7 @@ export function Navbar() {
             <span className="font-medium">{nextLocale.toUpperCase()}</span>
           </Button>
           <Button asChild variant="outline" size="sm">
-            <Link href="https://lucerolegal.com?utm_source=buenosairesexpats&utm_medium=navbar" target="_blank" rel="noopener noreferrer">
+            <Link href="https://lucerolegal.org?utm_source=buenosairesexpats&utm_medium=navbar" target="_blank" rel="noopener noreferrer">
               {t("navigation.freeConsultation") as string}
             </Link>
           </Button>
@@ -273,7 +273,7 @@ export function Navbar() {
               </nav>
 
               <Button asChild variant="outline" className="mt-4">
-                <Link href="https://lucerolegal.com?utm_source=buenosairesexpats&utm_medium=mobile_nav" target="_blank" rel="noopener noreferrer">
+                <Link href="https://lucerolegal.org?utm_source=buenosairesexpats&utm_medium=mobile_nav" target="_blank" rel="noopener noreferrer">
                   {t("navigation.freeConsultation") as string}
                 </Link>
               </Button>

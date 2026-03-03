@@ -130,7 +130,7 @@ export default function VisasPage() {
                 </Link>
               </Button>
               <Button asChild size="lg" variant="outline" className="bg-white/10 text-white border border-white/30 hover:bg-white/20">
-                <Link href="https://lucerolegal.com?utm_source=buenosairesexpats&utm_medium=visas-hero" target="_blank" rel="noopener noreferrer">
+                <Link href="https://lucerolegal.org?utm_source=buenosairesexpats&utm_medium=visas-hero" target="_blank" rel="noopener noreferrer">
                   Talk to an Attorney
                 </Link>
               </Button>

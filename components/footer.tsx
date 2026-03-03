@@ -41,7 +41,7 @@ export function Footer() {
     { label: "Terms", href: "/terms" },
     {
       label: "Legal Services",
-      href: "https://lucerolegal.com?utm_source=buenosairesexpats&utm_medium=footer",
+      href: "https://lucerolegal.org?utm_source=buenosairesexpats&utm_medium=footer",
       external: true,
     },
   ];

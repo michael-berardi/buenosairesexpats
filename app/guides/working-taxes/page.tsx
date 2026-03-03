@@ -349,7 +349,7 @@ export default function WorkingTaxesPage() {
             </div>
             <div className="mt-8">
               <Button asChild size="lg" variant="outline">
-                <Link href="https://lucerolegal.com?utm_source=buenosairesexpats&utm_medium=taxes-hero" target="_blank" rel="noopener noreferrer">
+                <Link href="https://lucerolegal.org?utm_source=buenosairesexpats&utm_medium=taxes-hero" target="_blank" rel="noopener noreferrer">
                   Talk to a Tax Attorney
                   <ArrowRight className="w-4 h-4 ml-2" />
                 </Link>

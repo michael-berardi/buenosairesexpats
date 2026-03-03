@@ -232,7 +232,7 @@ export default function AboutPage() {
                 </Link>
               </Button>
               <Button asChild variant="outline">
-                <Link href="https://lucerolegal.com?utm_source=buenosairesexpats&utm_medium=about-cta" target="_blank" rel="noopener noreferrer">
+                <Link href="https://lucerolegal.org?utm_source=buenosairesexpats&utm_medium=about-cta" target="_blank" rel="noopener noreferrer">
                   Immigration Help
                   <ArrowRight className="w-4 h-4 ml-2" />
                 </Link>

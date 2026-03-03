@@ -37,7 +37,7 @@ export function StickyCTA() {
     <div className="fixed bottom-0 left-0 right-0 z-40 lg:hidden animate-in slide-in-from-bottom duration-300">
       <div className="bg-stone-800 text-white px-4 py-2.5 flex items-center justify-between gap-3 shadow-lg">
         <Link
-          href="https://lucerolegal.com?utm_source=buenosairesexpats&utm_medium=sticky-cta"
+          href="https://lucerolegal.org?utm_source=buenosairesexpats&utm_medium=sticky-cta"
           target="_blank"
           rel="noopener noreferrer"
           className="flex-1 flex items-center justify-center gap-2 text-sm"

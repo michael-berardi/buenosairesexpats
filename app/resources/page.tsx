@@ -292,7 +292,7 @@ export default function ResourcesPage() {
                     </div>
                   </div>
                   <Button asChild variant="outline">
-                    <Link href="https://lucerolegal.com?utm_source=buenosairesexpats&utm_medium=resources" target="_blank" rel="noopener noreferrer">
+                    <Link href="https://lucerolegal.org?utm_source=buenosairesexpats&utm_medium=resources" target="_blank" rel="noopener noreferrer">
                       Learn More
                       <ArrowRight className="w-4 h-4 ml-2" />
                     </Link>
@@ -310,7 +310,7 @@ export default function ResourcesPage() {
           <div className="max-w-2xl mx-auto">
             <p className="text-sm text-muted-foreground">
               For complex visa cases, business immigration, or legal advice, consider{" "}
-              <Link href="https://lucerolegal.com?utm_source=buenosairesexpats&utm_medium=resources-cta" target="_blank" rel="noopener noreferrer" className="text-sky-700 underline underline-offset-2 hover:text-sky-600">
+              <Link href="https://lucerolegal.org?utm_source=buenosairesexpats&utm_medium=resources-cta" target="_blank" rel="noopener noreferrer" className="text-sky-700 underline underline-offset-2 hover:text-sky-600">
                 speaking with an immigration attorney
               </Link>{" "}
               who specializes in Argentine immigration law.
