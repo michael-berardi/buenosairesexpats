@@ -7,14 +7,8 @@ const nextConfig: NextConfig = {
     unoptimized: true,
   },
   trailingSlash: true,
-  async redirects() {
-    return [
-      // Country abbreviation redirects
-      { source: '/visas/nationalities/usa/', destination: '/visas/nationalities/united-states/', permanent: true },
-      { source: '/visas/nationalities/uk/', destination: '/visas/nationalities/united-kingdom/', permanent: true },
-      { source: '/visas/nationalities/us/', destination: '/visas/nationalities/united-states/', permanent: true },
-    ];
-  },
+  // NOTE: Redirects are handled in vercel.json since output: 'export'
+  // does not support Next.js redirects() at build time.
 };
 
 export default nextConfig;

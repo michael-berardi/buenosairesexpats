@@ -59,7 +59,7 @@ export default function ContactPage() {
     return Object.keys(newErrors).length === 0;
   };
 
-  const handleSubmit = async (e: React.FormEvent) => {
+  const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     setError(null);
 
@@ -74,17 +74,25 @@ export default function ContactPage() {
       const body = encodeURIComponent(
         `Name: ${formData.name}\nEmail: ${formData.email}\n\n${formData.message}`
       );
-      window.location.href = `mailto:hello@buenosairesexpats.com?subject=${subject}&body=${body}`;
+
+      // Open mailto link in a new context so the current page state is preserved
+      const mailtoUrl = `mailto:hello@buenosairesexpats.com?subject=${subject}&body=${body}`;
+      const mailWindow = window.open(mailtoUrl, '_self');
+
+      // If window.open returned null (popup blocked), fall back to direct navigation
+      if (!mailWindow) {
+        window.location.href = mailtoUrl;
+      }
 
       setIsSubmitted(true);
       setFormData({ name: "", email: "", subject: "", message: "" });
 
-      // Reset success message after 5 seconds
+      // Reset success message after 8 seconds
       setTimeout(() => {
         setIsSubmitted(false);
-      }, 5000);
+      }, 8000);
     } catch (err) {
-      setError(err instanceof Error ? err.message : "Something went wrong");
+      setError(err instanceof Error ? err.message : "Something went wrong. Please email us directly at hello@buenosairesexpats.com");
     } finally {
       setIsSubmitting(false);
     }
@@ -154,12 +162,19 @@ export default function ContactPage() {
                 <CardContent>
                   {isSubmitted ? (
                     <div className="text-center py-8 animate-fade-in">
-                      <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                        <CheckCircle className="w-8 h-8 text-green-600" />
+                      <div className="w-16 h-16 bg-green-100 dark:bg-green-900/30 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <CheckCircle className="w-8 h-8 text-green-600 dark:text-green-400" />
                       </div>
-                      <h3 className="text-lg font-semibold mb-2">Message Sent!</h3>
-                      <p className="text-muted-foreground text-sm">
-                        Thanks for reaching out. We&apos;ll get back to you soon.
+                      <h3 className="text-lg font-semibold mb-2">Email Client Opened!</h3>
+                      <p className="text-muted-foreground text-sm mb-3">
+                        Your email app should have opened with your message pre-filled.
+                        Just hit send and we&apos;ll get back to you within 48 hours.
+                      </p>
+                      <p className="text-xs text-muted-foreground">
+                        Didn&apos;t see your email client open?{" "}
+                        <a href="mailto:hello@buenosairesexpats.com" className="text-primary hover:underline">
+                          Email us directly
+                        </a>
                       </p>
                     </div>
                   ) : (
@@ -273,12 +288,12 @@ export default function ContactPage() {
                         {isSubmitting ? (
                           <>
                             <Loader2 className="w-4 h-4 mr-2 animate-spin" />
-                            Sending...
+                            Opening Email...
                           </>
                         ) : (
                           <>
-                            Send Message
-                            <ArrowRight className="w-4 h-4 ml-2" />
+                            <Mail className="w-4 h-4 mr-2" />
+                            Send via Email
                           </>
                         )}
                       </Button>
