@@ -400,7 +400,7 @@ export default function GettingStartedPage() {
               Home
             </Link>
             <span>/</span>
-            <Link href="/guides/getting-started" className="hover:text-stone-900">
+            <Link href="/guides" className="hover:text-stone-900">
               Guides
             </Link>
             <span>/</span>
