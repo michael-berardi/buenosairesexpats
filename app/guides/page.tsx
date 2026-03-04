@@ -19,6 +19,8 @@ import {
   IdCard,
   Clock,
   CheckCircle,
+  MapPin,
+  Calendar,
 } from "lucide-react";
 
 export const metadata: Metadata = {
@@ -53,6 +55,28 @@ export const metadata: Metadata = {
 };
 
 const guides = [
+  {
+    title: "Your First Week in BA",
+    description:
+      "Day-by-day survival guide: SIM cards, SUBE, MercadoPago, finding your cafe, mate etiquette, and the unwritten rules of BA life.",
+    href: "/guides/first-week",
+    icon: Calendar,
+    badge: "New",
+    badgeClass: "bg-sky-100 text-sky-700 border-sky-200",
+    readTime: "20 min",
+    color: "sky",
+  },
+  {
+    title: "Neighborhood Matcher Quiz",
+    description:
+      "Answer 7 questions to find your perfect Buenos Aires barrio based on budget, lifestyle, and priorities.",
+    href: "/neighborhoods/quiz",
+    icon: MapPin,
+    badge: "Interactive",
+    badgeClass: "bg-amber-100 text-amber-700 border-amber-200",
+    readTime: "3 min",
+    color: "amber",
+  },
   {
     title: "Getting Started in Buenos Aires",
     description:
@@ -229,11 +253,11 @@ export default function GuidesPage() {
             <div className="flex flex-wrap justify-center gap-4 text-sm">
               <div className="flex items-center gap-2 text-muted-foreground">
                 <CheckCircle className="w-4 h-4 text-green-500" />
-                <span>9 in-depth guides</span>
+                <span>11 in-depth guides</span>
               </div>
               <div className="flex items-center gap-2 text-muted-foreground">
                 <Clock className="w-4 h-4 text-sky-500" />
-                <span>Updated February 2026</span>
+                <span>Updated March 2026</span>
               </div>
               <div className="flex items-center gap-2 text-muted-foreground">
                 <BookOpen className="w-4 h-4 text-sky-500" />
@@ -259,23 +283,34 @@ export default function GuidesPage() {
                       Recommended First Read
                     </Badge>
                     <h2 className="text-2xl font-bold mb-2">
-                      Getting Started in Buenos Aires
+                      Your First Week in Buenos Aires
                     </h2>
                     <p className="text-muted-foreground mb-4">
-                      New to Buenos Aires? Start here. This comprehensive
-                      90-day checklist covers everything from your first 24
-                      hours to putting down roots. Over 30 actionable items
-                      organized by timeline.
+                      Just arrived or planning to? This day-by-day guide covers
+                      everything from landing at Ezeiza to feeling like a local.
+                      SIM cards, SUBE, MercadoPago, mate etiquette, and 30+
+                      actionable tasks with real March 2026 prices.
                     </p>
-                    <Button
-                      asChild
-                      className="bg-sky-600 hover:bg-sky-500 text-white"
-                    >
-                      <Link href="/guides/getting-started">
-                        Read the Getting Started Guide
-                        <ArrowRight className="w-4 h-4 ml-2" />
-                      </Link>
-                    </Button>
+                    <div className="flex flex-wrap gap-3">
+                      <Button
+                        asChild
+                        className="bg-sky-600 hover:bg-sky-500 text-white"
+                      >
+                        <Link href="/guides/first-week">
+                          Read the First Week Guide
+                          <ArrowRight className="w-4 h-4 ml-2" />
+                        </Link>
+                      </Button>
+                      <Button
+                        asChild
+                        variant="outline"
+                      >
+                        <Link href="/neighborhoods/quiz">
+                          Take the Barrio Quiz
+                          <ArrowRight className="w-4 h-4 ml-2" />
+                        </Link>
+                      </Button>
+                    </div>
                   </div>
                 </div>
               </CardContent>
@@ -389,14 +424,13 @@ export default function GuidesPage() {
               Ready to Make the Move?
             </h2>
             <p className="text-primary-foreground/90 mb-8">
-              Start with our Getting Started checklist, explore neighborhoods
-              that fit your lifestyle, and figure out which visa works for
-              your situation.
+              Start with our First Week guide, find your perfect barrio with
+              the quiz, and explore neighborhoods that match your lifestyle.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button asChild size="lg" variant="secondary">
-                <Link href="/guides/getting-started">
-                  Getting Started Checklist
+                <Link href="/guides/first-week">
+                  First Week Guide
                   <ArrowRight className="w-4 h-4 ml-2" />
                 </Link>
               </Button>
@@ -405,7 +439,7 @@ export default function GuidesPage() {
                 size="lg"
                 className="border border-white/40 text-white bg-transparent hover:bg-white/10 hover:text-white"
               >
-                <Link href="/visas">Explore Visa Options</Link>
+                <Link href="/neighborhoods/quiz">Find Your Barrio</Link>
               </Button>
             </div>
           </div>

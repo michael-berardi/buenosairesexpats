@@ -17,6 +17,8 @@ export function Footer() {
   ];
 
   const guideLinks = [
+    { key: "firstWeek", href: "/guides/first-week" },
+    { key: "neighborhoodQuiz", href: "/neighborhoods/quiz" },
     { key: "costOfLiving", href: "/cost-of-living" },
     { key: "neighborhoods", href: "/neighborhoods" },
     { key: "healthcare", href: "/healthcare" },

@@ -98,6 +98,14 @@
       "title": "Getting Started",
       "description": "Your first 90 days checklist"
     },
+    "firstWeek": {
+      "title": "First Week Guide",
+      "description": "Day-by-day survival guide for your first 7 days in BA"
+    },
+    "neighborhoodQuiz": {
+      "title": "Barrio Matcher Quiz",
+      "description": "Find your perfect Buenos Aires neighborhood"
+    },
     "whyArgentina": {
       "title": "Why Argentina?",
       "description": "Honest look at why expats are choosing Buenos Aires"

@@ -98,6 +98,14 @@
       "title": "Primeiros Passos",
       "description": "Lista de verificação para seus primeiros 90 dias"
     },
+    "firstWeek": {
+      "title": "Guia Primeira Semana",
+      "description": "Guia dia a dia para seus primeiros 7 dias em BA"
+    },
+    "neighborhoodQuiz": {
+      "title": "Quiz de Bairros",
+      "description": "Encontre seu bairro ideal em Buenos Aires"
+    },
     "whyArgentina": {
       "title": "Por que Argentina?",
       "description": "Olhar honesto do porquê expats estão escolhendo Buenos Aires"

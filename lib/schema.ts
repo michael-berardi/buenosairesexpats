@@ -98,7 +98,7 @@ export function generateOrganizationSchema(): OrganizationSchema {
     name: "Buenos Aires Expats",
     url: "https://buenosairesexpats.com",
     logo: "https://buenosairesexpats.com/favicon.svg",
-    description: "The ultimate resource for expats moving to Buenos Aires. Honest guides, visa information, cost of living data, and a thriving expat community.",
+    description: "The hyper-local insider guide to living in Buenos Aires. Neighborhood-by-neighborhood reviews, real 2026 rent prices, coworking spots, dining guides, and street-level tips from expats who actually live here.",
     sameAs: [
       // Add social media URLs when available
     ],
@@ -111,7 +111,7 @@ export function generateWebSiteSchema(): WebSiteSchema {
     "@type": "WebSite",
     name: "Buenos Aires Expats",
     url: "https://buenosairesexpats.com",
-    description: "Your complete guide to living in Buenos Aires. Visa guides, cost of living data, neighborhood reviews, and expert advice.",
+    description: "The hyper-local insider guide to Buenos Aires. Neighborhood reviews, barrio comparisons, real rent prices, coworking spots, dining guides, and practical tips from expats living in BA.",
     // No search page currently available
   };
 }

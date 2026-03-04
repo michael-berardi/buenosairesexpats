@@ -505,20 +505,21 @@ export default function CostOfLivingPage() {
       <section className="py-12 md:py-16 bg-background">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto text-center">
-            <h2 className="heading-md mb-4">Ready to Make the Move?</h2>
+            <h2 className="heading-md mb-4">Find the Right Neighborhood for Your Budget</h2>
             <p className="text-body mb-8">
-              Explore neighborhoods, visa options, and get personalized advice for your move to Argentina.
+              Costs vary significantly by barrio. Take our quiz to find the neighborhood
+              that matches your budget and lifestyle, or compare all neighborhoods side by side.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center mb-10">
               <Button asChild size="lg" variant="default">
-                <Link href="/neighborhoods">
-                  Explore Neighborhoods
+                <Link href="/neighborhoods/quiz">
+                  Take the Barrio Quiz
                   <ArrowRight className="w-4 h-4 ml-2" />
                 </Link>
               </Button>
               <Button asChild size="lg" variant="outline">
-                <Link href="/visas/digital-nomad">
-                  Check Visa Options
+                <Link href="/neighborhoods">
+                  Compare All Neighborhoods
                 </Link>
               </Button>
             </div>

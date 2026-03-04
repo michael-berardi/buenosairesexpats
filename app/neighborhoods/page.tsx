@@ -381,25 +381,26 @@ export default function NeighborhoodsPage() {
         </div>
       </section>
 
-      {/* CTA */}
-      <section className="py-16 bg-primary text-primary-foreground">
+      {/* Quiz CTA */}
+      <section className="py-16 bg-gradient-to-r from-sky-600 to-sky-700 text-white">
         <div className="container mx-auto px-4 text-center">
           <div className="max-w-2xl mx-auto">
             <h2 className="text-3xl font-bold mb-4">Still Deciding?</h2>
-            <p className="text-primary-foreground/90 mb-8">
-              Get our detailed neighborhood comparison guide and personalized recommendations
-              based on your budget and lifestyle preferences.
+            <p className="text-white/90 mb-8">
+              Take our Neighborhood Matcher Quiz -- answer 7 quick questions and
+              we&apos;ll match you with the perfect barrio based on your budget,
+              lifestyle, and priorities.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button asChild size="lg" variant="secondary">
-                <Link href="/cost-of-living">
-                  Compare Costs
+                <Link href="/neighborhoods/quiz">
+                  Take the Barrio Quiz
                   <ArrowRight className="w-4 h-4 ml-2" />
                 </Link>
               </Button>
               <Button asChild size="lg" className="border border-white/40 text-white bg-transparent hover:bg-white/10 hover:text-white">
-                <Link href="/visas">
-                  Explore Visa Options
+                <Link href="/cost-of-living">
+                  Compare Costs by Neighborhood
                 </Link>
               </Button>
             </div>

@@ -34,26 +34,27 @@ import {
 
 export const metadata: Metadata = {
   title:
-    "Buenos Aires Expats | The Complete Guide to Living in Buenos Aires (2026)",
+    "Buenos Aires Expats | Your Insider City Guide to BA Life (2026)",
   description:
-    "The most comprehensive resource for expats moving to Buenos Aires. 40+ guides, 6 visa pathways, real cost of living data, neighborhood reviews, healthcare, banking, and honest expat stories. Updated March 2026.",
+    "The hyper-local guide to living in Buenos Aires. Neighborhood-by-neighborhood reviews with real 2026 rent prices, barrio matcher quiz, coworking spots, Michelin dining guide, and street-level tips from expats who actually live here. Updated March 2026.",
   keywords: [
     "Buenos Aires expats",
     "living in Buenos Aires",
-    "move to Buenos Aires",
-    "Argentina expats",
-    "Buenos Aires visa",
-    "digital nomad Buenos Aires",
-    "expat life Buenos Aires",
-    "cost of living Buenos Aires",
+    "Palermo apartments",
+    "BA digital nomad",
     "Buenos Aires neighborhoods",
-    "Argentina immigration",
-    "expat guide Argentina 2026",
+    "Recoleta vs Palermo",
+    "Buenos Aires rent prices 2026",
+    "coworking Buenos Aires",
+    "expat life Palermo",
+    "best barrio Buenos Aires",
+    "first week Buenos Aires",
+    "Buenos Aires dining guide",
   ],
   openGraph: {
-    title: "Buenos Aires Expats | The Complete Guide to Living in Buenos Aires",
+    title: "Buenos Aires Expats | Your Insider City Guide to BA Life",
     description:
-      "40+ guides, 6 visa pathways, real expat stories. Everything you need to move to and thrive in Buenos Aires.",
+      "Neighborhood reviews, real rent prices, barrio matcher quiz, coworking spots, and dining guides. The insider guide to Buenos Aires for expats and digital nomads.",
     type: "website",
     url: "https://buenosairesexpats.com",
     images: [
@@ -61,7 +62,7 @@ export const metadata: Metadata = {
         url: "/images/og-image.jpg",
         width: 1200,
         height: 630,
-        alt: "Buenos Aires Expats - Your complete guide to life in Argentina",
+        alt: "Buenos Aires Expats - Your insider guide to life in BA",
       },
     ],
   },
@@ -73,59 +74,59 @@ export const metadata: Metadata = {
 /* ─── Data ──────────────────────────────────────────────────── */
 
 const stats = [
-  { value: "40+", label: "Guides", labelFull: "Detailed Guides" },
-  { value: "64+", label: "Profiles", labelFull: "Expat Profiles" },
-  { value: "6", label: "Barrios", labelFull: "Neighborhoods Covered" },
-  { value: "6", label: "Visas", labelFull: "Visa Pathways" },
+  { value: "6", label: "Barrios", labelFull: "Neighborhoods Reviewed" },
+  { value: "40+", label: "Guides", labelFull: "Local Guides" },
+  { value: "2026", label: "Prices", labelFull: "Real 2026 Prices" },
+  { value: "64+", label: "Stories", labelFull: "Expat Stories" },
 ];
 
 const contentAreas = [
   {
-    icon: FileText,
-    title: "Visa Guides",
-    description:
-      "Compare all 6 visa options with requirements, costs, timelines, and step-by-step applications.",
-    href: "/visas",
-    cta: "Explore visas",
-  },
-  {
-    icon: DollarSign,
-    title: "Cost of Living",
-    description:
-      "Real 2026 budget breakdowns for singles, couples, and families. Rent, food, healthcare, and more.",
-    href: "/cost-of-living",
-    cta: "See costs",
-  },
-  {
     icon: MapPin,
-    title: "Neighborhoods",
+    title: "Neighborhood Reviews",
     description:
-      "Detailed reviews of Palermo, Recoleta, Belgrano, San Telmo, and other top expat areas.",
+      "Deep-dive guides to Palermo, Recoleta, Belgrano, San Telmo, Villa Crespo, and Puerto Madero. Rent prices, safety ratings, and local insights.",
     href: "/neighborhoods",
     cta: "Compare barrios",
   },
   {
-    icon: Heart,
-    title: "Healthcare",
+    icon: Compass,
+    title: "Barrio Matcher Quiz",
     description:
-      "Navigate prepaga insurance, find English-speaking doctors, and understand the health system.",
-    href: "/healthcare",
-    cta: "View options",
+      "Answer 7 questions to find your perfect Buenos Aires neighborhood based on budget, lifestyle, and priorities.",
+    href: "/neighborhoods/quiz",
+    cta: "Take the quiz",
+  },
+  {
+    icon: DollarSign,
+    title: "Cost of Living 2026",
+    description:
+      "Real monthly budgets with March 2026 prices. Rent by neighborhood, grocery costs, and what expats actually spend.",
+    href: "/cost-of-living",
+    cta: "See real costs",
   },
   {
     icon: BookOpen,
-    title: "Expat Guides",
+    title: "First Week Guide",
     description:
-      "9 in-depth guides covering safety, transport, food, taxes, Spanish, weather, and culture.",
-    href: "/guides",
-    cta: "Browse guides",
+      "Day-by-day survival guide: SIM cards, SUBE, MercadoPago, finding your cafe, and the unwritten rules of BA life.",
+    href: "/guides/first-week",
+    cta: "Start here",
+  },
+  {
+    icon: Heart,
+    title: "Dining Guide",
+    description:
+      "Michelin-starred restaurants, neighborhood parrillas, and hidden gems. The definitive BA food guide.",
+    href: "/dining",
+    cta: "Explore dining",
   },
   {
     icon: Users,
     title: "Expat Stories",
     description:
-      "Real experiences from 64+ expats who moved to Buenos Aires. Honest accounts of what worked and what didn't.",
-    href: "/stories",
+      "64+ real profiles from Americans, Brits, Australians, and Brazilians sharing their honest BA experiences.",
+    href: "/expat-profiles",
     cta: "Read stories",
   },
 ];
@@ -133,42 +134,42 @@ const contentAreas = [
 const popularGuides = [
   {
     image: "/images/getting-started-hero.webp",
-    badge: "Start Here",
+    badge: "New",
     badgeClass: "badge-primary",
-    title: "Getting Started in Buenos Aires",
+    title: "Your First Week in BA",
     description:
-      "Your first 90 days checklist. Everything from landing at Ezeiza to building your new life, organized by timeline.",
-    href: "/guides/getting-started",
-    readTime: "15 min",
+      "Day-by-day survival guide from landing at Ezeiza to feeling like a local. SIM cards, SUBE, MercadoPago, mate etiquette, and more.",
+    href: "/guides/first-week",
+    readTime: "20 min",
   },
   {
-    image: "/images/visa-digital-nomad.jpg",
-    badge: "Most Popular",
+    image: "/images/neighborhoods-hero.jpg",
+    badge: "Interactive",
     badgeClass: "badge-accent",
-    title: "Argentina Digital Nomad Visa",
+    title: "Neighborhood Matcher Quiz",
     description:
-      "Complete guide to the 180-day remote work visa. Requirements, application process, costs, and tips for approval.",
-    href: "/visas/digital-nomad",
-    readTime: "12 min",
+      "Answer 7 questions to find your perfect barrio. Palermo, Recoleta, Belgrano, San Telmo, Villa Crespo, or Puerto Madero?",
+    href: "/neighborhoods/quiz",
+    readTime: "3 min",
   },
   {
     image: "/images/cost-of-living-card.webp",
-    badge: "Updated 2026",
+    badge: "March 2026",
     badgeClass: "badge-secondary",
-    title: "Cost of Living in Buenos Aires",
+    title: "Cost of Living by Neighborhood",
     description:
-      "Real monthly budget breakdowns with current prices. Rent, groceries, dining, transport, and entertainment costs.",
+      "Real monthly budgets: what a single person, couple, or family actually spends in Palermo vs Belgrano vs San Telmo.",
     href: "/cost-of-living",
     readTime: "10 min",
   },
   {
-    image: "/images/neighborhoods-hero.jpg",
+    image: "/images/visa-digital-nomad.jpg",
     badge: "Essential",
     badgeClass: "badge-primary",
-    title: "Safety Guide for Expats",
+    title: "Dining Guide: Michelin & Beyond",
     description:
-      "Honest safety info: neighborhood breakdowns, common scams, emergency numbers, and solo travel tips.",
-    href: "/guides/safety",
+      "From Aramburu (2 stars) to your neighborhood parrilla. The definitive guide to eating in Buenos Aires.",
+    href: "/dining",
     readTime: "12 min",
   },
 ];
@@ -254,27 +255,27 @@ const testimonials = [
 const journeyCards = [
   {
     step: "01",
-    title: "Planning to Move",
+    title: "Planning Your Move",
     description:
-      "Research costs, compare visa options, and understand what to expect before you arrive.",
+      "Research neighborhoods, compare costs by barrio, and find the right visa before you arrive.",
     image: "/images/journey-planning.webp",
     icon: Compass,
     links: [
+      { label: "Barrio Matcher Quiz", href: "/neighborhoods/quiz" },
       { label: "Cost of Living", href: "/cost-of-living" },
       { label: "Visa Guide", href: "/visas" },
-      { label: "Find Your Visa", href: "/visas/quiz" },
       { label: "Why Buenos Aires?", href: "/why-argentina" },
     ],
   },
   {
     step: "02",
-    title: "Just Arrived",
+    title: "Just Arrived in BA",
     description:
-      "Get set up with essentials: your DNI, healthcare, banking, and navigating the city.",
+      "Your first week survival guide: SIM card, SUBE, MercadoPago, neighborhood walks, and finding your rhythm.",
     image: "/images/journey-arrived.webp",
     icon: Plane,
     links: [
-      { label: "Getting Started", href: "/guides/getting-started" },
+      { label: "First Week Guide", href: "/guides/first-week" },
       { label: "Getting Your DNI", href: "/guides/getting-dni" },
       { label: "Healthcare", href: "/healthcare" },
       { label: "Banking", href: "/banking" },
@@ -282,21 +283,25 @@ const journeyCards = [
   },
   {
     step: "03",
-    title: "Already Settled",
+    title: "Living Like a Local",
     description:
-      "Find permanent housing, set up your taxes efficiently, and connect with the expat community.",
+      "Find your permanent apartment, discover your neighborhood's hidden gems, and build your BA life.",
     image: "/images/hero-couple.jpg",
     icon: HomeIcon,
     links: [
-      { label: "Housing", href: "/housing" },
-      { label: "Working & Taxes", href: "/guides/working-taxes" },
+      { label: "Neighborhoods", href: "/neighborhoods" },
       { label: "Dining Guide", href: "/dining" },
+      { label: "Housing", href: "/housing" },
       { label: "Expat Stories", href: "/stories" },
     ],
   },
 ];
 
 const quickLinks = [
+  { label: "Neighborhood Matcher Quiz", href: "/neighborhoods/quiz" },
+  { label: "First Week Guide", href: "/guides/first-week" },
+  { label: "Dining Guide", href: "/dining" },
+  { label: "Visa Options", href: "/visas" },
   { label: "Transportation", href: "/guides/transportation" },
   { label: "Learning Spanish", href: "/guides/learning-spanish" },
   { label: "Food & Dining", href: "/guides/food-dining" },
@@ -305,10 +310,8 @@ const quickLinks = [
   { label: "Working & Taxes", href: "/guides/working-taxes" },
   { label: "Banking", href: "/banking" },
   { label: "Housing", href: "/housing" },
-  { label: "Dining Guide", href: "/dining" },
   { label: "Resources", href: "/resources" },
   { label: "Expat Profiles", href: "/expat-profiles" },
-  { label: "Why Argentina?", href: "/why-argentina" },
 ];
 
 /* ─── Page ──────────────────────────────────────────────────── */
@@ -351,13 +354,13 @@ export default function Home() {
               Updated March 2026
             </Badge>
             <h1 className="text-[1.75rem] sm:text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight leading-tight mb-6 text-white drop-shadow-lg">
-              Your Complete Guide to{" "}
-              <span className="text-sky-300">Life in Buenos Aires</span>
+              Your Insider Guide to{" "}
+              <span className="text-sky-300">Living in Buenos Aires</span>
             </h1>
             <p className="text-xl text-white/90 mb-8 max-w-2xl mx-auto drop-shadow-md">
-              40+ guides, 6 visa pathways, real cost breakdowns, and honest
-              stories from expats who&apos;ve actually done it. Everything you
-              need to move to and thrive in Argentina.
+              Neighborhood-by-neighborhood reviews, real 2026 rent prices,
+              barrio matcher quiz, and street-level tips from expats who
+              actually live here. Not a travel blog -- a city survival guide.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button
@@ -365,8 +368,8 @@ export default function Home() {
                 size="lg"
                 className="gap-2 bg-sky-600 hover:bg-sky-500 text-white font-semibold shadow-lg shadow-sky-500/30 hover:shadow-xl hover:shadow-sky-500/40 transition-all duration-200"
               >
-                <Link href="/visas">
-                  Explore Visa Options
+                <Link href="/neighborhoods/quiz">
+                  Find Your Barrio
                   <ArrowRight className="w-4 h-4" />
                 </Link>
               </Button>
@@ -376,12 +379,9 @@ export default function Home() {
                 variant="outline"
                 className="bg-white/10 text-white font-semibold border border-white/30 hover:bg-white/20 transition-all duration-200"
               >
-                <Link
-                  href="https://lucerolegal.org?utm_source=buenosairesexpats&utm_medium=hero&utm_content=homepage"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Free Legal Consultation
+                <Link href="/guides/first-week">
+                  First Week Guide
+                  <ArrowRight className="w-4 h-4" />
                 </Link>
               </Button>
             </div>
@@ -413,12 +413,12 @@ export default function Home() {
         <div className="container mx-auto px-5 sm:px-6">
           <div className="text-center max-w-2xl mx-auto mb-16 animate-fade-in">
             <h2 className="heading-lg mb-4">
-              Everything You Need to Make the Move
+              Your Buenos Aires City Guide
             </h2>
             <p className="text-body text-lg">
-              Comprehensive guides written by expats who&apos;ve actually done
-              this. No fluff, no sugar-coating — just practical information
-              about visas, costs, neighborhoods, healthcare, and daily life.
+              Hyper-local guides written by expats who live in BA right now.
+              Not generic Argentina content -- street-level neighborhood reviews,
+              real rent prices, and the insider tips you only learn by living here.
             </p>
           </div>
 
@@ -454,11 +454,11 @@ export default function Home() {
         <div className="container mx-auto px-5 sm:px-6">
           <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-4 mb-12">
             <div>
-              <h2 className="heading-lg mb-2">Most Popular Guides</h2>
+              <h2 className="heading-lg mb-2">Start Here</h2>
               <p className="text-body">
-                The four guides where most expats start their research. They
-                cover the biggest questions about visas, budgets, safety, and
-                getting settled.
+                The four resources most expats use in their first month.
+                Interactive tools, day-by-day guides, and real data -- not
+                generic travel content.
               </p>
             </div>
             <Button asChild variant="outline" className="btn-outline shrink-0">

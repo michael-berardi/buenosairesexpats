@@ -15,10 +15,10 @@ const inter = Inter({
 
 export const metadata: Metadata = {
   title: {
-    default: "Buenos Aires Expats | Guide to Living in Buenos Aires",
+    default: "Buenos Aires Expats | Your Insider City Guide to BA Life",
     template: "%s | Buenos Aires Expats",
   },
-  description: "The ultimate resource for expats moving to Buenos Aires. Honest guides, visa info, cost of living data, neighborhoods, and expat community.",
+  description: "The hyper-local guide to living in Buenos Aires. Neighborhood-by-neighborhood reviews, real 2026 prices, barrio comparisons, coworking spots, dining guides, and street-level tips from expats actually living in BA.",
   alternates: {
     canonical: "https://buenosairesexpats.com",
     languages: {
@@ -27,7 +27,7 @@ export const metadata: Metadata = {
       'x-default': 'https://buenosairesexpats.com',
     },
   },
-  keywords: ["Buenos Aires expats", "living in Buenos Aires", "move to Buenos Aires", "Argentina expats", "Buenos Aires visa", "digital nomad Buenos Aires", "expat life Buenos Aires"],
+  keywords: ["Buenos Aires expats", "living in Buenos Aires", "Palermo apartments", "BA digital nomad", "Buenos Aires neighborhoods", "Recoleta expat", "San Telmo living", "coworking Buenos Aires", "Buenos Aires rent prices 2026", "barrio guide BA", "expat life Palermo", "Buenos Aires cost of living"],
   authors: [{ name: "Buenos Aires Expats" }],
   creator: "Buenos Aires Expats",
   metadataBase: new URL("https://buenosairesexpats.com"),
@@ -36,19 +36,19 @@ export const metadata: Metadata = {
     locale: "en_US",
     url: "https://buenosairesexpats.com",
     siteName: "Buenos Aires Expats",
-    title: "Buenos Aires Expats | Guide to Living in Buenos Aires",
-    description: "The ultimate resource for expats moving to Buenos Aires. Honest guides, visa info, cost of living, and expat community.",
+    title: "Buenos Aires Expats | Your Insider City Guide to BA Life",
+    description: "Neighborhood reviews, real rent prices, coworking spots, dining guides, and street-level tips. The hyper-local guide to Buenos Aires for expats and digital nomads.",
     images: [{
       url: '/images/og-image.jpg',
       width: 1200,
       height: 630,
-      alt: 'Buenos Aires Expats - Your guide to life in Argentina',
+      alt: 'Buenos Aires Expats - Your insider guide to life in BA',
     }],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Buenos Aires Expats | Guide to Living in Buenos Aires",
-    description: "The ultimate resource for expats moving to Buenos Aires. Honest guides, visa info, cost of living, and expat community.",
+    title: "Buenos Aires Expats | Your Insider City Guide to BA Life",
+    description: "Neighborhood reviews, real rent prices, coworking spots, dining guides, and street-level tips. The hyper-local guide to Buenos Aires.",
     images: ['/images/og-image.jpg'],
   },
   robots: {

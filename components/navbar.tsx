@@ -46,6 +46,8 @@ export function Navbar() {
   ];
 
   const guideItems = [
+    { key: "firstWeek", href: "/guides/first-week" },
+    { key: "neighborhoodQuiz", href: "/neighborhoods/quiz" },
     { key: "costOfLiving", href: "/cost-of-living" },
     { key: "neighborhoods", href: "/neighborhoods" },
     { key: "dining", href: "/dining" },
