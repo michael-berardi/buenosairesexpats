@@ -1,3 +1,4 @@
+import React from "react";
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
@@ -10,6 +11,18 @@ import { ArrowLeft, ArrowRight, MapPin, Briefcase, Clock, Quote } from "lucide-r
 import { stories, getStoryById, getAllCategories, type StoryCategory } from "@/lib/stories-data";
 import { StructuredData } from "@/components/structured-data";
 import { generateArticleSchema } from "@/lib/schema";
+
+// Helper function to render inline markdown (bold, italic, links)
+function renderInlineMarkdown(text: string): React.ReactNode {
+  // Handle bold text **text**
+  const parts = text.split(/(\*\*[^*]+\*\*)/g);
+  return parts.map((part, index) => {
+    if (part.startsWith('**') && part.endsWith('**')) {
+      return <strong key={index} className="font-semibold text-foreground">{part.slice(2, -2)}</strong>;
+    }
+    return part;
+  });
+}
 
 // Generate static params for all stories
 export function generateStaticParams() {
@@ -229,27 +242,32 @@ export default async function StoryPage({ params }: { params: Promise<{ id: stri
             {/* Story Content */}
             <div className="prose prose-lg max-w-none">
               {story.content.split('\n\n').map((paragraph, index) => {
+                const trimmedParagraph = paragraph.trim();
+                
                 // Handle headers
-                if (paragraph.startsWith('## ')) {
-                  return <h2 key={index} className="text-2xl font-bold mt-8 mb-4">{paragraph.replace('## ', '')}</h2>;
+                if (trimmedParagraph.startsWith('## ')) {
+                  return <h2 key={index} className="text-2xl font-bold mt-8 mb-4">{trimmedParagraph.replace('## ', '')}</h2>;
                 }
-                // Handle bold text
-                if (paragraph.startsWith('**') && paragraph.endsWith('**')) {
-                  return <p key={index} className="font-semibold text-lg my-4">{paragraph.replace(/\*\*/g, '')}</p>;
+                
+                // Handle bold-only paragraphs (entire paragraph is bold)
+                if (trimmedParagraph.startsWith('**') && trimmedParagraph.endsWith('**')) {
+                  return <p key={index} className="font-semibold text-lg my-4">{trimmedParagraph.replace(/\*\*/g, '')}</p>;
                 }
+                
                 // Handle lists
                 if (paragraph.includes('\n- ')) {
                   const items = paragraph.split('\n- ').filter(Boolean);
                   return (
                     <ul key={index} className="list-disc pl-6 my-4 space-y-2">
                       {items.map((item, i) => (
-                        <li key={i}>{item.replace('- ', '')}</li>
+                        <li key={i}>{renderInlineMarkdown(item.replace('- ', ''))}</li>
                       ))}
                     </ul>
                   );
                 }
-                // Regular paragraphs
-                return <p key={index} className="mb-4 text-muted-foreground leading-relaxed">{paragraph}</p>;
+                
+                // Regular paragraphs with inline markdown support
+                return <p key={index} className="mb-4 text-muted-foreground leading-relaxed">{renderInlineMarkdown(paragraph)}</p>;
               })}
             </div>
           </div>
