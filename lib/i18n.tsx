@@ -63,12 +63,15 @@ export function I18nProvider({ children }: { children: ReactNode }) {
     const savedLocale = localStorage.getItem('locale') as Locale;
     if (savedLocale && (savedLocale === 'en' || savedLocale === 'es' || savedLocale === 'pt')) {
       setLocaleState(savedLocale);
+      document.documentElement.lang = savedLocale;
     } else {
       const browserLang = navigator.language.split('-')[0];
       if (browserLang === 'es') {
         setLocaleState('es');
+        document.documentElement.lang = 'es';
       } else if (browserLang === 'pt') {
         setLocaleState('pt');
+        document.documentElement.lang = 'pt';
       }
     }
   }, []);
