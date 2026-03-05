@@ -21,13 +21,13 @@ export function LuceroLegalCTA({
 
   if (variant === "inline") {
     return (
-      <span className="text-stone-600">
+      <span className="text-muted-foreground">
         For professional immigration assistance, consider{" "}
         <Link
           href={trackingUrl}
           target="_blank"
           rel="noopener noreferrer"
-          className="text-sky-700 hover:text-sky-600 underline underline-offset-2 inline-flex items-center gap-1"
+          className="text-primary hover:text-primary/80 underline underline-offset-2 inline-flex items-center gap-1"
         >
           speaking with an immigration attorney
           <ExternalLink className="w-3 h-3" />
@@ -39,14 +39,14 @@ export function LuceroLegalCTA({
 
   if (variant === "compact") {
     return (
-      <div className="border border-stone-200 rounded-lg p-5">
-        <p className="text-sm text-stone-600">
+      <div className="border border-border rounded-lg p-5">
+        <p className="text-sm text-muted-foreground">
           {description || "Need help with visas or residency? An experienced immigration attorney can guide you through the process."}{" "}
           <Link
             href={trackingUrl}
             target="_blank"
             rel="noopener noreferrer"
-            className="text-sky-700 hover:text-sky-600 underline underline-offset-2 inline-flex items-center gap-1"
+            className="text-primary hover:text-primary/80 underline underline-offset-2 inline-flex items-center gap-1"
           >
             Learn more
             <ExternalLink className="w-3 h-3" />
@@ -58,11 +58,11 @@ export function LuceroLegalCTA({
 
   // variant === "full" — now a simple recommendation box instead of a hero banner
   return (
-    <div className="border border-stone-200 rounded-lg p-6 md:p-8">
-      <h3 className="text-lg font-semibold text-stone-900 mb-2">
+    <div className="border border-border rounded-lg p-6 md:p-8">
+      <h3 className="text-lg font-semibold text-foreground mb-2">
         {headline || "Need Immigration Help?"}
       </h3>
-      <p className="text-sm text-stone-600 mb-4">
+      <p className="text-sm text-muted-foreground mb-4">
         {description ||
           "Navigating Argentina's immigration system can be complex. An experienced immigration attorney can help with visa applications, residency, and citizenship."}
       </p>
@@ -71,14 +71,14 @@ export function LuceroLegalCTA({
           href={trackingUrl}
           target="_blank"
           rel="noopener noreferrer"
-          className="inline-flex items-center gap-1.5 text-sm text-sky-700 hover:text-sky-600 underline underline-offset-2"
+          className="inline-flex items-center gap-1.5 text-sm text-primary hover:text-primary/80 underline underline-offset-2"
         >
           Get professional guidance
           <ExternalLink className="w-3 h-3" />
         </Link>
         <Link
           href="/visas"
-          className="inline-flex items-center gap-1.5 text-sm text-stone-500 hover:text-stone-700 underline underline-offset-2"
+          className="inline-flex items-center gap-1.5 text-sm text-muted-foreground hover:text-foreground underline underline-offset-2"
         >
           Explore visa options
         </Link>

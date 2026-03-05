@@ -6,7 +6,8 @@ import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/com
 import { Badge } from "@/components/ui/badge";
 import { LuceroLegalCTA } from "@/components/lucero-legal-cta";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
-import { generateFAQPageSchema } from "@/lib/schema";
+import { generateFAQPageSchema, generateBreadcrumbSchema } from "@/lib/schema";
+import { StructuredData } from "@/components/structured-data";
 import {
   Heart,
   Shield,
@@ -71,9 +72,14 @@ const faqs = [
 
 export default function HealthcarePage() {
   const faqSchema = generateFAQPageSchema(faqs);
+  const breadcrumbSchema = generateBreadcrumbSchema([
+    { name: "Home", item: "https://buenosairesexpats.com" },
+    { name: "Healthcare" },
+  ]);
 
   return (
     <div className="flex flex-col min-h-screen">
+      <StructuredData data={breadcrumbSchema} />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
@@ -108,7 +114,7 @@ export default function HealthcarePage() {
               Everything you need to know about health insurance (prepaga),
               finding doctors, and accessing quality medical care in Argentina.
             </p>
-            <Button asChild size="lg" className="bg-sky-600 hover:bg-sky-500 text-white font-semibold">
+            <Button asChild size="lg" className="bg-primary hover:bg-primary/90 text-white font-semibold">
               <Link href="#insurance-providers">
                 Browse Healthcare Options
                 <ArrowRight className="w-4 h-4 ml-2" />
@@ -363,11 +369,7 @@ export default function HealthcarePage() {
       <section className="py-12">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto">
-            <LuceroLegalCTA
-              variant="compact"
-              description="Legal residents get access to Argentina's public healthcare system. An immigration attorney can help with your visa and residency paperwork."
-              utm_content="healthcare"
-            />
+            <p className="text-sm text-muted-foreground"><LuceroLegalCTA variant="inline" /></p>
           </div>
         </div>
       </section>

@@ -566,11 +566,7 @@ export default function SafetyPage() {
       <section className="py-12">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto">
-            <LuceroLegalCTA
-              variant="compact"
-              description="Legal residents have full access to Argentine police and legal systems. An immigration attorney can help you get proper residency status."
-              utm_content="guides-safety"
-            />
+            <p className="text-sm text-muted-foreground"><LuceroLegalCTA variant="inline" /></p>
           </div>
         </div>
       </section>

@@ -236,7 +236,7 @@ export default function WeatherClimatePage() {
       </div>
 
       {/* Hero */}
-      <section className="py-16 md:py-24 bg-gradient-to-b from-sky-50 to-white dark:from-sky-950/20 dark:to-background">
+      <section className="py-16 md:py-24 bg-gradient-to-b from-primary/5 to-background dark:from-primary/10 dark:to-background">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto text-center">
             <Badge className="mb-4" variant="secondary">
@@ -301,8 +301,8 @@ export default function WeatherClimatePage() {
                 <Card key={season.name} className="h-full">
                   <CardHeader>
                     <div className="flex items-center gap-3">
-                      <div className={`w-10 h-10 rounded-lg ${bgColorMap[season.color] || "bg-sky-100"} flex items-center justify-center`}>
-                        <season.icon className={`w-5 h-5 ${textColorMap[season.color] || "text-sky-600"}`} />
+                      <div className={`w-10 h-10 rounded-lg ${bgColorMap[season.color] || "bg-primary/10"} flex items-center justify-center`}>
+                        <season.icon className={`w-5 h-5 ${textColorMap[season.color] || "text-primary"}`} />
                       </div>
                       <div>
                         <CardTitle>{season.name}</CardTitle>

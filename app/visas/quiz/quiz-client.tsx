@@ -459,7 +459,7 @@ export function QuizClient() {
       <div className="max-w-2xl mx-auto px-4 py-12 sm:py-16">
         {/* Header */}
         <div className="text-center mb-10">
-          <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-sky-50 text-sky-700 text-sm font-medium mb-4">
+          <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-primary/5 text-primary text-sm font-medium mb-4">
             <Compass className="w-4 h-4" />
             Visa Finder Quiz
           </div>
@@ -484,7 +484,7 @@ export function QuizClient() {
           </div>
           <div className="h-2 bg-stone-200 rounded-full overflow-hidden">
             <div
-              className="h-full bg-sky-600 rounded-full transition-all duration-500 ease-out"
+              className="h-full bg-primary rounded-full transition-all duration-500 ease-out"
               style={{ width: `${progress}%` }}
             />
           </div>
@@ -515,7 +515,7 @@ export function QuizClient() {
                           onClick={() => selectAnswer(option.value)}
                           className={`w-full text-left px-5 py-4 rounded-xl border-2 transition-all duration-200 ${
                             isSelected
-                              ? "border-sky-600 bg-sky-50 text-sky-900 shadow-sm"
+                              ? "border-primary bg-primary/5 text-primary shadow-sm"
                               : "border-stone-200 bg-white hover:border-stone-300 hover:bg-stone-50 text-stone-700"
                           }`}
                         >
@@ -524,7 +524,7 @@ export function QuizClient() {
                               {option.label}
                             </span>
                             {isSelected && (
-                              <CheckCircle className="w-5 h-5 text-sky-600 flex-shrink-0" />
+                              <CheckCircle className="w-5 h-5 text-primary flex-shrink-0" />
                             )}
                           </div>
                         </button>
@@ -561,7 +561,7 @@ export function QuizClient() {
                       setTimeout(() => setShowSuggestions(false), 200);
                     }}
                     placeholder="Type your country name..."
-                    className="w-full px-5 py-4 rounded-xl border-2 border-stone-200 bg-white text-stone-900 placeholder:text-stone-400 focus:border-sky-600 focus:outline-none focus:ring-2 focus:ring-sky-100 transition-all text-lg"
+                    className="w-full px-5 py-4 rounded-xl border-2 border-stone-200 bg-white text-stone-900 placeholder:text-stone-400 focus:border-primary focus:outline-none focus:ring-2 focus:ring-primary/10 transition-all text-lg"
                   />
                   {showSuggestions && filteredCountries.length > 0 && (
                     <div className="absolute z-10 w-full mt-2 bg-white border border-stone-200 rounded-xl shadow-lg overflow-hidden max-h-64 overflow-y-auto">
@@ -581,7 +581,7 @@ export function QuizClient() {
                               }));
                               setShowSuggestions(false);
                             }}
-                            className="w-full text-left px-5 py-3 hover:bg-sky-50 transition-colors flex items-center gap-3 text-stone-700"
+                            className="w-full text-left px-5 py-3 hover:bg-primary/5 transition-colors flex items-center gap-3 text-stone-700"
                           >
                             {country && (
                               <span className="text-lg">
@@ -605,7 +605,7 @@ export function QuizClient() {
                     </div>
                   )}
                   {answers.nationality && (
-                    <div className="mt-3 flex items-center gap-2 text-sky-700 text-sm">
+                    <div className="mt-3 flex items-center gap-2 text-primary text-sm">
                       <CheckCircle className="w-4 h-4" />
                       <span>
                         Selected:{" "}
@@ -632,7 +632,7 @@ export function QuizClient() {
                   <Button
                     onClick={goNext}
                     disabled={!answers.nationality}
-                    className="bg-sky-600 hover:bg-sky-700 text-white"
+                    className="bg-primary hover:bg-primary/90 text-white"
                   >
                     See Results
                     <ArrowRight className="w-4 h-4" />
@@ -647,8 +647,8 @@ export function QuizClient() {
         {isComplete && recommendations && (
           <div className="space-y-8">
             {/* Primary recommendation */}
-            <Card className="border-sky-200 shadow-lg overflow-hidden">
-              <div className="bg-sky-600 px-6 py-3">
+            <Card className="border-primary/20 shadow-lg overflow-hidden">
+              <div className="bg-primary px-6 py-3">
                 <p className="text-white/90 text-sm font-medium">
                   Best Match for You
                 </p>
@@ -663,7 +663,7 @@ export function QuizClient() {
                       {recommendations.primary.description}
                     </p>
                   </div>
-                  <Badge className="bg-sky-100 text-sky-800 border-sky-200 flex-shrink-0">
+                  <Badge className="bg-primary/10 text-primary border-primary/20 flex-shrink-0">
                     Top Pick
                   </Badge>
                 </div>
@@ -683,7 +683,7 @@ export function QuizClient() {
                   )}
                 </div>
                 <Link href={recommendations.primary.href}>
-                  <Button className="w-full bg-sky-600 hover:bg-sky-700 text-white h-12 text-base">
+                  <Button className="w-full bg-primary hover:bg-primary/90 text-white h-12 text-base">
                     View Full {recommendations.primary.name} Guide
                     <ArrowRight className="w-4 h-4" />
                   </Button>

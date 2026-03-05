@@ -186,19 +186,19 @@ export default function DigitalNomadVisaPage() {
             </p>
             <div className="flex flex-wrap justify-center gap-4 text-sm mb-6 text-white/90">
               <div className="flex items-center gap-2">
-                <Clock className="w-4 h-4 text-sky-300" />
+                <Clock className="w-4 h-4 text-primary-foreground/70" />
                 <span>180 days validity</span>
               </div>
               <div className="flex items-center gap-2">
-                <DollarSign className="w-4 h-4 text-sky-300" />
+                <DollarSign className="w-4 h-4 text-primary-foreground/70" />
                 <span>~$100-150 fee</span>
               </div>
               <div className="flex items-center gap-2">
-                <CheckCircle className="w-4 h-4 text-sky-300" />
+                <CheckCircle className="w-4 h-4 text-primary-foreground/70" />
                 <span>2-4 week processing</span>
               </div>
               <div className="flex items-center gap-2">
-                <BookOpen className="w-4 h-4 text-sky-300" />
+                <BookOpen className="w-4 h-4 text-primary-foreground/70" />
                 <span>8 min read</span>
               </div>
             </div>

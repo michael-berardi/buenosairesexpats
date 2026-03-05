@@ -446,11 +446,7 @@ export default function LearningSpanishPage() {
       <section className="py-12">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto">
-            <LuceroLegalCTA
-              variant="compact"
-              description="If you're learning Spanish to live here long-term, you'll need the right visa. An immigration attorney can help with residency and immigration."
-              utm_content="guides-learning-spanish"
-            />
+            <p className="text-sm text-muted-foreground"><LuceroLegalCTA variant="inline" /></p>
           </div>
         </div>
       </section>

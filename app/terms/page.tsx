@@ -44,7 +44,7 @@ export default function TermsPage() {
       </div>
 
       {/* Header */}
-      <section className="py-12 md:py-16 bg-gradient-to-b from-sky-50 to-white dark:from-sky-950/20 dark:to-background">
+      <section className="py-12 md:py-16 bg-gradient-to-b from-primary/5 to-background dark:from-primary/10 dark:to-background">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto text-center">
             <FileText className="w-12 h-12 text-primary mx-auto mb-4" />

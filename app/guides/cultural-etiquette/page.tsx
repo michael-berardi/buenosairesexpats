@@ -619,11 +619,7 @@ export default function CulturalEtiquettePage() {
       <section className="py-12">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto">
-            <LuceroLegalCTA
-              variant="compact"
-              description="Ready to commit to life in Argentina? An immigration attorney can help with visas, residency, and all the legal steps for your move."
-              utm_content="guides-cultural-etiquette"
-            />
+            <p className="text-sm text-muted-foreground"><LuceroLegalCTA variant="inline" /></p>
           </div>
         </div>
       </section>

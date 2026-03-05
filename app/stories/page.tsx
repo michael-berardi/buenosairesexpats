@@ -10,8 +10,8 @@ import { StructuredData } from "@/components/structured-data";
 import { generateBreadcrumbSchema } from "@/lib/schema";
 
 export const metadata: Metadata = {
-  title: "Real Expat Stories - Buenos Aires Experiences",
-  description: "Authentic stories from expats who moved to Buenos Aires. Successes, struggles, culture shocks, scams, romances, and business ventures - the real unfiltered truth about life in Argentina.",
+  title: "Expat Stories - Buenos Aires Experiences",
+  description: "Composite stories based on real expat experiences in Buenos Aires. Successes, struggles, culture shocks, and business ventures - practical insights about life in Argentina.",
   keywords: ["expat stories Buenos Aires", "moving to Argentina", "real experiences", "culture shock", "expat life"],
   alternates: {
     canonical: "https://buenosairesexpats.com/stories",
@@ -80,14 +80,17 @@ export default function StoriesPage() {
           <div className="max-w-3xl mx-auto text-center">
             <Badge className="mb-4 bg-white/90 text-foreground">
               <Quote className="w-3 h-3 mr-1" />
-              Real Stories, Real People
+              Expat Stories
             </Badge>
             <h1 className="text-4xl md:text-5xl font-bold mb-6 text-white drop-shadow-lg">
-              The Unfiltered Truth About Life in Buenos Aires
+              Life in Buenos Aires, Unfiltered
             </h1>
             <p className="text-xl text-white/90 mb-8 drop-shadow-md">
-              No sugar-coating. No fake reviews. Just real stories from people who actually made the move - 
-              the magical moments, the hard lessons, the embarrassing failures, and everything in between.
+              Composite portraits based on common expat experiences -
+              the magical moments, the hard lessons, the culture shocks, and everything in between.
+            </p>
+            <p className="text-sm text-white/60">
+              Names and details are illustrative, but the budgets, challenges, and tips reflect real situations reported by the expat community.
             </p>
             <div className="flex flex-wrap justify-center gap-3">
               {categories.map((cat) => {
@@ -388,11 +391,7 @@ export default function StoriesPage() {
       <section className="py-12">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto">
-            <LuceroLegalCTA
-              variant="compact"
-              description="Every expat journey starts with the right visa. An immigration attorney can help you navigate Argentine immigration so you can focus on building your new life."
-              utm_content="stories-hub"
-            />
+            <p className="text-sm text-muted-foreground"><LuceroLegalCTA variant="inline" /></p>
           </div>
         </div>
       </section>

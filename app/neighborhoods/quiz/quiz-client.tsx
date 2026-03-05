@@ -458,7 +458,7 @@ export function NeighborhoodQuizClient() {
     return (
       <div className="flex flex-col min-h-screen">
         {/* Hero */}
-        <section className="relative py-16 md:py-20 bg-gradient-to-br from-sky-600 via-sky-700 to-sky-800 text-white">
+        <section className="relative py-16 md:py-20 bg-gradient-to-br from-primary via-primary/80 to-primary/70 text-white">
           <div className="container mx-auto px-4">
             <div className="max-w-3xl mx-auto text-center">
               <Badge className="mb-6 bg-white/20 text-white border-white/30">
@@ -480,14 +480,14 @@ export function NeighborhoodQuizClient() {
           <div className="container mx-auto px-4">
             <div className="max-w-4xl mx-auto">
               {/* Winner card */}
-              <div className="bg-gradient-to-br from-sky-50 to-blue-50 border-2 border-sky-200 rounded-2xl p-8 md:p-10 mb-8">
+              <div className="bg-gradient-to-br from-primary/5 to-blue-50 border-2 border-primary/20 rounded-2xl p-8 md:p-10 mb-8">
                 <div className="flex items-center gap-3 mb-4">
-                  <div className="w-12 h-12 rounded-xl bg-sky-100 flex items-center justify-center">
-                    <Star className="w-6 h-6 text-sky-600 fill-sky-600" />
+                  <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center">
+                    <Star className="w-6 h-6 text-primary fill-accent" />
                   </div>
                   <div>
                     <h2 className="text-2xl font-bold">{topResult.name}</h2>
-                    <p className="text-sky-600 font-medium">#1 Match -- {Math.round((topResult.score / maxScore) * 100)}% compatibility</p>
+                    <p className="text-primary font-medium">#1 Match -- {Math.round((topResult.score / maxScore) * 100)}% compatibility</p>
                   </div>
                 </div>
 
@@ -495,32 +495,32 @@ export function NeighborhoodQuizClient() {
                   {topResult.description}
                 </p>
 
-                <div className="bg-white rounded-xl p-6 mb-6 border border-sky-100">
+                <div className="bg-white rounded-xl p-6 mb-6 border border-primary/10">
                   <h3 className="font-semibold text-stone-900 mb-2 flex items-center gap-2">
-                    <MapPin className="w-4 h-4 text-sky-600" />
+                    <MapPin className="w-4 h-4 text-primary" />
                     Why {topResult.name} is right for you
                   </h3>
                   <p className="text-stone-600 leading-relaxed">{topResult.whyYou}</p>
                 </div>
 
                 <div className="grid sm:grid-cols-3 gap-4 mb-6">
-                  <div className="bg-white rounded-lg p-4 border border-sky-100">
+                  <div className="bg-white rounded-lg p-4 border border-primary/10">
                     <div className="flex items-center gap-2 mb-1">
-                      <DollarSign className="w-4 h-4 text-sky-600" />
+                      <DollarSign className="w-4 h-4 text-primary" />
                       <span className="text-sm font-medium text-stone-500">Rent</span>
                     </div>
                     <p className="font-semibold text-stone-900">{topResult.rentRange}</p>
                   </div>
-                  <div className="bg-white rounded-lg p-4 border border-sky-100">
+                  <div className="bg-white rounded-lg p-4 border border-primary/10">
                     <div className="flex items-center gap-2 mb-1">
-                      <Shield className="w-4 h-4 text-sky-600" />
+                      <Shield className="w-4 h-4 text-primary" />
                       <span className="text-sm font-medium text-stone-500">Safety</span>
                     </div>
                     <p className="font-semibold text-stone-900">{topResult.safety}</p>
                   </div>
-                  <div className="bg-white rounded-lg p-4 border border-sky-100">
+                  <div className="bg-white rounded-lg p-4 border border-primary/10">
                     <div className="flex items-center gap-2 mb-1">
-                      <Coffee className="w-4 h-4 text-sky-600" />
+                      <Coffee className="w-4 h-4 text-primary" />
                       <span className="text-sm font-medium text-stone-500">Vibe</span>
                     </div>
                     <p className="font-semibold text-stone-900">{topResult.vibe}</p>
@@ -541,13 +541,13 @@ export function NeighborhoodQuizClient() {
 
                 <div className="flex flex-wrap gap-2 mb-6">
                   {topResult.bestFor.map((tag) => (
-                    <Badge key={tag} variant="secondary" className="bg-sky-100 text-sky-700">
+                    <Badge key={tag} variant="secondary" className="bg-primary/10 text-primary">
                       {tag}
                     </Badge>
                   ))}
                 </div>
 
-                <Button asChild className="w-full bg-sky-600 hover:bg-sky-500 text-white">
+                <Button asChild className="w-full bg-primary hover:bg-primary/90 text-white">
                   <Link href={`/neighborhoods/${topResult.slug}`}>
                     Read Full {topResult.name} Guide
                     <ArrowRight className="w-4 h-4 ml-2" />
@@ -599,7 +599,7 @@ export function NeighborhoodQuizClient() {
                     <ArrowRight className="w-4 h-4 ml-2" />
                   </Link>
                 </Button>
-                <Button asChild className="bg-sky-600 hover:bg-sky-500 text-white">
+                <Button asChild className="bg-primary hover:bg-primary/90 text-white">
                   <Link href="/cost-of-living">
                     See Full Cost Breakdown
                     <ArrowRight className="w-4 h-4 ml-2" />
@@ -618,7 +618,7 @@ export function NeighborhoodQuizClient() {
   return (
     <div className="flex flex-col min-h-screen">
       {/* Hero */}
-      <section className="relative py-12 md:py-16 bg-gradient-to-br from-sky-600 via-sky-700 to-sky-800 text-white">
+      <section className="relative py-12 md:py-16 bg-gradient-to-br from-primary via-primary/80 to-primary/70 text-white">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto text-center">
             <Badge className="mb-4 bg-white/20 text-white border-white/30">
@@ -646,7 +646,7 @@ export function NeighborhoodQuizClient() {
             </div>
             <div className="h-2 bg-stone-200 rounded-full overflow-hidden">
               <div
-                className="h-full bg-sky-500 rounded-full transition-all duration-300 ease-out"
+                className="h-full bg-primary rounded-full transition-all duration-300 ease-out"
                 style={{ width: `${progress}%` }}
               />
             </div>
@@ -680,9 +680,9 @@ export function NeighborhoodQuizClient() {
                 <button
                   key={option.value}
                   onClick={() => handleAnswer(question.id, option.value)}
-                  className={`w-full text-left p-5 rounded-xl border-2 transition-all duration-150 hover:border-sky-400 hover:bg-sky-50 ${
+                  className={`w-full text-left p-5 rounded-xl border-2 transition-all duration-150 hover:border-accent hover:bg-primary/5 ${
                     answers[question.id] === option.value
-                      ? "border-sky-500 bg-sky-50"
+                      ? "border-primary bg-primary/5"
                       : "border-stone-200 bg-white"
                   }`}
                 >

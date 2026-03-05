@@ -102,8 +102,8 @@ export function TableOfContents({ items }: TableOfContentsProps) {
                       item.level > 2 ? "pl-4" : ""
                     } ${
                       activeId === item.id
-                        ? "text-sky-700 font-semibold"
-                        : "text-stone-600 hover:text-stone-900"
+                        ? "text-primary font-semibold"
+                        : "text-muted-foreground hover:text-foreground"
                     }`}
                   >
                     {item.title}
@@ -130,8 +130,8 @@ export function TableOfContents({ items }: TableOfContentsProps) {
                     item.level > 2 ? "pl-5" : ""
                   } ${
                     activeId === item.id
-                      ? "text-sky-700 font-semibold bg-sky-50"
-                      : "text-stone-600 hover:text-stone-900 hover:bg-stone-50"
+                      ? "text-primary font-semibold bg-primary/5"
+                      : "text-muted-foreground hover:text-foreground hover:bg-muted"
                   }`}
                 >
                   {item.title}

@@ -410,7 +410,7 @@ export default function GettingStartedPage() {
       </div>
 
       {/* Hero */}
-      <section className="section-padding bg-gradient-to-b from-sky-50 to-white dark:from-sky-950/20 dark:to-background">
+      <section className="section-padding bg-gradient-to-b from-primary/5 to-background dark:from-primary/10 dark:to-background">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto text-center">
             <Badge className="mb-4 badge-primary" variant="secondary">
@@ -419,7 +419,7 @@ export default function GettingStartedPage() {
             </Badge>
             <h1 className="heading-lg mb-6">
               Getting Started in Buenos Aires
-              <span className="block text-sky-600 mt-2">
+              <span className="block text-primary mt-2">
                 Your First 90 Days Checklist
               </span>
             </h1>
@@ -433,7 +433,7 @@ export default function GettingStartedPage() {
             </p>
             <div className="flex flex-wrap justify-center gap-4 text-sm mb-6">
               <div className="flex items-center gap-2 text-stone-700">
-                <BookOpen className="w-4 h-4 text-sky-600" />
+                <BookOpen className="w-4 h-4 text-primary" />
                 <span>15 min read</span>
               </div>
               <div className="flex items-center gap-2 text-stone-700">
@@ -441,12 +441,12 @@ export default function GettingStartedPage() {
                 <span>30+ actionable items</span>
               </div>
               <div className="flex items-center gap-2 text-stone-700">
-                <Clock className="w-4 h-4 text-sky-600" />
+                <Clock className="w-4 h-4 text-primary" />
                 <span>90-day timeline</span>
               </div>
             </div>
             <div className="mt-8">
-              <Button asChild size="lg" className="bg-sky-600 hover:bg-sky-500 text-white font-semibold shadow-lg">
+              <Button asChild size="lg" className="bg-primary hover:bg-primary/90 text-white font-semibold shadow-lg">
                 <Link href="#first-week">
                   Start Your Checklist
                   <ArrowRight className="w-4 h-4 ml-2" />
@@ -477,7 +477,7 @@ export default function GettingStartedPage() {
                 <Link
                   key={item.href}
                   href={item.href}
-                  className="px-3 py-1.5 text-sm rounded-full border border-stone-200 text-stone-700 hover:bg-sky-50 hover:border-sky-200 hover:text-sky-700 transition-colors"
+                  className="px-3 py-1.5 text-sm rounded-full border border-stone-200 text-stone-700 hover:bg-primary/5 hover:border-primary/20 hover:text-primary transition-colors"
                 >
                   {item.label}
                 </Link>
@@ -506,7 +506,7 @@ export default function GettingStartedPage() {
                   key={item.task}
                   className={
                     item.priority === "essential"
-                      ? "border-sky-200"
+                      ? "border-primary/20"
                       : ""
                   }
                 >
@@ -533,10 +533,10 @@ export default function GettingStartedPage() {
                 </Card>
               ))}
             </div>
-            <div className="mt-6 p-4 bg-sky-50 dark:bg-sky-950/20 rounded-lg border border-sky-200">
+            <div className="mt-6 p-4 bg-primary/5 dark:bg-primary/10 rounded-lg border border-primary/20">
               <div className="flex items-start gap-3">
-                <Lightbulb className="w-5 h-5 text-sky-600 flex-shrink-0 mt-0.5" />
-                <p className="text-sm text-sky-800 dark:text-sky-200">
+                <Lightbulb className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
+                <p className="text-sm text-primary dark:text-accent">
                   <strong>Pro tip:</strong> Don&apos;t stress about getting
                   everything perfect on day one. Your only real priorities are
                   connectivity (SIM card), cash, and getting to your
@@ -573,7 +573,7 @@ export default function GettingStartedPage() {
                     {item.link && (
                       <Link
                         href={item.link.href}
-                        className="inline-flex items-center gap-1 text-sm font-medium text-sky-700 hover:text-sky-600 transition-colors"
+                        className="inline-flex items-center gap-1 text-sm font-medium text-primary hover:text-primary transition-colors"
                       >
                         {item.link.text}
                         <ArrowRight className="w-3 h-3" />
@@ -627,7 +627,7 @@ export default function GettingStartedPage() {
                         {item.link && (
                           <Link
                             href={item.link.href}
-                            className="inline-flex items-center gap-1 text-sm font-medium text-sky-700 hover:text-sky-600 transition-colors"
+                            className="inline-flex items-center gap-1 text-sm font-medium text-primary hover:text-primary transition-colors"
                           >
                             {item.link.text}
                             <ArrowRight className="w-3 h-3" />
@@ -677,7 +677,7 @@ export default function GettingStartedPage() {
                     {item.link && (
                       <Link
                         href={item.link.href}
-                        className="inline-flex items-center gap-1 text-sm font-medium text-sky-700 hover:text-sky-600 transition-colors"
+                        className="inline-flex items-center gap-1 text-sm font-medium text-primary hover:text-primary transition-colors"
                       >
                         {item.link.text}
                         <ArrowRight className="w-3 h-3" />
@@ -820,7 +820,7 @@ export default function GettingStartedPage() {
                 <div className="mt-4 p-4 bg-stone-50 rounded-lg">
                   <div className="flex justify-between items-center">
                     <span className="font-bold">Estimated Total</span>
-                    <span className="font-bold text-sky-600">
+                    <span className="font-bold text-primary">
                       $1,125-2,295
                     </span>
                   </div>
@@ -829,7 +829,7 @@ export default function GettingStartedPage() {
                     our{" "}
                     <Link
                       href="/cost-of-living"
-                      className="text-sky-700 underline hover:text-sky-600"
+                      className="text-primary underline hover:text-primary"
                     >
                       full cost of living breakdown
                     </Link>{" "}
@@ -920,11 +920,11 @@ export default function GettingStartedPage() {
                 },
               ].map((guide) => (
                 <Link key={guide.href} href={guide.href} className="group">
-                  <div className="card-feature h-full transition-all duration-200 group-hover:border-sky-200 group-hover:shadow-md">
+                  <div className="card-feature h-full transition-all duration-200 group-hover:border-primary/20 group-hover:shadow-md">
                     <div className="icon-wrapper mb-3">
                       <guide.icon className="w-5 h-5" />
                     </div>
-                    <h3 className="font-semibold text-lg mb-1 group-hover:text-sky-700 transition-colors">
+                    <h3 className="font-semibold text-lg mb-1 group-hover:text-primary transition-colors">
                       {guide.title}
                     </h3>
                     <p className="text-body-sm">{guide.description}</p>
@@ -937,7 +937,7 @@ export default function GettingStartedPage() {
       </section>
 
       {/* Encouragement CTA */}
-      <section className="section-padding bg-sky-600 text-white">
+      <section className="section-padding bg-primary text-white">
         <div className="container mx-auto px-4 text-center">
           <div className="max-w-2xl mx-auto">
             <h2 className="heading-md mb-4">

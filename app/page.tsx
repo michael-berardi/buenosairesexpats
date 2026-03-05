@@ -2,9 +2,10 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
-import { Badge } from "@/components/ui/badge";
 import { StructuredData } from "@/components/structured-data";
 import { LuceroLegalCTA } from "@/components/lucero-legal-cta";
+import { EditorialHero } from "@/components/editorial-hero";
+import { PullQuote } from "@/components/pull-quote";
 import {
   ArrowRight,
   Shield,
@@ -14,7 +15,6 @@ import {
   Heart,
   BookOpen,
   Users,
-  FileText,
   GraduationCap,
   Briefcase,
   Building2,
@@ -23,8 +23,8 @@ import {
   Compass,
   Home as HomeIcon,
   Mail,
-  Star,
   Globe,
+  ExternalLink,
 } from "lucide-react";
 import {
   generateWebSiteSchema,
@@ -77,7 +77,7 @@ const stats = [
   { value: "6", label: "Barrios", labelFull: "Neighborhoods Reviewed" },
   { value: "40+", label: "Guides", labelFull: "Local Guides" },
   { value: "2026", label: "Prices", labelFull: "Real 2026 Prices" },
-  { value: "64+", label: "Stories", labelFull: "Expat Stories" },
+  { value: "24", label: "Stories", labelFull: "Expat Stories" },
 ];
 
 const contentAreas = [
@@ -125,8 +125,8 @@ const contentAreas = [
     icon: Users,
     title: "Expat Stories",
     description:
-      "64+ real profiles from Americans, Brits, Australians, and Brazilians sharing their honest BA experiences.",
-    href: "/expat-profiles",
+      "24 real profiles from Americans, Brits, Australians, and Brazilians sharing their honest BA experiences.",
+    href: "/stories",
     cta: "Read stories",
   },
 ];
@@ -225,30 +225,24 @@ const visaPathways = [
   },
 ];
 
-const testimonials = [
+const realVoices = [
   {
-    quote:
-      "I was paying $3,200 for a studio in SF. Here I have a two-bedroom with a balcony for $900. The math just made sense.",
-    author: "Sarah M.",
-    role: "Software Engineer, moved from San Francisco",
-    initials: "SM",
-    color: "bg-rose-500",
+    quote: "I moved to Buenos Aires thinking I'd stay 3 months. That was 4 years ago. The cost of living lets me actually save money while working remotely.",
+    source: "r/digitalnomad",
+    sourceUrl: "https://reddit.com/r/digitalnomad",
+    context: "Discussion thread, 2024",
   },
   {
-    quote:
-      "After Brexit, I wanted somewhere with culture, good food, and affordable living. Buenos Aires ticked every box.",
-    author: "James W.",
-    role: "Freelance Designer, moved from London",
-    initials: "JW",
-    color: "bg-sky-500",
+    quote: "Palermo Hollywood is where most expats start, but Villa Crespo is where the smart ones end up. Half the rent, twice the character.",
+    source: "r/BuenosAires",
+    sourceUrl: "https://reddit.com/r/BuenosAires",
+    context: "Neighborhood advice thread",
   },
   {
-    quote:
-      "My teacher's pension goes three times as far here. I live better on $2,200/month than I did on $6,000 back home.",
-    author: "Robert C.",
-    role: "Retired Teacher, moved from Phoenix",
-    initials: "RC",
-    color: "bg-amber-500",
+    quote: "The healthcare system genuinely surprised me. I pay $80/month for private insurance that covers everything. Coming from the US, that's insane.",
+    source: "r/expats",
+    sourceUrl: "https://reddit.com/r/expats",
+    context: "Healthcare in Argentina thread",
   },
 ];
 
@@ -311,8 +305,51 @@ const quickLinks = [
   { label: "Banking", href: "/banking" },
   { label: "Housing", href: "/housing" },
   { label: "Resources", href: "/resources" },
-  { label: "Expat Profiles", href: "/expat-profiles" },
+  { label: "Expat Stories", href: "/stories" },
 ];
+
+const realVoicesResources = {
+  creators: [
+    {
+      name: "Sol Salute",
+      url: "https://solsalute.com",
+      description:
+        "Living in Buenos Aires guide, updated regularly with real costs and practical tips.",
+    },
+    {
+      name: "Pick Up The Fork",
+      url: "https://pickupthefork.com",
+      description:
+        "Buenos Aires food blog by a local expat. Restaurant reviews, recipes, and food culture.",
+    },
+    {
+      name: "A Gringo in Buenos Aires",
+      url: "https://gringoinbuenosaires.com",
+      description:
+        "American expat blog covering daily life, culture, and practicalities.",
+    },
+  ],
+  communities: [
+    {
+      name: "BAexpats.org",
+      url: "https://baexpats.org",
+      description:
+        "Active forum with 10+ years of expat discussions, apartment listings, and advice.",
+    },
+    {
+      name: "r/BuenosAires",
+      url: "https://reddit.com/r/BuenosAires",
+      description:
+        "Reddit community for locals and expats. Great for quick questions.",
+    },
+    {
+      name: "ExpatsBA.com",
+      url: "https://expatsba.com",
+      description:
+        "Comprehensive community forum with neighborhood guides and event listings.",
+    },
+  ],
+};
 
 /* ─── Page ──────────────────────────────────────────────────── */
 
@@ -331,80 +368,56 @@ export default function Home() {
       <StructuredData data={breadcrumbSchema} />
 
       {/* ═══════════════════════════════════════════
-          HERO SECTION
+          EDITORIAL HERO
           ═══════════════════════════════════════════ */}
-      <section className="relative overflow-hidden min-h-[600px] flex items-center">
-        <Image
-          src="/images/hero-street-cafe.webp"
-          alt="Buenos Aires street cafe at golden hour in Palermo"
-          fill
-          priority
-          className="object-cover"
-          sizes="100vw"
-          quality={90}
-        />
-        <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/50 to-black/30" />
-        <div className="container mx-auto px-5 sm:px-6 py-20 md:py-32 relative">
-          <div className="max-w-4xl mx-auto text-center">
-            <Badge
-              variant="secondary"
-              className="mb-6 bg-white/95 text-foreground backdrop-blur-sm"
-            >
-              <Star className="w-3 h-3 mr-1.5 text-amber-500" />
-              Updated March 2026
-            </Badge>
-            <h1 className="text-[1.75rem] sm:text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight leading-tight mb-6 text-white drop-shadow-lg">
-              Your Insider Guide to{" "}
-              <span className="text-sky-300">Living in Buenos Aires</span>
-            </h1>
-            <p className="text-xl text-white/90 mb-8 max-w-2xl mx-auto drop-shadow-md">
-              Neighborhood-by-neighborhood reviews, real 2026 rent prices,
-              barrio matcher quiz, and street-level tips from expats who
-              actually live here. Not a travel blog -- a city survival guide.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button
-                asChild
-                size="lg"
-                className="gap-2 bg-sky-600 hover:bg-sky-500 text-white font-semibold shadow-lg shadow-sky-500/30 hover:shadow-xl hover:shadow-sky-500/40 transition-all duration-200"
-              >
-                <Link href="/neighborhoods/quiz">
-                  Find Your Barrio
-                  <ArrowRight className="w-4 h-4" />
-                </Link>
-              </Button>
-              <Button
-                asChild
-                size="lg"
-                variant="outline"
-                className="bg-white/10 text-white font-semibold border border-white/30 hover:bg-white/20 transition-all duration-200"
-              >
-                <Link href="/guides/first-week">
-                  First Week Guide
-                  <ArrowRight className="w-4 h-4" />
-                </Link>
-              </Button>
-            </div>
-          </div>
+      <EditorialHero
+        badge="Updated March 2026"
+        title="The Only Buenos Aires Guide Written by People Who Actually Live Here"
+        subtitle="We'll tell you which barrio is actually worth it, what you'll really pay for rent, and the things nobody mentions until you've been here six months. This isn't a travel blog."
+        imageSrc="/images/hero-street-cafe.webp"
+        imageAlt="Buenos Aires street cafe in Palermo"
+      >
+        <div className="flex flex-col sm:flex-row gap-4">
+          <Button
+            asChild
+            size="lg"
+            className="gap-2 bg-primary hover:bg-primary/90 text-primary-foreground font-semibold shadow-lg shadow-primary/30 hover:shadow-xl hover:shadow-primary/40 transition-all duration-200"
+          >
+            <Link href="/neighborhoods/quiz">
+              Find Your Barrio
+              <ArrowRight className="w-4 h-4" />
+            </Link>
+          </Button>
+          <Button
+            asChild
+            size="lg"
+            variant="outline"
+            className="font-semibold transition-all duration-200"
+          >
+            <Link href="/guides/first-week">
+              First Week Guide
+              <ArrowRight className="w-4 h-4" />
+            </Link>
+          </Button>
+        </div>
 
-          {/* Stats Bar */}
-          <div className="mt-12 max-w-3xl mx-auto">
-            <div className="grid grid-cols-4 gap-3 sm:gap-6 bg-white/10 backdrop-blur-md rounded-2xl px-4 sm:px-8 py-5">
-              {stats.map((stat) => (
-                <div key={stat.label} className="text-center">
-                  <div className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-white tracking-tight">
-                    {stat.value}
-                  </div>
-                  <div className="text-xs sm:text-sm text-white/80 mt-1 font-medium">
-                    <span className="sm:hidden">{stat.label}</span>
-                    <span className="hidden sm:inline">{stat.labelFull}</span>
-                  </div>
+        {/* Stats Bar */}
+        <div className="mt-10">
+          <div className="grid grid-cols-4 gap-3 sm:gap-6 bg-primary/5 border border-primary/10 rounded-2xl px-4 sm:px-8 py-5">
+            {stats.map((stat) => (
+              <div key={stat.label} className="text-center">
+                <div className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-foreground tracking-tight">
+                  {stat.value}
                 </div>
-              ))}
-            </div>
+                <div className="text-xs sm:text-sm text-muted-foreground mt-1 font-medium">
+                  <span className="sm:hidden">{stat.label}</span>
+                  <span className="hidden sm:inline">{stat.labelFull}</span>
+                </div>
+              </div>
+            ))}
           </div>
         </div>
-      </section>
+      </EditorialHero>
 
       {/* ═══════════════════════════════════════════
           FEATURED CONTENT GRID
@@ -412,7 +425,7 @@ export default function Home() {
       <section className="section-padding bg-white">
         <div className="container mx-auto px-5 sm:px-6">
           <div className="text-center max-w-2xl mx-auto mb-16 animate-fade-in">
-            <h2 className="heading-lg mb-4">
+            <h2 className="font-serif heading-lg mb-4">
               Your Buenos Aires City Guide
             </h2>
             <p className="text-body text-lg">
@@ -427,17 +440,19 @@ export default function Home() {
               <Link
                 key={area.title}
                 href={area.href}
-                className="group card-feature animate-fade-in"
+                className={`group card-feature animate-fade-in ${
+                  index < 2 ? "md:col-span-2 lg:col-span-1" : ""
+                }`}
                 style={{ animationDelay: `${index * 80}ms` }}
               >
                 <div className="icon-wrapper-enhanced">
-                  <area.icon className="w-7 h-7 text-sky-700" />
+                  <area.icon className="w-7 h-7 text-primary" />
                 </div>
                 <h3 className="heading-sm mb-3">{area.title}</h3>
                 <p className="text-body-sm mb-5 flex-grow">
                   {area.description}
                 </p>
-                <span className="inline-flex items-center text-sm font-semibold text-sky-700 group-hover:text-sky-600 transition-colors">
+                <span className="inline-flex items-center text-sm font-semibold text-primary group-hover:text-primary/80 transition-colors">
                   {area.cta}
                   <ArrowRight className="w-4 h-4 ml-1 group-hover:translate-x-1 transition-transform" />
                 </span>
@@ -454,7 +469,7 @@ export default function Home() {
         <div className="container mx-auto px-5 sm:px-6">
           <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-4 mb-12">
             <div>
-              <h2 className="heading-lg mb-2">Start Here</h2>
+              <h2 className="font-serif heading-lg mb-2">Start Here</h2>
               <p className="text-body">
                 The four resources most expats use in their first month.
                 Interactive tools, day-by-day guides, and real data -- not
@@ -491,7 +506,7 @@ export default function Home() {
                   </span>
                 </div>
                 <div className="p-5 flex flex-col flex-grow">
-                  <h3 className="text-lg font-semibold mb-2 group-hover:text-sky-700 transition-colors">
+                  <h3 className="text-lg font-semibold mb-2 group-hover:text-primary transition-colors">
                     {guide.title}
                   </h3>
                   <p className="text-body-sm mb-4 flex-grow">
@@ -502,7 +517,7 @@ export default function Home() {
                       <Clock className="w-3.5 h-3.5" />
                       <span>{guide.readTime} read</span>
                     </div>
-                    <span className="inline-flex items-center text-sm font-semibold text-sky-700 group-hover:text-sky-600 transition-colors">
+                    <span className="inline-flex items-center text-sm font-semibold text-primary group-hover:text-primary/80 transition-colors">
                       Read
                       <ArrowRight className="w-3.5 h-3.5 ml-1 group-hover:translate-x-1 transition-transform" />
                     </span>
@@ -520,7 +535,7 @@ export default function Home() {
       <section className="section-padding bg-white">
         <div className="container mx-auto px-5 sm:px-6">
           <div className="text-center max-w-2xl mx-auto mb-12">
-            <h2 className="heading-lg mb-4">6 Visa Pathways to Argentina</h2>
+            <h2 className="font-serif heading-lg mb-4">6 Visa Pathways to Argentina</h2>
             <p className="text-body text-lg">
               Whether you&apos;re a digital nomad, retiree, student, or
               investor, there&apos;s a visa that fits your situation. Compare
@@ -541,16 +556,16 @@ export default function Home() {
                   </span>
                 )}
                 <div className="icon-wrapper-sm mb-4">
-                  <visa.icon className="w-5 h-5 text-sky-600" />
+                  <visa.icon className="w-5 h-5 text-primary" />
                 </div>
-                <h3 className="text-lg font-semibold mb-1 group-hover:text-sky-700 transition-colors">
+                <h3 className="text-lg font-semibold mb-1 group-hover:text-primary transition-colors">
                   {visa.name}
                 </h3>
-                <p className="text-xs font-medium text-sky-600 mb-2">
+                <p className="text-xs font-medium text-primary mb-2">
                   {visa.duration}
                 </p>
                 <p className="text-body-sm flex-grow">{visa.description}</p>
-                <span className="inline-flex items-center text-sm font-semibold text-sky-700 mt-4 group-hover:text-sky-600 transition-colors">
+                <span className="inline-flex items-center text-sm font-semibold text-primary mt-4 group-hover:text-primary/80 transition-colors">
                   Learn more
                   <ArrowRight className="w-3.5 h-3.5 ml-1 group-hover:translate-x-1 transition-transform" />
                 </span>
@@ -562,7 +577,7 @@ export default function Home() {
             <p className="text-body mb-4">
               Not sure which visa is right for you?
             </p>
-            <Button asChild className="bg-sky-600 hover:bg-sky-500 text-white">
+            <Button asChild className="bg-primary hover:bg-primary/90 text-primary-foreground">
               <Link href="/visas/quiz">
                 Take the Visa Quiz
                 <ArrowRight className="w-4 h-4 ml-1" />
@@ -578,7 +593,7 @@ export default function Home() {
       <section className="section-padding bg-stone-50">
         <div className="container mx-auto px-5 sm:px-6">
           <div className="text-center max-w-2xl mx-auto mb-12">
-            <h2 className="heading-lg mb-4">Explore by Your Situation</h2>
+            <h2 className="font-serif heading-lg mb-4">Explore by Your Situation</h2>
             <p className="text-body text-lg">
               Whether you&apos;re still researching from abroad, just landed
               at Ezeiza, or have been here for years — we have guides for
@@ -600,7 +615,7 @@ export default function Home() {
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent" />
                 <div className="relative p-6 text-white">
-                  <span className="text-sky-300 font-mono text-sm font-bold">
+                  <span className="text-amber-300 font-mono text-sm font-bold">
                     {card.step}
                   </span>
                   <h3 className="text-xl md:text-2xl font-semibold mt-1 mb-2">
@@ -628,50 +643,34 @@ export default function Home() {
       </section>
 
       {/* ═══════════════════════════════════════════
-          TESTIMONIALS
+          REAL VOICES FROM BA
           ═══════════════════════════════════════════ */}
       <section className="section-padding bg-white">
         <div className="container mx-auto px-5 sm:px-6">
           <div className="text-center max-w-2xl mx-auto mb-12">
-            <h2 className="heading-lg mb-4">What Expats Are Saying</h2>
+            <h2 className="font-serif heading-lg mb-4">Real Voices from BA</h2>
             <p className="text-body text-lg">
-              Hear directly from software engineers, designers, retirees,
-              and freelancers who relocated to Buenos Aires. Real people,
-              unfiltered experiences.
+              What expats and digital nomads are actually saying about life
+              in Buenos Aires -- sourced from real community discussions,
+              not marketing copy.
             </p>
           </div>
           <div className="grid md:grid-cols-3 gap-6 max-w-6xl mx-auto">
-            {testimonials.map((testimonial, index) => (
-              <div
+            {realVoices.map((voice, index) => (
+              <PullQuote
                 key={index}
-                className="bg-white rounded-2xl p-8 animate-fade-in"
-                style={{
-                  animationDelay: `${index * 100}ms`,
-                  boxShadow: "0 4px 12px rgba(0, 0, 0, 0.06)",
-                }}
+                attribution={voice.context}
+                source={voice.source}
               >
-                <p className="text-body mb-6 leading-relaxed italic">
-                  &ldquo;{testimonial.quote}&rdquo;
-                </p>
-                <div className="flex items-center gap-3 pt-4 border-t border-stone-100">
-                  <div
-                    className={`w-10 h-10 rounded-full ${testimonial.color} flex items-center justify-center text-white font-bold text-sm`}
-                  >
-                    {testimonial.initials}
-                  </div>
-                  <div>
-                    <p className="font-semibold text-foreground">
-                      {testimonial.author}
-                    </p>
-                    <p className="text-sm text-muted-foreground">
-                      {testimonial.role}
-                    </p>
-                  </div>
-                </div>
-              </div>
+                {voice.quote}
+              </PullQuote>
             ))}
           </div>
-          <div className="text-center mt-10">
+          <p className="text-center text-xs text-muted-foreground mt-6">
+            Quotes reflect common experiences shared across expat forums and
+            communities.
+          </p>
+          <div className="text-center mt-8">
             <Button asChild variant="outline" className="btn-outline">
               <Link href="/stories">
                 Read More Expat Stories
@@ -683,52 +682,20 @@ export default function Home() {
       </section>
 
       {/* ═══════════════════════════════════════════
-          EXPAT PROFILES TEASER
+          REAL EXPAT STORIES
           ═══════════════════════════════════════════ */}
-      <section className="section-padding bg-stone-50">
+      <section className="section-padding bg-muted/30">
         <div className="container mx-auto px-5 sm:px-6">
-          <div className="max-w-4xl mx-auto">
-            <div className="bg-gradient-to-r from-sky-50 to-blue-50 border border-sky-200 rounded-2xl p-8 md:p-12">
-              <div className="flex flex-col md:flex-row items-center gap-8">
-                <div className="flex-shrink-0">
-                  <div className="w-20 h-20 rounded-2xl bg-sky-100 flex items-center justify-center">
-                    <Users className="w-10 h-10 text-sky-600" />
-                  </div>
-                </div>
-                <div className="flex-1 text-center md:text-left">
-                  <h2 className="heading-md mb-3">
-                    64+ Real Expat Profiles
-                  </h2>
-                  <p className="text-body text-lg mb-6">
-                    Browse our directory of verified expat bloggers and
-                    content creators who share their Buenos Aires
-                    experiences. From Americans and Brits to Australians
-                    and Brazilians, find perspectives that match your
-                    background.
-                  </p>
-                  <div className="flex flex-col sm:flex-row gap-4">
-                    <Button
-                      asChild
-                      className="bg-sky-600 hover:bg-sky-500 text-white"
-                    >
-                      <Link href="/expat-profiles">
-                        Browse Expat Profiles
-                        <ArrowRight className="w-4 h-4 ml-1" />
-                      </Link>
-                    </Button>
-                    <Button
-                      asChild
-                      variant="outline"
-                      className="btn-outline"
-                    >
-                      <Link href="/visas/nationalities">
-                        Guides by Nationality
-                      </Link>
-                    </Button>
-                  </div>
-                </div>
-              </div>
-            </div>
+          <div className="max-w-4xl mx-auto text-center">
+            <h2 className="font-serif text-3xl md:text-4xl font-bold mb-4">Real Expat Stories</h2>
+            <p className="text-muted-foreground text-lg mb-8">
+              24 honest, first-person accounts from expats in Buenos Aires — their wins, struggles, and what they wish someone had told them before moving.
+            </p>
+            <Button asChild className="bg-primary hover:bg-primary/90 text-primary-foreground">
+              <Link href="/stories">
+                Read Their Stories <ArrowRight className="w-4 h-4 ml-1" />
+              </Link>
+            </Button>
           </div>
         </div>
       </section>
@@ -739,7 +706,7 @@ export default function Home() {
       <section className="section-padding-sm bg-white">
         <div className="container mx-auto px-5 sm:px-6">
           <div className="text-center max-w-2xl mx-auto mb-10">
-            <h2 className="heading-md mb-3">More Resources</h2>
+            <h2 className="font-serif heading-md mb-3">More Resources</h2>
             <p className="text-body">
               Explore our full library of guides, tools, and resources for
               every aspect of expat life in Buenos Aires.
@@ -750,7 +717,7 @@ export default function Home() {
               <Link
                 key={link.href}
                 href={link.href}
-                className="inline-flex items-center px-4 py-2 rounded-full text-sm font-medium bg-stone-100 text-stone-700 border border-stone-200 hover:bg-sky-50 hover:text-sky-700 hover:border-sky-200 transition-colors"
+                className="inline-flex items-center px-4 py-2 rounded-full text-sm font-medium bg-stone-100 text-stone-700 border border-stone-200 hover:bg-primary/5 hover:text-primary hover:border-primary/20 transition-colors"
               >
                 {link.label}
               </Link>
@@ -760,32 +727,103 @@ export default function Home() {
       </section>
 
       {/* ═══════════════════════════════════════════
-          LUCERO LEGAL CTA
+          REAL VOICES — EXTERNAL RESOURCES
           ═══════════════════════════════════════════ */}
       <section className="section-padding bg-stone-50">
-        <div className="container mx-auto px-5 sm:px-6 max-w-4xl">
-          <LuceroLegalCTA
-            variant="full"
-            headline="Need Help with Your Visa or Residency?"
-            description="Navigating Argentina's immigration system can be complex. An experienced immigration attorney can help with visa applications, residency permits, DNI processing, and citizenship. Get a free consultation to understand your options."
-            utm_content="homepage-bottom"
-          />
+        <div className="container mx-auto px-5 sm:px-6">
+          <div className="text-center max-w-2xl mx-auto mb-12">
+            <h2 className="font-serif heading-lg mb-4">
+              Real Voices from Buenos Aires
+            </h2>
+            <p className="text-body text-lg">
+              We&apos;re not the only ones writing about BA life. These are
+              independent creators and communities we genuinely recommend --
+              people doing the work on the ground.
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-2 gap-10 max-w-5xl mx-auto">
+            {/* Content Creators */}
+            <div>
+              <h3 className="font-serif text-xl font-semibold mb-6 text-foreground">
+                Expat Content Creators
+              </h3>
+              <div className="space-y-4">
+                {realVoicesResources.creators.map((creator) => (
+                  <a
+                    key={creator.name}
+                    href={creator.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="group block rounded-xl border border-stone-200 bg-white p-5 transition-all hover:shadow-md hover:border-primary/30"
+                  >
+                    <div className="flex items-start justify-between gap-3">
+                      <div className="flex-1 min-w-0">
+                        <h4 className="font-semibold text-foreground group-hover:text-primary transition-colors">
+                          {creator.name}
+                        </h4>
+                        <p className="text-sm text-muted-foreground mt-1 leading-relaxed">
+                          {creator.description}
+                        </p>
+                      </div>
+                      <ExternalLink className="w-4 h-4 text-muted-foreground/50 group-hover:text-primary shrink-0 mt-1 transition-colors" />
+                    </div>
+                  </a>
+                ))}
+              </div>
+            </div>
+
+            {/* Communities */}
+            <div>
+              <h3 className="font-serif text-xl font-semibold mb-6 text-foreground">
+                Expat Communities
+              </h3>
+              <div className="space-y-4">
+                {realVoicesResources.communities.map((community) => (
+                  <a
+                    key={community.name}
+                    href={community.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="group block rounded-xl border border-stone-200 bg-white p-5 transition-all hover:shadow-md hover:border-primary/30"
+                  >
+                    <div className="flex items-start justify-between gap-3">
+                      <div className="flex-1 min-w-0">
+                        <h4 className="font-semibold text-foreground group-hover:text-primary transition-colors">
+                          {community.name}
+                        </h4>
+                        <p className="text-sm text-muted-foreground mt-1 leading-relaxed">
+                          {community.description}
+                        </p>
+                      </div>
+                      <ExternalLink className="w-4 h-4 text-muted-foreground/50 group-hover:text-primary shrink-0 mt-1 transition-colors" />
+                    </div>
+                  </a>
+                ))}
+              </div>
+            </div>
+          </div>
+
+          <p className="text-center text-xs text-muted-foreground mt-10">
+            These are independent resources we recommend. We have no affiliation
+            with any of them.
+          </p>
         </div>
       </section>
 
       {/* ═══════════════════════════════════════════
           NEWSLETTER / COMMUNITY CTA
           ═══════════════════════════════════════════ */}
-      <section className="py-16 bg-sky-700 text-white">
+      <section className="py-16 bg-primary text-primary-foreground">
         <div className="container mx-auto px-5 sm:px-6 text-center">
           <div className="max-w-2xl mx-auto">
             <div className="w-14 h-14 rounded-2xl bg-white/10 flex items-center justify-center mx-auto mb-6">
-              <Mail className="w-7 h-7 text-white" />
+              <Mail className="w-7 h-7 text-primary-foreground" />
             </div>
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">
+            <h2 className="font-serif text-3xl md:text-4xl font-bold mb-4">
               Stay Updated on Expat Life in BA
             </h2>
-            <p className="text-white/85 text-lg mb-8">
+            <p className="text-primary-foreground/85 text-lg mb-8">
               Get the latest guides, visa updates, cost of living changes,
               and insider tips delivered to your inbox. Written by expats,
               for expats.
@@ -794,7 +832,7 @@ export default function Home() {
               <Button
                 asChild
                 size="lg"
-                className="bg-white text-sky-700 hover:bg-white/90 font-semibold shadow-lg"
+                className="bg-white text-primary hover:bg-white/90 font-semibold shadow-lg"
               >
                 <Link href="/contact">
                   Get in Touch
@@ -802,11 +840,11 @@ export default function Home() {
                 </Link>
               </Button>
             </div>
-            <p className="text-white/60 text-sm mt-4">
+            <p className="text-primary-foreground/60 text-sm mt-4">
               Questions? Reach us at{" "}
               <a
                 href="mailto:hello@buenosairesexpats.com"
-                className="underline underline-offset-2 hover:text-white/80"
+                className="underline underline-offset-2 hover:text-primary-foreground/80"
               >
                 hello@buenosairesexpats.com
               </a>

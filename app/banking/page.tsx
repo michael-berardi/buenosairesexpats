@@ -4,6 +4,8 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { LuceroLegalCTA } from "@/components/lucero-legal-cta";
+import { StructuredData } from "@/components/structured-data";
+import { generateBreadcrumbSchema } from "@/lib/schema";
 import {
   DollarSign,
   Building,
@@ -74,8 +76,14 @@ const bankingTips = [
 ];
 
 export default function BankingPage() {
+  const breadcrumbSchema = generateBreadcrumbSchema([
+    { name: "Home", item: "https://buenosairesexpats.com" },
+    { name: "Banking" },
+  ]);
+
   return (
     <div className="flex flex-col min-h-screen">
+      <StructuredData data={breadcrumbSchema} />
       {/* Breadcrumb */}
       <div className="border-b bg-muted/30">
         <div className="container mx-auto px-4 py-4">
@@ -88,7 +96,7 @@ export default function BankingPage() {
       </div>
 
       {/* Hero */}
-      <section className="py-16 md:py-24 bg-gradient-to-b from-sky-50 to-white dark:from-sky-950/20 dark:to-background">
+      <section className="py-16 md:py-24 bg-gradient-to-b from-primary/5 to-background dark:from-primary/10 dark:to-background">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto text-center">
             <Badge className="mb-4" variant="secondary">
@@ -102,7 +110,7 @@ export default function BankingPage() {
               Navigate Argentina's unique financial system. Understanding the blue dollar,
               transferring money, and managing your finances as an expat.
             </p>
-            <Button asChild size="lg" className="bg-sky-600 hover:bg-sky-500 text-white font-semibold">
+            <Button asChild size="lg" className="bg-primary hover:bg-primary/90 text-white font-semibold">
               <Link href="#money-transfer-methods">
                 Compare Banking Options
                 <ArrowRight className="w-4 h-4 ml-2" />
@@ -369,7 +377,7 @@ export default function BankingPage() {
       <section className="py-16">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto">
-            <LuceroLegalCTA variant="compact" />
+            <p className="text-sm text-muted-foreground"><LuceroLegalCTA variant="inline" /></p>
           </div>
         </div>
       </section>

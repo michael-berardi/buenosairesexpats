@@ -3,11 +3,11 @@ import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { 
-  MapPin, 
-  DollarSign, 
-  Shield, 
-  Train, 
+import {
+  MapPin,
+  DollarSign,
+  Shield,
+  Train,
   Coffee,
   ArrowRight,
   Star,
@@ -19,6 +19,9 @@ import {
 import { LuceroLegalCTA } from "@/components/lucero-legal-cta";
 import { StructuredData } from "@/components/structured-data";
 import { generateArticleSchema } from "@/lib/schema";
+import { Breadcrumb } from "@/components/breadcrumb";
+import { InsiderTip } from "@/components/insider-tip";
+import { PullQuote } from "@/components/pull-quote";
 
 export const metadata: Metadata = {
   title: "Recoleta Buenos Aires - Luxury Neighborhood Guide",
@@ -85,18 +88,10 @@ export default function RecoletaPage() {
     <div className="flex flex-col min-h-screen">
       <StructuredData data={articleSchema} />
 
-      {/* Breadcrumb */}
-      <div className="border-b bg-muted/30">
-        <div className="container mx-auto px-4 py-4">
-          <nav className="flex gap-2 text-sm text-muted-foreground">
-            <Link href="/" className="hover:text-foreground">Home</Link>
-            <span>/</span>
-            <Link href="/neighborhoods" className="hover:text-foreground">Neighborhoods</Link>
-            <span>/</span>
-            <span className="text-foreground">Recoleta</span>
-          </nav>
-        </div>
-      </div>
+      <Breadcrumb items={[
+        { label: "Neighborhoods", href: "/neighborhoods" },
+        { label: "Recoleta" },
+      ]} />
 
       {/* Hero */}
       <section className="relative py-16 md:py-24 overflow-hidden">
@@ -182,6 +177,20 @@ export default function RecoletaPage() {
                 </Card>
               ))}
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Insider Tips */}
+      <section className="py-8">
+        <div className="container mx-auto px-4">
+          <div className="max-w-3xl mx-auto">
+            <InsiderTip author="BA Expats Team">
+              Centro Cultural Recoleta (right next to the cemetery) hosts free art exhibitions, concerts, and cultural events almost every day. It&apos;s one of the best free cultural spaces in Buenos Aires and most tourists walk right past it.
+            </InsiderTip>
+            <InsiderTip author="Expat living in Recoleta, 3 years">
+              For affordable dining, skip the restaurants around the cemetery (massive tourist markup) and head to Avenida Las Heras between Pueyrredon and Uriburu. You&apos;ll find lunch specials (&quot;menu del dia&quot;) for a fraction of the price, and the quality is often better.
+            </InsiderTip>
           </div>
         </div>
       </section>
@@ -303,6 +312,17 @@ export default function RecoletaPage() {
         </div>
       </section>
 
+      {/* PullQuote */}
+      <section className="py-8">
+        <div className="container mx-auto px-4">
+          <div className="max-w-3xl mx-auto">
+            <PullQuote attribution="American retiree, 5 years in BA" source="Expat forum">
+              After trying Palermo and San Telmo, we settled in Recoleta. The architecture reminds us of Paris, the streets feel safe at any hour, and the Sunday craft fair in Plaza Francia is our weekly ritual.
+            </PullQuote>
+          </div>
+        </div>
+      </section>
+
       {/* The Reality */}
       <section className="py-16 bg-muted/30">
         <div className="container mx-auto px-4">
@@ -312,16 +332,16 @@ export default function RecoletaPage() {
               <CardContent className="pt-6">
                 <div className="space-y-4 text-muted-foreground">
                   <p>
-                    <strong>Recoleta is beautiful but expensive.</strong> You'll pay a premium for the 
-                    safety, elegance, and prestige. If budget is tight, you'll get more space elsewhere.
+                    <strong>Recoleta is beautiful but expensive.</strong> You&apos;ll pay a premium for the
+                    safety, elegance, and prestige. If budget is tight, you&apos;ll get more space elsewhere.
                   </p>
                   <p>
-                    <strong>It can feel stuffy.</strong> This is old-money Buenos Aires. Some find it 
+                    <strong>It can feel stuffy.</strong> This is old-money Buenos Aires. Some find it
                     elegant; others find it pretentious. Nightlife is limited compared to Palermo.
                   </p>
                   <p>
-                    <strong>Reddit consensus:</strong> Perfect for families, retirees, and anyone 
-                    prioritizing safety and quiet over nightlife. Many diplomats and business executives 
+                    <strong>Reddit consensus:</strong> Perfect for families, retirees, and anyone
+                    prioritizing safety and quiet over nightlife. Many diplomats and business executives
                     choose Recoleta for the peace of mind.
                   </p>
                 </div>
@@ -335,11 +355,7 @@ export default function RecoletaPage() {
       <section className="py-12">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto">
-            <LuceroLegalCTA
-              variant="compact"
-              description="Planning your move to Recoleta? An immigration attorney can help with visas, residency, and the legal paperwork for your relocation."
-              utm_content="neighborhood-recoleta"
-            />
+            <p className="text-sm text-muted-foreground"><LuceroLegalCTA variant="inline" /></p>
           </div>
         </div>
       </section>

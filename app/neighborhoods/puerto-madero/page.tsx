@@ -3,11 +3,11 @@ import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { 
-  MapPin, 
-  DollarSign, 
-  Shield, 
-  Train, 
+import {
+  MapPin,
+  DollarSign,
+  Shield,
+  Train,
   Coffee,
   ArrowRight,
   Star,
@@ -19,6 +19,9 @@ import {
 import { LuceroLegalCTA } from "@/components/lucero-legal-cta";
 import { StructuredData } from "@/components/structured-data";
 import { generateArticleSchema } from "@/lib/schema";
+import { Breadcrumb } from "@/components/breadcrumb";
+import { InsiderTip } from "@/components/insider-tip";
+import { PullQuote } from "@/components/pull-quote";
 
 export const metadata: Metadata = {
   title: "Puerto Madero Buenos Aires - Modern Luxury Expat Guide",
@@ -88,18 +91,10 @@ export default function PuertoMaderoPage() {
     <div className="flex flex-col min-h-screen">
       <StructuredData data={articleSchema} />
 
-      {/* Breadcrumb */}
-      <div className="border-b bg-muted/30">
-        <div className="container mx-auto px-4 py-4">
-          <nav className="flex gap-2 text-sm text-muted-foreground">
-            <Link href="/" className="hover:text-foreground">Home</Link>
-            <span>/</span>
-            <Link href="/neighborhoods" className="hover:text-foreground">Neighborhoods</Link>
-            <span>/</span>
-            <span className="text-foreground">Puerto Madero</span>
-          </nav>
-        </div>
-      </div>
+      <Breadcrumb items={[
+        { label: "Neighborhoods", href: "/neighborhoods" },
+        { label: "Puerto Madero" },
+      ]} />
 
       {/* Hero */}
       <section className="relative py-16 md:py-24 overflow-hidden">
@@ -192,6 +187,20 @@ export default function PuertoMaderoPage() {
                 </Card>
               ))}
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Insider Tips */}
+      <section className="py-8">
+        <div className="container mx-auto px-4">
+          <div className="max-w-3xl mx-auto">
+            <InsiderTip author="BA Expats Team">
+              The Reserva Ecologica Costanera Sur is completely free and one of the best nature escapes in Buenos Aires. Enter from the south end (Av. Tristán Achával Rodríguez) for fewer crowds. Great for running, cycling, and bird watching -- you&apos;ll forget you&apos;re in a major city.
+            </InsiderTip>
+            <InsiderTip author="Corporate expat, 1 year in Puerto Madero">
+              Avoid the waterfront restaurants on Alicia Moreau de Justo -- they&apos;re tourist traps with mediocre food at premium prices. Instead, walk 10 minutes to the San Telmo side or order delivery from the excellent restaurants in Microcentro. You&apos;ll eat better for half the cost.
+            </InsiderTip>
           </div>
         </div>
       </section>
@@ -319,6 +328,17 @@ export default function PuertoMaderoPage() {
         </div>
       </section>
 
+      {/* PullQuote */}
+      <section className="py-8">
+        <div className="container mx-auto px-4">
+          <div className="max-w-3xl mx-auto">
+            <PullQuote attribution="Finance executive from NYC" source="LinkedIn expat group">
+              Puerto Madero reminds me of Battery Park City -- modern, safe, and convenient for work. It&apos;s not the &quot;real&quot; Buenos Aires, but after a long day, I want a quiet apartment with a river view, not cobblestones and street noise.
+            </PullQuote>
+          </div>
+        </div>
+      </section>
+
       {/* The Reality */}
       <section className="py-16 bg-muted/30">
         <div className="container mx-auto px-4">
@@ -328,19 +348,19 @@ export default function PuertoMaderoPage() {
               <CardContent className="pt-6">
                 <div className="space-y-4 text-muted-foreground">
                   <p>
-                    <strong>Puerto Madero feels sterile to many.</strong> It's clean and safe, 
-                    but lacks the character and soul of older neighborhoods. Some call it 
-                    "Buenos Aires' business district with apartments."
+                    <strong>Puerto Madero feels sterile to many.</strong> It&apos;s clean and safe,
+                    but lacks the character and soul of older neighborhoods. Some call it
+                    &quot;Buenos Aires&apos; business district with apartments.&quot;
                   </p>
                   <p>
-                    <strong>It's dead on weekends.</strong> The business crowd leaves Friday 
-                    evening, and the neighborhood becomes a ghost town. If you want weekend 
+                    <strong>It&apos;s dead on weekends.</strong> The business crowd leaves Friday
+                    evening, and the neighborhood becomes a ghost town. If you want weekend
                     energy, look elsewhere.
                   </p>
                   <p>
-                    <strong>Reddit consensus:</strong> Puerto Madero is for high-income expats 
-                    and business travelers who prioritize convenience and safety over character. 
-                    "Nice to visit, wouldn't want to live there" is a common sentiment among 
+                    <strong>Reddit consensus:</strong> Puerto Madero is for high-income expats
+                    and business travelers who prioritize convenience and safety over character.
+                    &quot;Nice to visit, wouldn&apos;t want to live there&quot; is a common sentiment among
                     long-term expats.
                   </p>
                 </div>
@@ -354,11 +374,7 @@ export default function PuertoMaderoPage() {
       <section className="py-12">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto">
-            <LuceroLegalCTA
-              variant="compact"
-              description="Planning your move to Puerto Madero? An immigration attorney can help with visas, residency, and the legal paperwork for your relocation."
-              utm_content="neighborhood-puerto-madero"
-            />
+            <p className="text-sm text-muted-foreground"><LuceroLegalCTA variant="inline" /></p>
           </div>
         </div>
       </section>

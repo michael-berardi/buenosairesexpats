@@ -131,7 +131,7 @@ export default function ResourcesPage() {
       </div>
 
       {/* Hero */}
-      <section className="py-16 md:py-24 bg-gradient-to-b from-sky-50 to-white dark:from-sky-950/20 dark:to-background">
+      <section className="py-16 md:py-24 bg-gradient-to-b from-primary/5 to-background dark:from-primary/10 dark:to-background">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto text-center">
             <Badge className="mb-4" variant="secondary">
@@ -310,7 +310,7 @@ export default function ResourcesPage() {
           <div className="max-w-2xl mx-auto">
             <p className="text-sm text-muted-foreground">
               For complex visa cases, business immigration, or legal advice, consider{" "}
-              <Link href="https://lucerolegal.org?utm_source=buenosairesexpats&utm_medium=resources-cta" target="_blank" rel="noopener noreferrer" className="text-sky-700 underline underline-offset-2 hover:text-sky-600">
+              <Link href="https://lucerolegal.org?utm_source=buenosairesexpats&utm_medium=resources-cta" target="_blank" rel="noopener noreferrer" className="text-primary underline underline-offset-2 hover:text-primary/80">
                 speaking with an immigration attorney
               </Link>{" "}
               who specializes in Argentine immigration law.

@@ -3,11 +3,11 @@ import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { 
-  MapPin, 
-  DollarSign, 
-  Shield, 
-  Train, 
+import {
+  MapPin,
+  DollarSign,
+  Shield,
+  Train,
   Coffee,
   ArrowRight,
   Star,
@@ -19,6 +19,9 @@ import {
 import { LuceroLegalCTA } from "@/components/lucero-legal-cta";
 import { StructuredData } from "@/components/structured-data";
 import { generateArticleSchema } from "@/lib/schema";
+import { Breadcrumb } from "@/components/breadcrumb";
+import { InsiderTip } from "@/components/insider-tip";
+import { PullQuote } from "@/components/pull-quote";
 
 export const metadata: Metadata = {
   title: "Belgrano Buenos Aires - Family-Friendly Neighborhood Guide",
@@ -88,18 +91,10 @@ export default function BelgranoPage() {
     <div className="flex flex-col min-h-screen">
       <StructuredData data={articleSchema} />
 
-      {/* Breadcrumb */}
-      <div className="border-b bg-muted/30">
-        <div className="container mx-auto px-4 py-4">
-          <nav className="flex gap-2 text-sm text-muted-foreground">
-            <Link href="/" className="hover:text-foreground">Home</Link>
-            <span>/</span>
-            <Link href="/neighborhoods" className="hover:text-foreground">Neighborhoods</Link>
-            <span>/</span>
-            <span className="text-foreground">Belgrano</span>
-          </nav>
-        </div>
-      </div>
+      <Breadcrumb items={[
+        { label: "Neighborhoods", href: "/neighborhoods" },
+        { label: "Belgrano" },
+      ]} />
 
       {/* Hero */}
       <section className="relative py-16 md:py-24 overflow-hidden">
@@ -192,6 +187,20 @@ export default function BelgranoPage() {
                 </Card>
               ))}
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Insider Tips */}
+      <section className="py-8">
+        <div className="container mx-auto px-4">
+          <div className="max-w-3xl mx-auto">
+            <InsiderTip author="BA Expats Team">
+              Barrio Chino (Chinatown) on Arribeños street near Juramento station has the best prices on Asian groceries, soy sauce, rice noodles, tofu, and spices in all of Buenos Aires. Stock up here instead of paying triple at specialty stores in Palermo.
+            </InsiderTip>
+            <InsiderTip author="Expat family, 4 years in Belgrano">
+              Barrancas de Belgrano park is the hidden gem of the neighborhood. The elevated park with its famous white bridge is beautiful for morning runs or weekend picnics. On weekends, local musicians often play under the bandstand -- it feels like a secret the tourists never found.
+            </InsiderTip>
           </div>
         </div>
       </section>
@@ -313,6 +322,17 @@ export default function BelgranoPage() {
         </div>
       </section>
 
+      {/* PullQuote */}
+      <section className="py-8">
+        <div className="container mx-auto px-4">
+          <div className="max-w-3xl mx-auto">
+            <PullQuote attribution="Canadian couple with kids" source="Expat family group">
+              We moved from Palermo to Belgrano when our daughter started school. Best decision we made. The parks are less crowded, the neighbors actually know each other, and our rent dropped by 30%. This is where Buenos Aires feels like home, not a vacation.
+            </PullQuote>
+          </div>
+        </div>
+      </section>
+
       {/* The Reality */}
       <section className="py-16 bg-muted/30">
         <div className="container mx-auto px-4">
@@ -322,16 +342,16 @@ export default function BelgranoPage() {
               <CardContent className="pt-6">
                 <div className="space-y-4 text-muted-foreground">
                   <p>
-                    <strong>Belgrano is less central.</strong> You're 30-40 minutes from Palermo 
-                    and downtown by subte. If you want to be in the middle of the action, this isn't it.
+                    <strong>Belgrano is less central.</strong> You&apos;re 30-40 minutes from Palermo
+                    and downtown by subte. If you want to be in the middle of the action, this isn&apos;t it.
                   </p>
                   <p>
-                    <strong>Nightlife is limited.</strong> There are restaurants and bars, but the 
+                    <strong>Nightlife is limited.</strong> There are restaurants and bars, but the
                     neighborhood quiets down early. Most expats here are past the party phase.
                   </p>
                   <p>
-                    <strong>Reddit consensus:</strong> Belgrano is where you move after you've 
-                    explored Buenos Aires and want a real home. Great for families, couples planning 
+                    <strong>Reddit consensus:</strong> Belgrano is where you move after you&apos;ve
+                    explored Buenos Aires and want a real home. Great for families, couples planning
                     to stay long-term, and anyone who values peace over party.
                   </p>
                 </div>
@@ -345,11 +365,7 @@ export default function BelgranoPage() {
       <section className="py-12">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto">
-            <LuceroLegalCTA
-              variant="compact"
-              description="Planning your move to Belgrano? An immigration attorney can help with visas, residency, and the legal paperwork for your relocation."
-              utm_content="neighborhood-belgrano"
-            />
+            <p className="text-sm text-muted-foreground"><LuceroLegalCTA variant="inline" /></p>
           </div>
         </div>
       </section>

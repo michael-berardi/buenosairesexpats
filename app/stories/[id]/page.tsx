@@ -127,7 +127,7 @@ export default async function StoryPage({ params }: { params: Promise<{ id: stri
       </div>
 
       {/* Hero */}
-      <section className={`relative ${story.heroImage ? 'min-h-[400px] flex items-end' : 'py-12 md:py-16 bg-gradient-to-b from-sky-50 to-white dark:from-sky-950/20 dark:to-background'}`}>
+      <section className={`relative ${story.heroImage ? 'min-h-[400px] flex items-end' : 'py-12 md:py-16 bg-gradient-to-b from-primary/5 to-background dark:from-primary/10 dark:to-background'}`}>
         {/* Hero Image Background */}
         {story.heroImage && (
           <>
@@ -339,11 +339,7 @@ export default async function StoryPage({ params }: { params: Promise<{ id: stri
       <section className="py-12">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto">
-            <LuceroLegalCTA
-              variant="compact"
-              description="Ready to start your own Buenos Aires chapter? An immigration attorney can help with visas, residency, and all the legal paperwork."
-              utm_content="story-detail"
-            />
+            <p className="text-sm text-muted-foreground"><LuceroLegalCTA variant="inline" /></p>
           </div>
         </div>
       </section>

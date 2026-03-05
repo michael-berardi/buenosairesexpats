@@ -133,7 +133,7 @@ export default async function NationalityPage({ params }: { params: Promise<{ co
         )}
         {/* Fallback Gradient */}
         {!country.image && (
-          <div className="absolute inset-0 bg-gradient-to-b from-sky-50 to-white dark:from-sky-950/20 dark:to-background" />
+          <div className="absolute inset-0 bg-gradient-to-b from-primary/5 to-background dark:from-primary/10 dark:to-background" />
         )}
         
         <div className="container mx-auto px-4 relative z-10">
@@ -157,15 +157,15 @@ export default async function NationalityPage({ params }: { params: Promise<{ co
             </p>
             <div className={`flex flex-wrap justify-center gap-4 text-sm mb-6 ${country.image ? 'text-white/80' : ''}`}>
               <div className="flex items-center gap-2">
-                <Clock className={`w-4 h-4 ${country.image ? 'text-sky-300' : 'text-primary'}`} />
+                <Clock className={`w-4 h-4 ${country.image ? 'text-primary-foreground/70' : 'text-primary'}`} />
                 <span>{country.stayDuration} days max stay</span>
               </div>
               <div className="flex items-center gap-2">
-                <Globe className={`w-4 h-4 ${country.image ? 'text-sky-300' : 'text-primary'}`} />
+                <Globe className={`w-4 h-4 ${country.image ? 'text-primary-foreground/70' : 'text-primary'}`} />
                 <span>{isVisaExempt ? "No visa required" : "Apply at consulate"}</span>
               </div>
               <div className="flex items-center gap-2">
-                <FileText className={`w-4 h-4 ${country.image ? 'text-sky-300' : 'text-primary'}`} />
+                <FileText className={`w-4 h-4 ${country.image ? 'text-primary-foreground/70' : 'text-primary'}`} />
                 <span>Updated 2026</span>
               </div>
             </div>

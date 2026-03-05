@@ -6,6 +6,8 @@ import { Badge } from "@/components/ui/badge";
 import { LuceroLegalCTA } from "@/components/lucero-legal-cta";
 import { StructuredData } from "@/components/structured-data";
 import { generateArticleSchema, generateBreadcrumbSchema } from "@/lib/schema";
+import { Breadcrumb } from "@/components/breadcrumb";
+import { InsiderTip } from "@/components/insider-tip";
 import {
   Star,
   MapPin,
@@ -186,26 +188,15 @@ export default function BelgranoDiningPage() {
       <StructuredData data={articleSchema} />
       <StructuredData data={breadcrumbSchema} />
 
-      {/* Breadcrumb */}
-      <div className="border-b bg-muted/30">
-        <div className="container mx-auto px-4 py-4">
-          <nav className="flex gap-2 text-sm text-muted-foreground">
-            <Link href="/" className="hover:text-foreground">Home</Link>
-            <span>/</span>
-            <Link href="/dining" className="hover:text-foreground">Dining</Link>
-            <span>/</span>
-            <span className="text-foreground">Belgrano</span>
-          </nav>
-        </div>
-      </div>
+      <Breadcrumb items={[{ label: "Dining", href: "/dining" }, { label: "Belgrano" }]} />
 
       {/* Hero */}
-      <section className="relative py-20 md:py-28 bg-gradient-to-b from-stone-800 via-stone-900 to-black text-white overflow-hidden">
+      <section className="relative py-20 md:py-28 bg-gradient-to-b from-[#292524] via-[#1c1917] to-[#0c0a09] text-white overflow-hidden">
         <div className="absolute inset-0 opacity-30">
           <div className="absolute inset-0 bg-cover bg-center" style={{ backgroundImage: "url('/images/belgrano-dining.jpg')" }} />
         </div>
-        <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent" />
-        
+        <div className="absolute inset-0 bg-gradient-to-t from-[#0c0a09]/80 via-[#0c0a09]/40 to-transparent" />
+
         <div className="container mx-auto px-4 relative">
           <div className="max-w-4xl mx-auto">
             <Button variant="outline" className="mb-6 border-white/30 text-white hover:bg-white/10" asChild>
@@ -214,17 +205,17 @@ export default function BelgranoDiningPage() {
                 Back to Dining Guide
               </Link>
             </Button>
-            
+
             <Badge className="mb-4 bg-emerald-500/20 text-emerald-300 border-emerald-500/30">
               <Home className="w-3 h-3 mr-1" />
               Residential Sophistication
             </Badge>
-            <h1 className="text-5xl md:text-6xl font-bold mb-6 tracking-tight">
+            <h1 className="font-serif text-5xl md:text-6xl font-bold mb-6 tracking-tight">
               Belgrano
               <span className="block text-emerald-400">Dining Guide</span>
             </h1>
             <p className="text-xl text-stone-300 mb-8 leading-relaxed max-w-2xl">
-              Sophisticated dining in Buenos Aires&apos; most elegant residential neighborhood. 
+              Sophisticated dining in Buenos Aires&apos; most elegant residential neighborhood.
               Discover hidden gems and classic institutions beloved by locals.
             </p>
             <div className="flex flex-wrap gap-4 text-sm text-stone-400">
@@ -246,7 +237,7 @@ export default function BelgranoDiningPage() {
       </section>
 
       {/* Featured Restaurants */}
-      <section className="py-16 bg-stone-50">
+      <section className="py-16 bg-muted">
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
             <div className="text-center mb-12">
@@ -254,7 +245,7 @@ export default function BelgranoDiningPage() {
                 <Star className="w-3 h-3 mr-1" />
                 Featured Restaurants
               </Badge>
-              <h2 className="text-3xl md:text-4xl font-bold mb-4">Belgrano&apos;s Best</h2>
+              <h2 className="font-serif text-3xl md:text-4xl font-bold mb-4">Belgrano&apos;s Best</h2>
               <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
                 The restaurants that define Belgrano&apos;s sophisticated dining scene.
               </p>
@@ -341,6 +332,10 @@ export default function BelgranoDiningPage() {
                 </Card>
               ))}
             </div>
+
+            <InsiderTip>
+              Belgrano restaurants are quieter on weeknights, making reservations easier than in Palermo. Most kitchens open at 8 PM sharp -- arriving at opening gets you the best table without a wait.
+            </InsiderTip>
           </div>
         </div>
       </section>
@@ -354,7 +349,7 @@ export default function BelgranoDiningPage() {
                 <Utensils className="w-3 h-3 mr-1" />
                 More to Discover
               </Badge>
-              <h2 className="text-3xl font-bold mb-4">Additional Recommendations</h2>
+              <h2 className="font-serif text-3xl font-bold mb-4">Additional Recommendations</h2>
               <p className="text-lg text-muted-foreground">
                 More exceptional restaurants that showcase Belgrano&apos;s culinary diversity.
               </p>
@@ -421,20 +416,16 @@ export default function BelgranoDiningPage() {
       <section className="py-12">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto">
-            <LuceroLegalCTA
-              variant="compact"
-              description="Planning an extended stay to enjoy Buenos Aires' food scene? An immigration attorney can help with the right visa for you."
-              utm_content="dining-belgrano"
-            />
+            <p className="text-sm text-muted-foreground"><LuceroLegalCTA variant="inline" /></p>
           </div>
         </div>
       </section>
 
       {/* CTA */}
-      <section className="py-16 bg-stone-900 text-white">
+      <section className="py-16 bg-[#1c1917] text-white">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto text-center">
-            <h2 className="text-3xl font-bold mb-4">Explore More Neighborhoods</h2>
+            <h2 className="font-serif text-3xl font-bold mb-4">Explore More Neighborhoods</h2>
             <p className="text-stone-400 mb-8">
               Discover the best dining in Recoleta and Palermo.
             </p>

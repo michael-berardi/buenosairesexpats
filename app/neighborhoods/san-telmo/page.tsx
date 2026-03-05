@@ -3,11 +3,11 @@ import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { 
-  MapPin, 
-  DollarSign, 
-  Shield, 
-  Train, 
+import {
+  MapPin,
+  DollarSign,
+  Shield,
+  Train,
   Coffee,
   ArrowRight,
   Star,
@@ -19,6 +19,9 @@ import {
 import { LuceroLegalCTA } from "@/components/lucero-legal-cta";
 import { StructuredData } from "@/components/structured-data";
 import { generateArticleSchema } from "@/lib/schema";
+import { Breadcrumb } from "@/components/breadcrumb";
+import { InsiderTip } from "@/components/insider-tip";
+import { PullQuote } from "@/components/pull-quote";
 
 export const metadata: Metadata = {
   title: "San Telmo Buenos Aires - Historic & Bohemian Expat Guide",
@@ -88,18 +91,10 @@ export default function SanTelmoPage() {
     <div className="flex flex-col min-h-screen">
       <StructuredData data={articleSchema} />
 
-      {/* Breadcrumb */}
-      <div className="border-b bg-muted/30">
-        <div className="container mx-auto px-4 py-4">
-          <nav className="flex gap-2 text-sm text-muted-foreground">
-            <Link href="/" className="hover:text-foreground">Home</Link>
-            <span>/</span>
-            <Link href="/neighborhoods" className="hover:text-foreground">Neighborhoods</Link>
-            <span>/</span>
-            <span className="text-foreground">San Telmo</span>
-          </nav>
-        </div>
-      </div>
+      <Breadcrumb items={[
+        { label: "Neighborhoods", href: "/neighborhoods" },
+        { label: "San Telmo" },
+      ]} />
 
       {/* Hero */}
       <section className="relative py-16 md:py-24 overflow-hidden">
@@ -192,6 +187,20 @@ export default function SanTelmoPage() {
                 </Card>
               ))}
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Insider Tips */}
+      <section className="py-8">
+        <div className="container mx-auto px-4">
+          <div className="max-w-3xl mx-auto">
+            <InsiderTip author="BA Expats Team">
+              The Sunday feria on Defensa street gets absolutely packed by noon. Arrive before 10 AM for the best antique finds, reasonable prices, and enough space to actually browse. By 1 PM, the crowd is shoulder-to-shoulder and vendors know they can charge more.
+            </InsiderTip>
+            <InsiderTip author="Long-term San Telmo resident">
+              The real antique deals aren&apos;t at the Sunday market -- they&apos;re in the permanent shops on Defensa street (between Av. Independencia and Av. San Juan) during the week. The shop owners have time to chat, prices are negotiable, and you won&apos;t be competing with tourists.
+            </InsiderTip>
           </div>
         </div>
       </section>
@@ -313,6 +322,17 @@ export default function SanTelmoPage() {
         </div>
       </section>
 
+      {/* PullQuote */}
+      <section className="py-8">
+        <div className="container mx-auto px-4">
+          <div className="max-w-3xl mx-auto">
+            <PullQuote attribution="Freelance photographer from Berlin" source="r/BuenosAires">
+              San Telmo has a soul that Palermo lost years ago. Every cobblestone has a story. Yes, the plumbing is questionable and the walls are thin, but I wake up to street tango and fall asleep to accordion music. I wouldn&apos;t trade it for anything.
+            </PullQuote>
+          </div>
+        </div>
+      </section>
+
       {/* The Reality */}
       <section className="py-16 bg-muted/30">
         <div className="container mx-auto px-4">
@@ -322,19 +342,19 @@ export default function SanTelmoPage() {
               <CardContent className="pt-6">
                 <div className="space-y-4 text-muted-foreground">
                   <p>
-                    <strong>San Telmo is authentic but rough around the edges.</strong> The cobblestone 
-                    streets are charming but can be noisy. Buildings are old - character comes with 
+                    <strong>San Telmo is authentic but rough around the edges.</strong> The cobblestone
+                    streets are charming but can be noisy. Buildings are old - character comes with
                     maintenance issues.
                   </p>
                   <p>
-                    <strong>It can get loud.</strong> Street performers, late-night bars, and thin 
-                    walls in old buildings mean noise. Light sleepers should look for apartments 
+                    <strong>It can get loud.</strong> Street performers, late-night bars, and thin
+                    walls in old buildings mean noise. Light sleepers should look for apartments
                     off the main streets.
                   </p>
                   <p>
-                    <strong>Reddit consensus:</strong> San Telmo is for people who want the "real" 
-                    Buenos Aires experience. It's cheaper and more interesting than Palermo, but 
-                    you trade comfort and convenience for character. Many artists and long-term 
+                    <strong>Reddit consensus:</strong> San Telmo is for people who want the &quot;real&quot;
+                    Buenos Aires experience. It&apos;s cheaper and more interesting than Palermo, but
+                    you trade comfort and convenience for character. Many artists and long-term
                     expats swear by it.
                   </p>
                 </div>
@@ -348,11 +368,7 @@ export default function SanTelmoPage() {
       <section className="py-12">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto">
-            <LuceroLegalCTA
-              variant="compact"
-              description="Planning your move to San Telmo? An immigration attorney can help with visas, residency, and the legal paperwork for your relocation."
-              utm_content="neighborhood-san-telmo"
-            />
+            <p className="text-sm text-muted-foreground"><LuceroLegalCTA variant="inline" /></p>
           </div>
         </div>
       </section>

@@ -62,7 +62,7 @@ const guides = [
     href: "/guides/first-week",
     icon: Calendar,
     badge: "New",
-    badgeClass: "bg-sky-100 text-sky-700 border-sky-200",
+    badgeClass: "bg-primary/10 text-primary border-primary/20",
     readTime: "20 min",
     color: "sky",
   },
@@ -84,7 +84,7 @@ const guides = [
     href: "/guides/getting-started",
     icon: Plane,
     badge: "Start Here",
-    badgeClass: "bg-sky-100 text-sky-700 border-sky-200",
+    badgeClass: "bg-primary/10 text-primary border-primary/20",
     readTime: "15 min",
     color: "sky",
   },
@@ -235,7 +235,7 @@ export default function GuidesPage() {
       </div>
 
       {/* Hero */}
-      <section className="py-16 md:py-24 bg-gradient-to-b from-sky-50 to-white dark:from-sky-950/20 dark:to-background">
+      <section className="py-16 md:py-24 bg-gradient-to-b from-primary/5 to-background dark:from-primary/10 dark:to-background">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto text-center">
             <Badge className="mb-4" variant="secondary">
@@ -256,11 +256,11 @@ export default function GuidesPage() {
                 <span>11 in-depth guides</span>
               </div>
               <div className="flex items-center gap-2 text-muted-foreground">
-                <Clock className="w-4 h-4 text-sky-500" />
+                <Clock className="w-4 h-4 text-accent" />
                 <span>Updated March 2026</span>
               </div>
               <div className="flex items-center gap-2 text-muted-foreground">
-                <BookOpen className="w-4 h-4 text-sky-500" />
+                <BookOpen className="w-4 h-4 text-accent" />
                 <span>Written by expats, for expats</span>
               </div>
             </div>
@@ -272,14 +272,14 @@ export default function GuidesPage() {
       <section className="py-12 border-b">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
-            <Card className="bg-gradient-to-r from-sky-50 to-blue-50 dark:from-sky-950/20 dark:to-blue-950/20 border-sky-200">
+            <Card className="bg-gradient-to-r from-primary/5 to-blue-50 dark:from-primary/10 dark:to-blue-950/20 border-primary/20">
               <CardContent className="pt-8 pb-8">
                 <div className="flex flex-col md:flex-row items-center gap-6">
-                  <div className="flex-shrink-0 w-16 h-16 rounded-2xl bg-sky-100 dark:bg-sky-900/30 flex items-center justify-center">
-                    <Plane className="w-8 h-8 text-sky-600" />
+                  <div className="flex-shrink-0 w-16 h-16 rounded-2xl bg-primary/10 dark:bg-primary/15 flex items-center justify-center">
+                    <Plane className="w-8 h-8 text-primary" />
                   </div>
                   <div className="flex-1 text-center md:text-left">
-                    <Badge className="mb-2 bg-sky-100 text-sky-700 border-sky-200">
+                    <Badge className="mb-2 bg-primary/10 text-primary border-primary/20">
                       Recommended First Read
                     </Badge>
                     <h2 className="text-2xl font-bold mb-2">
@@ -294,7 +294,7 @@ export default function GuidesPage() {
                     <div className="flex flex-wrap gap-3">
                       <Button
                         asChild
-                        className="bg-sky-600 hover:bg-sky-500 text-white"
+                        className="bg-primary hover:bg-primary/90 text-white"
                       >
                         <Link href="/guides/first-week">
                           Read the First Week Guide
@@ -334,11 +334,11 @@ export default function GuidesPage() {
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
               {guides.map((guide) => (
                 <Link key={guide.href} href={guide.href} className="group">
-                  <Card className="h-full transition-all duration-200 group-hover:border-sky-200 group-hover:shadow-md">
+                  <Card className="h-full transition-all duration-200 group-hover:border-primary/20 group-hover:shadow-md">
                     <CardHeader>
                       <div className="flex items-start justify-between mb-3">
-                        <div className="w-12 h-12 rounded-xl bg-sky-50 dark:bg-sky-950/20 flex items-center justify-center group-hover:bg-sky-100 transition-colors">
-                          <guide.icon className="w-6 h-6 text-sky-600" />
+                        <div className="w-12 h-12 rounded-xl bg-primary/5 dark:bg-primary/10 flex items-center justify-center group-hover:bg-primary/10 transition-colors">
+                          <guide.icon className="w-6 h-6 text-primary" />
                         </div>
                         {guide.badge && (
                           <Badge
@@ -349,7 +349,7 @@ export default function GuidesPage() {
                           </Badge>
                         )}
                       </div>
-                      <CardTitle className="text-lg group-hover:text-sky-700 transition-colors">
+                      <CardTitle className="text-lg group-hover:text-primary transition-colors">
                         {guide.title}
                       </CardTitle>
                     </CardHeader>
@@ -362,7 +362,7 @@ export default function GuidesPage() {
                           <Clock className="w-3.5 h-3.5" />
                           <span>{guide.readTime} read</span>
                         </div>
-                        <span className="inline-flex items-center text-sm font-medium text-sky-700 group-hover:text-sky-600 transition-colors">
+                        <span className="inline-flex items-center text-sm font-medium text-primary group-hover:text-primary transition-colors">
                           Read Guide
                           <ArrowRight className="w-3.5 h-3.5 ml-1 group-hover:translate-x-1 transition-transform" />
                         </span>
@@ -395,15 +395,15 @@ export default function GuidesPage() {
                   href={resource.href}
                   className="group"
                 >
-                  <Card className="h-full transition-all duration-200 group-hover:border-sky-200 group-hover:shadow-md">
+                  <Card className="h-full transition-all duration-200 group-hover:border-primary/20 group-hover:shadow-md">
                     <CardContent className="pt-6">
-                      <h3 className="font-semibold text-lg mb-1 group-hover:text-sky-700 transition-colors">
+                      <h3 className="font-semibold text-lg mb-1 group-hover:text-primary transition-colors">
                         {resource.title}
                       </h3>
                       <p className="text-sm text-muted-foreground">
                         {resource.description}
                       </p>
-                      <span className="inline-flex items-center text-sm font-medium text-sky-700 mt-3 group-hover:text-sky-600 transition-colors">
+                      <span className="inline-flex items-center text-sm font-medium text-primary mt-3 group-hover:text-primary transition-colors">
                         Learn More
                         <ArrowRight className="w-3.5 h-3.5 ml-1 group-hover:translate-x-1 transition-transform" />
                       </span>

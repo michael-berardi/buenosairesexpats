@@ -112,12 +112,12 @@ export default function ExpatProfilesPage() {
               Global Community
             </Badge>
             <h1 className="text-3xl md:text-5xl font-bold mb-4 text-white">
-              Meet the Expats of{" "}
-              <span className="text-sky-400">Buenos Aires</span>
+              Expat Profiles:{" "}
+              <span className="text-accent">Buenos Aires</span>
             </h1>
             <p className="text-lg md:text-xl text-white/80 mb-8 max-w-2xl mx-auto">
-              Discover {expatProfiles.length} expats from around the world who have made Buenos Aires their home. 
-              Read their stories and connect with the global expat community.
+              {expatProfiles.length} composite portraits representing common expat experiences in Buenos Aires.
+              Practical budgets, visa paths, and tips based on real community data.
             </p>
 
             {/* Search Bar */}
@@ -143,17 +143,17 @@ export default function ExpatProfilesPage() {
             {/* Quick Stats */}
             <div className="flex justify-center gap-6 md:gap-10 text-white/90">
               <div className="flex items-center gap-2">
-                <Users className="w-5 h-5 text-sky-400" />
+                <Users className="w-5 h-5 text-accent" />
                 <span className="font-semibold">{expatProfiles.length}</span>
                 <span className="text-white/70 hidden sm:inline">Profiles</span>
               </div>
               <div className="flex items-center gap-2">
-                <MapPin className="w-5 h-5 text-sky-400" />
+                <MapPin className="w-5 h-5 text-accent" />
                 <span className="font-semibold">{regions.length}</span>
                 <span className="text-white/70 hidden sm:inline">Regions</span>
               </div>
               <div className="flex items-center gap-2">
-                <Globe className="w-5 h-5 text-sky-400" />
+                <Globe className="w-5 h-5 text-accent" />
                 <span className="font-semibold">190+</span>
                 <span className="text-white/70 hidden sm:inline">Topics</span>
               </div>
@@ -351,11 +351,7 @@ export default function ExpatProfilesPage() {
       <section className="py-12 border-t">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto">
-            <LuceroLegalCTA
-              variant="compact"
-              description="Ready to start your own Buenos Aires story? An immigration attorney can help you navigate Argentine immigration so you can focus on building your new life."
-              utm_content="expat-profiles-hub"
-            />
+            <p className="text-sm text-muted-foreground"><LuceroLegalCTA variant="inline" /></p>
           </div>
         </div>
       </section>

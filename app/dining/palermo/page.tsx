@@ -6,6 +6,8 @@ import { Badge } from "@/components/ui/badge";
 import { LuceroLegalCTA } from "@/components/lucero-legal-cta";
 import { StructuredData } from "@/components/structured-data";
 import { generateArticleSchema, generateBreadcrumbSchema } from "@/lib/schema";
+import { Breadcrumb } from "@/components/breadcrumb";
+import { InsiderTip } from "@/components/insider-tip";
 import {
   Star,
   MapPin,
@@ -189,26 +191,15 @@ export default function PalermoDiningPage() {
       <StructuredData data={articleSchema} />
       <StructuredData data={breadcrumbSchema} />
 
-      {/* Breadcrumb */}
-      <div className="border-b bg-muted/30">
-        <div className="container mx-auto px-4 py-4">
-          <nav className="flex gap-2 text-sm text-muted-foreground">
-            <Link href="/" className="hover:text-foreground">Home</Link>
-            <span>/</span>
-            <Link href="/dining" className="hover:text-foreground">Dining</Link>
-            <span>/</span>
-            <span className="text-foreground">Palermo</span>
-          </nav>
-        </div>
-      </div>
+      <Breadcrumb items={[{ label: "Dining", href: "/dining" }, { label: "Palermo" }]} />
 
       {/* Hero */}
-      <section className="relative py-20 md:py-28 bg-gradient-to-b from-amber-950 via-amber-900 to-stone-900 text-white overflow-hidden">
+      <section className="relative py-20 md:py-28 bg-gradient-to-b from-[#44403c] via-[#292524] to-[#1c1917] text-white overflow-hidden">
         <div className="absolute inset-0 opacity-30">
           <div className="absolute inset-0 bg-cover bg-center" style={{ backgroundImage: "url('/images/palermo-dining.jpg')" }} />
         </div>
-        <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent" />
-        
+        <div className="absolute inset-0 bg-gradient-to-t from-[#0c0a09]/80 via-[#0c0a09]/40 to-transparent" />
+
         <div className="container mx-auto px-4 relative">
           <div className="max-w-4xl mx-auto">
             <Button variant="outline" className="mb-6 border-white/30 text-white hover:bg-white/10" asChild>
@@ -217,12 +208,12 @@ export default function PalermoDiningPage() {
                 Back to Dining Guide
               </Link>
             </Button>
-            
+
             <Badge className="mb-4 bg-amber-500/20 text-amber-300 border-amber-500/30">
               <Award className="w-3 h-3 mr-1" />
               Latin America&apos;s Best
             </Badge>
-            <h1 className="text-5xl md:text-6xl font-bold mb-6 tracking-tight">
+            <h1 className="font-serif text-5xl md:text-6xl font-bold mb-6 tracking-tight">
               Palermo
               <span className="block text-amber-400">Dining Guide</span>
             </h1>
@@ -249,7 +240,7 @@ export default function PalermoDiningPage() {
       </section>
 
       {/* Featured Restaurants */}
-      <section className="py-16 bg-stone-50">
+      <section className="py-16 bg-muted">
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
             <div className="text-center mb-12">
@@ -257,7 +248,7 @@ export default function PalermoDiningPage() {
                 <ChefHat className="w-3 h-3 mr-1" />
                 Legendary Restaurants
               </Badge>
-              <h2 className="text-3xl md:text-4xl font-bold mb-4">The Icons</h2>
+              <h2 className="font-serif text-3xl md:text-4xl font-bold mb-4">The Icons</h2>
               <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
                 These restaurants have put Buenos Aires on the global culinary map.
               </p>
@@ -351,6 +342,10 @@ export default function PalermoDiningPage() {
                 </Card>
               ))}
             </div>
+
+            <InsiderTip className="mt-8">
+              For Don Julio, book online exactly 30 days in advance -- slots open at midnight Buenos Aires time. If you show up without a reservation, the wait can be 2-3 hours, but the wine bar next door (same owners) is a great place to wait.
+            </InsiderTip>
           </div>
         </div>
       </section>
@@ -364,7 +359,7 @@ export default function PalermoDiningPage() {
                 <Flame className="w-3 h-3 mr-1" />
                 More Excellence
               </Badge>
-              <h2 className="text-3xl font-bold mb-4">Additional Recommendations</h2>
+              <h2 className="font-serif text-3xl font-bold mb-4">Additional Recommendations</h2>
               <p className="text-lg text-muted-foreground">
                 More exceptional restaurants that define Palermo&apos;s dining scene.
               </p>
@@ -431,20 +426,16 @@ export default function PalermoDiningPage() {
       <section className="py-12">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto">
-            <LuceroLegalCTA
-              variant="compact"
-              description="Planning an extended stay to enjoy Buenos Aires' food scene? An immigration attorney can help with the right visa for you."
-              utm_content="dining-palermo"
-            />
+            <p className="text-sm text-muted-foreground"><LuceroLegalCTA variant="inline" /></p>
           </div>
         </div>
       </section>
 
       {/* CTA */}
-      <section className="py-16 bg-stone-900 text-white">
+      <section className="py-16 bg-[#1c1917] text-white">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto text-center">
-            <h2 className="text-3xl font-bold mb-4">Explore More Neighborhoods</h2>
+            <h2 className="font-serif text-3xl font-bold mb-4">Explore More Neighborhoods</h2>
             <p className="text-stone-400 mb-8">
               Discover the best dining in Recoleta and Belgrano.
             </p>

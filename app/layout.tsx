@@ -1,16 +1,21 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Inter, Playfair_Display } from "next/font/google";
 import { Analytics } from "@vercel/analytics/next";
 import "./globals.css";
 import { Navbar } from "@/components/navbar";
 import { Footer } from "@/components/footer";
-import { StickyCTA } from "@/components/sticky-cta";
 import { I18nProvider } from "@/lib/i18n";
 import { generateOrganizationSchema, generateWebSiteSchema } from "@/lib/schema";
 
 const inter = Inter({
   variable: "--font-inter",
   subsets: ["latin"],
+});
+
+const playfair = Playfair_Display({
+  variable: "--font-playfair",
+  subsets: ["latin"],
+  weight: ["400", "500", "600", "700", "800"],
 });
 
 export const metadata: Metadata = {
@@ -72,7 +77,7 @@ export const viewport = {
   width: 'device-width',
   initialScale: 1,
   maximumScale: 5,
-  themeColor: '#0ea5e9',
+  themeColor: '#c2410c',
 };
 
 export default function RootLayout({
@@ -96,7 +101,7 @@ export default function RootLayout({
           dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteSchema) }}
         />
       </head>
-      <body className={`${inter.variable} font-sans antialiased`}>
+      <body className={`${inter.variable} ${playfair.variable} font-sans antialiased`}>
         <script dangerouslySetInnerHTML={{ __html: `
           // Check for reduced motion preference
           if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
@@ -110,7 +115,6 @@ export default function RootLayout({
           <Navbar />
           <main id="main-content">{children}</main>
           <Footer />
-          <StickyCTA />
           <Analytics />
         </I18nProvider>
       </body>

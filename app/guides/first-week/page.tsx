@@ -437,7 +437,7 @@ export default function FirstWeekPage() {
 
       {/* Hero */}
       <section className="relative py-16 md:py-24 overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-br from-sky-700 via-sky-800 to-slate-900" />
+        <div className="absolute inset-0 bg-gradient-to-br from-primary via-primary/80 to-slate-900" />
         <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-3xl mx-auto text-center">
             <Badge className="mb-6 bg-white/15 text-white border-white/20">
@@ -446,7 +446,7 @@ export default function FirstWeekPage() {
             </Badge>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 text-white tracking-tight">
               Your First Week in{" "}
-              <span className="text-sky-300">Buenos Aires</span>
+              <span className="text-primary-foreground/70">Buenos Aires</span>
             </h1>
             <p className="text-xl text-white/85 mb-8 max-w-2xl mx-auto leading-relaxed">
               A detailed day-by-day guide from landing at Ezeiza to feeling like
@@ -476,9 +476,9 @@ export default function FirstWeekPage() {
               <a
                 key={day.day}
                 href={`#day-${day.day}`}
-                className="flex items-center gap-2 px-4 py-2 rounded-full text-sm font-medium bg-stone-100 text-stone-700 hover:bg-sky-50 hover:text-sky-700 transition-colors whitespace-nowrap flex-shrink-0"
+                className="flex items-center gap-2 px-4 py-2 rounded-full text-sm font-medium bg-stone-100 text-stone-700 hover:bg-primary/5 hover:text-primary transition-colors whitespace-nowrap flex-shrink-0"
               >
-                <span className="text-sky-600 font-bold">Day {day.day}</span>
+                <span className="text-primary font-bold">Day {day.day}</span>
                 <span className="hidden sm:inline">{day.title}</span>
               </a>
             ))}
@@ -497,11 +497,11 @@ export default function FirstWeekPage() {
             <div className="max-w-4xl mx-auto">
               {/* Day header */}
               <div className="flex items-center gap-4 mb-8">
-                <div className="w-14 h-14 rounded-xl bg-sky-100 flex items-center justify-center flex-shrink-0">
-                  <day.icon className="w-7 h-7 text-sky-600" />
+                <div className="w-14 h-14 rounded-xl bg-primary/10 flex items-center justify-center flex-shrink-0">
+                  <day.icon className="w-7 h-7 text-primary" />
                 </div>
                 <div>
-                  <div className="text-sm font-bold text-sky-600 uppercase tracking-wider">
+                  <div className="text-sm font-bold text-primary uppercase tracking-wider">
                     Day {day.day}
                   </div>
                   <h2 className="text-2xl md:text-3xl font-bold text-stone-900">
@@ -519,8 +519,8 @@ export default function FirstWeekPage() {
                     className="bg-white rounded-xl border border-stone-200 p-6 md:p-8 shadow-sm"
                   >
                     <div className="flex items-start gap-4">
-                      <div className="w-10 h-10 rounded-lg bg-sky-50 flex items-center justify-center flex-shrink-0">
-                        <task.icon className="w-5 h-5 text-sky-600" />
+                      <div className="w-10 h-10 rounded-lg bg-primary/5 flex items-center justify-center flex-shrink-0">
+                        <task.icon className="w-5 h-5 text-primary" />
                       </div>
                       <div className="flex-1 min-w-0">
                         <div className="flex items-center gap-3 mb-2 flex-wrap">
@@ -597,10 +597,10 @@ export default function FirstWeekPage() {
             <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
               <Link
                 href="/neighborhoods/quiz"
-                className="group bg-white rounded-xl border border-stone-200 p-6 hover:border-sky-200 hover:bg-sky-50 transition-all"
+                className="group bg-white rounded-xl border border-stone-200 p-6 hover:border-primary/20 hover:bg-primary/5 transition-all"
               >
-                <MapPin className="w-6 h-6 text-sky-600 mb-3" />
-                <h3 className="font-semibold mb-1 group-hover:text-sky-700">
+                <MapPin className="w-6 h-6 text-primary mb-3" />
+                <h3 className="font-semibold mb-1 group-hover:text-primary">
                   Neighborhood Matcher Quiz
                 </h3>
                 <p className="text-sm text-stone-500">
@@ -609,10 +609,10 @@ export default function FirstWeekPage() {
               </Link>
               <Link
                 href="/cost-of-living"
-                className="group bg-white rounded-xl border border-stone-200 p-6 hover:border-sky-200 hover:bg-sky-50 transition-all"
+                className="group bg-white rounded-xl border border-stone-200 p-6 hover:border-primary/20 hover:bg-primary/5 transition-all"
               >
-                <Wallet className="w-6 h-6 text-sky-600 mb-3" />
-                <h3 className="font-semibold mb-1 group-hover:text-sky-700">
+                <Wallet className="w-6 h-6 text-primary mb-3" />
+                <h3 className="font-semibold mb-1 group-hover:text-primary">
                   Cost of Living 2026
                 </h3>
                 <p className="text-sm text-stone-500">
@@ -622,10 +622,10 @@ export default function FirstWeekPage() {
               </Link>
               <Link
                 href="/visas"
-                className="group bg-white rounded-xl border border-stone-200 p-6 hover:border-sky-200 hover:bg-sky-50 transition-all"
+                className="group bg-white rounded-xl border border-stone-200 p-6 hover:border-primary/20 hover:bg-primary/5 transition-all"
               >
-                <Globe className="w-6 h-6 text-sky-600 mb-3" />
-                <h3 className="font-semibold mb-1 group-hover:text-sky-700">
+                <Globe className="w-6 h-6 text-primary mb-3" />
+                <h3 className="font-semibold mb-1 group-hover:text-primary">
                   Visa Options
                 </h3>
                 <p className="text-sm text-stone-500">
@@ -635,10 +635,10 @@ export default function FirstWeekPage() {
               </Link>
               <Link
                 href="/dining"
-                className="group bg-white rounded-xl border border-stone-200 p-6 hover:border-sky-200 hover:bg-sky-50 transition-all"
+                className="group bg-white rounded-xl border border-stone-200 p-6 hover:border-primary/20 hover:bg-primary/5 transition-all"
               >
-                <Utensils className="w-6 h-6 text-sky-600 mb-3" />
-                <h3 className="font-semibold mb-1 group-hover:text-sky-700">
+                <Utensils className="w-6 h-6 text-primary mb-3" />
+                <h3 className="font-semibold mb-1 group-hover:text-primary">
                   Dining Guide
                 </h3>
                 <p className="text-sm text-stone-500">
@@ -647,10 +647,10 @@ export default function FirstWeekPage() {
               </Link>
               <Link
                 href="/healthcare"
-                className="group bg-white rounded-xl border border-stone-200 p-6 hover:border-sky-200 hover:bg-sky-50 transition-all"
+                className="group bg-white rounded-xl border border-stone-200 p-6 hover:border-primary/20 hover:bg-primary/5 transition-all"
               >
-                <Heart className="w-6 h-6 text-sky-600 mb-3" />
-                <h3 className="font-semibold mb-1 group-hover:text-sky-700">
+                <Heart className="w-6 h-6 text-primary mb-3" />
+                <h3 className="font-semibold mb-1 group-hover:text-primary">
                   Healthcare Guide
                 </h3>
                 <p className="text-sm text-stone-500">
@@ -660,10 +660,10 @@ export default function FirstWeekPage() {
               </Link>
               <Link
                 href="/guides/safety"
-                className="group bg-white rounded-xl border border-stone-200 p-6 hover:border-sky-200 hover:bg-sky-50 transition-all"
+                className="group bg-white rounded-xl border border-stone-200 p-6 hover:border-primary/20 hover:bg-primary/5 transition-all"
               >
-                <Shield className="w-6 h-6 text-sky-600 mb-3" />
-                <h3 className="font-semibold mb-1 group-hover:text-sky-700">
+                <Shield className="w-6 h-6 text-primary mb-3" />
+                <h3 className="font-semibold mb-1 group-hover:text-primary">
                   Safety Guide
                 </h3>
                 <p className="text-sm text-stone-500">
@@ -680,11 +680,7 @@ export default function FirstWeekPage() {
       <section className="py-12">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto">
-            <LuceroLegalCTA
-              variant="compact"
-              description="Planning to stay beyond the 90-day tourist period? An immigration attorney can help you choose the right visa and navigate the application process."
-              utm_content="first-week-guide"
-            />
+            <p className="text-sm text-muted-foreground"><LuceroLegalCTA variant="inline" /></p>
           </div>
         </div>
       </section>

@@ -5,6 +5,8 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { LuceroLegalCTA } from "@/components/lucero-legal-cta";
+import { StructuredData } from "@/components/structured-data";
+import { generateBreadcrumbSchema } from "@/lib/schema";
 import {
   Home,
   DollarSign,
@@ -89,8 +91,14 @@ const contractTips = [
 ];
 
 export default function HousingPage() {
+  const breadcrumbSchema = generateBreadcrumbSchema([
+    { name: "Home", item: "https://buenosairesexpats.com" },
+    { name: "Housing" },
+  ]);
+
   return (
     <div className="flex flex-col min-h-screen">
+      <StructuredData data={breadcrumbSchema} />
       {/* Breadcrumb */}
       <div className="border-b bg-muted/30">
         <div className="container mx-auto px-4 py-4">
@@ -121,7 +129,7 @@ export default function HousingPage() {
               Everything you need to know about renting in Buenos Aires.
               Avoid scams, understand contracts, and find your perfect apartment.
             </p>
-            <Button asChild size="lg" className="bg-sky-600 hover:bg-sky-500 text-white font-semibold">
+            <Button asChild size="lg" className="bg-primary hover:bg-primary/90 text-white font-semibold">
               <Link href="#rental-process">
                 Find Your Home
                 <ArrowRight className="w-4 h-4 ml-2" />
@@ -424,11 +432,7 @@ export default function HousingPage() {
       <section className="py-16">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto">
-            <LuceroLegalCTA
-              variant="compact"
-              description="Need help with rental contracts or garantia requirements? An immigration attorney can also assist with visa and residency paperwork."
-              utm_content="housing"
-            />
+            <p className="text-sm text-muted-foreground"><LuceroLegalCTA variant="inline" /></p>
           </div>
         </div>
       </section>

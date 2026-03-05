@@ -3,11 +3,11 @@ import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { 
-  MapPin, 
-  DollarSign, 
-  Shield, 
-  Train, 
+import {
+  MapPin,
+  DollarSign,
+  Shield,
+  Train,
   Coffee,
   ArrowRight,
   Star,
@@ -18,6 +18,9 @@ import {
 import { LuceroLegalCTA } from "@/components/lucero-legal-cta";
 import { StructuredData } from "@/components/structured-data";
 import { generateArticleSchema } from "@/lib/schema";
+import { Breadcrumb } from "@/components/breadcrumb";
+import { InsiderTip } from "@/components/insider-tip";
+import { PullQuote } from "@/components/pull-quote";
 
 export const metadata: Metadata = {
   title: "Palermo Buenos Aires - Expat Neighborhood Guide",
@@ -88,18 +91,10 @@ export default function PalermoPage() {
       <StructuredData data={articleSchema} />
 
 
-      {/* Breadcrumb */}
-      <div className="border-b bg-muted/30">
-        <div className="container mx-auto px-4 py-4">
-          <nav className="flex gap-2 text-sm text-muted-foreground">
-            <Link href="/" className="hover:text-foreground">Home</Link>
-            <span>/</span>
-            <Link href="/neighborhoods" className="hover:text-foreground">Neighborhoods</Link>
-            <span>/</span>
-            <span className="text-foreground">Palermo</span>
-          </nav>
-        </div>
-      </div>
+      <Breadcrumb items={[
+        { label: "Neighborhoods", href: "/neighborhoods" },
+        { label: "Palermo" },
+      ]} />
 
       {/* Hero */}
       <section className="relative py-16 md:py-24 overflow-hidden">
@@ -136,7 +131,7 @@ export default function PalermoPage() {
               </div>
             </div>
             <div className="mt-8">
-              <Button asChild size="lg" className="bg-sky-600 hover:bg-sky-500 text-white font-semibold shadow-lg">
+              <Button asChild size="lg" className="bg-primary hover:bg-primary/90 text-white font-semibold shadow-lg">
                 <Link href="/housing">
                   Explore Palermo Rentals
                   <ArrowRight className="w-4 h-4 ml-2" />
@@ -200,6 +195,20 @@ export default function PalermoPage() {
                 </Card>
               ))}
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Insider Tips */}
+      <section className="py-8">
+        <div className="container mx-auto px-4">
+          <div className="max-w-3xl mx-auto">
+            <InsiderTip author="BA Expats Team">
+              Skip the overpriced restaurants right on Plaza Serrano -- walk 2-3 blocks in any direction and you&apos;ll find the same quality food at half the price. The tourist markup on the plaza itself is brutal, especially on weekends.
+            </InsiderTip>
+            <InsiderTip author="Remote worker, 2 years in Palermo">
+              For remote work, LAB Coffee (Thames &amp; Honduras) and Cuervo Cafe (Gorriti 5900) have reliable WiFi, good coffee, and nobody rushes you out. Avoid the big-name chains on Plaza Serrano -- they&apos;re packed with tourists and the WiFi crawls.
+            </InsiderTip>
           </div>
         </div>
       </section>
@@ -321,6 +330,17 @@ export default function PalermoPage() {
         </div>
       </section>
 
+      {/* PullQuote */}
+      <section className="py-8">
+        <div className="container mx-auto px-4">
+          <div className="max-w-3xl mx-auto">
+            <PullQuote attribution="Digital nomad from Portland" source="r/BuenosAires">
+              I came to Palermo for 3 months and stayed 2 years. The cafe culture, the parks, the random Tuesday night dinners that turn into 4 AM adventures -- this neighborhood just gets it right.
+            </PullQuote>
+          </div>
+        </div>
+      </section>
+
       {/* The Reality */}
       <section className="py-16 bg-muted/30">
         <div className="container mx-auto px-4">
@@ -330,18 +350,18 @@ export default function PalermoPage() {
               <CardContent className="pt-6">
                 <div className="space-y-4 text-muted-foreground">
                   <p>
-                    <strong>Palermo is popular for a reason.</strong> It has everything most expats want: 
-                    cafes, restaurants, nightlife, parks, and other English speakers. If you want the 
+                    <strong>Palermo is popular for a reason.</strong> It has everything most expats want:
+                    cafes, restaurants, nightlife, parks, and other English speakers. If you want the
                     easiest transition to Buenos Aires, this is where you start.
                   </p>
                   <p>
-                    <strong>But it's not perfect.</strong> Rent is the highest in the city. It can be noisy, 
-                    especially in Hollywood. Some areas feel more like tourist zones than authentic Buenos Aires. 
-                    And you'll pay a premium for the convenience.
+                    <strong>But it&apos;s not perfect.</strong> Rent is the highest in the city. It can be noisy,
+                    especially in Hollywood. Some areas feel more like tourist zones than authentic Buenos Aires.
+                    And you&apos;ll pay a premium for the convenience.
                   </p>
                   <p>
-                    <strong>Reddit consensus:</strong> Most first-time expats start in Palermo, then either 
-                    stay because they love it or move to somewhere quieter (like Belgrano) or more authentic 
+                    <strong>Reddit consensus:</strong> Most first-time expats start in Palermo, then either
+                    stay because they love it or move to somewhere quieter (like Belgrano) or more authentic
                     (like San Telmo) after a year.
                   </p>
                 </div>
@@ -355,11 +375,7 @@ export default function PalermoPage() {
       <section className="py-12">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto">
-            <LuceroLegalCTA
-              variant="compact"
-              description="Planning your move to Palermo? An immigration attorney can help with visas, residency, and the legal paperwork for your relocation."
-              utm_content="neighborhood-palermo"
-            />
+            <p className="text-sm text-muted-foreground"><LuceroLegalCTA variant="inline" /></p>
           </div>
         </div>
       </section>

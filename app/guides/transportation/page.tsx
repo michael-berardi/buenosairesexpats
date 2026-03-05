@@ -142,7 +142,7 @@ export default function TransportationPage() {
               </div>
             </div>
             <div className="mt-8">
-              <Button asChild size="lg" className="bg-sky-600 hover:bg-sky-500 text-white font-semibold shadow-lg">
+              <Button asChild size="lg" className="bg-primary hover:bg-primary/90 text-white font-semibold shadow-lg">
                 <Link href="#sube-card">
                   Get Started with SUBE
                   <ArrowRight className="w-4 h-4 ml-2" />
@@ -631,7 +631,7 @@ export default function TransportationPage() {
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto">
             <h2 className="text-3xl font-bold mb-6 flex items-center gap-2">
-              <Plane className="w-7 h-7 text-sky-600" />
+              <Plane className="w-7 h-7 text-primary" />
               Airport Transfers
             </h2>
             <p className="text-muted-foreground mb-6">
@@ -815,7 +815,7 @@ export default function TransportationPage() {
               <Card>
                 <CardHeader>
                   <CardTitle className="text-lg flex items-center gap-2">
-                    <Plane className="w-5 h-5 text-sky-600" />
+                    <Plane className="w-5 h-5 text-primary" />
                     Domestic Flights
                   </CardTitle>
                 </CardHeader>
@@ -1025,11 +1025,7 @@ export default function TransportationPage() {
               </Card>
             </div>
 
-            <LuceroLegalCTA
-              variant="compact"
-              description="Need help with your visa to start exploring Buenos Aires? An immigration attorney can guide you through the process."
-              utm_content="guides-transportation"
-            />
+            <p className="text-sm text-muted-foreground"><LuceroLegalCTA variant="inline" /></p>
           </div>
         </div>
       </section>

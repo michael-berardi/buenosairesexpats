@@ -129,7 +129,7 @@ export default async function ExpatProfilePage({
       </div>
 
       {/* Hero */}
-      <section className="py-12 md:py-16 bg-gradient-to-b from-sky-50 to-white dark:from-sky-950/20 dark:to-background">
+      <section className="py-12 md:py-16 bg-gradient-to-b from-primary/5 to-background dark:from-primary/10 dark:to-background">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <div className="flex flex-wrap items-center gap-3 mb-4">
@@ -437,11 +437,7 @@ export default async function ExpatProfilePage({
       <section className="py-12">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
-            <LuceroLegalCTA
-              variant="compact"
-              description={`Inspired by ${profile.name}'s story? An immigration attorney can help with visas, residency, and all the legal paperwork for your move.`}
-              utm_content="expat-profile-detail"
-            />
+            <p className="text-sm text-muted-foreground"><LuceroLegalCTA variant="inline" /></p>
           </div>
         </div>
       </section>

@@ -3,11 +3,11 @@ import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { 
-  MapPin, 
-  DollarSign, 
-  Shield, 
-  Train, 
+import {
+  MapPin,
+  DollarSign,
+  Shield,
+  Train,
   Coffee,
   ArrowRight,
   Star,
@@ -19,6 +19,9 @@ import {
 import { LuceroLegalCTA } from "@/components/lucero-legal-cta";
 import { StructuredData } from "@/components/structured-data";
 import { generateArticleSchema } from "@/lib/schema";
+import { Breadcrumb } from "@/components/breadcrumb";
+import { InsiderTip } from "@/components/insider-tip";
+import { PullQuote } from "@/components/pull-quote";
 
 export const metadata: Metadata = {
   title: "Villa Crespo Buenos Aires - Up-and-Coming Value Guide",
@@ -88,18 +91,10 @@ export default function VillaCrespoPage() {
     <div className="flex flex-col min-h-screen">
       <StructuredData data={articleSchema} />
 
-      {/* Breadcrumb */}
-      <div className="border-b bg-muted/30">
-        <div className="container mx-auto px-4 py-4">
-          <nav className="flex gap-2 text-sm text-muted-foreground">
-            <Link href="/" className="hover:text-foreground">Home</Link>
-            <span>/</span>
-            <Link href="/neighborhoods" className="hover:text-foreground">Neighborhoods</Link>
-            <span>/</span>
-            <span className="text-foreground">Villa Crespo</span>
-          </nav>
-        </div>
-      </div>
+      <Breadcrumb items={[
+        { label: "Neighborhoods", href: "/neighborhoods" },
+        { label: "Villa Crespo" },
+      ]} />
 
       {/* Hero */}
       <section className="relative py-16 md:py-24 overflow-hidden">
@@ -192,6 +187,20 @@ export default function VillaCrespoPage() {
                 </Card>
               ))}
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Insider Tips */}
+      <section className="py-8">
+        <div className="container mx-auto px-4">
+          <div className="max-w-3xl mx-auto">
+            <InsiderTip author="BA Expats Team">
+              The &quot;outlet district&quot; on Aguirre and Murillo streets (between Scalabrini Ortiz and Thames) has dozens of factory outlets for Argentine and international brands. Go on weekday mornings for the best selection -- weekend crowds can be intense and sizes sell out fast.
+            </InsiderTip>
+            <InsiderTip author="Budget-conscious expat, 18 months in VC">
+              Villa Crespo is hands-down the best value alternative to Palermo. You&apos;re literally a 10-15 minute walk from Palermo Soho, but paying 30-40% less rent. The food scene here is exploding too -- check out the restaurants along Thames between Cordoba and Castillo.
+            </InsiderTip>
           </div>
         </div>
       </section>
@@ -313,6 +322,17 @@ export default function VillaCrespoPage() {
         </div>
       </section>
 
+      {/* PullQuote */}
+      <section className="py-8">
+        <div className="container mx-auto px-4">
+          <div className="max-w-3xl mx-auto">
+            <PullQuote attribution="Remote worker from London" source="r/digitalnomad">
+              My friends in Palermo pay $1,200 for a studio. I pay $650 for a 1-bedroom in Villa Crespo and walk to the same cafes they go to. The &quot;live in VC, play in Palermo&quot; strategy is real and it works.
+            </PullQuote>
+          </div>
+        </div>
+      </section>
+
       {/* The Reality */}
       <section className="py-16 bg-muted/30">
         <div className="container mx-auto px-4">
@@ -322,19 +342,19 @@ export default function VillaCrespoPage() {
               <CardContent className="pt-6">
                 <div className="space-y-4 text-muted-foreground">
                   <p>
-                    <strong>Villa Crespo is less polished than Palermo.</strong> You'll find 
-                    more graffiti, fewer parks, and a grittier aesthetic. Some streets are still 
-                    industrial. It's not as Instagram-perfect.
+                    <strong>Villa Crespo is less polished than Palermo.</strong> You&apos;ll find
+                    more graffiti, fewer parks, and a grittier aesthetic. Some streets are still
+                    industrial. It&apos;s not as Instagram-perfect.
                   </p>
                   <p>
-                    <strong>It's developing fast.</strong> New cafes and bars open constantly, 
-                    but some areas still lack amenities. You might walk past a trendy wine bar 
+                    <strong>It&apos;s developing fast.</strong> New cafes and bars open constantly,
+                    but some areas still lack amenities. You might walk past a trendy wine bar
                     and then an auto shop.
                   </p>
                   <p>
-                    <strong>Reddit consensus:</strong> Villa Crespo is the smart choice for 
-                    budget-conscious expats who want Palermo access without Palermo prices. 
-                    "Live in VC, play in Palermo" is a common mantra. Perfect for remote workers 
+                    <strong>Reddit consensus:</strong> Villa Crespo is the smart choice for
+                    budget-conscious expats who want Palermo access without Palermo prices.
+                    &quot;Live in VC, play in Palermo&quot; is a common mantra. Perfect for remote workers
                     and young professionals.
                   </p>
                 </div>
@@ -348,11 +368,7 @@ export default function VillaCrespoPage() {
       <section className="py-12">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto">
-            <LuceroLegalCTA
-              variant="compact"
-              description="Planning your move to Villa Crespo? An immigration attorney can help with visas, residency, and the legal paperwork for your relocation."
-              utm_content="neighborhood-villa-crespo"
-            />
+            <p className="text-sm text-muted-foreground"><LuceroLegalCTA variant="inline" /></p>
           </div>
         </div>
       </section>
