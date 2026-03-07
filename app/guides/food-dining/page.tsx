@@ -23,16 +23,22 @@ import {
 } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Food & Dining in Buenos Aires - Expat Guide 2026",
+  title: "Food & Dining Guide | Buenos Aires",
   description: "Complete guide to food and dining in Buenos Aires. Best parrillas, vegetarian options, empanada guide, cafe culture, and delivery apps for expats.",
   keywords: ["Buenos Aires food", "Argentine cuisine", "parrillas Buenos Aires", "empanadas", "BA restaurants", "food delivery Argentina"],
   alternates: {
     canonical: "https://buenosairesexpats.com/guides/food-dining",
   },
   openGraph: {
-    title: "Food & Dining in Buenos Aires - Expat Guide",
+    title: "Food & Dining Guide | Buenos Aires",
     description: "Best restaurants, parrillas, cafes, and food culture in Buenos Aires. Real prices and local tips.",
     type: "article",
+    images: [{
+      url: "/images/og-image.jpg",
+      width: 1200,
+      height: 630,
+      alt: "Food & Dining Guide - Buenos Aires"
+    }],
   },
 };
 
@@ -222,8 +228,8 @@ export default function FoodDiningPage() {
                           <td className="py-3 px-2 font-medium">{p.name}</td>
                           <td className="py-3 px-2">{p.neighborhood}</td>
                           <td className="py-3 px-2">{p.price}</td>
-                          <td className="py-3 px-2 text-sm">{p.specialty}</td>
-                          <td className="py-3 px-2 text-sm text-muted-foreground">{p.notes}</td>
+                          <td className="py-3 px-2 text-base md:text-sm">{p.specialty}</td>
+                          <td className="py-3 px-2 text-base md:text-sm text-muted-foreground">{p.notes}</td>
                         </tr>
                       ))}
                     </tbody>
@@ -234,7 +240,7 @@ export default function FoodDiningPage() {
             <div className="mt-4 p-4 bg-amber-50 dark:bg-amber-950/20 rounded-lg border border-amber-200">
               <div className="flex items-start gap-3">
                 <AlertCircle className="w-5 h-5 text-amber-600 flex-shrink-0 mt-0.5" />
-                <p className="text-sm text-amber-800 dark:text-amber-200">
+                <p className="text-base md:text-sm text-amber-800 dark:text-amber-200">
                   <strong>Pro tip:</strong> Book Don Julio and La Cabrera well in advance (weeks). 
                   For authentic local experiences, try El Desnivel or Parrilla Peña - no reservations needed.
                 </p>
@@ -261,7 +267,7 @@ export default function FoodDiningPage() {
                     <CardDescription>{emp.region}</CardDescription>
                   </CardHeader>
                   <CardContent>
-                    <p className="text-sm text-muted-foreground mb-2">{emp.filling}</p>
+                    <p className="text-base md:text-sm text-muted-foreground mb-2">{emp.filling}</p>
                     <Badge variant="outline" className="text-xs">
                       {emp.spice}
                     </Badge>
@@ -304,13 +310,13 @@ export default function FoodDiningPage() {
                     <CardDescription>{spot.neighborhood}</CardDescription>
                   </CardHeader>
                   <CardContent>
-                    <p className="text-sm text-muted-foreground">{spot.notes}</p>
+                    <p className="text-base md:text-sm text-muted-foreground">{spot.notes}</p>
                   </CardContent>
                 </Card>
               ))}
             </div>
             <div className="mt-6 p-4 bg-green-50 dark:bg-green-950/20 rounded-lg">
-              <p className="text-sm text-green-800 dark:text-green-200">
+              <p className="text-base md:text-sm text-green-800 dark:text-green-200">
                 <strong>General tip:</strong> Most restaurants have at least one vegetarian 
                 option (usually pasta or a milanesa de soja). Vegan is harder - use the 
                 HappyCow app to find dedicated spots.
@@ -337,7 +343,7 @@ export default function FoodDiningPage() {
                     <CardDescription>{cafe.neighborhood} • {cafe.vibe}</CardDescription>
                   </CardHeader>
                   <CardContent>
-                    <p className="text-sm text-muted-foreground">{cafe.notes}</p>
+                    <p className="text-base md:text-sm text-muted-foreground">{cafe.notes}</p>
                   </CardContent>
                 </Card>
               ))}
@@ -428,13 +434,13 @@ export default function FoodDiningPage() {
                       <span className="text-muted-foreground">Delivery fee:</span>
                       <span className="font-medium">{app.fees}</span>
                     </div>
-                    <p className="text-sm text-muted-foreground">{app.notes}</p>
+                    <p className="text-base md:text-sm text-muted-foreground">{app.notes}</p>
                   </CardContent>
                 </Card>
               ))}
             </div>
             <div className="mt-6 p-4 bg-blue-50 dark:bg-blue-950/20 rounded-lg">
-              <p className="text-sm text-blue-800 dark:text-blue-200">
+              <p className="text-base md:text-sm text-blue-800 dark:text-blue-200">
                 <strong>Tip:</strong> Delivery apps require a local phone number. 
                 You can pay with cash (efectivo) or link a credit card. Tipping 
                 delivery drivers is appreciated but not mandatory - round up or add $1-2.
@@ -494,7 +500,7 @@ export default function FoodDiningPage() {
             <div className="space-y-4">
               <Card>
                 <CardContent className="pt-6">
-                  <p className="text-sm text-muted-foreground italic">
+                  <p className="text-base md:text-sm text-muted-foreground italic">
                     "Food is NOT as cheap as YouTubers claim anymore. A decent meal out is 
                     $15-25 per person. Groceries are comparable to US prices for many items. 
                     The beef is still a bargain though."
@@ -504,7 +510,7 @@ export default function FoodDiningPage() {
               </Card>
               <Card>
                 <CardContent className="pt-6">
-                  <p className="text-sm text-muted-foreground italic">
+                  <p className="text-base md:text-sm text-muted-foreground italic">
                     "Dinner at 9pm is EARLY. Most Argentines eat at 10pm or later. If you 
                     show up at 7pm, you'll be eating alone."
                   </p>
@@ -513,7 +519,7 @@ export default function FoodDiningPage() {
               </Card>
               <Card>
                 <CardContent className="pt-6">
-                  <p className="text-sm text-muted-foreground italic">
+                  <p className="text-base md:text-sm text-muted-foreground italic">
                     "Skip the tourist parrillas in Puerto Madero. Go to El Desnivel in San 
                     Telmo or any neighborhood parrilla with locals. Half the price, twice the authenticity."
                   </p>

@@ -21,12 +21,18 @@ import {
 } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Palermo Dining Guide | Don Julio & World-Class Restaurants | Buenos Aires",
+  title: "Palermo Dining Guide | Don Julio",
   description: "The ultimate guide to Palermo's culinary scene. Home to Don Julio, Best Restaurant in Latin America 2024, and the vibrant heart of Buenos Aires dining.",
   keywords: ["Palermo restaurants", "Don Julio Buenos Aires", "Crizia restaurant", "Michelin star Palermo", "best restaurants BA"],
   openGraph: {
-    title: "Palermo Dining Guide | Don Julio & World-Class Restaurants",
+    title: "Palermo Dining Guide | Don Julio",
     description: "Discover Palermo's legendary dining scene, including Don Julio - Best Restaurant in Latin America 2024.",
+    images: [{
+      url: "/images/og-image.jpg",
+      width: 1200,
+      height: 630,
+      alt: "Palermo Dining Guide - Buenos Aires"
+    }],
   },
   alternates: {
     canonical: "https://buenosairesexpats.com/dining/palermo",
@@ -237,7 +243,7 @@ export default function PalermoDiningPage() {
               The beating heart of Buenos Aires&apos; culinary scene. Home to Don Julio, 
               Best Restaurant in Latin America 2024, and the city&apos;s most vibrant dining culture.
             </p>
-            <div className="flex flex-wrap gap-4 text-sm text-stone-400">
+            <div className="flex flex-wrap gap-4 text-sm text-stone-300">
               <span className="flex items-center gap-2">
                 <Star className="w-4 h-4 text-amber-400" />
                 4 Michelin Stars
@@ -444,21 +450,12 @@ export default function PalermoDiningPage() {
         </div>
       </section>
 
-      {/* Legal CTA */}
-      <section className="py-12">
-        <div className="container mx-auto px-4">
-          <div className="max-w-3xl mx-auto">
-            <p className="text-sm text-muted-foreground"><LuceroLegalCTA variant="inline" /></p>
-          </div>
-        </div>
-      </section>
-
       {/* CTA */}
       <section className="py-16 bg-[#1c1917] text-white">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto text-center">
             <h2 className="font-serif text-3xl font-bold mb-4">Explore More Neighborhoods</h2>
-            <p className="text-stone-400 mb-8">
+            <p className="text-stone-300 mb-8">
               Discover the best dining in Recoleta and Belgrano.
             </p>
             <div className="flex flex-wrap justify-center gap-4">
@@ -473,6 +470,7 @@ export default function PalermoDiningPage() {
                 </Link>
               </Button>
             </div>
+            <p className="text-xs text-stone-400 mt-6 [&_span]:text-inherit [&_a]:text-stone-300"><LuceroLegalCTA variant="inline" /></p>
           </div>
         </div>
       </section>

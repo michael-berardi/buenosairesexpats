@@ -21,12 +21,18 @@ import {
 } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Belgrano Dining Guide | Hidden Gems & Classic Institutions | Buenos Aires",
+  title: "Belgrano Dining Guide | Hidden Gems",
   description: "Discover Belgrano's finest restaurants. Sophisticated dining in a residential setting, from classic Argentine institutions to contemporary culinary gems.",
   keywords: ["Belgrano restaurants", "Corte Comedor", "Roux Buenos Aires", "fine dining Belgrano", "Buenos Aires dining"],
   openGraph: {
-    title: "Belgrano Dining Guide | Hidden Gems & Classic Institutions",
+    title: "Belgrano Dining Guide | Hidden Gems",
     description: "Explore Belgrano's sophisticated dining scene, from classic Argentine institutions to contemporary gems.",
+    images: [{
+      url: "/images/og-image.jpg",
+      width: 1200,
+      height: 630,
+      alt: "Belgrano Dining Guide - Buenos Aires"
+    }],
   },
   alternates: {
     canonical: "https://buenosairesexpats.com/dining/belgrano",
@@ -202,7 +208,7 @@ export default function BelgranoDiningPage() {
               Sophisticated dining in Buenos Aires&apos; most elegant residential neighborhood.
               Discover hidden gems and classic institutions beloved by locals.
             </p>
-            <div className="flex flex-wrap gap-4 text-sm text-stone-400">
+            <div className="flex flex-wrap gap-4 text-sm text-stone-300">
               <span className="flex items-center gap-2">
                 <ChefHat className="w-4 h-4 text-emerald-400" />
                 50 Best Restaurants
@@ -396,21 +402,12 @@ export default function BelgranoDiningPage() {
         </div>
       </section>
 
-      {/* Legal CTA */}
-      <section className="py-12">
-        <div className="container mx-auto px-4">
-          <div className="max-w-3xl mx-auto">
-            <p className="text-sm text-muted-foreground"><LuceroLegalCTA variant="inline" /></p>
-          </div>
-        </div>
-      </section>
-
       {/* CTA */}
       <section className="py-16 bg-[#1c1917] text-white">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto text-center">
             <h2 className="font-serif text-3xl font-bold mb-4">Explore More Neighborhoods</h2>
-            <p className="text-stone-400 mb-8">
+            <p className="text-stone-300 mb-8">
               Discover the best dining in Recoleta and Palermo.
             </p>
             <div className="flex flex-wrap justify-center gap-4">
@@ -425,6 +422,7 @@ export default function BelgranoDiningPage() {
                 </Link>
               </Button>
             </div>
+            <p className="text-xs text-stone-400 mt-6 [&_span]:text-inherit [&_a]:text-stone-300"><LuceroLegalCTA variant="inline" /></p>
           </div>
         </div>
       </section>

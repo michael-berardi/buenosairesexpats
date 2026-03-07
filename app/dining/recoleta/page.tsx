@@ -23,12 +23,18 @@ import {
 } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Recoleta Dining Guide | Michelin Stars & Fine Dining | Buenos Aires",
+  title: "Recoleta Dining Guide | Michelin Stars",
   description: "The definitive guide to Recoleta's finest restaurants. Home to Aramburu, Argentina's only two-Michelin-starred restaurant, and elegant dining at Four Seasons.",
   keywords: ["Recoleta restaurants", "Aramburu Buenos Aires", "Elena Four Seasons", "Michelin star Recoleta", "fine dining Buenos Aires"],
   openGraph: {
-    title: "Recoleta Dining Guide | Michelin Stars & Fine Dining",
+    title: "Recoleta Dining Guide | Michelin Stars",
     description: "Discover Recoleta's finest restaurants, including Aramburu - Argentina's only two-Michelin-starred restaurant.",
+    images: [{
+      url: "/images/og-image.jpg",
+      width: 1200,
+      height: 630,
+      alt: "Recoleta Dining Guide - Buenos Aires"
+    }],
   },
   alternates: {
     canonical: "https://buenosairesexpats.com/dining/recoleta",
@@ -230,7 +236,7 @@ export default function RecoletaDiningPage() {
               <span>Michelin Guide 2025</span>
             </div>
 
-            <h1 className="font-serif text-5xl md:text-7xl font-bold mb-6 tracking-tight">
+            <h1 className="font-serif text-4xl md:text-5xl lg:text-6xl font-bold mb-6 tracking-tight">
               <span className="text-white">Recoleta</span>
               <span className="block text-transparent bg-clip-text bg-gradient-to-r from-amber-400 to-amber-600 mt-2">
                 Dining Guide
@@ -461,21 +467,12 @@ export default function RecoletaDiningPage() {
         </div>
       </section>
 
-      {/* Legal CTA */}
-      <section className="py-12">
-        <div className="container mx-auto px-4">
-          <div className="max-w-3xl mx-auto">
-            <p className="text-sm text-muted-foreground"><LuceroLegalCTA variant="inline" /></p>
-          </div>
-        </div>
-      </section>
-
       {/* CTA */}
       <section className="py-16 bg-[#1c1917] text-white">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto text-center">
             <h2 className="font-serif text-3xl font-bold mb-4">Explore More Neighborhoods</h2>
-            <p className="text-stone-400 mb-8">
+            <p className="text-stone-300 mb-8">
               Discover the best dining in Palermo and Belgrano.
             </p>
             <div className="flex flex-wrap justify-center gap-4">
@@ -492,6 +489,7 @@ export default function RecoletaDiningPage() {
                 </Link>
               </Button>
             </div>
+            <p className="text-xs text-stone-400 mt-6 [&_span]:text-inherit [&_a]:text-stone-300"><LuceroLegalCTA variant="inline" /></p>
           </div>
         </div>
       </section>

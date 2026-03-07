@@ -18,11 +18,11 @@ import {
 } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Buenos Aires Dining Guide | Michelin-Starred & Fine Dining",
+  title: "Buenos Aires Dining Guide",
   description: "The definitive dining guide to Buenos Aires. Michelin-starred restaurants, world-class parrillas, and hidden gems in Recoleta, Palermo, and Belgrano.",
   keywords: ["Buenos Aires dining", "Michelin star Argentina", "best restaurants Buenos Aires", "Don Julio", "Aramburu", "fine dining BA"],
   openGraph: {
-    title: "Buenos Aires Dining Guide | Michelin-Starred & Fine Dining",
+    title: "Buenos Aires Dining Guide",
     description: "The definitive dining guide to Buenos Aires. Michelin-starred restaurants and world-class culinary experiences.",
     images: [{
       url: "/images/og-image.jpg",
@@ -149,7 +149,7 @@ export default function DiningGuidePage() {
             </div>
 
             {/* Main title */}
-            <h1 className="font-serif text-5xl md:text-7xl lg:text-8xl font-bold mb-6 tracking-tight">
+            <h1 className="font-serif text-4xl md:text-5xl lg:text-6xl font-bold mb-6 tracking-tight">
               <span className="text-white">Buenos Aires</span>
               <span className="block text-accent mt-2">
                 Dining Guide
@@ -388,68 +388,44 @@ export default function DiningGuidePage() {
         </div>
       </section>
 
-      {/* Practical Guide Cross-link */}
-      <section className="section-padding bg-muted">
-        <div className="container mx-auto px-4">
-          <div className="max-w-3xl mx-auto text-center">
-            <h2 className="font-serif heading-sm mb-4 text-foreground">
-              New to Buenos Aires Dining?
-            </h2>
-            <p className="text-body text-lg mb-6">
-              Our practical food guide covers everyday dining — parrillas, empanadas, cafe culture,
-              delivery apps, grocery shopping, and real prices.
-            </p>
-            <Button variant="outline" size="lg" asChild>
-              <Link href="/guides/food-dining">
-                <Utensils className="w-5 h-5 mr-2" />
-                Read the Practical Food Guide
-                <ArrowRight className="w-4 h-4 ml-2" />
-              </Link>
-            </Button>
-          </div>
-        </div>
-      </section>
-
-      {/* Legal CTA */}
-      <section className="py-12">
-        <div className="container mx-auto px-4">
-          <div className="max-w-3xl mx-auto">
-            <p className="text-sm text-muted-foreground"><LuceroLegalCTA variant="inline" /></p>
-          </div>
-        </div>
-      </section>
-
       {/* CTA Section */}
-      <section className="section-padding bg-primary text-white">
+      <section className="py-16 bg-primary text-white">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="font-serif heading-md mb-4">
-              Ready to Experience Buenos Aires&apos; Finest?
+              Explore by Neighborhood
             </h2>
             <p className="text-lg text-white/90 mb-8 max-w-2xl mx-auto">
-              Start exploring our curated selection of the city&apos;s best restaurants, 
-              from Michelin-starred institutions to hidden local gems.
+              Dive into our curated neighborhood guides — from Michelin-starred institutions to hidden local gems.
             </p>
-            <div className="flex flex-wrap justify-center gap-4">
+            <div className="flex flex-wrap justify-center gap-4 mb-8">
               <Button size="lg" variant="secondary" className="px-8" asChild>
                 <Link href="/dining/recoleta">
                   <Star className="w-5 h-5 mr-2" />
-                  Explore Recoleta
+                  Recoleta
                 </Link>
               </Button>
               <Button size="lg" variant="outline" className="border-white/30 bg-white/10 text-white hover:bg-white/20 hover:text-white px-8" asChild>
                 <Link href="/dining/palermo">
                   <MapPin className="w-5 h-5 mr-2" />
-                  Explore Palermo
+                  Palermo
                 </Link>
               </Button>
               <Button size="lg" variant="outline" className="border-white/30 bg-white/10 text-white hover:bg-white/20 hover:text-white px-8" asChild>
                 <Link href="/dining/belgrano">
                   <MapPin className="w-5 h-5 mr-2" />
-                  Explore Belgrano
+                  Belgrano
                 </Link>
               </Button>
             </div>
+            <p className="text-sm text-white/60 mb-4">
+              New to Buenos Aires?{" "}
+              <Link href="/guides/food-dining" className="text-white/80 underline hover:text-white">
+                Read the practical food guide
+              </Link>{" "}
+              for everyday dining, prices, and delivery apps.
+            </p>
+            <p className="text-xs text-white/40 [&_span]:text-inherit [&_a]:text-white/60"><LuceroLegalCTA variant="inline" /></p>
           </div>
         </div>
       </section>
