@@ -87,7 +87,7 @@ const expenseCategories = [
     title: "Food & Dining",
     description: "Reddit reality: Not as cheap as YouTubers claim. Western European prices for many things now. Beef is still a bargain.",
     items: [
-      { name: "Empanada at local spot", price: "$2.50-4" },
+      { name: "Empanada at local spot", price: "$1-2" },
       { name: "Coffee at café", price: "$3.50-6" },
       { name: "Burger with fries", price: "$12-17" },
       { name: "Mid-range dinner for two", price: "$60-95" },
@@ -411,7 +411,7 @@ export default function CostOfLivingPage() {
             <h2 className="font-serif heading-md mb-8 text-center">Money-Saving Tips</h2>
             <InsiderTip>
               Under Milei&apos;s economic reforms, the gap between official and blue dollar rates has narrowed
-              dramatically in 2026 (just 5-10% vs. 100%+ in previous years). The MEP dollar is now the main
+              dramatically in 2026 (just 2-5% vs. 100%+ in previous years). The MEP dollar is now the main
               legal way to buy USD at market rates. The blue dollar still exists but the arbitrage advantage
               is much smaller than before. Understand the new dollar reality before you arrive.
             </InsiderTip>

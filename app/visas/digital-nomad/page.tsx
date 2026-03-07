@@ -73,7 +73,7 @@ const applicationSteps = [
   {
     step: 3,
     title: "Pay the Fee",
-    description: "Pay the visa application fee (approximately $100-150 USD, subject to change).",
+    description: "Pay the visa application fee (approximately $120-400 USD depending on consulate and nationality).",
   },
   {
     step: 4,
@@ -191,7 +191,7 @@ export default function DigitalNomadVisaPage() {
               </div>
               <div className="flex items-center gap-2">
                 <DollarSign className="w-4 h-4 text-primary-foreground/70" />
-                <span>~$100-150 fee</span>
+                <span>~$120-400 fee</span>
               </div>
               <div className="flex items-center gap-2">
                 <CheckCircle className="w-4 h-4 text-primary-foreground/70" />
@@ -216,7 +216,7 @@ export default function DigitalNomadVisaPage() {
               <div className="stat-label">Days Valid</div>
             </div>
             <div className="stat-card">
-              <div className="stat-value">$100-150</div>
+              <div className="stat-value">$120-400</div>
               <div className="stat-label">Application Fee</div>
             </div>
             <div className="stat-card">

@@ -34,7 +34,7 @@ const rentalSteps = [
   {
     step: 1,
     title: "Set Your Budget",
-    description: "Most landlords now quote rent in USD. Budget for 1-2 months security deposit and potential guarantee (garantía) requirements.",
+    description: "Most landlords now quote rent in USD. Budget for 2-3 months security deposit and potential guarantee (garantía) requirements.",
   },
   {
     step: 2,

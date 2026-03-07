@@ -5,7 +5,7 @@ import { Mail } from "lucide-react";
 import { EditorialHero } from "@/components/editorial-hero";
 
 export const metadata: Metadata = {
-  title: "About Us - Buenos Aires Expats",
+  title: "About Us",
   description: "Learn about Buenos Aires Expats, your trusted resource for moving to and living in Argentina. Our mission, values, and team.",
   keywords: ["about Buenos Aires Expats", "Argentina expat resource", "Buenos Aires guide"],
   alternates: {

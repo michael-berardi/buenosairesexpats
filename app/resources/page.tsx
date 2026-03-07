@@ -101,12 +101,12 @@ const checklistItems = [
 ];
 
 const serviceCategories = [
-  { name: "Immigration Lawyers", icon: Scale, count: 12 },
-  { name: "Real Estate Agents", icon: Home, count: 8 },
-  { name: "Accountants", icon: Briefcase, count: 6 },
-  { name: "Healthcare Providers", icon: Heart, count: 15 },
-  { name: "Language Schools", icon: GraduationCap, count: 10 },
-  { name: "Coworking Spaces", icon: Building, count: 14 },
+  { name: "Immigration Lawyers", icon: Scale },
+  { name: "Real Estate Agents", icon: Home },
+  { name: "Accountants", icon: Briefcase },
+  { name: "Healthcare Providers", icon: Heart },
+  { name: "Language Schools", icon: GraduationCap },
+  { name: "Coworking Spaces", icon: Building },
 ];
 
 export default function ResourcesPage() {
@@ -232,7 +232,7 @@ export default function ResourcesPage() {
             <div className="text-center mb-12">
               <h2 className="text-3xl font-bold mb-4">Service Directory</h2>
               <p className="text-muted-foreground">
-                Verified professionals who specialize in helping expats. All providers vetted by our team.
+                Categories of professionals who specialize in helping expats. Full directory in development.
               </p>
             </div>
 
@@ -246,7 +246,7 @@ export default function ResourcesPage() {
                       </div>
                       <div>
                         <h3 className="font-semibold">{category.name}</h3>
-                        <p className="text-sm text-muted-foreground">{category.count} verified providers</p>
+                        <p className="text-sm text-muted-foreground">Directory coming soon</p>
                       </div>
                     </div>
                   </CardContent>
@@ -269,8 +269,8 @@ export default function ResourcesPage() {
           <div className="max-w-3xl mx-auto text-center">
             <h2 className="text-3xl font-bold mb-4">Trusted Immigration Help</h2>
             <p className="text-muted-foreground mb-8">
-              Complex immigration matters require professional guidance. We&apos;ve worked with a 
-              trusted partner who specializes in Argentine visas and has helped many of our readers.
+              Complex immigration matters require professional guidance. This site is supported by
+              Lucero Legal, a Buenos Aires immigration law firm that specializes in helping expats.
             </p>
             <Card className="text-left">
               <CardContent className="pt-6">

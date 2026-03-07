@@ -7,14 +7,14 @@ import { StructuredData } from "@/components/structured-data";
 import { generateBreadcrumbSchema } from "@/lib/schema";
 
 export const metadata: Metadata = {
-  title: "Terms of Service - Buenos Aires Expats",
+  title: "Terms of Service",
   description: "Our terms of service outline the rules and regulations for using the Buenos Aires Expats website.",
   robots: {
     index: true,
     follow: true,
   },
   openGraph: {
-    title: "Terms of Service - Buenos Aires Expats",
+    title: "Terms of Service",
     description: "Our terms of service outline the rules and regulations for using Buenos Aires Expats.",
   },
   alternates: {

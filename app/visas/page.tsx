@@ -33,7 +33,7 @@ const visaTypes = [
     name: "Digital Nomad Visa",
     href: "/visas/digital-nomad",
     duration: "180 days",
-    cost: "$100-150",
+    cost: "$120-400",
     processing: "Typically 2-4 weeks",
     bestFor: ["Remote workers", "Freelancers", "Digital entrepreneurs"],
     description: "Work remotely from Argentina for up to 6 months. Perfect for location-independent professionals.",

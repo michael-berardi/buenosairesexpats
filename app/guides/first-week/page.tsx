@@ -118,14 +118,14 @@ const days = [
         detail:
           "Skip the airport exchange counters (terrible rates). Withdraw a small amount from an ATM for immediate needs (taxi, food). For real money, use Western Union (best rates for USD/ARS), a cueva (informal exchange -- ask your Airbnb host), or bring physical USD and exchange at a cambio in the city center.",
         proTip:
-          "The 'blue dollar' rate is significantly better than official bank rates. As of March 2026, the gap is smaller than it was in 2023-2024, but you still get 5-15% more at cambios and Western Union than at banks or ATMs.",
+          "The 'blue dollar' gap has narrowed dramatically under Milei's reforms. As of March 2026, the gap is only 2-5%, down from over 100% in 2023. Western Union and cambios still offer slightly better rates than banks or ATMs, but the difference is much smaller now.",
       },
       {
         title: "Your first meal: empanadas",
         icon: Utensils,
         time: "30 minutes",
         detail:
-          "Don't overthink it. Walk to the nearest empanada shop and order 'una docena variada' (a dozen mixed). Standards: carne (beef), jamon y queso (ham and cheese), humita (corn). Price: about $3-5 for a dozen. Pair with a Quilmes beer or a Malbec. Welcome to Buenos Aires.",
+          "Don't overthink it. Walk to the nearest empanada shop and order 'una docena variada' (a dozen mixed). Standards: carne (beef), jamon y queso (ham and cheese), humita (corn). Price: about $10-15 for a dozen at a neighborhood spot. Pair with a Quilmes beer or a Malbec. Welcome to Buenos Aires.",
         proTip:
           "Locals eat empanadas with their hands. No fork required. If the empanada is well-made, it won't leak. The creased edge (repulgue) pattern often indicates the filling -- but honestly, just ask.",
       },
@@ -151,7 +151,7 @@ const days = [
         icon: Bus,
         time: "15 minutes",
         detail:
-          "Buy a SUBE card at any subway (subte) station or designated kiosk. Costs about $2-3. Load it with credit (you can use MercadoPago!). This one card works on ALL public transport: subte, buses (colectivos), and trains. A single ride costs $0.15-0.30 -- absurdly cheap.",
+          "Buy a SUBE card at any subway (subte) station or designated kiosk. Costs about $2-3. Load it with credit (you can use MercadoPago!). This one card works on ALL public transport: subte, buses (colectivos), and trains. A single ride costs $0.30-0.60 -- absurdly cheap.",
         proTip:
           "The BA subte runs roughly 5 AM to 11 PM (shorter on Sundays). After that, night buses (colectivos nocturnos) run key routes. The bus system is actually more extensive than the subway -- learn to love it.",
       },
@@ -291,7 +291,7 @@ const days = [
         icon: Heart,
         time: "1 hour",
         detail:
-          "If you're staying more than a month, get a prepaga (private health plan). Top options: OSDE (premium, $150-300/month), Swiss Medical ($120-250/month), Galeno ($100-200/month). They cover doctor visits, specialists, prescriptions, and emergency care. Many have English-speaking staff.",
+          "If you're staying more than a month, get a prepaga (private health plan). Top options: OSDE (premium, $240-600/month), Swiss Medical ($220-540/month), Galeno ($120-300/month). They cover doctor visits, specialists, prescriptions, and emergency care. Many have English-speaking staff.",
         proTip:
           "Public hospitals are free for everyone (including foreigners) but wait times are long. For urgent care, go to a guardia (ER) at a private hospital like Hospital Aleman, Hospital Britanico, or Hospital Italiano. They'll treat you and bill later.",
       },

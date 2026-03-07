@@ -75,7 +75,7 @@ export const metadata: Metadata = {
 
 const stats = [
   { value: "6", label: "Barrios", labelFull: "Neighborhoods Reviewed" },
-  { value: "40+", label: "Guides", labelFull: "Local Guides" },
+  { value: "15+", label: "Guides", labelFull: "In-Depth Guides" },
   { value: "2026", label: "Prices", labelFull: "Real 2026 Prices" },
   { value: "24", label: "Stories", labelFull: "Expat Stories" },
 ];
@@ -125,7 +125,7 @@ const contentAreas = [
     icon: Users,
     title: "Expat Stories",
     description:
-      "24 real profiles from Americans, Brits, Australians, and Brazilians sharing their honest BA experiences.",
+      "Composite portraits from Americans, Brits, Australians, and Brazilians reflecting real BA experiences.",
     href: "/stories",
     cta: "Read stories",
   },
@@ -667,8 +667,8 @@ export default function Home() {
             ))}
           </div>
           <p className="text-center text-xs text-muted-foreground mt-6">
-            Quotes reflect common experiences shared across expat forums and
-            communities.
+            Quotes are paraphrased from common experiences shared across expat
+            forums and communities. Not direct quotes from individual users.
           </p>
           <div className="text-center mt-8">
             <Button asChild variant="outline" className="btn-outline">
@@ -687,9 +687,9 @@ export default function Home() {
       <section className="section-padding bg-muted/30">
         <div className="container mx-auto px-5 sm:px-6">
           <div className="max-w-4xl mx-auto text-center">
-            <h2 className="font-serif text-3xl md:text-4xl font-bold mb-4">Real Expat Stories</h2>
+            <h2 className="font-serif text-3xl md:text-4xl font-bold mb-4">Expat Stories</h2>
             <p className="text-muted-foreground text-lg mb-8">
-              24 honest, first-person accounts from expats in Buenos Aires — their wins, struggles, and what they wish someone had told them before moving.
+              Composite portraits based on real expat experiences in Buenos Aires — their wins, struggles, and what they wish someone had told them before moving.
             </p>
             <Button asChild className="bg-primary hover:bg-primary/90 text-primary-foreground">
               <Link href="/stories">

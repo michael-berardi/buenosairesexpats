@@ -122,7 +122,7 @@ const neighborhoodFAQs = [
   },
   {
     question: "What's the average rent in Palermo in 2026?",
-    answer: "In 2026, a 1-bedroom apartment in Palermo typically costs $950-1,400 USD per month. Studios range from $700-1,050, while 2-bedroom apartments run $1,400-2,100. Most landlords quote rent in USD and require a security deposit of 1-2 months upfront.",
+    answer: "In 2026, a 1-bedroom apartment in Palermo typically costs $950-1,400 USD per month. Studios range from $700-1,050, while 2-bedroom apartments run $1,400-2,100. Most landlords quote rent in USD and require a security deposit of 2-3 months upfront.",
   },
   {
     question: "Is San Telmo safe at night?",
@@ -215,7 +215,7 @@ export default function NeighborhoodsPage() {
       {/* Insider Tip about Rent */}
       <div className="container mx-auto px-5 py-4">
         <InsiderTip>
-          Rent prices in BA are almost always quoted in USD now. Budget $600-1,200/month for a decent 1-bedroom in a safe neighborhood. The security deposit is typically 2 months upfront.
+          Rent prices in BA are almost always quoted in USD now. Budget $600-1,200/month for a decent 1-bedroom in a safe neighborhood. The security deposit is typically 2-3 months upfront.
         </InsiderTip>
       </div>
 
@@ -356,7 +356,7 @@ export default function NeighborhoodsPage() {
                 <CardContent>
                   <p className="text-muted-foreground">
                     Most landlords now quote rent in USD. While this protects against inflation,
-                    it means higher upfront costs. Factor in security deposit (usually 1-2 months) and
+                    it means higher upfront costs. Factor in security deposit (usually 2-3 months) and
                     potential guarantee (garantia) requirements.
                   </p>
                 </CardContent>

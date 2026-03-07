@@ -7,14 +7,14 @@ import { StructuredData } from "@/components/structured-data";
 import { generateBreadcrumbSchema } from "@/lib/schema";
 
 export const metadata: Metadata = {
-  title: "Privacy Policy - Buenos Aires Expats",
+  title: "Privacy Policy",
   description: "Our privacy policy explains how we collect, use, and protect your personal information when you use Buenos Aires Expats.",
   robots: {
     index: true,
     follow: true,
   },
   openGraph: {
-    title: "Privacy Policy - Buenos Aires Expats",
+    title: "Privacy Policy",
     description: "Our privacy policy explains how we collect, use, and protect your personal information.",
   },
   alternates: {

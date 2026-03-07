@@ -130,7 +130,7 @@ export default function BankingPage() {
                 <p className="text-muted-foreground mb-4">
                   Argentina has historically had multiple exchange rates, but under President Milei&apos;s
                   economic reforms, the landscape has changed dramatically. The gap between the official
-                  and blue dollar rates has narrowed to just 5-10% in 2026, down from over 100% in
+                  and blue dollar rates has narrowed to just 2-5% in 2026, down from over 100% in
                   previous years. The government&apos;s crawling peg devaluation and capital controls
                   relaxation have brought the rates much closer together.
                 </p>
@@ -152,7 +152,7 @@ export default function BankingPage() {
                   <div className="p-4 bg-blue-50 dark:bg-blue-950/20 rounded-lg border border-blue-200">
                     <div className="font-semibold mb-2 text-blue-700 dark:text-blue-300">Blue Rate</div>
                     <p className="text-sm text-muted-foreground">
-                      Still exists but the gap is now only 5-10%. Less relevant
+                      Still exists but the gap is now only 2-5%. Less relevant
                       than before. Cuevas still operate but the arbitrage advantage is minimal.
                     </p>
                   </div>
@@ -324,13 +324,13 @@ export default function BankingPage() {
                     <CreditCard className="w-5 h-5 text-primary" />
                     Uala
                   </CardTitle>
-                  <CardDescription>Digital bank, foreigner-friendly</CardDescription>
+                  <CardDescription>Digital bank, popular with younger users</CardDescription>
                 </CardHeader>
                 <CardContent>
                   <ul className="space-y-2 text-sm text-muted-foreground">
                     <li className="flex items-start gap-2">
                       <CheckCircle className="w-4 h-4 text-green-500 flex-shrink-0 mt-0.5" />
-                      <span>Open account with passport (no DNI required)</span>
+                      <span>Easy onboarding (DNI required, but process is streamlined)</span>
                     </li>
                     <li className="flex items-start gap-2">
                       <CheckCircle className="w-4 h-4 text-green-500 flex-shrink-0 mt-0.5" />

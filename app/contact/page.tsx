@@ -353,7 +353,7 @@ export default function ContactPage() {
                   </CardHeader>
                   <CardContent>
                     <p className="text-muted-foreground mb-4">
-                      For visa and immigration help, we recommend a trusted partner who has assisted many of our readers:
+                      For visa and immigration help, this site is supported by Lucero Legal, a Buenos Aires immigration law firm:
                     </p>
                     <Button asChild variant="outline">
                       <Link href="https://lucerolegal.org?utm_source=buenosairesexpats&utm_medium=contact" target="_blank" rel="noopener noreferrer">
