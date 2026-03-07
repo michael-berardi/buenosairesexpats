@@ -24,14 +24,6 @@ export const metadata: Metadata = {
     template: "%s | Buenos Aires Expats",
   },
   description: "The hyper-local guide to living in Buenos Aires. Neighborhood-by-neighborhood reviews, real 2026 prices, barrio comparisons, coworking spots, dining guides, and street-level tips from expats actually living in BA.",
-  alternates: {
-    canonical: "https://buenosairesexpats.com",
-    languages: {
-      'en': 'https://buenosairesexpats.com',
-      'en-US': 'https://buenosairesexpats.com',
-      'x-default': 'https://buenosairesexpats.com',
-    },
-  },
   keywords: ["Buenos Aires expats", "living in Buenos Aires", "Palermo apartments", "BA digital nomad", "Buenos Aires neighborhoods", "Recoleta expat", "San Telmo living", "coworking Buenos Aires", "Buenos Aires rent prices 2026", "barrio guide BA", "expat life Palermo", "Buenos Aires cost of living"],
   authors: [{ name: "Buenos Aires Expats" }],
   creator: "Buenos Aires Expats",

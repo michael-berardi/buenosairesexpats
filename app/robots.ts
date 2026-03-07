@@ -7,7 +7,7 @@ export default function robots(): MetadataRoute.Robots {
     rules: {
       userAgent: '*',
       allow: '/',
-      disallow: ['/api/', '/_next/', '/private/'],
+      disallow: ['/api/', '/private/'],
     },
     sitemap: 'https://buenosairesexpats.com/sitemap.xml',
   };
