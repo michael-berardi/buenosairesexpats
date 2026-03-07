@@ -44,17 +44,17 @@ export const metadata: Metadata = {
     title: "Buenos Aires Expats | Your Insider City Guide to BA Life",
     description: "Neighborhood reviews, real rent prices, coworking spots, dining guides, and street-level tips. The hyper-local guide to Buenos Aires for expats and digital nomads.",
     images: [{
-      url: '/images/og-image.jpg',
+      url: '/images/og-image.png',
       width: 1200,
       height: 630,
-      alt: 'Buenos Aires Expats - Your insider guide to life in BA',
+      alt: 'Buenos Aires Expats - Your insider city guide to BA life',
     }],
   },
   twitter: {
     card: "summary_large_image",
     title: "Buenos Aires Expats | Your Insider City Guide to BA Life",
     description: "Neighborhood reviews, real rent prices, coworking spots, dining guides, and street-level tips. The hyper-local guide to Buenos Aires.",
-    images: ['/images/og-image.jpg'],
+    images: ['/images/og-image.png'],
   },
   robots: {
     index: true,
