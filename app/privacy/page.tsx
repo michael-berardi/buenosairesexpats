@@ -16,6 +16,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Privacy Policy",
     description: "Our privacy policy explains how we collect, use, and protect your personal information.",
+    images: [{ url: '/images/og-image.jpg', width: 1200, height: 630, alt: 'Buenos Aires Expats' }],
   },
   alternates: {
     canonical: "https://buenosairesexpats.com/privacy",

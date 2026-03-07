@@ -21,10 +21,10 @@ const playfair = Playfair_Display({
 
 export const metadata: Metadata = {
   title: {
-    default: "Buenos Aires Expats | Your Insider City Guide to BA Life",
+    default: "Buenos Aires Expats | Insider City Guide to BA Life",
     template: "%s | Buenos Aires Expats",
   },
-  description: "The hyper-local guide to living in Buenos Aires. Neighborhood-by-neighborhood reviews, real 2026 prices, barrio comparisons, coworking spots, dining guides, and street-level tips from expats actually living in BA.",
+  description: "Hyper-local guide to Buenos Aires. Neighborhood reviews, real 2026 rent prices, barrio quiz, coworking spots, dining guides, and tips from expats living in BA.",
   keywords: ["Buenos Aires expats", "living in Buenos Aires", "Palermo apartments", "BA digital nomad", "Buenos Aires neighborhoods", "Recoleta expat", "San Telmo living", "coworking Buenos Aires", "Buenos Aires rent prices 2026", "barrio guide BA", "expat life Palermo", "Buenos Aires cost of living"],
   authors: [{ name: "Buenos Aires Expats" }],
   creator: "Buenos Aires Expats",
@@ -34,8 +34,8 @@ export const metadata: Metadata = {
     locale: "en_US",
     url: "https://buenosairesexpats.com",
     siteName: "Buenos Aires Expats",
-    title: "Buenos Aires Expats | Your Insider City Guide to BA Life",
-    description: "Neighborhood reviews, real rent prices, coworking spots, dining guides, and street-level tips. The hyper-local guide to Buenos Aires for expats and digital nomads.",
+    title: "Buenos Aires Expats | Insider City Guide to BA Life",
+    description: "Neighborhood reviews, real rent prices, coworking spots, dining guides, and street-level tips for expats in Buenos Aires.",
     images: [{
       url: '/images/og-image.png',
       width: 1200,
@@ -45,8 +45,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Buenos Aires Expats | Your Insider City Guide to BA Life",
-    description: "Neighborhood reviews, real rent prices, coworking spots, dining guides, and street-level tips. The hyper-local guide to Buenos Aires.",
+    title: "Buenos Aires Expats | Insider City Guide to BA Life",
+    description: "Neighborhood reviews, real rent prices, coworking spots, dining guides, and street-level tips for expats in Buenos Aires.",
     images: ['/images/og-image.png'],
   },
   robots: {

@@ -26,6 +26,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Healthcare in Argentina for Expats",
     description: "Complete guide to healthcare in Argentina for expats. Health insurance options, finding doctors, and hospital recommendations.",
+    images: [{ url: '/images/og-image.jpg', width: 1200, height: 630, alt: 'Buenos Aires Expats' }],
   },
   alternates: {
     canonical: "https://buenosairesexpats.com/healthcare",

@@ -16,6 +16,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Terms of Service",
     description: "Our terms of service outline the rules and regulations for using Buenos Aires Expats.",
+    images: [{ url: '/images/og-image.jpg', width: 1200, height: 630, alt: 'Buenos Aires Expats' }],
   },
   alternates: {
     canonical: "https://buenosairesexpats.com/terms",

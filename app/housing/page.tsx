@@ -24,6 +24,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Housing & Renting in Argentina 2026",
     description: "Complete guide to renting apartments in Buenos Aires. Contracts, guarantees, neighborhoods, and avoiding scams.",
+    images: [{ url: '/images/og-image.jpg', width: 1200, height: 630, alt: 'Buenos Aires Expats' }],
   },
   alternates: {
     canonical: "https://buenosairesexpats.com/housing",

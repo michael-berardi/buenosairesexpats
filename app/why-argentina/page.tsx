@@ -20,11 +20,11 @@ import {
 } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Why Expats Are Moving to Buenos Aires - Real Talk",
+  title: "Why Expats Move to Buenos Aires",
   description: "Honest insights from expats who made the move. The good, the bad, and what Reddit won't tell you about life in Buenos Aires.",
   keywords: ["moving to Buenos Aires", "expats Argentina", "Buenos Aires expat life", "Buenos Aires vs USA", "expat reality"],
   openGraph: {
-    title: "Why Expats Are Moving to Buenos Aires - Real Talk",
+    title: "Why Expats Move to Buenos Aires",
     description: "Honest insights from expats who made the move. The good, the bad, and what Reddit won't tell you.",
     images: [{ url: '/images/og-image.jpg', width: 1200, height: 630, alt: 'Buenos Aires Expats' }],
   },

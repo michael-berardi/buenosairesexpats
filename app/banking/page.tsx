@@ -25,6 +25,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Banking & Money in Argentina 2026",
     description: "Complete guide to banking in Argentina for expats. Opening accounts, transferring money, the blue dollar, and managing finances.",
+    images: [{ url: '/images/og-image.jpg', width: 1200, height: 630, alt: 'Buenos Aires Expats' }],
   },
   alternates: {
     canonical: "https://buenosairesexpats.com/banking",

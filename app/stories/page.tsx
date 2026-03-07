@@ -10,8 +10,8 @@ import { StructuredData } from "@/components/structured-data";
 import { generateBreadcrumbSchema } from "@/lib/schema";
 
 export const metadata: Metadata = {
-  title: "Expat Stories - Buenos Aires Experiences",
-  description: "Composite stories based on real expat experiences in Buenos Aires. Successes, struggles, culture shocks, and business ventures - practical insights about life in Argentina.",
+  title: "Expat Stories - Life in Buenos Aires",
+  description: "Real expat stories from Buenos Aires. Successes, struggles, culture shocks, and business ventures with practical life-in-Argentina insights.",
   keywords: ["expat stories Buenos Aires", "moving to Argentina", "real experiences", "culture shock", "expat life"],
   alternates: {
     canonical: "https://buenosairesexpats.com/stories",

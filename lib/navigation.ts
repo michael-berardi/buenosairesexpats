@@ -76,9 +76,11 @@ export const footerNav = {
   ],
   resources: [
     { label: "Expat Stories", href: "/stories" },
+    { label: "Expat Profiles", href: "/expat-profiles" },
     { label: "Why Argentina?", href: "/why-argentina" },
     { label: "Resources", href: "/resources" },
     { label: "Dining Guide", href: "/dining" },
+    { label: "All Guides", href: "/guides" },
   ],
   company: [
     { label: "About Us", href: "/about" },

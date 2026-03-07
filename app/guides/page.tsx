@@ -24,7 +24,7 @@ import {
 } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Expat Guides to Buenos Aires - Complete Resource Library 2026",
+  title: "Expat Guides to Buenos Aires 2026",
   description:
     "All our Buenos Aires expat guides in one place. From getting started and safety to food, transportation, working, learning Spanish, and Argentine culture.",
   keywords: [

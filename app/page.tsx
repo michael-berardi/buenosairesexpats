@@ -34,9 +34,9 @@ import {
 
 export const metadata: Metadata = {
   title:
-    "Buenos Aires Expats | Your Insider City Guide to BA Life (2026)",
+    "Buenos Aires Expats | Insider City Guide to BA Life",
   description:
-    "The hyper-local guide to living in Buenos Aires. Neighborhood-by-neighborhood reviews with real 2026 rent prices, barrio matcher quiz, coworking spots, Michelin dining guide, and street-level tips from expats who actually live here. Updated March 2026.",
+    "Hyper-local guide to Buenos Aires. Neighborhood reviews, real 2026 rent prices, barrio quiz, coworking spots, dining guides, and tips from expats living in BA.",
   keywords: [
     "Buenos Aires expats",
     "living in Buenos Aires",
@@ -296,6 +296,11 @@ const quickLinks = [
   { label: "First Week Guide", href: "/guides/first-week" },
   { label: "Dining Guide", href: "/dining" },
   { label: "Visa Options", href: "/visas" },
+  { label: "All Guides", href: "/guides" },
+  { label: "Neighborhoods", href: "/neighborhoods" },
+  { label: "Why Argentina?", href: "/why-argentina" },
+  { label: "Cost of Living", href: "/cost-of-living" },
+  { label: "Healthcare", href: "/healthcare" },
   { label: "Transportation", href: "/guides/transportation" },
   { label: "Learning Spanish", href: "/guides/learning-spanish" },
   { label: "Food & Dining", href: "/guides/food-dining" },
@@ -304,8 +309,13 @@ const quickLinks = [
   { label: "Working & Taxes", href: "/guides/working-taxes" },
   { label: "Banking", href: "/banking" },
   { label: "Housing", href: "/housing" },
-  { label: "Resources", href: "/resources" },
+  { label: "Expat Profiles", href: "/expat-profiles" },
   { label: "Expat Stories", href: "/stories" },
+  { label: "Resources", href: "/resources" },
+  { label: "About Us", href: "/about" },
+  { label: "Contact", href: "/contact" },
+  { label: "Privacy Policy", href: "/privacy" },
+  { label: "Terms of Service", href: "/terms" },
 ];
 
 const realVoicesResources = {

@@ -21,12 +21,13 @@ import {
 } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Best Neighborhoods in Buenos Aires for Expats 2026",
+  title: "Best BA Neighborhoods for Expats 2026",
   description: "Complete guide to Buenos Aires neighborhoods for expats. Compare Palermo, Recoleta, Belgrano, San Telmo and more. Safety, rent prices, and lifestyle factors.",
   keywords: ["Buenos Aires neighborhoods", "best areas expats Buenos Aires", "Palermo Recoleta Belgrano", "where to live Buenos Aires"],
   openGraph: {
     title: "Best Neighborhoods in Buenos Aires for Expats",
     description: "Find your perfect neighborhood in Buenos Aires. Detailed guides to Palermo, Recoleta, Belgrano, and more.",
+    images: [{ url: '/images/og-image.jpg', width: 1200, height: 630, alt: 'Buenos Aires Expats' }],
   },
   alternates: {
     canonical: "https://buenosairesexpats.com/neighborhoods",
