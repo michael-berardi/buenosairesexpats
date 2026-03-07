@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Inter, Playfair_Display } from "next/font/google";
+import Script from "next/script";
 import { Analytics } from "@vercel/analytics/next";
 import "./globals.css";
 import { Navbar } from "@/components/navbar";
@@ -109,6 +110,16 @@ export default function RootLayout({
           <Footer />
           <Analytics />
         </I18nProvider>
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-XH9E79KEDZ"
+          strategy="afterInteractive"
+        />
+        <Script id="ga4-init" strategy="afterInteractive">
+          {`window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-XH9E79KEDZ');`}
+        </Script>
+        <Script id="lucero-click-tracking" strategy="afterInteractive">
+          {`document.addEventListener('click',function(e){var a=e.target.closest('a[href*="lucerolegal"]');if(a){gtag('event','lucero_referral',{link_url:a.href,link_text:a.textContent.trim(),page_path:window.location.pathname});}});`}
+        </Script>
       </body>
     </html>
   );
