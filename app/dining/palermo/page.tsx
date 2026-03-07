@@ -44,8 +44,8 @@ const restaurants = [
     phone: "+54 11 4831-9564",
     website: "https://www.donjulioparrilla.com",
     price: "$$$$",
-    description: "The world's most celebrated steakhouse and Best Restaurant in Latin America 2024. Don Julio has elevated the Argentine parrilla to an art form. Chef Pablo Rivero's dedication to premium beef, exceptional wine, and warm hospitality has made this a pilgrimage site for food lovers worldwide. The 45-day dry-aged steaks are legendary.",
-    mustTry: ["Bife de chorizo (45-day dry-aged)", "Ojo de bife", "Provoleta", "Wine cellar experience"],
+    description: "The world's most celebrated steakhouse and Best Restaurant in Latin America 2024. Don Julio has elevated the Argentine parrilla to an art form. Owner Pablo Rivero's dedication to sourcing premium beef, exceptional wine curation, and warm hospitality has made this a pilgrimage site for food lovers worldwide. The dry-aged steaks from their own estancia are legendary.",
+    mustTry: ["Bife de chorizo (dry-aged)", "Ojo de bife", "Provoleta", "Wine cellar experience"],
     reservations: "Essential - book 30+ days ahead online",
     dressCode: "Smart casual",
     hours: "Mon-Sun: 12:00 PM - 4:00 PM, 8:00 PM - 12:00 AM",
@@ -68,6 +68,22 @@ const restaurants = [
     featured: true
   },
   {
+    name: "Trescha",
+    stars: 1,
+    type: "Contemporary Fine Dining",
+    chef: "Tomás Treschanski",
+    address: "Murillo 725, Villa Crespo",
+    phone: "+54 11 2791-1010",
+    website: "https://trescharestaurant.com",
+    price: "$$$$",
+    description: "Located in neighboring Villa Crespo, Trescha earned a Michelin star in the inaugural 2024 guide. Young chef Tomás Treschanski — winner of the Michelin Young Chef Award — crafts inventive tasting menus that draw on his training at Azurmendi and Frantzén. The intimate space makes every meal feel personal.",
+    mustTry: ["Seasonal tasting menu", "Fire-cooked vegetables", "House-made charcuterie"],
+    reservations: "Essential - book 2+ weeks ahead",
+    dressCode: "Smart casual",
+    hours: "Tue-Sat: 8:00 PM - 11:30 PM",
+    featured: true
+  },
+  {
     name: "Tegui",
     stars: 0,
     awards: ["Latin America's 50 Best"],
@@ -77,9 +93,9 @@ const restaurants = [
     phone: "+54 11 5291-3330",
     website: "https://www.tegui.com.ar",
     price: "$$$$",
-    description: "A Palermo institution and longtime member of Latin America's 50 Best. Behind an unmarked facade, Tegui offers one of Buenos Aires' most refined tasting menus. Chef Germán Martitegui combines Argentine ingredients with international techniques in a sleek, contemporary space.",
+    description: "A Palermo legend and longtime fixture on Latin America's 50 Best list. Chef Germán Martitegui's signature restaurant relaunched in 2026 with an intimate 20-seat fine dining format. Behind an unmarked facade, expect one of Buenos Aires' most refined tasting menus combining Argentine ingredients with international techniques.",
     mustTry: ["Seasonal tasting menu", "Crispy langoustines", "Duck magret"],
-    reservations: "Essential",
+    reservations: "Essential — verify availability before visiting",
     dressCode: "Smart casual to elegant",
     hours: "Tue-Sat: 8:00 PM - 11:30 PM",
     featured: true
@@ -87,13 +103,14 @@ const restaurants = [
   {
     name: "El Preferido de Palermo",
     stars: 0,
-    type: "Classic Bodegón",
-    chef: "Traditional recipes",
+    awards: ["Michelin Green Star"],
+    type: "Modern Bodegón",
+    chef: "Guido Tassi",
     address: "Jorge Luis Borges 2108, Palermo Soho",
     phone: "+54 11 4774-6585",
     website: "https://www.elpreferidodepalermo.com",
     price: "$$",
-    description: "A beloved neighborhood institution that's been serving classic Argentine fare since 1952. The bar seating, vintage decor, and timeless dishes make this a quintessential Buenos Aires experience. The tortilla española and milanesas are legendary among locals.",
+    description: "A historic 1952 bodegón revived by the Don Julio team. Owner Pablo Rivero and chef Guido Tassi reopened this Palermo icon in 2019, preserving the vintage bar seating and neighborhood spirit while elevating the classic Argentine fare. Holds a Michelin Green Star for sustainability.",
     mustTry: ["Tortilla española", "Milanesa napolitana", "Rabas (fried calamari)", "Chorizo criollo"],
     reservations: "Walk-in preferred",
     dressCode: "Casual",
@@ -104,7 +121,7 @@ const restaurants = [
     name: "La Cabrera",
     stars: 0,
     type: "Premium Parrilla",
-    chef: "Gastón Rivera",
+    chef: "Gastón Riveira",
     address: "José Antonio Cabrera 5099, Palermo Soho",
     phone: "+54 11 4832-0704",
     website: "https://www.lacabrera.com.ar",
@@ -119,14 +136,13 @@ const restaurants = [
   {
     name: "Anafe",
     stars: 0,
-    awards: ["Latin America's 50 Best"],
     type: "Contemporary Small Plates",
-    chef: "Luisa Martínez & Lula Martin del Campo",
-    address: "Gorriti 4862, Palermo Soho",
+    chef: "Mica Najmanovich & Nico Arcucci",
+    address: "Virrey Avilés 3216, Colegiales",
     phone: "+54 11 2079-4660",
-    website: "https://www.anafe.com.ar",
+    website: "https://anafe.com.ar",
     price: "$$$",
-    description: "A tiny, intimate restaurant from a talented female chef duo. Anafe serves creative small plates that change frequently based on seasonal ingredients. The cozy space and personal service make it feel like dining at a friend's home.",
+    description: "A tiny, intimate restaurant in neighboring Colegiales from high-school friends Mica Najmanovich and Nico Arcucci. Anafe serves creative small plates melding Latin American and global influences that change frequently based on seasonal ingredients. The cozy space and personal service make it feel like dining at a friend's home.",
     mustTry: ["Seasonal tasting menu", "Homemade bread", "Creative desserts"],
     reservations: "Essential - limited seating",
     dressCode: "Smart casual",
@@ -135,15 +151,15 @@ const restaurants = [
   },
   {
     name: "Mishiguene",
-    stars: 0,
+    stars: 1,
     awards: ["Latin America's 50 Best"],
     type: "Jewish-Argentine",
     chef: "Tomás Kalika",
     address: "Lafinur 3368, Palermo",
     phone: "+54 11 3969-0375",
-    website: "https://www.mishiguene.com",
+    website: "https://www.mishiguenerestaurant.com",
     price: "$$$",
-    description: "A celebration of Jewish-Argentine cuisine that has earned international acclaim. Chef Tomás Kalika reimagines traditional recipes from Eastern European and Middle Eastern Jewish traditions with Argentine ingredients and modern technique.",
+    description: "A Michelin-starred celebration of Jewish-Argentine cuisine that has earned international acclaim. Chef Tomás Kalika reimagines traditional recipes from Eastern European and Middle Eastern Jewish traditions with Argentine ingredients and modern technique.",
     mustTry: ["Pastrami", "Hummus variations", "Kibbeh", "Babka"],
     reservations: "Recommended",
     dressCode: "Smart casual",
@@ -151,15 +167,15 @@ const restaurants = [
     featured: false
   },
   {
-    name: "Fogon Asado",
+    name: "Fogón Asado",
     stars: 0,
-    type: "Modern Parrilla",
-    chef: "Julian Díaz",
+    type: "Modern Parrilla Experience",
+    chef: "Sebastián Cardamoni",
     address: "Uriarte 1423, Palermo Soho",
     phone: "+54 11 4832-6055",
-    website: "https://www.fogonasado.com",
+    website: "https://fogonasado.com",
     price: "$$$",
-    description: "A contemporary take on the Argentine asado experience. The open kitchen features multiple cooking techniques over fire, from traditional grilling to smoking and slow-roasting. The tasting menu format allows diners to experience the full range of fire cooking.",
+    description: "An interactive asado experience created by Alex Pels and Danielle Jenster. Chef Sebastián Cardamoni leads the open kitchen, featuring 9 and 14-course tasting menus built around multiple fire-cooking techniques. Named #1 Fine Dining Restaurant by TripAdvisor's Best of the Best 2025.",
     mustTry: ["Asado tasting menu", "Smoked brisket", "Fire-roasted vegetables"],
     reservations: "Recommended",
     dressCode: "Smart casual",
@@ -224,7 +240,7 @@ export default function PalermoDiningPage() {
             <div className="flex flex-wrap gap-4 text-sm text-stone-400">
               <span className="flex items-center gap-2">
                 <Star className="w-4 h-4 text-amber-400" />
-                2 Michelin Stars
+                4 Michelin Stars
               </span>
               <span className="flex items-center gap-2">
                 <Award className="w-4 h-4 text-amber-400" />
@@ -378,9 +394,15 @@ export default function PalermoDiningPage() {
                         <Badge variant="outline" className="text-amber-600 border-amber-600">
                           {restaurant.price}
                         </Badge>
+                        {restaurant.stars > 0 && (
+                          <Badge className="ml-2 bg-amber-100 text-amber-800 text-xs">
+                            <Star className="w-3 h-3 mr-0.5" />
+                            Michelin Star
+                          </Badge>
+                        )}
                         {restaurant.awards && (
                           <Badge className="ml-2 bg-amber-100 text-amber-800 text-xs">
-                            50 Best
+                            {restaurant.awards[0]}
                           </Badge>
                         )}
                       </div>

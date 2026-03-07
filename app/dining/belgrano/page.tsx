@@ -35,32 +35,32 @@ export const metadata: Metadata = {
 
 const restaurants = [
   {
-    name: "Roux",
+    name: "Cantina Chinatown",
     stars: 0,
-    type: "French-Mediterranean",
-    chef: "Ismael León",
-    address: "Vicente López 1958, Belgrano",
-    phone: "+54 11 4806-1116",
-    website: "https://www.rouxresto.com",
-    price: "$$$",
-    description: "A sophisticated blend of French technique and Mediterranean flavors in an intimate townhouse setting. Chef Ismael León's seasonal menu showcases the best Argentine ingredients with European refinement. The elegant dining rooms and attentive service make this a favorite for special occasions.",
-    mustTry: ["Duck magret", "House-made charcuterie", "Seasonal tasting menu", "Wine pairings"],
-    reservations: "Recommended",
-    dressCode: "Smart casual to elegant",
-    hours: "Tue-Sat: 8:00 PM - 11:30 PM",
+    type: "Chinese",
+    chef: "Traditional recipes",
+    address: "Mendoza 1700, Belgrano",
+    phone: "+54 11 4786-3523",
+    website: "https://www.instagram.com/cantinachinatown",
+    price: "$$",
+    description: "An authentic standout in Buenos Aires' vibrant Barrio Chino. This bustling neighborhood institution serves traditional Chinese dishes that go far beyond the usual tourist fare. The hand-pulled noodles, dumplings, and regional preparations draw crowds from across the city.",
+    mustTry: ["Hand-pulled noodles", "Dumplings", "Peking duck", "Sichuan specialties"],
+    reservations: "Walk-in preferred",
+    dressCode: "Casual",
+    hours: "Daily: 11:30 AM - 3:30 PM, 7:00 PM - 11:30 PM",
     featured: true
   },
   {
     name: "Corte Comedor",
     stars: 0,
-    type: "Modern Argentine",
-    chef: "Pedro Bargero",
-    address: "Sucre 676, Belgrano",
+    type: "Modern Parrilla & Butcher",
+    chef: "Santiago Garat",
+    address: "Av. Olazábal 1391, Belgrano",
     phone: "+54 11 4006-0962",
-    website: "https://www.cortecomedor.com",
+    website: "https://www.instagram.com/cortecomedor",
     price: "$$$",
-    description: "A contemporary restaurant that has earned international recognition for its creative approach to Argentine cuisine. Chef Pedro Bargero's open-fire cooking and innovative presentations have made this one of Buenos Aires' most exciting dining destinations. The industrial-chic space in a converted warehouse adds to the appeal.",
-    mustTry: ["Fire-grilled meats", "Creative starters", "House-made breads", "Seasonal cocktails"],
+    description: "A Michelin Guide-listed restaurant and butcher concept that has earned recognition for its approach to meat traceability and nose-to-tail dining. Chef Santiago Garat — a disciple of Francis Mallmann — focuses on dry-aged premium cuts with creative preparations in an industrial-chic space.",
+    mustTry: ["Dry-aged steaks", "Nose-to-tail cuts", "House-made breads", "Seasonal cocktails"],
     reservations: "Recommended",
     dressCode: "Smart casual",
     hours: "Tue-Sat: 8:00 PM - 12:00 AM",
@@ -73,7 +73,7 @@ const restaurants = [
     chef: "Traditional recipes",
     address: "Arribeños 2393, Belgrano",
     phone: "+54 11 4704-4312",
-    website: "https://www.elpobreluis.com",
+    website: "https://www.instagram.com/elpobreluisparrilla",
     price: "$$",
     description: "A beloved neighborhood institution that has been serving some of Buenos Aires' best grilled meats for decades. The no-frills atmosphere, generous portions, and consistently excellent quality have earned it a devoted following. The chorizo and morcilla are legendary.",
     mustTry: ["Chorizo criollo", "Morcilla", "Vacío", "Provoleta"],
@@ -87,11 +87,11 @@ const restaurants = [
     stars: 0,
     type: "Traditional Argentine",
     chef: "Classic recipes",
-    address: "Vidal 2856, Belgrano",
+    address: "Arribeños 1701, Club Belgrano",
     phone: "+54 11 4784-2205",
-    website: "https://www.lacasonadebelgrano.com",
+    website: "https://www.instagram.com/lacasonadebelgrano",
     price: "$$",
-    description: "Housed in a beautiful old mansion, La Casona offers traditional Argentine cuisine in an elegant setting. The historic building, with its stained glass and antique furnishings, provides a glimpse into Buenos Aires' past. The menu features classic dishes executed with care.",
+    description: "Located inside the historic Club Belgrano (founded 1909), La Casona blends traditional bodegón cooking with more refined touches. The classic club setting provides a warm, nostalgic dining experience. Recently expanded to include premium gourmet meat cuts alongside timeless favorites.",
     mustTry: ["Empanadas", "Milanesa", "Pastas caseras", "Flan casero"],
     reservations: "Recommended",
     dressCode: "Smart casual",
@@ -102,12 +102,12 @@ const restaurants = [
     name: "Orilla",
     stars: 0,
     type: "Contemporary Argentine",
-    chef: "Martín Molteni",
-    address: "Vuelta de Obligado 1864, Belgrano",
+    chef: "Fernando Trocca",
+    address: "Montañeses 2585, Bajo Belgrano",
     phone: "+54 11 4788-0830",
     website: "https://www.orillarestaurant.com",
     price: "$$$",
-    description: "Chef Martín Molteni's intimate restaurant offers creative tasting menus that showcase Argentine ingredients through a modern lens. The small dining room and open kitchen create a personal, engaging experience. A hidden gem that serious food lovers seek out.",
+    description: "Chef Fernando Trocca's intimate restaurant offers creative tasting menus that showcase Argentine ingredients through a modern lens. The small dining room and open kitchen create a personal, engaging experience. A hidden gem that serious food lovers seek out.",
     mustTry: ["Tasting menu", "Wine pairings", "Seasonal dishes"],
     reservations: "Essential",
     dressCode: "Smart casual",
@@ -117,14 +117,14 @@ const restaurants = [
   {
     name: "Mengano",
     stars: 0,
-    awards: ["Latin America's 50 Best"],
+    awards: ["Bib Gourmand"],
     type: "Contemporary Small Plates",
-    chef: "Dolores Valtuena",
+    chef: "Facundo Kelemen",
     address: "Juramento 1618, Belgrano",
     phone: "+54 11 4780-1450",
     website: "https://www.menganorestaurant.com",
     price: "$$$",
-    description: "A tiny, acclaimed restaurant that has earned a spot on Latin America's 50 Best list. Chef Dolores Valtuena serves creative small plates in an intimate setting. The ever-changing menu reflects seasonal ingredients and the chef's innovative spirit.",
+    description: "A tiny, acclaimed restaurant that holds a Michelin Bib Gourmand for two consecutive years. Chef Facundo Kelemen — a former lawyer turned chef who trained at Tegui and in New York — serves creative small plates in an intimate setting. The ever-changing menu reflects seasonal ingredients and a bold innovative spirit.",
     mustTry: ["Seasonal tasting menu", "Creative desserts", "Natural wines"],
     reservations: "Essential - limited seating",
     dressCode: "Smart casual",
@@ -132,35 +132,19 @@ const restaurants = [
     featured: false
   },
   {
-    name: "Julia Restaurante",
+    name: "Osaka Buenos Aires",
     stars: 0,
-    type: "Contemporary Argentine",
-    chef: "Julia Zabala",
-    address: "Sucre 1402, Belgrano",
-    phone: "+54 11 4006-0962",
-    website: "https://www.juliarestaurant.com.ar",
+    type: "Nikkei (Japanese-Peruvian)",
+    chef: "House team",
+    address: "Soler 5608, Palermo",
+    phone: "+54 11 4775-6964",
+    website: "https://www.osaka.com.pe",
     price: "$$$",
-    description: "A sophisticated restaurant that celebrates Argentine ingredients through a contemporary lens. Chef Julia Zabala's elegant presentations and refined techniques have made this a destination for discerning diners. The warm, inviting space matches the thoughtful cuisine.",
-    mustTry: ["Seasonal menu", "Fish dishes", "Vegetable preparations"],
+    description: "While located at the Palermo-Belgrano border, this acclaimed Nikkei restaurant blends Japanese precision with Peruvian flavors. Part of an international group with locations across Latin America, the Buenos Aires outpost offers exceptional ceviches, tiraditos, and sushi in a sleek, modern space.",
+    mustTry: ["Ceviche nikkei", "Tiradito", "Sushi omakase", "Pisco cocktails"],
     reservations: "Recommended",
     dressCode: "Smart casual",
-    hours: "Tue-Sat: 8:00 PM - 11:30 PM",
-    featured: false
-  },
-  {
-    name: "Italpast",
-    stars: 0,
-    type: "Italian-Argentine",
-    chef: "Traditional recipes",
-    address: "Vidal 2885, Belgrano",
-    phone: "+54 11 4784-5770",
-    website: "https://www.italpast.com",
-    price: "$$",
-    description: "A classic Italian-Argentine restaurant that has been serving Belgrano for generations. The handmade pastas, traditional sauces, and warm atmosphere make it a neighborhood favorite. The portions are generous and the quality is consistently excellent.",
-    mustTry: ["Ravioles caseros", "Sorrentinos", "Milanesa napolitana", "Tiramisú"],
-    reservations: "Recommended weekends",
-    dressCode: "Casual to smart casual",
-    hours: "Tue-Sun: 12:00 PM - 4:00 PM, 8:00 PM - 12:00 AM",
+    hours: "Mon-Sun: 12:00 PM - 4:00 PM, 8:00 PM - 12:00 AM",
     featured: false
   }
 ];
@@ -225,7 +209,7 @@ export default function BelgranoDiningPage() {
               </span>
               <span className="flex items-center gap-2">
                 <Utensils className="w-4 h-4 text-emerald-400" />
-                8 Curated Restaurants
+                7 Curated Restaurants
               </span>
               <span className="flex items-center gap-2">
                 <MapPin className="w-4 h-4 text-emerald-400" />
@@ -370,7 +354,7 @@ export default function BelgranoDiningPage() {
                         </Badge>
                         {restaurant.awards && (
                           <Badge className="ml-2 bg-emerald-100 text-emerald-800 text-xs">
-                            50 Best
+                            {restaurant.awards[0]}
                           </Badge>
                         )}
                       </div>

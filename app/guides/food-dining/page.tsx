@@ -19,7 +19,7 @@ import {
   Star,
   AlertCircle,
   ArrowRight,
-  Flame
+  Flame,
 } from "lucide-react";
 
 export const metadata: Metadata = {
@@ -43,8 +43,8 @@ const parrillas = [
   { name: "La Cabrera", neighborhood: "Palermo", price: "$$$$", notes: "Upscale, generous portions", specialty: "Ojo de bife" },
   { name: "El Desnivel", neighborhood: "San Telmo", price: "$$", notes: "Local favorite, no frills", specialty: "Vacío" },
   { name: "La Brigada", neighborhood: "San Telmo", price: "$$$", notes: "Touristy but good", specialty: "Asado" },
-  { name: "Parrilla Peña", neighborhood: "Recoleta", price: "$", notes: "Budget-friendly, authentic", specialty: "Choripán" },
-  { name: "El Preferido", neighborhood: "Palermo", price: "$$$", notes: "Hip atmosphere, great wine", specialty: "Provoleta" },
+  { name: "Parrilla Peña", neighborhood: "Congreso", price: "$", notes: "Budget-friendly, authentic", specialty: "Bife de lomo" },
+  { name: "El Preferido", neighborhood: "Palermo", price: "$$$", notes: "By Don Julio team, Michelin Green Star", specialty: "Provoleta" },
 ];
 
 const empanadaTypes = [
@@ -60,16 +60,16 @@ const veggieSpots = [
   { name: "Artemisia", neighborhood: "Palermo", type: "Vegetarian", notes: "Creative veggie dishes, cozy" },
   { name: "Sacro", neighborhood: "Palermo", type: "Vegan", notes: "Upscale vegan, beautiful space" },
   { name: "Bio Solo Organico", neighborhood: "Palermo", type: "Organic/Veg", notes: "Health-focused, organic wine" },
-  { name: "Bodhi", neighborhood: "Various", type: "Vegetarian", notes: "Chinese-Argentine veggie, cheap" },
-  { name: "Veggie Medio Oriente", neighborhood: "Villa Crespo", type: "Vegan", notes: "Middle Eastern flavors" },
+  { name: "Buenos Aires Verde", neighborhood: "Palermo", type: "Vegetarian/Vegan", notes: "Creative plant-based, cozy" },
+  { name: "Mudra", neighborhood: "Villa Crespo", type: "Vegan", notes: "Plant-based bar & restaurant" },
 ];
 
 const cafeCulture = [
   { name: "Café Tortoni", neighborhood: "Microcentro", vibe: "Historic, touristy", notes: "Oldest cafe, tango shows" },
   { name: "Las Violetas", neighborhood: "Almagro", vibe: "Classic, elegant", notes: "Beautiful stained glass" },
-  { name: "Café Rivas", neighborhood: "San Telmo", vibe: "Literary, bohemian", notes: "Writer's favorite" },
+  { name: "Café Rivas", neighborhood: "San Telmo", vibe: "Charming, Parisian-style", notes: "Great food and cocktails" },
   { name: "Full City Coffee", neighborhood: "Palermo", vibe: "Third-wave, hip", notes: "Best specialty coffee" },
-  { name: "Negro Cueva de Café", neighborhood: "Palermo", vibe: "Modern, minimalist", notes: "Serious coffee, no WiFi" },
+  { name: "Negro Cueva de Café", neighborhood: "Multiple locations", vibe: "Modern, minimalist", notes: "Top 100 worldwide, serious coffee" },
 ];
 
 const deliveryApps = [
@@ -525,13 +525,33 @@ export default function FoodDiningPage() {
         </div>
       </section>
 
+      {/* Fine Dining Cross-link */}
+      <section className="py-16 bg-muted/30">
+        <div className="container mx-auto px-4">
+          <div className="max-w-3xl mx-auto text-center">
+            <h2 className="text-2xl font-bold mb-4">Looking for Fine Dining?</h2>
+            <p className="text-muted-foreground mb-6">
+              Explore our curated guide to Buenos Aires&apos; Michelin-starred restaurants
+              and world-class dining across Recoleta, Palermo, and Belgrano.
+            </p>
+            <Button asChild size="lg">
+              <Link href="/dining">
+                <Star className="w-4 h-4 mr-2" />
+                Michelin Dining Guide
+                <ArrowRight className="w-4 h-4 ml-2" />
+              </Link>
+            </Button>
+          </div>
+        </div>
+      </section>
+
       {/* CTA */}
       <section className="py-16 bg-primary text-primary-foreground">
         <div className="container mx-auto px-4 text-center">
           <div className="max-w-2xl mx-auto">
             <h2 className="text-3xl font-bold mb-4">Hungry for More?</h2>
             <p className="text-primary-foreground/90 mb-8">
-              Explore neighborhoods with the best food scenes and discover local 
+              Explore neighborhoods with the best food scenes and discover local
               favorites you won't find in guidebooks.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">

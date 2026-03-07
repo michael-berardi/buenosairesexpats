@@ -72,6 +72,7 @@ export const footerNav = {
     { label: "Transportation", href: "/guides/transportation" },
     { label: "Working & Taxes", href: "/guides/working-taxes" },
     { label: "Getting Started", href: "/guides/getting-started" },
+    { label: "Food & Dining", href: "/guides/food-dining" },
   ],
   resources: [
     { label: "Expat Stories", href: "/stories" },

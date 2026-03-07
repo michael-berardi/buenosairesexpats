@@ -54,9 +54,9 @@ const michelinStars = [
     neighborhood: "Palermo",
     cuisine: "Argentine Steakhouse",
     price: "$$$$",
-    description: "World's #1 steakhouse and Best Restaurant in Latin America 2024. Chef Pablo Rivero has elevated the Argentine parrilla to an art form.",
-    mustTry: ["Bife de chorizo (45-day dry-aged)", "Ojo de bife", "Provoleta", "Wine cellar experience"],
-    inspectorNote: "The gold standard for Argentine beef. The 45-day dry-aging process creates unparalleled depth of flavor.",
+    description: "World's #1 steakhouse and Best Restaurant in Latin America 2024. Owner Pablo Rivero has elevated the Argentine parrilla to an art form.",
+    mustTry: ["Bife de chorizo (dry-aged)", "Ojo de bife", "Provoleta", "Wine cellar experience"],
+    inspectorNote: "The gold standard for Argentine beef. The dry-aging process creates unparalleled depth of flavor.",
     award: "1 Michelin Star | Latin America's 50 Best #1"
   },
   { 
@@ -65,7 +65,7 @@ const michelinStars = [
     neighborhood: "Palermo",
     cuisine: "Contemporary",
     price: "$$$$",
-    description: "Innovative tasting menus in an intimate setting near Palermo. Chef Martín Molteni's creative playground where Argentine ingredients meet global techniques.",
+    description: "Innovative tasting menus in an intimate Villa Crespo setting. Chef Tomás Treschanski's creative playground where Argentine ingredients meet global techniques.",
     mustTry: ["Seasonal tasting menu", "Fire-cooked vegetables", "House-made charcuterie"],
     inspectorNote: "A hidden gem that serious food lovers seek out. The open kitchen creates a personal connection with the culinary team.",
     award: "1 Michelin Star"
@@ -88,7 +88,7 @@ const neighborhoods = [
     name: "Recoleta",
     slug: "recoleta",
     description: "Elegant dining in Buenos Aires' most refined neighborhood. Home to Aramburu and the city's most prestigious hotel restaurants.",
-    highlights: ["Aramburu (2 Michelin Stars)", "Elena at Four Seasons", "Duhau Restaurante"],
+    highlights: ["Aramburu (2 Michelin Stars)", "Elena at Four Seasons", "Roux (Michelin Selected)"],
     restaurantCount: 8,
     michelinCount: 1,
     image: "/images/recoleta-dining.jpg",
@@ -97,24 +97,24 @@ const neighborhoods = [
     name: "Palermo",
     slug: "palermo",
     description: "The beating heart of BA's culinary scene. From world-famous parrillas to innovative tasting menus.",
-    highlights: ["Don Julio (1 Star)", "Crizia (1 Star)", "Tegui"],
-    restaurantCount: 8,
-    michelinCount: 2,
+    highlights: ["Don Julio (1 Star)", "Mishiguene (1 Star)", "Crizia (1 Star)"],
+    restaurantCount: 9,
+    michelinCount: 4,
     image: "/images/palermo-dining.jpg",
   },
   {
     name: "Belgrano",
     slug: "belgrano",
     description: "Sophisticated dining in a residential setting. Discover hidden gems and classic Argentine institutions.",
-    highlights: ["Roux", "Corte Comedor", "La Casona de Belgrano"],
-    restaurantCount: 8,
+    highlights: ["Corte Comedor", "El Pobre Luis", "Mengano (Bib Gourmand)"],
+    restaurantCount: 7,
     michelinCount: 0,
     image: "/images/belgrano-dining.jpg",
   },
 ];
 
 const quickStats = [
-  { value: "4", label: "Michelin Stars", icon: Star },
+  { value: "6", label: "Michelin Stars", icon: Star },
   { value: "24", label: "Curated Restaurants", icon: Utensils },
   { value: "3", label: "Neighborhoods", icon: MapPin },
   { value: "10+", label: "Michelin-Recognized", icon: Award },
@@ -388,6 +388,28 @@ export default function DiningGuidePage() {
         </div>
       </section>
 
+      {/* Practical Guide Cross-link */}
+      <section className="section-padding bg-muted">
+        <div className="container mx-auto px-4">
+          <div className="max-w-3xl mx-auto text-center">
+            <h2 className="font-serif heading-sm mb-4 text-foreground">
+              New to Buenos Aires Dining?
+            </h2>
+            <p className="text-body text-lg mb-6">
+              Our practical food guide covers everyday dining — parrillas, empanadas, cafe culture,
+              delivery apps, grocery shopping, and real prices.
+            </p>
+            <Button variant="outline" size="lg" asChild>
+              <Link href="/guides/food-dining">
+                <Utensils className="w-5 h-5 mr-2" />
+                Read the Practical Food Guide
+                <ArrowRight className="w-4 h-4 ml-2" />
+              </Link>
+            </Button>
+          </div>
+        </div>
+      </section>
+
       {/* Legal CTA */}
       <section className="py-12">
         <div className="container mx-auto px-4">
@@ -419,6 +441,12 @@ export default function DiningGuidePage() {
                 <Link href="/dining/palermo">
                   <MapPin className="w-5 h-5 mr-2" />
                   Explore Palermo
+                </Link>
+              </Button>
+              <Button size="lg" variant="outline" className="border-white/30 bg-white/10 text-white hover:bg-white/20 hover:text-white px-8" asChild>
+                <Link href="/dining/belgrano">
+                  <MapPin className="w-5 h-5 mr-2" />
+                  Explore Belgrano
                 </Link>
               </Button>
             </div>
