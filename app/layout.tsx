@@ -111,11 +111,11 @@ export default function RootLayout({
           <Analytics />
         </I18nProvider>
         <Script
-          src="https://www.googletagmanager.com/gtag/js?id=G-XH9E79KEDZ"
+          src="https://www.googletagmanager.com/gtag/js?id=G-N5LLRYQ9J1"
           strategy="afterInteractive"
         />
         <Script id="ga4-init" strategy="afterInteractive">
-          {`window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-XH9E79KEDZ');`}
+          {`window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-N5LLRYQ9J1');`}
         </Script>
         <Script id="lucero-click-tracking" strategy="afterInteractive">
           {`document.addEventListener('click',function(e){var a=e.target.closest('a[href*="lucerolegal"]');if(a){gtag('event','lucero_referral',{link_url:a.href,link_text:a.textContent.trim(),page_path:window.location.pathname});}});`}
