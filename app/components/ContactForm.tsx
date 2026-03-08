@@ -3,7 +3,7 @@
 import { useTranslation } from "@/lib/i18n";
 import { useCallback, useRef, useState } from "react";
 
-const TURNSTILE_SITE_KEY = "0x4AAAAAACVGagn3w0RZauFa";
+const TURNSTILE_SITE_KEY = "0x4AAAAAACoCmeMPEb_yXo7j";
 const API_URL = "https://www.lucerolegal.org/api/contact";
 const SOURCE_SITE = "buenosairesexpats";
 
