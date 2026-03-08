@@ -1,3 +1,6 @@
+import { applyFactOverridesBySlug } from "./source-of-truth-sync";
+import { countriesFactOverrides } from "../content-sync/generated/source-of-truth-fact-overrides";
+
 /**
  * Argentina visa requirements by nationality
  * 
@@ -40,7 +43,7 @@ export interface CountryData {
 }
 
 // Top 50 priority countries based on tourism data and search potential
-export const countries: CountryData[] = [
+const countriesBase: CountryData[] = [
   // MERCOSUR & South America (highest visitor volume)
   {
     slug: "brazil",
@@ -1683,6 +1686,8 @@ export const countries: CountryData[] = [
     notes: "Costa Rican citizens enjoy visa-free entry for 90 days."
   }
 ];
+
+export const countries = applyFactOverridesBySlug(countriesBase, countriesFactOverrides);
 
 // Helper functions
 export const getCountriesByRegion = (region: Region) => 
