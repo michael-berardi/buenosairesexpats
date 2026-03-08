@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-03-08T16:16:18.563Z",
+  "generatedAt": "2026-03-08T16:49:54.503Z",
   "workspaceRoot": "/Users/libertydesignstudio/dev",
-  "totalCandidates": 85,
+  "totalCandidates": 80,
   "ingestedCandidates": 80,
-  "uncoveredCandidates": 5,
+  "uncoveredCandidates": 0,
   "candidates": [
     {
       "repoId": "buenosairesexpats",

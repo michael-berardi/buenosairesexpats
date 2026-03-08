@@ -1,9 +1,9 @@
 ---
-generated_at: 2026-03-08T16:16:18.563Z
+generated_at: 2026-03-08T16:49:54.503Z
 type: truthsync-pages
-route_files: 48
-pages: 0
-active_pages: 0
+route_files: 49
+pages: 177
+active_pages: 177
 review_needed_pages: 0
 ai_needed_pages: 0
 ---
@@ -12,15 +12,15 @@ ai_needed_pages: 0
 
 ## Summary
 
-- Route files: 48
-- Route status: bound=0 missing=3 excluded=45
-- Page status: active=0 review-needed=0 ai-needed=0
+- Route files: 49
+- Route status: bound=3 missing=0 excluded=46
+- Page status: active=177 review-needed=0 ai-needed=0
 
 ## Sites
 
 | Site | Route Files | Bound | Missing | Pages | Active | Review | AI |
 | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
-| buenosairesexpats | 48 | 0 | 3 | 0 | 0 | 0 | 0 |
+| buenosairesexpats | 49 | 3 | 0 | 177 | 177 | 0 | 0 |
 
 ## Routes Missing Page Bindings
 
@@ -29,14 +29,14 @@ ai_needed_pages: 0
 | buenosairesexpats | / | excluded | marketing | app/page.tsx | n/a |
 | buenosairesexpats | /about | excluded | marketing | app/about/page.tsx | n/a |
 | buenosairesexpats | /banking | excluded | utility | app/banking/page.tsx | n/a |
-| buenosairesexpats | /contact | excluded | utility | app/contact/page.tsx | n/a |
+| buenosairesexpats | /consultation | excluded | marketing | app/consultation/page.tsx | n/a |
+| buenosairesexpats | /contact | excluded | marketing | app/contact/page.tsx | n/a |
 | buenosairesexpats | /cost-of-living | excluded | utility | app/cost-of-living/page.tsx | n/a |
 | buenosairesexpats | /dining | excluded | utility | app/dining/page.tsx | n/a |
 | buenosairesexpats | /dining/belgrano | excluded | utility | app/dining/belgrano/page.tsx | n/a |
 | buenosairesexpats | /dining/palermo | excluded | utility | app/dining/palermo/page.tsx | n/a |
 | buenosairesexpats | /dining/recoleta | excluded | utility | app/dining/recoleta/page.tsx | n/a |
 | buenosairesexpats | /expat-profiles | excluded | utility | app/expat-profiles/page.tsx | n/a |
-| buenosairesexpats | /expat-profiles/[id] | missing-binding | content | app/expat-profiles/[id]/page.tsx | n/a |
 | buenosairesexpats | /guides | excluded | hub | app/guides/page.tsx | n/a |
 | buenosairesexpats | /guides/cultural-etiquette | excluded | utility | app/guides/cultural-etiquette/page.tsx | n/a |
 | buenosairesexpats | /guides/first-week | excluded | utility | app/guides/first-week/page.tsx | n/a |
@@ -59,15 +59,13 @@ ai_needed_pages: 0
 | buenosairesexpats | /neighborhoods/san-telmo | excluded | utility | app/neighborhoods/san-telmo/page.tsx | n/a |
 | buenosairesexpats | /neighborhoods/villa-crespo | excluded | utility | app/neighborhoods/villa-crespo/page.tsx | n/a |
 | buenosairesexpats | /privacy | excluded | legal | app/privacy/page.tsx | n/a |
-| buenosairesexpats | /resources | excluded | utility | app/resources/page.tsx | n/a |
+| buenosairesexpats | /resources | excluded | hub | app/resources/page.tsx | n/a |
 | buenosairesexpats | /stories | excluded | utility | app/stories/page.tsx | n/a |
-| buenosairesexpats | /stories/[id] | missing-binding | content | app/stories/[id]/page.tsx | n/a |
 | buenosairesexpats | /terms | excluded | utility | app/terms/page.tsx | n/a |
 | buenosairesexpats | /visas | excluded | hub | app/visas/page.tsx | n/a |
 | buenosairesexpats | /visas/digital-nomad | excluded | utility | app/visas/digital-nomad/page.tsx | n/a |
 | buenosairesexpats | /visas/investment | excluded | utility | app/visas/investment/page.tsx | n/a |
 | buenosairesexpats | /visas/nationalities | excluded | utility | app/visas/nationalities/page.tsx | n/a |
-| buenosairesexpats | /visas/nationalities/[country] | missing-binding | content | app/visas/nationalities/[country]/page.tsx | n/a |
 | buenosairesexpats | /visas/quiz | excluded | utility | app/visas/quiz/page.tsx | n/a |
 | buenosairesexpats | /visas/retirement | excluded | utility | app/visas/retirement/page.tsx | n/a |
 | buenosairesexpats | /visas/student | excluded | utility | app/visas/student/page.tsx | n/a |
