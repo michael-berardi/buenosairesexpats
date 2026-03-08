@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-03-08T15:55:24.456Z",
+  "generatedAt": "2026-03-08T16:16:18.563Z",
   "totals": {
     "surfaces": 3,
     "active": 3,
@@ -31,8 +31,8 @@
       },
       "recordCount": 100,
       "highRiskRecordCount": 100,
-      "reviewDateCount": 0,
-      "projectionCount": 5,
+      "reviewDateCount": 100,
+      "projectionCount": 100,
       "sourcePaths": [
         "/Users/libertydesignstudio/dev/buenosairesexpats/lib/nationality-data.ts"
       ],
@@ -58,7 +58,7 @@
       },
       "recordCount": 63,
       "highRiskRecordCount": 0,
-      "reviewDateCount": 0,
+      "reviewDateCount": 63,
       "projectionCount": 63,
       "sourcePaths": [
         "/Users/libertydesignstudio/dev/buenosairesexpats/lib/expat-profiles-data.ts"

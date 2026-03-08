@@ -1,52 +1,11 @@
 {
-  "generatedAt": "2026-03-08T15:55:24.456Z",
+  "generatedAt": "2026-03-08T16:16:18.563Z",
   "totals": {
-    "items": 1,
+    "items": 0,
     "critical": 0,
-    "high": 1,
+    "high": 0,
     "medium": 0
   },
-  "sites": [
-    {
-      "siteId": "buenosairesexpats",
-      "items": 1,
-      "critical": 0,
-      "high": 1,
-      "medium": 0
-    }
-  ],
-  "items": [
-    {
-      "id": "surface:buenosairesexpats:countries",
-      "siteId": "buenosairesexpats",
-      "priority": "high",
-      "mode": "surface-sweep",
-      "sourceExport": "countries",
-      "title": "buenosairesexpats.countries",
-      "reason": "High-risk surface coverage is incomplete: reviewed=0/100, projected=5/100.",
-      "recommendedAction": "Have an AI agent sweep this surface route-by-route, verify claims against primary sources, and draft contextual micro-edits where deterministic fact patches stop.",
-      "runtimeModule": "lib/nationality-data.ts",
-      "sourcePath": "/Users/libertydesignstudio/dev/buenosairesexpats/lib/nationality-data.ts",
-      "officialSourceUrls": [],
-      "evidence": [
-        "albania",
-        "algeria",
-        "andorra",
-        "armenia",
-        "australia"
-      ],
-      "prompt": "Sweep the buenosairesexpats countries surface contextually without changing site tone. Work in lib/nationality-data.ts and review sample slugs albania, algeria, andorra, armenia, australia. The deterministic TruthSync layer already handles safe fact patches. Use AI judgment only for contextual narrative updates and claim cleanup. High-risk surface coverage is incomplete: reviewed=0/100, projected=5/100.",
-      "findingCount": 0,
-      "recordCount": 100,
-      "reviewedCount": 0,
-      "projectedCount": 5,
-      "sampleSlugs": [
-        "albania",
-        "algeria",
-        "andorra",
-        "armenia",
-        "australia"
-      ]
-    }
-  ]
+  "sites": [],
+  "items": []
 }

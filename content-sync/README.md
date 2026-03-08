@@ -1,6 +1,6 @@
 # Lucero Source of Truth Sync
 
-Generated at 2026-03-08T15:55:24.456Z.
+Generated at 2026-03-08T16:16:18.563Z.
 
 - `lucero-source-of-truth.full.json` contains the full network catalog.
 - `lucero-source-of-truth.bundle.json` contains the site-focused subset for `buenosairesexpats`.

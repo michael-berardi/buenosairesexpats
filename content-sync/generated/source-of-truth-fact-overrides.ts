@@ -7,31 +7,212 @@ export type FactOverride<T = unknown> = {
 };
 
 export const countriesFactOverrides = {
-  "united-arab-emirates": {
+  "albania": {
     "reviewDate": "2026-03-08",
-    "sourceUrls": [
-      "https://etail.cancilleria.gob.ar/userfiles/2018/estados_y_territorios_exentos_de_visa_turista.pdf"
-    ],
+    "sourceUrls": [],
     "patch": {
-      "specialConditions": [
-        "Tourist visa-exempt for ordinary passports on the official Cancilleria exemption list"
-      ],
-      "notes": "UAE citizens appear on Argentina's official tourist visa-exemption list for ordinary passports, with the standard 90-day tourist baseline unless a different period is specifically stated.",
-      "sourceUrl": "https://etail.cancilleria.gob.ar/userfiles/2018/estados_y_territorios_exentos_de_visa_turista.pdf"
+      "truthSync": {
+        "canonicalKey": "country:albania",
+        "recordId": "buenosairesexpats:country:albania",
+        "reviewDate": "2026-03-08",
+        "sourceExport": "countries",
+        "sourceUrls": []
+      }
     }
   },
-  "india": {
+  "algeria": {
     "reviewDate": "2026-03-08",
-    "sourceUrls": [
-      "https://www.argentina.gob.ar/noticias/turistas-indios-podran-ingresar-al-pais-con-visado-estadounidense",
-      "https://www.argentina.gob.ar/normativa/nacional/resoluci%C3%B3n-353-2025-416874/texto"
-    ],
+    "sourceUrls": [],
     "patch": {
-      "specialConditions": [
-        "Qualifying tourists with a valid U.S. visa may enter without an Argentine visa or AVE under Resolution 353/2025"
-      ],
-      "notes": "Indian citizens should not treat Argentina as a blanket visa-free case. Since August 27, 2025, qualifying tourists with the valid U.S. visa described in Resolution 353/2025 may enter without an Argentine consular visa or AVE; otherwise use the normal pre-travel visa path.",
-      "sourceUrl": "https://www.argentina.gob.ar/normativa/nacional/resoluci%C3%B3n-353-2025-416874/texto"
+      "truthSync": {
+        "canonicalKey": "country:algeria",
+        "recordId": "buenosairesexpats:country:algeria",
+        "reviewDate": "2026-03-08",
+        "sourceExport": "countries",
+        "sourceUrls": []
+      }
+    }
+  },
+  "andorra": {
+    "reviewDate": "2026-03-08",
+    "sourceUrls": [],
+    "patch": {
+      "truthSync": {
+        "canonicalKey": "country:andorra",
+        "recordId": "buenosairesexpats:country:andorra",
+        "reviewDate": "2026-03-08",
+        "sourceExport": "countries",
+        "sourceUrls": []
+      }
+    }
+  },
+  "armenia": {
+    "reviewDate": "2026-03-08",
+    "sourceUrls": [],
+    "patch": {
+      "truthSync": {
+        "canonicalKey": "country:armenia",
+        "recordId": "buenosairesexpats:country:armenia",
+        "reviewDate": "2026-03-08",
+        "sourceExport": "countries",
+        "sourceUrls": []
+      }
+    }
+  },
+  "australia": {
+    "reviewDate": "2026-03-08",
+    "sourceUrls": [],
+    "patch": {
+      "truthSync": {
+        "canonicalKey": "country:australia",
+        "recordId": "buenosairesexpats:country:australia",
+        "reviewDate": "2026-03-08",
+        "sourceExport": "countries",
+        "sourceUrls": []
+      }
+    }
+  },
+  "austria": {
+    "reviewDate": "2026-03-08",
+    "sourceUrls": [],
+    "patch": {
+      "truthSync": {
+        "canonicalKey": "country:austria",
+        "recordId": "buenosairesexpats:country:austria",
+        "reviewDate": "2026-03-08",
+        "sourceExport": "countries",
+        "sourceUrls": []
+      }
+    }
+  },
+  "bangladesh": {
+    "reviewDate": "2026-03-08",
+    "sourceUrls": [],
+    "patch": {
+      "truthSync": {
+        "canonicalKey": "country:bangladesh",
+        "recordId": "buenosairesexpats:country:bangladesh",
+        "reviewDate": "2026-03-08",
+        "sourceExport": "countries",
+        "sourceUrls": []
+      }
+    }
+  },
+  "barbados": {
+    "reviewDate": "2026-03-08",
+    "sourceUrls": [],
+    "patch": {
+      "truthSync": {
+        "canonicalKey": "country:barbados",
+        "recordId": "buenosairesexpats:country:barbados",
+        "reviewDate": "2026-03-08",
+        "sourceExport": "countries",
+        "sourceUrls": []
+      }
+    }
+  },
+  "belarus": {
+    "reviewDate": "2026-03-08",
+    "sourceUrls": [],
+    "patch": {
+      "truthSync": {
+        "canonicalKey": "country:belarus",
+        "recordId": "buenosairesexpats:country:belarus",
+        "reviewDate": "2026-03-08",
+        "sourceExport": "countries",
+        "sourceUrls": []
+      }
+    }
+  },
+  "belgium": {
+    "reviewDate": "2026-03-08",
+    "sourceUrls": [],
+    "patch": {
+      "truthSync": {
+        "canonicalKey": "country:belgium",
+        "recordId": "buenosairesexpats:country:belgium",
+        "reviewDate": "2026-03-08",
+        "sourceExport": "countries",
+        "sourceUrls": []
+      }
+    }
+  },
+  "bolivia": {
+    "reviewDate": "2026-03-08",
+    "sourceUrls": [],
+    "patch": {
+      "truthSync": {
+        "canonicalKey": "country:bolivia",
+        "recordId": "buenosairesexpats:country:bolivia",
+        "reviewDate": "2026-03-08",
+        "sourceExport": "countries",
+        "sourceUrls": []
+      }
+    }
+  },
+  "bosnia-and-herzegovina": {
+    "reviewDate": "2026-03-08",
+    "sourceUrls": [],
+    "patch": {
+      "truthSync": {
+        "canonicalKey": "country:bosnia-and-herzegovina",
+        "recordId": "buenosairesexpats:country:bosnia-and-herzegovina",
+        "reviewDate": "2026-03-08",
+        "sourceExport": "countries",
+        "sourceUrls": []
+      }
+    }
+  },
+  "brazil": {
+    "reviewDate": "2026-03-08",
+    "sourceUrls": [],
+    "patch": {
+      "truthSync": {
+        "canonicalKey": "country:brazil",
+        "recordId": "buenosairesexpats:country:brazil",
+        "reviewDate": "2026-03-08",
+        "sourceExport": "countries",
+        "sourceUrls": []
+      }
+    }
+  },
+  "bulgaria": {
+    "reviewDate": "2026-03-08",
+    "sourceUrls": [],
+    "patch": {
+      "truthSync": {
+        "canonicalKey": "country:bulgaria",
+        "recordId": "buenosairesexpats:country:bulgaria",
+        "reviewDate": "2026-03-08",
+        "sourceExport": "countries",
+        "sourceUrls": []
+      }
+    }
+  },
+  "canada": {
+    "reviewDate": "2026-03-08",
+    "sourceUrls": [],
+    "patch": {
+      "truthSync": {
+        "canonicalKey": "country:canada",
+        "recordId": "buenosairesexpats:country:canada",
+        "reviewDate": "2026-03-08",
+        "sourceExport": "countries",
+        "sourceUrls": []
+      }
+    }
+  },
+  "chile": {
+    "reviewDate": "2026-03-08",
+    "sourceUrls": [],
+    "patch": {
+      "truthSync": {
+        "canonicalKey": "country:chile",
+        "recordId": "buenosairesexpats:country:chile",
+        "reviewDate": "2026-03-08",
+        "sourceExport": "countries",
+        "sourceUrls": []
+      }
     }
   },
   "china": {
@@ -41,6 +222,13 @@ export const countriesFactOverrides = {
       "https://www.argentina.gob.ar/normativa/nacional/resoluci%C3%B3n-316-2025-415345/texto"
     ],
     "patch": {
+      "truthSync": {
+        "canonicalKey": "country:china",
+        "recordId": "buenosairesexpats:country:china",
+        "reviewDate": "2026-03-08",
+        "sourceExport": "countries",
+        "sourceUrls": []
+      },
       "specialConditions": [
         "Qualifying tourists with a valid U.S. visa may enter without an Argentine visa or AVE under Resolution 316/2025"
       ],
@@ -48,18 +236,95 @@ export const countriesFactOverrides = {
       "sourceUrl": "https://www.argentina.gob.ar/normativa/nacional/resoluci%C3%B3n-316-2025-415345/texto"
     }
   },
-  "saudi-arabia": {
+  "colombia": {
     "reviewDate": "2026-03-08",
-    "sourceUrls": [
-      "https://www.argentina.gob.ar/noticias/migraciones-anuncio-la-eximicion-de-visacion-consular-para-nacionales-del-reino-de-arabia",
-      "https://www.argentina.gob.ar/normativa/nacional/resoluci%C3%B3n-144-2024-406633/texto"
-    ],
+    "sourceUrls": [],
     "patch": {
-      "specialConditions": [
-        "Transient/tourist facilitation depends on a valid U.S. visa plus AVE under Resolution 144/2024"
-      ],
-      "notes": "Saudi citizens should not assume blanket visa-free entry. The official facilitation waives the consular visa only for qualifying transient-entry cases backed by a valid U.S. visa plus AVE under Resolution 144/2024.",
-      "sourceUrl": "https://www.argentina.gob.ar/normativa/nacional/resoluci%C3%B3n-144-2024-406633/texto"
+      "truthSync": {
+        "canonicalKey": "country:colombia",
+        "recordId": "buenosairesexpats:country:colombia",
+        "reviewDate": "2026-03-08",
+        "sourceExport": "countries",
+        "sourceUrls": []
+      }
+    }
+  },
+  "costa-rica": {
+    "reviewDate": "2026-03-08",
+    "sourceUrls": [],
+    "patch": {
+      "truthSync": {
+        "canonicalKey": "country:costa-rica",
+        "recordId": "buenosairesexpats:country:costa-rica",
+        "reviewDate": "2026-03-08",
+        "sourceExport": "countries",
+        "sourceUrls": []
+      }
+    }
+  },
+  "croatia": {
+    "reviewDate": "2026-03-08",
+    "sourceUrls": [],
+    "patch": {
+      "truthSync": {
+        "canonicalKey": "country:croatia",
+        "recordId": "buenosairesexpats:country:croatia",
+        "reviewDate": "2026-03-08",
+        "sourceExport": "countries",
+        "sourceUrls": []
+      }
+    }
+  },
+  "cuba": {
+    "reviewDate": "2026-03-08",
+    "sourceUrls": [],
+    "patch": {
+      "truthSync": {
+        "canonicalKey": "country:cuba",
+        "recordId": "buenosairesexpats:country:cuba",
+        "reviewDate": "2026-03-08",
+        "sourceExport": "countries",
+        "sourceUrls": []
+      }
+    }
+  },
+  "czech-republic": {
+    "reviewDate": "2026-03-08",
+    "sourceUrls": [],
+    "patch": {
+      "truthSync": {
+        "canonicalKey": "country:czech-republic",
+        "recordId": "buenosairesexpats:country:czech-republic",
+        "reviewDate": "2026-03-08",
+        "sourceExport": "countries",
+        "sourceUrls": []
+      }
+    }
+  },
+  "denmark": {
+    "reviewDate": "2026-03-08",
+    "sourceUrls": [],
+    "patch": {
+      "truthSync": {
+        "canonicalKey": "country:denmark",
+        "recordId": "buenosairesexpats:country:denmark",
+        "reviewDate": "2026-03-08",
+        "sourceExport": "countries",
+        "sourceUrls": []
+      }
+    }
+  },
+  "dominica": {
+    "reviewDate": "2026-03-08",
+    "sourceUrls": [],
+    "patch": {
+      "truthSync": {
+        "canonicalKey": "country:dominica",
+        "recordId": "buenosairesexpats:country:dominica",
+        "reviewDate": "2026-03-08",
+        "sourceExport": "countries",
+        "sourceUrls": []
+      }
     }
   },
   "dominican-republic": {
@@ -69,18 +334,1023 @@ export const countriesFactOverrides = {
       "https://www.argentina.gob.ar/normativa/nacional/resoluci%C3%B3n-316-2025-415345/texto"
     ],
     "patch": {
+      "truthSync": {
+        "canonicalKey": "country:dominican-republic",
+        "recordId": "buenosairesexpats:country:dominican-republic",
+        "reviewDate": "2026-03-08",
+        "sourceExport": "countries",
+        "sourceUrls": []
+      },
       "specialConditions": [
         "Qualifying tourists with a valid U.S. visa may enter without an Argentine visa or AVE under Resolution 316/2025"
       ],
       "notes": "Dominican citizens are not blanket visa-free for Argentina. Since July 2025, qualifying tourists with the valid U.S. visa described in Resolution 316/2025 may enter without an Argentine visa or AVE; other travelers still need the normal pre-travel route.",
       "sourceUrl": "https://www.argentina.gob.ar/normativa/nacional/resoluci%C3%B3n-316-2025-415345/texto"
     }
+  },
+  "ecuador": {
+    "reviewDate": "2026-03-08",
+    "sourceUrls": [],
+    "patch": {
+      "truthSync": {
+        "canonicalKey": "country:ecuador",
+        "recordId": "buenosairesexpats:country:ecuador",
+        "reviewDate": "2026-03-08",
+        "sourceExport": "countries",
+        "sourceUrls": []
+      }
+    }
+  },
+  "egypt": {
+    "reviewDate": "2026-03-08",
+    "sourceUrls": [],
+    "patch": {
+      "truthSync": {
+        "canonicalKey": "country:egypt",
+        "recordId": "buenosairesexpats:country:egypt",
+        "reviewDate": "2026-03-08",
+        "sourceExport": "countries",
+        "sourceUrls": []
+      }
+    }
+  },
+  "estonia": {
+    "reviewDate": "2026-03-08",
+    "sourceUrls": [],
+    "patch": {
+      "truthSync": {
+        "canonicalKey": "country:estonia",
+        "recordId": "buenosairesexpats:country:estonia",
+        "reviewDate": "2026-03-08",
+        "sourceExport": "countries",
+        "sourceUrls": []
+      }
+    }
+  },
+  "fiji": {
+    "reviewDate": "2026-03-08",
+    "sourceUrls": [],
+    "patch": {
+      "truthSync": {
+        "canonicalKey": "country:fiji",
+        "recordId": "buenosairesexpats:country:fiji",
+        "reviewDate": "2026-03-08",
+        "sourceExport": "countries",
+        "sourceUrls": []
+      }
+    }
+  },
+  "finland": {
+    "reviewDate": "2026-03-08",
+    "sourceUrls": [],
+    "patch": {
+      "truthSync": {
+        "canonicalKey": "country:finland",
+        "recordId": "buenosairesexpats:country:finland",
+        "reviewDate": "2026-03-08",
+        "sourceExport": "countries",
+        "sourceUrls": []
+      }
+    }
+  },
+  "france": {
+    "reviewDate": "2026-03-08",
+    "sourceUrls": [],
+    "patch": {
+      "truthSync": {
+        "canonicalKey": "country:france",
+        "recordId": "buenosairesexpats:country:france",
+        "reviewDate": "2026-03-08",
+        "sourceExport": "countries",
+        "sourceUrls": []
+      }
+    }
+  },
+  "georgia": {
+    "reviewDate": "2026-03-08",
+    "sourceUrls": [],
+    "patch": {
+      "truthSync": {
+        "canonicalKey": "country:georgia",
+        "recordId": "buenosairesexpats:country:georgia",
+        "reviewDate": "2026-03-08",
+        "sourceExport": "countries",
+        "sourceUrls": []
+      }
+    }
+  },
+  "germany": {
+    "reviewDate": "2026-03-08",
+    "sourceUrls": [],
+    "patch": {
+      "truthSync": {
+        "canonicalKey": "country:germany",
+        "recordId": "buenosairesexpats:country:germany",
+        "reviewDate": "2026-03-08",
+        "sourceExport": "countries",
+        "sourceUrls": []
+      }
+    }
+  },
+  "greece": {
+    "reviewDate": "2026-03-08",
+    "sourceUrls": [],
+    "patch": {
+      "truthSync": {
+        "canonicalKey": "country:greece",
+        "recordId": "buenosairesexpats:country:greece",
+        "reviewDate": "2026-03-08",
+        "sourceExport": "countries",
+        "sourceUrls": []
+      }
+    }
+  },
+  "grenada": {
+    "reviewDate": "2026-03-08",
+    "sourceUrls": [],
+    "patch": {
+      "truthSync": {
+        "canonicalKey": "country:grenada",
+        "recordId": "buenosairesexpats:country:grenada",
+        "reviewDate": "2026-03-08",
+        "sourceExport": "countries",
+        "sourceUrls": []
+      }
+    }
+  },
+  "haiti": {
+    "reviewDate": "2026-03-08",
+    "sourceUrls": [],
+    "patch": {
+      "truthSync": {
+        "canonicalKey": "country:haiti",
+        "recordId": "buenosairesexpats:country:haiti",
+        "reviewDate": "2026-03-08",
+        "sourceExport": "countries",
+        "sourceUrls": []
+      }
+    }
+  },
+  "hong-kong": {
+    "reviewDate": "2026-03-08",
+    "sourceUrls": [],
+    "patch": {
+      "truthSync": {
+        "canonicalKey": "country:hong-kong",
+        "recordId": "buenosairesexpats:country:hong-kong",
+        "reviewDate": "2026-03-08",
+        "sourceExport": "countries",
+        "sourceUrls": []
+      }
+    }
+  },
+  "hungary": {
+    "reviewDate": "2026-03-08",
+    "sourceUrls": [],
+    "patch": {
+      "truthSync": {
+        "canonicalKey": "country:hungary",
+        "recordId": "buenosairesexpats:country:hungary",
+        "reviewDate": "2026-03-08",
+        "sourceExport": "countries",
+        "sourceUrls": []
+      }
+    }
+  },
+  "iceland": {
+    "reviewDate": "2026-03-08",
+    "sourceUrls": [],
+    "patch": {
+      "truthSync": {
+        "canonicalKey": "country:iceland",
+        "recordId": "buenosairesexpats:country:iceland",
+        "reviewDate": "2026-03-08",
+        "sourceExport": "countries",
+        "sourceUrls": []
+      }
+    }
+  },
+  "india": {
+    "reviewDate": "2026-03-08",
+    "sourceUrls": [
+      "https://www.argentina.gob.ar/noticias/turistas-indios-podran-ingresar-al-pais-con-visado-estadounidense",
+      "https://www.argentina.gob.ar/normativa/nacional/resoluci%C3%B3n-353-2025-416874/texto"
+    ],
+    "patch": {
+      "truthSync": {
+        "canonicalKey": "country:india",
+        "recordId": "buenosairesexpats:country:india",
+        "reviewDate": "2026-03-08",
+        "sourceExport": "countries",
+        "sourceUrls": []
+      },
+      "specialConditions": [
+        "Qualifying tourists with a valid U.S. visa may enter without an Argentine visa or AVE under Resolution 353/2025"
+      ],
+      "notes": "Indian citizens should not treat Argentina as a blanket visa-free case. Since August 27, 2025, qualifying tourists with the valid U.S. visa described in Resolution 353/2025 may enter without an Argentine consular visa or AVE; otherwise use the normal pre-travel visa path.",
+      "sourceUrl": "https://www.argentina.gob.ar/normativa/nacional/resoluci%C3%B3n-353-2025-416874/texto"
+    }
+  },
+  "indonesia": {
+    "reviewDate": "2026-03-08",
+    "sourceUrls": [],
+    "patch": {
+      "truthSync": {
+        "canonicalKey": "country:indonesia",
+        "recordId": "buenosairesexpats:country:indonesia",
+        "reviewDate": "2026-03-08",
+        "sourceExport": "countries",
+        "sourceUrls": []
+      }
+    }
+  },
+  "iran": {
+    "reviewDate": "2026-03-08",
+    "sourceUrls": [],
+    "patch": {
+      "truthSync": {
+        "canonicalKey": "country:iran",
+        "recordId": "buenosairesexpats:country:iran",
+        "reviewDate": "2026-03-08",
+        "sourceExport": "countries",
+        "sourceUrls": []
+      }
+    }
+  },
+  "ireland": {
+    "reviewDate": "2026-03-08",
+    "sourceUrls": [],
+    "patch": {
+      "truthSync": {
+        "canonicalKey": "country:ireland",
+        "recordId": "buenosairesexpats:country:ireland",
+        "reviewDate": "2026-03-08",
+        "sourceExport": "countries",
+        "sourceUrls": []
+      }
+    }
+  },
+  "israel": {
+    "reviewDate": "2026-03-08",
+    "sourceUrls": [],
+    "patch": {
+      "truthSync": {
+        "canonicalKey": "country:israel",
+        "recordId": "buenosairesexpats:country:israel",
+        "reviewDate": "2026-03-08",
+        "sourceExport": "countries",
+        "sourceUrls": []
+      }
+    }
+  },
+  "italy": {
+    "reviewDate": "2026-03-08",
+    "sourceUrls": [],
+    "patch": {
+      "truthSync": {
+        "canonicalKey": "country:italy",
+        "recordId": "buenosairesexpats:country:italy",
+        "reviewDate": "2026-03-08",
+        "sourceExport": "countries",
+        "sourceUrls": []
+      }
+    }
+  },
+  "jamaica": {
+    "reviewDate": "2026-03-08",
+    "sourceUrls": [],
+    "patch": {
+      "truthSync": {
+        "canonicalKey": "country:jamaica",
+        "recordId": "buenosairesexpats:country:jamaica",
+        "reviewDate": "2026-03-08",
+        "sourceExport": "countries",
+        "sourceUrls": []
+      }
+    }
+  },
+  "japan": {
+    "reviewDate": "2026-03-08",
+    "sourceUrls": [],
+    "patch": {
+      "truthSync": {
+        "canonicalKey": "country:japan",
+        "recordId": "buenosairesexpats:country:japan",
+        "reviewDate": "2026-03-08",
+        "sourceExport": "countries",
+        "sourceUrls": []
+      }
+    }
+  },
+  "kazakhstan": {
+    "reviewDate": "2026-03-08",
+    "sourceUrls": [],
+    "patch": {
+      "truthSync": {
+        "canonicalKey": "country:kazakhstan",
+        "recordId": "buenosairesexpats:country:kazakhstan",
+        "reviewDate": "2026-03-08",
+        "sourceExport": "countries",
+        "sourceUrls": []
+      }
+    }
+  },
+  "kenya": {
+    "reviewDate": "2026-03-08",
+    "sourceUrls": [],
+    "patch": {
+      "truthSync": {
+        "canonicalKey": "country:kenya",
+        "recordId": "buenosairesexpats:country:kenya",
+        "reviewDate": "2026-03-08",
+        "sourceExport": "countries",
+        "sourceUrls": []
+      }
+    }
+  },
+  "latvia": {
+    "reviewDate": "2026-03-08",
+    "sourceUrls": [],
+    "patch": {
+      "truthSync": {
+        "canonicalKey": "country:latvia",
+        "recordId": "buenosairesexpats:country:latvia",
+        "reviewDate": "2026-03-08",
+        "sourceExport": "countries",
+        "sourceUrls": []
+      }
+    }
+  },
+  "liechtenstein": {
+    "reviewDate": "2026-03-08",
+    "sourceUrls": [],
+    "patch": {
+      "truthSync": {
+        "canonicalKey": "country:liechtenstein",
+        "recordId": "buenosairesexpats:country:liechtenstein",
+        "reviewDate": "2026-03-08",
+        "sourceExport": "countries",
+        "sourceUrls": []
+      }
+    }
+  },
+  "lithuania": {
+    "reviewDate": "2026-03-08",
+    "sourceUrls": [],
+    "patch": {
+      "truthSync": {
+        "canonicalKey": "country:lithuania",
+        "recordId": "buenosairesexpats:country:lithuania",
+        "reviewDate": "2026-03-08",
+        "sourceExport": "countries",
+        "sourceUrls": []
+      }
+    }
+  },
+  "luxembourg": {
+    "reviewDate": "2026-03-08",
+    "sourceUrls": [],
+    "patch": {
+      "truthSync": {
+        "canonicalKey": "country:luxembourg",
+        "recordId": "buenosairesexpats:country:luxembourg",
+        "reviewDate": "2026-03-08",
+        "sourceExport": "countries",
+        "sourceUrls": []
+      }
+    }
+  },
+  "macao": {
+    "reviewDate": "2026-03-08",
+    "sourceUrls": [],
+    "patch": {
+      "truthSync": {
+        "canonicalKey": "country:macao",
+        "recordId": "buenosairesexpats:country:macao",
+        "reviewDate": "2026-03-08",
+        "sourceExport": "countries",
+        "sourceUrls": []
+      }
+    }
+  },
+  "malaysia": {
+    "reviewDate": "2026-03-08",
+    "sourceUrls": [],
+    "patch": {
+      "truthSync": {
+        "canonicalKey": "country:malaysia",
+        "recordId": "buenosairesexpats:country:malaysia",
+        "reviewDate": "2026-03-08",
+        "sourceExport": "countries",
+        "sourceUrls": []
+      }
+    }
+  },
+  "malta": {
+    "reviewDate": "2026-03-08",
+    "sourceUrls": [],
+    "patch": {
+      "truthSync": {
+        "canonicalKey": "country:malta",
+        "recordId": "buenosairesexpats:country:malta",
+        "reviewDate": "2026-03-08",
+        "sourceExport": "countries",
+        "sourceUrls": []
+      }
+    }
+  },
+  "mexico": {
+    "reviewDate": "2026-03-08",
+    "sourceUrls": [],
+    "patch": {
+      "truthSync": {
+        "canonicalKey": "country:mexico",
+        "recordId": "buenosairesexpats:country:mexico",
+        "reviewDate": "2026-03-08",
+        "sourceExport": "countries",
+        "sourceUrls": []
+      }
+    }
+  },
+  "monaco": {
+    "reviewDate": "2026-03-08",
+    "sourceUrls": [],
+    "patch": {
+      "truthSync": {
+        "canonicalKey": "country:monaco",
+        "recordId": "buenosairesexpats:country:monaco",
+        "reviewDate": "2026-03-08",
+        "sourceExport": "countries",
+        "sourceUrls": []
+      }
+    }
+  },
+  "mongolia": {
+    "reviewDate": "2026-03-08",
+    "sourceUrls": [],
+    "patch": {
+      "truthSync": {
+        "canonicalKey": "country:mongolia",
+        "recordId": "buenosairesexpats:country:mongolia",
+        "reviewDate": "2026-03-08",
+        "sourceExport": "countries",
+        "sourceUrls": []
+      }
+    }
+  },
+  "montenegro": {
+    "reviewDate": "2026-03-08",
+    "sourceUrls": [],
+    "patch": {
+      "truthSync": {
+        "canonicalKey": "country:montenegro",
+        "recordId": "buenosairesexpats:country:montenegro",
+        "reviewDate": "2026-03-08",
+        "sourceExport": "countries",
+        "sourceUrls": []
+      }
+    }
+  },
+  "morocco": {
+    "reviewDate": "2026-03-08",
+    "sourceUrls": [],
+    "patch": {
+      "truthSync": {
+        "canonicalKey": "country:morocco",
+        "recordId": "buenosairesexpats:country:morocco",
+        "reviewDate": "2026-03-08",
+        "sourceExport": "countries",
+        "sourceUrls": []
+      }
+    }
+  },
+  "netherlands": {
+    "reviewDate": "2026-03-08",
+    "sourceUrls": [],
+    "patch": {
+      "truthSync": {
+        "canonicalKey": "country:netherlands",
+        "recordId": "buenosairesexpats:country:netherlands",
+        "reviewDate": "2026-03-08",
+        "sourceExport": "countries",
+        "sourceUrls": []
+      }
+    }
+  },
+  "new-zealand": {
+    "reviewDate": "2026-03-08",
+    "sourceUrls": [],
+    "patch": {
+      "truthSync": {
+        "canonicalKey": "country:new-zealand",
+        "recordId": "buenosairesexpats:country:new-zealand",
+        "reviewDate": "2026-03-08",
+        "sourceExport": "countries",
+        "sourceUrls": []
+      }
+    }
+  },
+  "nigeria": {
+    "reviewDate": "2026-03-08",
+    "sourceUrls": [],
+    "patch": {
+      "truthSync": {
+        "canonicalKey": "country:nigeria",
+        "recordId": "buenosairesexpats:country:nigeria",
+        "reviewDate": "2026-03-08",
+        "sourceExport": "countries",
+        "sourceUrls": []
+      }
+    }
+  },
+  "north-macedonia": {
+    "reviewDate": "2026-03-08",
+    "sourceUrls": [],
+    "patch": {
+      "truthSync": {
+        "canonicalKey": "country:north-macedonia",
+        "recordId": "buenosairesexpats:country:north-macedonia",
+        "reviewDate": "2026-03-08",
+        "sourceExport": "countries",
+        "sourceUrls": []
+      }
+    }
+  },
+  "norway": {
+    "reviewDate": "2026-03-08",
+    "sourceUrls": [],
+    "patch": {
+      "truthSync": {
+        "canonicalKey": "country:norway",
+        "recordId": "buenosairesexpats:country:norway",
+        "reviewDate": "2026-03-08",
+        "sourceExport": "countries",
+        "sourceUrls": []
+      }
+    }
+  },
+  "pakistan": {
+    "reviewDate": "2026-03-08",
+    "sourceUrls": [],
+    "patch": {
+      "truthSync": {
+        "canonicalKey": "country:pakistan",
+        "recordId": "buenosairesexpats:country:pakistan",
+        "reviewDate": "2026-03-08",
+        "sourceExport": "countries",
+        "sourceUrls": []
+      }
+    }
+  },
+  "paraguay": {
+    "reviewDate": "2026-03-08",
+    "sourceUrls": [],
+    "patch": {
+      "truthSync": {
+        "canonicalKey": "country:paraguay",
+        "recordId": "buenosairesexpats:country:paraguay",
+        "reviewDate": "2026-03-08",
+        "sourceExport": "countries",
+        "sourceUrls": []
+      }
+    }
+  },
+  "peru": {
+    "reviewDate": "2026-03-08",
+    "sourceUrls": [],
+    "patch": {
+      "truthSync": {
+        "canonicalKey": "country:peru",
+        "recordId": "buenosairesexpats:country:peru",
+        "reviewDate": "2026-03-08",
+        "sourceExport": "countries",
+        "sourceUrls": []
+      }
+    }
+  },
+  "philippines": {
+    "reviewDate": "2026-03-08",
+    "sourceUrls": [],
+    "patch": {
+      "truthSync": {
+        "canonicalKey": "country:philippines",
+        "recordId": "buenosairesexpats:country:philippines",
+        "reviewDate": "2026-03-08",
+        "sourceExport": "countries",
+        "sourceUrls": []
+      }
+    }
+  },
+  "poland": {
+    "reviewDate": "2026-03-08",
+    "sourceUrls": [],
+    "patch": {
+      "truthSync": {
+        "canonicalKey": "country:poland",
+        "recordId": "buenosairesexpats:country:poland",
+        "reviewDate": "2026-03-08",
+        "sourceExport": "countries",
+        "sourceUrls": []
+      }
+    }
+  },
+  "portugal": {
+    "reviewDate": "2026-03-08",
+    "sourceUrls": [],
+    "patch": {
+      "truthSync": {
+        "canonicalKey": "country:portugal",
+        "recordId": "buenosairesexpats:country:portugal",
+        "reviewDate": "2026-03-08",
+        "sourceExport": "countries",
+        "sourceUrls": []
+      }
+    }
+  },
+  "qatar": {
+    "reviewDate": "2026-03-08",
+    "sourceUrls": [],
+    "patch": {
+      "truthSync": {
+        "canonicalKey": "country:qatar",
+        "recordId": "buenosairesexpats:country:qatar",
+        "reviewDate": "2026-03-08",
+        "sourceExport": "countries",
+        "sourceUrls": []
+      }
+    }
+  },
+  "romania": {
+    "reviewDate": "2026-03-08",
+    "sourceUrls": [],
+    "patch": {
+      "truthSync": {
+        "canonicalKey": "country:romania",
+        "recordId": "buenosairesexpats:country:romania",
+        "reviewDate": "2026-03-08",
+        "sourceExport": "countries",
+        "sourceUrls": []
+      }
+    }
+  },
+  "russia": {
+    "reviewDate": "2026-03-08",
+    "sourceUrls": [],
+    "patch": {
+      "truthSync": {
+        "canonicalKey": "country:russia",
+        "recordId": "buenosairesexpats:country:russia",
+        "reviewDate": "2026-03-08",
+        "sourceExport": "countries",
+        "sourceUrls": []
+      }
+    }
+  },
+  "saint-kitts-and-nevis": {
+    "reviewDate": "2026-03-08",
+    "sourceUrls": [],
+    "patch": {
+      "truthSync": {
+        "canonicalKey": "country:saint-kitts-and-nevis",
+        "recordId": "buenosairesexpats:country:saint-kitts-and-nevis",
+        "reviewDate": "2026-03-08",
+        "sourceExport": "countries",
+        "sourceUrls": []
+      }
+    }
+  },
+  "saint-lucia": {
+    "reviewDate": "2026-03-08",
+    "sourceUrls": [],
+    "patch": {
+      "truthSync": {
+        "canonicalKey": "country:saint-lucia",
+        "recordId": "buenosairesexpats:country:saint-lucia",
+        "reviewDate": "2026-03-08",
+        "sourceExport": "countries",
+        "sourceUrls": []
+      }
+    }
+  },
+  "saint-vincent-and-the-grenadines": {
+    "reviewDate": "2026-03-08",
+    "sourceUrls": [],
+    "patch": {
+      "truthSync": {
+        "canonicalKey": "country:saint-vincent-and-the-grenadines",
+        "recordId": "buenosairesexpats:country:saint-vincent-and-the-grenadines",
+        "reviewDate": "2026-03-08",
+        "sourceExport": "countries",
+        "sourceUrls": []
+      }
+    }
+  },
+  "san-marino": {
+    "reviewDate": "2026-03-08",
+    "sourceUrls": [],
+    "patch": {
+      "truthSync": {
+        "canonicalKey": "country:san-marino",
+        "recordId": "buenosairesexpats:country:san-marino",
+        "reviewDate": "2026-03-08",
+        "sourceExport": "countries",
+        "sourceUrls": []
+      }
+    }
+  },
+  "saudi-arabia": {
+    "reviewDate": "2026-03-08",
+    "sourceUrls": [
+      "https://www.argentina.gob.ar/noticias/migraciones-anuncio-la-eximicion-de-visacion-consular-para-nacionales-del-reino-de-arabia",
+      "https://www.argentina.gob.ar/normativa/nacional/resoluci%C3%B3n-144-2024-406633/texto"
+    ],
+    "patch": {
+      "truthSync": {
+        "canonicalKey": "country:saudi-arabia",
+        "recordId": "buenosairesexpats:country:saudi-arabia",
+        "reviewDate": "2026-03-08",
+        "sourceExport": "countries",
+        "sourceUrls": []
+      },
+      "specialConditions": [
+        "Transient/tourist facilitation depends on a valid U.S. visa plus AVE under Resolution 144/2024"
+      ],
+      "notes": "Saudi citizens should not assume blanket visa-free entry. The official facilitation waives the consular visa only for qualifying transient-entry cases backed by a valid U.S. visa plus AVE under Resolution 144/2024.",
+      "sourceUrl": "https://www.argentina.gob.ar/normativa/nacional/resoluci%C3%B3n-144-2024-406633/texto"
+    }
+  },
+  "serbia": {
+    "reviewDate": "2026-03-08",
+    "sourceUrls": [],
+    "patch": {
+      "truthSync": {
+        "canonicalKey": "country:serbia",
+        "recordId": "buenosairesexpats:country:serbia",
+        "reviewDate": "2026-03-08",
+        "sourceExport": "countries",
+        "sourceUrls": []
+      }
+    }
+  },
+  "singapore": {
+    "reviewDate": "2026-03-08",
+    "sourceUrls": [],
+    "patch": {
+      "truthSync": {
+        "canonicalKey": "country:singapore",
+        "recordId": "buenosairesexpats:country:singapore",
+        "reviewDate": "2026-03-08",
+        "sourceExport": "countries",
+        "sourceUrls": []
+      }
+    }
+  },
+  "slovakia": {
+    "reviewDate": "2026-03-08",
+    "sourceUrls": [],
+    "patch": {
+      "truthSync": {
+        "canonicalKey": "country:slovakia",
+        "recordId": "buenosairesexpats:country:slovakia",
+        "reviewDate": "2026-03-08",
+        "sourceExport": "countries",
+        "sourceUrls": []
+      }
+    }
+  },
+  "slovenia": {
+    "reviewDate": "2026-03-08",
+    "sourceUrls": [],
+    "patch": {
+      "truthSync": {
+        "canonicalKey": "country:slovenia",
+        "recordId": "buenosairesexpats:country:slovenia",
+        "reviewDate": "2026-03-08",
+        "sourceExport": "countries",
+        "sourceUrls": []
+      }
+    }
+  },
+  "south-africa": {
+    "reviewDate": "2026-03-08",
+    "sourceUrls": [],
+    "patch": {
+      "truthSync": {
+        "canonicalKey": "country:south-africa",
+        "recordId": "buenosairesexpats:country:south-africa",
+        "reviewDate": "2026-03-08",
+        "sourceExport": "countries",
+        "sourceUrls": []
+      }
+    }
+  },
+  "south-korea": {
+    "reviewDate": "2026-03-08",
+    "sourceUrls": [],
+    "patch": {
+      "truthSync": {
+        "canonicalKey": "country:south-korea",
+        "recordId": "buenosairesexpats:country:south-korea",
+        "reviewDate": "2026-03-08",
+        "sourceExport": "countries",
+        "sourceUrls": []
+      }
+    }
+  },
+  "spain": {
+    "reviewDate": "2026-03-08",
+    "sourceUrls": [],
+    "patch": {
+      "truthSync": {
+        "canonicalKey": "country:spain",
+        "recordId": "buenosairesexpats:country:spain",
+        "reviewDate": "2026-03-08",
+        "sourceExport": "countries",
+        "sourceUrls": []
+      }
+    }
+  },
+  "sweden": {
+    "reviewDate": "2026-03-08",
+    "sourceUrls": [],
+    "patch": {
+      "truthSync": {
+        "canonicalKey": "country:sweden",
+        "recordId": "buenosairesexpats:country:sweden",
+        "reviewDate": "2026-03-08",
+        "sourceExport": "countries",
+        "sourceUrls": []
+      }
+    }
+  },
+  "switzerland": {
+    "reviewDate": "2026-03-08",
+    "sourceUrls": [],
+    "patch": {
+      "truthSync": {
+        "canonicalKey": "country:switzerland",
+        "recordId": "buenosairesexpats:country:switzerland",
+        "reviewDate": "2026-03-08",
+        "sourceExport": "countries",
+        "sourceUrls": []
+      }
+    }
+  },
+  "thailand": {
+    "reviewDate": "2026-03-08",
+    "sourceUrls": [],
+    "patch": {
+      "truthSync": {
+        "canonicalKey": "country:thailand",
+        "recordId": "buenosairesexpats:country:thailand",
+        "reviewDate": "2026-03-08",
+        "sourceExport": "countries",
+        "sourceUrls": []
+      }
+    }
+  },
+  "trinidad-and-tobago": {
+    "reviewDate": "2026-03-08",
+    "sourceUrls": [],
+    "patch": {
+      "truthSync": {
+        "canonicalKey": "country:trinidad-and-tobago",
+        "recordId": "buenosairesexpats:country:trinidad-and-tobago",
+        "reviewDate": "2026-03-08",
+        "sourceExport": "countries",
+        "sourceUrls": []
+      }
+    }
+  },
+  "turkey": {
+    "reviewDate": "2026-03-08",
+    "sourceUrls": [],
+    "patch": {
+      "truthSync": {
+        "canonicalKey": "country:turkey",
+        "recordId": "buenosairesexpats:country:turkey",
+        "reviewDate": "2026-03-08",
+        "sourceExport": "countries",
+        "sourceUrls": []
+      }
+    }
+  },
+  "ukraine": {
+    "reviewDate": "2026-03-08",
+    "sourceUrls": [],
+    "patch": {
+      "truthSync": {
+        "canonicalKey": "country:ukraine",
+        "recordId": "buenosairesexpats:country:ukraine",
+        "reviewDate": "2026-03-08",
+        "sourceExport": "countries",
+        "sourceUrls": []
+      }
+    }
+  },
+  "united-arab-emirates": {
+    "reviewDate": "2026-03-08",
+    "sourceUrls": [
+      "https://etail.cancilleria.gob.ar/userfiles/2018/estados_y_territorios_exentos_de_visa_turista.pdf"
+    ],
+    "patch": {
+      "truthSync": {
+        "canonicalKey": "country:united-arab-emirates",
+        "recordId": "buenosairesexpats:country:united-arab-emirates",
+        "reviewDate": "2026-03-08",
+        "sourceExport": "countries",
+        "sourceUrls": []
+      },
+      "specialConditions": [
+        "Tourist visa-exempt for ordinary passports on the official Cancilleria exemption list"
+      ],
+      "notes": "UAE citizens appear on Argentina's official tourist visa-exemption list for ordinary passports, with the standard 90-day tourist baseline unless a different period is specifically stated.",
+      "sourceUrl": "https://etail.cancilleria.gob.ar/userfiles/2018/estados_y_territorios_exentos_de_visa_turista.pdf"
+    }
+  },
+  "united-kingdom": {
+    "reviewDate": "2026-03-08",
+    "sourceUrls": [],
+    "patch": {
+      "truthSync": {
+        "canonicalKey": "country:united-kingdom",
+        "recordId": "buenosairesexpats:country:united-kingdom",
+        "reviewDate": "2026-03-08",
+        "sourceExport": "countries",
+        "sourceUrls": []
+      }
+    }
+  },
+  "united-states": {
+    "reviewDate": "2026-03-08",
+    "sourceUrls": [],
+    "patch": {
+      "truthSync": {
+        "canonicalKey": "country:united-states",
+        "recordId": "buenosairesexpats:country:united-states",
+        "reviewDate": "2026-03-08",
+        "sourceExport": "countries",
+        "sourceUrls": []
+      }
+    }
+  },
+  "uruguay": {
+    "reviewDate": "2026-03-08",
+    "sourceUrls": [],
+    "patch": {
+      "truthSync": {
+        "canonicalKey": "country:uruguay",
+        "recordId": "buenosairesexpats:country:uruguay",
+        "reviewDate": "2026-03-08",
+        "sourceExport": "countries",
+        "sourceUrls": []
+      }
+    }
+  },
+  "vatican-city": {
+    "reviewDate": "2026-03-08",
+    "sourceUrls": [],
+    "patch": {
+      "truthSync": {
+        "canonicalKey": "country:vatican-city",
+        "recordId": "buenosairesexpats:country:vatican-city",
+        "reviewDate": "2026-03-08",
+        "sourceExport": "countries",
+        "sourceUrls": []
+      }
+    }
+  },
+  "venezuela": {
+    "reviewDate": "2026-03-08",
+    "sourceUrls": [],
+    "patch": {
+      "truthSync": {
+        "canonicalKey": "country:venezuela",
+        "recordId": "buenosairesexpats:country:venezuela",
+        "reviewDate": "2026-03-08",
+        "sourceExport": "countries",
+        "sourceUrls": []
+      }
+    }
+  },
+  "vietnam": {
+    "reviewDate": "2026-03-08",
+    "sourceUrls": [],
+    "patch": {
+      "truthSync": {
+        "canonicalKey": "country:vietnam",
+        "recordId": "buenosairesexpats:country:vietnam",
+        "reviewDate": "2026-03-08",
+        "sourceExport": "countries",
+        "sourceUrls": []
+      }
+    }
   }
 } as const;
 
 export const expatProfilesFactOverrides = {
   "akane-tango": {
-    "reviewDate": "unknown",
+    "reviewDate": "2026-03-08",
     "sourceUrls": [
       "https://akanetanguera.com/"
     ],
@@ -91,7 +1361,7 @@ export const expatProfilesFactOverrides = {
       "truthSync": {
         "canonicalKey": "expat-profile:akane-tango",
         "recordId": "buenosairesexpats:expat-profile:akane-tango",
-        "reviewDate": "unknown",
+        "reviewDate": "2026-03-08",
         "sourceExport": "expatProfiles",
         "sourceUrls": [
           "https://akanetanguera.com/"
@@ -100,7 +1370,7 @@ export const expatProfilesFactOverrides = {
     }
   },
   "alec-oscar": {
-    "reviewDate": "unknown",
+    "reviewDate": "2026-03-08",
     "sourceUrls": [
       "https://argentinaexpat.com/alec-oscar-provide-their-perspective-on-moving-to-argentina/"
     ],
@@ -111,7 +1381,7 @@ export const expatProfilesFactOverrides = {
       "truthSync": {
         "canonicalKey": "expat-profile:alec-oscar",
         "recordId": "buenosairesexpats:expat-profile:alec-oscar",
-        "reviewDate": "unknown",
+        "reviewDate": "2026-03-08",
         "sourceExport": "expatProfiles",
         "sourceUrls": [
           "https://argentinaexpat.com/alec-oscar-provide-their-perspective-on-moving-to-argentina/"
@@ -120,7 +1390,7 @@ export const expatProfilesFactOverrides = {
     }
   },
   "alex-vamos-spanish": {
-    "reviewDate": "unknown",
+    "reviewDate": "2026-03-08",
     "sourceUrls": [
       "https://vamospanish.com/discover/"
     ],
@@ -131,7 +1401,7 @@ export const expatProfilesFactOverrides = {
       "truthSync": {
         "canonicalKey": "expat-profile:alex-vamos-spanish",
         "recordId": "buenosairesexpats:expat-profile:alex-vamos-spanish",
-        "reviewDate": "unknown",
+        "reviewDate": "2026-03-08",
         "sourceExport": "expatProfiles",
         "sourceUrls": [
           "https://vamospanish.com/discover/"
@@ -140,7 +1410,7 @@ export const expatProfilesFactOverrides = {
     }
   },
   "allie-pick-up-the-fork": {
-    "reviewDate": "unknown",
+    "reviewDate": "2026-03-08",
     "sourceUrls": [
       "https://pickupthefork.com"
     ],
@@ -151,7 +1421,7 @@ export const expatProfilesFactOverrides = {
       "truthSync": {
         "canonicalKey": "expat-profile:allie-pick-up-the-fork",
         "recordId": "buenosairesexpats:expat-profile:allie-pick-up-the-fork",
-        "reviewDate": "unknown",
+        "reviewDate": "2026-03-08",
         "sourceExport": "expatProfiles",
         "sourceUrls": [
           "https://pickupthefork.com"
@@ -160,7 +1430,7 @@ export const expatProfilesFactOverrides = {
     }
   },
   "amanda-ivan": {
-    "reviewDate": "unknown",
+    "reviewDate": "2026-03-08",
     "sourceUrls": [
       "https://argentinaexpat.com/amanda-talks-about-living-in-argentina/"
     ],
@@ -171,7 +1441,7 @@ export const expatProfilesFactOverrides = {
       "truthSync": {
         "canonicalKey": "expat-profile:amanda-ivan",
         "recordId": "buenosairesexpats:expat-profile:amanda-ivan",
-        "reviewDate": "unknown",
+        "reviewDate": "2026-03-08",
         "sourceExport": "expatProfiles",
         "sourceUrls": [
           "https://argentinaexpat.com/amanda-talks-about-living-in-argentina/"
@@ -180,7 +1450,7 @@ export const expatProfilesFactOverrides = {
     }
   },
   "amber-sandro-ba-expats": {
-    "reviewDate": "unknown",
+    "reviewDate": "2026-03-08",
     "sourceUrls": [
       "https://baexpats.org"
     ],
@@ -191,7 +1461,7 @@ export const expatProfilesFactOverrides = {
       "truthSync": {
         "canonicalKey": "expat-profile:amber-sandro-ba-expats",
         "recordId": "buenosairesexpats:expat-profile:amber-sandro-ba-expats",
-        "reviewDate": "unknown",
+        "reviewDate": "2026-03-08",
         "sourceExport": "expatProfiles",
         "sourceUrls": [
           "https://baexpats.org"
@@ -200,7 +1470,7 @@ export const expatProfilesFactOverrides = {
     }
   },
   "amy-suto": {
-    "reviewDate": "unknown",
+    "reviewDate": "2026-03-08",
     "sourceUrls": [
       "https://www.amysuto.com"
     ],
@@ -211,7 +1481,7 @@ export const expatProfilesFactOverrides = {
       "truthSync": {
         "canonicalKey": "expat-profile:amy-suto",
         "recordId": "buenosairesexpats:expat-profile:amy-suto",
-        "reviewDate": "unknown",
+        "reviewDate": "2026-03-08",
         "sourceExport": "expatProfiles",
         "sourceUrls": [
           "https://www.amysuto.com"
@@ -220,7 +1490,7 @@ export const expatProfilesFactOverrides = {
     }
   },
   "an-ra-chung": {
-    "reviewDate": "unknown",
+    "reviewDate": "2026-03-08",
     "sourceUrls": [
       "https://pickupthefork.substack.com/p/3-must-try-koreatown-restaurants"
     ],
@@ -231,7 +1501,7 @@ export const expatProfilesFactOverrides = {
       "truthSync": {
         "canonicalKey": "expat-profile:an-ra-chung",
         "recordId": "buenosairesexpats:expat-profile:an-ra-chung",
-        "reviewDate": "unknown",
+        "reviewDate": "2026-03-08",
         "sourceExport": "expatProfiles",
         "sourceUrls": [
           "https://pickupthefork.substack.com/p/3-must-try-koreatown-restaurants"
@@ -240,7 +1510,7 @@ export const expatProfilesFactOverrides = {
     }
   },
   "andrew-venture": {
-    "reviewDate": "unknown",
+    "reviewDate": "2026-03-08",
     "sourceUrls": [
       "https://argentinaexpat.com/kiwi-in-buenos-aires/"
     ],
@@ -251,7 +1521,7 @@ export const expatProfilesFactOverrides = {
       "truthSync": {
         "canonicalKey": "expat-profile:andrew-venture",
         "recordId": "buenosairesexpats:expat-profile:andrew-venture",
-        "reviewDate": "unknown",
+        "reviewDate": "2026-03-08",
         "sourceExport": "expatProfiles",
         "sourceUrls": [
           "https://argentinaexpat.com/kiwi-in-buenos-aires/"
@@ -260,7 +1530,7 @@ export const expatProfilesFactOverrides = {
     }
   },
   "angelina-canada": {
-    "reviewDate": "unknown",
+    "reviewDate": "2026-03-08",
     "sourceUrls": [
       "http://www.makingthesamedifference.blogspot.com/"
     ],
@@ -271,7 +1541,7 @@ export const expatProfilesFactOverrides = {
       "truthSync": {
         "canonicalKey": "expat-profile:angelina-canada",
         "recordId": "buenosairesexpats:expat-profile:angelina-canada",
-        "reviewDate": "unknown",
+        "reviewDate": "2026-03-08",
         "sourceExport": "expatProfiles",
         "sourceUrls": [
           "http://www.makingthesamedifference.blogspot.com/"
@@ -280,7 +1550,7 @@ export const expatProfilesFactOverrides = {
     }
   },
   "angelina-tango-moon": {
-    "reviewDate": "unknown",
+    "reviewDate": "2026-03-08",
     "sourceUrls": [
       "http://www.tango2themoon.com/"
     ],
@@ -291,7 +1561,7 @@ export const expatProfilesFactOverrides = {
       "truthSync": {
         "canonicalKey": "expat-profile:angelina-tango-moon",
         "recordId": "buenosairesexpats:expat-profile:angelina-tango-moon",
-        "reviewDate": "unknown",
+        "reviewDate": "2026-03-08",
         "sourceExport": "expatProfiles",
         "sourceUrls": [
           "http://www.tango2themoon.com/"
@@ -300,7 +1570,7 @@ export const expatProfilesFactOverrides = {
     }
   },
   "asli-pelit": {
-    "reviewDate": "unknown",
+    "reviewDate": "2026-03-08",
     "sourceUrls": [
       "https://www.sorrelmw.com/2011/10/16/asli-pelit/"
     ],
@@ -311,7 +1581,7 @@ export const expatProfilesFactOverrides = {
       "truthSync": {
         "canonicalKey": "expat-profile:asli-pelit",
         "recordId": "buenosairesexpats:expat-profile:asli-pelit",
-        "reviewDate": "unknown",
+        "reviewDate": "2026-03-08",
         "sourceExport": "expatProfiles",
         "sourceUrls": [
           "https://www.sorrelmw.com/2011/10/16/asli-pelit/"
@@ -320,7 +1590,7 @@ export const expatProfilesFactOverrides = {
     }
   },
   "ba-noma": {
-    "reviewDate": "unknown",
+    "reviewDate": "2026-03-08",
     "sourceUrls": [
       "https://www.tiktok.com/@ba.noma"
     ],
@@ -331,7 +1601,7 @@ export const expatProfilesFactOverrides = {
       "truthSync": {
         "canonicalKey": "expat-profile:ba-noma",
         "recordId": "buenosairesexpats:expat-profile:ba-noma",
-        "reviewDate": "unknown",
+        "reviewDate": "2026-03-08",
         "sourceExport": "expatProfiles",
         "sourceUrls": [
           "https://www.tiktok.com/@ba.noma"
@@ -340,7 +1610,7 @@ export const expatProfilesFactOverrides = {
     }
   },
   "becci-dk": {
-    "reviewDate": "unknown",
+    "reviewDate": "2026-03-08",
     "sourceUrls": [
       "https://becci.dk"
     ],
@@ -351,7 +1621,7 @@ export const expatProfilesFactOverrides = {
       "truthSync": {
         "canonicalKey": "expat-profile:becci-dk",
         "recordId": "buenosairesexpats:expat-profile:becci-dk",
-        "reviewDate": "unknown",
+        "reviewDate": "2026-03-08",
         "sourceExport": "expatProfiles",
         "sourceUrls": [
           "https://becci.dk"
@@ -360,7 +1630,7 @@ export const expatProfilesFactOverrides = {
     }
   },
   "breezing-through": {
-    "reviewDate": "unknown",
+    "reviewDate": "2026-03-08",
     "sourceUrls": [
       "https://breezingthrough.com/"
     ],
@@ -371,7 +1641,7 @@ export const expatProfilesFactOverrides = {
       "truthSync": {
         "canonicalKey": "expat-profile:breezing-through",
         "recordId": "buenosairesexpats:expat-profile:breezing-through",
-        "reviewDate": "unknown",
+        "reviewDate": "2026-03-08",
         "sourceExport": "expatProfiles",
         "sourceUrls": [
           "https://breezingthrough.com/"
@@ -380,7 +1650,7 @@ export const expatProfilesFactOverrides = {
     }
   },
   "carolina-murgi": {
-    "reviewDate": "unknown",
+    "reviewDate": "2026-03-08",
     "sourceUrls": [
       "https://argentinaexpat.com/11-years-in-buenos-aires/"
     ],
@@ -391,7 +1661,7 @@ export const expatProfilesFactOverrides = {
       "truthSync": {
         "canonicalKey": "expat-profile:carolina-murgi",
         "recordId": "buenosairesexpats:expat-profile:carolina-murgi",
-        "reviewDate": "unknown",
+        "reviewDate": "2026-03-08",
         "sourceExport": "expatProfiles",
         "sourceUrls": [
           "https://argentinaexpat.com/11-years-in-buenos-aires/"
@@ -400,7 +1670,7 @@ export const expatProfilesFactOverrides = {
     }
   },
   "chanel-mae": {
-    "reviewDate": "unknown",
+    "reviewDate": "2026-03-08",
     "sourceUrls": [
       "https://www.youtube.com/@chanelmaee"
     ],
@@ -411,7 +1681,7 @@ export const expatProfilesFactOverrides = {
       "truthSync": {
         "canonicalKey": "expat-profile:chanel-mae",
         "recordId": "buenosairesexpats:expat-profile:chanel-mae",
-        "reviewDate": "unknown",
+        "reviewDate": "2026-03-08",
         "sourceExport": "expatProfiles",
         "sourceUrls": [
           "https://www.youtube.com/@chanelmaee"
@@ -420,7 +1690,7 @@ export const expatProfilesFactOverrides = {
     }
   },
   "christine-gilbert": {
-    "reviewDate": "unknown",
+    "reviewDate": "2026-03-08",
     "sourceUrls": [
       "https://www.almostfearless.com"
     ],
@@ -431,7 +1701,7 @@ export const expatProfilesFactOverrides = {
       "truthSync": {
         "canonicalKey": "expat-profile:christine-gilbert",
         "recordId": "buenosairesexpats:expat-profile:christine-gilbert",
-        "reviewDate": "unknown",
+        "reviewDate": "2026-03-08",
         "sourceExport": "expatProfiles",
         "sourceUrls": [
           "https://www.almostfearless.com"
@@ -440,7 +1710,7 @@ export const expatProfilesFactOverrides = {
     }
   },
   "colombians-ba": {
-    "reviewDate": "unknown",
+    "reviewDate": "2026-03-08",
     "sourceUrls": [
       "https://www.youtube.com/watch?v=oFysQI1l3X0"
     ],
@@ -451,7 +1721,7 @@ export const expatProfilesFactOverrides = {
       "truthSync": {
         "canonicalKey": "expat-profile:colombians-ba",
         "recordId": "buenosairesexpats:expat-profile:colombians-ba",
-        "reviewDate": "unknown",
+        "reviewDate": "2026-03-08",
         "sourceExport": "expatProfiles",
         "sourceUrls": [
           "https://www.youtube.com/watch?v=oFysQI1l3X0"
@@ -460,7 +1730,7 @@ export const expatProfilesFactOverrides = {
     }
   },
   "croatian-argentina": {
-    "reviewDate": "unknown",
+    "reviewDate": "2026-03-08",
     "sourceUrls": [
       "https://total-croatia-news.com/news/diaspora/nadia-milevcic-returnee/"
     ],
@@ -471,7 +1741,7 @@ export const expatProfilesFactOverrides = {
       "truthSync": {
         "canonicalKey": "expat-profile:croatian-argentina",
         "recordId": "buenosairesexpats:expat-profile:croatian-argentina",
-        "reviewDate": "unknown",
+        "reviewDate": "2026-03-08",
         "sourceExport": "expatProfiles",
         "sourceUrls": [
           "https://total-croatia-news.com/news/diaspora/nadia-milevcic-returnee/"
@@ -480,7 +1750,7 @@ export const expatProfilesFactOverrides = {
     }
   },
   "daniel-calhoun": {
-    "reviewDate": "unknown",
+    "reviewDate": "2026-03-08",
     "sourceUrls": [
       "https://argentinaexpat.com/why-daniel-chose-argentina/"
     ],
@@ -491,7 +1761,7 @@ export const expatProfilesFactOverrides = {
       "truthSync": {
         "canonicalKey": "expat-profile:daniel-calhoun",
         "recordId": "buenosairesexpats:expat-profile:daniel-calhoun",
-        "reviewDate": "unknown",
+        "reviewDate": "2026-03-08",
         "sourceExport": "expatProfiles",
         "sourceUrls": [
           "https://argentinaexpat.com/why-daniel-chose-argentina/"
@@ -500,7 +1770,7 @@ export const expatProfilesFactOverrides = {
     }
   },
   "dario-migrant-photographer": {
-    "reviewDate": "unknown",
+    "reviewDate": "2026-03-08",
     "sourceUrls": [
       "https://migrantphotographer.blogspot.com/"
     ],
@@ -511,7 +1781,7 @@ export const expatProfilesFactOverrides = {
       "truthSync": {
         "canonicalKey": "expat-profile:dario-migrant-photographer",
         "recordId": "buenosairesexpats:expat-profile:dario-migrant-photographer",
-        "reviewDate": "unknown",
+        "reviewDate": "2026-03-08",
         "sourceExport": "expatProfiles",
         "sourceUrls": [
           "https://migrantphotographer.blogspot.com/"
@@ -520,7 +1790,7 @@ export const expatProfilesFactOverrides = {
     }
   },
   "edd-cynthia-staton": {
-    "reviewDate": "unknown",
+    "reviewDate": "2026-03-08",
     "sourceUrls": [
       "https://www.eddandcynthia.com"
     ],
@@ -531,7 +1801,7 @@ export const expatProfilesFactOverrides = {
       "truthSync": {
         "canonicalKey": "expat-profile:edd-cynthia-staton",
         "recordId": "buenosairesexpats:expat-profile:edd-cynthia-staton",
-        "reviewDate": "unknown",
+        "reviewDate": "2026-03-08",
         "sourceExport": "expatProfiles",
         "sourceUrls": [
           "https://www.eddandcynthia.com"
@@ -540,7 +1810,7 @@ export const expatProfilesFactOverrides = {
     }
   },
   "emily-urban-expats": {
-    "reviewDate": "unknown",
+    "reviewDate": "2026-03-08",
     "sourceUrls": [
       "https://urbanexpats.com/"
     ],
@@ -551,7 +1821,7 @@ export const expatProfilesFactOverrides = {
       "truthSync": {
         "canonicalKey": "expat-profile:emily-urban-expats",
         "recordId": "buenosairesexpats:expat-profile:emily-urban-expats",
-        "reviewDate": "unknown",
+        "reviewDate": "2026-03-08",
         "sourceExport": "expatProfiles",
         "sourceUrls": [
           "https://urbanexpats.com/"
@@ -560,7 +1830,7 @@ export const expatProfilesFactOverrides = {
     }
   },
   "erick-mushaway": {
-    "reviewDate": "unknown",
+    "reviewDate": "2026-03-08",
     "sourceUrls": [
       "https://www.psimonmyway.com/living-in-buenos-aires-argentina/"
     ],
@@ -571,7 +1841,7 @@ export const expatProfilesFactOverrides = {
       "truthSync": {
         "canonicalKey": "expat-profile:erick-mushaway",
         "recordId": "buenosairesexpats:expat-profile:erick-mushaway",
-        "reviewDate": "unknown",
+        "reviewDate": "2026-03-08",
         "sourceExport": "expatProfiles",
         "sourceUrls": [
           "https://www.psimonmyway.com/living-in-buenos-aires-argentina/"
@@ -580,7 +1850,7 @@ export const expatProfilesFactOverrides = {
     }
   },
   "erin-sol-salute": {
-    "reviewDate": "unknown",
+    "reviewDate": "2026-03-08",
     "sourceUrls": [
       "https://solsalute.com"
     ],
@@ -591,7 +1861,7 @@ export const expatProfilesFactOverrides = {
       "truthSync": {
         "canonicalKey": "expat-profile:erin-sol-salute",
         "recordId": "buenosairesexpats:expat-profile:erin-sol-salute",
-        "reviewDate": "unknown",
+        "reviewDate": "2026-03-08",
         "sourceExport": "expatProfiles",
         "sourceUrls": [
           "https://solsalute.com"
@@ -600,7 +1870,7 @@ export const expatProfilesFactOverrides = {
     }
   },
   "expat-ed": {
-    "reviewDate": "unknown",
+    "reviewDate": "2026-03-08",
     "sourceUrls": [
       "https://www.youtube.com/@expated"
     ],
@@ -611,7 +1881,7 @@ export const expatProfilesFactOverrides = {
       "truthSync": {
         "canonicalKey": "expat-profile:expat-ed",
         "recordId": "buenosairesexpats:expat-profile:expat-ed",
-        "reviewDate": "unknown",
+        "reviewDate": "2026-03-08",
         "sourceExport": "expatProfiles",
         "sourceUrls": [
           "https://www.youtube.com/@expated"
@@ -620,7 +1890,7 @@ export const expatProfilesFactOverrides = {
     }
   },
   "expat-edna": {
-    "reviewDate": "unknown",
+    "reviewDate": "2026-03-08",
     "sourceUrls": [
       "https://expatedna.com"
     ],
@@ -631,7 +1901,7 @@ export const expatProfilesFactOverrides = {
       "truthSync": {
         "canonicalKey": "expat-profile:expat-edna",
         "recordId": "buenosairesexpats:expat-profile:expat-edna",
-        "reviewDate": "unknown",
+        "reviewDate": "2026-03-08",
         "sourceExport": "expatProfiles",
         "sourceUrls": [
           "https://expatedna.com"
@@ -640,7 +1910,7 @@ export const expatProfilesFactOverrides = {
     }
   },
   "expat-panda": {
-    "reviewDate": "unknown",
+    "reviewDate": "2026-03-08",
     "sourceUrls": [
       "https://expatpanda.com"
     ],
@@ -651,7 +1921,7 @@ export const expatProfilesFactOverrides = {
       "truthSync": {
         "canonicalKey": "expat-profile:expat-panda",
         "recordId": "buenosairesexpats:expat-profile:expat-panda",
-        "reviewDate": "unknown",
+        "reviewDate": "2026-03-08",
         "sourceExport": "expatProfiles",
         "sourceUrls": [
           "https://expatpanda.com"
@@ -660,7 +1930,7 @@ export const expatProfilesFactOverrides = {
     }
   },
   "expats-blog-directory": {
-    "reviewDate": "unknown",
+    "reviewDate": "2026-03-08",
     "sourceUrls": [
       "https://www.expatsblog.com/blogs/argentina"
     ],
@@ -671,7 +1941,7 @@ export const expatProfilesFactOverrides = {
       "truthSync": {
         "canonicalKey": "expat-profile:expats-blog-directory",
         "recordId": "buenosairesexpats:expat-profile:expats-blog-directory",
-        "reviewDate": "unknown",
+        "reviewDate": "2026-03-08",
         "sourceExport": "expatProfiles",
         "sourceUrls": [
           "https://www.expatsblog.com/blogs/argentina"
@@ -680,7 +1950,7 @@ export const expatProfilesFactOverrides = {
     }
   },
   "fares-al-badwan": {
-    "reviewDate": "unknown",
+    "reviewDate": "2026-03-08",
     "sourceUrls": [
       "https://www.globalissues.org/news/2018/05/07/24172"
     ],
@@ -691,7 +1961,7 @@ export const expatProfilesFactOverrides = {
       "truthSync": {
         "canonicalKey": "expat-profile:fares-al-badwan",
         "recordId": "buenosairesexpats:expat-profile:fares-al-badwan",
-        "reviewDate": "unknown",
+        "reviewDate": "2026-03-08",
         "sourceExport": "expatProfiles",
         "sourceUrls": [
           "https://www.globalissues.org/news/2018/05/07/24172"
@@ -700,7 +1970,7 @@ export const expatProfilesFactOverrides = {
     }
   },
   "freddie-uk": {
-    "reviewDate": "unknown",
+    "reviewDate": "2026-03-08",
     "sourceUrls": [
       "https://argentinaexpat.com/freddie-reflects-on-life-in-argentina/"
     ],
@@ -711,7 +1981,7 @@ export const expatProfilesFactOverrides = {
       "truthSync": {
         "canonicalKey": "expat-profile:freddie-uk",
         "recordId": "buenosairesexpats:expat-profile:freddie-uk",
-        "reviewDate": "unknown",
+        "reviewDate": "2026-03-08",
         "sourceExport": "expatProfiles",
         "sourceUrls": [
           "https://argentinaexpat.com/freddie-reflects-on-life-in-argentina/"
@@ -720,7 +1990,7 @@ export const expatProfilesFactOverrides = {
     }
   },
   "gareth-a-brother-abroad": {
-    "reviewDate": "unknown",
+    "reviewDate": "2026-03-08",
     "sourceUrls": [
       "https://abrotherabroad.com"
     ],
@@ -731,7 +2001,7 @@ export const expatProfilesFactOverrides = {
       "truthSync": {
         "canonicalKey": "expat-profile:gareth-a-brother-abroad",
         "recordId": "buenosairesexpats:expat-profile:gareth-a-brother-abroad",
-        "reviewDate": "unknown",
+        "reviewDate": "2026-03-08",
         "sourceExport": "expatProfiles",
         "sourceUrls": [
           "https://abrotherabroad.com"
@@ -740,7 +2010,7 @@ export const expatProfilesFactOverrides = {
     }
   },
   "gringos-podcast": {
-    "reviewDate": "unknown",
+    "reviewDate": "2026-03-08",
     "sourceUrls": [
       "https://www.tiktok.com/@gringosinbuenosaires"
     ],
@@ -751,7 +2021,7 @@ export const expatProfilesFactOverrides = {
       "truthSync": {
         "canonicalKey": "expat-profile:gringos-podcast",
         "recordId": "buenosairesexpats:expat-profile:gringos-podcast",
-        "reviewDate": "unknown",
+        "reviewDate": "2026-03-08",
         "sourceExport": "expatProfiles",
         "sourceUrls": [
           "https://www.tiktok.com/@gringosinbuenosaires"
@@ -760,7 +2030,7 @@ export const expatProfilesFactOverrides = {
     }
   },
   "indian-expats-ba": {
-    "reviewDate": "unknown",
+    "reviewDate": "2026-03-08",
     "sourceUrls": [
       "https://www.expatsba.com/threads/indian-expats-in-argentina.6717/"
     ],
@@ -771,7 +2041,7 @@ export const expatProfilesFactOverrides = {
       "truthSync": {
         "canonicalKey": "expat-profile:indian-expats-ba",
         "recordId": "buenosairesexpats:expat-profile:indian-expats-ba",
-        "reviewDate": "unknown",
+        "reviewDate": "2026-03-08",
         "sourceExport": "expatProfiles",
         "sourceUrls": [
           "https://www.expatsba.com/threads/indian-expats-in-argentina.6717/"
@@ -780,7 +2050,7 @@ export const expatProfilesFactOverrides = {
     }
   },
   "inlovelyblue": {
-    "reviewDate": "unknown",
+    "reviewDate": "2026-03-08",
     "sourceUrls": [
       "https://inlovelyblue.com"
     ],
@@ -791,7 +2061,7 @@ export const expatProfilesFactOverrides = {
       "truthSync": {
         "canonicalKey": "expat-profile:inlovelyblue",
         "recordId": "buenosairesexpats:expat-profile:inlovelyblue",
-        "reviewDate": "unknown",
+        "reviewDate": "2026-03-08",
         "sourceExport": "expatProfiles",
         "sourceUrls": [
           "https://inlovelyblue.com"
@@ -800,7 +2070,7 @@ export const expatProfilesFactOverrides = {
     }
   },
   "james-guide-to-argentina": {
-    "reviewDate": "unknown",
+    "reviewDate": "2026-03-08",
     "sourceUrls": [
       "https://guidetoargentina.com"
     ],
@@ -811,7 +2081,7 @@ export const expatProfilesFactOverrides = {
       "truthSync": {
         "canonicalKey": "expat-profile:james-guide-to-argentina",
         "recordId": "buenosairesexpats:expat-profile:james-guide-to-argentina",
-        "reviewDate": "unknown",
+        "reviewDate": "2026-03-08",
         "sourceExport": "expatProfiles",
         "sourceUrls": [
           "https://guidetoargentina.com"
@@ -820,7 +2090,7 @@ export const expatProfilesFactOverrides = {
     }
   },
   "jerry-nelson": {
-    "reviewDate": "unknown",
+    "reviewDate": "2026-03-08",
     "sourceUrls": [
       "https://medium.com/@jandrewnelson"
     ],
@@ -831,7 +2101,7 @@ export const expatProfilesFactOverrides = {
       "truthSync": {
         "canonicalKey": "expat-profile:jerry-nelson",
         "recordId": "buenosairesexpats:expat-profile:jerry-nelson",
-        "reviewDate": "unknown",
+        "reviewDate": "2026-03-08",
         "sourceExport": "expatProfiles",
         "sourceUrls": [
           "https://medium.com/@jandrewnelson"
@@ -840,7 +2110,7 @@ export const expatProfilesFactOverrides = {
     }
   },
   "jesse-living-latam": {
-    "reviewDate": "unknown",
+    "reviewDate": "2026-03-08",
     "sourceUrls": [
       "https://www.youtube.com/@living_in_latam"
     ],
@@ -851,7 +2121,7 @@ export const expatProfilesFactOverrides = {
       "truthSync": {
         "canonicalKey": "expat-profile:jesse-living-latam",
         "recordId": "buenosairesexpats:expat-profile:jesse-living-latam",
-        "reviewDate": "unknown",
+        "reviewDate": "2026-03-08",
         "sourceExport": "expatProfiles",
         "sourceUrls": [
           "https://www.youtube.com/@living_in_latam"
@@ -860,7 +2130,7 @@ export const expatProfilesFactOverrides = {
     }
   },
   "jessica-parks": {
-    "reviewDate": "unknown",
+    "reviewDate": "2026-03-08",
     "sourceUrls": [
       "https://argentinaexpat.com/expat-stories-jessica-from-the-us/"
     ],
@@ -871,7 +2141,7 @@ export const expatProfilesFactOverrides = {
       "truthSync": {
         "canonicalKey": "expat-profile:jessica-parks",
         "recordId": "buenosairesexpats:expat-profile:jessica-parks",
-        "reviewDate": "unknown",
+        "reviewDate": "2026-03-08",
         "sourceExport": "expatProfiles",
         "sourceUrls": [
           "https://argentinaexpat.com/expat-stories-jessica-from-the-us/"
@@ -880,7 +2150,7 @@ export const expatProfilesFactOverrides = {
     }
   },
   "linda-netherlands": {
-    "reviewDate": "unknown",
+    "reviewDate": "2026-03-08",
     "sourceUrls": [
       "https://argentinaexpat.com/from-netherlands-to-argentina/"
     ],
@@ -891,7 +2161,7 @@ export const expatProfilesFactOverrides = {
       "truthSync": {
         "canonicalKey": "expat-profile:linda-netherlands",
         "recordId": "buenosairesexpats:expat-profile:linda-netherlands",
-        "reviewDate": "unknown",
+        "reviewDate": "2026-03-08",
         "sourceExport": "expatProfiles",
         "sourceUrls": [
           "https://argentinaexpat.com/from-netherlands-to-argentina/"
@@ -900,7 +2170,7 @@ export const expatProfilesFactOverrides = {
     }
   },
   "manus-menu": {
-    "reviewDate": "unknown",
+    "reviewDate": "2026-03-08",
     "sourceUrls": [
       "https://www.manusmenu.com/buenos-aires-guide-argentina"
     ],
@@ -911,7 +2181,7 @@ export const expatProfilesFactOverrides = {
       "truthSync": {
         "canonicalKey": "expat-profile:manus-menu",
         "recordId": "buenosairesexpats:expat-profile:manus-menu",
-        "reviewDate": "unknown",
+        "reviewDate": "2026-03-08",
         "sourceExport": "expatProfiles",
         "sourceUrls": [
           "https://www.manusmenu.com/buenos-aires-guide-argentina"
@@ -920,7 +2190,7 @@ export const expatProfilesFactOverrides = {
     }
   },
   "marla-tierra": {
-    "reviewDate": "unknown",
+    "reviewDate": "2026-03-08",
     "sourceUrls": [
       "https://www.youtube.com/@a.marla.tierra"
     ],
@@ -931,7 +2201,7 @@ export const expatProfilesFactOverrides = {
       "truthSync": {
         "canonicalKey": "expat-profile:marla-tierra",
         "recordId": "buenosairesexpats:expat-profile:marla-tierra",
-        "reviewDate": "unknown",
+        "reviewDate": "2026-03-08",
         "sourceExport": "expatProfiles",
         "sourceUrls": [
           "https://www.youtube.com/@a.marla.tierra"
@@ -940,7 +2210,7 @@ export const expatProfilesFactOverrides = {
     }
   },
   "maruc-japan": {
-    "reviewDate": "unknown",
+    "reviewDate": "2026-03-08",
     "sourceUrls": [
       "https://maruc-buenos-ayres.blog.jp/"
     ],
@@ -951,7 +2221,7 @@ export const expatProfilesFactOverrides = {
       "truthSync": {
         "canonicalKey": "expat-profile:maruc-japan",
         "recordId": "buenosairesexpats:expat-profile:maruc-japan",
-        "reviewDate": "unknown",
+        "reviewDate": "2026-03-08",
         "sourceExport": "expatProfiles",
         "sourceUrls": [
           "https://maruc-buenos-ayres.blog.jp/"
@@ -960,7 +2230,7 @@ export const expatProfilesFactOverrides = {
     }
   },
   "melissa-andrew": {
-    "reviewDate": "unknown",
+    "reviewDate": "2026-03-08",
     "sourceUrls": [
       "https://www.youtube.com/@LifebyMelissaAndrew"
     ],
@@ -971,7 +2241,7 @@ export const expatProfilesFactOverrides = {
       "truthSync": {
         "canonicalKey": "expat-profile:melissa-andrew",
         "recordId": "buenosairesexpats:expat-profile:melissa-andrew",
-        "reviewDate": "unknown",
+        "reviewDate": "2026-03-08",
         "sourceExport": "expatProfiles",
         "sourceUrls": [
           "https://www.youtube.com/@LifebyMelissaAndrew"
@@ -980,7 +2250,7 @@ export const expatProfilesFactOverrides = {
     }
   },
   "nomad-copywriter": {
-    "reviewDate": "unknown",
+    "reviewDate": "2026-03-08",
     "sourceUrls": [
       "https://nomadcopywriting.io/living-buenos-aires/"
     ],
@@ -991,7 +2261,7 @@ export const expatProfilesFactOverrides = {
       "truthSync": {
         "canonicalKey": "expat-profile:nomad-copywriter",
         "recordId": "buenosairesexpats:expat-profile:nomad-copywriter",
-        "reviewDate": "unknown",
+        "reviewDate": "2026-03-08",
         "sourceExport": "expatProfiles",
         "sourceUrls": [
           "https://nomadcopywriting.io/living-buenos-aires/"
@@ -1000,7 +2270,7 @@ export const expatProfilesFactOverrides = {
     }
   },
   "nomadflag": {
-    "reviewDate": "unknown",
+    "reviewDate": "2026-03-08",
     "sourceUrls": [
       "https://nomadflag.com"
     ],
@@ -1011,7 +2281,7 @@ export const expatProfilesFactOverrides = {
       "truthSync": {
         "canonicalKey": "expat-profile:nomadflag",
         "recordId": "buenosairesexpats:expat-profile:nomadflag",
-        "reviewDate": "unknown",
+        "reviewDate": "2026-03-08",
         "sourceExport": "expatProfiles",
         "sourceUrls": [
           "https://nomadflag.com"
@@ -1020,7 +2290,7 @@ export const expatProfilesFactOverrides = {
     }
   },
   "nomadic-sean": {
-    "reviewDate": "unknown",
+    "reviewDate": "2026-03-08",
     "sourceUrls": [
       "https://nomadicsean.com/living-in-buenos-aires-my-first-2-months-costs-safety-tips/"
     ],
@@ -1031,7 +2301,7 @@ export const expatProfilesFactOverrides = {
       "truthSync": {
         "canonicalKey": "expat-profile:nomadic-sean",
         "recordId": "buenosairesexpats:expat-profile:nomadic-sean",
-        "reviewDate": "unknown",
+        "reviewDate": "2026-03-08",
         "sourceExport": "expatProfiles",
         "sourceUrls": [
           "https://nomadicsean.com/living-in-buenos-aires-my-first-2-months-costs-safety-tips/"
@@ -1040,7 +2310,7 @@ export const expatProfilesFactOverrides = {
     }
   },
   "noruega-argentina": {
-    "reviewDate": "unknown",
+    "reviewDate": "2026-03-08",
     "sourceUrls": [
       "https://noruegaenargentina.com/"
     ],
@@ -1051,7 +2321,7 @@ export const expatProfilesFactOverrides = {
       "truthSync": {
         "canonicalKey": "expat-profile:noruega-argentina",
         "recordId": "buenosairesexpats:expat-profile:noruega-argentina",
-        "reviewDate": "unknown",
+        "reviewDate": "2026-03-08",
         "sourceExport": "expatProfiles",
         "sourceUrls": [
           "https://noruegaenargentina.com/"
@@ -1060,7 +2330,7 @@ export const expatProfilesFactOverrides = {
     }
   },
   "ohad-weiner": {
-    "reviewDate": "unknown",
+    "reviewDate": "2026-03-08",
     "sourceUrls": [
       "https://www.sorrelmw.com/2014/04/13/the-expat-ohad-weiner/"
     ],
@@ -1071,7 +2341,7 @@ export const expatProfilesFactOverrides = {
       "truthSync": {
         "canonicalKey": "expat-profile:ohad-weiner",
         "recordId": "buenosairesexpats:expat-profile:ohad-weiner",
-        "reviewDate": "unknown",
+        "reviewDate": "2026-03-08",
         "sourceExport": "expatProfiles",
         "sourceUrls": [
           "https://www.sorrelmw.com/2014/04/13/the-expat-ohad-weiner/"
@@ -1080,7 +2350,7 @@ export const expatProfilesFactOverrides = {
     }
   },
   "oops-i-booked-again": {
-    "reviewDate": "unknown",
+    "reviewDate": "2026-03-08",
     "sourceUrls": [
       "https://www.oopsibookedagain.com"
     ],
@@ -1091,7 +2361,7 @@ export const expatProfilesFactOverrides = {
       "truthSync": {
         "canonicalKey": "expat-profile:oops-i-booked-again",
         "recordId": "buenosairesexpats:expat-profile:oops-i-booked-again",
-        "reviewDate": "unknown",
+        "reviewDate": "2026-03-08",
         "sourceExport": "expatProfiles",
         "sourceUrls": [
           "https://www.oopsibookedagain.com"
@@ -1100,7 +2370,7 @@ export const expatProfilesFactOverrides = {
     }
   },
   "paul-perry": {
-    "reviewDate": "unknown",
+    "reviewDate": "2026-03-08",
     "sourceUrls": [
       "https://www.youtube.com/@PaulPerryBuenosAires"
     ],
@@ -1111,7 +2381,7 @@ export const expatProfilesFactOverrides = {
       "truthSync": {
         "canonicalKey": "expat-profile:paul-perry",
         "recordId": "buenosairesexpats:expat-profile:paul-perry",
-        "reviewDate": "unknown",
+        "reviewDate": "2026-03-08",
         "sourceExport": "expatProfiles",
         "sourceUrls": [
           "https://www.youtube.com/@PaulPerryBuenosAires"
@@ -1120,7 +2390,7 @@ export const expatProfilesFactOverrides = {
     }
   },
   "rachel-gremillion": {
-    "reviewDate": "unknown",
+    "reviewDate": "2026-03-08",
     "sourceUrls": [
       "https://argentinaexpat.com/rachels-insights-on-living-in-argentina/"
     ],
@@ -1131,7 +2401,7 @@ export const expatProfilesFactOverrides = {
       "truthSync": {
         "canonicalKey": "expat-profile:rachel-gremillion",
         "recordId": "buenosairesexpats:expat-profile:rachel-gremillion",
-        "reviewDate": "unknown",
+        "reviewDate": "2026-03-08",
         "sourceExport": "expatProfiles",
         "sourceUrls": [
           "https://argentinaexpat.com/rachels-insights-on-living-in-argentina/"
@@ -1140,7 +2410,7 @@ export const expatProfilesFactOverrides = {
     }
   },
   "rebecca-born-traveller": {
-    "reviewDate": "unknown",
+    "reviewDate": "2026-03-08",
     "sourceUrls": [
       "https://aborntraveller.com"
     ],
@@ -1151,7 +2421,7 @@ export const expatProfilesFactOverrides = {
       "truthSync": {
         "canonicalKey": "expat-profile:rebecca-born-traveller",
         "recordId": "buenosairesexpats:expat-profile:rebecca-born-traveller",
-        "reviewDate": "unknown",
+        "reviewDate": "2026-03-08",
         "sourceExport": "expatProfiles",
         "sourceUrls": [
           "https://aborntraveller.com"
@@ -1160,7 +2430,7 @@ export const expatProfilesFactOverrides = {
     }
   },
   "rosie-hilder": {
-    "reviewDate": "unknown",
+    "reviewDate": "2026-03-08",
     "sourceUrls": [
       "https://www.buenostours.com/rosie-hilder-expat-writer/"
     ],
@@ -1171,7 +2441,7 @@ export const expatProfilesFactOverrides = {
       "truthSync": {
         "canonicalKey": "expat-profile:rosie-hilder",
         "recordId": "buenosairesexpats:expat-profile:rosie-hilder",
-        "reviewDate": "unknown",
+        "reviewDate": "2026-03-08",
         "sourceExport": "expatProfiles",
         "sourceUrls": [
           "https://www.buenostours.com/rosie-hilder-expat-writer/"
@@ -1180,7 +2450,7 @@ export const expatProfilesFactOverrides = {
     }
   },
   "sabine-france": {
-    "reviewDate": "unknown",
+    "reviewDate": "2026-03-08",
     "sourceUrls": [
       "https://www.sabinefep.com/"
     ],
@@ -1191,7 +2461,7 @@ export const expatProfilesFactOverrides = {
       "truthSync": {
         "canonicalKey": "expat-profile:sabine-france",
         "recordId": "buenosairesexpats:expat-profile:sabine-france",
-        "reviewDate": "unknown",
+        "reviewDate": "2026-03-08",
         "sourceExport": "expatProfiles",
         "sourceUrls": [
           "https://www.sabinefep.com/"
@@ -1200,7 +2470,7 @@ export const expatProfilesFactOverrides = {
     }
   },
   "sayonara-rell": {
-    "reviewDate": "unknown",
+    "reviewDate": "2026-03-08",
     "sourceUrls": [
       "https://argentinaexpat.com/from-brazil-to-argentina-sayonaras-story/"
     ],
@@ -1211,7 +2481,7 @@ export const expatProfilesFactOverrides = {
       "truthSync": {
         "canonicalKey": "expat-profile:sayonara-rell",
         "recordId": "buenosairesexpats:expat-profile:sayonara-rell",
-        "reviewDate": "unknown",
+        "reviewDate": "2026-03-08",
         "sourceExport": "expatProfiles",
         "sourceUrls": [
           "https://argentinaexpat.com/from-brazil-to-argentina-sayonaras-story/"
@@ -1220,7 +2490,7 @@ export const expatProfilesFactOverrides = {
     }
   },
   "tara-katims": {
-    "reviewDate": "unknown",
+    "reviewDate": "2026-03-08",
     "sourceUrls": [
       "https://www.tiktok.com/@tarkatims"
     ],
@@ -1231,7 +2501,7 @@ export const expatProfilesFactOverrides = {
       "truthSync": {
         "canonicalKey": "expat-profile:tara-katims",
         "recordId": "buenosairesexpats:expat-profile:tara-katims",
-        "reviewDate": "unknown",
+        "reviewDate": "2026-03-08",
         "sourceExport": "expatProfiles",
         "sourceUrls": [
           "https://www.tiktok.com/@tarkatims"
@@ -1240,7 +2510,7 @@ export const expatProfilesFactOverrides = {
     }
   },
   "the-mobile-retiree": {
-    "reviewDate": "unknown",
+    "reviewDate": "2026-03-08",
     "sourceUrls": [
       "https://themobileretiree.com"
     ],
@@ -1251,7 +2521,7 @@ export const expatProfilesFactOverrides = {
       "truthSync": {
         "canonicalKey": "expat-profile:the-mobile-retiree",
         "recordId": "buenosairesexpats:expat-profile:the-mobile-retiree",
-        "reviewDate": "unknown",
+        "reviewDate": "2026-03-08",
         "sourceExport": "expatProfiles",
         "sourceUrls": [
           "https://themobileretiree.com"
@@ -1260,7 +2530,7 @@ export const expatProfilesFactOverrides = {
     }
   },
   "tina-international-love": {
-    "reviewDate": "unknown",
+    "reviewDate": "2026-03-08",
     "sourceUrls": [
       "https://thephotographyconfidential.com"
     ],
@@ -1271,7 +2541,7 @@ export const expatProfilesFactOverrides = {
       "truthSync": {
         "canonicalKey": "expat-profile:tina-international-love",
         "recordId": "buenosairesexpats:expat-profile:tina-international-love",
-        "reviewDate": "unknown",
+        "reviewDate": "2026-03-08",
         "sourceExport": "expatProfiles",
         "sourceUrls": [
           "https://thephotographyconfidential.com"
@@ -1280,7 +2550,7 @@ export const expatProfilesFactOverrides = {
     }
   },
   "victoria-garett": {
-    "reviewDate": "unknown",
+    "reviewDate": "2026-03-08",
     "sourceUrls": [
       "https://www.youtube.com/@victoriaandgarett"
     ],
@@ -1291,7 +2561,7 @@ export const expatProfilesFactOverrides = {
       "truthSync": {
         "canonicalKey": "expat-profile:victoria-garett",
         "recordId": "buenosairesexpats:expat-profile:victoria-garett",
-        "reviewDate": "unknown",
+        "reviewDate": "2026-03-08",
         "sourceExport": "expatProfiles",
         "sourceUrls": [
           "https://www.youtube.com/@victoriaandgarett"
@@ -1300,7 +2570,7 @@ export const expatProfilesFactOverrides = {
     }
   },
   "wandering-investor": {
-    "reviewDate": "unknown",
+    "reviewDate": "2026-03-08",
     "sourceUrls": [
       "https://thewanderinginvestor.com"
     ],
@@ -1311,7 +2581,7 @@ export const expatProfilesFactOverrides = {
       "truthSync": {
         "canonicalKey": "expat-profile:wandering-investor",
         "recordId": "buenosairesexpats:expat-profile:wandering-investor",
-        "reviewDate": "unknown",
+        "reviewDate": "2026-03-08",
         "sourceExport": "expatProfiles",
         "sourceUrls": [
           "https://thewanderinginvestor.com"
@@ -1320,7 +2590,7 @@ export const expatProfilesFactOverrides = {
     }
   },
   "worldly-adventurer": {
-    "reviewDate": "unknown",
+    "reviewDate": "2026-03-08",
     "sourceUrls": [
       "https://worldlyadventurer.com"
     ],
@@ -1331,7 +2601,7 @@ export const expatProfilesFactOverrides = {
       "truthSync": {
         "canonicalKey": "expat-profile:worldly-adventurer",
         "recordId": "buenosairesexpats:expat-profile:worldly-adventurer",
-        "reviewDate": "unknown",
+        "reviewDate": "2026-03-08",
         "sourceExport": "expatProfiles",
         "sourceUrls": [
           "https://worldlyadventurer.com"
@@ -1343,7 +2613,7 @@ export const expatProfilesFactOverrides = {
 
 export const storiesFactOverrides = {
   "alex-cricket-club": {
-    "reviewDate": "2024-08-07",
+    "reviewDate": "2026-03-08",
     "sourceUrls": [],
     "patch": {
       "summary": "A Londoner who traded grey skies for tango-filled avenues. Found unexpected community at the Buenos Aires Cricket Club while navigating the cultural differences between British reserve and Argentine passion.",
@@ -1351,14 +2621,14 @@ export const storiesFactOverrides = {
       "truthSync": {
         "canonicalKey": "expat-story:alex-cricket-club",
         "recordId": "buenosairesexpats:expat-story:alex-cricket-club",
-        "reviewDate": "2024-08-07",
+        "reviewDate": "2026-03-08",
         "sourceExport": "stories",
         "sourceUrls": []
       }
     }
   },
   "alex-lisa-robbery": {
-    "reviewDate": "2017-10-19",
+    "reviewDate": "2026-03-08",
     "sourceUrls": [],
     "patch": {
       "summary": "A couple robbed at 9am on a Sunday by the classic 'mustard scam' - squirted with fake bird poop, distracted by 'helpful' strangers, and relieved of everything they owned. Their story of recovery is a masterclass in resilience.",
@@ -1366,14 +2636,14 @@ export const storiesFactOverrides = {
       "truthSync": {
         "canonicalKey": "expat-story:alex-lisa-robbery",
         "recordId": "buenosairesexpats:expat-story:alex-lisa-robbery",
-        "reviewDate": "2017-10-19",
+        "reviewDate": "2026-03-08",
         "sourceExport": "stories",
         "sourceUrls": []
       }
     }
   },
   "bathroom-standoff": {
-    "reviewDate": "2018-02-13",
+    "reviewDate": "2026-03-08",
     "sourceUrls": [],
     "patch": {
       "summary": "When nature calls in Buenos Aires, it can turn into an international incident. One expat's story of bathroom desperation, cafe confrontation, and the legal right to pee.",
@@ -1381,14 +2651,14 @@ export const storiesFactOverrides = {
       "truthSync": {
         "canonicalKey": "expat-story:bathroom-standoff",
         "recordId": "buenosairesexpats:expat-story:bathroom-standoff",
-        "reviewDate": "2018-02-13",
+        "reviewDate": "2026-03-08",
         "sourceExport": "stories",
         "sourceUrls": []
       }
     }
   },
   "brenda-horacio-tango": {
-    "reviewDate": "2019-03-24",
+    "reviewDate": "2026-03-08",
     "sourceUrls": [],
     "patch": {
       "summary": "Brenda dances tango from a wheelchair due to spina bifida. Horacio is her partner of life and dance. Together they challenge what tango 'should' be - and prove that passion transcends physical limitations.",
@@ -1396,14 +2666,14 @@ export const storiesFactOverrides = {
       "truthSync": {
         "canonicalKey": "expat-story:brenda-horacio-tango",
         "recordId": "buenosairesexpats:expat-story:brenda-horacio-tango",
-        "reviewDate": "2019-03-24",
+        "reviewDate": "2026-03-08",
         "sourceExport": "stories",
         "sourceUrls": []
       }
     }
   },
   "deby-tango-entrepreneur": {
-    "reviewDate": "2024-01-20",
+    "reviewDate": "2026-03-08",
     "sourceUrls": [],
     "patch": {
       "summary": "A high-tech consultant who discovered tango in 1998, moved to BA in 2000, and built multiple businesses: a tango clothing line, a B&B, and English teaching. The definition of reinvention.",
@@ -1411,14 +2681,14 @@ export const storiesFactOverrides = {
       "truthSync": {
         "canonicalKey": "expat-story:deby-tango-entrepreneur",
         "recordId": "buenosairesexpats:expat-story:deby-tango-entrepreneur",
-        "reviewDate": "2024-01-20",
+        "reviewDate": "2026-03-08",
         "sourceExport": "stories",
         "sourceUrls": []
       }
     }
   },
   "digital-nomad-burnout": {
-    "reviewDate": "2024-01-15",
+    "reviewDate": "2026-03-08",
     "sourceUrls": [],
     "patch": {
       "summary": "A digital nomad who arrived in January, fell in love with the city, then watched the facade crack. Couldn't connect with locals, struggled with Spanish, and found the expat community surprisingly isolating.",
@@ -1426,14 +2696,14 @@ export const storiesFactOverrides = {
       "truthSync": {
         "canonicalKey": "expat-story:digital-nomad-burnout",
         "recordId": "buenosairesexpats:expat-story:digital-nomad-burnout",
-        "reviewDate": "2024-01-15",
+        "reviewDate": "2026-03-08",
         "sourceExport": "stories",
         "sourceUrls": []
       }
     }
   },
   "erin-15-year-love-affair": {
-    "reviewDate": "2024-01-15",
+    "reviewDate": "2026-03-08",
     "sourceUrls": [],
     "patch": {
       "summary": "A Texas native who came for a semester abroad, fell in love with the city (and an Argentine), and never left. She's lived through economic crises, had two kids, and built a life documenting Argentina for the world.",
@@ -1441,14 +2711,14 @@ export const storiesFactOverrides = {
       "truthSync": {
         "canonicalKey": "expat-story:erin-15-year-love-affair",
         "recordId": "buenosairesexpats:expat-story:erin-15-year-love-affair",
-        "reviewDate": "2024-01-15",
+        "reviewDate": "2026-03-08",
         "sourceExport": "stories",
         "sourceUrls": []
       }
     }
   },
   "erin-subway-fall": {
-    "reviewDate": "2018-02-13",
+    "reviewDate": "2026-03-08",
     "sourceUrls": [],
     "patch": {
       "summary": "The classic expat embarrassing moment: falling into the subway gap, getting rescued by strangers, and accidentally assaulting your rescuer with gratitude. A perfect Buenos Aires moment.",
@@ -1456,14 +2726,14 @@ export const storiesFactOverrides = {
       "truthSync": {
         "canonicalKey": "expat-story:erin-subway-fall",
         "recordId": "buenosairesexpats:expat-story:erin-subway-fall",
-        "reviewDate": "2018-02-13",
+        "reviewDate": "2026-03-08",
         "sourceExport": "stories",
         "sourceUrls": []
       }
     }
   },
   "greyson-money-vs-mental-health": {
-    "reviewDate": "2025-07-05",
+    "reviewDate": "2026-03-08",
     "sourceUrls": [],
     "patch": {
       "summary": "Moved to BA to escape $900/month student loans and high US costs. The math worked perfectly - but the human cost was higher than expected. Eventually left for Albania seeking balance.",
@@ -1471,14 +2741,14 @@ export const storiesFactOverrides = {
       "truthSync": {
         "canonicalKey": "expat-story:greyson-money-vs-mental-health",
         "recordId": "buenosairesexpats:expat-story:greyson-money-vs-mental-health",
-        "reviewDate": "2025-07-05",
+        "reviewDate": "2026-03-08",
         "sourceExport": "stories",
         "sourceUrls": []
       }
     }
   },
   "lisa-startup-queen": {
-    "reviewDate": "2024-02-01",
+    "reviewDate": "2026-03-08",
     "sourceUrls": [],
     "patch": {
       "summary": "A NYC native who arrived in 2012 to escape winter and ended up building Argentina's startup ecosystem. She learned that relationships trump efficiency in Latin America - and built a $1M+ organization on that insight.",
@@ -1486,14 +2756,14 @@ export const storiesFactOverrides = {
       "truthSync": {
         "canonicalKey": "expat-story:lisa-startup-queen",
         "recordId": "buenosairesexpats:expat-story:lisa-startup-queen",
-        "reviewDate": "2024-02-01",
+        "reviewDate": "2026-03-08",
         "sourceExport": "stories",
         "sourceUrls": []
       }
     }
   },
   "rebecca-danish-academic": {
-    "reviewDate": "2025-02-04",
+    "reviewDate": "2026-03-08",
     "sourceUrls": [],
     "patch": {
       "summary": "A Danish academic who came for 6 months, stayed for 7 years, earned two Master's degrees, and built a career. Left in 2023 when the economic instability finally outweighed the benefits.",
@@ -1501,14 +2771,14 @@ export const storiesFactOverrides = {
       "truthSync": {
         "canonicalKey": "expat-story:rebecca-danish-academic",
         "recordId": "buenosairesexpats:expat-story:rebecca-danish-academic",
-        "reviewDate": "2025-02-04",
+        "reviewDate": "2026-03-08",
         "sourceExport": "stories",
         "sourceUrls": []
       }
     }
   },
   "street-cafe-chronicles": {
-    "reviewDate": "2024-03-15",
+    "reviewDate": "2026-03-08",
     "sourceUrls": [],
     "patch": {
       "summary": "The street life of Buenos Aires is a character all its own - from harmless eccentrics selling random goods to persistent cafe hustlers who turn your lunch into a sideshow. It's chaotic, sometimes uncomfortable, and completely unforgettable.",
@@ -1516,14 +2786,14 @@ export const storiesFactOverrides = {
       "truthSync": {
         "canonicalKey": "expat-story:street-cafe-chronicles",
         "recordId": "buenosairesexpats:expat-story:street-cafe-chronicles",
-        "reviewDate": "2024-03-15",
+        "reviewDate": "2026-03-08",
         "sourceExport": "stories",
         "sourceUrls": []
       }
     }
   },
   "subway-street-theater": {
-    "reviewDate": "2024-04-10",
+    "reviewDate": "2026-03-08",
     "sourceUrls": [],
     "patch": {
       "summary": "Buenos Aires public transit doubles as a stage for the city's most creative hustlers. From musical performances to product demos, every ride is an adventure in street entrepreneurship.",
@@ -1531,14 +2801,14 @@ export const storiesFactOverrides = {
       "truthSync": {
         "canonicalKey": "expat-story:subway-street-theater",
         "recordId": "buenosairesexpats:expat-story:subway-street-theater",
-        "reviewDate": "2024-04-10",
+        "reviewDate": "2026-03-08",
         "sourceExport": "stories",
         "sourceUrls": []
       }
     }
   },
   "tina-one-night-stand": {
-    "reviewDate": "2024-08-01",
+    "reviewDate": "2026-03-08",
     "sourceUrls": [],
     "patch": {
       "summary": "A German couples consultant who followed her heart across the Atlantic. Now she helps other intercultural couples navigate the challenges she faced - while learning to live with Argentine chaos.",
@@ -1546,7 +2816,7 @@ export const storiesFactOverrides = {
       "truthSync": {
         "canonicalKey": "expat-story:tina-one-night-stand",
         "recordId": "buenosairesexpats:expat-story:tina-one-night-stand",
-        "reviewDate": "2024-08-01",
+        "reviewDate": "2026-03-08",
         "sourceExport": "stories",
         "sourceUrls": []
       }
