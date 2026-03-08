@@ -4,7 +4,7 @@
     "guides": "Guides",
     "stories": "Stories",
     "about": "About",
-    "freeConsultation": "Free Consultation",
+    "freeConsultation": "Free Case Evaluation",
     "whyArgentina": "Why Argentina?"
   },
   "visaItems": {
@@ -226,5 +226,35 @@
     "readMore": "Read More",
     "learnMore": "Learn More",
     "getStarted": "Get Started"
+  },
+  "consultation": {
+    "nameLabel": "Full name",
+    "namePlaceholder": "Your full name",
+    "emailLabel": "Email",
+    "emailPlaceholder": "you@example.com",
+    "phoneLabel": "WhatsApp / Phone",
+    "phonePlaceholder": "+1 ...",
+    "countryLabel": "Country of citizenship",
+    "countryPlaceholder": "e.g. United States",
+    "serviceLabel": "Visa or service type",
+    "servicePlaceholder": "Select type",
+    "service_digitalNomad": "Digital Nomad Visa",
+    "service_work": "Work Visa",
+    "service_student": "Student Visa",
+    "service_retirement": "Retirement Visa",
+    "service_residency": "Residency / Citizenship",
+    "service_investment": "Investment Visa",
+    "service_general": "General Inquiry",
+    "messageLabel": "Describe your situation",
+    "messagePlaceholder": "What visa are you applying for? What's your timeline?",
+    "submit": "Request free evaluation",
+    "submitting": "Sending...",
+    "successTitle": "Request received",
+    "successDescription": "A qualified attorney will respond within 24 hours.",
+    "submitAnother": "Submit another request",
+    "errorGeneric": "Something went wrong. Please try again.",
+    "errorCaptcha": "Please complete the security verification.",
+    "errorConnection": "Connection error. Please check your internet and try again.",
+    "confidential": "Your information remains strictly confidential."
   }
 }

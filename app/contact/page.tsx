@@ -353,11 +353,11 @@ export default function ContactPage() {
                   </CardHeader>
                   <CardContent>
                     <p className="text-muted-foreground mb-4">
-                      For visa and immigration help, this site is supported by Lucero Legal, a Buenos Aires immigration law firm:
+                      For visa and immigration help, get a free case evaluation from a qualified Argentina immigration attorney:
                     </p>
                     <Button asChild variant="outline">
-                      <Link href="https://lucerolegal.org?utm_source=buenosairesexpats&utm_medium=contact" target="_blank" rel="noopener noreferrer">
-                        Talk to an Attorney
+                      <Link href="/consultation">
+                        Free Case Evaluation
                         <ArrowRight className="w-4 h-4 ml-2" />
                       </Link>
                     </Button>

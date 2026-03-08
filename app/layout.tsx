@@ -109,7 +109,9 @@ export default function RootLayout({
           <Navbar />
           <main id="main-content">{children}</main>
           <Footer />
-          <SiteAnalytics
+          <link rel="preconnect" href="https://challenges.cloudflare.com" />
+        <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer />
+        <SiteAnalytics
             measurementId="G-N5LLRYQ9J1"
             extraScripts={[
               {
