@@ -1,0 +1,137 @@
+{
+  "generatedAt": "2026-03-08T12:25:51.594Z",
+  "totals": {
+    "items": 4,
+    "critical": 0,
+    "high": 4,
+    "medium": 0
+  },
+  "sites": [
+    {
+      "siteId": "buenosairesexpats",
+      "items": 4,
+      "critical": 0,
+      "high": 4,
+      "medium": 0
+    }
+  ],
+  "items": [
+    {
+      "id": "surface:buenosairesexpats:countries",
+      "siteId": "buenosairesexpats",
+      "priority": "high",
+      "mode": "surface-sweep",
+      "sourceExport": "countries",
+      "title": "buenosairesexpats.countries",
+      "reason": "High-risk surface coverage is incomplete: reviewed=0/100, projected=5/100.",
+      "recommendedAction": "Have an AI agent sweep this surface route-by-route, verify claims against primary sources, and draft contextual micro-edits where deterministic fact patches stop.",
+      "runtimeModule": "lib/nationality-data.ts",
+      "sourcePath": "/Users/libertydesignstudio/dev/buenosairesexpats/lib/nationality-data.ts",
+      "officialSourceUrls": [],
+      "evidence": [
+        "albania",
+        "algeria",
+        "andorra",
+        "armenia",
+        "australia"
+      ],
+      "prompt": "Sweep the buenosairesexpats countries surface contextually without changing site tone. Work in lib/nationality-data.ts and review sample slugs albania, algeria, andorra, armenia, australia. The deterministic TruthSync layer already handles safe fact patches. Use AI judgment only for contextual narrative updates and claim cleanup. High-risk surface coverage is incomplete: reviewed=0/100, projected=5/100.",
+      "findingCount": 0,
+      "recordCount": 100,
+      "reviewedCount": 0,
+      "projectedCount": 5,
+      "sampleSlugs": [
+        "albania",
+        "algeria",
+        "andorra",
+        "armenia",
+        "australia"
+      ]
+    },
+    {
+      "id": "record:buenosairesexpats:country:canada",
+      "siteId": "buenosairesexpats",
+      "priority": "high",
+      "mode": "contextual-rewrite",
+      "sourceExport": "countries",
+      "title": "Canada",
+      "reason": "[high/official-mismatch] Tourist stay duration conflicts with official guidance",
+      "recommendedAction": "Change tourist-entry copy to 90 days plus one 90-day extension where applicable.",
+      "runtimeModule": "lib/nationality-data.ts",
+      "sourcePath": "/Users/libertydesignstudio/dev/buenosairesexpats/lib/nationality-data.ts",
+      "recordId": "buenosairesexpats:country:canada",
+      "canonicalKey": "country:canada",
+      "slug": "canada",
+      "officialSourceUrls": [
+        "https://www.argentina.gob.ar/interior/migraciones/turistas"
+      ],
+      "evidence": [
+        "Canadian citizens can visit Argentina visa-free for 90 days. The reciprocity fee was eliminated. Dual citizens should note that Argentine citizens must enter and exit Argentina on their Argentine passport.",
+        "Special Conditions",
+        "Reciprocity fee no longer required",
+        "Common Concerns",
+        "Do Canadians need a visa for Argentina?",
+        "Is there a reciprocity fee for Canadians?"
+      ],
+      "prompt": "Update the buenosairesexpats countries record \"Canada\" contextually without changing tone or layout. Work in lib/nationality-data.ts and target slug canada. Preserve surrounding copy, but correct the flagged factual claims using the canonical baseline and official sources. Canonical summary: Canadian citizens can visit Argentina visa-free for 90 days. The reciprocity fee was eliminated. Dual citizens should note that Argentine citizens must enter and exit Argentina on their Argentine passport. Findings: [high/official-mismatch] Tourist stay duration conflicts with official guidance Recommended action: Change tourist-entry copy to 90 days plus one 90-day extension where applicable.",
+      "findingCount": 1
+    },
+    {
+      "id": "record:buenosairesexpats:country:united-kingdom",
+      "siteId": "buenosairesexpats",
+      "priority": "high",
+      "mode": "contextual-rewrite",
+      "sourceExport": "countries",
+      "title": "United Kingdom",
+      "reason": "[high/official-mismatch] Tourist stay duration conflicts with official guidance",
+      "recommendedAction": "Change tourist-entry copy to 90 days plus one 90-day extension where applicable.",
+      "runtimeModule": "lib/nationality-data.ts",
+      "sourcePath": "/Users/libertydesignstudio/dev/buenosairesexpats/lib/nationality-data.ts",
+      "recordId": "buenosairesexpats:country:united-kingdom",
+      "canonicalKey": "country:united-kingdom",
+      "slug": "united-kingdom",
+      "officialSourceUrls": [
+        "https://www.argentina.gob.ar/interior/migraciones/turistas"
+      ],
+      "evidence": [
+        "British citizens can visit visa-free for 90 days. Brexit did not affect visa requirements. Passport must be valid for the proposed duration of stay. British National (Overseas) passport holders from Hong Kong have different requirements.",
+        "Special Conditions",
+        "British Subject or British Protected Person passports NOT eligible for visa exemption",
+        "Common Concerns",
+        "Do UK citizens need a visa for Argentina?",
+        "How long can British tourists stay?"
+      ],
+      "prompt": "Update the buenosairesexpats countries record \"United Kingdom\" contextually without changing tone or layout. Work in lib/nationality-data.ts and target slug united-kingdom. Preserve surrounding copy, but correct the flagged factual claims using the canonical baseline and official sources. Canonical summary: British citizens can visit visa-free for 90 days. Brexit did not affect visa requirements. Passport must be valid for the proposed duration of stay. British National (Overseas) passport holders from Hong Kong have different requirements. Findings: [high/official-mismatch] Tourist stay duration conflicts with official guidance Recommended action: Change tourist-entry copy to 90 days plus one 90-day extension where applicable.",
+      "findingCount": 1
+    },
+    {
+      "id": "record:buenosairesexpats:expat-story:rebecca-danish-academic",
+      "siteId": "buenosairesexpats",
+      "priority": "high",
+      "mode": "contextual-rewrite",
+      "sourceExport": "stories",
+      "title": "Rebecca",
+      "reason": "[high/official-mismatch] Tourist stay duration conflicts with official guidance",
+      "recommendedAction": "Change tourist-entry copy to 90 days plus one 90-day extension where applicable.",
+      "runtimeModule": "lib/stories-data.ts",
+      "sourcePath": "/Users/libertydesignstudio/dev/buenosairesexpats/lib/stories-data.ts",
+      "recordId": "buenosairesexpats:expat-story:rebecca-danish-academic",
+      "canonicalKey": "expat-story:rebecca-danish-academic",
+      "slug": "rebecca-danish-academic",
+      "reviewDate": "2025-02-04",
+      "officialSourceUrls": [
+        "https://www.argentina.gob.ar/interior/migraciones/turistas"
+      ],
+      "evidence": [
+        "A Danish academic who came for 6 months, stayed for 7 years, earned two Master's degrees, and built a career. Left in 2023 when the economic instability finally outweighed the benefits.",
+        "Quote",
+        "You should move to Argentina if you want to improve your Spanish, travel around South America, learn about the region, and can live with the unpredictable nature of living in an unstable economy.",
+        "Highlights",
+        "Came for 6-month exchange, stayed 7 years",
+        "Earned two Master's degrees from Argentine universities"
+      ],
+      "prompt": "Update the buenosairesexpats stories record \"Rebecca\" contextually without changing tone or layout. Work in lib/stories-data.ts and target slug rebecca-danish-academic. Preserve surrounding copy, but correct the flagged factual claims using the canonical baseline and official sources. Canonical summary: A Danish academic who came for 6 months, stayed for 7 years, earned two Master's degrees, and built a career. Left in 2023 when the economic instability finally outweighed the benefits. Findings: [high/official-mismatch] Tourist stay duration conflicts with official guidance Recommended action: Change tourist-entry copy to 90 days plus one 90-day extension where applicable.",
+      "findingCount": 1
+    }
+  ]
+}
