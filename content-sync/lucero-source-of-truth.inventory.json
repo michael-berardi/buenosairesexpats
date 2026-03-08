@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-03-08T02:15:33.943Z",
+  "generatedAt": "2026-03-08T02:29:07.033Z",
   "workspaceRoot": "/Users/libertydesignstudio/dev",
-  "totalCandidates": 81,
-  "ingestedCandidates": 81,
+  "totalCandidates": 80,
+  "ingestedCandidates": 80,
   "uncoveredCandidates": 0,
   "candidates": [
     {
