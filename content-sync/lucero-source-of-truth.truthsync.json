@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-03-08T02:58:04.728Z",
+  "generatedAt": "2026-03-08T11:26:28.964Z",
   "totals": {
     "surfaces": 3,
-    "active": 1,
-    "ready": 2,
+    "active": 3,
+    "ready": 0,
     "unwired": 0,
     "highRiskUnwired": 0
   },
@@ -11,8 +11,8 @@
     {
       "siteId": "buenosairesexpats",
       "surfaces": 3,
-      "active": 1,
-      "ready": 2,
+      "active": 3,
+      "ready": 0,
       "unwired": 0
     }
   ],
@@ -47,7 +47,7 @@
     {
       "siteId": "buenosairesexpats",
       "sourceExport": "expatProfiles",
-      "status": "ready",
+      "status": "active",
       "runtimeSurface": {
         "siteId": "buenosairesexpats",
         "sourceExport": "expatProfiles",
@@ -59,7 +59,7 @@
       "recordCount": 63,
       "highRiskRecordCount": 0,
       "reviewDateCount": 0,
-      "projectionCount": 0,
+      "projectionCount": 63,
       "sourcePaths": [
         "/Users/libertydesignstudio/dev/buenosairesexpats/lib/expat-profiles-data.ts"
       ],
@@ -74,7 +74,7 @@
     {
       "siteId": "buenosairesexpats",
       "sourceExport": "stories",
-      "status": "ready",
+      "status": "active",
       "runtimeSurface": {
         "siteId": "buenosairesexpats",
         "sourceExport": "stories",
@@ -86,7 +86,7 @@
       "recordCount": 14,
       "highRiskRecordCount": 0,
       "reviewDateCount": 14,
-      "projectionCount": 0,
+      "projectionCount": 14,
       "sourcePaths": [
         "/Users/libertydesignstudio/dev/buenosairesexpats/lib/stories-data.ts"
       ],

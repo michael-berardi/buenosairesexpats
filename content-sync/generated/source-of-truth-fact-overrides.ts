@@ -78,7 +78,1479 @@ export const countriesFactOverrides = {
   }
 } as const;
 
-export const expatProfilesFactOverrides = {} as const;
+export const expatProfilesFactOverrides = {
+  "akane-tango": {
+    "reviewDate": "unknown",
+    "sourceUrls": [
+      "https://akanetanguera.com/"
+    ],
+    "patch": {
+      "seoDescription": "Akane - Japanese tango dancer and expat sharing Buenos Aires tango culture and life",
+      "bio": "Akane arrived in Buenos Aires on January 1, 2016, with a dream of becoming a tango dancer. After three years of intensive tango study, she married an Argentine and made BA her permanent home. Now she works as a tango instructor, 'Tango Life Advisor,' and writer, helping Japanese tango enthusiasts navigate the BA tango scene. She runs the tango information site 'Aroma de Buenos Aires' and has published Kindle books about expat life in Buenos Aires. Her blog offers deep insights into tango culture, neighborhood guides, and practical advice for Japanese expats.",
+      "status": "active",
+      "truthSync": {
+        "canonicalKey": "expat-profile:akane-tango",
+        "recordId": "buenosairesexpats:expat-profile:akane-tango",
+        "reviewDate": "unknown",
+        "sourceExport": "expatProfiles",
+        "sourceUrls": [
+          "https://akanetanguera.com/"
+        ]
+      }
+    }
+  },
+  "alec-oscar": {
+    "reviewDate": "unknown",
+    "sourceUrls": [
+      "https://argentinaexpat.com/alec-oscar-provide-their-perspective-on-moving-to-argentina/"
+    ],
+    "patch": {
+      "seoDescription": "Alec & Oscar - Creative couple from LA who moved to Buenos Aires for food, wine, and quality of life",
+      "bio": "Alec and Oscar moved from Los Angeles to Buenos Aires with their two adopted kittens, seeking a better quality of life and incredible food. Oscar is Mexican-American and fluent in Spanish; Alec is learning. They run social media and advertising agencies remotely, taking advantage of the time difference with US clients. Foodies at heart, they love Soma in Nuñez and Togni's Pizza in Belgrano, and recommend hiring local Spanish teachers to support the community.",
+      "status": "active",
+      "truthSync": {
+        "canonicalKey": "expat-profile:alec-oscar",
+        "recordId": "buenosairesexpats:expat-profile:alec-oscar",
+        "reviewDate": "unknown",
+        "sourceExport": "expatProfiles",
+        "sourceUrls": [
+          "https://argentinaexpat.com/alec-oscar-provide-their-perspective-on-moving-to-argentina/"
+        ]
+      }
+    }
+  },
+  "alex-vamos-spanish": {
+    "reviewDate": "unknown",
+    "sourceUrls": [
+      "https://vamospanish.com/discover/"
+    ],
+    "patch": {
+      "seoDescription": "Alex - British expat and cricket enthusiast in Buenos Aires",
+      "bio": "Alex is a Londoner who traded grey skies for tango-filled avenues. After enrolling at Vamos Spanish Academy to learn the language properly, he discovered unexpected community at the Buenos Aires Cricket Club. His blog posts document the cultural differences between British reserve and Argentine passion, language learning tips, and practical advice for UK expats making the move to Argentina.",
+      "status": "active",
+      "truthSync": {
+        "canonicalKey": "expat-profile:alex-vamos-spanish",
+        "recordId": "buenosairesexpats:expat-profile:alex-vamos-spanish",
+        "reviewDate": "unknown",
+        "sourceExport": "expatProfiles",
+        "sourceUrls": [
+          "https://vamospanish.com/discover/"
+        ]
+      }
+    }
+  },
+  "allie-pick-up-the-fork": {
+    "reviewDate": "unknown",
+    "sourceUrls": [
+      "https://pickupthefork.com"
+    ],
+    "patch": {
+      "seoDescription": "Allie from Pick Up The Fork - Buenos Aires' leading English food blogger",
+      "bio": "Allie is the definitive food blogger of Buenos Aires. For over a decade, she has been documenting the city's culinary scene with in-depth restaurant reviews, food tours, and honest critiques. Her recommendations are the gold standard for English-speaking foodies in BA, from hole-in-the-wall parrillas to fine dining establishments. If you want to know where to eat in Buenos Aires, start here.",
+      "status": "active",
+      "truthSync": {
+        "canonicalKey": "expat-profile:allie-pick-up-the-fork",
+        "recordId": "buenosairesexpats:expat-profile:allie-pick-up-the-fork",
+        "reviewDate": "unknown",
+        "sourceExport": "expatProfiles",
+        "sourceUrls": [
+          "https://pickupthefork.com"
+        ]
+      }
+    }
+  },
+  "amanda-ivan": {
+    "reviewDate": "unknown",
+    "sourceUrls": [
+      "https://argentinaexpat.com/amanda-talks-about-living-in-argentina/"
+    ],
+    "patch": {
+      "seoDescription": "Amanda & Iván - American-Argentine family sharing their expat experience with a young child",
+      "bio": "Amanda and her husband Iván moved to Buenos Aires with their 4-year-old son to embrace a warmer culture and be closer to family. Iván left Argentina at age 10, and the family returned seeking a better quality of life. Amanda shares insights on raising a bilingual child, navigating Spanish lessons, and the satisfaction of immersing their son in Argentine culture. Her top advice: learn Spanish - it opens up a fuller life in Argentina.",
+      "status": "active",
+      "truthSync": {
+        "canonicalKey": "expat-profile:amanda-ivan",
+        "recordId": "buenosairesexpats:expat-profile:amanda-ivan",
+        "reviewDate": "unknown",
+        "sourceExport": "expatProfiles",
+        "sourceUrls": [
+          "https://argentinaexpat.com/amanda-talks-about-living-in-argentina/"
+        ]
+      }
+    }
+  },
+  "amber-sandro-ba-expats": {
+    "reviewDate": "unknown",
+    "sourceUrls": [
+      "https://baexpats.org"
+    ],
+    "patch": {
+      "seoDescription": "Amber and Sandro - Founders of BA Expats Forum since 2004",
+      "bio": "Amber and Sandro have been running the BA Expats forum since 2004 - one of the oldest and most active expat communities online. Their forum has helped thousands of expats navigate life in Buenos Aires, from finding apartments to understanding visa requirements. They are the connective tissue of the English-speaking expat community in BA.",
+      "status": "active",
+      "truthSync": {
+        "canonicalKey": "expat-profile:amber-sandro-ba-expats",
+        "recordId": "buenosairesexpats:expat-profile:amber-sandro-ba-expats",
+        "reviewDate": "unknown",
+        "sourceExport": "expatProfiles",
+        "sourceUrls": [
+          "https://baexpats.org"
+        ]
+      }
+    }
+  },
+  "amy-suto": {
+    "reviewDate": "unknown",
+    "sourceUrls": [
+      "https://www.amysuto.com"
+    ],
+    "patch": {
+      "seoDescription": "Amy Suto - Hollywood TV writer turned digital nomad, author of the essential Buenos Aires remote work guide",
+      "bio": "Amy Suto began her career as a Hollywood TV writer before becoming a full-time digital nomad and bestselling author. Her detailed guide to working remotely in Buenos Aires has become essential reading for digital nomads considering the city. She documents everything from the best coworking cafes in Palermo to practical cost-of-living breakdowns. Her writing emphasizes how Buenos Aires supports creative work.",
+      "status": "active",
+      "truthSync": {
+        "canonicalKey": "expat-profile:amy-suto",
+        "recordId": "buenosairesexpats:expat-profile:amy-suto",
+        "reviewDate": "unknown",
+        "sourceExport": "expatProfiles",
+        "sourceUrls": [
+          "https://www.amysuto.com"
+        ]
+      }
+    }
+  },
+  "an-ra-chung": {
+    "reviewDate": "unknown",
+    "sourceUrls": [
+      "https://pickupthefork.substack.com/p/3-must-try-koreatown-restaurants"
+    ],
+    "patch": {
+      "seoDescription": "An Ra Chung - Korean-Argentine restaurateur behind Una Canción Coreana in Buenos Aires",
+      "bio": "An Ra Chung is a Korean-Argentine restaurateur who founded 'Una Canción Coreana' (A Korean Song), one of the pioneering Korean restaurants in Buenos Aires. Located in the Flores neighborhood - home to the city's Koreatown - her restaurant has been a gateway to Korean cuisine for locals, helping introduce Korean food beyond the immigrant community. The Korean community in Buenos Aires is the second largest in South America, and An Ra Chung represents the entrepreneurial success of Korean immigrants in Argentina.",
+      "status": "active",
+      "truthSync": {
+        "canonicalKey": "expat-profile:an-ra-chung",
+        "recordId": "buenosairesexpats:expat-profile:an-ra-chung",
+        "reviewDate": "unknown",
+        "sourceExport": "expatProfiles",
+        "sourceUrls": [
+          "https://pickupthefork.substack.com/p/3-must-try-koreatown-restaurants"
+        ]
+      }
+    }
+  },
+  "andrew-venture": {
+    "reviewDate": "unknown",
+    "sourceUrls": [
+      "https://argentinaexpat.com/kiwi-in-buenos-aires/"
+    ],
+    "patch": {
+      "seoDescription": "Andrew Venture - New Zealand expat and digital nomad living in Buenos Aires",
+      "bio": "Andrew moved to Buenos Aires from Southeast Asia, seeking a US-friendly timezone and a burgeoning digital nomad scene. As a Kiwi expat, he brings a practical perspective on navigating the blue dollar, finding great steaks and malbec, and discovering hidden gems like Eco Parque. His advice for newcomers: research Western Union options, don't try to import anything, and make time to explore Argentina beyond the capital.",
+      "status": "active",
+      "truthSync": {
+        "canonicalKey": "expat-profile:andrew-venture",
+        "recordId": "buenosairesexpats:expat-profile:andrew-venture",
+        "reviewDate": "unknown",
+        "sourceExport": "expatProfiles",
+        "sourceUrls": [
+          "https://argentinaexpat.com/kiwi-in-buenos-aires/"
+        ]
+      }
+    }
+  },
+  "angelina-canada": {
+    "reviewDate": "unknown",
+    "sourceUrls": [
+      "http://www.makingthesamedifference.blogspot.com/"
+    ],
+    "patch": {
+      "seoDescription": "Angelina Khoo - Canadian expat who arrived for 6 months and stayed 15+ years in Buenos Aires",
+      "bio": "Angelina never imagined that a $10 tango lesson would change her life. Originally from Canada's west coast, she arrived in Buenos Aires in September 2009 for a 6-month cultural exchange to teach English, and never left. A writer and social worker connected to her church community, she blogs about cross-cultural relationships, the political scene, and maintaining community. Her top advice: learn Spanish, network constantly, and be prepared for daily change.",
+      "status": "active",
+      "truthSync": {
+        "canonicalKey": "expat-profile:angelina-canada",
+        "recordId": "buenosairesexpats:expat-profile:angelina-canada",
+        "reviewDate": "unknown",
+        "sourceExport": "expatProfiles",
+        "sourceUrls": [
+          "http://www.makingthesamedifference.blogspot.com/"
+        ]
+      }
+    }
+  },
+  "angelina-tango-moon": {
+    "reviewDate": "unknown",
+    "sourceUrls": [
+      "http://www.tango2themoon.com/"
+    ],
+    "patch": {
+      "seoDescription": "Angelina - Canadian tango dancer and writer who lived in Buenos Aires",
+      "bio": "Angelina made Argentina her home in 2009 with a love for dance, especially tango, weaving through her expat experience. Her blog reads like a love letter to Buenos Aires - describing it as a passionate romance with high highs and low lows. She appeared on Argentine TV's 'Bendita' and was featured in InfoBae. Now in Montreal, her archives offer a vivid glimpse into the expat journey from arrival to departure.",
+      "status": "former",
+      "truthSync": {
+        "canonicalKey": "expat-profile:angelina-tango-moon",
+        "recordId": "buenosairesexpats:expat-profile:angelina-tango-moon",
+        "reviewDate": "unknown",
+        "sourceExport": "expatProfiles",
+        "sourceUrls": [
+          "http://www.tango2themoon.com/"
+        ]
+      }
+    }
+  },
+  "asli-pelit": {
+    "reviewDate": "unknown",
+    "sourceUrls": [
+      "https://www.sorrelmw.com/2011/10/16/asli-pelit/"
+    ],
+    "patch": {
+      "seoDescription": "Asli Pelit - Turkish TV producer covering football and culture in Buenos Aires",
+      "bio": "Asli Pelit is a Turkish TV producer and presenter who lived in Buenos Aires from 2006 to 2011. She produced and presented '10'larin Kitasi' (Continent of 10), a football show covering South American soccer. A graduate of NYU in Latin American Studies and Journalism, she brought a unique Turkish perspective to Argentine football culture. Though she described her relationship with BA as 'we clash,' her honest interviews offer a refreshingly candid expat perspective.",
+      "status": "former",
+      "truthSync": {
+        "canonicalKey": "expat-profile:asli-pelit",
+        "recordId": "buenosairesexpats:expat-profile:asli-pelit",
+        "reviewDate": "unknown",
+        "sourceExport": "expatProfiles",
+        "sourceUrls": [
+          "https://www.sorrelmw.com/2011/10/16/asli-pelit/"
+        ]
+      }
+    }
+  },
+  "ba-noma": {
+    "reviewDate": "unknown",
+    "sourceUrls": [
+      "https://www.tiktok.com/@ba.noma"
+    ],
+    "patch": {
+      "seoDescription": "Sarita (BA Noma) - American expat who lived 7 years in Buenos Aires sharing insights",
+      "bio": "Sarita, known as BA Noma on TikTok, lived in Buenos Aires for 7 years and built a following sharing her expat experiences. Her content covers the top reasons to take remote jobs to BA, the emotional journey of balancing life between Argentina and America, and the unique aspects of Argentine culture she discovered over nearly a decade. Her tagline captures the essence of being Argentine: 'El argentino nace donde quiere' (The Argentine is born wherever they want).",
+      "status": "former",
+      "truthSync": {
+        "canonicalKey": "expat-profile:ba-noma",
+        "recordId": "buenosairesexpats:expat-profile:ba-noma",
+        "reviewDate": "unknown",
+        "sourceExport": "expatProfiles",
+        "sourceUrls": [
+          "https://www.tiktok.com/@ba.noma"
+        ]
+      }
+    }
+  },
+  "becci-dk": {
+    "reviewDate": "unknown",
+    "sourceUrls": [
+      "https://becci.dk"
+    ],
+    "patch": {
+      "seoDescription": "Becci - Danish travel writer and expat in Buenos Aires",
+      "bio": "Becci is a Danish travel writer and expat who has lived across the world, including an extended stay in Buenos Aires. Her blog provides realistic insights into moving to and living in BA, covering everything from finding an apartment to navigating the city's unique culture. Her honest, practical advice helps future expats understand both the excitement and challenges of life in Argentina.",
+      "status": "active",
+      "truthSync": {
+        "canonicalKey": "expat-profile:becci-dk",
+        "recordId": "buenosairesexpats:expat-profile:becci-dk",
+        "reviewDate": "unknown",
+        "sourceExport": "expatProfiles",
+        "sourceUrls": [
+          "https://becci.dk"
+        ]
+      }
+    }
+  },
+  "breezing-through": {
+    "reviewDate": "unknown",
+    "sourceUrls": [
+      "https://breezingthrough.com/"
+    ],
+    "patch": {
+      "seoDescription": "Kristen from Breezing Through - American family who lived in Buenos Aires for 6 months with their autistic daughter",
+      "bio": "Kristen is a Tennessee-based creator who lived in Buenos Aires from June through December 2024 when her husband's job brought them to the city. As the mother of an autistic daughter, she documented their experience navigating a new environment with special needs, including creating social stories for different modes of transportation. The family explored Argentina together - from Colonia del Sacramento to Iguazu Falls to Patagonia penguin tours. Her perspective offers insights for families considering BA with children.",
+      "status": "former",
+      "truthSync": {
+        "canonicalKey": "expat-profile:breezing-through",
+        "recordId": "buenosairesexpats:expat-profile:breezing-through",
+        "reviewDate": "unknown",
+        "sourceExport": "expatProfiles",
+        "sourceUrls": [
+          "https://breezingthrough.com/"
+        ]
+      }
+    }
+  },
+  "carolina-murgi": {
+    "reviewDate": "unknown",
+    "sourceUrls": [
+      "https://argentinaexpat.com/11-years-in-buenos-aires/"
+    ],
+    "patch": {
+      "seoDescription": "Carolina Murgi - Brazilian expat with 11 years of life in Buenos Aires and insights on cultural adaptation",
+      "bio": "Carolina moved from São Paulo to Buenos Aires for love almost 11 years ago and never looked back. While Brazilian and Argentine cultures share similarities, she experienced the challenges of adapting her personality and expectations to feel like a local. What keeps her here? The ability to enjoy a Latin American city with greater safety - she can take the bus alone and go out at night, things that felt impossible in São Paulo. She discovered Buenos Aires' thriving independent theater scene and recommends Bellagamba bodegón for affordable, quality meals. Her advice to newcomers: don't limit yourself to Palermo - it's expensive and made for tourists.",
+      "status": "active",
+      "truthSync": {
+        "canonicalKey": "expat-profile:carolina-murgi",
+        "recordId": "buenosairesexpats:expat-profile:carolina-murgi",
+        "reviewDate": "unknown",
+        "sourceExport": "expatProfiles",
+        "sourceUrls": [
+          "https://argentinaexpat.com/11-years-in-buenos-aires/"
+        ]
+      }
+    }
+  },
+  "chanel-mae": {
+    "reviewDate": "unknown",
+    "sourceUrls": [
+      "https://www.youtube.com/@chanelmaee"
+    ],
+    "patch": {
+      "seoDescription": "Chanel Mae - American YouTuber documenting realistic expat life in Buenos Aires",
+      "bio": "Chanel Mae is an American expat who moved to Buenos Aires and documents her life through YouTube vlogs. With 19.6K subscribers and over 350 videos, she shares realistic depictions of expat life including the cost of living, culture shocks, and honest thoughts about living abroad. Her content covers everything from apartment tours and neighborhood explorations to the emotional journey of leaving the USA for a new life in Argentina. Her tagline: 'Buenos Aires feels more like home than the USA ever did.'",
+      "status": "active",
+      "truthSync": {
+        "canonicalKey": "expat-profile:chanel-mae",
+        "recordId": "buenosairesexpats:expat-profile:chanel-mae",
+        "reviewDate": "unknown",
+        "sourceExport": "expatProfiles",
+        "sourceUrls": [
+          "https://www.youtube.com/@chanelmaee"
+        ]
+      }
+    }
+  },
+  "christine-gilbert": {
+    "reviewDate": "unknown",
+    "sourceUrls": [
+      "https://www.almostfearless.com"
+    ],
+    "patch": {
+      "seoDescription": "Christine Gilbert - Created Almost Fearless blog, lived 6 years in Buenos Aires with her family",
+      "bio": "Christine Gilbert is the creator of Almost Fearless, a blog that documented her family's expat journey around the world. They lived in Buenos Aires for six years, where she famously documented living on $250 a month for a comfortable apartment. Her honest writing about the realities of expat life, raising children abroad, and navigating Argentine bureaucracy has helped thousands of families considering the move to Argentina.",
+      "status": "former",
+      "truthSync": {
+        "canonicalKey": "expat-profile:christine-gilbert",
+        "recordId": "buenosairesexpats:expat-profile:christine-gilbert",
+        "reviewDate": "unknown",
+        "sourceExport": "expatProfiles",
+        "sourceUrls": [
+          "https://www.almostfearless.com"
+        ]
+      }
+    }
+  },
+  "colombians-ba": {
+    "reviewDate": "unknown",
+    "sourceUrls": [
+      "https://www.youtube.com/watch?v=oFysQI1l3X0"
+    ],
+    "patch": {
+      "seoDescription": "Colombians in Buenos Aires - Colombian expats sharing their Argentina experience",
+      "bio": "Colombians represent a growing community in Buenos Aires, drawn by Argentina's European culture, safety compared to Colombian cities, and economic opportunities. This collection of Colombian expat experiences documents their transition to porteño life, cultural adjustments between two Latin American nations, and the practical realities of moving from Colombia to Argentina. Their stories offer unique insights for other Latin Americans considering the move.",
+      "status": "active",
+      "truthSync": {
+        "canonicalKey": "expat-profile:colombians-ba",
+        "recordId": "buenosairesexpats:expat-profile:colombians-ba",
+        "reviewDate": "unknown",
+        "sourceExport": "expatProfiles",
+        "sourceUrls": [
+          "https://www.youtube.com/watch?v=oFysQI1l3X0"
+        ]
+      }
+    }
+  },
+  "croatian-argentina": {
+    "reviewDate": "unknown",
+    "sourceUrls": [
+      "https://total-croatia-news.com/news/diaspora/nadia-milevcic-returnee/"
+    ],
+    "patch": {
+      "seoDescription": "Nadia Milevčić - Croatian-Argentine reflecting on diaspora connections between BA and Croatia",
+      "bio": "Nadia Milevčić was born in Buenos Aires, Argentina, to Croatian immigrant parents and raised in Croatia. Now 27 years old, her story represents the deep Croatian-Argentine connection - one of the strongest diaspora ties in Buenos Aires. While she now lives in Croatia, her family's story reflects the immigrant experience that built Buenos Aires. The Croatian community has been part of Argentina since the 19th century, contributing significantly to the country's culture.",
+      "status": "active",
+      "truthSync": {
+        "canonicalKey": "expat-profile:croatian-argentina",
+        "recordId": "buenosairesexpats:expat-profile:croatian-argentina",
+        "reviewDate": "unknown",
+        "sourceExport": "expatProfiles",
+        "sourceUrls": [
+          "https://total-croatia-news.com/news/diaspora/nadia-milevcic-returnee/"
+        ]
+      }
+    }
+  },
+  "daniel-calhoun": {
+    "reviewDate": "unknown",
+    "sourceUrls": [
+      "https://argentinaexpat.com/why-daniel-chose-argentina/"
+    ],
+    "patch": {
+      "seoDescription": "Daniel Calhoun - South Florida expat who bought a home and embraced the Buenos Aires lifestyle",
+      "bio": "Daniel is originally from South Florida and had been visiting Buenos Aires since 2018 before making the permanent move to Palermo in October 2023. He fell in love with the city's stunning architecture and food scene, then discovered so much more - warm people, reliable public transportation, and a lifestyle that feels like vacation every day. He even purchased a home here, navigating the challenges of Argentine real estate. His favorite spots include Lo de Jesus for steak, Adorado Cafe for coffee, and Franks - a vintage speakeasy bar with crystal chandeliers and a secret entrance.",
+      "status": "active",
+      "truthSync": {
+        "canonicalKey": "expat-profile:daniel-calhoun",
+        "recordId": "buenosairesexpats:expat-profile:daniel-calhoun",
+        "reviewDate": "unknown",
+        "sourceExport": "expatProfiles",
+        "sourceUrls": [
+          "https://argentinaexpat.com/why-daniel-chose-argentina/"
+        ]
+      }
+    }
+  },
+  "dario-migrant-photographer": {
+    "reviewDate": "unknown",
+    "sourceUrls": [
+      "https://migrantphotographer.blogspot.com/"
+    ],
+    "patch": {
+      "seoDescription": "Dario - Photographer documenting Buenos Aires life and Argentine travel",
+      "bio": "Dario is a photographer documenting Buenos Aires and Argentina through his lens. From train journeys to the Argentine northwest to Jesuit ruins in Misiones, his blog combines stunning photography with practical travel information. His visual storytelling captures everything from daily city life to hidden gems across the country.",
+      "status": "active",
+      "truthSync": {
+        "canonicalKey": "expat-profile:dario-migrant-photographer",
+        "recordId": "buenosairesexpats:expat-profile:dario-migrant-photographer",
+        "reviewDate": "unknown",
+        "sourceExport": "expatProfiles",
+        "sourceUrls": [
+          "https://migrantphotographer.blogspot.com/"
+        ]
+      }
+    }
+  },
+  "edd-cynthia-staton": {
+    "reviewDate": "unknown",
+    "sourceUrls": [
+      "https://www.eddandcynthia.com"
+    ],
+    "patch": {
+      "seoDescription": "Edd and Cynthia Staton - Award-winning journalists and retirement abroad experts who lived in Buenos Aires",
+      "bio": "Edd and Cynthia are award-winning journalists and recognized experts on retiring abroad. They lived in Buenos Aires and wrote three bestselling books about their experience. Their blog and courses have helped thousands of retirees navigate the transition to expat life. They share honest insights about healthcare, cost of living, and building community as retirees in Argentina.",
+      "status": "active",
+      "truthSync": {
+        "canonicalKey": "expat-profile:edd-cynthia-staton",
+        "recordId": "buenosairesexpats:expat-profile:edd-cynthia-staton",
+        "reviewDate": "unknown",
+        "sourceExport": "expatProfiles",
+        "sourceUrls": [
+          "https://www.eddandcynthia.com"
+        ]
+      }
+    }
+  },
+  "emily-urban-expats": {
+    "reviewDate": "unknown",
+    "sourceUrls": [
+      "https://urbanexpats.com/"
+    ],
+    "patch": {
+      "seoDescription": "Emily - American researcher exploring existential migration and expat identity in Buenos Aires",
+      "bio": "Emily is a Vermont-born researcher specializing in migration who arrived in Buenos Aires via Madrid and Prague in 2006. Her blog explores the concept of 'existential migration' - investigating the feelings and reasons behind the concept of 'home' for expats. Her 'expat predicaments' will strike a chord with anyone who has ever questioned where they truly belong.",
+      "status": "active",
+      "truthSync": {
+        "canonicalKey": "expat-profile:emily-urban-expats",
+        "recordId": "buenosairesexpats:expat-profile:emily-urban-expats",
+        "reviewDate": "unknown",
+        "sourceExport": "expatProfiles",
+        "sourceUrls": [
+          "https://urbanexpats.com/"
+        ]
+      }
+    }
+  },
+  "erick-mushaway": {
+    "reviewDate": "unknown",
+    "sourceUrls": [
+      "https://www.psimonmyway.com/living-in-buenos-aires-argentina/"
+    ],
+    "patch": {
+      "seoDescription": "Erin Mushaway - American expat sharing 13+ years of Buenos Aires living experience",
+      "bio": "Erin Mushaway is an American expat who has lived in Buenos Aires for over 13 years. Featured in multiple expat guides and interviews, she provides candid insights into the full spectrum of expat life in Argentina - from the bureaucratic frustrations to the deep joys of calling BA home. Her writing covers everything from navigating Argentine healthcare to understanding the local culture and building a life as a long-term expat.",
+      "status": "active",
+      "truthSync": {
+        "canonicalKey": "expat-profile:erick-mushaway",
+        "recordId": "buenosairesexpats:expat-profile:erick-mushaway",
+        "reviewDate": "unknown",
+        "sourceExport": "expatProfiles",
+        "sourceUrls": [
+          "https://www.psimonmyway.com/living-in-buenos-aires-argentina/"
+        ]
+      }
+    }
+  },
+  "erin-sol-salute": {
+    "reviewDate": "unknown",
+    "sourceUrls": [
+      "https://solsalute.com"
+    ],
+    "patch": {
+      "seoDescription": "Erin from Sol Salute - 15+ years in Buenos Aires, helping expats navigate Argentina",
+      "bio": "Erin is a Texas native who came to Buenos Aires for a semester abroad, fell in love with the city (and an Argentine), and never left. She has lived through multiple economic crises, had two children, and built Sol Salute into one of the most respected Argentina travel blogs. Her site helps thousands of travelers and prospective expats plan their trips to Argentina each month with honest, practical advice about visas, neighborhoods, and daily life.",
+      "status": "active",
+      "truthSync": {
+        "canonicalKey": "expat-profile:erin-sol-salute",
+        "recordId": "buenosairesexpats:expat-profile:erin-sol-salute",
+        "reviewDate": "unknown",
+        "sourceExport": "expatProfiles",
+        "sourceUrls": [
+          "https://solsalute.com"
+        ]
+      }
+    }
+  },
+  "expat-ed": {
+    "reviewDate": "unknown",
+    "sourceUrls": [
+      "https://www.youtube.com/@expated"
+    ],
+    "patch": {
+      "seoDescription": "ExpatEd - YouTube channel with practical Buenos Aires apartment and living guides",
+      "bio": "ExpatEd provides smarter strategies for living abroad through practical video content. His YouTube channel covers Buenos Aires expat rentals with apartment tours in Palermo and Recoleta, neighborhood guides, and honest advice about moving to Argentina. His content is essential viewing for anyone planning their move to BA, offering realistic expectations and money-saving tips.",
+      "status": "active",
+      "truthSync": {
+        "canonicalKey": "expat-profile:expat-ed",
+        "recordId": "buenosairesexpats:expat-profile:expat-ed",
+        "reviewDate": "unknown",
+        "sourceExport": "expatProfiles",
+        "sourceUrls": [
+          "https://www.youtube.com/@expated"
+        ]
+      }
+    }
+  },
+  "expat-edna": {
+    "reviewDate": "unknown",
+    "sourceUrls": [
+      "https://expatedna.com"
+    ],
+    "patch": {
+      "seoDescription": "Expat Edna - American travel writer and digital nomad",
+      "bio": "Edna is a New York-born travel writer who has lived across Asia and Latin America. Her blog Expat Edna documents her experiences as a digital nomad and expat, including her time in Buenos Aires. She writes candidly about the realities of expat life, cultural adjustments, and the logistics of moving abroad as a solo female traveler.",
+      "status": "former",
+      "truthSync": {
+        "canonicalKey": "expat-profile:expat-edna",
+        "recordId": "buenosairesexpats:expat-profile:expat-edna",
+        "reviewDate": "unknown",
+        "sourceExport": "expatProfiles",
+        "sourceUrls": [
+          "https://expatedna.com"
+        ]
+      }
+    }
+  },
+  "expat-panda": {
+    "reviewDate": "unknown",
+    "sourceUrls": [
+      "https://expatpanda.com"
+    ],
+    "patch": {
+      "seoDescription": "Expat Panda - Travel and cultural guide to Buenos Aires",
+      "bio": "Expat Panda is a travel and expat blog focused on immersive cultural experiences. Her guide to Buenos Aires covers everything from budget-friendly activities to hidden gems that most tourists miss. Her writing emphasizes authentic local experiences and practical travel advice for visitors and short-term expats alike.",
+      "status": "active",
+      "truthSync": {
+        "canonicalKey": "expat-profile:expat-panda",
+        "recordId": "buenosairesexpats:expat-profile:expat-panda",
+        "reviewDate": "unknown",
+        "sourceExport": "expatProfiles",
+        "sourceUrls": [
+          "https://expatpanda.com"
+        ]
+      }
+    }
+  },
+  "expats-blog-directory": {
+    "reviewDate": "unknown",
+    "sourceUrls": [
+      "https://www.expatsblog.com/blogs/argentina"
+    ],
+    "patch": {
+      "seoDescription": "Expats Blog Directory - Curated collection of Argentina expat blogs",
+      "bio": "The Expats Blog Argentina directory is a curated collection of expat blogs from people living throughout Argentina, including Buenos Aires. It features writers from France, Germany, UK, USA and more, providing diverse perspectives on expat life. The directory is an excellent starting point for finding expat voices from specific countries or backgrounds.",
+      "status": "active",
+      "truthSync": {
+        "canonicalKey": "expat-profile:expats-blog-directory",
+        "recordId": "buenosairesexpats:expat-profile:expats-blog-directory",
+        "reviewDate": "unknown",
+        "sourceExport": "expatProfiles",
+        "sourceUrls": [
+          "https://www.expatsblog.com/blogs/argentina"
+        ]
+      }
+    }
+  },
+  "fares-al-badwan": {
+    "reviewDate": "unknown",
+    "sourceUrls": [
+      "https://www.globalissues.org/news/2018/05/07/24172"
+    ],
+    "patch": {
+      "seoDescription": "Fares al Badwan - Syrian refugee who built a new life in Buenos Aires starting at age 17",
+      "bio": "Fares al Badwan moved to Buenos Aires alone from Syria in 2011 at age 17, escaping the armed conflict in his homeland. With the support of a sponsor family, he built a new life in Argentina. His story, documented by IPS News and Global Issues, represents the resilience of refugees who have found sanctuary in Buenos Aires.",
+      "status": "active",
+      "truthSync": {
+        "canonicalKey": "expat-profile:fares-al-badwan",
+        "recordId": "buenosairesexpats:expat-profile:fares-al-badwan",
+        "reviewDate": "unknown",
+        "sourceExport": "expatProfiles",
+        "sourceUrls": [
+          "https://www.globalissues.org/news/2018/05/07/24172"
+        ]
+      }
+    }
+  },
+  "freddie-uk": {
+    "reviewDate": "unknown",
+    "sourceUrls": [
+      "https://argentinaexpat.com/freddie-reflects-on-life-in-argentina/"
+    ],
+    "patch": {
+      "seoDescription": "Freddie - British expat who traded London wine industry for life as a personal trainer in Buenos Aires",
+      "bio": "Freddie originally moved from London to work in a Mendoza vineyard after years in the wine industry. He switched careers to become a personal trainer, built a client base that became his friend group, and found a slower pace of life that allowed him to grow. He's most grateful for meeting his wife and starting a family in Buenos Aires - a city that gave him a new career and a new life.",
+      "status": "active",
+      "truthSync": {
+        "canonicalKey": "expat-profile:freddie-uk",
+        "recordId": "buenosairesexpats:expat-profile:freddie-uk",
+        "reviewDate": "unknown",
+        "sourceExport": "expatProfiles",
+        "sourceUrls": [
+          "https://argentinaexpat.com/freddie-reflects-on-life-in-argentina/"
+        ]
+      }
+    }
+  },
+  "gareth-a-brother-abroad": {
+    "reviewDate": "unknown",
+    "sourceUrls": [
+      "https://abrotherabroad.com"
+    ],
+    "patch": {
+      "seoDescription": "Gareth from A Brother Abroad - Adventure travel and expat guides for Argentina",
+      "bio": "Gareth is a former Marine who traveled the world and documented his adventures on A Brother Abroad. His extensive guides to Argentina cover everything from trekking in Patagonia to navigating Buenos Aires' neighborhoods. His writing focuses on adventure travel, cultural immersion, and practical advice for long-term travelers and expats considering Argentina.",
+      "status": "former",
+      "truthSync": {
+        "canonicalKey": "expat-profile:gareth-a-brother-abroad",
+        "recordId": "buenosairesexpats:expat-profile:gareth-a-brother-abroad",
+        "reviewDate": "unknown",
+        "sourceExport": "expatProfiles",
+        "sourceUrls": [
+          "https://abrotherabroad.com"
+        ]
+      }
+    }
+  },
+  "gringos-podcast": {
+    "reviewDate": "unknown",
+    "sourceUrls": [
+      "https://www.tiktok.com/@gringosinbuenosaires"
+    ],
+    "patch": {
+      "seoDescription": "Gringos in Buenos Aires - Podcast featuring diverse expat interviews",
+      "bio": "Gringos in Buenos Aires is a podcast and TikTok channel that interviews expats from all walks of life living in Buenos Aires. Hosted by local legend Paul Perry, the platform brings diverse expat stories to audiences through video content recorded live before a studio audience. They feature everyone from investment managers and bar experts to everyday expats sharing their unique perspectives on Argentine life.",
+      "status": "active",
+      "truthSync": {
+        "canonicalKey": "expat-profile:gringos-podcast",
+        "recordId": "buenosairesexpats:expat-profile:gringos-podcast",
+        "reviewDate": "unknown",
+        "sourceExport": "expatProfiles",
+        "sourceUrls": [
+          "https://www.tiktok.com/@gringosinbuenosaires"
+        ]
+      }
+    }
+  },
+  "indian-expats-ba": {
+    "reviewDate": "unknown",
+    "sourceUrls": [
+      "https://www.expatsba.com/threads/indian-expats-in-argentina.6717/"
+    ],
+    "patch": {
+      "seoDescription": "Indian expats in Buenos Aires - Growing community of Indian entrepreneurs and professionals",
+      "bio": "The Indian expat community in Buenos Aires is growing, with entrepreneurs and professionals moving to Argentina to start businesses and build new lives. While smaller than in some other countries, the Indian community brings rich cultural traditions and entrepreneurial spirit to Buenos Aires. Their forum discussions cover everything from starting businesses in Argentina to navigating the immigration process as Indian nationals.",
+      "status": "active",
+      "truthSync": {
+        "canonicalKey": "expat-profile:indian-expats-ba",
+        "recordId": "buenosairesexpats:expat-profile:indian-expats-ba",
+        "reviewDate": "unknown",
+        "sourceExport": "expatProfiles",
+        "sourceUrls": [
+          "https://www.expatsba.com/threads/indian-expats-in-argentina.6717/"
+        ]
+      }
+    }
+  },
+  "inlovelyblue": {
+    "reviewDate": "unknown",
+    "sourceUrls": [
+      "https://inlovelyblue.com"
+    ],
+    "patch": {
+      "seoDescription": "Bridget from In Lovely Blue - Australian digital nomad in Buenos Aires",
+      "bio": "Bridget is an Australian expat living and working remotely from Latin America, with Buenos Aires as one of her primary bases. Her blog In Lovely Blue documents her life as a location-independent professional, sharing insights on remote work, cultural adaptation, and the expat lifestyle across multiple countries including Argentina.",
+      "status": "active",
+      "truthSync": {
+        "canonicalKey": "expat-profile:inlovelyblue",
+        "recordId": "buenosairesexpats:expat-profile:inlovelyblue",
+        "reviewDate": "unknown",
+        "sourceExport": "expatProfiles",
+        "sourceUrls": [
+          "https://inlovelyblue.com"
+        ]
+      }
+    }
+  },
+  "james-guide-to-argentina": {
+    "reviewDate": "unknown",
+    "sourceUrls": [
+      "https://guidetoargentina.com"
+    ],
+    "patch": {
+      "seoDescription": "James' Guide to Argentina - Comprehensive resource for travelers and expats",
+      "bio": "James created Guide to Argentina as a comprehensive resource for travelers and expats. His blog covers practical topics like visa requirements, cost of living, and neighborhood guides, alongside cultural insights and travel recommendations throughout Argentina. The site serves as a one-stop resource for English speakers planning their Argentina journey.",
+      "status": "active",
+      "truthSync": {
+        "canonicalKey": "expat-profile:james-guide-to-argentina",
+        "recordId": "buenosairesexpats:expat-profile:james-guide-to-argentina",
+        "reviewDate": "unknown",
+        "sourceExport": "expatProfiles",
+        "sourceUrls": [
+          "https://guidetoargentina.com"
+        ]
+      }
+    }
+  },
+  "jerry-nelson": {
+    "reviewDate": "unknown",
+    "sourceUrls": [
+      "https://medium.com/@jandrewnelson"
+    ],
+    "patch": {
+      "seoDescription": "Jerry Nelson - American writer and photojournalist living in Buenos Aires",
+      "bio": "Jerry Nelson is an award-winning American freelance writer and photojournalist living the expat life in Buenos Aires with his wife Alejandra. With 20+ years of experience, he ghostwrites memoirs for professionals and expats, capturing defining moments and life stories. His writing on Medium covers the realities of expat life, the challenges of living abroad, and practical advice for writers considering the expat path.",
+      "status": "active",
+      "truthSync": {
+        "canonicalKey": "expat-profile:jerry-nelson",
+        "recordId": "buenosairesexpats:expat-profile:jerry-nelson",
+        "reviewDate": "unknown",
+        "sourceExport": "expatProfiles",
+        "sourceUrls": [
+          "https://medium.com/@jandrewnelson"
+        ]
+      }
+    }
+  },
+  "jesse-living-latam": {
+    "reviewDate": "unknown",
+    "sourceUrls": [
+      "https://www.youtube.com/@living_in_latam"
+    ],
+    "patch": {
+      "seoDescription": "Jesse - Canadian digital nomad documenting life across Latin America including Buenos Aires",
+      "bio": "Jesse is a Canadian who moved to Latin America and has lived in multiple countries across the region. His YouTube channel 'Living in Latin America' documents his experiences living in Uruguay, Argentina, and Chile. He provides detailed cost of living breakdowns, safety assessments, and visa information for digital nomads considering Buenos Aires and other South American cities. His honest, practical approach helps viewers understand the realities of expat life in Latin America.",
+      "status": "active",
+      "truthSync": {
+        "canonicalKey": "expat-profile:jesse-living-latam",
+        "recordId": "buenosairesexpats:expat-profile:jesse-living-latam",
+        "reviewDate": "unknown",
+        "sourceExport": "expatProfiles",
+        "sourceUrls": [
+          "https://www.youtube.com/@living_in_latam"
+        ]
+      }
+    }
+  },
+  "jessica-parks": {
+    "reviewDate": "unknown",
+    "sourceUrls": [
+      "https://argentinaexpat.com/expat-stories-jessica-from-the-us/"
+    ],
+    "patch": {
+      "seoDescription": "Jessica Parks - American expat who found love and an easy adjustment in Buenos Aires",
+      "bio": "Jessica came to Buenos Aires unexpectedly - a friend was watching her dog after knee surgery, and she decided to visit. Having lived all over the world, she found BA to be the easiest adjustment she's ever made. She met her fiancée here and embraced the expat life. Her practical advice: bring blue dollars, rent through Zonaprop instead of Airbnb, have backup data plans, and learn how to order steak medium rare.",
+      "status": "active",
+      "truthSync": {
+        "canonicalKey": "expat-profile:jessica-parks",
+        "recordId": "buenosairesexpats:expat-profile:jessica-parks",
+        "reviewDate": "unknown",
+        "sourceExport": "expatProfiles",
+        "sourceUrls": [
+          "https://argentinaexpat.com/expat-stories-jessica-from-the-us/"
+        ]
+      }
+    }
+  },
+  "linda-netherlands": {
+    "reviewDate": "unknown",
+    "sourceUrls": [
+      "https://argentinaexpat.com/from-netherlands-to-argentina/"
+    ],
+    "patch": {
+      "seoDescription": "Linda Matthijs - Dutch expat with 7 years of experience living in Buenos Aires",
+      "bio": "Linda moved from the Netherlands to Buenos Aires seeking a change and found a job that brought her to Argentina. Over seven years, she's become intimately familiar with the frustrations of Argentine bureaucracy and the joys of porteño life. Her interview offers practical advice for navigating daily life and reminds new expats to accept every invitation - there's always something new to discover in Buenos Aires.",
+      "status": "active",
+      "truthSync": {
+        "canonicalKey": "expat-profile:linda-netherlands",
+        "recordId": "buenosairesexpats:expat-profile:linda-netherlands",
+        "reviewDate": "unknown",
+        "sourceExport": "expatProfiles",
+        "sourceUrls": [
+          "https://argentinaexpat.com/from-netherlands-to-argentina/"
+        ]
+      }
+    }
+  },
+  "manus-menu": {
+    "reviewDate": "unknown",
+    "sourceUrls": [
+      "https://www.manusmenu.com/buenos-aires-guide-argentina"
+    ],
+    "patch": {
+      "seoDescription": "Manu's Menu - Italian food blogger's guide to Buenos Aires dining and culture",
+      "bio": "Manu is an Italian food blogger who visited Buenos Aires and fell in love with the city. Her detailed BA guide covers everything from the European feel and porteño accent to practical sightseeing tips and restaurant recommendations. She highlights the strong Italian-Argentine connections and calls Buenos Aires the 'Paris of South America.'",
+      "status": "active",
+      "truthSync": {
+        "canonicalKey": "expat-profile:manus-menu",
+        "recordId": "buenosairesexpats:expat-profile:manus-menu",
+        "reviewDate": "unknown",
+        "sourceExport": "expatProfiles",
+        "sourceUrls": [
+          "https://www.manusmenu.com/buenos-aires-guide-argentina"
+        ]
+      }
+    }
+  },
+  "marla-tierra": {
+    "reviewDate": "unknown",
+    "sourceUrls": [
+      "https://www.youtube.com/@a.marla.tierra"
+    ],
+    "patch": {
+      "seoDescription": "a Marla Tierra - Dominican creator sharing her Buenos Aires experience",
+      "bio": "a Marla Tierra is a content creator from the Dominican Republic who lived in Argentina for almost three years. Her YouTube channel documents her Latin American perspective on Buenos Aires life, including discovering the famous El Ateneo bookstore, exploring La Boca, and sharing her farewell to Argentina. Her content offers a unique Spanish-speaking Caribbean perspective on adapting to Argentine culture and city life.",
+      "status": "former",
+      "truthSync": {
+        "canonicalKey": "expat-profile:marla-tierra",
+        "recordId": "buenosairesexpats:expat-profile:marla-tierra",
+        "reviewDate": "unknown",
+        "sourceExport": "expatProfiles",
+        "sourceUrls": [
+          "https://www.youtube.com/@a.marla.tierra"
+        ]
+      }
+    }
+  },
+  "maruc-japan": {
+    "reviewDate": "unknown",
+    "sourceUrls": [
+      "https://maruc-buenos-ayres.blog.jp/"
+    ],
+    "patch": {
+      "seoDescription": "Maruc - Japanese expat sharing Buenos Aires cafe culture and practical living tips",
+      "bio": "Maruc is a Japanese expat living in Buenos Aires who shares practical city living advice with a focus on cafe culture and solo dining spots perfect for Japanese women. Her blog features detailed guides to Argentine Spanish (comparing it to Spain's Spanish), day trips from BA including Tigre, Colonia, and Iguazu Falls, and recommendations for female-friendly cafes in Palermo. She documents her 'despacito' (slow) life in BA, emphasizing work-life balance and local discoveries.",
+      "status": "active",
+      "truthSync": {
+        "canonicalKey": "expat-profile:maruc-japan",
+        "recordId": "buenosairesexpats:expat-profile:maruc-japan",
+        "reviewDate": "unknown",
+        "sourceExport": "expatProfiles",
+        "sourceUrls": [
+          "https://maruc-buenos-ayres.blog.jp/"
+        ]
+      }
+    }
+  },
+  "melissa-andrew": {
+    "reviewDate": "unknown",
+    "sourceUrls": [
+      "https://www.youtube.com/@LifebyMelissaAndrew"
+    ],
+    "patch": {
+      "seoDescription": "Melissa & Andrew - American couple sharing 7 years of Buenos Aires expat life",
+      "bio": "Melissa and Andrew are American expats who lived in Buenos Aires for 7 years after previously being expats in Luanda, Angola. Their YouTube channel helps viewers live their best expat life, sharing advice and expertise from nearly a decade of expat experiences. They document the realities of long-term expat living, from finding community to navigating bureaucracy in foreign countries.",
+      "status": "former",
+      "truthSync": {
+        "canonicalKey": "expat-profile:melissa-andrew",
+        "recordId": "buenosairesexpats:expat-profile:melissa-andrew",
+        "reviewDate": "unknown",
+        "sourceExport": "expatProfiles",
+        "sourceUrls": [
+          "https://www.youtube.com/@LifebyMelissaAndrew"
+        ]
+      }
+    }
+  },
+  "nomad-copywriter": {
+    "reviewDate": "unknown",
+    "sourceUrls": [
+      "https://nomadcopywriting.io/living-buenos-aires/"
+    ],
+    "patch": {
+      "seoDescription": "Nomad Copywriter - American digital nomad who documented Buenos Aires culture",
+      "bio": "A remote marketing professional who spent 7 weeks living in Buenos Aires in 2016, documenting candid cultural observations. Her writing covers everything from the Italian-influenced Spanish and mate-sharing culture to the realities of grocery shopping and pedestrian safety. While brief, her stay offered deep insights into what makes Buenos Aires unique - and what surprised her most about porteño culture compared to the rest of South America.",
+      "status": "former",
+      "truthSync": {
+        "canonicalKey": "expat-profile:nomad-copywriter",
+        "recordId": "buenosairesexpats:expat-profile:nomad-copywriter",
+        "reviewDate": "unknown",
+        "sourceExport": "expatProfiles",
+        "sourceUrls": [
+          "https://nomadcopywriting.io/living-buenos-aires/"
+        ]
+      }
+    }
+  },
+  "nomadflag": {
+    "reviewDate": "unknown",
+    "sourceUrls": [
+      "https://nomadflag.com"
+    ],
+    "patch": {
+      "seoDescription": "Nomad Flag - Digital nomad guide to living in Argentina",
+      "bio": "Nomad Flag is a resource for digital nomads and expats considering Argentina. The site features comprehensive guides on cost of living, visa options, and lifestyle comparisons. With detailed analysis of Buenos Aires as a nomad destination, it helps remote workers understand the practical realities of setting up base in Argentina.",
+      "status": "active",
+      "truthSync": {
+        "canonicalKey": "expat-profile:nomadflag",
+        "recordId": "buenosairesexpats:expat-profile:nomadflag",
+        "reviewDate": "unknown",
+        "sourceExport": "expatProfiles",
+        "sourceUrls": [
+          "https://nomadflag.com"
+        ]
+      }
+    }
+  },
+  "nomadic-sean": {
+    "reviewDate": "unknown",
+    "sourceUrls": [
+      "https://nomadicsean.com/living-in-buenos-aires-my-first-2-months-costs-safety-tips/"
+    ],
+    "patch": {
+      "seoDescription": "Nomadic Sean - American digital nomad documenting realistic first impressions of Buenos Aires life",
+      "bio": "Sean arrived in Buenos Aires in October 2025 with his Argentine girlfriend, documenting his realistic first impressions as a digital nomad. His honest writing covers everything from the dog poop on sidewalks nobody warns you about to the genuine safety concerns around phone theft. He provides detailed cost breakdowns, compares neighborhoods like Palermo vs Almagro, and shares discoveries like Parque Rivadavia's book market. His advice: Buenos Aires is cheaper than New York but more expensive than you think, Spanish is absolutely essential, and the city requires street smarts despite being safer than expected.",
+      "status": "active",
+      "truthSync": {
+        "canonicalKey": "expat-profile:nomadic-sean",
+        "recordId": "buenosairesexpats:expat-profile:nomadic-sean",
+        "reviewDate": "unknown",
+        "sourceExport": "expatProfiles",
+        "sourceUrls": [
+          "https://nomadicsean.com/living-in-buenos-aires-my-first-2-months-costs-safety-tips/"
+        ]
+      }
+    }
+  },
+  "noruega-argentina": {
+    "reviewDate": "unknown",
+    "sourceUrls": [
+      "https://noruegaenargentina.com/"
+    ],
+    "patch": {
+      "seoDescription": "Noruega en Argentina - Norwegian expat sharing Argentina through three languages",
+      "bio": "A Norwegian expat sharing life in Argentina through a unique multicultural lens. Writing in English, Spanish, and Norwegian, she documents travels through the Argentine northwest (NOA), appeared on Argentine TV's 'Bendita,' and was interviewed by InfoBae about being a foreigner in Argentina. Her blog is a treasure trove of travel stories and cultural observations.",
+      "status": "active",
+      "truthSync": {
+        "canonicalKey": "expat-profile:noruega-argentina",
+        "recordId": "buenosairesexpats:expat-profile:noruega-argentina",
+        "reviewDate": "unknown",
+        "sourceExport": "expatProfiles",
+        "sourceUrls": [
+          "https://noruegaenargentina.com/"
+        ]
+      }
+    }
+  },
+  "ohad-weiner": {
+    "reviewDate": "unknown",
+    "sourceUrls": [
+      "https://www.sorrelmw.com/2014/04/13/the-expat-ohad-weiner/"
+    ],
+    "patch": {
+      "seoDescription": "Ohad Weiner - Israeli cook and wine store owner in Buenos Aires",
+      "bio": "Ohad Weiner is an Israeli cook who moved to Buenos Aires and established roots in the city. A love interest first brought him to Argentina, and he eventually married and settled here. He owns a wine store and café, bringing Israeli culinary traditions to the Buenos Aires food scene. His story represents the entrepreneurial expat journey - building a business and family in a new country.",
+      "status": "active",
+      "truthSync": {
+        "canonicalKey": "expat-profile:ohad-weiner",
+        "recordId": "buenosairesexpats:expat-profile:ohad-weiner",
+        "reviewDate": "unknown",
+        "sourceExport": "expatProfiles",
+        "sourceUrls": [
+          "https://www.sorrelmw.com/2014/04/13/the-expat-ohad-weiner/"
+        ]
+      }
+    }
+  },
+  "oops-i-booked-again": {
+    "reviewDate": "unknown",
+    "sourceUrls": [
+      "https://www.oopsibookedagain.com"
+    ],
+    "patch": {
+      "seoDescription": "Oops I Booked Again - Solo female travel blog with in-depth Buenos Aires guides",
+      "bio": "Stephanie is a solo female traveler who spent over three months living in Buenos Aires and documented her experience extensively. Her blog covers everything from learning tango at local milongas to finding the best dulce de leche in San Telmo. She writes candidly about the challenges and joys of solo female travel in South America.",
+      "status": "active",
+      "truthSync": {
+        "canonicalKey": "expat-profile:oops-i-booked-again",
+        "recordId": "buenosairesexpats:expat-profile:oops-i-booked-again",
+        "reviewDate": "unknown",
+        "sourceExport": "expatProfiles",
+        "sourceUrls": [
+          "https://www.oopsibookedagain.com"
+        ]
+      }
+    }
+  },
+  "paul-perry": {
+    "reviewDate": "unknown",
+    "sourceUrls": [
+      "https://www.youtube.com/@PaulPerryBuenosAires"
+    ],
+    "patch": {
+      "seoDescription": "Paul Perry - American-Argentine YouTuber teaching Cool Castellano and BA culture",
+      "bio": "Paul Perry is an American-Argentine expat sharing insights on speaking 'Cool Castellano' and navigating Buenos Aires like a local. His YouTube channel teaches viewers what to say when kicking it in BA, focusing on authentic local language and culture. He also hosts the 'Gringos in Buenos Aires' podcast interviewing diverse expats.",
+      "status": "active",
+      "truthSync": {
+        "canonicalKey": "expat-profile:paul-perry",
+        "recordId": "buenosairesexpats:expat-profile:paul-perry",
+        "reviewDate": "unknown",
+        "sourceExport": "expatProfiles",
+        "sourceUrls": [
+          "https://www.youtube.com/@PaulPerryBuenosAires"
+        ]
+      }
+    }
+  },
+  "rachel-gremillion": {
+    "reviewDate": "unknown",
+    "sourceUrls": [
+      "https://argentinaexpat.com/rachels-insights-on-living-in-argentina/"
+    ],
+    "patch": {
+      "seoDescription": "Rachel Gremillion - American expat who moved to Buenos Aires with three dogs",
+      "bio": "Rachel moved to Buenos Aires in February 2023 with her three dogs to be with her long-distance boyfriend (now fiancé). Living in Villa Urquiza, she shares practical insights for pet owners considering Argentina, her favorite hidden bars like Puerta Uno, and the challenges of learning Spanish. She's embraced the Argentine work-life balance and discovered fantastic street art tours and local neighborhoods beyond the tourist areas.",
+      "status": "active",
+      "truthSync": {
+        "canonicalKey": "expat-profile:rachel-gremillion",
+        "recordId": "buenosairesexpats:expat-profile:rachel-gremillion",
+        "reviewDate": "unknown",
+        "sourceExport": "expatProfiles",
+        "sourceUrls": [
+          "https://argentinaexpat.com/rachels-insights-on-living-in-argentina/"
+        ]
+      }
+    }
+  },
+  "rebecca-born-traveller": {
+    "reviewDate": "unknown",
+    "sourceUrls": [
+      "https://aborntraveller.com"
+    ],
+    "patch": {
+      "seoDescription": "Rebecca from A Born Traveller - Danish academic who lived 7 years in Buenos Aires",
+      "bio": "Rebecca is a Danish academic who came to Buenos Aires for a 6-month exchange and stayed for 7 years. She earned two Master's degrees from Argentine universities and built a career as a project manager working with Argentine teams and international clients. She left in 2023 when economic instability outweighed the benefits, but her blog remains an invaluable honest resource about the full expat experience - the good, the challenging, and the reality of leaving.",
+      "status": "former",
+      "truthSync": {
+        "canonicalKey": "expat-profile:rebecca-born-traveller",
+        "recordId": "buenosairesexpats:expat-profile:rebecca-born-traveller",
+        "reviewDate": "unknown",
+        "sourceExport": "expatProfiles",
+        "sourceUrls": [
+          "https://aborntraveller.com"
+        ]
+      }
+    }
+  },
+  "rosie-hilder": {
+    "reviewDate": "unknown",
+    "sourceUrls": [
+      "https://www.buenostours.com/rosie-hilder-expat-writer/"
+    ],
+    "patch": {
+      "seoDescription": "Rosie Hilder - British expat writer and creator of 52 language exchanges challenge",
+      "bio": "Rosie Hilder is a British expat writer and long-term Buenos Aires resident. She started 52exchanges.com in 2011, documenting a year-long challenge to have 52 language exchanges in Buenos Aires - one per week. An expert on the city's culture and language learning scene, she now works with BuenosTours creating authentic walking tours. Her writing focuses on immersive cultural experiences and connecting with locals through language.",
+      "status": "active",
+      "truthSync": {
+        "canonicalKey": "expat-profile:rosie-hilder",
+        "recordId": "buenosairesexpats:expat-profile:rosie-hilder",
+        "reviewDate": "unknown",
+        "sourceExport": "expatProfiles",
+        "sourceUrls": [
+          "https://www.buenostours.com/rosie-hilder-expat-writer/"
+        ]
+      }
+    }
+  },
+  "sabine-france": {
+    "reviewDate": "unknown",
+    "sourceUrls": [
+      "https://www.sabinefep.com/"
+    ],
+    "patch": {
+      "seoDescription": "Sabine - French expat and fundraising consultant based in Rosario, Argentina",
+      "bio": "Sabine is a French expat who arrived in Argentina in 2010 and felt so at ease she decided to settle in Rosario (near Buenos Aires). A fundraiser, business strategist and mentor, she helps changemakers raise funds with content that connects. Her blog features entrepreneurial expats from around the world and provides insights into building a business and life in Argentina.",
+      "status": "active",
+      "truthSync": {
+        "canonicalKey": "expat-profile:sabine-france",
+        "recordId": "buenosairesexpats:expat-profile:sabine-france",
+        "reviewDate": "unknown",
+        "sourceExport": "expatProfiles",
+        "sourceUrls": [
+          "https://www.sabinefep.com/"
+        ]
+      }
+    }
+  },
+  "sayonara-rell": {
+    "reviewDate": "unknown",
+    "sourceUrls": [
+      "https://argentinaexpat.com/from-brazil-to-argentina-sayonaras-story/"
+    ],
+    "patch": {
+      "seoDescription": "Sayonara Rell - Brazilian expat sharing fresh perspectives on moving to Buenos Aires",
+      "bio": "Sayonara moved from Brazil to Buenos Aires with her boyfriend and has been documenting the cultural adjustments of life in Argentina. Her story highlights the similarities and differences between Brazilian and Argentine culture. As a recent arrival, she offers a fresh perspective on the expat experience.",
+      "status": "active",
+      "truthSync": {
+        "canonicalKey": "expat-profile:sayonara-rell",
+        "recordId": "buenosairesexpats:expat-profile:sayonara-rell",
+        "reviewDate": "unknown",
+        "sourceExport": "expatProfiles",
+        "sourceUrls": [
+          "https://argentinaexpat.com/from-brazil-to-argentina-sayonaras-story/"
+        ]
+      }
+    }
+  },
+  "tara-katims": {
+    "reviewDate": "unknown",
+    "sourceUrls": [
+      "https://www.tiktok.com/@tarkatims"
+    ],
+    "patch": {
+      "seoDescription": "Tara Katims - American digital nomad sharing Buenos Aires coworking and cafe culture",
+      "bio": "Tara Katims is a digital nomad sharing day-in-the-life content from Buenos Aires on TikTok. Her videos showcase coworking spaces, cafes, and the digital nomad lifestyle in the city. She provides tips on working remotely in BA and highlights the best spots for productivity and networking.",
+      "status": "active",
+      "truthSync": {
+        "canonicalKey": "expat-profile:tara-katims",
+        "recordId": "buenosairesexpats:expat-profile:tara-katims",
+        "reviewDate": "unknown",
+        "sourceExport": "expatProfiles",
+        "sourceUrls": [
+          "https://www.tiktok.com/@tarkatims"
+        ]
+      }
+    }
+  },
+  "the-mobile-retiree": {
+    "reviewDate": "unknown",
+    "sourceUrls": [
+      "https://themobileretiree.com"
+    ],
+    "patch": {
+      "seoDescription": "The Mobile Retiree - Senior nomad living in Buenos Aires",
+      "bio": "Lynne is a senior nomad who spends part of each year living in Buenos Aires. Her blog documents the reality of retirement travel and slow living in Argentina, including detailed cost of living reports for couples. She provides practical advice for retirees considering BA as a base, from healthcare to neighborhood selection.",
+      "status": "active",
+      "truthSync": {
+        "canonicalKey": "expat-profile:the-mobile-retiree",
+        "recordId": "buenosairesexpats:expat-profile:the-mobile-retiree",
+        "reviewDate": "unknown",
+        "sourceExport": "expatProfiles",
+        "sourceUrls": [
+          "https://themobileretiree.com"
+        ]
+      }
+    }
+  },
+  "tina-international-love": {
+    "reviewDate": "unknown",
+    "sourceUrls": [
+      "https://thephotographyconfidential.com"
+    ],
+    "patch": {
+      "seoDescription": "Tina from International Love Story - German expat and couples consultant living in Buenos Aires",
+      "bio": "Tina is a certified couples consultant and host of the International Love Story podcast, where she interviews intercultural couples from around the world. Originally from Germany, she met her Argentine husband Nacho in Miami, and they moved to Buenos Aires in February 2024. She documents the realities of building a life in Argentina - from navigating bureaucracy and inflation to discovering the warmth of Argentine culture and the best hidden cafés in the city.",
+      "status": "active",
+      "truthSync": {
+        "canonicalKey": "expat-profile:tina-international-love",
+        "recordId": "buenosairesexpats:expat-profile:tina-international-love",
+        "reviewDate": "unknown",
+        "sourceExport": "expatProfiles",
+        "sourceUrls": [
+          "https://thephotographyconfidential.com"
+        ]
+      }
+    }
+  },
+  "victoria-garett": {
+    "reviewDate": "unknown",
+    "sourceUrls": [
+      "https://www.youtube.com/@victoriaandgarett"
+    ],
+    "patch": {
+      "seoDescription": "Victoria & Garett - American couple documenting digital nomad life in Buenos Aires",
+      "bio": "Victoria & Garett are an American couple who moved to Buenos Aires in February 2024 as digital nomads. Their YouTube channel documents their entire journey from moving to the city, exploring neighborhoods, museums, and restaurants, to eventually leaving BA. They provide insights on visa extensions, apartment hunting, and the honest pros and cons of digital nomad life in Argentina. Their vlogs offer a realistic look at the expat experience from arrival to departure.",
+      "status": "former",
+      "truthSync": {
+        "canonicalKey": "expat-profile:victoria-garett",
+        "recordId": "buenosairesexpats:expat-profile:victoria-garett",
+        "reviewDate": "unknown",
+        "sourceExport": "expatProfiles",
+        "sourceUrls": [
+          "https://www.youtube.com/@victoriaandgarett"
+        ]
+      }
+    }
+  },
+  "wandering-investor": {
+    "reviewDate": "unknown",
+    "sourceUrls": [
+      "https://thewanderinginvestor.com"
+    ],
+    "patch": {
+      "seoDescription": "The Wandering Investor - Investment and lifestyle insights for Buenos Aires",
+      "bio": "Martin is an investor and global citizen who spends significant time in Buenos Aires. His blog focuses on the investment and lifestyle opportunities in Argentina, including real estate, residency options, and the practical aspects of living in BA as a foreign investor. He provides a unique perspective on Argentina from a financial standpoint.",
+      "status": "active",
+      "truthSync": {
+        "canonicalKey": "expat-profile:wandering-investor",
+        "recordId": "buenosairesexpats:expat-profile:wandering-investor",
+        "reviewDate": "unknown",
+        "sourceExport": "expatProfiles",
+        "sourceUrls": [
+          "https://thewanderinginvestor.com"
+        ]
+      }
+    }
+  },
+  "worldly-adventurer": {
+    "reviewDate": "unknown",
+    "sourceUrls": [
+      "https://worldlyadventurer.com"
+    ],
+    "patch": {
+      "seoDescription": "Worldly Adventurer - UK expat and travel writer in Buenos Aires",
+      "bio": "Steph is a UK-born travel writer who has made Buenos Aires her base while exploring South America. Her comprehensive guides cover everything from the cost of living to the best day trips from BA. She specializes in helping digital nomads and long-term travelers understand the practical realities of life in Argentina.",
+      "status": "active",
+      "truthSync": {
+        "canonicalKey": "expat-profile:worldly-adventurer",
+        "recordId": "buenosairesexpats:expat-profile:worldly-adventurer",
+        "reviewDate": "unknown",
+        "sourceExport": "expatProfiles",
+        "sourceUrls": [
+          "https://worldlyadventurer.com"
+        ]
+      }
+    }
+  }
+} as const;
 
-export const storiesFactOverrides = {} as const;
+export const storiesFactOverrides = {
+  "alex-cricket-club": {
+    "reviewDate": "2024-08-07",
+    "sourceUrls": [],
+    "patch": {
+      "summary": "A Londoner who traded grey skies for tango-filled avenues. Found unexpected community at the Buenos Aires Cricket Club while navigating the cultural differences between British reserve and Argentine passion.",
+      "source": "Vamos Spanish Academy",
+      "truthSync": {
+        "canonicalKey": "expat-story:alex-cricket-club",
+        "recordId": "buenosairesexpats:expat-story:alex-cricket-club",
+        "reviewDate": "2024-08-07",
+        "sourceExport": "stories",
+        "sourceUrls": []
+      }
+    }
+  },
+  "alex-lisa-robbery": {
+    "reviewDate": "2017-10-19",
+    "sourceUrls": [],
+    "patch": {
+      "summary": "A couple robbed at 9am on a Sunday by the classic 'mustard scam' - squirted with fake bird poop, distracted by 'helpful' strangers, and relieved of everything they owned. Their story of recovery is a masterclass in resilience.",
+      "source": "Career Gappers blog",
+      "truthSync": {
+        "canonicalKey": "expat-story:alex-lisa-robbery",
+        "recordId": "buenosairesexpats:expat-story:alex-lisa-robbery",
+        "reviewDate": "2017-10-19",
+        "sourceExport": "stories",
+        "sourceUrls": []
+      }
+    }
+  },
+  "bathroom-standoff": {
+    "reviewDate": "2018-02-13",
+    "sourceUrls": [],
+    "patch": {
+      "summary": "When nature calls in Buenos Aires, it can turn into an international incident. One expat's story of bathroom desperation, cafe confrontation, and the legal right to pee.",
+      "source": "Sol Salute blog",
+      "truthSync": {
+        "canonicalKey": "expat-story:bathroom-standoff",
+        "recordId": "buenosairesexpats:expat-story:bathroom-standoff",
+        "reviewDate": "2018-02-13",
+        "sourceExport": "stories",
+        "sourceUrls": []
+      }
+    }
+  },
+  "brenda-horacio-tango": {
+    "reviewDate": "2019-03-24",
+    "sourceUrls": [],
+    "patch": {
+      "summary": "Brenda dances tango from a wheelchair due to spina bifida. Horacio is her partner of life and dance. Together they challenge what tango 'should' be - and prove that passion transcends physical limitations.",
+      "source": "Vía País Editorial",
+      "truthSync": {
+        "canonicalKey": "expat-story:brenda-horacio-tango",
+        "recordId": "buenosairesexpats:expat-story:brenda-horacio-tango",
+        "reviewDate": "2019-03-24",
+        "sourceExport": "stories",
+        "sourceUrls": []
+      }
+    }
+  },
+  "deby-tango-entrepreneur": {
+    "reviewDate": "2024-01-20",
+    "sourceUrls": [],
+    "patch": {
+      "summary": "A high-tech consultant who discovered tango in 1998, moved to BA in 2000, and built multiple businesses: a tango clothing line, a B&B, and English teaching. The definition of reinvention.",
+      "source": "Expat Entrepreneur Stories",
+      "truthSync": {
+        "canonicalKey": "expat-story:deby-tango-entrepreneur",
+        "recordId": "buenosairesexpats:expat-story:deby-tango-entrepreneur",
+        "reviewDate": "2024-01-20",
+        "sourceExport": "stories",
+        "sourceUrls": []
+      }
+    }
+  },
+  "digital-nomad-burnout": {
+    "reviewDate": "2024-01-15",
+    "sourceUrls": [],
+    "patch": {
+      "summary": "A digital nomad who arrived in January, fell in love with the city, then watched the facade crack. Couldn't connect with locals, struggled with Spanish, and found the expat community surprisingly isolating.",
+      "source": "r/digitalnomad Reddit",
+      "truthSync": {
+        "canonicalKey": "expat-story:digital-nomad-burnout",
+        "recordId": "buenosairesexpats:expat-story:digital-nomad-burnout",
+        "reviewDate": "2024-01-15",
+        "sourceExport": "stories",
+        "sourceUrls": []
+      }
+    }
+  },
+  "erin-15-year-love-affair": {
+    "reviewDate": "2024-01-15",
+    "sourceUrls": [],
+    "patch": {
+      "summary": "A Texas native who came for a semester abroad, fell in love with the city (and an Argentine), and never left. She's lived through economic crises, had two kids, and built a life documenting Argentina for the world.",
+      "source": "Sol Salute blog",
+      "truthSync": {
+        "canonicalKey": "expat-story:erin-15-year-love-affair",
+        "recordId": "buenosairesexpats:expat-story:erin-15-year-love-affair",
+        "reviewDate": "2024-01-15",
+        "sourceExport": "stories",
+        "sourceUrls": []
+      }
+    }
+  },
+  "erin-subway-fall": {
+    "reviewDate": "2018-02-13",
+    "sourceUrls": [],
+    "patch": {
+      "summary": "The classic expat embarrassing moment: falling into the subway gap, getting rescued by strangers, and accidentally assaulting your rescuer with gratitude. A perfect Buenos Aires moment.",
+      "source": "Sol Salute blog",
+      "truthSync": {
+        "canonicalKey": "expat-story:erin-subway-fall",
+        "recordId": "buenosairesexpats:expat-story:erin-subway-fall",
+        "reviewDate": "2018-02-13",
+        "sourceExport": "stories",
+        "sourceUrls": []
+      }
+    }
+  },
+  "greyson-money-vs-mental-health": {
+    "reviewDate": "2025-07-05",
+    "sourceUrls": [],
+    "patch": {
+      "summary": "Moved to BA to escape $900/month student loans and high US costs. The math worked perfectly - but the human cost was higher than expected. Eventually left for Albania seeking balance.",
+      "source": "Business Insider",
+      "truthSync": {
+        "canonicalKey": "expat-story:greyson-money-vs-mental-health",
+        "recordId": "buenosairesexpats:expat-story:greyson-money-vs-mental-health",
+        "reviewDate": "2025-07-05",
+        "sourceExport": "stories",
+        "sourceUrls": []
+      }
+    }
+  },
+  "lisa-startup-queen": {
+    "reviewDate": "2024-02-01",
+    "sourceUrls": [],
+    "patch": {
+      "summary": "A NYC native who arrived in 2012 to escape winter and ended up building Argentina's startup ecosystem. She learned that relationships trump efficiency in Latin America - and built a $1M+ organization on that insight.",
+      "source": "Startups.com interview",
+      "truthSync": {
+        "canonicalKey": "expat-story:lisa-startup-queen",
+        "recordId": "buenosairesexpats:expat-story:lisa-startup-queen",
+        "reviewDate": "2024-02-01",
+        "sourceExport": "stories",
+        "sourceUrls": []
+      }
+    }
+  },
+  "rebecca-danish-academic": {
+    "reviewDate": "2025-02-04",
+    "sourceUrls": [],
+    "patch": {
+      "summary": "A Danish academic who came for 6 months, stayed for 7 years, earned two Master's degrees, and built a career. Left in 2023 when the economic instability finally outweighed the benefits.",
+      "source": "A Born Traveller blog",
+      "truthSync": {
+        "canonicalKey": "expat-story:rebecca-danish-academic",
+        "recordId": "buenosairesexpats:expat-story:rebecca-danish-academic",
+        "reviewDate": "2025-02-04",
+        "sourceExport": "stories",
+        "sourceUrls": []
+      }
+    }
+  },
+  "street-cafe-chronicles": {
+    "reviewDate": "2024-03-15",
+    "sourceUrls": [],
+    "patch": {
+      "summary": "The street life of Buenos Aires is a character all its own - from harmless eccentrics selling random goods to persistent cafe hustlers who turn your lunch into a sideshow. It's chaotic, sometimes uncomfortable, and completely unforgettable.",
+      "source": "Personal account",
+      "truthSync": {
+        "canonicalKey": "expat-story:street-cafe-chronicles",
+        "recordId": "buenosairesexpats:expat-story:street-cafe-chronicles",
+        "reviewDate": "2024-03-15",
+        "sourceExport": "stories",
+        "sourceUrls": []
+      }
+    }
+  },
+  "subway-street-theater": {
+    "reviewDate": "2024-04-10",
+    "sourceUrls": [],
+    "patch": {
+      "summary": "Buenos Aires public transit doubles as a stage for the city's most creative hustlers. From musical performances to product demos, every ride is an adventure in street entrepreneurship.",
+      "source": "Personal account",
+      "truthSync": {
+        "canonicalKey": "expat-story:subway-street-theater",
+        "recordId": "buenosairesexpats:expat-story:subway-street-theater",
+        "reviewDate": "2024-04-10",
+        "sourceExport": "stories",
+        "sourceUrls": []
+      }
+    }
+  },
+  "tina-one-night-stand": {
+    "reviewDate": "2024-08-01",
+    "sourceUrls": [],
+    "patch": {
+      "summary": "A German couples consultant who followed her heart across the Atlantic. Now she helps other intercultural couples navigate the challenges she faced - while learning to live with Argentine chaos.",
+      "source": "The Photography Confidential",
+      "truthSync": {
+        "canonicalKey": "expat-story:tina-one-night-stand",
+        "recordId": "buenosairesexpats:expat-story:tina-one-night-stand",
+        "reviewDate": "2024-08-01",
+        "sourceExport": "stories",
+        "sourceUrls": []
+      }
+    }
+  }
+} as const;
 
