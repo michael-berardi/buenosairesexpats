@@ -1,3 +1,6 @@
+import { applyFactOverridesByKey } from "./source-of-truth-sync";
+import { storiesFactOverrides } from "../content-sync/generated/source-of-truth-fact-overrides";
+
 // Real expat stories based on authentic research from Reddit, blogs, and expat forums
 // Sources: r/BuenosAires, r/expats, r/digitalnomad, Sol Salute, BA Expats, Business Insider
 
@@ -23,7 +26,7 @@ export interface ExpatStory {
   galleryImages?: { src: string; alt: string; caption?: string }[];
 }
 
-export const stories: ExpatStory[] = [
+const storiesBase: ExpatStory[] = [
   {
     id: "erin-15-year-love-affair",
     name: "Erin",
@@ -1073,6 +1076,13 @@ The digital nomad dream isn't always a dream. Sometimes it's just working alone 
     `
   }
 ];
+
+const storiesById = applyFactOverridesByKey(
+  Object.fromEntries(storiesBase.map((story) => [story.id, story])),
+  storiesFactOverrides
+);
+
+export const stories: ExpatStory[] = storiesBase.map((story) => storiesById[story.id] ?? story);
 
 export const getStoriesByCategory = (category: StoryCategory) => {
   return stories.filter(story => story.category === category);

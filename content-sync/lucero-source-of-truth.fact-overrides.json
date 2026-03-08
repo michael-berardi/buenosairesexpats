@@ -1,0 +1,73 @@
+{
+  "countries": {
+    "united-arab-emirates": {
+      "reviewDate": "2026-03-08",
+      "sourceUrls": [
+        "https://etail.cancilleria.gob.ar/userfiles/2018/estados_y_territorios_exentos_de_visa_turista.pdf"
+      ],
+      "patch": {
+        "specialConditions": [
+          "Tourist visa-exempt for ordinary passports on the official Cancilleria exemption list"
+        ],
+        "notes": "UAE citizens appear on Argentina's official tourist visa-exemption list for ordinary passports, with the standard 90-day tourist baseline unless a different period is specifically stated.",
+        "sourceUrl": "https://etail.cancilleria.gob.ar/userfiles/2018/estados_y_territorios_exentos_de_visa_turista.pdf"
+      }
+    },
+    "india": {
+      "reviewDate": "2026-03-08",
+      "sourceUrls": [
+        "https://www.argentina.gob.ar/noticias/turistas-indios-podran-ingresar-al-pais-con-visado-estadounidense",
+        "https://www.argentina.gob.ar/normativa/nacional/resoluci%C3%B3n-353-2025-416874/texto"
+      ],
+      "patch": {
+        "specialConditions": [
+          "Qualifying tourists with a valid U.S. visa may enter without an Argentine visa or AVE under Resolution 353/2025"
+        ],
+        "notes": "Indian citizens should not treat Argentina as a blanket visa-free case. Since August 27, 2025, qualifying tourists with the valid U.S. visa described in Resolution 353/2025 may enter without an Argentine consular visa or AVE; otherwise use the normal pre-travel visa path.",
+        "sourceUrl": "https://www.argentina.gob.ar/normativa/nacional/resoluci%C3%B3n-353-2025-416874/texto"
+      }
+    },
+    "china": {
+      "reviewDate": "2026-03-08",
+      "sourceUrls": [
+        "https://www.argentina.gob.ar/noticias/turistas-de-china-y-republica-dominicana-podran-ingresar-la-argentina-solo-con-visado",
+        "https://www.argentina.gob.ar/normativa/nacional/resoluci%C3%B3n-316-2025-415345/texto"
+      ],
+      "patch": {
+        "specialConditions": [
+          "Qualifying tourists with a valid U.S. visa may enter without an Argentine visa or AVE under Resolution 316/2025"
+        ],
+        "notes": "Chinese citizens are no longer a simple all-visa case. Since July 2025, qualifying tourists with the valid U.S. visa described in Resolution 316/2025 may enter without an Argentine visa or AVE; other travelers still need the normal pre-travel route.",
+        "sourceUrl": "https://www.argentina.gob.ar/normativa/nacional/resoluci%C3%B3n-316-2025-415345/texto"
+      }
+    },
+    "saudi-arabia": {
+      "reviewDate": "2026-03-08",
+      "sourceUrls": [
+        "https://www.argentina.gob.ar/noticias/migraciones-anuncio-la-eximicion-de-visacion-consular-para-nacionales-del-reino-de-arabia",
+        "https://www.argentina.gob.ar/normativa/nacional/resoluci%C3%B3n-144-2024-406633/texto"
+      ],
+      "patch": {
+        "specialConditions": [
+          "Transient/tourist facilitation depends on a valid U.S. visa plus AVE under Resolution 144/2024"
+        ],
+        "notes": "Saudi citizens should not assume blanket visa-free entry. The official facilitation waives the consular visa only for qualifying transient-entry cases backed by a valid U.S. visa plus AVE under Resolution 144/2024.",
+        "sourceUrl": "https://www.argentina.gob.ar/normativa/nacional/resoluci%C3%B3n-144-2024-406633/texto"
+      }
+    },
+    "dominican-republic": {
+      "reviewDate": "2026-03-08",
+      "sourceUrls": [
+        "https://www.argentina.gob.ar/noticias/turistas-de-china-y-republica-dominicana-podran-ingresar-la-argentina-solo-con-visado",
+        "https://www.argentina.gob.ar/normativa/nacional/resoluci%C3%B3n-316-2025-415345/texto"
+      ],
+      "patch": {
+        "specialConditions": [
+          "Qualifying tourists with a valid U.S. visa may enter without an Argentine visa or AVE under Resolution 316/2025"
+        ],
+        "notes": "Dominican citizens are not blanket visa-free for Argentina. Since July 2025, qualifying tourists with the valid U.S. visa described in Resolution 316/2025 may enter without an Argentine visa or AVE; other travelers still need the normal pre-travel route.",
+        "sourceUrl": "https://www.argentina.gob.ar/normativa/nacional/resoluci%C3%B3n-316-2025-415345/texto"
+      }
+    }
+  }
+}

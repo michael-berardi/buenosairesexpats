@@ -1,0 +1,53 @@
+{
+  "siteId": "buenosairesexpats",
+  "repoPath": "buenosairesexpats",
+  "fullDigest": "1fafcb85dec489dcf841b6718b31184e4077107c4e0e884b245907cc11b4c921",
+  "focusDigest": "1fafcb85dec489dcf841b6718b31184e4077107c4e0e884b245907cc11b4c921",
+  "fullRecordCount": 2088,
+  "focusRecordCount": 2088,
+  "focusKinds": [
+    "country",
+    "expat-profile",
+    "expat-story",
+    "guide",
+    "city",
+    "neighborhood"
+  ],
+  "focusTags": [
+    "expat",
+    "buenos-aires",
+    "community",
+    "argentina"
+  ],
+  "countsByKind": {
+    "article": 41,
+    "country": 355,
+    "guide": 208,
+    "legal-framework": 18,
+    "profession": 167,
+    "visa-type": 19,
+    "expat-profile": 63,
+    "expat-story": 14,
+    "resource-article": 454,
+    "resource-hub": 14,
+    "site-profile": 2,
+    "blog-post": 8,
+    "city": 20,
+    "comparison": 90,
+    "investment-sector": 6,
+    "neighborhood": 23,
+    "province": 48,
+    "recipe": 29,
+    "restaurant": 42,
+    "service-directory": 10,
+    "visa-comparison": 3,
+    "insight": 95,
+    "interactive-tool": 6,
+    "location": 53,
+    "origin-country": 52,
+    "service": 35,
+    "situation": 77,
+    "specialized-service": 32,
+    "property-listing": 104
+  }
+}

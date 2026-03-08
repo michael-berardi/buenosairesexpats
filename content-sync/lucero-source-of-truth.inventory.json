@@ -1,0 +1,58 @@
+{
+  "generatedAt": "2026-03-08T02:15:33.943Z",
+  "workspaceRoot": "/Users/libertydesignstudio/dev",
+  "totalCandidates": 81,
+  "ingestedCandidates": 81,
+  "uncoveredCandidates": 0,
+  "candidates": [
+    {
+      "repoId": "buenosairesexpats",
+      "filePath": "/Users/libertydesignstudio/dev/buenosairesexpats/lib/expat-profiles-data.ts",
+      "exports": [
+        "ExpatRegion",
+        "ExpatStatus",
+        "ExpatProfile",
+        "getExpatById",
+        "getExpatsByRegion",
+        "getExpatsByTag",
+        "getFeaturedExpats",
+        "getVerifiedExpats",
+        "getAllRegions",
+        "getRegionLabel",
+        "expatProfiles",
+        "default"
+      ],
+      "status": "ingested"
+    },
+    {
+      "repoId": "buenosairesexpats",
+      "filePath": "/Users/libertydesignstudio/dev/buenosairesexpats/lib/nationality-data.ts",
+      "exports": [
+        "VisaStatus",
+        "StayDuration",
+        "Region",
+        "CountryData",
+        "countries",
+        "getCountriesByRegion",
+        "getCountriesByVisaStatus",
+        "getCountryBySlug",
+        "getAllSlugs",
+        "regions"
+      ],
+      "status": "ingested"
+    },
+    {
+      "repoId": "buenosairesexpats",
+      "filePath": "/Users/libertydesignstudio/dev/buenosairesexpats/lib/stories-data.ts",
+      "exports": [
+        "StoryCategory",
+        "ExpatStory",
+        "stories",
+        "getStoriesByCategory",
+        "getStoryById",
+        "getAllCategories"
+      ],
+      "status": "ingested"
+    }
+  ]
+}

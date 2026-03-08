@@ -78,3 +78,7 @@ export const countriesFactOverrides = {
   }
 } as const;
 
+export const expatProfilesFactOverrides = {} as const;
+
+export const storiesFactOverrides = {} as const;
+

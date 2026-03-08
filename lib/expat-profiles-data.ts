@@ -1,3 +1,6 @@
+import { applyFactOverridesByKey } from "./source-of-truth-sync";
+import { expatProfilesFactOverrides } from "../content-sync/generated/source-of-truth-fact-overrides";
+
 // VERIFIED Expat Profile Directory - Only real expat blogs with confirmed URLs
 // Each profile has been verified to exist and has a screenshot
 // Last updated: 2024
@@ -82,7 +85,7 @@ export function getRegionLabel(region: ExpatRegion): string {
 }
 
 // VERIFIED Expat Profiles - Only real blogs with confirmed URLs and screenshots
-export const expatProfiles: ExpatProfile[] = [
+const expatProfilesBase: ExpatProfile[] = [
   // ==================== NORTH AMERICA ====================
   
   {
@@ -1153,5 +1156,14 @@ export const expatProfiles: ExpatProfile[] = [
     hasScreenshot: true,
   },
 ];
+
+const expatProfilesById = applyFactOverridesByKey(
+  Object.fromEntries(expatProfilesBase.map((profile) => [profile.id, profile])),
+  expatProfilesFactOverrides
+);
+
+export const expatProfiles: ExpatProfile[] = expatProfilesBase.map(
+  (profile) => expatProfilesById[profile.id] ?? profile
+);
 
 export default expatProfiles;

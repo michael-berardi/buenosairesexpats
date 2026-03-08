@@ -1,0 +1,102 @@
+{
+  "generatedAt": "2026-03-08T02:14:08.680Z",
+  "totals": {
+    "surfaces": 3,
+    "active": 1,
+    "ready": 2,
+    "unwired": 0,
+    "highRiskUnwired": 0
+  },
+  "sites": [
+    {
+      "siteId": "buenosairesexpats",
+      "surfaces": 3,
+      "active": 1,
+      "ready": 2,
+      "unwired": 0
+    }
+  ],
+  "surfaces": [
+    {
+      "siteId": "buenosairesexpats",
+      "sourceExport": "countries",
+      "status": "active",
+      "runtimeSurface": {
+        "siteId": "buenosairesexpats",
+        "sourceExport": "countries",
+        "runtimeModule": "lib/nationality-data.ts",
+        "mergeStrategy": "by-slug",
+        "keyField": "slug",
+        "description": "Buenos Aires Expats nationality profiles"
+      },
+      "recordCount": 100,
+      "highRiskRecordCount": 100,
+      "reviewDateCount": 0,
+      "projectionCount": 5,
+      "sourcePaths": [
+        "/Users/libertydesignstudio/dev/buenosairesexpats/lib/nationality-data.ts"
+      ],
+      "sampleSlugs": [
+        "albania",
+        "algeria",
+        "andorra",
+        "armenia",
+        "australia"
+      ]
+    },
+    {
+      "siteId": "buenosairesexpats",
+      "sourceExport": "expatProfiles",
+      "status": "ready",
+      "runtimeSurface": {
+        "siteId": "buenosairesexpats",
+        "sourceExport": "expatProfiles",
+        "runtimeModule": "lib/expat-profiles-data.ts",
+        "mergeStrategy": "by-key",
+        "keyField": "id",
+        "description": "Buenos Aires Expats expat profiles"
+      },
+      "recordCount": 63,
+      "highRiskRecordCount": 0,
+      "reviewDateCount": 0,
+      "projectionCount": 0,
+      "sourcePaths": [
+        "/Users/libertydesignstudio/dev/buenosairesexpats/lib/expat-profiles-data.ts"
+      ],
+      "sampleSlugs": [
+        "akane-tango",
+        "alec-oscar",
+        "alex-vamos-spanish",
+        "allie-pick-up-the-fork",
+        "amanda-ivan"
+      ]
+    },
+    {
+      "siteId": "buenosairesexpats",
+      "sourceExport": "stories",
+      "status": "ready",
+      "runtimeSurface": {
+        "siteId": "buenosairesexpats",
+        "sourceExport": "stories",
+        "runtimeModule": "lib/stories-data.ts",
+        "mergeStrategy": "by-key",
+        "keyField": "id",
+        "description": "Buenos Aires Expats expat stories"
+      },
+      "recordCount": 14,
+      "highRiskRecordCount": 0,
+      "reviewDateCount": 14,
+      "projectionCount": 0,
+      "sourcePaths": [
+        "/Users/libertydesignstudio/dev/buenosairesexpats/lib/stories-data.ts"
+      ],
+      "sampleSlugs": [
+        "alex-cricket-club",
+        "alex-lisa-robbery",
+        "bathroom-standoff",
+        "brenda-horacio-tango",
+        "deby-tango-entrepreneur"
+      ]
+    }
+  ]
+}

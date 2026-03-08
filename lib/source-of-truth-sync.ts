@@ -38,3 +38,20 @@ export function applyFactOverridesBySlug<T extends { slug: string }>(
     return override ? deepMerge(entry, override.patch) : entry;
   });
 }
+
+export function applyFactOverridesByKey<T>(
+  value: Record<string, T>,
+  overrides: Record<string, FactOverride>
+): Record<string, T> {
+  const output = { ...value };
+
+  for (const [key, override] of Object.entries(overrides)) {
+    if (!(key in output)) {
+      continue;
+    }
+
+    output[key] = deepMerge(output[key], override.patch);
+  }
+
+  return output;
+}
