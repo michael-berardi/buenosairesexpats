@@ -43,7 +43,7 @@ export interface CountryData {
 }
 
 // Top 50 priority countries based on tourism data and search potential
-const countriesBase: CountryData[] = [
+export const countriesBase: CountryData[] = [
   // MERCOSUR & South America (highest visitor volume)
   {
     slug: "brazil",

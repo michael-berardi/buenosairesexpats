@@ -85,7 +85,7 @@ export function getRegionLabel(region: ExpatRegion): string {
 }
 
 // VERIFIED Expat Profiles - Only real blogs with confirmed URLs and screenshots
-const expatProfilesBase: ExpatProfile[] = [
+export const expatProfilesBase: ExpatProfile[] = [
   // ==================== NORTH AMERICA ====================
   
   {

@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-03-08T11:59:36.569Z",
+  "generatedAt": "2026-03-08T12:20:22.278Z",
   "workspaceRoot": "/Users/libertydesignstudio/dev",
-  "totalCandidates": 81,
-  "ingestedCandidates": 81,
+  "totalCandidates": 80,
+  "ingestedCandidates": 80,
   "uncoveredCandidates": 0,
   "candidates": [
     {
@@ -19,6 +19,7 @@
         "getVerifiedExpats",
         "getAllRegions",
         "getRegionLabel",
+        "expatProfilesBase",
         "expatProfiles",
         "default"
       ],
@@ -32,6 +33,7 @@
         "StayDuration",
         "Region",
         "CountryData",
+        "countriesBase",
         "countries",
         "getCountriesByRegion",
         "getCountriesByVisaStatus",
@@ -47,6 +49,7 @@
       "exports": [
         "StoryCategory",
         "ExpatStory",
+        "storiesBase",
         "stories",
         "getStoriesByCategory",
         "getStoryById",

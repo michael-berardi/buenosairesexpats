@@ -1,17 +1,17 @@
 {
-  "generatedAt": "2026-03-08T11:59:36.569Z",
-  "totalFindings": 1608,
+  "generatedAt": "2026-03-08T12:20:22.278Z",
+  "totalFindings": 1585,
   "findingsBySeverity": {
     "critical": 0,
-    "high": 43,
-    "medium": 52,
-    "low": 1513
+    "high": 42,
+    "medium": 55,
+    "low": 1488
   },
   "findingsByCategory": {
-    "official-mismatch": 43,
-    "unverified-claim": 52,
-    "review-date-missing": 1338,
-    "review-date-stale": 175,
+    "official-mismatch": 42,
+    "unverified-claim": 55,
+    "review-date-missing": 1317,
+    "review-date-stale": 171,
     "coverage-gap": 0
   },
   "findings": [
@@ -630,6 +630,22 @@
       "sourcePath": "/Users/libertydesignstudio/dev/argentinavisalaw.com/app/data/nationalities.ts",
       "officialSourceUrls": [],
       "recommendedAction": "Backfill `reviewDate` from the source module or an official verification pass."
+    },
+    {
+      "id": "unverified-claim:argentinavisalaw:country-base:cn",
+      "severity": "medium",
+      "category": "unverified-claim",
+      "title": "China or Dominican Republic entry language may miss 2025 U.S.-visa facilitation",
+      "detail": "Official 2025 guidance added a U.S.-visa-based tourism entry route for China and the Dominican Republic.",
+      "siteId": "argentinavisalaw",
+      "recordId": "argentinavisalaw:country-base:cn",
+      "canonicalKey": "country:cn",
+      "sourcePath": "/Users/libertydesignstudio/dev/argentinavisalaw.com/app/data/nationalities.ts",
+      "officialSourceUrls": [
+        "https://www.argentina.gob.ar/noticias/turistas-de-china-y-republica-dominicana-podran-ingresar-la-argentina-solo-con-visado",
+        "https://www.argentina.gob.ar/normativa/nacional/resoluci%C3%B3n-316-2025-415345/texto"
+      ],
+      "recommendedAction": "Differentiate baseline visa rules from the 2025 U.S.-visa facilitation path for Chinese and Dominican tourists."
     },
     {
       "id": "review-date-missing:argentinavisalaw:country-base:co",
@@ -1483,22 +1499,6 @@
       "recommendedAction": "Backfill `reviewDate` from the source module or an official verification pass."
     },
     {
-      "id": "official-mismatch:argentinavisalaw:guide-expanded:documents",
-      "severity": "high",
-      "category": "official-mismatch",
-      "title": "Digital nomad duration conflicts with official guidance",
-      "detail": "Official Migraciones guidance currently describes a 180-day transitory residence with one additional 180-day extension, not a 12+12 month stay.",
-      "siteId": "argentinavisalaw",
-      "recordId": "argentinavisalaw:guide-expanded:documents",
-      "canonicalKey": "guide:documents",
-      "sourcePath": "/Users/libertydesignstudio/dev/argentinavisalaw.com/app/data/guidesExpanded.ts",
-      "officialSourceUrls": [
-        "https://www.argentina.gob.ar/servicio/obtener-una-residencia-transitoria-como-nomada-digital",
-        "https://www.argentina.gob.ar/servicio/obtener-una-prorroga-de-residencia-transitoria-como-nomada-digital"
-      ],
-      "recommendedAction": "Rewrite duration and renewal language to 180 days plus one 180-day extension unless a newer official resolution supersedes it."
-    },
-    {
       "id": "official-mismatch:argentinavisalaw:guide-expanded:working-holiday",
       "severity": "high",
       "category": "official-mismatch",
@@ -2017,13 +2017,30 @@
       "severity": "low",
       "category": "review-date-missing",
       "title": "High-risk record missing review date",
-      "detail": "Add a concrete review date for Decreto 366/2025 and the May 29, 2025 migration reform rollout so legal and policy content can be refreshed on schedule.",
+      "detail": "Add a concrete review date for Decreto 366/2025 so legal and policy content can be refreshed on schedule.",
       "siteId": "argentinavisalaw",
       "recordId": "argentinavisalaw:legal-framework:decreto366",
       "canonicalKey": "legal-framework:decreto366",
       "sourcePath": "/Users/libertydesignstudio/dev/argentinavisalaw.com/app/data/visaDetails.ts",
       "officialSourceUrls": [],
       "recommendedAction": "Backfill `reviewDate` from the source module or an official verification pass."
+    },
+    {
+      "id": "unverified-claim:argentinavisalaw:legal-framework:decreto366",
+      "severity": "medium",
+      "category": "unverified-claim",
+      "title": "Healthcare access claim may be outdated after 2025 reform",
+      "detail": "Post-reform guidance indicates foreign visitors and many non-permanent statuses should rely on insurance or paid services rather than assuming free public healthcare access.",
+      "siteId": "argentinavisalaw",
+      "recordId": "argentinavisalaw:legal-framework:decreto366",
+      "canonicalKey": "legal-framework:decreto366",
+      "sourcePath": "/Users/libertydesignstudio/dev/argentinavisalaw.com/app/data/visaDetails.ts",
+      "officialSourceUrls": [
+        "https://www.argentina.gob.ar/noticias/el-gobierno-nacional-puso-en-marcha-una-profunda-reforma-del-regimen-migratorio",
+        "https://www.argentina.gob.ar/migraciones/preguntas-frecuentes-residencias",
+        "https://www.argentina.gob.ar/migraciones/comision-nacional-para-los-refugiados/preguntas-frecuentes-conare"
+      ],
+      "recommendedAction": "Re-verify healthcare access language against the 2025 reform guidance before using it in site copy."
     },
     {
       "id": "review-date-missing:argentinavisalaw:legal-framework:decreto524",
@@ -10589,6 +10606,22 @@
       "recommendedAction": "Rewrite duration and renewal language to 180 days plus one 180-day extension unless a newer official resolution supersedes it."
     },
     {
+      "id": "unverified-claim:expatsargentina:visa-comparison:digital-nomad-vs-work-visa",
+      "severity": "medium",
+      "category": "unverified-claim",
+      "title": "Digital nomad residency pathway claim needs verification",
+      "detail": "The current official digital nomad page does not present the visa itself as a direct permanent residency or citizenship track.",
+      "siteId": "expatsargentina",
+      "recordId": "expatsargentina:visa-comparison:digital-nomad-vs-work-visa",
+      "canonicalKey": "visa-comparison:digital-nomad-vs-work-visa",
+      "sourcePath": "/Users/libertydesignstudio/dev/expatsargentina/my-app/lib/data/visa-comparisons.ts",
+      "officialSourceUrls": [
+        "https://www.argentina.gob.ar/servicio/obtener-una-residencia-transitoria-como-nomada-digital",
+        "https://www.argentina.gob.ar/servicio/obtener-una-prorroga-de-residencia-transitoria-como-nomada-digital"
+      ],
+      "recommendedAction": "Reframe this as a visa-switch strategy unless you can cite a current official source confirming direct countability toward permanent residency."
+    },
+    {
       "id": "review-date-missing:expatsargentina:visa-comparison:retirement-vs-investment-visa",
       "severity": "low",
       "category": "review-date-missing",
@@ -11704,19 +11737,6 @@
       "recommendedAction": "Backfill `reviewDate` from the source module or an official verification pass."
     },
     {
-      "id": "review-date-missing:lucero-legal:comparison:universidad-publica-vs-privada",
-      "severity": "low",
-      "category": "review-date-missing",
-      "title": "High-risk record missing review date",
-      "detail": "Add a concrete review date for Universidad Pública vs Privada so legal and policy content can be refreshed on schedule.",
-      "siteId": "lucero-legal",
-      "recordId": "lucero-legal:comparison:universidad-publica-vs-privada",
-      "canonicalKey": "comparison:universidad-publica-vs-privada",
-      "sourcePath": "/Users/libertydesignstudio/dev/lucero-legal/src/lib/seo/comparison-data.ts",
-      "officialSourceUrls": [],
-      "recommendedAction": "Backfill `reviewDate` from the source module or an official verification pass."
-    },
-    {
       "id": "review-date-missing:lucero-legal:comparison:villa-crespo-vs-almagro",
       "severity": "low",
       "category": "review-date-missing",
@@ -11764,19 +11784,6 @@
       "siteId": "lucero-legal",
       "recordId": "lucero-legal:comparison:visa-nomada-digital-vs-turista",
       "canonicalKey": "comparison:visa-nomada-digital-vs-turista",
-      "sourcePath": "/Users/libertydesignstudio/dev/lucero-legal/src/lib/seo/comparison-data.ts",
-      "officialSourceUrls": [],
-      "recommendedAction": "Backfill `reviewDate` from the source module or an official verification pass."
-    },
-    {
-      "id": "review-date-missing:lucero-legal:comparison:visa-rentista-vs-nomada-digital",
-      "severity": "low",
-      "category": "review-date-missing",
-      "title": "High-risk record missing review date",
-      "detail": "Add a concrete review date for Visa Rentista vs Nómada Digital so legal and policy content can be refreshed on schedule.",
-      "siteId": "lucero-legal",
-      "recordId": "lucero-legal:comparison:visa-rentista-vs-nomada-digital",
-      "canonicalKey": "comparison:visa-rentista-vs-nomada-digital",
       "sourcePath": "/Users/libertydesignstudio/dev/lucero-legal/src/lib/seo/comparison-data.ts",
       "officialSourceUrls": [],
       "recommendedAction": "Backfill `reviewDate` from the source module or an official verification pass."
@@ -11920,19 +11927,6 @@
       "siteId": "lucero-legal",
       "recordId": "lucero-legal:guide-faq:certificado-domicilio",
       "canonicalKey": "guide:certificado-domicilio",
-      "sourcePath": "/Users/libertydesignstudio/dev/lucero-legal/src/lib/seo/faq-category-data.ts",
-      "officialSourceUrls": [],
-      "recommendedAction": "Backfill `reviewDate` from the source module or an official verification pass."
-    },
-    {
-      "id": "review-date-missing:lucero-legal:guide-faq:ciudadania",
-      "severity": "low",
-      "category": "review-date-missing",
-      "title": "High-risk record missing review date",
-      "detail": "Add a concrete review date for Preguntas Frecuentes sobre Ciudadanía so legal and policy content can be refreshed on schedule.",
-      "siteId": "lucero-legal",
-      "recordId": "lucero-legal:guide-faq:ciudadania",
-      "canonicalKey": "guide:ciudadania",
       "sourcePath": "/Users/libertydesignstudio/dev/lucero-legal/src/lib/seo/faq-category-data.ts",
       "officialSourceUrls": [],
       "recommendedAction": "Backfill `reviewDate` from the source module or an official verification pass."
@@ -12232,19 +12226,6 @@
       "siteId": "lucero-legal",
       "recordId": "lucero-legal:guide-faq:impuestos-bancos",
       "canonicalKey": "guide:impuestos-bancos",
-      "sourcePath": "/Users/libertydesignstudio/dev/lucero-legal/src/lib/seo/faq-category-data.ts",
-      "officialSourceUrls": [],
-      "recommendedAction": "Backfill `reviewDate` from the source module or an official verification pass."
-    },
-    {
-      "id": "review-date-missing:lucero-legal:guide-faq:inmigracion",
-      "severity": "low",
-      "category": "review-date-missing",
-      "title": "High-risk record missing review date",
-      "detail": "Add a concrete review date for Preguntas Frecuentes sobre Inmigración so legal and policy content can be refreshed on schedule.",
-      "siteId": "lucero-legal",
-      "recordId": "lucero-legal:guide-faq:inmigracion",
-      "canonicalKey": "guide:inmigracion",
       "sourcePath": "/Users/libertydesignstudio/dev/lucero-legal/src/lib/seo/faq-category-data.ts",
       "officialSourceUrls": [],
       "recommendedAction": "Backfill `reviewDate` from the source module or an official verification pass."
@@ -13498,19 +13479,6 @@
       "recommendedAction": "Re-verify this record against current official sources and update the review date."
     },
     {
-      "id": "review-date-stale:lucero-legal:guide:sistema-de-salud-argentina",
-      "severity": "low",
-      "category": "review-date-stale",
-      "title": "High-risk record review date is stale",
-      "detail": "Sistema de Salud en Argentina para Extranjeros was last reviewed 553 days ago.",
-      "siteId": "lucero-legal",
-      "recordId": "lucero-legal:guide:sistema-de-salud-argentina",
-      "canonicalKey": "guide:sistema-de-salud-argentina",
-      "sourcePath": "/Users/libertydesignstudio/dev/lucero-legal/src/lib/seo/guides-data.ts",
-      "officialSourceUrls": [],
-      "recommendedAction": "Re-verify this record against current official sources and update the review date."
-    },
-    {
       "id": "review-date-stale:lucero-legal:guide:supermercados-compras",
       "severity": "low",
       "category": "review-date-stale",
@@ -14382,19 +14350,6 @@
       "recommendedAction": "Re-verify this record against current official sources and update the review date."
     },
     {
-      "id": "review-date-stale:lucero-legal:insight:educacion-argentina-guia",
-      "severity": "low",
-      "category": "review-date-stale",
-      "title": "High-risk record review date is stale",
-      "detail": "Educación en Argentina: Escuelas Internacionales y Universidades Gratuitas was last reviewed 543 days ago.",
-      "siteId": "lucero-legal",
-      "recordId": "lucero-legal:insight:educacion-argentina-guia",
-      "canonicalKey": "insight:educacion-argentina-guia",
-      "sourcePath": "/Users/libertydesignstudio/dev/lucero-legal/src/lib/seo/insights-data.ts",
-      "officialSourceUrls": [],
-      "recommendedAction": "Re-verify this record against current official sources and update the review date."
-    },
-    {
       "id": "review-date-stale:lucero-legal:insight:educacion-bilingue-argentina",
       "severity": "low",
       "category": "review-date-stale",
@@ -14941,19 +14896,6 @@
       "recommendedAction": "Re-verify this record against current official sources and update the review date."
     },
     {
-      "id": "review-date-stale:lucero-legal:insight:visa-inversionista-argentina",
-      "severity": "low",
-      "category": "review-date-stale",
-      "title": "High-risk record review date is stale",
-      "detail": "Visa de Inversionista Argentina: Requisitos, Montos de Inversión y Proceso was last reviewed 544 days ago.",
-      "siteId": "lucero-legal",
-      "recordId": "lucero-legal:insight:visa-inversionista-argentina",
-      "canonicalKey": "insight:visa-inversionista-argentina",
-      "sourcePath": "/Users/libertydesignstudio/dev/lucero-legal/src/lib/seo/insights-data.ts",
-      "officialSourceUrls": [],
-      "recommendedAction": "Re-verify this record against current official sources and update the review date."
-    },
-    {
       "id": "review-date-stale:lucero-legal:insight:visa-mercosur-explicada",
       "severity": "low",
       "category": "review-date-stale",
@@ -14962,19 +14904,6 @@
       "siteId": "lucero-legal",
       "recordId": "lucero-legal:insight:visa-mercosur-explicada",
       "canonicalKey": "insight:visa-mercosur-explicada",
-      "sourcePath": "/Users/libertydesignstudio/dev/lucero-legal/src/lib/seo/insights-data.ts",
-      "officialSourceUrls": [],
-      "recommendedAction": "Re-verify this record against current official sources and update the review date."
-    },
-    {
-      "id": "review-date-stale:lucero-legal:insight:visa-nomada-digital-argentina",
-      "severity": "low",
-      "category": "review-date-stale",
-      "title": "High-risk record review date is stale",
-      "detail": "Digital Nomad Visa Argentina 2026: Requisitos y Proceso was last reviewed 544 days ago.",
-      "siteId": "lucero-legal",
-      "recordId": "lucero-legal:insight:visa-nomada-digital-argentina",
-      "canonicalKey": "insight:visa-nomada-digital-argentina",
       "sourcePath": "/Users/libertydesignstudio/dev/lucero-legal/src/lib/seo/insights-data.ts",
       "officialSourceUrls": [],
       "recommendedAction": "Re-verify this record against current official sources and update the review date."
@@ -15032,19 +14961,6 @@
       "recommendedAction": "Backfill `reviewDate` from the source module or an official verification pass."
     },
     {
-      "id": "review-date-missing:lucero-legal:origin-country:australianos",
-      "severity": "low",
-      "category": "review-date-missing",
-      "title": "High-risk record missing review date",
-      "detail": "Add a concrete review date for Australia so legal and policy content can be refreshed on schedule.",
-      "siteId": "lucero-legal",
-      "recordId": "lucero-legal:origin-country:australianos",
-      "canonicalKey": "origin-country:australianos",
-      "sourcePath": "/Users/libertydesignstudio/dev/lucero-legal/src/lib/seo/origin-country-data.ts",
-      "officialSourceUrls": [],
-      "recommendedAction": "Backfill `reviewDate` from the source module or an official verification pass."
-    },
-    {
       "id": "review-date-missing:lucero-legal:origin-country:austriacos",
       "severity": "low",
       "category": "review-date-missing",
@@ -15066,19 +14982,6 @@
       "siteId": "lucero-legal",
       "recordId": "lucero-legal:origin-country:bahreinies",
       "canonicalKey": "origin-country:bahreinies",
-      "sourcePath": "/Users/libertydesignstudio/dev/lucero-legal/src/lib/seo/origin-country-data.ts",
-      "officialSourceUrls": [],
-      "recommendedAction": "Backfill `reviewDate` from the source module or an official verification pass."
-    },
-    {
-      "id": "review-date-missing:lucero-legal:origin-country:belgas",
-      "severity": "low",
-      "category": "review-date-missing",
-      "title": "High-risk record missing review date",
-      "detail": "Add a concrete review date for Bélgica so legal and policy content can be refreshed on schedule.",
-      "siteId": "lucero-legal",
-      "recordId": "lucero-legal:origin-country:belgas",
-      "canonicalKey": "origin-country:belgas",
       "sourcePath": "/Users/libertydesignstudio/dev/lucero-legal/src/lib/seo/origin-country-data.ts",
       "officialSourceUrls": [],
       "recommendedAction": "Backfill `reviewDate` from the source module or an official verification pass."
@@ -15123,19 +15026,6 @@
       "recommendedAction": "Backfill `reviewDate` from the source module or an official verification pass."
     },
     {
-      "id": "review-date-missing:lucero-legal:origin-country:checos",
-      "severity": "low",
-      "category": "review-date-missing",
-      "title": "High-risk record missing review date",
-      "detail": "Add a concrete review date for República Checa so legal and policy content can be refreshed on schedule.",
-      "siteId": "lucero-legal",
-      "recordId": "lucero-legal:origin-country:checos",
-      "canonicalKey": "origin-country:checos",
-      "sourcePath": "/Users/libertydesignstudio/dev/lucero-legal/src/lib/seo/origin-country-data.ts",
-      "officialSourceUrls": [],
-      "recommendedAction": "Backfill `reviewDate` from the source module or an official verification pass."
-    },
-    {
       "id": "review-date-missing:lucero-legal:origin-country:chilenos",
       "severity": "low",
       "category": "review-date-missing",
@@ -15170,19 +15060,6 @@
       "siteId": "lucero-legal",
       "recordId": "lucero-legal:origin-country:daneses",
       "canonicalKey": "origin-country:daneses",
-      "sourcePath": "/Users/libertydesignstudio/dev/lucero-legal/src/lib/seo/origin-country-data.ts",
-      "officialSourceUrls": [],
-      "recommendedAction": "Backfill `reviewDate` from the source module or an official verification pass."
-    },
-    {
-      "id": "review-date-missing:lucero-legal:origin-country:dominicanos",
-      "severity": "low",
-      "category": "review-date-missing",
-      "title": "High-risk record missing review date",
-      "detail": "Add a concrete review date for República Dominicana so legal and policy content can be refreshed on schedule.",
-      "siteId": "lucero-legal",
-      "recordId": "lucero-legal:origin-country:dominicanos",
-      "canonicalKey": "origin-country:dominicanos",
       "sourcePath": "/Users/libertydesignstudio/dev/lucero-legal/src/lib/seo/origin-country-data.ts",
       "officialSourceUrls": [],
       "recommendedAction": "Backfill `reviewDate` from the source module or an official verification pass."
@@ -15240,19 +15117,6 @@
       "recommendedAction": "Backfill `reviewDate` from the source module or an official verification pass."
     },
     {
-      "id": "review-date-missing:lucero-legal:origin-country:griegos",
-      "severity": "low",
-      "category": "review-date-missing",
-      "title": "High-risk record missing review date",
-      "detail": "Add a concrete review date for Grecia so legal and policy content can be refreshed on schedule.",
-      "siteId": "lucero-legal",
-      "recordId": "lucero-legal:origin-country:griegos",
-      "canonicalKey": "origin-country:griegos",
-      "sourcePath": "/Users/libertydesignstudio/dev/lucero-legal/src/lib/seo/origin-country-data.ts",
-      "officialSourceUrls": [],
-      "recommendedAction": "Backfill `reviewDate` from the source module or an official verification pass."
-    },
-    {
       "id": "review-date-missing:lucero-legal:origin-country:holandeses",
       "severity": "low",
       "category": "review-date-missing",
@@ -15261,19 +15125,6 @@
       "siteId": "lucero-legal",
       "recordId": "lucero-legal:origin-country:holandeses",
       "canonicalKey": "origin-country:holandeses",
-      "sourcePath": "/Users/libertydesignstudio/dev/lucero-legal/src/lib/seo/origin-country-data.ts",
-      "officialSourceUrls": [],
-      "recommendedAction": "Backfill `reviewDate` from the source module or an official verification pass."
-    },
-    {
-      "id": "review-date-missing:lucero-legal:origin-country:hongkoneses",
-      "severity": "low",
-      "category": "review-date-missing",
-      "title": "High-risk record missing review date",
-      "detail": "Add a concrete review date for Hong Kong so legal and policy content can be refreshed on schedule.",
-      "siteId": "lucero-legal",
-      "recordId": "lucero-legal:origin-country:hongkoneses",
-      "canonicalKey": "origin-country:hongkoneses",
       "sourcePath": "/Users/libertydesignstudio/dev/lucero-legal/src/lib/seo/origin-country-data.ts",
       "officialSourceUrls": [],
       "recommendedAction": "Backfill `reviewDate` from the source module or an official verification pass."
@@ -15383,19 +15234,6 @@
       "recommendedAction": "Backfill `reviewDate` from the source module or an official verification pass."
     },
     {
-      "id": "review-date-missing:lucero-legal:origin-country:noruegos",
-      "severity": "low",
-      "category": "review-date-missing",
-      "title": "High-risk record missing review date",
-      "detail": "Add a concrete review date for Noruega so legal and policy content can be refreshed on schedule.",
-      "siteId": "lucero-legal",
-      "recordId": "lucero-legal:origin-country:noruegos",
-      "canonicalKey": "origin-country:noruegos",
-      "sourcePath": "/Users/libertydesignstudio/dev/lucero-legal/src/lib/seo/origin-country-data.ts",
-      "officialSourceUrls": [],
-      "recommendedAction": "Backfill `reviewDate` from the source module or an official verification pass."
-    },
-    {
       "id": "review-date-missing:lucero-legal:origin-country:omanies",
       "severity": "low",
       "category": "review-date-missing",
@@ -15469,84 +15307,6 @@
       "siteId": "lucero-legal",
       "recordId": "lucero-legal:origin-country:saudies",
       "canonicalKey": "origin-country:saudies",
-      "sourcePath": "/Users/libertydesignstudio/dev/lucero-legal/src/lib/seo/origin-country-data.ts",
-      "officialSourceUrls": [],
-      "recommendedAction": "Backfill `reviewDate` from the source module or an official verification pass."
-    },
-    {
-      "id": "review-date-missing:lucero-legal:origin-country:singapurenses",
-      "severity": "low",
-      "category": "review-date-missing",
-      "title": "High-risk record missing review date",
-      "detail": "Add a concrete review date for Singapur so legal and policy content can be refreshed on schedule.",
-      "siteId": "lucero-legal",
-      "recordId": "lucero-legal:origin-country:singapurenses",
-      "canonicalKey": "origin-country:singapurenses",
-      "sourcePath": "/Users/libertydesignstudio/dev/lucero-legal/src/lib/seo/origin-country-data.ts",
-      "officialSourceUrls": [],
-      "recommendedAction": "Backfill `reviewDate` from the source module or an official verification pass."
-    },
-    {
-      "id": "review-date-missing:lucero-legal:origin-country:sudafricanos",
-      "severity": "low",
-      "category": "review-date-missing",
-      "title": "High-risk record missing review date",
-      "detail": "Add a concrete review date for Sudáfrica so legal and policy content can be refreshed on schedule.",
-      "siteId": "lucero-legal",
-      "recordId": "lucero-legal:origin-country:sudafricanos",
-      "canonicalKey": "origin-country:sudafricanos",
-      "sourcePath": "/Users/libertydesignstudio/dev/lucero-legal/src/lib/seo/origin-country-data.ts",
-      "officialSourceUrls": [],
-      "recommendedAction": "Backfill `reviewDate` from the source module or an official verification pass."
-    },
-    {
-      "id": "review-date-missing:lucero-legal:origin-country:suizos",
-      "severity": "low",
-      "category": "review-date-missing",
-      "title": "High-risk record missing review date",
-      "detail": "Add a concrete review date for Suiza so legal and policy content can be refreshed on schedule.",
-      "siteId": "lucero-legal",
-      "recordId": "lucero-legal:origin-country:suizos",
-      "canonicalKey": "origin-country:suizos",
-      "sourcePath": "/Users/libertydesignstudio/dev/lucero-legal/src/lib/seo/origin-country-data.ts",
-      "officialSourceUrls": [],
-      "recommendedAction": "Backfill `reviewDate` from the source module or an official verification pass."
-    },
-    {
-      "id": "review-date-missing:lucero-legal:origin-country:surcoreanos",
-      "severity": "low",
-      "category": "review-date-missing",
-      "title": "High-risk record missing review date",
-      "detail": "Add a concrete review date for Corea del Sur so legal and policy content can be refreshed on schedule.",
-      "siteId": "lucero-legal",
-      "recordId": "lucero-legal:origin-country:surcoreanos",
-      "canonicalKey": "origin-country:surcoreanos",
-      "sourcePath": "/Users/libertydesignstudio/dev/lucero-legal/src/lib/seo/origin-country-data.ts",
-      "officialSourceUrls": [],
-      "recommendedAction": "Backfill `reviewDate` from the source module or an official verification pass."
-    },
-    {
-      "id": "review-date-missing:lucero-legal:origin-country:taiwaneses",
-      "severity": "low",
-      "category": "review-date-missing",
-      "title": "High-risk record missing review date",
-      "detail": "Add a concrete review date for Taiwán so legal and policy content can be refreshed on schedule.",
-      "siteId": "lucero-legal",
-      "recordId": "lucero-legal:origin-country:taiwaneses",
-      "canonicalKey": "origin-country:taiwaneses",
-      "sourcePath": "/Users/libertydesignstudio/dev/lucero-legal/src/lib/seo/origin-country-data.ts",
-      "officialSourceUrls": [],
-      "recommendedAction": "Backfill `reviewDate` from the source module or an official verification pass."
-    },
-    {
-      "id": "review-date-missing:lucero-legal:origin-country:turcos",
-      "severity": "low",
-      "category": "review-date-missing",
-      "title": "High-risk record missing review date",
-      "detail": "Add a concrete review date for Turquía so legal and policy content can be refreshed on schedule.",
-      "siteId": "lucero-legal",
-      "recordId": "lucero-legal:origin-country:turcos",
-      "canonicalKey": "origin-country:turcos",
       "sourcePath": "/Users/libertydesignstudio/dev/lucero-legal/src/lib/seo/origin-country-data.ts",
       "officialSourceUrls": [],
       "recommendedAction": "Backfill `reviewDate` from the source module or an official verification pass."
@@ -16439,19 +16199,6 @@
       "recommendedAction": "Backfill `reviewDate` from the source module or an official verification pass."
     },
     {
-      "id": "review-date-missing:lucero-legal:service:digital-nomad-visa-argentina",
-      "severity": "low",
-      "category": "review-date-missing",
-      "title": "High-risk record missing review date",
-      "detail": "Add a concrete review date for Residencia para Trabajadores Remotos en Argentina 2026: Vías Legales para Nómadas Digitales so legal and policy content can be refreshed on schedule.",
-      "siteId": "lucero-legal",
-      "recordId": "lucero-legal:service:digital-nomad-visa-argentina",
-      "canonicalKey": "service:digital-nomad-visa-argentina",
-      "sourcePath": "/Users/libertydesignstudio/dev/lucero-legal/src/lib/services-data.ts",
-      "officialSourceUrls": [],
-      "recommendedAction": "Backfill `reviewDate` from the source module or an official verification pass."
-    },
-    {
       "id": "review-date-missing:lucero-legal:service:drivers-license-conversion-argentina",
       "severity": "low",
       "category": "review-date-missing",
@@ -16569,19 +16316,6 @@
       "recommendedAction": "Backfill `reviewDate` from the source module or an official verification pass."
     },
     {
-      "id": "review-date-missing:lucero-legal:service:permanent-residency-argentina",
-      "severity": "low",
-      "category": "review-date-missing",
-      "title": "High-risk record missing review date",
-      "detail": "Add a concrete review date for Residencia Permanente en Argentina para Expatriados y Residentes de Largo Plazo so legal and policy content can be refreshed on schedule.",
-      "siteId": "lucero-legal",
-      "recordId": "lucero-legal:service:permanent-residency-argentina",
-      "canonicalKey": "service:permanent-residency-argentina",
-      "sourcePath": "/Users/libertydesignstudio/dev/lucero-legal/src/lib/services-data.ts",
-      "officialSourceUrls": [],
-      "recommendedAction": "Backfill `reviewDate` from the source module or an official verification pass."
-    },
-    {
       "id": "review-date-missing:lucero-legal:service:pet-relocation-argentina-lawyer",
       "severity": "low",
       "category": "review-date-missing",
@@ -16634,19 +16368,6 @@
       "recommendedAction": "Backfill `reviewDate` from the source module or an official verification pass."
     },
     {
-      "id": "review-date-missing:lucero-legal:service:rentista-visa-argentina",
-      "severity": "low",
-      "category": "review-date-missing",
-      "title": "High-risk record missing review date",
-      "detail": "Add a concrete review date for Visa Rentista Argentina: Residencia por Ingresos Independientes so legal and policy content can be refreshed on schedule.",
-      "siteId": "lucero-legal",
-      "recordId": "lucero-legal:service:rentista-visa-argentina",
-      "canonicalKey": "service:rentista-visa-argentina",
-      "sourcePath": "/Users/libertydesignstudio/dev/lucero-legal/src/lib/services-data.ts",
-      "officialSourceUrls": [],
-      "recommendedAction": "Backfill `reviewDate` from the source module or an official verification pass."
-    },
-    {
       "id": "review-date-missing:lucero-legal:service:rentista-visa-usa-mendoza",
       "severity": "low",
       "category": "review-date-missing",
@@ -16686,19 +16407,6 @@
       "recommendedAction": "Backfill `reviewDate` from the source module or an official verification pass."
     },
     {
-      "id": "review-date-missing:lucero-legal:service:residencia-mercosur-argentina",
-      "severity": "low",
-      "category": "review-date-missing",
-      "title": "High-risk record missing review date",
-      "detail": "Add a concrete review date for Residencia Mercosur: El Camino Rápido para Sudamericanos so legal and policy content can be refreshed on schedule.",
-      "siteId": "lucero-legal",
-      "recordId": "lucero-legal:service:residencia-mercosur-argentina",
-      "canonicalKey": "service:residencia-mercosur-argentina",
-      "sourcePath": "/Users/libertydesignstudio/dev/lucero-legal/src/lib/services-data.ts",
-      "officialSourceUrls": [],
-      "recommendedAction": "Backfill `reviewDate` from the source module or an official verification pass."
-    },
-    {
       "id": "review-date-missing:lucero-legal:service:retirement-pension-visa-argentina",
       "severity": "low",
       "category": "review-date-missing",
@@ -16733,19 +16441,6 @@
       "siteId": "lucero-legal",
       "recordId": "lucero-legal:service:tax-residency-advisory-argentina",
       "canonicalKey": "service:tax-residency-advisory-argentina",
-      "sourcePath": "/Users/libertydesignstudio/dev/lucero-legal/src/lib/services-data.ts",
-      "officialSourceUrls": [],
-      "recommendedAction": "Backfill `reviewDate` from the source module or an official verification pass."
-    },
-    {
-      "id": "review-date-missing:lucero-legal:service:temporary-residency-argentina",
-      "severity": "low",
-      "category": "review-date-missing",
-      "title": "High-risk record missing review date",
-      "detail": "Add a concrete review date for Residencia Temporaria en Argentina para Expatriados y Clientes Internacionales so legal and policy content can be refreshed on schedule.",
-      "siteId": "lucero-legal",
-      "recordId": "lucero-legal:service:temporary-residency-argentina",
-      "canonicalKey": "service:temporary-residency-argentina",
       "sourcePath": "/Users/libertydesignstudio/dev/lucero-legal/src/lib/services-data.ts",
       "officialSourceUrls": [],
       "recommendedAction": "Backfill `reviewDate` from the source module or an official verification pass."
@@ -21205,6 +20900,19 @@
       "siteId": "uaeargentina",
       "recordId": "uaeargentina:resource-hub:sectors",
       "canonicalKey": "resource-hub:sectors",
+      "sourcePath": "/Users/libertydesignstudio/dev/uaeargentina.com/lib/site-data.ts",
+      "officialSourceUrls": [],
+      "recommendedAction": "Backfill `reviewDate` from the source module or an official verification pass."
+    },
+    {
+      "id": "review-date-missing:uaeargentina:site-profile:uae",
+      "severity": "low",
+      "category": "review-date-missing",
+      "title": "High-risk record missing review date",
+      "detail": "Add a concrete review date for UAE Argentina Relocation Desk so legal and policy content can be refreshed on schedule.",
+      "siteId": "uaeargentina",
+      "recordId": "uaeargentina:site-profile:uae",
+      "canonicalKey": "site-profile:uae",
       "sourcePath": "/Users/libertydesignstudio/dev/uaeargentina.com/lib/site-data.ts",
       "officialSourceUrls": [],
       "recommendedAction": "Backfill `reviewDate` from the source module or an official verification pass."

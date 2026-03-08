@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-03-08T11:59:36.569Z",
+  "generatedAt": "2026-03-08T12:20:22.278Z",
   "siteId": "buenosairesexpats",
   "findingCount": 103,
   "findings": [
@@ -2313,7 +2313,7 @@
       "kind": "country",
       "slug": "china",
       "title": "China",
-      "summary": "Chinese citizens are no longer a simple all-visa case. Since July 2025, qualifying tourists with the valid U.S. visa described in Resolution 316/2025 may enter without an Argentine visa or AVE; other travelers still need the normal pre-travel route.",
+      "summary": "Chinese citizens must obtain a visa before traveling. Argentina has an embassy in Beijing and consulates in Shanghai and Guangzhou.",
       "locales": [
         "en"
       ],
@@ -2333,13 +2333,6 @@
       "relatedSlugs": [],
       "sections": [
         {
-          "heading": "Special Conditions",
-          "paragraphs": [],
-          "bullets": [
-            "Qualifying tourists with a valid U.S. visa may enter without an Argentine visa or AVE under Resolution 316/2025"
-          ]
-        },
-        {
           "heading": "Common Concerns",
           "paragraphs": [],
           "bullets": [
@@ -2347,12 +2340,6 @@
             "What documents are required?",
             "How long does processing take?",
             "Where are the Argentine consulates in China?"
-          ]
-        },
-        {
-          "heading": "Source",
-          "paragraphs": [
-            "https://www.argentina.gob.ar/normativa/nacional/resoluci%C3%B3n-316-2025-415345/texto"
           ]
         }
       ],
@@ -2380,14 +2367,10 @@
         },
         "processingTime": "2-4 weeks",
         "visaFee": "$150-200 USD",
-        "notes": "Chinese citizens are no longer a simple all-visa case. Since July 2025, qualifying tourists with the valid U.S. visa described in Resolution 316/2025 may enter without an Argentine visa or AVE; other travelers still need the normal pre-travel route.",
-        "specialConditions": [
-          "Qualifying tourists with a valid U.S. visa may enter without an Argentine visa or AVE under Resolution 316/2025"
-        ],
-        "sourceUrl": "https://www.argentina.gob.ar/normativa/nacional/resoluci%C3%B3n-316-2025-415345/texto"
+        "notes": "Chinese citizens must obtain a visa before traveling. Argentina has an embassy in Beijing and consulates in Shanghai and Guangzhou."
       },
       "completenessScore": 0.9,
-      "digest": "0da3483fcbdb28013172bb4382de45abb8b7c51d7bba54d946e83fb523c491ae"
+      "digest": "2a382ae87b9d81bc03656f64421cf5f347d95382de601923dddb2c816f1752e1"
     },
     {
       "id": "buenosairesexpats:country:colombia",
@@ -2808,7 +2791,7 @@
       "kind": "country",
       "slug": "dominican-republic",
       "title": "Dominican Republic",
-      "summary": "Dominican citizens are not blanket visa-free for Argentina. Since July 2025, qualifying tourists with the valid U.S. visa described in Resolution 316/2025 may enter without an Argentine visa or AVE; other travelers still need the normal pre-travel route.",
+      "summary": "Dominican citizens must obtain a visa before traveling. Argentina has an embassy in Santo Domingo.",
       "locales": [
         "en"
       ],
@@ -2828,25 +2811,12 @@
       "relatedSlugs": [],
       "sections": [
         {
-          "heading": "Special Conditions",
-          "paragraphs": [],
-          "bullets": [
-            "Qualifying tourists with a valid U.S. visa may enter without an Argentine visa or AVE under Resolution 316/2025"
-          ]
-        },
-        {
           "heading": "Common Concerns",
           "paragraphs": [],
           "bullets": [
             "Do Dominicans need a visa for Argentina?",
             "How do I apply from the Dominican Republic?",
             "What documents are required?"
-          ]
-        },
-        {
-          "heading": "Source",
-          "paragraphs": [
-            "https://www.argentina.gob.ar/normativa/nacional/resoluci%C3%B3n-316-2025-415345/texto"
           ]
         }
       ],
@@ -2871,14 +2841,10 @@
         },
         "processingTime": "2-4 weeks",
         "visaFee": "$150-200 USD",
-        "notes": "Dominican citizens are not blanket visa-free for Argentina. Since July 2025, qualifying tourists with the valid U.S. visa described in Resolution 316/2025 may enter without an Argentine visa or AVE; other travelers still need the normal pre-travel route.",
-        "specialConditions": [
-          "Qualifying tourists with a valid U.S. visa may enter without an Argentine visa or AVE under Resolution 316/2025"
-        ],
-        "sourceUrl": "https://www.argentina.gob.ar/normativa/nacional/resoluci%C3%B3n-316-2025-415345/texto"
+        "notes": "Dominican citizens must obtain a visa before traveling. Argentina has an embassy in Santo Domingo."
       },
       "completenessScore": 0.9,
-      "digest": "760021bd6cb7ba8b6feaafbf426f4cf545f65bc975d0592df39e5a14a21533d9"
+      "digest": "6cccb4ff303d1c8bb1565faa179005c61562697ebc33e1e6f12797c59652bce0"
     },
     {
       "id": "buenosairesexpats:country:ecuador",
@@ -3722,7 +3688,7 @@
       "kind": "country",
       "slug": "india",
       "title": "India",
-      "summary": "Indian citizens should not treat Argentina as a blanket visa-free case. Since August 27, 2025, qualifying tourists with the valid U.S. visa described in Resolution 353/2025 may enter without an Argentine consular visa or AVE; otherwise use the normal pre-travel visa path.",
+      "summary": "Indian citizens must obtain a visa before traveling to Argentina. Apply at the Argentine Embassy in New Delhi or Consulate General in Mumbai.",
       "locales": [
         "en"
       ],
@@ -3742,13 +3708,6 @@
       "relatedSlugs": [],
       "sections": [
         {
-          "heading": "Special Conditions",
-          "paragraphs": [],
-          "bullets": [
-            "Qualifying tourists with a valid U.S. visa may enter without an Argentine visa or AVE under Resolution 353/2025"
-          ]
-        },
-        {
           "heading": "Common Concerns",
           "paragraphs": [],
           "bullets": [
@@ -3756,12 +3715,6 @@
             "What documents are required for Indian citizens?",
             "How long does visa processing take?",
             "Where is the Argentine consulate in India?"
-          ]
-        },
-        {
-          "heading": "Source",
-          "paragraphs": [
-            "https://www.argentina.gob.ar/normativa/nacional/resoluci%C3%B3n-353-2025-416874/texto"
           ]
         }
       ],
@@ -3788,14 +3741,10 @@
         },
         "processingTime": "2-4 weeks",
         "visaFee": "$150-200 USD",
-        "notes": "Indian citizens should not treat Argentina as a blanket visa-free case. Since August 27, 2025, qualifying tourists with the valid U.S. visa described in Resolution 353/2025 may enter without an Argentine consular visa or AVE; otherwise use the normal pre-travel visa path.",
-        "specialConditions": [
-          "Qualifying tourists with a valid U.S. visa may enter without an Argentine visa or AVE under Resolution 353/2025"
-        ],
-        "sourceUrl": "https://www.argentina.gob.ar/normativa/nacional/resoluci%C3%B3n-353-2025-416874/texto"
+        "notes": "Indian citizens must obtain a visa before traveling to Argentina. Apply at the Argentine Embassy in New Delhi or Consulate General in Mumbai."
       },
       "completenessScore": 0.9,
-      "digest": "ae3b4c23f334d2224ab039e4d0ad7cd8da0e4a4b843c835881c7140d5d6cde0f"
+      "digest": "7974708ed64746a5df3b8504c96b0158da18e9204fbf8303b17b211f67bf8d0c"
     },
     {
       "id": "buenosairesexpats:country:indonesia",
@@ -6068,7 +6017,7 @@
       "kind": "country",
       "slug": "saudi-arabia",
       "title": "Saudi Arabia",
-      "summary": "Saudi citizens should not assume blanket visa-free entry. The official facilitation waives the consular visa only for qualifying transient-entry cases backed by a valid U.S. visa plus AVE under Resolution 144/2024.",
+      "summary": "Saudi citizens must obtain a visa before traveling. Argentina has an embassy in Riyadh.",
       "locales": [
         "en"
       ],
@@ -6088,25 +6037,12 @@
       "relatedSlugs": [],
       "sections": [
         {
-          "heading": "Special Conditions",
-          "paragraphs": [],
-          "bullets": [
-            "Transient/tourist facilitation depends on a valid U.S. visa plus AVE under Resolution 144/2024"
-          ]
-        },
-        {
           "heading": "Common Concerns",
           "paragraphs": [],
           "bullets": [
             "How do Saudis apply for an Argentina visa?",
             "What documents are required?",
             "Where is the Argentine consulate in Saudi Arabia?"
-          ]
-        },
-        {
-          "heading": "Source",
-          "paragraphs": [
-            "https://www.argentina.gob.ar/normativa/nacional/resoluci%C3%B3n-144-2024-406633/texto"
           ]
         }
       ],
@@ -6131,14 +6067,10 @@
         },
         "processingTime": "2-4 weeks",
         "visaFee": "$150-200 USD",
-        "notes": "Saudi citizens should not assume blanket visa-free entry. The official facilitation waives the consular visa only for qualifying transient-entry cases backed by a valid U.S. visa plus AVE under Resolution 144/2024.",
-        "specialConditions": [
-          "Transient/tourist facilitation depends on a valid U.S. visa plus AVE under Resolution 144/2024"
-        ],
-        "sourceUrl": "https://www.argentina.gob.ar/normativa/nacional/resoluci%C3%B3n-144-2024-406633/texto"
+        "notes": "Saudi citizens must obtain a visa before traveling. Argentina has an embassy in Riyadh."
       },
       "completenessScore": 0.9,
-      "digest": "98f6003aea931a979815023bea68ea8932eeb112d5d3f2a40e780480d35ab09f"
+      "digest": "4f44f912f8b9f8efe2252778eb4d83863e6fd90cbc016d31ff3ec6e906916c35"
     },
     {
       "id": "buenosairesexpats:country:serbia",
@@ -6876,7 +6808,7 @@
       "kind": "country",
       "slug": "united-arab-emirates",
       "title": "United Arab Emirates",
-      "summary": "UAE citizens appear on Argentina's official tourist visa-exemption list for ordinary passports, with the standard 90-day tourist baseline unless a different period is specifically stated.",
+      "summary": "UAE citizens enjoy visa-free entry for 90 days.",
       "locales": [
         "en"
       ],
@@ -6896,24 +6828,11 @@
       "relatedSlugs": [],
       "sections": [
         {
-          "heading": "Special Conditions",
-          "paragraphs": [],
-          "bullets": [
-            "Tourist visa-exempt for ordinary passports on the official Cancilleria exemption list"
-          ]
-        },
-        {
           "heading": "Common Concerns",
           "paragraphs": [],
           "bullets": [
             "Do UAE citizens need a visa?",
             "How long can Emiratis stay?"
-          ]
-        },
-        {
-          "heading": "Source",
-          "paragraphs": [
-            "https://etail.cancilleria.gob.ar/userfiles/2018/estados_y_territorios_exentos_de_visa_turista.pdf"
           ]
         }
       ],
@@ -6924,18 +6843,15 @@
         "region": "africa-middle-east",
         "visaStatus": "exempt",
         "stayDuration": 90,
-        "specialConditions": [
-          "Tourist visa-exempt for ordinary passports on the official Cancilleria exemption list"
-        ],
+        "specialConditions": [],
         "commonConcerns": [
           "Do UAE citizens need a visa?",
           "How long can Emiratis stay?"
         ],
-        "notes": "UAE citizens appear on Argentina's official tourist visa-exemption list for ordinary passports, with the standard 90-day tourist baseline unless a different period is specifically stated.",
-        "sourceUrl": "https://etail.cancilleria.gob.ar/userfiles/2018/estados_y_territorios_exentos_de_visa_turista.pdf"
+        "notes": "UAE citizens enjoy visa-free entry for 90 days."
       },
       "completenessScore": 0.9,
-      "digest": "8d17015e4cb7a9743cb826a27b19e829c9c1ac857d3e1f23fe2525b9cb91fb9b"
+      "digest": "9cb348e5dd87d0ef929a1b92e2ef571534efb86fb76484405b79105e56d75712"
     },
     {
       "id": "buenosairesexpats:country:united-kingdom",
@@ -7438,18 +7354,11 @@
             "caption": "From exchange student to resident"
           }
         ],
-        "content": "\n## The Exchange That Never Ended\n\nRebecca came to Buenos Aires as part of her undergraduate degree in Denmark. She was supposed to stay six months.\n\nSix months turned into seven years.\n\nDuring that time, she earned two Master's degrees from Argentine universities, built a professional career as a project manager, and immersed herself deeply in Argentine culture. Then, in 2023, she left.\n\n## The Professional Journey\n\nAfter graduating her undergraduate in Denmark in 2017, Rebecca started a Master's in Organizational Analysis at Universidad de Belgrano. In 2018, she added a Master's in Political Science focused on Latin American studies at Universidad Torcuato di Tella.\n\n\"Best decision ever! The courses were so interesting!\"\n\nShe also started her professional career working with Argentine teams and US customers - a bridge between cultures she'd come to understand intimately.\n\n## Why She Left\n\n\"Truth be told, after almost seven years in Buenos Aires, I had also gotten enough of Argentina's unstable economic situation.\"\n\nRebecca moved back to Europe, specifically Barcelona, Spain. The economic volatility that had been a background hum for years had become a deafening roar.\n\n## The Economic Reality\n\nArgentina's economy was Rebecca's biggest challenge. \"Inflation in Argentina steadily increases the cost of living, meaning that prices on everything - from groceries to clothing - rise each month.\"\n\nFor expats earning in foreign currency, this created a complex dynamic. \"When the Argentine peso devalues, you get more pesos for the same amount of foreign currency. This can help offset some of inflation's impact. But recently, Argentina has become quite expensive - even for expats!\"\n\n## The Salary Problem\n\nLocal salaries in Argentina are low compared to Europe and the US. \"An entry-level office job can earn you as low as the equivalent of $500 US, which won't go far after rent and groceries.\"\n\nEven multinational companies typically pay local hires in pesos. \"Being paid in Argentine pesos means your income is directly affected by the country's economic volatility.\"\n\n## What She Loved\n\nDespite leaving, Rebecca's affection for Argentina remains:\n\n**The Travel**: \"Argentina is the eighth largest country in the World. You can find places equally as beautiful as Antelope Canyon in the US, but they're isolated. No masses of tourists ruining the experience.\"\n\n**The Language**: \"Argentina is a great place to go if you want to learn or improve your Spanish!\"\n\n**The Culture**: \"Argentines are generally friendly towards foreigners and are happy to engage in small talk about everything from today's currency exchange rate to their European heritage.\"\n\n## The Danish Perspective\n\nAs a Dane, Rebecca found Argentine culture both fascinating and challenging. \"Argentina's unpredictable and chaotic culture is very different from Danish control-freak culture. It definitely took some time for me to get used to it.\"\n\nBut she came to appreciate the spontaneity: \"Going from not having any plans to meeting up drinking mate or being invited to an asado at somebody's house just because.\"\n\n## Her Honest Assessment\n\n\"You should move to Argentina if you want to improve your Spanish, travel around South America, learn about the region, and can live with the unpredictable nature of living in an unstable economy.\"\n\nBut she adds a warning: \"If you are looking to move abroad to find a well-paying job and avoid headaches about an unstable economy, then Argentina is probably not your ideal destination.\"\n\n## The Final Word\n\n\"Argentina is a great country to live in if you want to immerse yourself in Argentina's culture or history. Personally for me, learning about Argentina's history was a fascinating journey. But you need to be prepared for the economic reality. It's not for everyone.\"\n    ",
-        "truthSync": {
-          "canonicalKey": "expat-story:rebecca-danish-academic",
-          "recordId": "buenosairesexpats:expat-story:rebecca-danish-academic",
-          "reviewDate": "2025-02-04",
-          "sourceExport": "stories",
-          "sourceUrls": []
-        }
+        "content": "\n## The Exchange That Never Ended\n\nRebecca came to Buenos Aires as part of her undergraduate degree in Denmark. She was supposed to stay six months.\n\nSix months turned into seven years.\n\nDuring that time, she earned two Master's degrees from Argentine universities, built a professional career as a project manager, and immersed herself deeply in Argentine culture. Then, in 2023, she left.\n\n## The Professional Journey\n\nAfter graduating her undergraduate in Denmark in 2017, Rebecca started a Master's in Organizational Analysis at Universidad de Belgrano. In 2018, she added a Master's in Political Science focused on Latin American studies at Universidad Torcuato di Tella.\n\n\"Best decision ever! The courses were so interesting!\"\n\nShe also started her professional career working with Argentine teams and US customers - a bridge between cultures she'd come to understand intimately.\n\n## Why She Left\n\n\"Truth be told, after almost seven years in Buenos Aires, I had also gotten enough of Argentina's unstable economic situation.\"\n\nRebecca moved back to Europe, specifically Barcelona, Spain. The economic volatility that had been a background hum for years had become a deafening roar.\n\n## The Economic Reality\n\nArgentina's economy was Rebecca's biggest challenge. \"Inflation in Argentina steadily increases the cost of living, meaning that prices on everything - from groceries to clothing - rise each month.\"\n\nFor expats earning in foreign currency, this created a complex dynamic. \"When the Argentine peso devalues, you get more pesos for the same amount of foreign currency. This can help offset some of inflation's impact. But recently, Argentina has become quite expensive - even for expats!\"\n\n## The Salary Problem\n\nLocal salaries in Argentina are low compared to Europe and the US. \"An entry-level office job can earn you as low as the equivalent of $500 US, which won't go far after rent and groceries.\"\n\nEven multinational companies typically pay local hires in pesos. \"Being paid in Argentine pesos means your income is directly affected by the country's economic volatility.\"\n\n## What She Loved\n\nDespite leaving, Rebecca's affection for Argentina remains:\n\n**The Travel**: \"Argentina is the eighth largest country in the World. You can find places equally as beautiful as Antelope Canyon in the US, but they're isolated. No masses of tourists ruining the experience.\"\n\n**The Language**: \"Argentina is a great place to go if you want to learn or improve your Spanish!\"\n\n**The Culture**: \"Argentines are generally friendly towards foreigners and are happy to engage in small talk about everything from today's currency exchange rate to their European heritage.\"\n\n## The Danish Perspective\n\nAs a Dane, Rebecca found Argentine culture both fascinating and challenging. \"Argentina's unpredictable and chaotic culture is very different from Danish control-freak culture. It definitely took some time for me to get used to it.\"\n\nBut she came to appreciate the spontaneity: \"Going from not having any plans to meeting up drinking mate or being invited to an asado at somebody's house just because.\"\n\n## Her Honest Assessment\n\n\"You should move to Argentina if you want to improve your Spanish, travel around South America, learn about the region, and can live with the unpredictable nature of living in an unstable economy.\"\n\nBut she adds a warning: \"If you are looking to move abroad to find a well-paying job and avoid headaches about an unstable economy, then Argentina is probably not your ideal destination.\"\n\n## The Final Word\n\n\"Argentina is a great country to live in if you want to immerse yourself in Argentina's culture or history. Personally for me, learning about Argentina's history was a fascinating journey. But you need to be prepared for the economic reality. It's not for everyone.\"\n    "
       },
       "reviewDate": "2025-02-04",
       "completenessScore": 1,
-      "digest": "d58a920213ef907da68df53cae1c2f36bc2e5e783fc9e874dd1f3c9979a6d507"
+      "digest": "e3eeb444aa925252fbc6ec4960113f87d62b010f096a0ace60af5c92641185c4"
     }
   ]
 }

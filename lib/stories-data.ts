@@ -26,7 +26,7 @@ export interface ExpatStory {
   galleryImages?: { src: string; alt: string; caption?: string }[];
 }
 
-const storiesBase: ExpatStory[] = [
+export const storiesBase: ExpatStory[] = [
   {
     id: "erin-15-year-love-affair",
     name: "Erin",
