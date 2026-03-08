@@ -1,16 +1,16 @@
 {
-  "generatedAt": "2026-03-08T11:27:05.999Z",
-  "totalFindings": 1739,
+  "generatedAt": "2026-03-08T11:59:36.569Z",
+  "totalFindings": 1608,
   "findingsBySeverity": {
     "critical": 0,
-    "high": 163,
-    "medium": 51,
-    "low": 1525
+    "high": 43,
+    "medium": 52,
+    "low": 1513
   },
   "findingsByCategory": {
-    "official-mismatch": 163,
-    "unverified-claim": 51,
-    "review-date-missing": 1350,
+    "official-mismatch": 43,
+    "unverified-claim": 52,
+    "review-date-missing": 1338,
     "review-date-stale": 175,
     "coverage-gap": 0
   },
@@ -24,36 +24,6 @@
       "siteId": "argentinavisalaw",
       "recordId": "argentinavisalaw:article:apartment-rental-guide-buenos-aires",
       "canonicalKey": "article:apartment-rental-guide-buenos-aires",
-      "sourcePath": "/Users/libertydesignstudio/dev/argentinavisalaw.com/app/data/articles.ts",
-      "officialSourceUrls": [
-        "https://www.argentina.gob.ar/interior/migraciones/turistas"
-      ],
-      "recommendedAction": "Change tourist-entry copy to 90 days plus one 90-day extension where applicable."
-    },
-    {
-      "id": "official-mismatch:argentinavisalaw:article:argentina-entry-requirements-2026",
-      "severity": "high",
-      "category": "official-mismatch",
-      "title": "Tourist stay duration conflicts with official guidance",
-      "detail": "Official tourist guidance states a 90-day stay that may be extended once for another 90 days, not a standard 180-day initial stay.",
-      "siteId": "argentinavisalaw",
-      "recordId": "argentinavisalaw:article:argentina-entry-requirements-2026",
-      "canonicalKey": "article:argentina-entry-requirements-2026",
-      "sourcePath": "/Users/libertydesignstudio/dev/argentinavisalaw.com/app/data/articles.ts",
-      "officialSourceUrls": [
-        "https://www.argentina.gob.ar/interior/migraciones/turistas"
-      ],
-      "recommendedAction": "Change tourist-entry copy to 90 days plus one 90-day extension where applicable."
-    },
-    {
-      "id": "official-mismatch:argentinavisalaw:article:argentina-immigration-reform-2025-decree-366",
-      "severity": "high",
-      "category": "official-mismatch",
-      "title": "Tourist stay duration conflicts with official guidance",
-      "detail": "Official tourist guidance states a 90-day stay that may be extended once for another 90 days, not a standard 180-day initial stay.",
-      "siteId": "argentinavisalaw",
-      "recordId": "argentinavisalaw:article:argentina-immigration-reform-2025-decree-366",
-      "canonicalKey": "article:argentina-immigration-reform-2025-decree-366",
       "sourcePath": "/Users/libertydesignstudio/dev/argentinavisalaw.com/app/data/articles.ts",
       "officialSourceUrls": [
         "https://www.argentina.gob.ar/interior/migraciones/turistas"
@@ -94,21 +64,6 @@
       "recommendedAction": "Reframe this as a visa-switch strategy unless you can cite a current official source confirming direct countability toward permanent residency."
     },
     {
-      "id": "official-mismatch:argentinavisalaw:article:argentina-student-visa-guide-2026",
-      "severity": "high",
-      "category": "official-mismatch",
-      "title": "Tourist stay duration conflicts with official guidance",
-      "detail": "Official tourist guidance states a 90-day stay that may be extended once for another 90 days, not a standard 180-day initial stay.",
-      "siteId": "argentinavisalaw",
-      "recordId": "argentinavisalaw:article:argentina-student-visa-guide-2026",
-      "canonicalKey": "article:argentina-student-visa-guide-2026",
-      "sourcePath": "/Users/libertydesignstudio/dev/argentinavisalaw.com/app/data/articles.ts",
-      "officialSourceUrls": [
-        "https://www.argentina.gob.ar/interior/migraciones/turistas"
-      ],
-      "recommendedAction": "Change tourist-entry copy to 90 days plus one 90-day extension where applicable."
-    },
-    {
       "id": "official-mismatch:argentinavisalaw:article:argentina-visa-rejected-what-to-do",
       "severity": "high",
       "category": "official-mismatch",
@@ -123,21 +78,6 @@
         "https://www.argentina.gob.ar/servicio/obtener-una-prorroga-de-residencia-transitoria-como-nomada-digital"
       ],
       "recommendedAction": "Rewrite duration and renewal language to 180 days plus one 180-day extension unless a newer official resolution supersedes it."
-    },
-    {
-      "id": "official-mismatch:argentinavisalaw:article:argentina-visa-rejected-what-to-do",
-      "severity": "high",
-      "category": "official-mismatch",
-      "title": "Tourist stay duration conflicts with official guidance",
-      "detail": "Official tourist guidance states a 90-day stay that may be extended once for another 90 days, not a standard 180-day initial stay.",
-      "siteId": "argentinavisalaw",
-      "recordId": "argentinavisalaw:article:argentina-visa-rejected-what-to-do",
-      "canonicalKey": "article:argentina-visa-rejected-what-to-do",
-      "sourcePath": "/Users/libertydesignstudio/dev/argentinavisalaw.com/app/data/articles.ts",
-      "officialSourceUrls": [
-        "https://www.argentina.gob.ar/interior/migraciones/turistas"
-      ],
-      "recommendedAction": "Change tourist-entry copy to 90 days plus one 90-day extension where applicable."
     },
     {
       "id": "review-date-stale:argentinavisalaw:article:banking-argentina-foreigners-2026",
@@ -206,21 +146,6 @@
         "https://www.argentina.gob.ar/servicio/obtener-una-prorroga-de-residencia-transitoria-como-nomada-digital"
       ],
       "recommendedAction": "Rewrite duration and renewal language to 180 days plus one 180-day extension unless a newer official resolution supersedes it."
-    },
-    {
-      "id": "official-mismatch:argentinavisalaw:article:common-visa-mistakes-argentina",
-      "severity": "high",
-      "category": "official-mismatch",
-      "title": "Tourist stay duration conflicts with official guidance",
-      "detail": "Official tourist guidance states a 90-day stay that may be extended once for another 90 days, not a standard 180-day initial stay.",
-      "siteId": "argentinavisalaw",
-      "recordId": "argentinavisalaw:article:common-visa-mistakes-argentina",
-      "canonicalKey": "article:common-visa-mistakes-argentina",
-      "sourcePath": "/Users/libertydesignstudio/dev/argentinavisalaw.com/app/data/articles.ts",
-      "officialSourceUrls": [
-        "https://www.argentina.gob.ar/interior/migraciones/turistas"
-      ],
-      "recommendedAction": "Change tourist-entry copy to 90 days plus one 90-day extension where applicable."
     },
     {
       "id": "review-date-stale:argentinavisalaw:article:cuit-registration-foreigners-argentina",
@@ -472,19 +397,20 @@
       "recommendedAction": "Re-verify this record against current official sources and update the review date."
     },
     {
-      "id": "official-mismatch:argentinavisalaw:article:visa-run-uruguay-argentina-2026",
+      "id": "official-mismatch:argentinavisalaw:article:voting-rights-citizenship-benefits-argentina",
       "severity": "high",
       "category": "official-mismatch",
-      "title": "Tourist stay duration conflicts with official guidance",
-      "detail": "Official tourist guidance states a 90-day stay that may be extended once for another 90 days, not a standard 180-day initial stay.",
+      "title": "Citizenship eligibility timeline conflicts with current public guidance",
+      "detail": "The current Migraciones naturalization baseline uses temporary or permanent residence plus two years of continuous and legal residence, not a separate two-year permanent-residency clock or a fixed four-year formula.",
       "siteId": "argentinavisalaw",
-      "recordId": "argentinavisalaw:article:visa-run-uruguay-argentina-2026",
-      "canonicalKey": "article:visa-run-uruguay-argentina-2026",
+      "recordId": "argentinavisalaw:article:voting-rights-citizenship-benefits-argentina",
+      "canonicalKey": "article:voting-rights-citizenship-benefits-argentina",
       "sourcePath": "/Users/libertydesignstudio/dev/argentinavisalaw.com/app/data/articles.ts",
       "officialSourceUrls": [
-        "https://www.argentina.gob.ar/interior/migraciones/turistas"
+        "https://www.argentina.gob.ar/noticias/ahora-el-tramite-de-ciudadania-argentina-se-podra-hacer-de-forma-digital-en-migraciones",
+        "https://www.argentina.gob.ar/servicio/obtener-la-ciudadania-argentina"
       ],
-      "recommendedAction": "Change tourist-entry copy to 90 days plus one 90-day extension where applicable."
+      "recommendedAction": "Rewrite citizenship timing around the current Migraciones filing baseline and remove permanent-first or four-year formulas unless a newer official source clearly supersedes them."
     },
     {
       "id": "official-mismatch:argentinavisalaw:article:voting-rights-citizenship-benefits-argentina",
@@ -502,6 +428,23 @@
       "recommendedAction": "Change tourist-entry copy to 90 days plus one 90-day extension where applicable."
     },
     {
+      "id": "official-mismatch:argentinavisalaw:article:voting-rights-citizenship-benefits-argentina",
+      "severity": "high",
+      "category": "official-mismatch",
+      "title": "Public-university tuition claim conflicts with 2025 reform baseline",
+      "detail": "The current public reform baseline says state universities may charge non-permanent residents, so broad free-tuition claims for all foreigners or all DNI holders need review.",
+      "siteId": "argentinavisalaw",
+      "recordId": "argentinavisalaw:article:voting-rights-citizenship-benefits-argentina",
+      "canonicalKey": "article:voting-rights-citizenship-benefits-argentina",
+      "sourcePath": "/Users/libertydesignstudio/dev/argentinavisalaw.com/app/data/articles.ts",
+      "officialSourceUrls": [
+        "https://www.argentina.gob.ar/noticias/el-gobierno-nacional-puso-en-marcha-una-profunda-reforma-del-regimen-migratorio",
+        "https://www.argentina.gob.ar/migraciones/preguntas-frecuentes-residencias",
+        "https://www.argentina.gob.ar/migraciones/comision-nacional-para-los-refugiados/preguntas-frecuentes-conare"
+      ],
+      "recommendedAction": "Reframe higher-education language around the current institution-by-status baseline instead of assuming universal free tuition."
+    },
+    {
       "id": "official-mismatch:argentinavisalaw:article:working-holiday-visa-argentina",
       "severity": "high",
       "category": "official-mismatch",
@@ -516,21 +459,6 @@
         "https://www.argentina.gob.ar/servicio/obtener-una-prorroga-de-residencia-transitoria-como-nomada-digital"
       ],
       "recommendedAction": "Rewrite duration and renewal language to 180 days plus one 180-day extension unless a newer official resolution supersedes it."
-    },
-    {
-      "id": "official-mismatch:argentinavisalaw:article:working-holiday-visa-argentina",
-      "severity": "high",
-      "category": "official-mismatch",
-      "title": "Tourist stay duration conflicts with official guidance",
-      "detail": "Official tourist guidance states a 90-day stay that may be extended once for another 90 days, not a standard 180-day initial stay.",
-      "siteId": "argentinavisalaw",
-      "recordId": "argentinavisalaw:article:working-holiday-visa-argentina",
-      "canonicalKey": "article:working-holiday-visa-argentina",
-      "sourcePath": "/Users/libertydesignstudio/dev/argentinavisalaw.com/app/data/articles.ts",
-      "officialSourceUrls": [
-        "https://www.argentina.gob.ar/interior/migraciones/turistas"
-      ],
-      "recommendedAction": "Change tourist-entry copy to 90 days plus one 90-day extension where applicable."
     },
     {
       "id": "review-date-stale:argentinavisalaw:article:working-holiday-visa-argentina-guide",
@@ -1571,21 +1499,6 @@
       "recommendedAction": "Rewrite duration and renewal language to 180 days plus one 180-day extension unless a newer official resolution supersedes it."
     },
     {
-      "id": "official-mismatch:argentinavisalaw:guide-expanded:documents",
-      "severity": "high",
-      "category": "official-mismatch",
-      "title": "Tourist stay duration conflicts with official guidance",
-      "detail": "Official tourist guidance states a 90-day stay that may be extended once for another 90 days, not a standard 180-day initial stay.",
-      "siteId": "argentinavisalaw",
-      "recordId": "argentinavisalaw:guide-expanded:documents",
-      "canonicalKey": "guide:documents",
-      "sourcePath": "/Users/libertydesignstudio/dev/argentinavisalaw.com/app/data/guidesExpanded.ts",
-      "officialSourceUrls": [
-        "https://www.argentina.gob.ar/interior/migraciones/turistas"
-      ],
-      "recommendedAction": "Change tourist-entry copy to 90 days plus one 90-day extension where applicable."
-    },
-    {
       "id": "official-mismatch:argentinavisalaw:guide-expanded:working-holiday",
       "severity": "high",
       "category": "official-mismatch",
@@ -1682,21 +1595,6 @@
       "recommendedAction": "Backfill `reviewDate` from the source module or an official verification pass."
     },
     {
-      "id": "official-mismatch:argentinavisalaw:guide:costs",
-      "severity": "high",
-      "category": "official-mismatch",
-      "title": "Tourist stay duration conflicts with official guidance",
-      "detail": "Official tourist guidance states a 90-day stay that may be extended once for another 90 days, not a standard 180-day initial stay.",
-      "siteId": "argentinavisalaw",
-      "recordId": "argentinavisalaw:guide:costs",
-      "canonicalKey": "guide:costs",
-      "sourcePath": "/Users/libertydesignstudio/dev/argentinavisalaw.com/app/data/guides.ts",
-      "officialSourceUrls": [
-        "https://www.argentina.gob.ar/interior/migraciones/turistas"
-      ],
-      "recommendedAction": "Change tourist-entry copy to 90 days plus one 90-day extension where applicable."
-    },
-    {
       "id": "review-date-missing:argentinavisalaw:guide:deportation-overstay",
       "severity": "low",
       "category": "review-date-missing",
@@ -1749,21 +1647,6 @@
       "recommendedAction": "Backfill `reviewDate` from the source module or an official verification pass."
     },
     {
-      "id": "official-mismatch:argentinavisalaw:guide:documents",
-      "severity": "high",
-      "category": "official-mismatch",
-      "title": "Tourist stay duration conflicts with official guidance",
-      "detail": "Official tourist guidance states a 90-day stay that may be extended once for another 90 days, not a standard 180-day initial stay.",
-      "siteId": "argentinavisalaw",
-      "recordId": "argentinavisalaw:guide:documents",
-      "canonicalKey": "guide:documents",
-      "sourcePath": "/Users/libertydesignstudio/dev/argentinavisalaw.com/app/data/guides.ts",
-      "officialSourceUrls": [
-        "https://www.argentina.gob.ar/interior/migraciones/turistas"
-      ],
-      "recommendedAction": "Change tourist-entry copy to 90 days plus one 90-day extension where applicable."
-    },
-    {
       "id": "review-date-missing:argentinavisalaw:guide:extensions",
       "severity": "low",
       "category": "review-date-missing",
@@ -1775,21 +1658,6 @@
       "sourcePath": "/Users/libertydesignstudio/dev/argentinavisalaw.com/app/data/guides.ts",
       "officialSourceUrls": [],
       "recommendedAction": "Backfill `reviewDate` from the source module or an official verification pass."
-    },
-    {
-      "id": "official-mismatch:argentinavisalaw:guide:extensions",
-      "severity": "high",
-      "category": "official-mismatch",
-      "title": "Tourist stay duration conflicts with official guidance",
-      "detail": "Official tourist guidance states a 90-day stay that may be extended once for another 90 days, not a standard 180-day initial stay.",
-      "siteId": "argentinavisalaw",
-      "recordId": "argentinavisalaw:guide:extensions",
-      "canonicalKey": "guide:extensions",
-      "sourcePath": "/Users/libertydesignstudio/dev/argentinavisalaw.com/app/data/guides.ts",
-      "officialSourceUrls": [
-        "https://www.argentina.gob.ar/interior/migraciones/turistas"
-      ],
-      "recommendedAction": "Change tourist-entry copy to 90 days plus one 90-day extension where applicable."
     },
     {
       "id": "review-date-missing:argentinavisalaw:guide:healthcare",
@@ -1874,21 +1742,6 @@
       "sourcePath": "/Users/libertydesignstudio/dev/argentinavisalaw.com/app/data/guides.ts",
       "officialSourceUrls": [],
       "recommendedAction": "Backfill `reviewDate` from the source module or an official verification pass."
-    },
-    {
-      "id": "official-mismatch:argentinavisalaw:guide:living",
-      "severity": "high",
-      "category": "official-mismatch",
-      "title": "Tourist stay duration conflicts with official guidance",
-      "detail": "Official tourist guidance states a 90-day stay that may be extended once for another 90 days, not a standard 180-day initial stay.",
-      "siteId": "argentinavisalaw",
-      "recordId": "argentinavisalaw:guide:living",
-      "canonicalKey": "guide:living",
-      "sourcePath": "/Users/libertydesignstudio/dev/argentinavisalaw.com/app/data/guides.ts",
-      "officialSourceUrls": [
-        "https://www.argentina.gob.ar/interior/migraciones/turistas"
-      ],
-      "recommendedAction": "Change tourist-entry copy to 90 days plus one 90-day extension where applicable."
     },
     {
       "id": "review-date-missing:argentinavisalaw:guide:living-cordoba",
@@ -2008,21 +1861,6 @@
       "recommendedAction": "Backfill `reviewDate` from the source module or an official verification pass."
     },
     {
-      "id": "official-mismatch:argentinavisalaw:guide:processing-times",
-      "severity": "high",
-      "category": "official-mismatch",
-      "title": "Tourist stay duration conflicts with official guidance",
-      "detail": "Official tourist guidance states a 90-day stay that may be extended once for another 90 days, not a standard 180-day initial stay.",
-      "siteId": "argentinavisalaw",
-      "recordId": "argentinavisalaw:guide:processing-times",
-      "canonicalKey": "guide:processing-times",
-      "sourcePath": "/Users/libertydesignstudio/dev/argentinavisalaw.com/app/data/guides.ts",
-      "officialSourceUrls": [
-        "https://www.argentina.gob.ar/interior/migraciones/turistas"
-      ],
-      "recommendedAction": "Change tourist-entry copy to 90 days plus one 90-day extension where applicable."
-    },
-    {
       "id": "review-date-missing:argentinavisalaw:guide:professional-title-homologation",
       "severity": "low",
       "category": "review-date-missing",
@@ -2103,6 +1941,23 @@
       "recommendedAction": "Backfill `reviewDate` from the source module or an official verification pass."
     },
     {
+      "id": "official-mismatch:argentinavisalaw:guide:school-enrollment",
+      "severity": "high",
+      "category": "official-mismatch",
+      "title": "Public-university tuition claim conflicts with 2025 reform baseline",
+      "detail": "The current public reform baseline says state universities may charge non-permanent residents, so broad free-tuition claims for all foreigners or all DNI holders need review.",
+      "siteId": "argentinavisalaw",
+      "recordId": "argentinavisalaw:guide:school-enrollment",
+      "canonicalKey": "guide:school-enrollment",
+      "sourcePath": "/Users/libertydesignstudio/dev/argentinavisalaw.com/app/data/guides.ts",
+      "officialSourceUrls": [
+        "https://www.argentina.gob.ar/noticias/el-gobierno-nacional-puso-en-marcha-una-profunda-reforma-del-regimen-migratorio",
+        "https://www.argentina.gob.ar/migraciones/preguntas-frecuentes-residencias",
+        "https://www.argentina.gob.ar/migraciones/comision-nacional-para-los-refugiados/preguntas-frecuentes-conare"
+      ],
+      "recommendedAction": "Reframe higher-education language around the current institution-by-status baseline instead of assuming universal free tuition."
+    },
+    {
       "id": "review-date-missing:argentinavisalaw:guide:taxes",
       "severity": "low",
       "category": "review-date-missing",
@@ -2143,21 +1998,6 @@
         "https://www.argentina.gob.ar/servicio/obtener-una-prorroga-de-residencia-transitoria-como-nomada-digital"
       ],
       "recommendedAction": "Rewrite duration and renewal language to 180 days plus one 180-day extension unless a newer official resolution supersedes it."
-    },
-    {
-      "id": "official-mismatch:argentinavisalaw:guide:working-holiday",
-      "severity": "high",
-      "category": "official-mismatch",
-      "title": "Tourist stay duration conflicts with official guidance",
-      "detail": "Official tourist guidance states a 90-day stay that may be extended once for another 90 days, not a standard 180-day initial stay.",
-      "siteId": "argentinavisalaw",
-      "recordId": "argentinavisalaw:guide:working-holiday",
-      "canonicalKey": "guide:working-holiday",
-      "sourcePath": "/Users/libertydesignstudio/dev/argentinavisalaw.com/app/data/guides.ts",
-      "officialSourceUrls": [
-        "https://www.argentina.gob.ar/interior/migraciones/turistas"
-      ],
-      "recommendedAction": "Change tourist-entry copy to 90 days plus one 90-day extension where applicable."
     },
     {
       "id": "review-date-missing:argentinavisalaw:legal-framework:agenciaNacionalMigraciones",
@@ -2290,21 +2130,6 @@
       "recommendedAction": "Backfill `reviewDate` from the source module or an official verification pass."
     },
     {
-      "id": "official-mismatch:argentinavisalaw:profession:artists-musicians",
-      "severity": "high",
-      "category": "official-mismatch",
-      "title": "Tourist stay duration conflicts with official guidance",
-      "detail": "Official tourist guidance states a 90-day stay that may be extended once for another 90 days, not a standard 180-day initial stay.",
-      "siteId": "argentinavisalaw",
-      "recordId": "argentinavisalaw:profession:artists-musicians",
-      "canonicalKey": "profession:artists-musicians",
-      "sourcePath": "/Users/libertydesignstudio/dev/argentinavisalaw.com/app/data/professions.ts",
-      "officialSourceUrls": [
-        "https://www.argentina.gob.ar/interior/migraciones/turistas"
-      ],
-      "recommendedAction": "Change tourist-entry copy to 90 days plus one 90-day extension where applicable."
-    },
-    {
       "id": "review-date-missing:argentinavisalaw:profession:chefs-restaurateurs",
       "severity": "low",
       "category": "review-date-missing",
@@ -2399,21 +2224,6 @@
       "recommendedAction": "Rewrite duration and renewal language to 180 days plus one 180-day extension unless a newer official resolution supersedes it."
     },
     {
-      "id": "official-mismatch:argentinavisalaw:profession:retirees-pensioners",
-      "severity": "high",
-      "category": "official-mismatch",
-      "title": "Tourist stay duration conflicts with official guidance",
-      "detail": "Official tourist guidance states a 90-day stay that may be extended once for another 90 days, not a standard 180-day initial stay.",
-      "siteId": "argentinavisalaw",
-      "recordId": "argentinavisalaw:profession:retirees-pensioners",
-      "canonicalKey": "profession:retirees-pensioners",
-      "sourcePath": "/Users/libertydesignstudio/dev/argentinavisalaw.com/app/data/professions.ts",
-      "officialSourceUrls": [
-        "https://www.argentina.gob.ar/interior/migraciones/turistas"
-      ],
-      "recommendedAction": "Change tourist-entry copy to 90 days plus one 90-day extension where applicable."
-    },
-    {
       "id": "review-date-missing:argentinavisalaw:profession:teachers-educators",
       "severity": "low",
       "category": "review-date-missing",
@@ -2427,21 +2237,6 @@
       "recommendedAction": "Backfill `reviewDate` from the source module or an official verification pass."
     },
     {
-      "id": "official-mismatch:argentinavisalaw:profession:teachers-educators",
-      "severity": "high",
-      "category": "official-mismatch",
-      "title": "Tourist stay duration conflicts with official guidance",
-      "detail": "Official tourist guidance states a 90-day stay that may be extended once for another 90 days, not a standard 180-day initial stay.",
-      "siteId": "argentinavisalaw",
-      "recordId": "argentinavisalaw:profession:teachers-educators",
-      "canonicalKey": "profession:teachers-educators",
-      "sourcePath": "/Users/libertydesignstudio/dev/argentinavisalaw.com/app/data/professions.ts",
-      "officialSourceUrls": [
-        "https://www.argentina.gob.ar/interior/migraciones/turistas"
-      ],
-      "recommendedAction": "Change tourist-entry copy to 90 days plus one 90-day extension where applicable."
-    },
-    {
       "id": "review-date-missing:argentinavisalaw:profession:tech-workers",
       "severity": "low",
       "category": "review-date-missing",
@@ -2453,21 +2248,6 @@
       "sourcePath": "/Users/libertydesignstudio/dev/argentinavisalaw.com/app/data/professions.ts",
       "officialSourceUrls": [],
       "recommendedAction": "Backfill `reviewDate` from the source module or an official verification pass."
-    },
-    {
-      "id": "official-mismatch:argentinavisalaw:profession:tech-workers",
-      "severity": "high",
-      "category": "official-mismatch",
-      "title": "Tourist stay duration conflicts with official guidance",
-      "detail": "Official tourist guidance states a 90-day stay that may be extended once for another 90 days, not a standard 180-day initial stay.",
-      "siteId": "argentinavisalaw",
-      "recordId": "argentinavisalaw:profession:tech-workers",
-      "canonicalKey": "profession:tech-workers",
-      "sourcePath": "/Users/libertydesignstudio/dev/argentinavisalaw.com/app/data/professions.ts",
-      "officialSourceUrls": [
-        "https://www.argentina.gob.ar/interior/migraciones/turistas"
-      ],
-      "recommendedAction": "Change tourist-entry copy to 90 days plus one 90-day extension where applicable."
     },
     {
       "id": "review-date-missing:argentinavisalaw:visa-type:citizenship-by-investment",
@@ -2510,21 +2290,6 @@
         "https://www.argentina.gob.ar/servicio/obtener-una-prorroga-de-residencia-transitoria-como-nomada-digital"
       ],
       "recommendedAction": "Reframe this as a visa-switch strategy unless you can cite a current official source confirming direct countability toward permanent residency."
-    },
-    {
-      "id": "official-mismatch:argentinavisalaw:visa-type:digital-nomad",
-      "severity": "high",
-      "category": "official-mismatch",
-      "title": "Tourist stay duration conflicts with official guidance",
-      "detail": "Official tourist guidance states a 90-day stay that may be extended once for another 90 days, not a standard 180-day initial stay.",
-      "siteId": "argentinavisalaw",
-      "recordId": "argentinavisalaw:visa-type:digital-nomad",
-      "canonicalKey": "visa-type:digital-nomad",
-      "sourcePath": "/Users/libertydesignstudio/dev/argentinavisalaw.com/app/data/visaDetails.ts",
-      "officialSourceUrls": [
-        "https://www.argentina.gob.ar/interior/migraciones/turistas"
-      ],
-      "recommendedAction": "Change tourist-entry copy to 90 days plus one 90-day extension where applicable."
     },
     {
       "id": "unverified-claim:argentinavisalaw:visa-type:digital-nomad",
@@ -2832,21 +2597,6 @@
       "recommendedAction": "Reframe this as a visa-switch strategy unless you can cite a current official source confirming direct countability toward permanent residency."
     },
     {
-      "id": "official-mismatch:argentinavisalaw:visa-type:student",
-      "severity": "high",
-      "category": "official-mismatch",
-      "title": "Tourist stay duration conflicts with official guidance",
-      "detail": "Official tourist guidance states a 90-day stay that may be extended once for another 90 days, not a standard 180-day initial stay.",
-      "siteId": "argentinavisalaw",
-      "recordId": "argentinavisalaw:visa-type:student",
-      "canonicalKey": "visa-type:student",
-      "sourcePath": "/Users/libertydesignstudio/dev/argentinavisalaw.com/app/data/visaDetails.ts",
-      "officialSourceUrls": [
-        "https://www.argentina.gob.ar/interior/migraciones/turistas"
-      ],
-      "recommendedAction": "Change tourist-entry copy to 90 days plus one 90-day extension where applicable."
-    },
-    {
       "id": "unverified-claim:argentinavisalaw:visa-type:student",
       "severity": "medium",
       "category": "unverified-claim",
@@ -2875,21 +2625,6 @@
       "sourcePath": "/Users/libertydesignstudio/dev/argentinavisalaw.com/app/data/visaDetails.ts",
       "officialSourceUrls": [],
       "recommendedAction": "Backfill `reviewDate` from the source module or an official verification pass."
-    },
-    {
-      "id": "official-mismatch:argentinavisalaw:visa-type:tourist",
-      "severity": "high",
-      "category": "official-mismatch",
-      "title": "Tourist stay duration conflicts with official guidance",
-      "detail": "Official tourist guidance states a 90-day stay that may be extended once for another 90 days, not a standard 180-day initial stay.",
-      "siteId": "argentinavisalaw",
-      "recordId": "argentinavisalaw:visa-type:tourist",
-      "canonicalKey": "visa-type:tourist",
-      "sourcePath": "/Users/libertydesignstudio/dev/argentinavisalaw.com/app/data/visaDetails.ts",
-      "officialSourceUrls": [
-        "https://www.argentina.gob.ar/interior/migraciones/turistas"
-      ],
-      "recommendedAction": "Change tourist-entry copy to 90 days plus one 90-day extension where applicable."
     },
     {
       "id": "review-date-missing:argentinavisalaw:visa-type:work",
@@ -2997,21 +2732,6 @@
         "https://www.argentina.gob.ar/servicio/obtener-una-prorroga-de-residencia-transitoria-como-nomada-digital"
       ],
       "recommendedAction": "Reframe this as a visa-switch strategy unless you can cite a current official source confirming direct countability toward permanent residency."
-    },
-    {
-      "id": "official-mismatch:argentinavisalaw:visa-type:working-holiday",
-      "severity": "high",
-      "category": "official-mismatch",
-      "title": "Tourist stay duration conflicts with official guidance",
-      "detail": "Official tourist guidance states a 90-day stay that may be extended once for another 90 days, not a standard 180-day initial stay.",
-      "siteId": "argentinavisalaw",
-      "recordId": "argentinavisalaw:visa-type:working-holiday",
-      "canonicalKey": "visa-type:working-holiday",
-      "sourcePath": "/Users/libertydesignstudio/dev/argentinavisalaw.com/app/data/visaDetails.ts",
-      "officialSourceUrls": [
-        "https://www.argentina.gob.ar/interior/migraciones/turistas"
-      ],
-      "recommendedAction": "Change tourist-entry copy to 90 days plus one 90-day extension where applicable."
     },
     {
       "id": "review-date-missing:buenosairesexpats:country:albania",
@@ -7433,21 +7153,6 @@
       "recommendedAction": "Reframe this as a visa-switch strategy unless you can cite a current official source confirming direct countability toward permanent residency."
     },
     {
-      "id": "official-mismatch:expatsargentina:blog-post:complete-guide-digital-nomad-visa-argentina-2026",
-      "severity": "high",
-      "category": "official-mismatch",
-      "title": "Tourist stay duration conflicts with official guidance",
-      "detail": "Official tourist guidance states a 90-day stay that may be extended once for another 90 days, not a standard 180-day initial stay.",
-      "siteId": "expatsargentina",
-      "recordId": "expatsargentina:blog-post:complete-guide-digital-nomad-visa-argentina-2026",
-      "canonicalKey": "blog-post:complete-guide-digital-nomad-visa-argentina-2026",
-      "sourcePath": "/Users/libertydesignstudio/dev/expatsargentina/my-app/lib/data/blog.ts",
-      "officialSourceUrls": [
-        "https://www.argentina.gob.ar/interior/migraciones/turistas"
-      ],
-      "recommendedAction": "Change tourist-entry copy to 90 days plus one 90-day extension where applicable."
-    },
-    {
       "id": "review-date-missing:expatsargentina:comparison:buenos-aires-vs-cordoba",
       "severity": "low",
       "category": "review-date-missing",
@@ -7552,21 +7257,6 @@
       "recommendedAction": "Backfill `reviewDate` from the source module or an official verification pass."
     },
     {
-      "id": "official-mismatch:expatsargentina:country:albania",
-      "severity": "high",
-      "category": "official-mismatch",
-      "title": "Tourist stay duration conflicts with official guidance",
-      "detail": "Official tourist guidance states a 90-day stay that may be extended once for another 90 days, not a standard 180-day initial stay.",
-      "siteId": "expatsargentina",
-      "recordId": "expatsargentina:country:albania",
-      "canonicalKey": "country:albania",
-      "sourcePath": "/Users/libertydesignstudio/dev/expatsargentina/my-app/lib/data/nationalities.ts",
-      "officialSourceUrls": [
-        "https://www.argentina.gob.ar/interior/migraciones/turistas"
-      ],
-      "recommendedAction": "Change tourist-entry copy to 90 days plus one 90-day extension where applicable."
-    },
-    {
       "id": "review-date-missing:expatsargentina:country:andorra",
       "severity": "low",
       "category": "review-date-missing",
@@ -7578,21 +7268,6 @@
       "sourcePath": "/Users/libertydesignstudio/dev/expatsargentina/my-app/lib/data/nationalities.ts",
       "officialSourceUrls": [],
       "recommendedAction": "Backfill `reviewDate` from the source module or an official verification pass."
-    },
-    {
-      "id": "official-mismatch:expatsargentina:country:andorra",
-      "severity": "high",
-      "category": "official-mismatch",
-      "title": "Tourist stay duration conflicts with official guidance",
-      "detail": "Official tourist guidance states a 90-day stay that may be extended once for another 90 days, not a standard 180-day initial stay.",
-      "siteId": "expatsargentina",
-      "recordId": "expatsargentina:country:andorra",
-      "canonicalKey": "country:andorra",
-      "sourcePath": "/Users/libertydesignstudio/dev/expatsargentina/my-app/lib/data/nationalities.ts",
-      "officialSourceUrls": [
-        "https://www.argentina.gob.ar/interior/migraciones/turistas"
-      ],
-      "recommendedAction": "Change tourist-entry copy to 90 days plus one 90-day extension where applicable."
     },
     {
       "id": "review-date-missing:expatsargentina:country:argentina",
@@ -7619,21 +7294,6 @@
       "sourcePath": "/Users/libertydesignstudio/dev/expatsargentina/my-app/lib/data/nationalities.ts",
       "officialSourceUrls": [],
       "recommendedAction": "Backfill `reviewDate` from the source module or an official verification pass."
-    },
-    {
-      "id": "official-mismatch:expatsargentina:country:armenia",
-      "severity": "high",
-      "category": "official-mismatch",
-      "title": "Tourist stay duration conflicts with official guidance",
-      "detail": "Official tourist guidance states a 90-day stay that may be extended once for another 90 days, not a standard 180-day initial stay.",
-      "siteId": "expatsargentina",
-      "recordId": "expatsargentina:country:armenia",
-      "canonicalKey": "country:armenia",
-      "sourcePath": "/Users/libertydesignstudio/dev/expatsargentina/my-app/lib/data/nationalities.ts",
-      "officialSourceUrls": [
-        "https://www.argentina.gob.ar/interior/migraciones/turistas"
-      ],
-      "recommendedAction": "Change tourist-entry copy to 90 days plus one 90-day extension where applicable."
     },
     {
       "id": "review-date-missing:expatsargentina:country:australia",
@@ -7681,21 +7341,6 @@
       "recommendedAction": "Reframe this as a visa-switch strategy unless you can cite a current official source confirming direct countability toward permanent residency."
     },
     {
-      "id": "official-mismatch:expatsargentina:country:australia",
-      "severity": "high",
-      "category": "official-mismatch",
-      "title": "Tourist stay duration conflicts with official guidance",
-      "detail": "Official tourist guidance states a 90-day stay that may be extended once for another 90 days, not a standard 180-day initial stay.",
-      "siteId": "expatsargentina",
-      "recordId": "expatsargentina:country:australia",
-      "canonicalKey": "country:australia",
-      "sourcePath": "/Users/libertydesignstudio/dev/expatsargentina/my-app/lib/data/nationalities.ts",
-      "officialSourceUrls": [
-        "https://www.argentina.gob.ar/interior/migraciones/turistas"
-      ],
-      "recommendedAction": "Change tourist-entry copy to 90 days plus one 90-day extension where applicable."
-    },
-    {
       "id": "review-date-missing:expatsargentina:country:austria",
       "severity": "low",
       "category": "review-date-missing",
@@ -7707,21 +7352,6 @@
       "sourcePath": "/Users/libertydesignstudio/dev/expatsargentina/my-app/lib/data/nationalities.ts",
       "officialSourceUrls": [],
       "recommendedAction": "Backfill `reviewDate` from the source module or an official verification pass."
-    },
-    {
-      "id": "official-mismatch:expatsargentina:country:austria",
-      "severity": "high",
-      "category": "official-mismatch",
-      "title": "Tourist stay duration conflicts with official guidance",
-      "detail": "Official tourist guidance states a 90-day stay that may be extended once for another 90 days, not a standard 180-day initial stay.",
-      "siteId": "expatsargentina",
-      "recordId": "expatsargentina:country:austria",
-      "canonicalKey": "country:austria",
-      "sourcePath": "/Users/libertydesignstudio/dev/expatsargentina/my-app/lib/data/nationalities.ts",
-      "officialSourceUrls": [
-        "https://www.argentina.gob.ar/interior/migraciones/turistas"
-      ],
-      "recommendedAction": "Change tourist-entry copy to 90 days plus one 90-day extension where applicable."
     },
     {
       "id": "review-date-missing:expatsargentina:country:azerbaijan",
@@ -7737,21 +7367,6 @@
       "recommendedAction": "Backfill `reviewDate` from the source module or an official verification pass."
     },
     {
-      "id": "official-mismatch:expatsargentina:country:azerbaijan",
-      "severity": "high",
-      "category": "official-mismatch",
-      "title": "Tourist stay duration conflicts with official guidance",
-      "detail": "Official tourist guidance states a 90-day stay that may be extended once for another 90 days, not a standard 180-day initial stay.",
-      "siteId": "expatsargentina",
-      "recordId": "expatsargentina:country:azerbaijan",
-      "canonicalKey": "country:azerbaijan",
-      "sourcePath": "/Users/libertydesignstudio/dev/expatsargentina/my-app/lib/data/nationalities.ts",
-      "officialSourceUrls": [
-        "https://www.argentina.gob.ar/interior/migraciones/turistas"
-      ],
-      "recommendedAction": "Change tourist-entry copy to 90 days plus one 90-day extension where applicable."
-    },
-    {
       "id": "review-date-missing:expatsargentina:country:bahamas",
       "severity": "low",
       "category": "review-date-missing",
@@ -7763,21 +7378,6 @@
       "sourcePath": "/Users/libertydesignstudio/dev/expatsargentina/my-app/lib/data/nationalities.ts",
       "officialSourceUrls": [],
       "recommendedAction": "Backfill `reviewDate` from the source module or an official verification pass."
-    },
-    {
-      "id": "official-mismatch:expatsargentina:country:bahamas",
-      "severity": "high",
-      "category": "official-mismatch",
-      "title": "Tourist stay duration conflicts with official guidance",
-      "detail": "Official tourist guidance states a 90-day stay that may be extended once for another 90 days, not a standard 180-day initial stay.",
-      "siteId": "expatsargentina",
-      "recordId": "expatsargentina:country:bahamas",
-      "canonicalKey": "country:bahamas",
-      "sourcePath": "/Users/libertydesignstudio/dev/expatsargentina/my-app/lib/data/nationalities.ts",
-      "officialSourceUrls": [
-        "https://www.argentina.gob.ar/interior/migraciones/turistas"
-      ],
-      "recommendedAction": "Change tourist-entry copy to 90 days plus one 90-day extension where applicable."
     },
     {
       "id": "review-date-missing:expatsargentina:country:bangladesh",
@@ -7793,21 +7393,6 @@
       "recommendedAction": "Backfill `reviewDate` from the source module or an official verification pass."
     },
     {
-      "id": "official-mismatch:expatsargentina:country:bangladesh",
-      "severity": "high",
-      "category": "official-mismatch",
-      "title": "Tourist stay duration conflicts with official guidance",
-      "detail": "Official tourist guidance states a 90-day stay that may be extended once for another 90 days, not a standard 180-day initial stay.",
-      "siteId": "expatsargentina",
-      "recordId": "expatsargentina:country:bangladesh",
-      "canonicalKey": "country:bangladesh",
-      "sourcePath": "/Users/libertydesignstudio/dev/expatsargentina/my-app/lib/data/nationalities.ts",
-      "officialSourceUrls": [
-        "https://www.argentina.gob.ar/interior/migraciones/turistas"
-      ],
-      "recommendedAction": "Change tourist-entry copy to 90 days plus one 90-day extension where applicable."
-    },
-    {
       "id": "review-date-missing:expatsargentina:country:barbados",
       "severity": "low",
       "category": "review-date-missing",
@@ -7819,21 +7404,6 @@
       "sourcePath": "/Users/libertydesignstudio/dev/expatsargentina/my-app/lib/data/nationalities.ts",
       "officialSourceUrls": [],
       "recommendedAction": "Backfill `reviewDate` from the source module or an official verification pass."
-    },
-    {
-      "id": "official-mismatch:expatsargentina:country:barbados",
-      "severity": "high",
-      "category": "official-mismatch",
-      "title": "Tourist stay duration conflicts with official guidance",
-      "detail": "Official tourist guidance states a 90-day stay that may be extended once for another 90 days, not a standard 180-day initial stay.",
-      "siteId": "expatsargentina",
-      "recordId": "expatsargentina:country:barbados",
-      "canonicalKey": "country:barbados",
-      "sourcePath": "/Users/libertydesignstudio/dev/expatsargentina/my-app/lib/data/nationalities.ts",
-      "officialSourceUrls": [
-        "https://www.argentina.gob.ar/interior/migraciones/turistas"
-      ],
-      "recommendedAction": "Change tourist-entry copy to 90 days plus one 90-day extension where applicable."
     },
     {
       "id": "review-date-missing:expatsargentina:country:belarus",
@@ -7849,21 +7419,6 @@
       "recommendedAction": "Backfill `reviewDate` from the source module or an official verification pass."
     },
     {
-      "id": "official-mismatch:expatsargentina:country:belarus",
-      "severity": "high",
-      "category": "official-mismatch",
-      "title": "Tourist stay duration conflicts with official guidance",
-      "detail": "Official tourist guidance states a 90-day stay that may be extended once for another 90 days, not a standard 180-day initial stay.",
-      "siteId": "expatsargentina",
-      "recordId": "expatsargentina:country:belarus",
-      "canonicalKey": "country:belarus",
-      "sourcePath": "/Users/libertydesignstudio/dev/expatsargentina/my-app/lib/data/nationalities.ts",
-      "officialSourceUrls": [
-        "https://www.argentina.gob.ar/interior/migraciones/turistas"
-      ],
-      "recommendedAction": "Change tourist-entry copy to 90 days plus one 90-day extension where applicable."
-    },
-    {
       "id": "review-date-missing:expatsargentina:country:belgium",
       "severity": "low",
       "category": "review-date-missing",
@@ -7875,21 +7430,6 @@
       "sourcePath": "/Users/libertydesignstudio/dev/expatsargentina/my-app/lib/data/nationalities.ts",
       "officialSourceUrls": [],
       "recommendedAction": "Backfill `reviewDate` from the source module or an official verification pass."
-    },
-    {
-      "id": "official-mismatch:expatsargentina:country:belgium",
-      "severity": "high",
-      "category": "official-mismatch",
-      "title": "Tourist stay duration conflicts with official guidance",
-      "detail": "Official tourist guidance states a 90-day stay that may be extended once for another 90 days, not a standard 180-day initial stay.",
-      "siteId": "expatsargentina",
-      "recordId": "expatsargentina:country:belgium",
-      "canonicalKey": "country:belgium",
-      "sourcePath": "/Users/libertydesignstudio/dev/expatsargentina/my-app/lib/data/nationalities.ts",
-      "officialSourceUrls": [
-        "https://www.argentina.gob.ar/interior/migraciones/turistas"
-      ],
-      "recommendedAction": "Change tourist-entry copy to 90 days plus one 90-day extension where applicable."
     },
     {
       "id": "review-date-missing:expatsargentina:country:bolivia",
@@ -7934,21 +7474,6 @@
       "recommendedAction": "Backfill `reviewDate` from the source module or an official verification pass."
     },
     {
-      "id": "official-mismatch:expatsargentina:country:bosnia",
-      "severity": "high",
-      "category": "official-mismatch",
-      "title": "Tourist stay duration conflicts with official guidance",
-      "detail": "Official tourist guidance states a 90-day stay that may be extended once for another 90 days, not a standard 180-day initial stay.",
-      "siteId": "expatsargentina",
-      "recordId": "expatsargentina:country:bosnia",
-      "canonicalKey": "country:bosnia",
-      "sourcePath": "/Users/libertydesignstudio/dev/expatsargentina/my-app/lib/data/nationalities.ts",
-      "officialSourceUrls": [
-        "https://www.argentina.gob.ar/interior/migraciones/turistas"
-      ],
-      "recommendedAction": "Change tourist-entry copy to 90 days plus one 90-day extension where applicable."
-    },
-    {
       "id": "review-date-missing:expatsargentina:country:brazil",
       "severity": "low",
       "category": "review-date-missing",
@@ -7981,16 +7506,17 @@
       "id": "official-mismatch:expatsargentina:country:brazil",
       "severity": "high",
       "category": "official-mismatch",
-      "title": "Tourist stay duration conflicts with official guidance",
-      "detail": "Official tourist guidance states a 90-day stay that may be extended once for another 90 days, not a standard 180-day initial stay.",
+      "title": "Citizenship eligibility timeline conflicts with current public guidance",
+      "detail": "The current Migraciones naturalization baseline uses temporary or permanent residence plus two years of continuous and legal residence, not a separate two-year permanent-residency clock or a fixed four-year formula.",
       "siteId": "expatsargentina",
       "recordId": "expatsargentina:country:brazil",
       "canonicalKey": "country:brazil",
       "sourcePath": "/Users/libertydesignstudio/dev/expatsargentina/my-app/lib/data/nationalities.ts",
       "officialSourceUrls": [
-        "https://www.argentina.gob.ar/interior/migraciones/turistas"
+        "https://www.argentina.gob.ar/noticias/ahora-el-tramite-de-ciudadania-argentina-se-podra-hacer-de-forma-digital-en-migraciones",
+        "https://www.argentina.gob.ar/servicio/obtener-la-ciudadania-argentina"
       ],
-      "recommendedAction": "Change tourist-entry copy to 90 days plus one 90-day extension where applicable."
+      "recommendedAction": "Rewrite citizenship timing around the current Migraciones filing baseline and remove permanent-first or four-year formulas unless a newer official source clearly supersedes them."
     },
     {
       "id": "review-date-missing:expatsargentina:country:brunei",
@@ -8006,21 +7532,6 @@
       "recommendedAction": "Backfill `reviewDate` from the source module or an official verification pass."
     },
     {
-      "id": "official-mismatch:expatsargentina:country:brunei",
-      "severity": "high",
-      "category": "official-mismatch",
-      "title": "Tourist stay duration conflicts with official guidance",
-      "detail": "Official tourist guidance states a 90-day stay that may be extended once for another 90 days, not a standard 180-day initial stay.",
-      "siteId": "expatsargentina",
-      "recordId": "expatsargentina:country:brunei",
-      "canonicalKey": "country:brunei",
-      "sourcePath": "/Users/libertydesignstudio/dev/expatsargentina/my-app/lib/data/nationalities.ts",
-      "officialSourceUrls": [
-        "https://www.argentina.gob.ar/interior/migraciones/turistas"
-      ],
-      "recommendedAction": "Change tourist-entry copy to 90 days plus one 90-day extension where applicable."
-    },
-    {
       "id": "review-date-missing:expatsargentina:country:bulgaria",
       "severity": "low",
       "category": "review-date-missing",
@@ -8034,21 +7545,6 @@
       "recommendedAction": "Backfill `reviewDate` from the source module or an official verification pass."
     },
     {
-      "id": "official-mismatch:expatsargentina:country:bulgaria",
-      "severity": "high",
-      "category": "official-mismatch",
-      "title": "Tourist stay duration conflicts with official guidance",
-      "detail": "Official tourist guidance states a 90-day stay that may be extended once for another 90 days, not a standard 180-day initial stay.",
-      "siteId": "expatsargentina",
-      "recordId": "expatsargentina:country:bulgaria",
-      "canonicalKey": "country:bulgaria",
-      "sourcePath": "/Users/libertydesignstudio/dev/expatsargentina/my-app/lib/data/nationalities.ts",
-      "officialSourceUrls": [
-        "https://www.argentina.gob.ar/interior/migraciones/turistas"
-      ],
-      "recommendedAction": "Change tourist-entry copy to 90 days plus one 90-day extension where applicable."
-    },
-    {
       "id": "review-date-missing:expatsargentina:country:cambodia",
       "severity": "low",
       "category": "review-date-missing",
@@ -8060,21 +7556,6 @@
       "sourcePath": "/Users/libertydesignstudio/dev/expatsargentina/my-app/lib/data/nationalities.ts",
       "officialSourceUrls": [],
       "recommendedAction": "Backfill `reviewDate` from the source module or an official verification pass."
-    },
-    {
-      "id": "official-mismatch:expatsargentina:country:cambodia",
-      "severity": "high",
-      "category": "official-mismatch",
-      "title": "Tourist stay duration conflicts with official guidance",
-      "detail": "Official tourist guidance states a 90-day stay that may be extended once for another 90 days, not a standard 180-day initial stay.",
-      "siteId": "expatsargentina",
-      "recordId": "expatsargentina:country:cambodia",
-      "canonicalKey": "country:cambodia",
-      "sourcePath": "/Users/libertydesignstudio/dev/expatsargentina/my-app/lib/data/nationalities.ts",
-      "officialSourceUrls": [
-        "https://www.argentina.gob.ar/interior/migraciones/turistas"
-      ],
-      "recommendedAction": "Change tourist-entry copy to 90 days plus one 90-day extension where applicable."
     },
     {
       "id": "review-date-missing:expatsargentina:country:canada",
@@ -8104,21 +7585,6 @@
         "https://www.argentina.gob.ar/servicio/obtener-una-prorroga-de-residencia-transitoria-como-nomada-digital"
       ],
       "recommendedAction": "Reframe this as a visa-switch strategy unless you can cite a current official source confirming direct countability toward permanent residency."
-    },
-    {
-      "id": "official-mismatch:expatsargentina:country:canada",
-      "severity": "high",
-      "category": "official-mismatch",
-      "title": "Tourist stay duration conflicts with official guidance",
-      "detail": "Official tourist guidance states a 90-day stay that may be extended once for another 90 days, not a standard 180-day initial stay.",
-      "siteId": "expatsargentina",
-      "recordId": "expatsargentina:country:canada",
-      "canonicalKey": "country:canada",
-      "sourcePath": "/Users/libertydesignstudio/dev/expatsargentina/my-app/lib/data/nationalities.ts",
-      "officialSourceUrls": [
-        "https://www.argentina.gob.ar/interior/migraciones/turistas"
-      ],
-      "recommendedAction": "Change tourist-entry copy to 90 days plus one 90-day extension where applicable."
     },
     {
       "id": "review-date-missing:expatsargentina:country:chile",
@@ -8163,21 +7629,6 @@
       "recommendedAction": "Reframe this as a visa-switch strategy unless you can cite a current official source confirming direct countability toward permanent residency."
     },
     {
-      "id": "official-mismatch:expatsargentina:country:china",
-      "severity": "high",
-      "category": "official-mismatch",
-      "title": "Tourist stay duration conflicts with official guidance",
-      "detail": "Official tourist guidance states a 90-day stay that may be extended once for another 90 days, not a standard 180-day initial stay.",
-      "siteId": "expatsargentina",
-      "recordId": "expatsargentina:country:china",
-      "canonicalKey": "country:china",
-      "sourcePath": "/Users/libertydesignstudio/dev/expatsargentina/my-app/lib/data/nationalities.ts",
-      "officialSourceUrls": [
-        "https://www.argentina.gob.ar/interior/migraciones/turistas"
-      ],
-      "recommendedAction": "Change tourist-entry copy to 90 days plus one 90-day extension where applicable."
-    },
-    {
       "id": "review-date-missing:expatsargentina:country:colombia",
       "severity": "low",
       "category": "review-date-missing",
@@ -8207,21 +7658,6 @@
       "recommendedAction": "Reframe this as a visa-switch strategy unless you can cite a current official source confirming direct countability toward permanent residency."
     },
     {
-      "id": "official-mismatch:expatsargentina:country:colombia",
-      "severity": "high",
-      "category": "official-mismatch",
-      "title": "Tourist stay duration conflicts with official guidance",
-      "detail": "Official tourist guidance states a 90-day stay that may be extended once for another 90 days, not a standard 180-day initial stay.",
-      "siteId": "expatsargentina",
-      "recordId": "expatsargentina:country:colombia",
-      "canonicalKey": "country:colombia",
-      "sourcePath": "/Users/libertydesignstudio/dev/expatsargentina/my-app/lib/data/nationalities.ts",
-      "officialSourceUrls": [
-        "https://www.argentina.gob.ar/interior/migraciones/turistas"
-      ],
-      "recommendedAction": "Change tourist-entry copy to 90 days plus one 90-day extension where applicable."
-    },
-    {
       "id": "review-date-missing:expatsargentina:country:croatia",
       "severity": "low",
       "category": "review-date-missing",
@@ -8233,21 +7669,6 @@
       "sourcePath": "/Users/libertydesignstudio/dev/expatsargentina/my-app/lib/data/nationalities.ts",
       "officialSourceUrls": [],
       "recommendedAction": "Backfill `reviewDate` from the source module or an official verification pass."
-    },
-    {
-      "id": "official-mismatch:expatsargentina:country:croatia",
-      "severity": "high",
-      "category": "official-mismatch",
-      "title": "Tourist stay duration conflicts with official guidance",
-      "detail": "Official tourist guidance states a 90-day stay that may be extended once for another 90 days, not a standard 180-day initial stay.",
-      "siteId": "expatsargentina",
-      "recordId": "expatsargentina:country:croatia",
-      "canonicalKey": "country:croatia",
-      "sourcePath": "/Users/libertydesignstudio/dev/expatsargentina/my-app/lib/data/nationalities.ts",
-      "officialSourceUrls": [
-        "https://www.argentina.gob.ar/interior/migraciones/turistas"
-      ],
-      "recommendedAction": "Change tourist-entry copy to 90 days plus one 90-day extension where applicable."
     },
     {
       "id": "review-date-missing:expatsargentina:country:cuba",
@@ -8263,21 +7684,6 @@
       "recommendedAction": "Backfill `reviewDate` from the source module or an official verification pass."
     },
     {
-      "id": "official-mismatch:expatsargentina:country:cuba",
-      "severity": "high",
-      "category": "official-mismatch",
-      "title": "Tourist stay duration conflicts with official guidance",
-      "detail": "Official tourist guidance states a 90-day stay that may be extended once for another 90 days, not a standard 180-day initial stay.",
-      "siteId": "expatsargentina",
-      "recordId": "expatsargentina:country:cuba",
-      "canonicalKey": "country:cuba",
-      "sourcePath": "/Users/libertydesignstudio/dev/expatsargentina/my-app/lib/data/nationalities.ts",
-      "officialSourceUrls": [
-        "https://www.argentina.gob.ar/interior/migraciones/turistas"
-      ],
-      "recommendedAction": "Change tourist-entry copy to 90 days plus one 90-day extension where applicable."
-    },
-    {
       "id": "review-date-missing:expatsargentina:country:cyprus",
       "severity": "low",
       "category": "review-date-missing",
@@ -8289,21 +7695,6 @@
       "sourcePath": "/Users/libertydesignstudio/dev/expatsargentina/my-app/lib/data/nationalities.ts",
       "officialSourceUrls": [],
       "recommendedAction": "Backfill `reviewDate` from the source module or an official verification pass."
-    },
-    {
-      "id": "official-mismatch:expatsargentina:country:cyprus",
-      "severity": "high",
-      "category": "official-mismatch",
-      "title": "Tourist stay duration conflicts with official guidance",
-      "detail": "Official tourist guidance states a 90-day stay that may be extended once for another 90 days, not a standard 180-day initial stay.",
-      "siteId": "expatsargentina",
-      "recordId": "expatsargentina:country:cyprus",
-      "canonicalKey": "country:cyprus",
-      "sourcePath": "/Users/libertydesignstudio/dev/expatsargentina/my-app/lib/data/nationalities.ts",
-      "officialSourceUrls": [
-        "https://www.argentina.gob.ar/interior/migraciones/turistas"
-      ],
-      "recommendedAction": "Change tourist-entry copy to 90 days plus one 90-day extension where applicable."
     },
     {
       "id": "review-date-missing:expatsargentina:country:czech-republic",
@@ -8335,21 +7726,6 @@
       "recommendedAction": "Reframe this as a visa-switch strategy unless you can cite a current official source confirming direct countability toward permanent residency."
     },
     {
-      "id": "official-mismatch:expatsargentina:country:czech-republic",
-      "severity": "high",
-      "category": "official-mismatch",
-      "title": "Tourist stay duration conflicts with official guidance",
-      "detail": "Official tourist guidance states a 90-day stay that may be extended once for another 90 days, not a standard 180-day initial stay.",
-      "siteId": "expatsargentina",
-      "recordId": "expatsargentina:country:czech-republic",
-      "canonicalKey": "country:czech-republic",
-      "sourcePath": "/Users/libertydesignstudio/dev/expatsargentina/my-app/lib/data/nationalities.ts",
-      "officialSourceUrls": [
-        "https://www.argentina.gob.ar/interior/migraciones/turistas"
-      ],
-      "recommendedAction": "Change tourist-entry copy to 90 days plus one 90-day extension where applicable."
-    },
-    {
       "id": "review-date-missing:expatsargentina:country:denmark",
       "severity": "low",
       "category": "review-date-missing",
@@ -8379,21 +7755,6 @@
       "recommendedAction": "Rewrite duration and renewal language to 180 days plus one 180-day extension unless a newer official resolution supersedes it."
     },
     {
-      "id": "official-mismatch:expatsargentina:country:denmark",
-      "severity": "high",
-      "category": "official-mismatch",
-      "title": "Tourist stay duration conflicts with official guidance",
-      "detail": "Official tourist guidance states a 90-day stay that may be extended once for another 90 days, not a standard 180-day initial stay.",
-      "siteId": "expatsargentina",
-      "recordId": "expatsargentina:country:denmark",
-      "canonicalKey": "country:denmark",
-      "sourcePath": "/Users/libertydesignstudio/dev/expatsargentina/my-app/lib/data/nationalities.ts",
-      "officialSourceUrls": [
-        "https://www.argentina.gob.ar/interior/migraciones/turistas"
-      ],
-      "recommendedAction": "Change tourist-entry copy to 90 days plus one 90-day extension where applicable."
-    },
-    {
       "id": "review-date-missing:expatsargentina:country:dominican-republic",
       "severity": "low",
       "category": "review-date-missing",
@@ -8405,21 +7766,6 @@
       "sourcePath": "/Users/libertydesignstudio/dev/expatsargentina/my-app/lib/data/nationalities.ts",
       "officialSourceUrls": [],
       "recommendedAction": "Backfill `reviewDate` from the source module or an official verification pass."
-    },
-    {
-      "id": "official-mismatch:expatsargentina:country:dominican-republic",
-      "severity": "high",
-      "category": "official-mismatch",
-      "title": "Tourist stay duration conflicts with official guidance",
-      "detail": "Official tourist guidance states a 90-day stay that may be extended once for another 90 days, not a standard 180-day initial stay.",
-      "siteId": "expatsargentina",
-      "recordId": "expatsargentina:country:dominican-republic",
-      "canonicalKey": "country:dominican-republic",
-      "sourcePath": "/Users/libertydesignstudio/dev/expatsargentina/my-app/lib/data/nationalities.ts",
-      "officialSourceUrls": [
-        "https://www.argentina.gob.ar/interior/migraciones/turistas"
-      ],
-      "recommendedAction": "Change tourist-entry copy to 90 days plus one 90-day extension where applicable."
     },
     {
       "id": "review-date-missing:expatsargentina:country:ecuador",
@@ -8464,21 +7810,6 @@
       "recommendedAction": "Backfill `reviewDate` from the source module or an official verification pass."
     },
     {
-      "id": "official-mismatch:expatsargentina:country:egypt",
-      "severity": "high",
-      "category": "official-mismatch",
-      "title": "Tourist stay duration conflicts with official guidance",
-      "detail": "Official tourist guidance states a 90-day stay that may be extended once for another 90 days, not a standard 180-day initial stay.",
-      "siteId": "expatsargentina",
-      "recordId": "expatsargentina:country:egypt",
-      "canonicalKey": "country:egypt",
-      "sourcePath": "/Users/libertydesignstudio/dev/expatsargentina/my-app/lib/data/nationalities.ts",
-      "officialSourceUrls": [
-        "https://www.argentina.gob.ar/interior/migraciones/turistas"
-      ],
-      "recommendedAction": "Change tourist-entry copy to 90 days plus one 90-day extension where applicable."
-    },
-    {
       "id": "review-date-missing:expatsargentina:country:el-salvador",
       "severity": "low",
       "category": "review-date-missing",
@@ -8490,21 +7821,6 @@
       "sourcePath": "/Users/libertydesignstudio/dev/expatsargentina/my-app/lib/data/nationalities.ts",
       "officialSourceUrls": [],
       "recommendedAction": "Backfill `reviewDate` from the source module or an official verification pass."
-    },
-    {
-      "id": "official-mismatch:expatsargentina:country:el-salvador",
-      "severity": "high",
-      "category": "official-mismatch",
-      "title": "Tourist stay duration conflicts with official guidance",
-      "detail": "Official tourist guidance states a 90-day stay that may be extended once for another 90 days, not a standard 180-day initial stay.",
-      "siteId": "expatsargentina",
-      "recordId": "expatsargentina:country:el-salvador",
-      "canonicalKey": "country:el-salvador",
-      "sourcePath": "/Users/libertydesignstudio/dev/expatsargentina/my-app/lib/data/nationalities.ts",
-      "officialSourceUrls": [
-        "https://www.argentina.gob.ar/interior/migraciones/turistas"
-      ],
-      "recommendedAction": "Change tourist-entry copy to 90 days plus one 90-day extension where applicable."
     },
     {
       "id": "review-date-missing:expatsargentina:country:estonia",
@@ -8520,21 +7836,6 @@
       "recommendedAction": "Backfill `reviewDate` from the source module or an official verification pass."
     },
     {
-      "id": "official-mismatch:expatsargentina:country:estonia",
-      "severity": "high",
-      "category": "official-mismatch",
-      "title": "Tourist stay duration conflicts with official guidance",
-      "detail": "Official tourist guidance states a 90-day stay that may be extended once for another 90 days, not a standard 180-day initial stay.",
-      "siteId": "expatsargentina",
-      "recordId": "expatsargentina:country:estonia",
-      "canonicalKey": "country:estonia",
-      "sourcePath": "/Users/libertydesignstudio/dev/expatsargentina/my-app/lib/data/nationalities.ts",
-      "officialSourceUrls": [
-        "https://www.argentina.gob.ar/interior/migraciones/turistas"
-      ],
-      "recommendedAction": "Change tourist-entry copy to 90 days plus one 90-day extension where applicable."
-    },
-    {
       "id": "review-date-missing:expatsargentina:country:fiji",
       "severity": "low",
       "category": "review-date-missing",
@@ -8548,21 +7849,6 @@
       "recommendedAction": "Backfill `reviewDate` from the source module or an official verification pass."
     },
     {
-      "id": "official-mismatch:expatsargentina:country:fiji",
-      "severity": "high",
-      "category": "official-mismatch",
-      "title": "Tourist stay duration conflicts with official guidance",
-      "detail": "Official tourist guidance states a 90-day stay that may be extended once for another 90 days, not a standard 180-day initial stay.",
-      "siteId": "expatsargentina",
-      "recordId": "expatsargentina:country:fiji",
-      "canonicalKey": "country:fiji",
-      "sourcePath": "/Users/libertydesignstudio/dev/expatsargentina/my-app/lib/data/nationalities.ts",
-      "officialSourceUrls": [
-        "https://www.argentina.gob.ar/interior/migraciones/turistas"
-      ],
-      "recommendedAction": "Change tourist-entry copy to 90 days plus one 90-day extension where applicable."
-    },
-    {
       "id": "review-date-missing:expatsargentina:country:finland",
       "severity": "low",
       "category": "review-date-missing",
@@ -8574,21 +7860,6 @@
       "sourcePath": "/Users/libertydesignstudio/dev/expatsargentina/my-app/lib/data/nationalities.ts",
       "officialSourceUrls": [],
       "recommendedAction": "Backfill `reviewDate` from the source module or an official verification pass."
-    },
-    {
-      "id": "official-mismatch:expatsargentina:country:finland",
-      "severity": "high",
-      "category": "official-mismatch",
-      "title": "Tourist stay duration conflicts with official guidance",
-      "detail": "Official tourist guidance states a 90-day stay that may be extended once for another 90 days, not a standard 180-day initial stay.",
-      "siteId": "expatsargentina",
-      "recordId": "expatsargentina:country:finland",
-      "canonicalKey": "country:finland",
-      "sourcePath": "/Users/libertydesignstudio/dev/expatsargentina/my-app/lib/data/nationalities.ts",
-      "officialSourceUrls": [
-        "https://www.argentina.gob.ar/interior/migraciones/turistas"
-      ],
-      "recommendedAction": "Change tourist-entry copy to 90 days plus one 90-day extension where applicable."
     },
     {
       "id": "review-date-missing:expatsargentina:country:france",
@@ -8620,21 +7891,6 @@
       "recommendedAction": "Reframe this as a visa-switch strategy unless you can cite a current official source confirming direct countability toward permanent residency."
     },
     {
-      "id": "official-mismatch:expatsargentina:country:france",
-      "severity": "high",
-      "category": "official-mismatch",
-      "title": "Tourist stay duration conflicts with official guidance",
-      "detail": "Official tourist guidance states a 90-day stay that may be extended once for another 90 days, not a standard 180-day initial stay.",
-      "siteId": "expatsargentina",
-      "recordId": "expatsargentina:country:france",
-      "canonicalKey": "country:france",
-      "sourcePath": "/Users/libertydesignstudio/dev/expatsargentina/my-app/lib/data/nationalities.ts",
-      "officialSourceUrls": [
-        "https://www.argentina.gob.ar/interior/migraciones/turistas"
-      ],
-      "recommendedAction": "Change tourist-entry copy to 90 days plus one 90-day extension where applicable."
-    },
-    {
       "id": "review-date-missing:expatsargentina:country:georgia",
       "severity": "low",
       "category": "review-date-missing",
@@ -8646,21 +7902,6 @@
       "sourcePath": "/Users/libertydesignstudio/dev/expatsargentina/my-app/lib/data/nationalities.ts",
       "officialSourceUrls": [],
       "recommendedAction": "Backfill `reviewDate` from the source module or an official verification pass."
-    },
-    {
-      "id": "official-mismatch:expatsargentina:country:georgia",
-      "severity": "high",
-      "category": "official-mismatch",
-      "title": "Tourist stay duration conflicts with official guidance",
-      "detail": "Official tourist guidance states a 90-day stay that may be extended once for another 90 days, not a standard 180-day initial stay.",
-      "siteId": "expatsargentina",
-      "recordId": "expatsargentina:country:georgia",
-      "canonicalKey": "country:georgia",
-      "sourcePath": "/Users/libertydesignstudio/dev/expatsargentina/my-app/lib/data/nationalities.ts",
-      "officialSourceUrls": [
-        "https://www.argentina.gob.ar/interior/migraciones/turistas"
-      ],
-      "recommendedAction": "Change tourist-entry copy to 90 days plus one 90-day extension where applicable."
     },
     {
       "id": "review-date-missing:expatsargentina:country:germany",
@@ -8692,21 +7933,6 @@
       "recommendedAction": "Reframe this as a visa-switch strategy unless you can cite a current official source confirming direct countability toward permanent residency."
     },
     {
-      "id": "official-mismatch:expatsargentina:country:germany",
-      "severity": "high",
-      "category": "official-mismatch",
-      "title": "Tourist stay duration conflicts with official guidance",
-      "detail": "Official tourist guidance states a 90-day stay that may be extended once for another 90 days, not a standard 180-day initial stay.",
-      "siteId": "expatsargentina",
-      "recordId": "expatsargentina:country:germany",
-      "canonicalKey": "country:germany",
-      "sourcePath": "/Users/libertydesignstudio/dev/expatsargentina/my-app/lib/data/nationalities.ts",
-      "officialSourceUrls": [
-        "https://www.argentina.gob.ar/interior/migraciones/turistas"
-      ],
-      "recommendedAction": "Change tourist-entry copy to 90 days plus one 90-day extension where applicable."
-    },
-    {
       "id": "review-date-missing:expatsargentina:country:greece",
       "severity": "low",
       "category": "review-date-missing",
@@ -8736,21 +7962,6 @@
       "recommendedAction": "Reframe this as a visa-switch strategy unless you can cite a current official source confirming direct countability toward permanent residency."
     },
     {
-      "id": "official-mismatch:expatsargentina:country:greece",
-      "severity": "high",
-      "category": "official-mismatch",
-      "title": "Tourist stay duration conflicts with official guidance",
-      "detail": "Official tourist guidance states a 90-day stay that may be extended once for another 90 days, not a standard 180-day initial stay.",
-      "siteId": "expatsargentina",
-      "recordId": "expatsargentina:country:greece",
-      "canonicalKey": "country:greece",
-      "sourcePath": "/Users/libertydesignstudio/dev/expatsargentina/my-app/lib/data/nationalities.ts",
-      "officialSourceUrls": [
-        "https://www.argentina.gob.ar/interior/migraciones/turistas"
-      ],
-      "recommendedAction": "Change tourist-entry copy to 90 days plus one 90-day extension where applicable."
-    },
-    {
       "id": "review-date-missing:expatsargentina:country:guatemala",
       "severity": "low",
       "category": "review-date-missing",
@@ -8762,21 +7973,6 @@
       "sourcePath": "/Users/libertydesignstudio/dev/expatsargentina/my-app/lib/data/nationalities.ts",
       "officialSourceUrls": [],
       "recommendedAction": "Backfill `reviewDate` from the source module or an official verification pass."
-    },
-    {
-      "id": "official-mismatch:expatsargentina:country:guatemala",
-      "severity": "high",
-      "category": "official-mismatch",
-      "title": "Tourist stay duration conflicts with official guidance",
-      "detail": "Official tourist guidance states a 90-day stay that may be extended once for another 90 days, not a standard 180-day initial stay.",
-      "siteId": "expatsargentina",
-      "recordId": "expatsargentina:country:guatemala",
-      "canonicalKey": "country:guatemala",
-      "sourcePath": "/Users/libertydesignstudio/dev/expatsargentina/my-app/lib/data/nationalities.ts",
-      "officialSourceUrls": [
-        "https://www.argentina.gob.ar/interior/migraciones/turistas"
-      ],
-      "recommendedAction": "Change tourist-entry copy to 90 days plus one 90-day extension where applicable."
     },
     {
       "id": "review-date-missing:expatsargentina:country:haiti",
@@ -8792,21 +7988,6 @@
       "recommendedAction": "Backfill `reviewDate` from the source module or an official verification pass."
     },
     {
-      "id": "official-mismatch:expatsargentina:country:haiti",
-      "severity": "high",
-      "category": "official-mismatch",
-      "title": "Tourist stay duration conflicts with official guidance",
-      "detail": "Official tourist guidance states a 90-day stay that may be extended once for another 90 days, not a standard 180-day initial stay.",
-      "siteId": "expatsargentina",
-      "recordId": "expatsargentina:country:haiti",
-      "canonicalKey": "country:haiti",
-      "sourcePath": "/Users/libertydesignstudio/dev/expatsargentina/my-app/lib/data/nationalities.ts",
-      "officialSourceUrls": [
-        "https://www.argentina.gob.ar/interior/migraciones/turistas"
-      ],
-      "recommendedAction": "Change tourist-entry copy to 90 days plus one 90-day extension where applicable."
-    },
-    {
       "id": "review-date-missing:expatsargentina:country:honduras",
       "severity": "low",
       "category": "review-date-missing",
@@ -8818,21 +7999,6 @@
       "sourcePath": "/Users/libertydesignstudio/dev/expatsargentina/my-app/lib/data/nationalities.ts",
       "officialSourceUrls": [],
       "recommendedAction": "Backfill `reviewDate` from the source module or an official verification pass."
-    },
-    {
-      "id": "official-mismatch:expatsargentina:country:honduras",
-      "severity": "high",
-      "category": "official-mismatch",
-      "title": "Tourist stay duration conflicts with official guidance",
-      "detail": "Official tourist guidance states a 90-day stay that may be extended once for another 90 days, not a standard 180-day initial stay.",
-      "siteId": "expatsargentina",
-      "recordId": "expatsargentina:country:honduras",
-      "canonicalKey": "country:honduras",
-      "sourcePath": "/Users/libertydesignstudio/dev/expatsargentina/my-app/lib/data/nationalities.ts",
-      "officialSourceUrls": [
-        "https://www.argentina.gob.ar/interior/migraciones/turistas"
-      ],
-      "recommendedAction": "Change tourist-entry copy to 90 days plus one 90-day extension where applicable."
     },
     {
       "id": "review-date-missing:expatsargentina:country:hungary",
@@ -8864,21 +8030,6 @@
       "recommendedAction": "Reframe this as a visa-switch strategy unless you can cite a current official source confirming direct countability toward permanent residency."
     },
     {
-      "id": "official-mismatch:expatsargentina:country:hungary",
-      "severity": "high",
-      "category": "official-mismatch",
-      "title": "Tourist stay duration conflicts with official guidance",
-      "detail": "Official tourist guidance states a 90-day stay that may be extended once for another 90 days, not a standard 180-day initial stay.",
-      "siteId": "expatsargentina",
-      "recordId": "expatsargentina:country:hungary",
-      "canonicalKey": "country:hungary",
-      "sourcePath": "/Users/libertydesignstudio/dev/expatsargentina/my-app/lib/data/nationalities.ts",
-      "officialSourceUrls": [
-        "https://www.argentina.gob.ar/interior/migraciones/turistas"
-      ],
-      "recommendedAction": "Change tourist-entry copy to 90 days plus one 90-day extension where applicable."
-    },
-    {
       "id": "review-date-missing:expatsargentina:country:iceland",
       "severity": "low",
       "category": "review-date-missing",
@@ -8890,21 +8041,6 @@
       "sourcePath": "/Users/libertydesignstudio/dev/expatsargentina/my-app/lib/data/nationalities.ts",
       "officialSourceUrls": [],
       "recommendedAction": "Backfill `reviewDate` from the source module or an official verification pass."
-    },
-    {
-      "id": "official-mismatch:expatsargentina:country:iceland",
-      "severity": "high",
-      "category": "official-mismatch",
-      "title": "Tourist stay duration conflicts with official guidance",
-      "detail": "Official tourist guidance states a 90-day stay that may be extended once for another 90 days, not a standard 180-day initial stay.",
-      "siteId": "expatsargentina",
-      "recordId": "expatsargentina:country:iceland",
-      "canonicalKey": "country:iceland",
-      "sourcePath": "/Users/libertydesignstudio/dev/expatsargentina/my-app/lib/data/nationalities.ts",
-      "officialSourceUrls": [
-        "https://www.argentina.gob.ar/interior/migraciones/turistas"
-      ],
-      "recommendedAction": "Change tourist-entry copy to 90 days plus one 90-day extension where applicable."
     },
     {
       "id": "review-date-missing:expatsargentina:country:india",
@@ -8920,21 +8056,6 @@
       "recommendedAction": "Backfill `reviewDate` from the source module or an official verification pass."
     },
     {
-      "id": "official-mismatch:expatsargentina:country:india",
-      "severity": "high",
-      "category": "official-mismatch",
-      "title": "Tourist stay duration conflicts with official guidance",
-      "detail": "Official tourist guidance states a 90-day stay that may be extended once for another 90 days, not a standard 180-day initial stay.",
-      "siteId": "expatsargentina",
-      "recordId": "expatsargentina:country:india",
-      "canonicalKey": "country:india",
-      "sourcePath": "/Users/libertydesignstudio/dev/expatsargentina/my-app/lib/data/nationalities.ts",
-      "officialSourceUrls": [
-        "https://www.argentina.gob.ar/interior/migraciones/turistas"
-      ],
-      "recommendedAction": "Change tourist-entry copy to 90 days plus one 90-day extension where applicable."
-    },
-    {
       "id": "review-date-missing:expatsargentina:country:indonesia",
       "severity": "low",
       "category": "review-date-missing",
@@ -8946,21 +8067,6 @@
       "sourcePath": "/Users/libertydesignstudio/dev/expatsargentina/my-app/lib/data/nationalities.ts",
       "officialSourceUrls": [],
       "recommendedAction": "Backfill `reviewDate` from the source module or an official verification pass."
-    },
-    {
-      "id": "official-mismatch:expatsargentina:country:indonesia",
-      "severity": "high",
-      "category": "official-mismatch",
-      "title": "Tourist stay duration conflicts with official guidance",
-      "detail": "Official tourist guidance states a 90-day stay that may be extended once for another 90 days, not a standard 180-day initial stay.",
-      "siteId": "expatsargentina",
-      "recordId": "expatsargentina:country:indonesia",
-      "canonicalKey": "country:indonesia",
-      "sourcePath": "/Users/libertydesignstudio/dev/expatsargentina/my-app/lib/data/nationalities.ts",
-      "officialSourceUrls": [
-        "https://www.argentina.gob.ar/interior/migraciones/turistas"
-      ],
-      "recommendedAction": "Change tourist-entry copy to 90 days plus one 90-day extension where applicable."
     },
     {
       "id": "review-date-missing:expatsargentina:country:iran",
@@ -8976,21 +8082,6 @@
       "recommendedAction": "Backfill `reviewDate` from the source module or an official verification pass."
     },
     {
-      "id": "official-mismatch:expatsargentina:country:iran",
-      "severity": "high",
-      "category": "official-mismatch",
-      "title": "Tourist stay duration conflicts with official guidance",
-      "detail": "Official tourist guidance states a 90-day stay that may be extended once for another 90 days, not a standard 180-day initial stay.",
-      "siteId": "expatsargentina",
-      "recordId": "expatsargentina:country:iran",
-      "canonicalKey": "country:iran",
-      "sourcePath": "/Users/libertydesignstudio/dev/expatsargentina/my-app/lib/data/nationalities.ts",
-      "officialSourceUrls": [
-        "https://www.argentina.gob.ar/interior/migraciones/turistas"
-      ],
-      "recommendedAction": "Change tourist-entry copy to 90 days plus one 90-day extension where applicable."
-    },
-    {
       "id": "review-date-missing:expatsargentina:country:iraq",
       "severity": "low",
       "category": "review-date-missing",
@@ -9002,21 +8093,6 @@
       "sourcePath": "/Users/libertydesignstudio/dev/expatsargentina/my-app/lib/data/nationalities.ts",
       "officialSourceUrls": [],
       "recommendedAction": "Backfill `reviewDate` from the source module or an official verification pass."
-    },
-    {
-      "id": "official-mismatch:expatsargentina:country:iraq",
-      "severity": "high",
-      "category": "official-mismatch",
-      "title": "Tourist stay duration conflicts with official guidance",
-      "detail": "Official tourist guidance states a 90-day stay that may be extended once for another 90 days, not a standard 180-day initial stay.",
-      "siteId": "expatsargentina",
-      "recordId": "expatsargentina:country:iraq",
-      "canonicalKey": "country:iraq",
-      "sourcePath": "/Users/libertydesignstudio/dev/expatsargentina/my-app/lib/data/nationalities.ts",
-      "officialSourceUrls": [
-        "https://www.argentina.gob.ar/interior/migraciones/turistas"
-      ],
-      "recommendedAction": "Change tourist-entry copy to 90 days plus one 90-day extension where applicable."
     },
     {
       "id": "review-date-missing:expatsargentina:country:ireland",
@@ -9077,21 +8153,6 @@
       "recommendedAction": "Reframe this as a visa-switch strategy unless you can cite a current official source confirming direct countability toward permanent residency."
     },
     {
-      "id": "official-mismatch:expatsargentina:country:israel",
-      "severity": "high",
-      "category": "official-mismatch",
-      "title": "Tourist stay duration conflicts with official guidance",
-      "detail": "Official tourist guidance states a 90-day stay that may be extended once for another 90 days, not a standard 180-day initial stay.",
-      "siteId": "expatsargentina",
-      "recordId": "expatsargentina:country:israel",
-      "canonicalKey": "country:israel",
-      "sourcePath": "/Users/libertydesignstudio/dev/expatsargentina/my-app/lib/data/nationalities.ts",
-      "officialSourceUrls": [
-        "https://www.argentina.gob.ar/interior/migraciones/turistas"
-      ],
-      "recommendedAction": "Change tourist-entry copy to 90 days plus one 90-day extension where applicable."
-    },
-    {
       "id": "review-date-missing:expatsargentina:country:italy",
       "severity": "low",
       "category": "review-date-missing",
@@ -9132,21 +8193,6 @@
       "sourcePath": "/Users/libertydesignstudio/dev/expatsargentina/my-app/lib/data/nationalities.ts",
       "officialSourceUrls": [],
       "recommendedAction": "Backfill `reviewDate` from the source module or an official verification pass."
-    },
-    {
-      "id": "official-mismatch:expatsargentina:country:jamaica",
-      "severity": "high",
-      "category": "official-mismatch",
-      "title": "Tourist stay duration conflicts with official guidance",
-      "detail": "Official tourist guidance states a 90-day stay that may be extended once for another 90 days, not a standard 180-day initial stay.",
-      "siteId": "expatsargentina",
-      "recordId": "expatsargentina:country:jamaica",
-      "canonicalKey": "country:jamaica",
-      "sourcePath": "/Users/libertydesignstudio/dev/expatsargentina/my-app/lib/data/nationalities.ts",
-      "officialSourceUrls": [
-        "https://www.argentina.gob.ar/interior/migraciones/turistas"
-      ],
-      "recommendedAction": "Change tourist-entry copy to 90 days plus one 90-day extension where applicable."
     },
     {
       "id": "review-date-missing:expatsargentina:country:japan",
@@ -9191,21 +8237,6 @@
       "recommendedAction": "Backfill `reviewDate` from the source module or an official verification pass."
     },
     {
-      "id": "official-mismatch:expatsargentina:country:jordan",
-      "severity": "high",
-      "category": "official-mismatch",
-      "title": "Tourist stay duration conflicts with official guidance",
-      "detail": "Official tourist guidance states a 90-day stay that may be extended once for another 90 days, not a standard 180-day initial stay.",
-      "siteId": "expatsargentina",
-      "recordId": "expatsargentina:country:jordan",
-      "canonicalKey": "country:jordan",
-      "sourcePath": "/Users/libertydesignstudio/dev/expatsargentina/my-app/lib/data/nationalities.ts",
-      "officialSourceUrls": [
-        "https://www.argentina.gob.ar/interior/migraciones/turistas"
-      ],
-      "recommendedAction": "Change tourist-entry copy to 90 days plus one 90-day extension where applicable."
-    },
-    {
       "id": "review-date-missing:expatsargentina:country:kazakhstan",
       "severity": "low",
       "category": "review-date-missing",
@@ -9217,21 +8248,6 @@
       "sourcePath": "/Users/libertydesignstudio/dev/expatsargentina/my-app/lib/data/nationalities.ts",
       "officialSourceUrls": [],
       "recommendedAction": "Backfill `reviewDate` from the source module or an official verification pass."
-    },
-    {
-      "id": "official-mismatch:expatsargentina:country:kazakhstan",
-      "severity": "high",
-      "category": "official-mismatch",
-      "title": "Tourist stay duration conflicts with official guidance",
-      "detail": "Official tourist guidance states a 90-day stay that may be extended once for another 90 days, not a standard 180-day initial stay.",
-      "siteId": "expatsargentina",
-      "recordId": "expatsargentina:country:kazakhstan",
-      "canonicalKey": "country:kazakhstan",
-      "sourcePath": "/Users/libertydesignstudio/dev/expatsargentina/my-app/lib/data/nationalities.ts",
-      "officialSourceUrls": [
-        "https://www.argentina.gob.ar/interior/migraciones/turistas"
-      ],
-      "recommendedAction": "Change tourist-entry copy to 90 days plus one 90-day extension where applicable."
     },
     {
       "id": "review-date-missing:expatsargentina:country:kenya",
@@ -9247,21 +8263,6 @@
       "recommendedAction": "Backfill `reviewDate` from the source module or an official verification pass."
     },
     {
-      "id": "official-mismatch:expatsargentina:country:kenya",
-      "severity": "high",
-      "category": "official-mismatch",
-      "title": "Tourist stay duration conflicts with official guidance",
-      "detail": "Official tourist guidance states a 90-day stay that may be extended once for another 90 days, not a standard 180-day initial stay.",
-      "siteId": "expatsargentina",
-      "recordId": "expatsargentina:country:kenya",
-      "canonicalKey": "country:kenya",
-      "sourcePath": "/Users/libertydesignstudio/dev/expatsargentina/my-app/lib/data/nationalities.ts",
-      "officialSourceUrls": [
-        "https://www.argentina.gob.ar/interior/migraciones/turistas"
-      ],
-      "recommendedAction": "Change tourist-entry copy to 90 days plus one 90-day extension where applicable."
-    },
-    {
       "id": "review-date-missing:expatsargentina:country:kuwait",
       "severity": "low",
       "category": "review-date-missing",
@@ -9273,21 +8274,6 @@
       "sourcePath": "/Users/libertydesignstudio/dev/expatsargentina/my-app/lib/data/nationalities.ts",
       "officialSourceUrls": [],
       "recommendedAction": "Backfill `reviewDate` from the source module or an official verification pass."
-    },
-    {
-      "id": "official-mismatch:expatsargentina:country:kuwait",
-      "severity": "high",
-      "category": "official-mismatch",
-      "title": "Tourist stay duration conflicts with official guidance",
-      "detail": "Official tourist guidance states a 90-day stay that may be extended once for another 90 days, not a standard 180-day initial stay.",
-      "siteId": "expatsargentina",
-      "recordId": "expatsargentina:country:kuwait",
-      "canonicalKey": "country:kuwait",
-      "sourcePath": "/Users/libertydesignstudio/dev/expatsargentina/my-app/lib/data/nationalities.ts",
-      "officialSourceUrls": [
-        "https://www.argentina.gob.ar/interior/migraciones/turistas"
-      ],
-      "recommendedAction": "Change tourist-entry copy to 90 days plus one 90-day extension where applicable."
     },
     {
       "id": "review-date-missing:expatsargentina:country:kyrgyzstan",
@@ -9303,21 +8289,6 @@
       "recommendedAction": "Backfill `reviewDate` from the source module or an official verification pass."
     },
     {
-      "id": "official-mismatch:expatsargentina:country:kyrgyzstan",
-      "severity": "high",
-      "category": "official-mismatch",
-      "title": "Tourist stay duration conflicts with official guidance",
-      "detail": "Official tourist guidance states a 90-day stay that may be extended once for another 90 days, not a standard 180-day initial stay.",
-      "siteId": "expatsargentina",
-      "recordId": "expatsargentina:country:kyrgyzstan",
-      "canonicalKey": "country:kyrgyzstan",
-      "sourcePath": "/Users/libertydesignstudio/dev/expatsargentina/my-app/lib/data/nationalities.ts",
-      "officialSourceUrls": [
-        "https://www.argentina.gob.ar/interior/migraciones/turistas"
-      ],
-      "recommendedAction": "Change tourist-entry copy to 90 days plus one 90-day extension where applicable."
-    },
-    {
       "id": "review-date-missing:expatsargentina:country:laos",
       "severity": "low",
       "category": "review-date-missing",
@@ -9329,21 +8300,6 @@
       "sourcePath": "/Users/libertydesignstudio/dev/expatsargentina/my-app/lib/data/nationalities.ts",
       "officialSourceUrls": [],
       "recommendedAction": "Backfill `reviewDate` from the source module or an official verification pass."
-    },
-    {
-      "id": "official-mismatch:expatsargentina:country:laos",
-      "severity": "high",
-      "category": "official-mismatch",
-      "title": "Tourist stay duration conflicts with official guidance",
-      "detail": "Official tourist guidance states a 90-day stay that may be extended once for another 90 days, not a standard 180-day initial stay.",
-      "siteId": "expatsargentina",
-      "recordId": "expatsargentina:country:laos",
-      "canonicalKey": "country:laos",
-      "sourcePath": "/Users/libertydesignstudio/dev/expatsargentina/my-app/lib/data/nationalities.ts",
-      "officialSourceUrls": [
-        "https://www.argentina.gob.ar/interior/migraciones/turistas"
-      ],
-      "recommendedAction": "Change tourist-entry copy to 90 days plus one 90-day extension where applicable."
     },
     {
       "id": "review-date-missing:expatsargentina:country:latvia",
@@ -9359,21 +8315,6 @@
       "recommendedAction": "Backfill `reviewDate` from the source module or an official verification pass."
     },
     {
-      "id": "official-mismatch:expatsargentina:country:latvia",
-      "severity": "high",
-      "category": "official-mismatch",
-      "title": "Tourist stay duration conflicts with official guidance",
-      "detail": "Official tourist guidance states a 90-day stay that may be extended once for another 90 days, not a standard 180-day initial stay.",
-      "siteId": "expatsargentina",
-      "recordId": "expatsargentina:country:latvia",
-      "canonicalKey": "country:latvia",
-      "sourcePath": "/Users/libertydesignstudio/dev/expatsargentina/my-app/lib/data/nationalities.ts",
-      "officialSourceUrls": [
-        "https://www.argentina.gob.ar/interior/migraciones/turistas"
-      ],
-      "recommendedAction": "Change tourist-entry copy to 90 days plus one 90-day extension where applicable."
-    },
-    {
       "id": "review-date-missing:expatsargentina:country:lebanon",
       "severity": "low",
       "category": "review-date-missing",
@@ -9385,21 +8326,6 @@
       "sourcePath": "/Users/libertydesignstudio/dev/expatsargentina/my-app/lib/data/nationalities.ts",
       "officialSourceUrls": [],
       "recommendedAction": "Backfill `reviewDate` from the source module or an official verification pass."
-    },
-    {
-      "id": "official-mismatch:expatsargentina:country:lebanon",
-      "severity": "high",
-      "category": "official-mismatch",
-      "title": "Tourist stay duration conflicts with official guidance",
-      "detail": "Official tourist guidance states a 90-day stay that may be extended once for another 90 days, not a standard 180-day initial stay.",
-      "siteId": "expatsargentina",
-      "recordId": "expatsargentina:country:lebanon",
-      "canonicalKey": "country:lebanon",
-      "sourcePath": "/Users/libertydesignstudio/dev/expatsargentina/my-app/lib/data/nationalities.ts",
-      "officialSourceUrls": [
-        "https://www.argentina.gob.ar/interior/migraciones/turistas"
-      ],
-      "recommendedAction": "Change tourist-entry copy to 90 days plus one 90-day extension where applicable."
     },
     {
       "id": "review-date-missing:expatsargentina:country:lithuania",
@@ -9415,21 +8341,6 @@
       "recommendedAction": "Backfill `reviewDate` from the source module or an official verification pass."
     },
     {
-      "id": "official-mismatch:expatsargentina:country:lithuania",
-      "severity": "high",
-      "category": "official-mismatch",
-      "title": "Tourist stay duration conflicts with official guidance",
-      "detail": "Official tourist guidance states a 90-day stay that may be extended once for another 90 days, not a standard 180-day initial stay.",
-      "siteId": "expatsargentina",
-      "recordId": "expatsargentina:country:lithuania",
-      "canonicalKey": "country:lithuania",
-      "sourcePath": "/Users/libertydesignstudio/dev/expatsargentina/my-app/lib/data/nationalities.ts",
-      "officialSourceUrls": [
-        "https://www.argentina.gob.ar/interior/migraciones/turistas"
-      ],
-      "recommendedAction": "Change tourist-entry copy to 90 days plus one 90-day extension where applicable."
-    },
-    {
       "id": "review-date-missing:expatsargentina:country:luxembourg",
       "severity": "low",
       "category": "review-date-missing",
@@ -9441,21 +8352,6 @@
       "sourcePath": "/Users/libertydesignstudio/dev/expatsargentina/my-app/lib/data/nationalities.ts",
       "officialSourceUrls": [],
       "recommendedAction": "Backfill `reviewDate` from the source module or an official verification pass."
-    },
-    {
-      "id": "official-mismatch:expatsargentina:country:luxembourg",
-      "severity": "high",
-      "category": "official-mismatch",
-      "title": "Tourist stay duration conflicts with official guidance",
-      "detail": "Official tourist guidance states a 90-day stay that may be extended once for another 90 days, not a standard 180-day initial stay.",
-      "siteId": "expatsargentina",
-      "recordId": "expatsargentina:country:luxembourg",
-      "canonicalKey": "country:luxembourg",
-      "sourcePath": "/Users/libertydesignstudio/dev/expatsargentina/my-app/lib/data/nationalities.ts",
-      "officialSourceUrls": [
-        "https://www.argentina.gob.ar/interior/migraciones/turistas"
-      ],
-      "recommendedAction": "Change tourist-entry copy to 90 days plus one 90-day extension where applicable."
     },
     {
       "id": "review-date-missing:expatsargentina:country:malaysia",
@@ -9471,21 +8367,6 @@
       "recommendedAction": "Backfill `reviewDate` from the source module or an official verification pass."
     },
     {
-      "id": "official-mismatch:expatsargentina:country:malaysia",
-      "severity": "high",
-      "category": "official-mismatch",
-      "title": "Tourist stay duration conflicts with official guidance",
-      "detail": "Official tourist guidance states a 90-day stay that may be extended once for another 90 days, not a standard 180-day initial stay.",
-      "siteId": "expatsargentina",
-      "recordId": "expatsargentina:country:malaysia",
-      "canonicalKey": "country:malaysia",
-      "sourcePath": "/Users/libertydesignstudio/dev/expatsargentina/my-app/lib/data/nationalities.ts",
-      "officialSourceUrls": [
-        "https://www.argentina.gob.ar/interior/migraciones/turistas"
-      ],
-      "recommendedAction": "Change tourist-entry copy to 90 days plus one 90-day extension where applicable."
-    },
-    {
       "id": "review-date-missing:expatsargentina:country:maldives",
       "severity": "low",
       "category": "review-date-missing",
@@ -9499,21 +8380,6 @@
       "recommendedAction": "Backfill `reviewDate` from the source module or an official verification pass."
     },
     {
-      "id": "official-mismatch:expatsargentina:country:maldives",
-      "severity": "high",
-      "category": "official-mismatch",
-      "title": "Tourist stay duration conflicts with official guidance",
-      "detail": "Official tourist guidance states a 90-day stay that may be extended once for another 90 days, not a standard 180-day initial stay.",
-      "siteId": "expatsargentina",
-      "recordId": "expatsargentina:country:maldives",
-      "canonicalKey": "country:maldives",
-      "sourcePath": "/Users/libertydesignstudio/dev/expatsargentina/my-app/lib/data/nationalities.ts",
-      "officialSourceUrls": [
-        "https://www.argentina.gob.ar/interior/migraciones/turistas"
-      ],
-      "recommendedAction": "Change tourist-entry copy to 90 days plus one 90-day extension where applicable."
-    },
-    {
       "id": "review-date-missing:expatsargentina:country:malta",
       "severity": "low",
       "category": "review-date-missing",
@@ -9525,21 +8391,6 @@
       "sourcePath": "/Users/libertydesignstudio/dev/expatsargentina/my-app/lib/data/nationalities.ts",
       "officialSourceUrls": [],
       "recommendedAction": "Backfill `reviewDate` from the source module or an official verification pass."
-    },
-    {
-      "id": "official-mismatch:expatsargentina:country:malta",
-      "severity": "high",
-      "category": "official-mismatch",
-      "title": "Tourist stay duration conflicts with official guidance",
-      "detail": "Official tourist guidance states a 90-day stay that may be extended once for another 90 days, not a standard 180-day initial stay.",
-      "siteId": "expatsargentina",
-      "recordId": "expatsargentina:country:malta",
-      "canonicalKey": "country:malta",
-      "sourcePath": "/Users/libertydesignstudio/dev/expatsargentina/my-app/lib/data/nationalities.ts",
-      "officialSourceUrls": [
-        "https://www.argentina.gob.ar/interior/migraciones/turistas"
-      ],
-      "recommendedAction": "Change tourist-entry copy to 90 days plus one 90-day extension where applicable."
     },
     {
       "id": "review-date-missing:expatsargentina:country:mexico",
@@ -9571,21 +8422,6 @@
       "recommendedAction": "Reframe this as a visa-switch strategy unless you can cite a current official source confirming direct countability toward permanent residency."
     },
     {
-      "id": "official-mismatch:expatsargentina:country:mexico",
-      "severity": "high",
-      "category": "official-mismatch",
-      "title": "Tourist stay duration conflicts with official guidance",
-      "detail": "Official tourist guidance states a 90-day stay that may be extended once for another 90 days, not a standard 180-day initial stay.",
-      "siteId": "expatsargentina",
-      "recordId": "expatsargentina:country:mexico",
-      "canonicalKey": "country:mexico",
-      "sourcePath": "/Users/libertydesignstudio/dev/expatsargentina/my-app/lib/data/nationalities.ts",
-      "officialSourceUrls": [
-        "https://www.argentina.gob.ar/interior/migraciones/turistas"
-      ],
-      "recommendedAction": "Change tourist-entry copy to 90 days plus one 90-day extension where applicable."
-    },
-    {
       "id": "review-date-missing:expatsargentina:country:moldova",
       "severity": "low",
       "category": "review-date-missing",
@@ -9597,21 +8433,6 @@
       "sourcePath": "/Users/libertydesignstudio/dev/expatsargentina/my-app/lib/data/nationalities.ts",
       "officialSourceUrls": [],
       "recommendedAction": "Backfill `reviewDate` from the source module or an official verification pass."
-    },
-    {
-      "id": "official-mismatch:expatsargentina:country:moldova",
-      "severity": "high",
-      "category": "official-mismatch",
-      "title": "Tourist stay duration conflicts with official guidance",
-      "detail": "Official tourist guidance states a 90-day stay that may be extended once for another 90 days, not a standard 180-day initial stay.",
-      "siteId": "expatsargentina",
-      "recordId": "expatsargentina:country:moldova",
-      "canonicalKey": "country:moldova",
-      "sourcePath": "/Users/libertydesignstudio/dev/expatsargentina/my-app/lib/data/nationalities.ts",
-      "officialSourceUrls": [
-        "https://www.argentina.gob.ar/interior/migraciones/turistas"
-      ],
-      "recommendedAction": "Change tourist-entry copy to 90 days plus one 90-day extension where applicable."
     },
     {
       "id": "review-date-missing:expatsargentina:country:mongolia",
@@ -9627,21 +8448,6 @@
       "recommendedAction": "Backfill `reviewDate` from the source module or an official verification pass."
     },
     {
-      "id": "official-mismatch:expatsargentina:country:mongolia",
-      "severity": "high",
-      "category": "official-mismatch",
-      "title": "Tourist stay duration conflicts with official guidance",
-      "detail": "Official tourist guidance states a 90-day stay that may be extended once for another 90 days, not a standard 180-day initial stay.",
-      "siteId": "expatsargentina",
-      "recordId": "expatsargentina:country:mongolia",
-      "canonicalKey": "country:mongolia",
-      "sourcePath": "/Users/libertydesignstudio/dev/expatsargentina/my-app/lib/data/nationalities.ts",
-      "officialSourceUrls": [
-        "https://www.argentina.gob.ar/interior/migraciones/turistas"
-      ],
-      "recommendedAction": "Change tourist-entry copy to 90 days plus one 90-day extension where applicable."
-    },
-    {
       "id": "review-date-missing:expatsargentina:country:montenegro",
       "severity": "low",
       "category": "review-date-missing",
@@ -9653,21 +8459,6 @@
       "sourcePath": "/Users/libertydesignstudio/dev/expatsargentina/my-app/lib/data/nationalities.ts",
       "officialSourceUrls": [],
       "recommendedAction": "Backfill `reviewDate` from the source module or an official verification pass."
-    },
-    {
-      "id": "official-mismatch:expatsargentina:country:montenegro",
-      "severity": "high",
-      "category": "official-mismatch",
-      "title": "Tourist stay duration conflicts with official guidance",
-      "detail": "Official tourist guidance states a 90-day stay that may be extended once for another 90 days, not a standard 180-day initial stay.",
-      "siteId": "expatsargentina",
-      "recordId": "expatsargentina:country:montenegro",
-      "canonicalKey": "country:montenegro",
-      "sourcePath": "/Users/libertydesignstudio/dev/expatsargentina/my-app/lib/data/nationalities.ts",
-      "officialSourceUrls": [
-        "https://www.argentina.gob.ar/interior/migraciones/turistas"
-      ],
-      "recommendedAction": "Change tourist-entry copy to 90 days plus one 90-day extension where applicable."
     },
     {
       "id": "review-date-missing:expatsargentina:country:myanmar",
@@ -9683,21 +8474,6 @@
       "recommendedAction": "Backfill `reviewDate` from the source module or an official verification pass."
     },
     {
-      "id": "official-mismatch:expatsargentina:country:myanmar",
-      "severity": "high",
-      "category": "official-mismatch",
-      "title": "Tourist stay duration conflicts with official guidance",
-      "detail": "Official tourist guidance states a 90-day stay that may be extended once for another 90 days, not a standard 180-day initial stay.",
-      "siteId": "expatsargentina",
-      "recordId": "expatsargentina:country:myanmar",
-      "canonicalKey": "country:myanmar",
-      "sourcePath": "/Users/libertydesignstudio/dev/expatsargentina/my-app/lib/data/nationalities.ts",
-      "officialSourceUrls": [
-        "https://www.argentina.gob.ar/interior/migraciones/turistas"
-      ],
-      "recommendedAction": "Change tourist-entry copy to 90 days plus one 90-day extension where applicable."
-    },
-    {
       "id": "review-date-missing:expatsargentina:country:nepal",
       "severity": "low",
       "category": "review-date-missing",
@@ -9709,21 +8485,6 @@
       "sourcePath": "/Users/libertydesignstudio/dev/expatsargentina/my-app/lib/data/nationalities.ts",
       "officialSourceUrls": [],
       "recommendedAction": "Backfill `reviewDate` from the source module or an official verification pass."
-    },
-    {
-      "id": "official-mismatch:expatsargentina:country:nepal",
-      "severity": "high",
-      "category": "official-mismatch",
-      "title": "Tourist stay duration conflicts with official guidance",
-      "detail": "Official tourist guidance states a 90-day stay that may be extended once for another 90 days, not a standard 180-day initial stay.",
-      "siteId": "expatsargentina",
-      "recordId": "expatsargentina:country:nepal",
-      "canonicalKey": "country:nepal",
-      "sourcePath": "/Users/libertydesignstudio/dev/expatsargentina/my-app/lib/data/nationalities.ts",
-      "officialSourceUrls": [
-        "https://www.argentina.gob.ar/interior/migraciones/turistas"
-      ],
-      "recommendedAction": "Change tourist-entry copy to 90 days plus one 90-day extension where applicable."
     },
     {
       "id": "review-date-missing:expatsargentina:country:netherlands",
@@ -9755,21 +8516,6 @@
       "recommendedAction": "Reframe this as a visa-switch strategy unless you can cite a current official source confirming direct countability toward permanent residency."
     },
     {
-      "id": "official-mismatch:expatsargentina:country:netherlands",
-      "severity": "high",
-      "category": "official-mismatch",
-      "title": "Tourist stay duration conflicts with official guidance",
-      "detail": "Official tourist guidance states a 90-day stay that may be extended once for another 90 days, not a standard 180-day initial stay.",
-      "siteId": "expatsargentina",
-      "recordId": "expatsargentina:country:netherlands",
-      "canonicalKey": "country:netherlands",
-      "sourcePath": "/Users/libertydesignstudio/dev/expatsargentina/my-app/lib/data/nationalities.ts",
-      "officialSourceUrls": [
-        "https://www.argentina.gob.ar/interior/migraciones/turistas"
-      ],
-      "recommendedAction": "Change tourist-entry copy to 90 days plus one 90-day extension where applicable."
-    },
-    {
       "id": "review-date-missing:expatsargentina:country:new-zealand",
       "severity": "low",
       "category": "review-date-missing",
@@ -9799,21 +8545,6 @@
       "recommendedAction": "Reframe this as a visa-switch strategy unless you can cite a current official source confirming direct countability toward permanent residency."
     },
     {
-      "id": "official-mismatch:expatsargentina:country:new-zealand",
-      "severity": "high",
-      "category": "official-mismatch",
-      "title": "Tourist stay duration conflicts with official guidance",
-      "detail": "Official tourist guidance states a 90-day stay that may be extended once for another 90 days, not a standard 180-day initial stay.",
-      "siteId": "expatsargentina",
-      "recordId": "expatsargentina:country:new-zealand",
-      "canonicalKey": "country:new-zealand",
-      "sourcePath": "/Users/libertydesignstudio/dev/expatsargentina/my-app/lib/data/nationalities.ts",
-      "officialSourceUrls": [
-        "https://www.argentina.gob.ar/interior/migraciones/turistas"
-      ],
-      "recommendedAction": "Change tourist-entry copy to 90 days plus one 90-day extension where applicable."
-    },
-    {
       "id": "review-date-missing:expatsargentina:country:nicaragua",
       "severity": "low",
       "category": "review-date-missing",
@@ -9825,21 +8556,6 @@
       "sourcePath": "/Users/libertydesignstudio/dev/expatsargentina/my-app/lib/data/nationalities.ts",
       "officialSourceUrls": [],
       "recommendedAction": "Backfill `reviewDate` from the source module or an official verification pass."
-    },
-    {
-      "id": "official-mismatch:expatsargentina:country:nicaragua",
-      "severity": "high",
-      "category": "official-mismatch",
-      "title": "Tourist stay duration conflicts with official guidance",
-      "detail": "Official tourist guidance states a 90-day stay that may be extended once for another 90 days, not a standard 180-day initial stay.",
-      "siteId": "expatsargentina",
-      "recordId": "expatsargentina:country:nicaragua",
-      "canonicalKey": "country:nicaragua",
-      "sourcePath": "/Users/libertydesignstudio/dev/expatsargentina/my-app/lib/data/nationalities.ts",
-      "officialSourceUrls": [
-        "https://www.argentina.gob.ar/interior/migraciones/turistas"
-      ],
-      "recommendedAction": "Change tourist-entry copy to 90 days plus one 90-day extension where applicable."
     },
     {
       "id": "review-date-missing:expatsargentina:country:nigeria",
@@ -9855,21 +8571,6 @@
       "recommendedAction": "Backfill `reviewDate` from the source module or an official verification pass."
     },
     {
-      "id": "official-mismatch:expatsargentina:country:nigeria",
-      "severity": "high",
-      "category": "official-mismatch",
-      "title": "Tourist stay duration conflicts with official guidance",
-      "detail": "Official tourist guidance states a 90-day stay that may be extended once for another 90 days, not a standard 180-day initial stay.",
-      "siteId": "expatsargentina",
-      "recordId": "expatsargentina:country:nigeria",
-      "canonicalKey": "country:nigeria",
-      "sourcePath": "/Users/libertydesignstudio/dev/expatsargentina/my-app/lib/data/nationalities.ts",
-      "officialSourceUrls": [
-        "https://www.argentina.gob.ar/interior/migraciones/turistas"
-      ],
-      "recommendedAction": "Change tourist-entry copy to 90 days plus one 90-day extension where applicable."
-    },
-    {
       "id": "review-date-missing:expatsargentina:country:north-macedonia",
       "severity": "low",
       "category": "review-date-missing",
@@ -9881,21 +8582,6 @@
       "sourcePath": "/Users/libertydesignstudio/dev/expatsargentina/my-app/lib/data/nationalities.ts",
       "officialSourceUrls": [],
       "recommendedAction": "Backfill `reviewDate` from the source module or an official verification pass."
-    },
-    {
-      "id": "official-mismatch:expatsargentina:country:north-macedonia",
-      "severity": "high",
-      "category": "official-mismatch",
-      "title": "Tourist stay duration conflicts with official guidance",
-      "detail": "Official tourist guidance states a 90-day stay that may be extended once for another 90 days, not a standard 180-day initial stay.",
-      "siteId": "expatsargentina",
-      "recordId": "expatsargentina:country:north-macedonia",
-      "canonicalKey": "country:north-macedonia",
-      "sourcePath": "/Users/libertydesignstudio/dev/expatsargentina/my-app/lib/data/nationalities.ts",
-      "officialSourceUrls": [
-        "https://www.argentina.gob.ar/interior/migraciones/turistas"
-      ],
-      "recommendedAction": "Change tourist-entry copy to 90 days plus one 90-day extension where applicable."
     },
     {
       "id": "review-date-missing:expatsargentina:country:norway",
@@ -9911,21 +8597,6 @@
       "recommendedAction": "Backfill `reviewDate` from the source module or an official verification pass."
     },
     {
-      "id": "official-mismatch:expatsargentina:country:norway",
-      "severity": "high",
-      "category": "official-mismatch",
-      "title": "Tourist stay duration conflicts with official guidance",
-      "detail": "Official tourist guidance states a 90-day stay that may be extended once for another 90 days, not a standard 180-day initial stay.",
-      "siteId": "expatsargentina",
-      "recordId": "expatsargentina:country:norway",
-      "canonicalKey": "country:norway",
-      "sourcePath": "/Users/libertydesignstudio/dev/expatsargentina/my-app/lib/data/nationalities.ts",
-      "officialSourceUrls": [
-        "https://www.argentina.gob.ar/interior/migraciones/turistas"
-      ],
-      "recommendedAction": "Change tourist-entry copy to 90 days plus one 90-day extension where applicable."
-    },
-    {
       "id": "review-date-missing:expatsargentina:country:pakistan",
       "severity": "low",
       "category": "review-date-missing",
@@ -9939,21 +8610,6 @@
       "recommendedAction": "Backfill `reviewDate` from the source module or an official verification pass."
     },
     {
-      "id": "official-mismatch:expatsargentina:country:pakistan",
-      "severity": "high",
-      "category": "official-mismatch",
-      "title": "Tourist stay duration conflicts with official guidance",
-      "detail": "Official tourist guidance states a 90-day stay that may be extended once for another 90 days, not a standard 180-day initial stay.",
-      "siteId": "expatsargentina",
-      "recordId": "expatsargentina:country:pakistan",
-      "canonicalKey": "country:pakistan",
-      "sourcePath": "/Users/libertydesignstudio/dev/expatsargentina/my-app/lib/data/nationalities.ts",
-      "officialSourceUrls": [
-        "https://www.argentina.gob.ar/interior/migraciones/turistas"
-      ],
-      "recommendedAction": "Change tourist-entry copy to 90 days plus one 90-day extension where applicable."
-    },
-    {
       "id": "review-date-missing:expatsargentina:country:papua-new-guinea",
       "severity": "low",
       "category": "review-date-missing",
@@ -9965,21 +8621,6 @@
       "sourcePath": "/Users/libertydesignstudio/dev/expatsargentina/my-app/lib/data/nationalities.ts",
       "officialSourceUrls": [],
       "recommendedAction": "Backfill `reviewDate` from the source module or an official verification pass."
-    },
-    {
-      "id": "official-mismatch:expatsargentina:country:papua-new-guinea",
-      "severity": "high",
-      "category": "official-mismatch",
-      "title": "Tourist stay duration conflicts with official guidance",
-      "detail": "Official tourist guidance states a 90-day stay that may be extended once for another 90 days, not a standard 180-day initial stay.",
-      "siteId": "expatsargentina",
-      "recordId": "expatsargentina:country:papua-new-guinea",
-      "canonicalKey": "country:papua-new-guinea",
-      "sourcePath": "/Users/libertydesignstudio/dev/expatsargentina/my-app/lib/data/nationalities.ts",
-      "officialSourceUrls": [
-        "https://www.argentina.gob.ar/interior/migraciones/turistas"
-      ],
-      "recommendedAction": "Change tourist-entry copy to 90 days plus one 90-day extension where applicable."
     },
     {
       "id": "review-date-missing:expatsargentina:country:paraguay",
@@ -10006,21 +8647,6 @@
       "sourcePath": "/Users/libertydesignstudio/dev/expatsargentina/my-app/lib/data/nationalities.ts",
       "officialSourceUrls": [],
       "recommendedAction": "Backfill `reviewDate` from the source module or an official verification pass."
-    },
-    {
-      "id": "official-mismatch:expatsargentina:country:peru",
-      "severity": "high",
-      "category": "official-mismatch",
-      "title": "Tourist stay duration conflicts with official guidance",
-      "detail": "Official tourist guidance states a 90-day stay that may be extended once for another 90 days, not a standard 180-day initial stay.",
-      "siteId": "expatsargentina",
-      "recordId": "expatsargentina:country:peru",
-      "canonicalKey": "country:peru",
-      "sourcePath": "/Users/libertydesignstudio/dev/expatsargentina/my-app/lib/data/nationalities.ts",
-      "officialSourceUrls": [
-        "https://www.argentina.gob.ar/interior/migraciones/turistas"
-      ],
-      "recommendedAction": "Change tourist-entry copy to 90 days plus one 90-day extension where applicable."
     },
     {
       "id": "review-date-missing:expatsargentina:country:philippines",
@@ -10052,21 +8678,6 @@
       "recommendedAction": "Rewrite duration and renewal language to 180 days plus one 180-day extension unless a newer official resolution supersedes it."
     },
     {
-      "id": "official-mismatch:expatsargentina:country:philippines",
-      "severity": "high",
-      "category": "official-mismatch",
-      "title": "Tourist stay duration conflicts with official guidance",
-      "detail": "Official tourist guidance states a 90-day stay that may be extended once for another 90 days, not a standard 180-day initial stay.",
-      "siteId": "expatsargentina",
-      "recordId": "expatsargentina:country:philippines",
-      "canonicalKey": "country:philippines",
-      "sourcePath": "/Users/libertydesignstudio/dev/expatsargentina/my-app/lib/data/nationalities.ts",
-      "officialSourceUrls": [
-        "https://www.argentina.gob.ar/interior/migraciones/turistas"
-      ],
-      "recommendedAction": "Change tourist-entry copy to 90 days plus one 90-day extension where applicable."
-    },
-    {
       "id": "review-date-missing:expatsargentina:country:poland",
       "severity": "low",
       "category": "review-date-missing",
@@ -10078,21 +8689,6 @@
       "sourcePath": "/Users/libertydesignstudio/dev/expatsargentina/my-app/lib/data/nationalities.ts",
       "officialSourceUrls": [],
       "recommendedAction": "Backfill `reviewDate` from the source module or an official verification pass."
-    },
-    {
-      "id": "official-mismatch:expatsargentina:country:poland",
-      "severity": "high",
-      "category": "official-mismatch",
-      "title": "Tourist stay duration conflicts with official guidance",
-      "detail": "Official tourist guidance states a 90-day stay that may be extended once for another 90 days, not a standard 180-day initial stay.",
-      "siteId": "expatsargentina",
-      "recordId": "expatsargentina:country:poland",
-      "canonicalKey": "country:poland",
-      "sourcePath": "/Users/libertydesignstudio/dev/expatsargentina/my-app/lib/data/nationalities.ts",
-      "officialSourceUrls": [
-        "https://www.argentina.gob.ar/interior/migraciones/turistas"
-      ],
-      "recommendedAction": "Change tourist-entry copy to 90 days plus one 90-day extension where applicable."
     },
     {
       "id": "review-date-missing:expatsargentina:country:portugal",
@@ -10124,21 +8720,6 @@
       "recommendedAction": "Reframe this as a visa-switch strategy unless you can cite a current official source confirming direct countability toward permanent residency."
     },
     {
-      "id": "official-mismatch:expatsargentina:country:portugal",
-      "severity": "high",
-      "category": "official-mismatch",
-      "title": "Tourist stay duration conflicts with official guidance",
-      "detail": "Official tourist guidance states a 90-day stay that may be extended once for another 90 days, not a standard 180-day initial stay.",
-      "siteId": "expatsargentina",
-      "recordId": "expatsargentina:country:portugal",
-      "canonicalKey": "country:portugal",
-      "sourcePath": "/Users/libertydesignstudio/dev/expatsargentina/my-app/lib/data/nationalities.ts",
-      "officialSourceUrls": [
-        "https://www.argentina.gob.ar/interior/migraciones/turistas"
-      ],
-      "recommendedAction": "Change tourist-entry copy to 90 days plus one 90-day extension where applicable."
-    },
-    {
       "id": "review-date-missing:expatsargentina:country:puerto-rico",
       "severity": "low",
       "category": "review-date-missing",
@@ -10152,21 +8733,6 @@
       "recommendedAction": "Backfill `reviewDate` from the source module or an official verification pass."
     },
     {
-      "id": "official-mismatch:expatsargentina:country:puerto-rico",
-      "severity": "high",
-      "category": "official-mismatch",
-      "title": "Tourist stay duration conflicts with official guidance",
-      "detail": "Official tourist guidance states a 90-day stay that may be extended once for another 90 days, not a standard 180-day initial stay.",
-      "siteId": "expatsargentina",
-      "recordId": "expatsargentina:country:puerto-rico",
-      "canonicalKey": "country:puerto-rico",
-      "sourcePath": "/Users/libertydesignstudio/dev/expatsargentina/my-app/lib/data/nationalities.ts",
-      "officialSourceUrls": [
-        "https://www.argentina.gob.ar/interior/migraciones/turistas"
-      ],
-      "recommendedAction": "Change tourist-entry copy to 90 days plus one 90-day extension where applicable."
-    },
-    {
       "id": "review-date-missing:expatsargentina:country:qatar",
       "severity": "low",
       "category": "review-date-missing",
@@ -10178,21 +8744,6 @@
       "sourcePath": "/Users/libertydesignstudio/dev/expatsargentina/my-app/lib/data/nationalities.ts",
       "officialSourceUrls": [],
       "recommendedAction": "Backfill `reviewDate` from the source module or an official verification pass."
-    },
-    {
-      "id": "official-mismatch:expatsargentina:country:qatar",
-      "severity": "high",
-      "category": "official-mismatch",
-      "title": "Tourist stay duration conflicts with official guidance",
-      "detail": "Official tourist guidance states a 90-day stay that may be extended once for another 90 days, not a standard 180-day initial stay.",
-      "siteId": "expatsargentina",
-      "recordId": "expatsargentina:country:qatar",
-      "canonicalKey": "country:qatar",
-      "sourcePath": "/Users/libertydesignstudio/dev/expatsargentina/my-app/lib/data/nationalities.ts",
-      "officialSourceUrls": [
-        "https://www.argentina.gob.ar/interior/migraciones/turistas"
-      ],
-      "recommendedAction": "Change tourist-entry copy to 90 days plus one 90-day extension where applicable."
     },
     {
       "id": "review-date-missing:expatsargentina:country:romania",
@@ -10224,21 +8775,6 @@
       "recommendedAction": "Reframe this as a visa-switch strategy unless you can cite a current official source confirming direct countability toward permanent residency."
     },
     {
-      "id": "official-mismatch:expatsargentina:country:romania",
-      "severity": "high",
-      "category": "official-mismatch",
-      "title": "Tourist stay duration conflicts with official guidance",
-      "detail": "Official tourist guidance states a 90-day stay that may be extended once for another 90 days, not a standard 180-day initial stay.",
-      "siteId": "expatsargentina",
-      "recordId": "expatsargentina:country:romania",
-      "canonicalKey": "country:romania",
-      "sourcePath": "/Users/libertydesignstudio/dev/expatsargentina/my-app/lib/data/nationalities.ts",
-      "officialSourceUrls": [
-        "https://www.argentina.gob.ar/interior/migraciones/turistas"
-      ],
-      "recommendedAction": "Change tourist-entry copy to 90 days plus one 90-day extension where applicable."
-    },
-    {
       "id": "review-date-missing:expatsargentina:country:russia",
       "severity": "low",
       "category": "review-date-missing",
@@ -10250,21 +8786,6 @@
       "sourcePath": "/Users/libertydesignstudio/dev/expatsargentina/my-app/lib/data/nationalities.ts",
       "officialSourceUrls": [],
       "recommendedAction": "Backfill `reviewDate` from the source module or an official verification pass."
-    },
-    {
-      "id": "official-mismatch:expatsargentina:country:russia",
-      "severity": "high",
-      "category": "official-mismatch",
-      "title": "Tourist stay duration conflicts with official guidance",
-      "detail": "Official tourist guidance states a 90-day stay that may be extended once for another 90 days, not a standard 180-day initial stay.",
-      "siteId": "expatsargentina",
-      "recordId": "expatsargentina:country:russia",
-      "canonicalKey": "country:russia",
-      "sourcePath": "/Users/libertydesignstudio/dev/expatsargentina/my-app/lib/data/nationalities.ts",
-      "officialSourceUrls": [
-        "https://www.argentina.gob.ar/interior/migraciones/turistas"
-      ],
-      "recommendedAction": "Change tourist-entry copy to 90 days plus one 90-day extension where applicable."
     },
     {
       "id": "review-date-missing:expatsargentina:country:samoa",
@@ -10280,21 +8801,6 @@
       "recommendedAction": "Backfill `reviewDate` from the source module or an official verification pass."
     },
     {
-      "id": "official-mismatch:expatsargentina:country:samoa",
-      "severity": "high",
-      "category": "official-mismatch",
-      "title": "Tourist stay duration conflicts with official guidance",
-      "detail": "Official tourist guidance states a 90-day stay that may be extended once for another 90 days, not a standard 180-day initial stay.",
-      "siteId": "expatsargentina",
-      "recordId": "expatsargentina:country:samoa",
-      "canonicalKey": "country:samoa",
-      "sourcePath": "/Users/libertydesignstudio/dev/expatsargentina/my-app/lib/data/nationalities.ts",
-      "officialSourceUrls": [
-        "https://www.argentina.gob.ar/interior/migraciones/turistas"
-      ],
-      "recommendedAction": "Change tourist-entry copy to 90 days plus one 90-day extension where applicable."
-    },
-    {
       "id": "review-date-missing:expatsargentina:country:serbia",
       "severity": "low",
       "category": "review-date-missing",
@@ -10306,21 +8812,6 @@
       "sourcePath": "/Users/libertydesignstudio/dev/expatsargentina/my-app/lib/data/nationalities.ts",
       "officialSourceUrls": [],
       "recommendedAction": "Backfill `reviewDate` from the source module or an official verification pass."
-    },
-    {
-      "id": "official-mismatch:expatsargentina:country:serbia",
-      "severity": "high",
-      "category": "official-mismatch",
-      "title": "Tourist stay duration conflicts with official guidance",
-      "detail": "Official tourist guidance states a 90-day stay that may be extended once for another 90 days, not a standard 180-day initial stay.",
-      "siteId": "expatsargentina",
-      "recordId": "expatsargentina:country:serbia",
-      "canonicalKey": "country:serbia",
-      "sourcePath": "/Users/libertydesignstudio/dev/expatsargentina/my-app/lib/data/nationalities.ts",
-      "officialSourceUrls": [
-        "https://www.argentina.gob.ar/interior/migraciones/turistas"
-      ],
-      "recommendedAction": "Change tourist-entry copy to 90 days plus one 90-day extension where applicable."
     },
     {
       "id": "review-date-missing:expatsargentina:country:singapore",
@@ -10336,21 +8827,6 @@
       "recommendedAction": "Backfill `reviewDate` from the source module or an official verification pass."
     },
     {
-      "id": "official-mismatch:expatsargentina:country:singapore",
-      "severity": "high",
-      "category": "official-mismatch",
-      "title": "Tourist stay duration conflicts with official guidance",
-      "detail": "Official tourist guidance states a 90-day stay that may be extended once for another 90 days, not a standard 180-day initial stay.",
-      "siteId": "expatsargentina",
-      "recordId": "expatsargentina:country:singapore",
-      "canonicalKey": "country:singapore",
-      "sourcePath": "/Users/libertydesignstudio/dev/expatsargentina/my-app/lib/data/nationalities.ts",
-      "officialSourceUrls": [
-        "https://www.argentina.gob.ar/interior/migraciones/turistas"
-      ],
-      "recommendedAction": "Change tourist-entry copy to 90 days plus one 90-day extension where applicable."
-    },
-    {
       "id": "review-date-missing:expatsargentina:country:slovakia",
       "severity": "low",
       "category": "review-date-missing",
@@ -10364,21 +8840,6 @@
       "recommendedAction": "Backfill `reviewDate` from the source module or an official verification pass."
     },
     {
-      "id": "official-mismatch:expatsargentina:country:slovakia",
-      "severity": "high",
-      "category": "official-mismatch",
-      "title": "Tourist stay duration conflicts with official guidance",
-      "detail": "Official tourist guidance states a 90-day stay that may be extended once for another 90 days, not a standard 180-day initial stay.",
-      "siteId": "expatsargentina",
-      "recordId": "expatsargentina:country:slovakia",
-      "canonicalKey": "country:slovakia",
-      "sourcePath": "/Users/libertydesignstudio/dev/expatsargentina/my-app/lib/data/nationalities.ts",
-      "officialSourceUrls": [
-        "https://www.argentina.gob.ar/interior/migraciones/turistas"
-      ],
-      "recommendedAction": "Change tourist-entry copy to 90 days plus one 90-day extension where applicable."
-    },
-    {
       "id": "review-date-missing:expatsargentina:country:slovenia",
       "severity": "low",
       "category": "review-date-missing",
@@ -10390,21 +8851,6 @@
       "sourcePath": "/Users/libertydesignstudio/dev/expatsargentina/my-app/lib/data/nationalities.ts",
       "officialSourceUrls": [],
       "recommendedAction": "Backfill `reviewDate` from the source module or an official verification pass."
-    },
-    {
-      "id": "official-mismatch:expatsargentina:country:slovenia",
-      "severity": "high",
-      "category": "official-mismatch",
-      "title": "Tourist stay duration conflicts with official guidance",
-      "detail": "Official tourist guidance states a 90-day stay that may be extended once for another 90 days, not a standard 180-day initial stay.",
-      "siteId": "expatsargentina",
-      "recordId": "expatsargentina:country:slovenia",
-      "canonicalKey": "country:slovenia",
-      "sourcePath": "/Users/libertydesignstudio/dev/expatsargentina/my-app/lib/data/nationalities.ts",
-      "officialSourceUrls": [
-        "https://www.argentina.gob.ar/interior/migraciones/turistas"
-      ],
-      "recommendedAction": "Change tourist-entry copy to 90 days plus one 90-day extension where applicable."
     },
     {
       "id": "review-date-missing:expatsargentina:country:south-africa",
@@ -10434,21 +8880,6 @@
         "https://www.argentina.gob.ar/servicio/obtener-una-prorroga-de-residencia-transitoria-como-nomada-digital"
       ],
       "recommendedAction": "Rewrite duration and renewal language to 180 days plus one 180-day extension unless a newer official resolution supersedes it."
-    },
-    {
-      "id": "official-mismatch:expatsargentina:country:south-africa",
-      "severity": "high",
-      "category": "official-mismatch",
-      "title": "Tourist stay duration conflicts with official guidance",
-      "detail": "Official tourist guidance states a 90-day stay that may be extended once for another 90 days, not a standard 180-day initial stay.",
-      "siteId": "expatsargentina",
-      "recordId": "expatsargentina:country:south-africa",
-      "canonicalKey": "country:south-africa",
-      "sourcePath": "/Users/libertydesignstudio/dev/expatsargentina/my-app/lib/data/nationalities.ts",
-      "officialSourceUrls": [
-        "https://www.argentina.gob.ar/interior/migraciones/turistas"
-      ],
-      "recommendedAction": "Change tourist-entry copy to 90 days plus one 90-day extension where applicable."
     },
     {
       "id": "review-date-missing:expatsargentina:country:south-korea",
@@ -10522,21 +8953,6 @@
       "recommendedAction": "Backfill `reviewDate` from the source module or an official verification pass."
     },
     {
-      "id": "official-mismatch:expatsargentina:country:sri-lanka",
-      "severity": "high",
-      "category": "official-mismatch",
-      "title": "Tourist stay duration conflicts with official guidance",
-      "detail": "Official tourist guidance states a 90-day stay that may be extended once for another 90 days, not a standard 180-day initial stay.",
-      "siteId": "expatsargentina",
-      "recordId": "expatsargentina:country:sri-lanka",
-      "canonicalKey": "country:sri-lanka",
-      "sourcePath": "/Users/libertydesignstudio/dev/expatsargentina/my-app/lib/data/nationalities.ts",
-      "officialSourceUrls": [
-        "https://www.argentina.gob.ar/interior/migraciones/turistas"
-      ],
-      "recommendedAction": "Change tourist-entry copy to 90 days plus one 90-day extension where applicable."
-    },
-    {
       "id": "review-date-missing:expatsargentina:country:sweden",
       "severity": "low",
       "category": "review-date-missing",
@@ -10548,21 +8964,6 @@
       "sourcePath": "/Users/libertydesignstudio/dev/expatsargentina/my-app/lib/data/nationalities.ts",
       "officialSourceUrls": [],
       "recommendedAction": "Backfill `reviewDate` from the source module or an official verification pass."
-    },
-    {
-      "id": "official-mismatch:expatsargentina:country:sweden",
-      "severity": "high",
-      "category": "official-mismatch",
-      "title": "Tourist stay duration conflicts with official guidance",
-      "detail": "Official tourist guidance states a 90-day stay that may be extended once for another 90 days, not a standard 180-day initial stay.",
-      "siteId": "expatsargentina",
-      "recordId": "expatsargentina:country:sweden",
-      "canonicalKey": "country:sweden",
-      "sourcePath": "/Users/libertydesignstudio/dev/expatsargentina/my-app/lib/data/nationalities.ts",
-      "officialSourceUrls": [
-        "https://www.argentina.gob.ar/interior/migraciones/turistas"
-      ],
-      "recommendedAction": "Change tourist-entry copy to 90 days plus one 90-day extension where applicable."
     },
     {
       "id": "review-date-missing:expatsargentina:country:switzerland",
@@ -10578,21 +8979,6 @@
       "recommendedAction": "Backfill `reviewDate` from the source module or an official verification pass."
     },
     {
-      "id": "official-mismatch:expatsargentina:country:switzerland",
-      "severity": "high",
-      "category": "official-mismatch",
-      "title": "Tourist stay duration conflicts with official guidance",
-      "detail": "Official tourist guidance states a 90-day stay that may be extended once for another 90 days, not a standard 180-day initial stay.",
-      "siteId": "expatsargentina",
-      "recordId": "expatsargentina:country:switzerland",
-      "canonicalKey": "country:switzerland",
-      "sourcePath": "/Users/libertydesignstudio/dev/expatsargentina/my-app/lib/data/nationalities.ts",
-      "officialSourceUrls": [
-        "https://www.argentina.gob.ar/interior/migraciones/turistas"
-      ],
-      "recommendedAction": "Change tourist-entry copy to 90 days plus one 90-day extension where applicable."
-    },
-    {
       "id": "review-date-missing:expatsargentina:country:tajikistan",
       "severity": "low",
       "category": "review-date-missing",
@@ -10604,21 +8990,6 @@
       "sourcePath": "/Users/libertydesignstudio/dev/expatsargentina/my-app/lib/data/nationalities.ts",
       "officialSourceUrls": [],
       "recommendedAction": "Backfill `reviewDate` from the source module or an official verification pass."
-    },
-    {
-      "id": "official-mismatch:expatsargentina:country:tajikistan",
-      "severity": "high",
-      "category": "official-mismatch",
-      "title": "Tourist stay duration conflicts with official guidance",
-      "detail": "Official tourist guidance states a 90-day stay that may be extended once for another 90 days, not a standard 180-day initial stay.",
-      "siteId": "expatsargentina",
-      "recordId": "expatsargentina:country:tajikistan",
-      "canonicalKey": "country:tajikistan",
-      "sourcePath": "/Users/libertydesignstudio/dev/expatsargentina/my-app/lib/data/nationalities.ts",
-      "officialSourceUrls": [
-        "https://www.argentina.gob.ar/interior/migraciones/turistas"
-      ],
-      "recommendedAction": "Change tourist-entry copy to 90 days plus one 90-day extension where applicable."
     },
     {
       "id": "review-date-missing:expatsargentina:country:thailand",
@@ -10634,21 +9005,6 @@
       "recommendedAction": "Backfill `reviewDate` from the source module or an official verification pass."
     },
     {
-      "id": "official-mismatch:expatsargentina:country:thailand",
-      "severity": "high",
-      "category": "official-mismatch",
-      "title": "Tourist stay duration conflicts with official guidance",
-      "detail": "Official tourist guidance states a 90-day stay that may be extended once for another 90 days, not a standard 180-day initial stay.",
-      "siteId": "expatsargentina",
-      "recordId": "expatsargentina:country:thailand",
-      "canonicalKey": "country:thailand",
-      "sourcePath": "/Users/libertydesignstudio/dev/expatsargentina/my-app/lib/data/nationalities.ts",
-      "officialSourceUrls": [
-        "https://www.argentina.gob.ar/interior/migraciones/turistas"
-      ],
-      "recommendedAction": "Change tourist-entry copy to 90 days plus one 90-day extension where applicable."
-    },
-    {
       "id": "review-date-missing:expatsargentina:country:trinidad-and-tobago",
       "severity": "low",
       "category": "review-date-missing",
@@ -10660,21 +9016,6 @@
       "sourcePath": "/Users/libertydesignstudio/dev/expatsargentina/my-app/lib/data/nationalities.ts",
       "officialSourceUrls": [],
       "recommendedAction": "Backfill `reviewDate` from the source module or an official verification pass."
-    },
-    {
-      "id": "official-mismatch:expatsargentina:country:trinidad-and-tobago",
-      "severity": "high",
-      "category": "official-mismatch",
-      "title": "Tourist stay duration conflicts with official guidance",
-      "detail": "Official tourist guidance states a 90-day stay that may be extended once for another 90 days, not a standard 180-day initial stay.",
-      "siteId": "expatsargentina",
-      "recordId": "expatsargentina:country:trinidad-and-tobago",
-      "canonicalKey": "country:trinidad-and-tobago",
-      "sourcePath": "/Users/libertydesignstudio/dev/expatsargentina/my-app/lib/data/nationalities.ts",
-      "officialSourceUrls": [
-        "https://www.argentina.gob.ar/interior/migraciones/turistas"
-      ],
-      "recommendedAction": "Change tourist-entry copy to 90 days plus one 90-day extension where applicable."
     },
     {
       "id": "review-date-missing:expatsargentina:country:turkey",
@@ -10706,21 +9047,6 @@
       "recommendedAction": "Reframe this as a visa-switch strategy unless you can cite a current official source confirming direct countability toward permanent residency."
     },
     {
-      "id": "official-mismatch:expatsargentina:country:turkey",
-      "severity": "high",
-      "category": "official-mismatch",
-      "title": "Tourist stay duration conflicts with official guidance",
-      "detail": "Official tourist guidance states a 90-day stay that may be extended once for another 90 days, not a standard 180-day initial stay.",
-      "siteId": "expatsargentina",
-      "recordId": "expatsargentina:country:turkey",
-      "canonicalKey": "country:turkey",
-      "sourcePath": "/Users/libertydesignstudio/dev/expatsargentina/my-app/lib/data/nationalities.ts",
-      "officialSourceUrls": [
-        "https://www.argentina.gob.ar/interior/migraciones/turistas"
-      ],
-      "recommendedAction": "Change tourist-entry copy to 90 days plus one 90-day extension where applicable."
-    },
-    {
       "id": "review-date-missing:expatsargentina:country:turkmenistan",
       "severity": "low",
       "category": "review-date-missing",
@@ -10732,21 +9058,6 @@
       "sourcePath": "/Users/libertydesignstudio/dev/expatsargentina/my-app/lib/data/nationalities.ts",
       "officialSourceUrls": [],
       "recommendedAction": "Backfill `reviewDate` from the source module or an official verification pass."
-    },
-    {
-      "id": "official-mismatch:expatsargentina:country:turkmenistan",
-      "severity": "high",
-      "category": "official-mismatch",
-      "title": "Tourist stay duration conflicts with official guidance",
-      "detail": "Official tourist guidance states a 90-day stay that may be extended once for another 90 days, not a standard 180-day initial stay.",
-      "siteId": "expatsargentina",
-      "recordId": "expatsargentina:country:turkmenistan",
-      "canonicalKey": "country:turkmenistan",
-      "sourcePath": "/Users/libertydesignstudio/dev/expatsargentina/my-app/lib/data/nationalities.ts",
-      "officialSourceUrls": [
-        "https://www.argentina.gob.ar/interior/migraciones/turistas"
-      ],
-      "recommendedAction": "Change tourist-entry copy to 90 days plus one 90-day extension where applicable."
     },
     {
       "id": "review-date-missing:expatsargentina:country:ukraine",
@@ -10791,21 +9102,6 @@
       "recommendedAction": "Backfill `reviewDate` from the source module or an official verification pass."
     },
     {
-      "id": "official-mismatch:expatsargentina:country:united-arab-emirates",
-      "severity": "high",
-      "category": "official-mismatch",
-      "title": "Tourist stay duration conflicts with official guidance",
-      "detail": "Official tourist guidance states a 90-day stay that may be extended once for another 90 days, not a standard 180-day initial stay.",
-      "siteId": "expatsargentina",
-      "recordId": "expatsargentina:country:united-arab-emirates",
-      "canonicalKey": "country:united-arab-emirates",
-      "sourcePath": "/Users/libertydesignstudio/dev/expatsargentina/my-app/lib/data/nationalities.ts",
-      "officialSourceUrls": [
-        "https://www.argentina.gob.ar/interior/migraciones/turistas"
-      ],
-      "recommendedAction": "Change tourist-entry copy to 90 days plus one 90-day extension where applicable."
-    },
-    {
       "id": "review-date-missing:expatsargentina:country:united-kingdom",
       "severity": "low",
       "category": "review-date-missing",
@@ -10833,21 +9129,6 @@
         "https://www.argentina.gob.ar/servicio/obtener-una-prorroga-de-residencia-transitoria-como-nomada-digital"
       ],
       "recommendedAction": "Reframe this as a visa-switch strategy unless you can cite a current official source confirming direct countability toward permanent residency."
-    },
-    {
-      "id": "official-mismatch:expatsargentina:country:united-kingdom",
-      "severity": "high",
-      "category": "official-mismatch",
-      "title": "Tourist stay duration conflicts with official guidance",
-      "detail": "Official tourist guidance states a 90-day stay that may be extended once for another 90 days, not a standard 180-day initial stay.",
-      "siteId": "expatsargentina",
-      "recordId": "expatsargentina:country:united-kingdom",
-      "canonicalKey": "country:united-kingdom",
-      "sourcePath": "/Users/libertydesignstudio/dev/expatsargentina/my-app/lib/data/nationalities.ts",
-      "officialSourceUrls": [
-        "https://www.argentina.gob.ar/interior/migraciones/turistas"
-      ],
-      "recommendedAction": "Change tourist-entry copy to 90 days plus one 90-day extension where applicable."
     },
     {
       "id": "review-date-missing:expatsargentina:country:united-states",
@@ -10879,21 +9160,6 @@
       "recommendedAction": "Reframe this as a visa-switch strategy unless you can cite a current official source confirming direct countability toward permanent residency."
     },
     {
-      "id": "official-mismatch:expatsargentina:country:united-states",
-      "severity": "high",
-      "category": "official-mismatch",
-      "title": "Tourist stay duration conflicts with official guidance",
-      "detail": "Official tourist guidance states a 90-day stay that may be extended once for another 90 days, not a standard 180-day initial stay.",
-      "siteId": "expatsargentina",
-      "recordId": "expatsargentina:country:united-states",
-      "canonicalKey": "country:united-states",
-      "sourcePath": "/Users/libertydesignstudio/dev/expatsargentina/my-app/lib/data/nationalities.ts",
-      "officialSourceUrls": [
-        "https://www.argentina.gob.ar/interior/migraciones/turistas"
-      ],
-      "recommendedAction": "Change tourist-entry copy to 90 days plus one 90-day extension where applicable."
-    },
-    {
       "id": "review-date-missing:expatsargentina:country:uruguay",
       "severity": "low",
       "category": "review-date-missing",
@@ -10918,21 +9184,6 @@
       "sourcePath": "/Users/libertydesignstudio/dev/expatsargentina/my-app/lib/data/nationalities.ts",
       "officialSourceUrls": [],
       "recommendedAction": "Backfill `reviewDate` from the source module or an official verification pass."
-    },
-    {
-      "id": "official-mismatch:expatsargentina:country:uzbekistan",
-      "severity": "high",
-      "category": "official-mismatch",
-      "title": "Tourist stay duration conflicts with official guidance",
-      "detail": "Official tourist guidance states a 90-day stay that may be extended once for another 90 days, not a standard 180-day initial stay.",
-      "siteId": "expatsargentina",
-      "recordId": "expatsargentina:country:uzbekistan",
-      "canonicalKey": "country:uzbekistan",
-      "sourcePath": "/Users/libertydesignstudio/dev/expatsargentina/my-app/lib/data/nationalities.ts",
-      "officialSourceUrls": [
-        "https://www.argentina.gob.ar/interior/migraciones/turistas"
-      ],
-      "recommendedAction": "Change tourist-entry copy to 90 days plus one 90-day extension where applicable."
     },
     {
       "id": "review-date-missing:expatsargentina:country:venezuela",
@@ -10975,21 +9226,6 @@
       "sourcePath": "/Users/libertydesignstudio/dev/expatsargentina/my-app/lib/data/nationalities.ts",
       "officialSourceUrls": [],
       "recommendedAction": "Backfill `reviewDate` from the source module or an official verification pass."
-    },
-    {
-      "id": "official-mismatch:expatsargentina:country:vietnam",
-      "severity": "high",
-      "category": "official-mismatch",
-      "title": "Tourist stay duration conflicts with official guidance",
-      "detail": "Official tourist guidance states a 90-day stay that may be extended once for another 90 days, not a standard 180-day initial stay.",
-      "siteId": "expatsargentina",
-      "recordId": "expatsargentina:country:vietnam",
-      "canonicalKey": "country:vietnam",
-      "sourcePath": "/Users/libertydesignstudio/dev/expatsargentina/my-app/lib/data/nationalities.ts",
-      "officialSourceUrls": [
-        "https://www.argentina.gob.ar/interior/migraciones/turistas"
-      ],
-      "recommendedAction": "Change tourist-entry copy to 90 days plus one 90-day extension where applicable."
     },
     {
       "id": "review-date-missing:expatsargentina:profession:3d-artist",
@@ -12353,21 +10589,6 @@
       "recommendedAction": "Rewrite duration and renewal language to 180 days plus one 180-day extension unless a newer official resolution supersedes it."
     },
     {
-      "id": "official-mismatch:expatsargentina:visa-comparison:digital-nomad-vs-work-visa",
-      "severity": "high",
-      "category": "official-mismatch",
-      "title": "Tourist stay duration conflicts with official guidance",
-      "detail": "Official tourist guidance states a 90-day stay that may be extended once for another 90 days, not a standard 180-day initial stay.",
-      "siteId": "expatsargentina",
-      "recordId": "expatsargentina:visa-comparison:digital-nomad-vs-work-visa",
-      "canonicalKey": "visa-comparison:digital-nomad-vs-work-visa",
-      "sourcePath": "/Users/libertydesignstudio/dev/expatsargentina/my-app/lib/data/visa-comparisons.ts",
-      "officialSourceUrls": [
-        "https://www.argentina.gob.ar/interior/migraciones/turistas"
-      ],
-      "recommendedAction": "Change tourist-entry copy to 90 days plus one 90-day extension where applicable."
-    },
-    {
       "id": "review-date-missing:expatsargentina:visa-comparison:retirement-vs-investment-visa",
       "severity": "low",
       "category": "review-date-missing",
@@ -12410,6 +10631,23 @@
       "recommendedAction": "Rewrite duration and renewal language to 180 days plus one 180-day extension unless a newer official resolution supersedes it."
     },
     {
+      "id": "official-mismatch:expatsargentina:visa-comparison:student-vs-digital-nomad",
+      "severity": "high",
+      "category": "official-mismatch",
+      "title": "Public-university tuition claim conflicts with 2025 reform baseline",
+      "detail": "The current public reform baseline says state universities may charge non-permanent residents, so broad free-tuition claims for all foreigners or all DNI holders need review.",
+      "siteId": "expatsargentina",
+      "recordId": "expatsargentina:visa-comparison:student-vs-digital-nomad",
+      "canonicalKey": "visa-comparison:student-vs-digital-nomad",
+      "sourcePath": "/Users/libertydesignstudio/dev/expatsargentina/my-app/lib/data/visa-comparisons.ts",
+      "officialSourceUrls": [
+        "https://www.argentina.gob.ar/noticias/el-gobierno-nacional-puso-en-marcha-una-profunda-reforma-del-regimen-migratorio",
+        "https://www.argentina.gob.ar/migraciones/preguntas-frecuentes-residencias",
+        "https://www.argentina.gob.ar/migraciones/comision-nacional-para-los-refugiados/preguntas-frecuentes-conare"
+      ],
+      "recommendedAction": "Reframe higher-education language around the current institution-by-status baseline instead of assuming universal free tuition."
+    },
+    {
       "id": "review-date-missing:expatsargentina:visa-type:digital-nomad",
       "severity": "low",
       "category": "review-date-missing",
@@ -12437,21 +10675,6 @@
         "https://www.argentina.gob.ar/servicio/obtener-una-prorroga-de-residencia-transitoria-como-nomada-digital"
       ],
       "recommendedAction": "Reframe this as a visa-switch strategy unless you can cite a current official source confirming direct countability toward permanent residency."
-    },
-    {
-      "id": "official-mismatch:expatsargentina:visa-type:digital-nomad",
-      "severity": "high",
-      "category": "official-mismatch",
-      "title": "Tourist stay duration conflicts with official guidance",
-      "detail": "Official tourist guidance states a 90-day stay that may be extended once for another 90 days, not a standard 180-day initial stay.",
-      "siteId": "expatsargentina",
-      "recordId": "expatsargentina:visa-type:digital-nomad",
-      "canonicalKey": "visa-type:digital-nomad",
-      "sourcePath": "/Users/libertydesignstudio/dev/expatsargentina/my-app/lib/data/visa-types.ts",
-      "officialSourceUrls": [
-        "https://www.argentina.gob.ar/interior/migraciones/turistas"
-      ],
-      "recommendedAction": "Change tourist-entry copy to 90 days plus one 90-day extension where applicable."
     },
     {
       "id": "review-date-missing:expatsargentina:visa-type:investment",
@@ -16796,21 +15019,6 @@
       "recommendedAction": "Re-verify this record against current official sources and update the review date."
     },
     {
-      "id": "official-mismatch:lucero-legal:legal-framework:official-digital-nomad-transitory-residence",
-      "severity": "high",
-      "category": "official-mismatch",
-      "title": "Tourist stay duration conflicts with official guidance",
-      "detail": "Official tourist guidance states a 90-day stay that may be extended once for another 90 days, not a standard 180-day initial stay.",
-      "siteId": "lucero-legal",
-      "recordId": "lucero-legal:legal-framework:official-digital-nomad-transitory-residence",
-      "canonicalKey": "legal-framework:official-digital-nomad-transitory-residence",
-      "sourcePath": "/Users/libertydesignstudio/dev/lucero-legal/src/lib/source-of-truth/official-facts.ts",
-      "officialSourceUrls": [
-        "https://www.argentina.gob.ar/interior/migraciones/turistas"
-      ],
-      "recommendedAction": "Change tourist-entry copy to 90 days plus one 90-day extension where applicable."
-    },
-    {
       "id": "review-date-missing:lucero-legal:origin-country:alemanes",
       "severity": "low",
       "category": "review-date-missing",
@@ -16871,19 +15079,6 @@
       "siteId": "lucero-legal",
       "recordId": "lucero-legal:origin-country:belgas",
       "canonicalKey": "origin-country:belgas",
-      "sourcePath": "/Users/libertydesignstudio/dev/lucero-legal/src/lib/seo/origin-country-data.ts",
-      "officialSourceUrls": [],
-      "recommendedAction": "Backfill `reviewDate` from the source module or an official verification pass."
-    },
-    {
-      "id": "review-date-missing:lucero-legal:origin-country:bolivianos",
-      "severity": "low",
-      "category": "review-date-missing",
-      "title": "High-risk record missing review date",
-      "detail": "Add a concrete review date for Bolivia so legal and policy content can be refreshed on schedule.",
-      "siteId": "lucero-legal",
-      "recordId": "lucero-legal:origin-country:bolivianos",
-      "canonicalKey": "origin-country:bolivianos",
       "sourcePath": "/Users/libertydesignstudio/dev/lucero-legal/src/lib/seo/origin-country-data.ts",
       "officialSourceUrls": [],
       "recommendedAction": "Backfill `reviewDate` from the source module or an official verification pass."
@@ -16954,19 +15149,6 @@
       "recommendedAction": "Backfill `reviewDate` from the source module or an official verification pass."
     },
     {
-      "id": "review-date-missing:lucero-legal:origin-country:chinos",
-      "severity": "low",
-      "category": "review-date-missing",
-      "title": "High-risk record missing review date",
-      "detail": "Add a concrete review date for China so legal and policy content can be refreshed on schedule.",
-      "siteId": "lucero-legal",
-      "recordId": "lucero-legal:origin-country:chinos",
-      "canonicalKey": "origin-country:chinos",
-      "sourcePath": "/Users/libertydesignstudio/dev/lucero-legal/src/lib/seo/origin-country-data.ts",
-      "officialSourceUrls": [],
-      "recommendedAction": "Backfill `reviewDate` from the source module or an official verification pass."
-    },
-    {
       "id": "review-date-missing:lucero-legal:origin-country:colombianos",
       "severity": "low",
       "category": "review-date-missing",
@@ -16975,32 +15157,6 @@
       "siteId": "lucero-legal",
       "recordId": "lucero-legal:origin-country:colombianos",
       "canonicalKey": "origin-country:colombianos",
-      "sourcePath": "/Users/libertydesignstudio/dev/lucero-legal/src/lib/seo/origin-country-data.ts",
-      "officialSourceUrls": [],
-      "recommendedAction": "Backfill `reviewDate` from the source module or an official verification pass."
-    },
-    {
-      "id": "review-date-missing:lucero-legal:origin-country:costarricenses",
-      "severity": "low",
-      "category": "review-date-missing",
-      "title": "High-risk record missing review date",
-      "detail": "Add a concrete review date for Costa Rica so legal and policy content can be refreshed on schedule.",
-      "siteId": "lucero-legal",
-      "recordId": "lucero-legal:origin-country:costarricenses",
-      "canonicalKey": "origin-country:costarricenses",
-      "sourcePath": "/Users/libertydesignstudio/dev/lucero-legal/src/lib/seo/origin-country-data.ts",
-      "officialSourceUrls": [],
-      "recommendedAction": "Backfill `reviewDate` from the source module or an official verification pass."
-    },
-    {
-      "id": "review-date-missing:lucero-legal:origin-country:cubanos",
-      "severity": "low",
-      "category": "review-date-missing",
-      "title": "High-risk record missing review date",
-      "detail": "Add a concrete review date for Cuba so legal and policy content can be refreshed on schedule.",
-      "siteId": "lucero-legal",
-      "recordId": "lucero-legal:origin-country:cubanos",
-      "canonicalKey": "origin-country:cubanos",
       "sourcePath": "/Users/libertydesignstudio/dev/lucero-legal/src/lib/seo/origin-country-data.ts",
       "officialSourceUrls": [],
       "recommendedAction": "Backfill `reviewDate` from the source module or an official verification pass."
@@ -17027,19 +15183,6 @@
       "siteId": "lucero-legal",
       "recordId": "lucero-legal:origin-country:dominicanos",
       "canonicalKey": "origin-country:dominicanos",
-      "sourcePath": "/Users/libertydesignstudio/dev/lucero-legal/src/lib/seo/origin-country-data.ts",
-      "officialSourceUrls": [],
-      "recommendedAction": "Backfill `reviewDate` from the source module or an official verification pass."
-    },
-    {
-      "id": "review-date-missing:lucero-legal:origin-country:ecuatorianos",
-      "severity": "low",
-      "category": "review-date-missing",
-      "title": "High-risk record missing review date",
-      "detail": "Add a concrete review date for Ecuador so legal and policy content can be refreshed on schedule.",
-      "siteId": "lucero-legal",
-      "recordId": "lucero-legal:origin-country:ecuatorianos",
-      "canonicalKey": "origin-country:ecuatorianos",
       "sourcePath": "/Users/libertydesignstudio/dev/lucero-legal/src/lib/seo/origin-country-data.ts",
       "officialSourceUrls": [],
       "recommendedAction": "Backfill `reviewDate` from the source module or an official verification pass."
@@ -17214,19 +15357,6 @@
       "recommendedAction": "Backfill `reviewDate` from the source module or an official verification pass."
     },
     {
-      "id": "review-date-missing:lucero-legal:origin-country:libaneses",
-      "severity": "low",
-      "category": "review-date-missing",
-      "title": "High-risk record missing review date",
-      "detail": "Add a concrete review date for Líbano so legal and policy content can be refreshed on schedule.",
-      "siteId": "lucero-legal",
-      "recordId": "lucero-legal:origin-country:libaneses",
-      "canonicalKey": "origin-country:libaneses",
-      "sourcePath": "/Users/libertydesignstudio/dev/lucero-legal/src/lib/seo/origin-country-data.ts",
-      "officialSourceUrls": [],
-      "recommendedAction": "Backfill `reviewDate` from the source module or an official verification pass."
-    },
-    {
       "id": "review-date-missing:lucero-legal:origin-country:mexicanos",
       "severity": "low",
       "category": "review-date-missing",
@@ -17279,19 +15409,6 @@
       "recommendedAction": "Backfill `reviewDate` from the source module or an official verification pass."
     },
     {
-      "id": "review-date-missing:lucero-legal:origin-country:paraguayos",
-      "severity": "low",
-      "category": "review-date-missing",
-      "title": "High-risk record missing review date",
-      "detail": "Add a concrete review date for Paraguay so legal and policy content can be refreshed on schedule.",
-      "siteId": "lucero-legal",
-      "recordId": "lucero-legal:origin-country:paraguayos",
-      "canonicalKey": "origin-country:paraguayos",
-      "sourcePath": "/Users/libertydesignstudio/dev/lucero-legal/src/lib/seo/origin-country-data.ts",
-      "officialSourceUrls": [],
-      "recommendedAction": "Backfill `reviewDate` from the source module or an official verification pass."
-    },
-    {
       "id": "review-date-missing:lucero-legal:origin-country:peruanos",
       "severity": "low",
       "category": "review-date-missing",
@@ -17339,19 +15456,6 @@
       "siteId": "lucero-legal",
       "recordId": "lucero-legal:origin-country:qataries",
       "canonicalKey": "origin-country:qataries",
-      "sourcePath": "/Users/libertydesignstudio/dev/lucero-legal/src/lib/seo/origin-country-data.ts",
-      "officialSourceUrls": [],
-      "recommendedAction": "Backfill `reviewDate` from the source module or an official verification pass."
-    },
-    {
-      "id": "review-date-missing:lucero-legal:origin-country:rusos",
-      "severity": "low",
-      "category": "review-date-missing",
-      "title": "High-risk record missing review date",
-      "detail": "Add a concrete review date for Rusia so legal and policy content can be refreshed on schedule.",
-      "siteId": "lucero-legal",
-      "recordId": "lucero-legal:origin-country:rusos",
-      "canonicalKey": "origin-country:rusos",
       "sourcePath": "/Users/libertydesignstudio/dev/lucero-legal/src/lib/seo/origin-country-data.ts",
       "officialSourceUrls": [],
       "recommendedAction": "Backfill `reviewDate` from the source module or an official verification pass."
@@ -17443,19 +15547,6 @@
       "siteId": "lucero-legal",
       "recordId": "lucero-legal:origin-country:turcos",
       "canonicalKey": "origin-country:turcos",
-      "sourcePath": "/Users/libertydesignstudio/dev/lucero-legal/src/lib/seo/origin-country-data.ts",
-      "officialSourceUrls": [],
-      "recommendedAction": "Backfill `reviewDate` from the source module or an official verification pass."
-    },
-    {
-      "id": "review-date-missing:lucero-legal:origin-country:ucranianos",
-      "severity": "low",
-      "category": "review-date-missing",
-      "title": "High-risk record missing review date",
-      "detail": "Add a concrete review date for Ucrania so legal and policy content can be refreshed on schedule.",
-      "siteId": "lucero-legal",
-      "recordId": "lucero-legal:origin-country:ucranianos",
-      "canonicalKey": "origin-country:ucranianos",
       "sourcePath": "/Users/libertydesignstudio/dev/lucero-legal/src/lib/seo/origin-country-data.ts",
       "officialSourceUrls": [],
       "recommendedAction": "Backfill `reviewDate` from the source module or an official verification pass."
@@ -18267,17 +16358,20 @@
       "recommendedAction": "Backfill `reviewDate` from the source module or an official verification pass."
     },
     {
-      "id": "review-date-missing:lucero-legal:service:citizenship-pathway-argentina",
-      "severity": "low",
-      "category": "review-date-missing",
-      "title": "High-risk record missing review date",
-      "detail": "Add a concrete review date for Ciudadanía Argentina: Vía de Naturalización y Estrategia Legal so legal and policy content can be refreshed on schedule.",
+      "id": "unverified-claim:lucero-legal:service:citizenship-pathway-argentina",
+      "severity": "medium",
+      "category": "unverified-claim",
+      "title": "Naturalization process wording misses digital filing update",
+      "detail": "Argentina announced a digital naturalization channel in October 2025; copy describing the process as only paper or court-led needs review.",
       "siteId": "lucero-legal",
       "recordId": "lucero-legal:service:citizenship-pathway-argentina",
       "canonicalKey": "service:citizenship-pathway-argentina",
       "sourcePath": "/Users/libertydesignstudio/dev/lucero-legal/src/lib/services-data.ts",
-      "officialSourceUrls": [],
-      "recommendedAction": "Backfill `reviewDate` from the source module or an official verification pass."
+      "officialSourceUrls": [
+        "https://www.argentina.gob.ar/noticias/ahora-el-tramite-de-ciudadania-argentina-se-podra-hacer-de-forma-digital-en-migraciones",
+        "https://www.argentina.gob.ar/servicio/obtener-la-ciudadania-argentina"
+      ],
+      "recommendedAction": "Add the digital naturalization update and verify current filing mechanics before publishing citizenship guidance."
     },
     {
       "id": "review-date-missing:lucero-legal:service:citizenship-russia-palermo",
@@ -19320,19 +17414,6 @@
       "recommendedAction": "Backfill `reviewDate` from the source module or an official verification pass."
     },
     {
-      "id": "review-date-missing:lucero-legal:situation:mudarse-desde-venezuela",
-      "severity": "low",
-      "category": "review-date-missing",
-      "title": "High-risk record missing review date",
-      "detail": "Add a concrete review date for Mudarse a Argentina desde Venezuela so legal and policy content can be refreshed on schedule.",
-      "siteId": "lucero-legal",
-      "recordId": "lucero-legal:situation:mudarse-desde-venezuela",
-      "canonicalKey": "situation:mudarse-desde-venezuela",
-      "sourcePath": "/Users/libertydesignstudio/dev/lucero-legal/src/lib/seo/situation-data.ts",
-      "officialSourceUrls": [],
-      "recommendedAction": "Backfill `reviewDate` from the source module or an official verification pass."
-    },
-    {
       "id": "review-date-missing:lucero-legal:situation:nacimiento-en-argentina",
       "severity": "low",
       "category": "review-date-missing",
@@ -19575,19 +17656,6 @@
       "siteId": "lucero-legal",
       "recordId": "lucero-legal:situation:segunda-residencia-para-familias-del-golfo",
       "canonicalKey": "situation:segunda-residencia-para-familias-del-golfo",
-      "sourcePath": "/Users/libertydesignstudio/dev/lucero-legal/src/lib/seo/situation-data.ts",
-      "officialSourceUrls": [],
-      "recommendedAction": "Backfill `reviewDate` from the source module or an official verification pass."
-    },
-    {
-      "id": "review-date-missing:lucero-legal:situation:solicitar-refugio-asilo",
-      "severity": "low",
-      "category": "review-date-missing",
-      "title": "High-risk record missing review date",
-      "detail": "Add a concrete review date for Solicitar Refugio o Asilo en Argentina so legal and policy content can be refreshed on schedule.",
-      "siteId": "lucero-legal",
-      "recordId": "lucero-legal:situation:solicitar-refugio-asilo",
-      "canonicalKey": "situation:solicitar-refugio-asilo",
       "sourcePath": "/Users/libertydesignstudio/dev/lucero-legal/src/lib/seo/situation-data.ts",
       "officialSourceUrls": [],
       "recommendedAction": "Backfill `reviewDate` from the source module or an official verification pass."
