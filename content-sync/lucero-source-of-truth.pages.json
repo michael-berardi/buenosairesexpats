@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-03-08T16:49:54.503Z",
+  "generatedAt": "2026-03-08T19:35:03.562Z",
   "totals": {
     "routeFiles": 49,
     "boundRoutes": 3,
@@ -13613,7 +13613,7 @@
       "reviewedRecordCount": 1,
       "projectedPrimaryRecordCount": 1,
       "claimAnchorCount": 11,
-      "riskyClaimCount": 3,
+      "riskyClaimCount": 4,
       "sourcePaths": [
         "/Users/libertydesignstudio/dev/buenosairesexpats/lib/nationality-data.ts"
       ],
@@ -13621,6 +13621,18 @@
         "lib/nationality-data.ts"
       ],
       "claimAnchors": [
+        {
+          "recordId": "buenosairesexpats:country:canada",
+          "sourceExport": "countries",
+          "recordRole": "primary",
+          "path": "sections[0].bullets[0]",
+          "text": "The reciprocity fee for US citizens was permanently eliminated by Decreto 959/2016, and Australian and Canadian fees were suspended in 2017-2018; none are collected as of 2026.",
+          "signals": [
+            "numeric",
+            "dated",
+            "legal"
+          ]
+        },
         {
           "recordId": "buenosairesexpats:country:canada",
           "sourceExport": "countries",
@@ -13660,14 +13672,6 @@
           "recordRole": "primary",
           "path": "payload.name",
           "text": "Canada",
-          "signals": []
-        },
-        {
-          "recordId": "buenosairesexpats:country:canada",
-          "sourceExport": "countries",
-          "recordRole": "primary",
-          "path": "sections[0].bullets[0]",
-          "text": "Reciprocity fee no longer required",
           "signals": []
         },
         {
@@ -13739,7 +13743,7 @@
       "reviewedRecordCount": 1,
       "projectedPrimaryRecordCount": 1,
       "claimAnchorCount": 11,
-      "riskyClaimCount": 2,
+      "riskyClaimCount": 3,
       "sourcePaths": [
         "/Users/libertydesignstudio/dev/buenosairesexpats/lib/nationality-data.ts"
       ],
@@ -13747,6 +13751,18 @@
         "lib/nationality-data.ts"
       ],
       "claimAnchors": [
+        {
+          "recordId": "buenosairesexpats:country:chile",
+          "sourceExport": "countries",
+          "recordRole": "primary",
+          "path": "sections[1].bullets[4]",
+          "text": "The reciprocity fee for US citizens was permanently eliminated by Decreto 959/2016, and Australian and Canadian fees were suspended in 2017-2018; none are collected as of 2026.",
+          "signals": [
+            "numeric",
+            "dated",
+            "legal"
+          ]
+        },
         {
           "recordId": "buenosairesexpats:country:chile",
           "sourceExport": "countries",
@@ -13814,14 +13830,6 @@
           "recordRole": "primary",
           "path": "sections[1].bullets[2]",
           "text": "Do I need anything besides my ID for entry?",
-          "signals": []
-        },
-        {
-          "recordId": "buenosairesexpats:country:chile",
-          "sourceExport": "countries",
-          "recordRole": "primary",
-          "path": "sections[1].bullets[4]",
-          "text": "What about the reciprocity fee - is it still required?",
           "signals": []
         },
         {
@@ -20026,6 +20034,18 @@
           "recordId": "buenosairesexpats:country:saudi-arabia",
           "sourceExport": "countries",
           "recordRole": "primary",
+          "path": "summary",
+          "text": "Since November 2024, Saudi ordinary passport holders are exempt from the Argentine consular visa when they hold a valid U.S. visa in a similar category and complete an AVE, subject to verification with Saudi authorities…",
+          "signals": [
+            "numeric",
+            "dated",
+            "legal"
+          ]
+        },
+        {
+          "recordId": "buenosairesexpats:country:saudi-arabia",
+          "sourceExport": "countries",
+          "recordRole": "primary",
           "path": "payload.processingTime",
           "text": "2-4 weeks",
           "signals": [
@@ -20060,16 +20080,6 @@
           "recordRole": "primary",
           "path": "sections[0].bullets[0]",
           "text": "How do Saudis apply for an Argentina visa?",
-          "signals": [
-            "legal"
-          ]
-        },
-        {
-          "recordId": "buenosairesexpats:country:saudi-arabia",
-          "sourceExport": "countries",
-          "recordRole": "primary",
-          "path": "summary",
-          "text": "Saudi citizens must obtain a visa before traveling. Argentina has an embassy in Riyadh.",
           "signals": [
             "legal"
           ]
@@ -21492,10 +21502,11 @@
           "sourceExport": "countries",
           "recordRole": "primary",
           "path": "sections[0].bullets[0]",
-          "text": "Reciprocity fee no longer required as of 2016",
+          "text": "The reciprocity fee for US citizens was permanently eliminated by Decreto 959/2016, and Australian and Canadian fees were suspended in 2017-2018; none are collected as of 2026.",
           "signals": [
             "numeric",
-            "dated"
+            "dated",
+            "legal"
           ]
         },
         {

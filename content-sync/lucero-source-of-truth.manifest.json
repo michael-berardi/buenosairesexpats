@@ -1,10 +1,10 @@
 {
   "siteId": "buenosairesexpats",
   "repoPath": "buenosairesexpats",
-  "fullDigest": "05744cd90c60b22c32d783671bb33fb73f3b8dfc73ef34b12f93aea058120b3d",
-  "focusDigest": "05744cd90c60b22c32d783671bb33fb73f3b8dfc73ef34b12f93aea058120b3d",
-  "fullRecordCount": 2108,
-  "focusRecordCount": 2108,
+  "fullDigest": "691bfc8d7082f84f8d1960958b05d88a607c7e75481ad500a89660067ffd4a44",
+  "focusDigest": "691bfc8d7082f84f8d1960958b05d88a607c7e75481ad500a89660067ffd4a44",
+  "fullRecordCount": 2119,
+  "focusRecordCount": 2119,
   "focusKinds": [
     "country",
     "expat-profile",
@@ -23,7 +23,7 @@
     "article": 41,
     "country": 355,
     "guide": 220,
-    "legal-framework": 22,
+    "legal-framework": 33,
     "profession": 167,
     "visa-type": 19,
     "expat-profile": 63,
