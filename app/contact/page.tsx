@@ -202,7 +202,7 @@ export default function ContactPage() {
                           aria-invalid={errors.name ? "true" : "false"}
                           aria-describedby={errors.name ? "name-error" : undefined}
                           className={`flex h-11 w-full rounded-md border bg-background px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 ${
-                            errors.name ? "border-red-500 focus-visible:ring-red-500" : "border-input"
+                            errors.name ? "border-red-500 focus-visible:ring-red-500" : "border-stone-400"
                           }`}
                         />
                         {errors.name && (
@@ -226,7 +226,7 @@ export default function ContactPage() {
                           aria-invalid={errors.email ? "true" : "false"}
                           aria-describedby={errors.email ? "email-error" : undefined}
                           className={`flex h-11 w-full rounded-md border bg-background px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 ${
-                            errors.email ? "border-red-500 focus-visible:ring-red-500" : "border-input"
+                            errors.email ? "border-red-500 focus-visible:ring-red-500" : "border-stone-400"
                           }`}
                         />
                         {errors.email && (
@@ -249,7 +249,7 @@ export default function ContactPage() {
                           aria-invalid={errors.subject ? "true" : "false"}
                           aria-describedby={errors.subject ? "subject-error" : undefined}
                           className={`flex h-11 w-full rounded-md border bg-background px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 ${
-                            errors.subject ? "border-red-500 focus-visible:ring-red-500" : "border-input"
+                            errors.subject ? "border-red-500 focus-visible:ring-red-500" : "border-stone-400"
                           }`}
                         />
                         {errors.subject && (
@@ -272,7 +272,7 @@ export default function ContactPage() {
                           aria-invalid={errors.message ? "true" : "false"}
                           aria-describedby={errors.message ? "message-error" : undefined}
                           className={`flex min-h-[120px] w-full rounded-md border bg-background px-3 py-2 text-sm ring-offset-background placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 resize-y ${
-                            errors.message ? "border-red-500 focus-visible:ring-red-500" : "border-input"
+                            errors.message ? "border-red-500 focus-visible:ring-red-500" : "border-stone-400"
                           }`}
                         />
                         {errors.message && (

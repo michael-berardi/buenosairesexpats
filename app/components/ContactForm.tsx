@@ -29,8 +29,12 @@ export default function ContactForm() {
   const { t } = useTranslation();
   const [status, setStatus] = useState<FormStatus>("idle");
   const [errorMessage, setErrorMessage] = useState("");
+  const [submitted, setSubmitted] = useState(false);
   const formRef = useRef<HTMLFormElement>(null);
   const turnstileRef = useRef<HTMLDivElement>(null);
+
+  const inputBase =
+    "w-full rounded-lg border border-stone-400 bg-background px-4 py-3 text-sm text-foreground placeholder:text-muted-foreground focus:border-primary focus:outline-none focus:ring-2 focus:ring-primary/20";
 
   const getTurnstileToken = useCallback((): string | null => {
     const input = turnstileRef.current?.querySelector<HTMLInputElement>(
@@ -51,6 +55,15 @@ export default function ContactForm() {
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
+    setSubmitted(true);
+
+    // Validate required fields
+    if (formRef.current && !formRef.current.checkValidity()) {
+      setStatus("error");
+      setErrorMessage("Please fill in all required fields.");
+      return;
+    }
+
     setStatus("submitting");
     setErrorMessage("");
 
@@ -132,7 +145,8 @@ export default function ContactForm() {
     <form
       ref={formRef}
       onSubmit={handleSubmit}
-      className="space-y-5"
+      className={`space-y-5${submitted ? " was-validated" : ""}`}
+      noValidate
     >
       {/* Name */}
       <div>
@@ -144,8 +158,10 @@ export default function ContactForm() {
           name="name"
           type="text"
           required
+          autoComplete="name"
           placeholder={t("consultation.namePlaceholder") as string}
-          className="w-full rounded-lg border border-border bg-background px-4 py-3 text-sm text-foreground placeholder:text-muted-foreground focus:border-primary focus:outline-none focus:ring-2 focus:ring-primary/20"
+          aria-required="true"
+          className={inputBase}
         />
       </div>
 
@@ -159,8 +175,10 @@ export default function ContactForm() {
           name="email"
           type="email"
           required
+          autoComplete="email"
           placeholder={t("consultation.emailPlaceholder") as string}
-          className="w-full rounded-lg border border-border bg-background px-4 py-3 text-sm text-foreground placeholder:text-muted-foreground focus:border-primary focus:outline-none focus:ring-2 focus:ring-primary/20"
+          aria-required="true"
+          className={inputBase}
         />
       </div>
 
@@ -173,8 +191,9 @@ export default function ContactForm() {
           id="cf-phone"
           name="phone"
           type="tel"
+          autoComplete="tel"
           placeholder={t("consultation.phonePlaceholder") as string}
-          className="w-full rounded-lg border border-border bg-background px-4 py-3 text-sm text-foreground placeholder:text-muted-foreground focus:border-primary focus:outline-none focus:ring-2 focus:ring-primary/20"
+          className={inputBase}
         />
       </div>
 
@@ -187,8 +206,9 @@ export default function ContactForm() {
           id="cf-country"
           name="country"
           type="text"
+          autoComplete="country-name"
           placeholder={t("consultation.countryPlaceholder") as string}
-          className="w-full rounded-lg border border-border bg-background px-4 py-3 text-sm text-foreground placeholder:text-muted-foreground focus:border-primary focus:outline-none focus:ring-2 focus:ring-primary/20"
+          className={inputBase}
         />
       </div>
 
@@ -200,7 +220,7 @@ export default function ContactForm() {
         <select
           id="cf-service"
           name="service"
-          className="w-full rounded-lg border border-border bg-background px-4 py-3 text-sm text-foreground focus:border-primary focus:outline-none focus:ring-2 focus:ring-primary/20"
+          className={inputBase}
           defaultValue=""
         >
           <option value="" disabled>
@@ -224,8 +244,10 @@ export default function ContactForm() {
           name="message"
           required
           rows={4}
+          autoComplete="off"
           placeholder={t("consultation.messagePlaceholder") as string}
-          className="w-full resize-y rounded-lg border border-border bg-background px-4 py-3 text-sm text-foreground placeholder:text-muted-foreground focus:border-primary focus:outline-none focus:ring-2 focus:ring-primary/20"
+          aria-required="true"
+          className={`${inputBase} resize-y`}
         />
       </div>
 

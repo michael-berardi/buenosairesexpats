@@ -11,6 +11,12 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "https://buenosairesexpats.com/consultation",
   },
+  openGraph: {
+    title: "Free Case Evaluation | Buenos Aires Expats",
+    description: "Request a free case evaluation from a qualified Argentina immigration attorney. Get personalized guidance on visas, residency, and citizenship.",
+    url: "https://buenosairesexpats.com/consultation",
+    images: [{ url: '/images/og-image.jpg', width: 1200, height: 630, alt: 'Buenos Aires Expats' }],
+  },
 };
 
 export default function ConsultationPage() {
@@ -50,6 +56,23 @@ export default function ConsultationPage() {
             attorney will respond within 24 hours with an initial assessment of
             your case.
           </p>
+        </div>
+      </section>
+
+      {/* Intro */}
+      <section className="py-10 md:py-14">
+        <div className="container mx-auto px-4">
+          <div className="mx-auto max-w-3xl">
+            <p className="text-lg text-muted-foreground leading-relaxed">
+              Navigating Argentina&apos;s immigration system can feel overwhelming, especially when
+              dealing with unfamiliar visa categories, changing regulations, and Spanish-language
+              paperwork. Whether you&apos;re planning a move to Buenos Aires or already living here
+              and need to formalize your status, a free case evaluation gives you a clear picture
+              of your options without any upfront commitment. An Argentina-based immigration
+              attorney will review your situation and outline the most realistic path forward
+              based on your nationality, profession, and goals.
+            </p>
+          </div>
         </div>
       </section>
 
@@ -106,6 +129,143 @@ export default function ConsultationPage() {
                 </div>
               </div>
             </aside>
+          </div>
+        </div>
+      </section>
+
+      {/* What to Expect */}
+      <section className="py-12 md:py-16 bg-muted/30">
+        <div className="container mx-auto px-4">
+          <div className="mx-auto max-w-3xl">
+            <h2 className="text-2xl md:text-3xl font-bold mb-6">
+              What to Expect
+            </h2>
+            <p className="text-muted-foreground mb-6">
+              After submitting your case evaluation request, here is what happens next:
+            </p>
+            <ul className="space-y-4">
+              <li className="flex items-start gap-3">
+                <span className="flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-primary text-primary-foreground text-sm font-bold mt-0.5">1</span>
+                <div>
+                  <p className="font-semibold text-foreground">Initial review within 24 hours</p>
+                  <p className="text-sm text-muted-foreground">
+                    An attorney reviews your submission and identifies which visa categories or residency pathways apply to your situation.
+                  </p>
+                </div>
+              </li>
+              <li className="flex items-start gap-3">
+                <span className="flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-primary text-primary-foreground text-sm font-bold mt-0.5">2</span>
+                <div>
+                  <p className="font-semibold text-foreground">Personalized assessment</p>
+                  <p className="text-sm text-muted-foreground">
+                    You receive a written summary outlining your best options, estimated timelines, and required documentation based on your nationality and circumstances.
+                  </p>
+                </div>
+              </li>
+              <li className="flex items-start gap-3">
+                <span className="flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-primary text-primary-foreground text-sm font-bold mt-0.5">3</span>
+                <div>
+                  <p className="font-semibold text-foreground">No obligation to proceed</p>
+                  <p className="text-sm text-muted-foreground">
+                    The initial case evaluation is completely free. You can use the information to make an informed decision about whether to engage legal representation.
+                  </p>
+                </div>
+              </li>
+              <li className="flex items-start gap-3">
+                <span className="flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-primary text-primary-foreground text-sm font-bold mt-0.5">4</span>
+                <div>
+                  <p className="font-semibold text-foreground">Optional follow-up consultation</p>
+                  <p className="text-sm text-muted-foreground">
+                    If you decide to move forward, you can schedule a detailed consultation to discuss your case in depth and begin the application process.
+                  </p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      {/* FAQ */}
+      <section className="py-12 md:py-16">
+        <div className="container mx-auto px-4">
+          <div className="mx-auto max-w-3xl">
+            <h2 className="text-2xl md:text-3xl font-bold mb-8">
+              Frequently Asked Questions
+            </h2>
+            <div className="space-y-6">
+              <div>
+                <h3 className="text-lg font-semibold mb-2">
+                  Do I need a lawyer to get a visa for Argentina?
+                </h3>
+                <p className="text-muted-foreground">
+                  It depends on your situation. Some visa categories, like the{" "}
+                  <Link href="/visas/digital-nomad" className="text-primary hover:underline">digital nomad visa</Link>,
+                  have relatively straightforward applications. Others, such as{" "}
+                  <Link href="/visas/work" className="text-primary hover:underline">work visas</Link>{" "}
+                  or residency through investment, involve complex documentation requirements
+                  where professional legal guidance can prevent costly delays and rejections.
+                </p>
+              </div>
+
+              <div>
+                <h3 className="text-lg font-semibold mb-2">
+                  How long does the immigration process typically take?
+                </h3>
+                <p className="text-muted-foreground">
+                  Timelines vary significantly depending on the visa type and your nationality.
+                  A temporary residency application through{" "}
+                  <Link href="/visas/nationalities" className="text-primary hover:underline">Mercosur nationality pathways</Link>{" "}
+                  can be processed in a few weeks, while other categories may take several months.
+                  An attorney can give you a realistic timeline based on your specific case.
+                </p>
+              </div>
+
+              <div>
+                <h3 className="text-lg font-semibold mb-2">
+                  Is the case evaluation really free?
+                </h3>
+                <p className="text-muted-foreground">
+                  Yes. The initial case evaluation is provided at no cost and with no obligation.
+                  It is designed to help you understand your options before making any commitment.
+                  You will receive a clear assessment of which visa pathways are available to you
+                  and what the next steps would involve.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Related resources */}
+      <section className="py-10 md:py-12 bg-muted/30">
+        <div className="container mx-auto px-4">
+          <div className="mx-auto max-w-3xl">
+            <h2 className="text-xl font-semibold mb-4">
+              Helpful Resources
+            </h2>
+            <p className="text-muted-foreground mb-4">
+              Before or after your consultation, these guides can help you prepare:
+            </p>
+            <ul className="space-y-2">
+              <li>
+                <Link href="/visas" className="text-primary hover:underline font-medium">
+                  Argentina Visa Guide
+                </Link>{" "}
+                <span className="text-muted-foreground">&mdash; Overview of all visa categories and eligibility requirements</span>
+              </li>
+              <li>
+                <Link href="/guides/getting-dni" className="text-primary hover:underline font-medium">
+                  Getting Your DNI
+                </Link>{" "}
+                <span className="text-muted-foreground">&mdash; Step-by-step guide to obtaining your national ID after arrival</span>
+              </li>
+              <li>
+                <Link href="/cost-of-living" className="text-primary hover:underline font-medium">
+                  Cost of Living in Buenos Aires
+                </Link>{" "}
+                <span className="text-muted-foreground">&mdash; Real 2026 prices to help you plan your budget</span>
+              </li>
+            </ul>
           </div>
         </div>
       </section>

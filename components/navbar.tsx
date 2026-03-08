@@ -108,12 +108,18 @@ export function Navbar() {
         {/* Mobile Menu */}
         <Sheet open={isOpen} onOpenChange={setIsOpen}>
           <SheetTrigger asChild className="lg:hidden">
-            <Button variant="ghost" size="icon">
+            <Button
+              variant="ghost"
+              size="icon"
+              aria-label="Open navigation menu"
+              aria-expanded={isOpen}
+              aria-controls="mobile-nav-sheet"
+            >
               <Menu className="h-6 w-6" />
               <span className="sr-only">Toggle menu</span>
             </Button>
           </SheetTrigger>
-          <SheetContent side="right" className="w-full sm:w-[400px] max-w-full overflow-y-auto">
+          <SheetContent side="right" className="w-full sm:w-[400px] max-w-full overflow-y-auto" id="mobile-nav-sheet">
             <SheetTitle className="sr-only">Main Navigation Menu</SheetTitle>
             <SheetDescription className="sr-only">
               Navigate to visa guides, neighborhoods, and other resources for expats in Buenos Aires.

@@ -748,6 +748,26 @@ main .rounded-xl {
   }
 }
 
+/* Form validation error states — show red border after user interacts */
+form.was-validated input:invalid,
+form.was-validated textarea:invalid,
+form.was-validated select:invalid,
+input:user-invalid,
+textarea:user-invalid,
+select:user-invalid {
+  border-color: #ef4444 !important;
+}
+
+form.was-validated input:invalid:focus,
+form.was-validated textarea:invalid:focus,
+form.was-validated select:invalid:focus,
+input:user-invalid:focus,
+textarea:user-invalid:focus,
+select:user-invalid:focus {
+  border-color: #ef4444 !important;
+  --tw-ring-color: rgba(239, 68, 68, 0.2);
+}
+
 /* Print styles */
 @media print {
   .no-print {
