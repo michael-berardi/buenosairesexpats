@@ -1,15 +1,15 @@
 {
-  "generatedAt": "2026-03-08T02:29:07.033Z",
-  "totalFindings": 1735,
+  "generatedAt": "2026-03-08T02:58:04.728Z",
+  "totalFindings": 1739,
   "findingsBySeverity": {
     "critical": 0,
-    "high": 158,
-    "medium": 52,
+    "high": 163,
+    "medium": 51,
     "low": 1525
   },
   "findingsByCategory": {
-    "official-mismatch": 158,
-    "unverified-claim": 52,
+    "official-mismatch": 163,
+    "unverified-claim": 51,
     "review-date-missing": 1350,
     "review-date-stale": 175,
     "coverage-gap": 0
@@ -1555,6 +1555,37 @@
       "recommendedAction": "Backfill `reviewDate` from the source module or an official verification pass."
     },
     {
+      "id": "official-mismatch:argentinavisalaw:guide-expanded:documents",
+      "severity": "high",
+      "category": "official-mismatch",
+      "title": "Digital nomad duration conflicts with official guidance",
+      "detail": "Official Migraciones guidance currently describes a 180-day transitory residence with one additional 180-day extension, not a 12+12 month stay.",
+      "siteId": "argentinavisalaw",
+      "recordId": "argentinavisalaw:guide-expanded:documents",
+      "canonicalKey": "guide:documents",
+      "sourcePath": "/Users/libertydesignstudio/dev/argentinavisalaw.com/app/data/guidesExpanded.ts",
+      "officialSourceUrls": [
+        "https://www.argentina.gob.ar/servicio/obtener-una-residencia-transitoria-como-nomada-digital",
+        "https://www.argentina.gob.ar/servicio/obtener-una-prorroga-de-residencia-transitoria-como-nomada-digital"
+      ],
+      "recommendedAction": "Rewrite duration and renewal language to 180 days plus one 180-day extension unless a newer official resolution supersedes it."
+    },
+    {
+      "id": "official-mismatch:argentinavisalaw:guide-expanded:documents",
+      "severity": "high",
+      "category": "official-mismatch",
+      "title": "Tourist stay duration conflicts with official guidance",
+      "detail": "Official tourist guidance states a 90-day stay that may be extended once for another 90 days, not a standard 180-day initial stay.",
+      "siteId": "argentinavisalaw",
+      "recordId": "argentinavisalaw:guide-expanded:documents",
+      "canonicalKey": "guide:documents",
+      "sourcePath": "/Users/libertydesignstudio/dev/argentinavisalaw.com/app/data/guidesExpanded.ts",
+      "officialSourceUrls": [
+        "https://www.argentina.gob.ar/interior/migraciones/turistas"
+      ],
+      "recommendedAction": "Change tourist-entry copy to 90 days plus one 90-day extension where applicable."
+    },
+    {
       "id": "official-mismatch:argentinavisalaw:guide-expanded:working-holiday",
       "severity": "high",
       "category": "official-mismatch",
@@ -1716,6 +1747,21 @@
       "sourcePath": "/Users/libertydesignstudio/dev/argentinavisalaw.com/app/data/guides.ts",
       "officialSourceUrls": [],
       "recommendedAction": "Backfill `reviewDate` from the source module or an official verification pass."
+    },
+    {
+      "id": "official-mismatch:argentinavisalaw:guide:documents",
+      "severity": "high",
+      "category": "official-mismatch",
+      "title": "Tourist stay duration conflicts with official guidance",
+      "detail": "Official tourist guidance states a 90-day stay that may be extended once for another 90 days, not a standard 180-day initial stay.",
+      "siteId": "argentinavisalaw",
+      "recordId": "argentinavisalaw:guide:documents",
+      "canonicalKey": "guide:documents",
+      "sourcePath": "/Users/libertydesignstudio/dev/argentinavisalaw.com/app/data/guides.ts",
+      "officialSourceUrls": [
+        "https://www.argentina.gob.ar/interior/migraciones/turistas"
+      ],
+      "recommendedAction": "Change tourist-entry copy to 90 days plus one 90-day extension where applicable."
     },
     {
       "id": "review-date-missing:argentinavisalaw:guide:extensions",
@@ -1960,6 +2006,21 @@
       "sourcePath": "/Users/libertydesignstudio/dev/argentinavisalaw.com/app/data/guides.ts",
       "officialSourceUrls": [],
       "recommendedAction": "Backfill `reviewDate` from the source module or an official verification pass."
+    },
+    {
+      "id": "official-mismatch:argentinavisalaw:guide:processing-times",
+      "severity": "high",
+      "category": "official-mismatch",
+      "title": "Tourist stay duration conflicts with official guidance",
+      "detail": "Official tourist guidance states a 90-day stay that may be extended once for another 90 days, not a standard 180-day initial stay.",
+      "siteId": "argentinavisalaw",
+      "recordId": "argentinavisalaw:guide:processing-times",
+      "canonicalKey": "guide:processing-times",
+      "sourcePath": "/Users/libertydesignstudio/dev/argentinavisalaw.com/app/data/guides.ts",
+      "officialSourceUrls": [
+        "https://www.argentina.gob.ar/interior/migraciones/turistas"
+      ],
+      "recommendedAction": "Change tourist-entry copy to 90 days plus one 90-day extension where applicable."
     },
     {
       "id": "review-date-missing:argentinavisalaw:guide:professional-title-homologation",
@@ -12292,20 +12353,19 @@
       "recommendedAction": "Rewrite duration and renewal language to 180 days plus one 180-day extension unless a newer official resolution supersedes it."
     },
     {
-      "id": "unverified-claim:expatsargentina:visa-comparison:digital-nomad-vs-work-visa",
-      "severity": "medium",
-      "category": "unverified-claim",
-      "title": "Digital nomad residency pathway claim needs verification",
-      "detail": "The current official digital nomad page does not present the visa itself as a direct permanent residency or citizenship track.",
+      "id": "official-mismatch:expatsargentina:visa-comparison:digital-nomad-vs-work-visa",
+      "severity": "high",
+      "category": "official-mismatch",
+      "title": "Tourist stay duration conflicts with official guidance",
+      "detail": "Official tourist guidance states a 90-day stay that may be extended once for another 90 days, not a standard 180-day initial stay.",
       "siteId": "expatsargentina",
       "recordId": "expatsargentina:visa-comparison:digital-nomad-vs-work-visa",
       "canonicalKey": "visa-comparison:digital-nomad-vs-work-visa",
       "sourcePath": "/Users/libertydesignstudio/dev/expatsargentina/my-app/lib/data/visa-comparisons.ts",
       "officialSourceUrls": [
-        "https://www.argentina.gob.ar/servicio/obtener-una-residencia-transitoria-como-nomada-digital",
-        "https://www.argentina.gob.ar/servicio/obtener-una-prorroga-de-residencia-transitoria-como-nomada-digital"
+        "https://www.argentina.gob.ar/interior/migraciones/turistas"
       ],
-      "recommendedAction": "Reframe this as a visa-switch strategy unless you can cite a current official source confirming direct countability toward permanent residency."
+      "recommendedAction": "Change tourist-entry copy to 90 days plus one 90-day extension where applicable."
     },
     {
       "id": "review-date-missing:expatsargentina:visa-comparison:retirement-vs-investment-visa",
