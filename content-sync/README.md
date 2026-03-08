@@ -1,6 +1,6 @@
 # Lucero Source of Truth Sync
 
-Generated at 2026-03-08T12:25:51.594Z.
+Generated at 2026-03-08T13:50:23.283Z.
 
 - `lucero-source-of-truth.full.json` contains the full network catalog.
 - `lucero-source-of-truth.bundle.json` contains the site-focused subset for `buenosairesexpats`.
@@ -12,3 +12,4 @@ Generated at 2026-03-08T12:25:51.594Z.
 - `lucero-source-of-truth.inventory.json` lists structured source files covered or still pending ingestion.
 - `lucero-source-of-truth.truthsync.json` tracks which structured modules are wired, projected, or still unsynced under TruthSync.
 - `lucero-source-of-truth.ai-queue.json` queues contextual rewrite work for AI agents where deterministic fact patches are not enough.
+- `lucero-source-of-truth.pages.json` inventories route files, rendered page coverage, and page-level claim anchors for TruthSync full-pass reviews.

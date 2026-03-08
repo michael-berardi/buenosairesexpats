@@ -1,0 +1,509 @@
+{
+  "generatedAt": "2026-03-08T13:50:23.283Z",
+  "totals": {
+    "routeFiles": 48,
+    "boundRoutes": 0,
+    "missingBindings": 3,
+    "excludedRoutes": 45,
+    "pages": 0,
+    "activePages": 0,
+    "reviewNeededPages": 0,
+    "aiNeededPages": 0
+  },
+  "sites": [
+    {
+      "siteId": "buenosairesexpats",
+      "routeFiles": 48,
+      "boundRoutes": 0,
+      "missingBindings": 3,
+      "excludedRoutes": 45,
+      "pages": 0,
+      "activePages": 0,
+      "reviewNeededPages": 0,
+      "aiNeededPages": 0
+    }
+  ],
+  "routes": [
+    {
+      "siteId": "buenosairesexpats",
+      "routePattern": "/",
+      "pageFile": "app/page.tsx",
+      "dynamic": false,
+      "classification": "marketing",
+      "status": "excluded",
+      "sourceExports": [],
+      "generatedPages": 0
+    },
+    {
+      "siteId": "buenosairesexpats",
+      "routePattern": "/about",
+      "pageFile": "app/about/page.tsx",
+      "dynamic": false,
+      "classification": "marketing",
+      "status": "excluded",
+      "sourceExports": [],
+      "generatedPages": 0
+    },
+    {
+      "siteId": "buenosairesexpats",
+      "routePattern": "/banking",
+      "pageFile": "app/banking/page.tsx",
+      "dynamic": false,
+      "classification": "utility",
+      "status": "excluded",
+      "sourceExports": [],
+      "generatedPages": 0
+    },
+    {
+      "siteId": "buenosairesexpats",
+      "routePattern": "/contact",
+      "pageFile": "app/contact/page.tsx",
+      "dynamic": false,
+      "classification": "utility",
+      "status": "excluded",
+      "sourceExports": [],
+      "generatedPages": 0
+    },
+    {
+      "siteId": "buenosairesexpats",
+      "routePattern": "/cost-of-living",
+      "pageFile": "app/cost-of-living/page.tsx",
+      "dynamic": false,
+      "classification": "utility",
+      "status": "excluded",
+      "sourceExports": [],
+      "generatedPages": 0
+    },
+    {
+      "siteId": "buenosairesexpats",
+      "routePattern": "/dining",
+      "pageFile": "app/dining/page.tsx",
+      "dynamic": false,
+      "classification": "utility",
+      "status": "excluded",
+      "sourceExports": [],
+      "generatedPages": 0
+    },
+    {
+      "siteId": "buenosairesexpats",
+      "routePattern": "/dining/belgrano",
+      "pageFile": "app/dining/belgrano/page.tsx",
+      "dynamic": false,
+      "classification": "utility",
+      "status": "excluded",
+      "sourceExports": [],
+      "generatedPages": 0
+    },
+    {
+      "siteId": "buenosairesexpats",
+      "routePattern": "/dining/palermo",
+      "pageFile": "app/dining/palermo/page.tsx",
+      "dynamic": false,
+      "classification": "utility",
+      "status": "excluded",
+      "sourceExports": [],
+      "generatedPages": 0
+    },
+    {
+      "siteId": "buenosairesexpats",
+      "routePattern": "/dining/recoleta",
+      "pageFile": "app/dining/recoleta/page.tsx",
+      "dynamic": false,
+      "classification": "utility",
+      "status": "excluded",
+      "sourceExports": [],
+      "generatedPages": 0
+    },
+    {
+      "siteId": "buenosairesexpats",
+      "routePattern": "/expat-profiles",
+      "pageFile": "app/expat-profiles/page.tsx",
+      "dynamic": false,
+      "classification": "utility",
+      "status": "excluded",
+      "sourceExports": [],
+      "generatedPages": 0
+    },
+    {
+      "siteId": "buenosairesexpats",
+      "routePattern": "/expat-profiles/[id]",
+      "pageFile": "app/expat-profiles/[id]/page.tsx",
+      "dynamic": true,
+      "classification": "content",
+      "status": "missing-binding",
+      "sourceExports": [],
+      "generatedPages": 0
+    },
+    {
+      "siteId": "buenosairesexpats",
+      "routePattern": "/guides",
+      "pageFile": "app/guides/page.tsx",
+      "dynamic": false,
+      "classification": "hub",
+      "status": "excluded",
+      "sourceExports": [],
+      "generatedPages": 0
+    },
+    {
+      "siteId": "buenosairesexpats",
+      "routePattern": "/guides/cultural-etiquette",
+      "pageFile": "app/guides/cultural-etiquette/page.tsx",
+      "dynamic": false,
+      "classification": "utility",
+      "status": "excluded",
+      "sourceExports": [],
+      "generatedPages": 0
+    },
+    {
+      "siteId": "buenosairesexpats",
+      "routePattern": "/guides/first-week",
+      "pageFile": "app/guides/first-week/page.tsx",
+      "dynamic": false,
+      "classification": "utility",
+      "status": "excluded",
+      "sourceExports": [],
+      "generatedPages": 0
+    },
+    {
+      "siteId": "buenosairesexpats",
+      "routePattern": "/guides/food-dining",
+      "pageFile": "app/guides/food-dining/page.tsx",
+      "dynamic": false,
+      "classification": "utility",
+      "status": "excluded",
+      "sourceExports": [],
+      "generatedPages": 0
+    },
+    {
+      "siteId": "buenosairesexpats",
+      "routePattern": "/guides/getting-dni",
+      "pageFile": "app/guides/getting-dni/page.tsx",
+      "dynamic": false,
+      "classification": "utility",
+      "status": "excluded",
+      "sourceExports": [],
+      "generatedPages": 0
+    },
+    {
+      "siteId": "buenosairesexpats",
+      "routePattern": "/guides/getting-started",
+      "pageFile": "app/guides/getting-started/page.tsx",
+      "dynamic": false,
+      "classification": "utility",
+      "status": "excluded",
+      "sourceExports": [],
+      "generatedPages": 0
+    },
+    {
+      "siteId": "buenosairesexpats",
+      "routePattern": "/guides/learning-spanish",
+      "pageFile": "app/guides/learning-spanish/page.tsx",
+      "dynamic": false,
+      "classification": "utility",
+      "status": "excluded",
+      "sourceExports": [],
+      "generatedPages": 0
+    },
+    {
+      "siteId": "buenosairesexpats",
+      "routePattern": "/guides/safety",
+      "pageFile": "app/guides/safety/page.tsx",
+      "dynamic": false,
+      "classification": "utility",
+      "status": "excluded",
+      "sourceExports": [],
+      "generatedPages": 0
+    },
+    {
+      "siteId": "buenosairesexpats",
+      "routePattern": "/guides/transportation",
+      "pageFile": "app/guides/transportation/page.tsx",
+      "dynamic": false,
+      "classification": "utility",
+      "status": "excluded",
+      "sourceExports": [],
+      "generatedPages": 0
+    },
+    {
+      "siteId": "buenosairesexpats",
+      "routePattern": "/guides/weather-climate",
+      "pageFile": "app/guides/weather-climate/page.tsx",
+      "dynamic": false,
+      "classification": "utility",
+      "status": "excluded",
+      "sourceExports": [],
+      "generatedPages": 0
+    },
+    {
+      "siteId": "buenosairesexpats",
+      "routePattern": "/guides/working-taxes",
+      "pageFile": "app/guides/working-taxes/page.tsx",
+      "dynamic": false,
+      "classification": "utility",
+      "status": "excluded",
+      "sourceExports": [],
+      "generatedPages": 0
+    },
+    {
+      "siteId": "buenosairesexpats",
+      "routePattern": "/healthcare",
+      "pageFile": "app/healthcare/page.tsx",
+      "dynamic": false,
+      "classification": "utility",
+      "status": "excluded",
+      "sourceExports": [],
+      "generatedPages": 0
+    },
+    {
+      "siteId": "buenosairesexpats",
+      "routePattern": "/housing",
+      "pageFile": "app/housing/page.tsx",
+      "dynamic": false,
+      "classification": "utility",
+      "status": "excluded",
+      "sourceExports": [],
+      "generatedPages": 0
+    },
+    {
+      "siteId": "buenosairesexpats",
+      "routePattern": "/neighborhoods",
+      "pageFile": "app/neighborhoods/page.tsx",
+      "dynamic": false,
+      "classification": "utility",
+      "status": "excluded",
+      "sourceExports": [],
+      "generatedPages": 0
+    },
+    {
+      "siteId": "buenosairesexpats",
+      "routePattern": "/neighborhoods/belgrano",
+      "pageFile": "app/neighborhoods/belgrano/page.tsx",
+      "dynamic": false,
+      "classification": "utility",
+      "status": "excluded",
+      "sourceExports": [],
+      "generatedPages": 0
+    },
+    {
+      "siteId": "buenosairesexpats",
+      "routePattern": "/neighborhoods/palermo",
+      "pageFile": "app/neighborhoods/palermo/page.tsx",
+      "dynamic": false,
+      "classification": "utility",
+      "status": "excluded",
+      "sourceExports": [],
+      "generatedPages": 0
+    },
+    {
+      "siteId": "buenosairesexpats",
+      "routePattern": "/neighborhoods/puerto-madero",
+      "pageFile": "app/neighborhoods/puerto-madero/page.tsx",
+      "dynamic": false,
+      "classification": "utility",
+      "status": "excluded",
+      "sourceExports": [],
+      "generatedPages": 0
+    },
+    {
+      "siteId": "buenosairesexpats",
+      "routePattern": "/neighborhoods/quiz",
+      "pageFile": "app/neighborhoods/quiz/page.tsx",
+      "dynamic": false,
+      "classification": "utility",
+      "status": "excluded",
+      "sourceExports": [],
+      "generatedPages": 0
+    },
+    {
+      "siteId": "buenosairesexpats",
+      "routePattern": "/neighborhoods/recoleta",
+      "pageFile": "app/neighborhoods/recoleta/page.tsx",
+      "dynamic": false,
+      "classification": "utility",
+      "status": "excluded",
+      "sourceExports": [],
+      "generatedPages": 0
+    },
+    {
+      "siteId": "buenosairesexpats",
+      "routePattern": "/neighborhoods/san-telmo",
+      "pageFile": "app/neighborhoods/san-telmo/page.tsx",
+      "dynamic": false,
+      "classification": "utility",
+      "status": "excluded",
+      "sourceExports": [],
+      "generatedPages": 0
+    },
+    {
+      "siteId": "buenosairesexpats",
+      "routePattern": "/neighborhoods/villa-crespo",
+      "pageFile": "app/neighborhoods/villa-crespo/page.tsx",
+      "dynamic": false,
+      "classification": "utility",
+      "status": "excluded",
+      "sourceExports": [],
+      "generatedPages": 0
+    },
+    {
+      "siteId": "buenosairesexpats",
+      "routePattern": "/privacy",
+      "pageFile": "app/privacy/page.tsx",
+      "dynamic": false,
+      "classification": "legal",
+      "status": "excluded",
+      "sourceExports": [],
+      "generatedPages": 0
+    },
+    {
+      "siteId": "buenosairesexpats",
+      "routePattern": "/resources",
+      "pageFile": "app/resources/page.tsx",
+      "dynamic": false,
+      "classification": "utility",
+      "status": "excluded",
+      "sourceExports": [],
+      "generatedPages": 0
+    },
+    {
+      "siteId": "buenosairesexpats",
+      "routePattern": "/stories",
+      "pageFile": "app/stories/page.tsx",
+      "dynamic": false,
+      "classification": "utility",
+      "status": "excluded",
+      "sourceExports": [],
+      "generatedPages": 0
+    },
+    {
+      "siteId": "buenosairesexpats",
+      "routePattern": "/stories/[id]",
+      "pageFile": "app/stories/[id]/page.tsx",
+      "dynamic": true,
+      "classification": "content",
+      "status": "missing-binding",
+      "sourceExports": [],
+      "generatedPages": 0
+    },
+    {
+      "siteId": "buenosairesexpats",
+      "routePattern": "/terms",
+      "pageFile": "app/terms/page.tsx",
+      "dynamic": false,
+      "classification": "utility",
+      "status": "excluded",
+      "sourceExports": [],
+      "generatedPages": 0
+    },
+    {
+      "siteId": "buenosairesexpats",
+      "routePattern": "/visas",
+      "pageFile": "app/visas/page.tsx",
+      "dynamic": false,
+      "classification": "hub",
+      "status": "excluded",
+      "sourceExports": [],
+      "generatedPages": 0
+    },
+    {
+      "siteId": "buenosairesexpats",
+      "routePattern": "/visas/digital-nomad",
+      "pageFile": "app/visas/digital-nomad/page.tsx",
+      "dynamic": false,
+      "classification": "utility",
+      "status": "excluded",
+      "sourceExports": [],
+      "generatedPages": 0
+    },
+    {
+      "siteId": "buenosairesexpats",
+      "routePattern": "/visas/investment",
+      "pageFile": "app/visas/investment/page.tsx",
+      "dynamic": false,
+      "classification": "utility",
+      "status": "excluded",
+      "sourceExports": [],
+      "generatedPages": 0
+    },
+    {
+      "siteId": "buenosairesexpats",
+      "routePattern": "/visas/nationalities",
+      "pageFile": "app/visas/nationalities/page.tsx",
+      "dynamic": false,
+      "classification": "utility",
+      "status": "excluded",
+      "sourceExports": [],
+      "generatedPages": 0
+    },
+    {
+      "siteId": "buenosairesexpats",
+      "routePattern": "/visas/nationalities/[country]",
+      "pageFile": "app/visas/nationalities/[country]/page.tsx",
+      "dynamic": true,
+      "classification": "content",
+      "status": "missing-binding",
+      "sourceExports": [],
+      "generatedPages": 0
+    },
+    {
+      "siteId": "buenosairesexpats",
+      "routePattern": "/visas/quiz",
+      "pageFile": "app/visas/quiz/page.tsx",
+      "dynamic": false,
+      "classification": "utility",
+      "status": "excluded",
+      "sourceExports": [],
+      "generatedPages": 0
+    },
+    {
+      "siteId": "buenosairesexpats",
+      "routePattern": "/visas/retirement",
+      "pageFile": "app/visas/retirement/page.tsx",
+      "dynamic": false,
+      "classification": "utility",
+      "status": "excluded",
+      "sourceExports": [],
+      "generatedPages": 0
+    },
+    {
+      "siteId": "buenosairesexpats",
+      "routePattern": "/visas/student",
+      "pageFile": "app/visas/student/page.tsx",
+      "dynamic": false,
+      "classification": "utility",
+      "status": "excluded",
+      "sourceExports": [],
+      "generatedPages": 0
+    },
+    {
+      "siteId": "buenosairesexpats",
+      "routePattern": "/visas/work",
+      "pageFile": "app/visas/work/page.tsx",
+      "dynamic": false,
+      "classification": "utility",
+      "status": "excluded",
+      "sourceExports": [],
+      "generatedPages": 0
+    },
+    {
+      "siteId": "buenosairesexpats",
+      "routePattern": "/why-argentina",
+      "pageFile": "app/why-argentina/page.tsx",
+      "dynamic": false,
+      "classification": "utility",
+      "status": "excluded",
+      "sourceExports": [],
+      "generatedPages": 0
+    },
+    {
+      "siteId": "buenosairesexpats",
+      "routePattern": "/why-argentina/vs-europe",
+      "pageFile": "app/why-argentina/vs-europe/page.tsx",
+      "dynamic": false,
+      "classification": "utility",
+      "status": "excluded",
+      "sourceExports": [],
+      "generatedPages": 0
+    }
+  ],
+  "pages": []
+}
