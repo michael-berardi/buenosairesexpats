@@ -1,8 +1,7 @@
 import type { Metadata } from "next";
 import { Inter, Playfair_Display } from "next/font/google";
-import Script from "next/script";
-import { Analytics } from "@vercel/analytics/next";
 import "./globals.css";
+import { SiteAnalytics } from "@/components/analytics/SiteAnalytics";
 import { Navbar } from "@/components/navbar";
 import { Footer } from "@/components/footer";
 import { I18nProvider } from "@/lib/i18n";
@@ -73,6 +72,8 @@ export const viewport = {
   themeColor: '#c2410c',
 };
 
+const luceroReferralTrackingScript = `(function(){var base={event_group:'referral',referral_type:'spoke_to_hub',source_site_id:'buenosairesexpats',source_network_id:'lucero',source_site_role:'spoke',source_segment:'audience-satellite',hub_site_id:'lucero-legal',destination_site_id:'lucero-legal',destination_network_id:'lucero',destination_site_role:'hub',destination_segment:'hub'};function cleanText(value){return (value||'').replace(/\\s+/g,' ').trim().slice(0,120);}document.addEventListener('click',function(e){var a=e.target&&e.target.closest?e.target.closest('a[href*="lucerolegal"]'):null;if(!a){return;}var data=Object.assign({},base,{link_url:a.href,link_text:cleanText(a.textContent),page_path:window.location.pathname,language:document.documentElement.lang||'en'});if(window.va){window.va('event',{name:'lucero_referral',data:data});}if(window.gtag){window.gtag('event','lucero_referral',data);}});})();`;
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -108,18 +109,16 @@ export default function RootLayout({
           <Navbar />
           <main id="main-content">{children}</main>
           <Footer />
-          <Analytics />
+          <SiteAnalytics
+            measurementId="G-N5LLRYQ9J1"
+            extraScripts={[
+              {
+                id: "lucero-click-tracking",
+                code: luceroReferralTrackingScript,
+              },
+            ]}
+          />
         </I18nProvider>
-        <Script
-          src="https://www.googletagmanager.com/gtag/js?id=G-N5LLRYQ9J1"
-          strategy="afterInteractive"
-        />
-        <Script id="ga4-init" strategy="afterInteractive">
-          {`window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-N5LLRYQ9J1');`}
-        </Script>
-        <Script id="lucero-click-tracking" strategy="afterInteractive">
-          {`document.addEventListener('click',function(e){var a=e.target.closest('a[href*="lucerolegal"]');if(a){gtag('event','lucero_referral',{link_url:a.href,link_text:a.textContent.trim(),page_path:window.location.pathname});}});`}
-        </Script>
       </body>
     </html>
   );
