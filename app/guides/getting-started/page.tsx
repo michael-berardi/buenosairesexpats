@@ -30,6 +30,7 @@ import {
   BookOpen,
 } from "lucide-react";
 import { LuceroLegalCTA } from "@/components/lucero-legal-cta";
+import { LuceroGuideLinks } from "@/components/lucero-guide-links";
 import { LastUpdated } from "@/components/last-updated";
 import {
   generateArticleSchema,
@@ -638,6 +639,11 @@ export default function GettingStartedPage() {
                   </CardContent>
                 </Card>
               ))}
+            </div>
+
+            {/* Lucero Legal guide links */}
+            <div className="mt-8">
+              <LuceroGuideLinks page="guides/getting-started" />
             </div>
 
             {/* Immigration help note */}

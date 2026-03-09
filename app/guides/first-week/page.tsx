@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { StructuredData } from "@/components/structured-data";
 import { LuceroLegalCTA } from "@/components/lucero-legal-cta";
+import { LuceroGuideLinks } from "@/components/lucero-guide-links";
 import { LastUpdated } from "@/components/last-updated";
 import {
   generateArticleSchema,
@@ -672,6 +673,15 @@ export default function FirstWeekPage() {
                 </p>
               </Link>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Lucero Legal guide links */}
+      <section className="py-12">
+        <div className="container mx-auto px-4">
+          <div className="max-w-3xl mx-auto">
+            <LuceroGuideLinks page="guides/first-week" />
           </div>
         </div>
       </section>

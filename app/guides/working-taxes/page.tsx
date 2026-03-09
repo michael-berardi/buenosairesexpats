@@ -27,6 +27,7 @@ import {
   MapPin
 } from "lucide-react";
 import { LuceroLegalCTA } from "@/components/lucero-legal-cta";
+import { LuceroGuideLinks } from "@/components/lucero-guide-links";
 import { LastUpdated } from "@/components/last-updated";
 import { generateArticleSchema, generateBreadcrumbSchema } from "@/lib/schema";
 
@@ -1133,6 +1134,15 @@ export default function WorkingTaxesPage() {
                 </CardContent>
               </Card>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Lucero Legal guide links */}
+      <section className="py-12">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto">
+            <LuceroGuideLinks page="guides/working-taxes" />
           </div>
         </div>
       </section>

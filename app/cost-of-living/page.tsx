@@ -4,6 +4,7 @@ import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { LuceroLegalCTA } from "@/components/lucero-legal-cta";
+import { LuceroGuideLinks } from "@/components/lucero-guide-links";
 import { EditorialHero } from "@/components/editorial-hero";
 import { Breadcrumb } from "@/components/breadcrumb";
 import { PullQuote } from "@/components/pull-quote";
@@ -509,7 +510,10 @@ export default function CostOfLivingPage() {
                 </Link>
               </Button>
             </div>
-            <p className="text-sm text-muted-foreground"><LuceroLegalCTA variant="inline" /></p>
+            <LuceroGuideLinks page="cost-of-living" />
+            <div className="mt-4">
+              <p className="text-sm text-muted-foreground"><LuceroLegalCTA variant="inline" /></p>
+            </div>
           </div>
         </div>
       </section>
