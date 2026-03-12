@@ -49,12 +49,12 @@ export default function ConsultationPage() {
             Legal review
           </p>
           <h1 className="mx-auto max-w-2xl text-3xl font-bold md:text-4xl">
-            Get a lawyer&apos;s first read on your case
+            Request legal review for your Argentina move
           </h1>
           <p className="mx-auto mt-4 max-w-xl text-muted-foreground">
-            Describe your situation and a qualified Argentina immigration
-            attorney will respond within 24 hours with an initial assessment of
-            your case.
+            Describe the issue and an Argentina immigration attorney will reply
+            within one business day with the clearest next step, the documents
+            that matter, and whether the problem needs legal work now.
           </p>
         </div>
       </section>
@@ -66,8 +66,8 @@ export default function ConsultationPage() {
             <p className="text-lg text-muted-foreground leading-relaxed">
               This works best when the issue is specific: a residency deadline, a visa choice,
               RADEX trouble, overstays, citizenship timing, or a move that now has real dates
-              attached. An Argentina-based immigration attorney reviews your situation and gives
-              you a grounded first read on the realistic path forward.
+              attached. An Argentina-based immigration attorney reviews what you
+              send and gives you a grounded read on the realistic path forward.
             </p>
           </div>
         </div>
@@ -138,13 +138,13 @@ export default function ConsultationPage() {
               What to Expect
             </h2>
             <p className="text-muted-foreground mb-6">
-              After submitting your case evaluation request, here is what happens next:
+              After you send the form, this is how the review usually works:
             </p>
             <ul className="space-y-4">
               <li className="flex items-start gap-3">
                 <span className="flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-primary text-primary-foreground text-sm font-bold mt-0.5">1</span>
                 <div>
-                  <p className="font-semibold text-foreground">Initial review within 24 hours</p>
+                  <p className="font-semibold text-foreground">Initial review within one business day</p>
                   <p className="text-sm text-muted-foreground">
                     An attorney reviews your submission and identifies which visa categories or residency pathways apply to your situation.
                   </p>
@@ -162,9 +162,9 @@ export default function ConsultationPage() {
               <li className="flex items-start gap-3">
                 <span className="flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-primary text-primary-foreground text-sm font-bold mt-0.5">3</span>
                 <div>
-                  <p className="font-semibold text-foreground">No obligation to proceed</p>
+                  <p className="font-semibold text-foreground">Clear answer first, representation only if needed</p>
                   <p className="text-sm text-muted-foreground">
-                    The initial case evaluation is completely free. You can use the information to make an informed decision about whether to engage legal representation.
+                    You receive a practical answer about whether the matter needs legal representation now or whether you can keep moving on your own.
                   </p>
                 </div>
               </li>
@@ -219,13 +219,13 @@ export default function ConsultationPage() {
 
               <div>
                 <h3 className="text-lg font-semibold mb-2">
-                  Is the case evaluation really free?
+                  Is there a charge for the initial review?
                 </h3>
                 <p className="text-muted-foreground">
-                  Yes. The initial case evaluation is provided at no cost and with no obligation.
-                  It is designed to help you understand your options before making any commitment.
-                  You will receive a clear assessment of which visa pathways are available to you
-                  and what the next steps would involve.
+                  The first review is offered without charge. If your situation
+                  needs ongoing representation, that is discussed separately
+                  before any paid work begins. You still get a clear view of
+                  the realistic options and next steps.
                 </p>
               </div>
             </div>
