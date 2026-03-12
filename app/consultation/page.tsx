@@ -5,15 +5,15 @@ import { StructuredData } from "@/components/structured-data";
 import { generateBreadcrumbSchema } from "@/lib/schema";
 
 export const metadata: Metadata = {
-  title: "Free Case Evaluation",
+  title: "Request Legal Review",
   description:
-    "Request a free case evaluation from a qualified Argentina immigration attorney. Get personalized guidance on visas, residency, and citizenship.",
+    "Request a legal review from an Argentina immigration attorney for visas, residency, citizenship, and status problems.",
   alternates: {
     canonical: "https://buenosairesexpats.com/consultation",
   },
   openGraph: {
-    title: "Free Case Evaluation | Buenos Aires Expats",
-    description: "Request a free case evaluation from a qualified Argentina immigration attorney. Get personalized guidance on visas, residency, and citizenship.",
+    title: "Request Legal Review | Buenos Aires Expats",
+    description: "Request a legal review from an Argentina immigration attorney for visas, residency, citizenship, and status problems.",
     url: "https://buenosairesexpats.com/consultation",
     images: [{ url: '/images/og-image.jpg', width: 1200, height: 630, alt: 'Buenos Aires Expats' }],
   },
@@ -22,7 +22,7 @@ export const metadata: Metadata = {
 export default function ConsultationPage() {
   const breadcrumbSchema = generateBreadcrumbSchema([
     { name: "Home", item: "https://buenosairesexpats.com" },
-    { name: "Free Case Evaluation" },
+    { name: "Request Legal Review" },
   ]);
 
   return (
@@ -37,7 +37,7 @@ export default function ConsultationPage() {
               Home
             </Link>
             <span>/</span>
-            <span className="text-foreground">Free Case Evaluation</span>
+            <span className="text-foreground">Request Legal Review</span>
           </nav>
         </div>
       </div>
@@ -46,10 +46,10 @@ export default function ConsultationPage() {
       <section className="py-12 md:py-16 bg-gradient-to-b from-primary/5 to-background">
         <div className="container mx-auto px-4 text-center">
           <p className="mb-3 text-sm font-semibold uppercase tracking-widest text-primary">
-            Free case evaluation
+            Legal review
           </p>
           <h1 className="mx-auto max-w-2xl text-3xl font-bold md:text-4xl">
-            Get personalized immigration guidance
+            Get a lawyer&apos;s first read on your case
           </h1>
           <p className="mx-auto mt-4 max-w-xl text-muted-foreground">
             Describe your situation and a qualified Argentina immigration
@@ -64,13 +64,10 @@ export default function ConsultationPage() {
         <div className="container mx-auto px-4">
           <div className="mx-auto max-w-3xl">
             <p className="text-lg text-muted-foreground leading-relaxed">
-              Navigating Argentina&apos;s immigration system can feel overwhelming, especially when
-              dealing with unfamiliar visa categories, changing regulations, and Spanish-language
-              paperwork. Whether you&apos;re planning a move to Buenos Aires or already living here
-              and need to formalize your status, a free case evaluation gives you a clear picture
-              of your options without any upfront commitment. An Argentina-based immigration
-              attorney will review your situation and outline the most realistic path forward
-              based on your nationality, profession, and goals.
+              This works best when the issue is specific: a residency deadline, a visa choice,
+              RADEX trouble, overstays, citizenship timing, or a move that now has real dates
+              attached. An Argentina-based immigration attorney reviews your situation and gives
+              you a grounded first read on the realistic path forward.
             </p>
           </div>
         </div>

@@ -353,11 +353,11 @@ export default function ContactPage() {
                   </CardHeader>
                   <CardContent>
                     <p className="text-muted-foreground mb-4">
-                      For visa and immigration help, get a free case evaluation from a qualified Argentina immigration attorney:
+                      For visa and immigration questions, request a legal review from an Argentina immigration attorney:
                     </p>
                     <Button asChild variant="outline">
                       <Link href="/consultation">
-                        Free Case Evaluation
+                        Request Legal Review
                         <ArrowRight className="w-4 h-4 ml-2" />
                       </Link>
                     </Button>

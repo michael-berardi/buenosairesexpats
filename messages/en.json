@@ -4,7 +4,7 @@
     "guides": "Guides",
     "stories": "Stories",
     "about": "About",
-    "freeConsultation": "Free Case Evaluation",
+    "freeConsultation": "Legal Review",
     "whyArgentina": "Why Argentina?"
   },
   "visaItems": {
@@ -247,7 +247,7 @@
     "service_general": "General Inquiry",
     "messageLabel": "Describe your situation",
     "messagePlaceholder": "What visa are you applying for? What's your timeline?",
-    "submit": "Request free evaluation",
+    "submit": "Send for review",
     "submitting": "Sending...",
     "successTitle": "Request received",
     "successDescription": "A qualified attorney will respond within 24 hours.",
