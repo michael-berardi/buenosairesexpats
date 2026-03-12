@@ -54,7 +54,9 @@ export default function ConsultationPage() {
           <p className="mx-auto mt-4 max-w-xl text-muted-foreground">
             Describe the issue and an Argentina immigration attorney will reply
             within one business day with the clearest next step, the documents
-            that matter, and whether the problem needs legal work now.
+            that matter, and whether the problem needs legal work now. The
+            first review is free; if the matter needs ongoing help, Lucero
+            Legal explains costs before any paid work begins.
           </p>
         </div>
       </section>
@@ -119,7 +121,7 @@ export default function ConsultationPage() {
                   </svg>
                 </span>
                 <div>
-                  <p className="font-semibold text-foreground">Qualified attorneys</p>
+                  <p className="font-semibold text-foreground">Argentina-licensed attorneys</p>
                   <p className="text-sm text-muted-foreground">
                     Argentina-based immigration professionals.
                   </p>
