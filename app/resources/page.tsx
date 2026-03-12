@@ -256,7 +256,7 @@ export default function ResourcesPage() {
 
             <div className="text-center mt-8">
               <p className="text-sm text-muted-foreground">
-                Full directory coming soon. For immigration help, see our trusted partner below.
+                We verify the immigration section most closely. If that is your question, start there.
               </p>
             </div>
           </div>
@@ -267,10 +267,11 @@ export default function ResourcesPage() {
       <section className="py-16 bg-muted/30">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto text-center">
-            <h2 className="text-3xl font-bold mb-4">Trusted Immigration Help</h2>
+            <h2 className="text-3xl font-bold mb-4">Immigration Questions?</h2>
             <p className="text-muted-foreground mb-8">
-              Complex immigration matters require professional guidance. This site is supported by
-              Lucero Legal, a Buenos Aires immigration law firm that specializes in helping expats.
+              When the issue is visas, residency, or citizenship timing, it helps to have an
+              Argentina-based attorney reading the file with you. This site is supported by Lucero
+              Legal, a Buenos Aires immigration law firm focused on foreigners.
             </p>
             <Card className="text-left">
               <CardContent className="pt-6">
@@ -293,7 +294,7 @@ export default function ResourcesPage() {
                   </div>
                   <Button asChild variant="outline">
                     <Link href="https://lucerolegal.org?utm_source=buenosairesexpats&utm_medium=resources" target="_blank" rel="noopener noreferrer">
-                      Learn More
+                      See Lucero Legal
                       <ArrowRight className="w-4 h-4 ml-2" />
                     </Link>
                   </Button>

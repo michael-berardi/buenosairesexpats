@@ -60,11 +60,11 @@ export function LuceroLegalCTA({
   return (
     <div className="border border-border rounded-lg p-6 md:p-8">
       <h3 className="text-lg font-semibold text-foreground mb-2">
-        {headline || "Need Immigration Help?"}
+        {headline || "Need a legal read on your case?"}
       </h3>
       <p className="text-sm text-muted-foreground mb-4">
         {description ||
-          "Navigating Argentina's immigration system can be complex. An experienced immigration attorney can help with visa applications, residency, and citizenship."}
+          "If your question involves visas, residency, or citizenship timing, an Argentina-based immigration attorney can review the facts and tell you what matters next."}
       </p>
       <div className="flex flex-col sm:flex-row gap-3">
         <Link
@@ -73,7 +73,7 @@ export function LuceroLegalCTA({
           rel="noopener noreferrer"
           className="inline-flex items-center gap-1.5 text-sm text-primary hover:text-primary/80 underline underline-offset-2"
         >
-          Get professional guidance
+          Request legal review
           <ExternalLink className="w-3 h-3" />
         </Link>
         <Link

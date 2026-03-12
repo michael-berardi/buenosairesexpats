@@ -5,8 +5,8 @@ import { Mail } from "lucide-react";
 import { EditorialHero } from "@/components/editorial-hero";
 
 export const metadata: Metadata = {
-  title: "About Us",
-  description: "Learn about Buenos Aires Expats, your trusted resource for moving to and living in Argentina. Our mission, values, and team.",
+  title: "About Buenos Aires Expats",
+  description: "Who writes Buenos Aires Expats, how the site is supported, and how we keep the guidance useful.",
   keywords: ["about Buenos Aires Expats", "Argentina expat resource", "Buenos Aires guide"],
   alternates: {
     canonical: "https://buenosairesexpats.com/about",
@@ -18,18 +18,16 @@ export default function AboutPage() {
     <div className="flex flex-col min-h-screen">
       {/* Hero */}
       <EditorialHero
-        badge="Full Transparency"
-        title="How Buenos Aires Expats Actually Works"
-        subtitle="No fake team bios. No invented backstory. Here's exactly what this site is, who's behind it, and how we make money. You deserve to know before trusting our advice."
+        badge="About the guide"
+        title="Who runs Buenos Aires Expats"
+        subtitle="What we cover, how the site is supported, and how we decide when a question needs a lawyer instead of another article."
       />
 
       {/* What This Site Is */}
       <section className="py-16 md:py-20">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto">
-            <h2 className="font-serif text-3xl md:text-4xl font-bold mb-8">
-              What This Site Is
-            </h2>
+            <h2 className="font-serif text-3xl md:text-4xl font-bold mb-8">What You&apos;ll Find Here</h2>
             <div className="space-y-5 text-lg leading-relaxed text-muted-foreground">
               <p>
                 Buenos Aires Expats is a guide for people considering a move to Buenos Aires. We
@@ -37,10 +35,9 @@ export default function AboutPage() {
                 life in the city.
               </p>
               <p>
-                Our content is written to be genuinely useful &mdash; not to rank for keywords,
-                not to funnel you toward a sales page, and not to paint an unrealistically rosy
-                picture of life in Argentina. Some things about BA are amazing. Some things are
-                genuinely hard. We cover both.
+                The goal is practical reporting you can actually use. Buenos Aires does some
+                things exceptionally well. It also has bureaucracy, inflation, and plenty of
+                friction. We try to cover both without pretending the hard parts do not exist.
               </p>
               <p>
                 We update our guides regularly because Argentina changes fast. The rent prices you
