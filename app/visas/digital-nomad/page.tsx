@@ -24,7 +24,7 @@ export const metadata: Metadata = {
   keywords: ["Argentina digital nomad visa", "remote work Argentina", "digital nomad Buenos Aires", "Argentina visa 2026"],
   openGraph: {
     title: "Argentina Digital Nomad Visa - Complete 2026 Guide",
-    description: "Work remotely from Argentina for up to 180 days. Step-by-step application guide.",
+    description: "Work remotely from Argentina for up to 360 days (180 + 180 renewal). Step-by-step application guide.",
     type: "article",
     publishedTime: "2026-02-27",
     modifiedTime: "2026-02-27",
@@ -90,7 +90,7 @@ const applicationSteps = [
 const faqs = [
   {
     question: "How long is the Digital Nomad Visa valid?",
-    answer: "The Digital Nomad Visa is valid for 180 days (6 months). It cannot be renewed from within Argentina, but you can apply for a different visa type if you wish to stay longer.",
+    answer: "The Digital Nomad Visa is valid for 180 days (6 months) and is renewable for an additional 180 days. You can apply for the renewal from within Argentina before your initial period expires. After that, you would need to apply for a different visa type to stay longer.",
   },
   {
     question: "Can I bring my family?",
@@ -181,13 +181,13 @@ export default function DigitalNomadVisaPage() {
               Argentina Digital Nomad Visa
             </h1>
             <p className="text-xl text-white/90 mb-6">
-              Work remotely from Argentina for up to 180 days. 
+              Work remotely from Argentina for up to 360 days (180 + 180 renewal).
               Complete guide to requirements, application, and living as a digital nomad in Buenos Aires.
             </p>
             <div className="flex flex-wrap justify-center gap-4 text-sm mb-6 text-white/90">
               <div className="flex items-center gap-2">
                 <Clock className="w-4 h-4 text-primary-foreground/70" />
-                <span>180 days validity</span>
+                <span>180 days (renewable for 180 more)</span>
               </div>
               <div className="flex items-center gap-2">
                 <DollarSign className="w-4 h-4 text-primary-foreground/70" />
