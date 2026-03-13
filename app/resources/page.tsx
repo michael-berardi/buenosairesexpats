@@ -270,8 +270,8 @@ export default function ResourcesPage() {
             <h2 className="text-3xl font-bold mb-4">Immigration Questions?</h2>
             <p className="text-muted-foreground mb-8">
               When the issue is visas, residency, or citizenship timing, it helps to have an
-              Argentina-based attorney reading the file with you. This site is supported by Lucero
-              Legal, a Buenos Aires immigration law firm focused on foreigners.
+              Argentina-based attorney reading the file with you. Lucero Legal, a Buenos Aires
+              immigration law firm focused on foreigners, supports the publication.
             </p>
             <Card className="text-left">
               <CardContent className="pt-6">

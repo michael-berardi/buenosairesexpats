@@ -871,7 +871,7 @@ export default function Home() {
           <div className="flex items-start gap-3 max-w-3xl mx-auto text-sm text-muted-foreground">
             <Shield className="w-5 h-5 flex-shrink-0 mt-0.5" />
             <p>
-              <strong>Disclaimer:</strong> The information on this site is
+              <strong>Disclaimer:</strong> The information here is
               for educational purposes only and does not constitute legal
               advice. Immigration laws change frequently.{" "}
               <LuceroLegalCTA variant="inline" />

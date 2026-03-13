@@ -469,7 +469,7 @@ export default function FirstWeekPage() {
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl font-bold mb-6 text-stone-900">
-              How to Use This Week Without Burning Energy
+              What matters first in Buenos Aires
             </h2>
             <div className="space-y-5 text-lg leading-relaxed text-stone-600">
               <p>
@@ -477,9 +477,9 @@ export default function FirstWeekPage() {
                 everything at once. Most newcomers arrive with the right instinct but the wrong
                 sequence: they start apartment hunting before they understand the city, worry
                 about long-term banking before they can pay for lunch, or spend hours comparing
-                neighborhoods they have not walked. The goal of this guide is to give you a sane
-                order of operations so the city starts feeling usable before it starts feeling
-                overwhelming.
+                neighborhoods they have not walked. A calmer first week comes from putting the
+                basics in the right order so the city starts feeling usable before it starts
+                feeling overwhelming.
               </p>
               <p>
                 Think of the week in layers. The first layer is immediate survival: transport,
