@@ -45,7 +45,7 @@ const requirements = [
   {
     icon: DollarSign,
     title: "Minimum Income",
-    description: "Proof of stable monthly income (approximately $1,500-2,500 USD recommended)",
+    description: "Proof of stable monthly income of at least $2,500 USD from remote work",
   },
   {
     icon: Building,

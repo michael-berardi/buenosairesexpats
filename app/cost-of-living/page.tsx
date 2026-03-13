@@ -145,7 +145,7 @@ const expenseCategories = [
   {
     icon: Laptop,
     title: "Coworking",
-    description: "Buenos Aires has a thriving coworking scene, especially in Palermo and Villa Crespo. Most offer fast Wi-Fi, coffee, and community events.",
+    description: "Buenos Aires has an active coworking scene, especially in Palermo and Villa Crespo. Most offer fast Wi-Fi, coffee, and community events.",
     items: [
       { name: "Hot desk at coworking space", price: "$100-150/month" },
       { name: "Dedicated desk", price: "$150-250/month" },

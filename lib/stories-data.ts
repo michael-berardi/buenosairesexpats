@@ -61,7 +61,7 @@ What started as an escape from "rock fever" on a tiny Caribbean island turned in
 
 ## The Three Phases of Expat Life
 
-Erin describes the expat journey in Buenos Aires as a rollercoaster with distinct phases:
+Erin breaks the expat experience in Buenos Aires into three distinct phases:
 
 **Year One: The Honeymoon**  
 "Everything is beautiful, delicious, gorgeous, perfect! You can't believe you get to live here. The steak! The wine! The tango!"
@@ -119,7 +119,7 @@ Would she do it again? "In a heartbeat. But I'd also understand that 'in a heart
 
 Lisa Besserman arrived in Buenos Aires in November 2012 with a simple plan: work remotely for a few months and avoid the New York winter. She had no contacts, no friends, and no intention of staying long-term.
 
-"I thought the best way to meet people would be to join the local startup community," she recalls. "I was surprised to find that despite all the entrepreneurs and talent in the city, there was no actual community. The landscape was fragmented and difficult to navigate."
+"I thought the best way to meet people would be to join the local startup community," she recalls. "I was surprised to find that despite all the entrepreneurs and talent in the city, there was no actual community. The scene was fragmented — no meetups, no shared spaces, no connective tissue."
 
 That gap became her opportunity.
 
@@ -139,7 +139,7 @@ Lisa rebuilt her approach around relationship-building. She started meeting peop
 
 ## Building Through Chaos
 
-SUBA launched as a simple resource hub but evolved into something bigger: a platform connecting Argentine developers with global clients. Along the way, Lisa navigated Argentina's infamous bureaucracy, economic crises, and cultural differences.
+SUBA launched as a simple resource hub but evolved into something bigger: a platform connecting Argentine developers with global clients. Along the way, Lisa dealt with Argentina's infamous bureaucracy, economic crises, and cultural differences.
 
 "Argentina is a revolving door of talent," she notes. "We've had to say goodbye to amazing team members because their time was up in the city or they moved on to start their own ventures. But that turnover also creates opportunity - fresh energy, new ideas, expanded networks."
 
@@ -1056,7 +1056,7 @@ I met some fellow nomads, but no one who I was really able to connect with. When
 
 By the time I left, I was very grateful to be moving on. The beginning of my stay was like a drug - I didn't understand how I ever lived without it. By the end, I was desperate to leave and return to some sense of normalcy.
 
-I've heard that even for Argentinians that move to Buenos Aires, they find the people to not be welcoming in terms of long term relationships. The city can feel like a beautiful, vibrant, lonely place.
+I've heard that even for Argentinians that move to Buenos Aires, they find the people to not be welcoming in terms of long term relationships. The city can feel beautiful, exciting, and lonely all at once.
 
 ## The Question
 

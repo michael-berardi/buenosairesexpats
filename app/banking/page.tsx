@@ -285,7 +285,7 @@ export default function BankingPage() {
           <div className="max-w-3xl mx-auto">
             <h2 className="text-3xl font-bold mb-6 text-center">Fintech & Digital Wallets</h2>
             <p className="text-muted-foreground mb-8 text-center">
-              Argentina has a thriving fintech scene. These digital options are often easier to set up
+              Argentina has an active fintech scene. These digital options are often easier to set up
               than traditional bank accounts and widely accepted for everyday payments.
             </p>
             <div className="grid md:grid-cols-2 gap-6">

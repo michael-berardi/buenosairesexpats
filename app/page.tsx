@@ -156,9 +156,9 @@ const popularGuides = [
     image: "/images/cost-of-living-card.webp",
     badge: "March 2026",
     badgeClass: "badge-secondary",
-    title: "Cost of Living by Neighborhood",
+    title: "Cost of Living in Buenos Aires",
     description:
-      "Real monthly budgets: what a single person, couple, or family actually spends in Palermo vs Belgrano vs San Telmo.",
+      "Real monthly budgets for different lifestyles: budget, moderate, and comfortable. Rent by neighborhood, groceries, transport, and more.",
     href: "/cost-of-living",
     readTime: "10 min",
   },

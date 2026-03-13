@@ -686,7 +686,7 @@ export const countriesBase: CountryData[] = [
       "Can I extend my 90-day stay?",
       "Are there any Czech communities in Argentina?"
     ],
-    notes: "Czech citizens can visit visa-free for 90 days. A small but historic Czech community exists in Argentina, part of the broader Central European immigration wave of the 19th and early 20th centuries. Flights from Prague connect through Madrid, Frankfurt, or Paris. Czech and Argentine beer cultures have surprising parallels, with craft brewing thriving in both countries.",
+    notes: "Czech citizens can visit visa-free for 90 days. A small but historic Czech community exists in Argentina, part of the broader Central European immigration wave of the 19th and early 20th centuries. Flights from Prague connect through Madrid, Frankfurt, or Paris. Czech and Argentine beer cultures have surprising parallels, with craft brewing growing in both countries.",
     image: "/images/countries/czech-republic-landmark.jpg",
     imageAlt: "Prague Castle and Charles Bridge - representing Czech travelers to Argentina"
   },

@@ -874,7 +874,7 @@ export default function WorkingTaxesPage() {
               Coworking Spaces in Buenos Aires
             </h2>
             <p className="text-center text-muted-foreground mb-8 max-w-2xl mx-auto">
-              Buenos Aires has a thriving coworking scene, ranging from premium international
+              Buenos Aires has an active coworking scene, ranging from premium international
               chains to budget-friendly local options. Many digital nomads also work from the
               city&apos;s excellent cafes.
             </p>
