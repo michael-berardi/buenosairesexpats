@@ -149,6 +149,30 @@ export default function ResourcesPage() {
         </div>
       </section>
 
+      {/* Editorial Intro */}
+      <section className="py-12">
+        <div className="container mx-auto px-4">
+          <div className="max-w-3xl mx-auto prose prose-lg text-stone-700">
+            <p>
+              The practical side of moving to Argentina involves a lot of small steps that are easy to
+              miss and frustrating to figure out on your own. Which documents need to be apostilled before
+              you leave your home country? What should you do about health insurance in the first week?
+              How does the rental guarantee system work when you have no Argentine credit history? These
+              resources pull together the most common tasks into checklists, guides, and service
+              recommendations so you can work through them in a sensible order instead of scrambling.
+            </p>
+            <p>
+              Start with the moving checklist below — it breaks the process into three phases (before
+              departure, first week, and first month) so nothing falls through the cracks. The individual
+              guides go deeper on topics like healthcare, banking, and housing. For visa and residency
+              questions, our visa comparison page is the best starting point, and for anything that
+              requires legal advice, we recommend working with an immigration attorney who understands
+              the specific issues foreigners face in Argentina.
+            </p>
+          </div>
+        </div>
+      </section>
+
       {/* Resources Grid */}
       <section className="py-16">
         <div className="container mx-auto px-4">

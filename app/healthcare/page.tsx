@@ -125,21 +125,43 @@ export default function HealthcarePage() {
         </div>
       </section>
 
-      {/* Overview */}
+      {/* How Healthcare Works */}
       <section className="py-16">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto">
-            <h2 className="text-3xl font-bold mb-6">Healthcare System Overview</h2>
-            <div className="prose prose-lg max-w-none text-muted-foreground">
-              <p className="mb-4">
-                Argentina has a mixed healthcare system with both public and private options. 
-                As an expat, you'll primarily use the private system, which offers excellent 
-                quality care at a fraction of what you'd pay in the US or Europe.
+            <h2 className="text-3xl font-bold mb-6">How Healthcare Actually Works in Argentina</h2>
+            <div className="prose prose-lg max-w-none text-muted-foreground space-y-4">
+              <p>
+                Argentina&apos;s healthcare system has three layers, and understanding them before you arrive
+                saves real confusion later. The first layer is the public system &mdash; free hospitals and
+                clinics funded by the government, open to everyone including foreigners. The second is
+                the &ldquo;obra social&rdquo; system &mdash; union-based insurance tied to formal employment. The third
+                is the private &ldquo;prepaga&rdquo; system &mdash; voluntary health insurance you buy directly, which
+                is what most expats use.
               </p>
-              <p className="mb-4">
-                The private system is accessed through "prepaga" health insurance plans. 
-                These plans give you access to private hospitals, clinics, and specialists 
-                with minimal wait times and modern facilities.
+              <p>
+                If you&apos;re coming from the United States, the cost difference will feel dramatic. A
+                premium prepaga plan with full hospital coverage, specialists, dental, and mental health
+                runs $240&ndash;600 per month &mdash; less than many US plans charge just for the deductible. If
+                you&apos;re coming from Europe or the UK, you&apos;ll find the quality comparable to what you&apos;re
+                used to, with faster access to specialists than most NHS or public European systems.
+              </p>
+              <p>
+                The private system in Buenos Aires is genuinely excellent. Hospital Alemán, Hospital
+                Italiano, and Hospital Británico rank among the best in Latin America. Equipment is
+                modern. Specialists are well trained (many study abroad). The experience of walking
+                into a private clinic in Recoleta feels closer to a European hospital than a developing-world
+                one. Where it gets uneven is outside the capital &mdash; smaller cities have good private
+                clinics, but the specialist depth and English-language availability thin out quickly.
+              </p>
+              <p>
+                The public system is worth understanding even if you never plan to use it. Public
+                hospitals handle emergencies for everyone, regardless of insurance or residency
+                status. If you break your arm at 2 AM, the nearest public ER will treat you
+                for free. The quality of emergency care is generally solid. Where the public system
+                struggles is non-urgent care: specialist wait times can stretch to weeks or months,
+                facilities vary widely, and English-speaking staff is rare. Most expats carry private
+                prepaga for routine care and know that the public system exists as a safety net.
               </p>
             </div>
 
@@ -184,19 +206,19 @@ export default function HealthcarePage() {
                   <ul className="space-y-2 text-sm text-muted-foreground">
                     <li className="flex items-start gap-2">
                       <CheckCircle className="w-4 h-4 text-green-500 flex-shrink-0 mt-0.5" />
-                      <span>Free for residents</span>
+                      <span>Free for residents and emergencies</span>
                     </li>
                     <li className="flex items-start gap-2">
                       <CheckCircle className="w-4 h-4 text-green-500 flex-shrink-0 mt-0.5" />
-                      <span>Good for emergencies</span>
+                      <span>Solid emergency care</span>
                     </li>
                     <li className="flex items-start gap-2">
                       <AlertCircle className="w-4 h-4 text-amber-500 flex-shrink-0 mt-0.5" />
-                      <span>Longer wait times</span>
+                      <span>Longer wait times for non-urgent care</span>
                     </li>
                     <li className="flex items-start gap-2">
                       <AlertCircle className="w-4 h-4 text-amber-500 flex-shrink-0 mt-0.5" />
-                      <span>Variable quality</span>
+                      <span>Variable quality outside Buenos Aires</span>
                     </li>
                   </ul>
                 </CardContent>
@@ -206,8 +228,44 @@ export default function HealthcarePage() {
         </div>
       </section>
 
-      {/* Insurance Providers */}
-      <section id="insurance-providers" className="py-16 bg-muted/30">
+      {/* How to Choose Insurance */}
+      <section className="py-16 bg-muted/30">
+        <div className="container mx-auto px-4">
+          <div className="max-w-3xl mx-auto">
+            <h2 className="text-3xl font-bold mb-6">Choosing the Right Prepaga Plan</h2>
+            <div className="prose prose-lg max-w-none text-muted-foreground space-y-4 mb-8">
+              <p>
+                The choice between prepaga providers comes down to three factors: which hospitals
+                you want access to, how much English-language support matters to you, and how
+                much you want to spend. The premium providers &mdash; OSDE and Swiss Medical &mdash; give
+                you the widest hospital networks and the smoothest experience for non-Spanish
+                speakers. Mid-range options like Galeno and Medicus cover the same core hospitals
+                but may have longer authorization times for certain procedures and less
+                English-language customer service.
+              </p>
+              <p>
+                One detail that surprises many newcomers: prepaga plans in Argentina do not have
+                the deductible structure common in the US. Instead, you pay a monthly premium
+                and then either nothing or a small copay (typically $3&ndash;15) per visit. There are
+                no surprise bills, no out-of-network traps, and no annual coverage limits for most
+                services. Mental health, dental, and vision are typically included in mid-range
+                and premium plans rather than sold as separate add-ons.
+              </p>
+              <p>
+                The signup process is straightforward. You can walk into any prepaga office with your
+                passport (and DNI if you have one), fill out a health declaration form, and have
+                coverage active within a few days to two weeks. Pre-existing conditions may affect
+                your tier or require a waiting period, but outright denial is less common than in
+                unregulated insurance markets. Most providers offer online signups now, though
+                in-person is still faster for foreigners.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Insurance Providers Table */}
+      <section id="insurance-providers" className="py-16">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl font-bold mb-8 text-center">Major Insurance Providers</h2>
@@ -267,7 +325,27 @@ export default function HealthcarePage() {
       <section className="py-16">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto">
-            <h2 className="text-3xl font-bold mb-8 text-center">Recommended Hospitals</h2>
+            <h2 className="text-3xl font-bold mb-6">Hospitals Worth Knowing</h2>
+            <div className="prose prose-lg max-w-none text-muted-foreground space-y-4 mb-8">
+              <p>
+                Buenos Aires has several private hospitals that would not look out of place in
+                any European capital. The three names you&apos;ll hear most often from expats are
+                Hospital Alemán, Hospital Italiano, and Hospital Británico &mdash; all founded by
+                immigrant communities over a century ago and now among the top-rated medical
+                centers in South America. Each has English-speaking staff, modern diagnostic
+                equipment, and internationally trained specialists. If you&apos;re choosing a prepaga
+                plan partly based on hospital access, make sure at least one of these three is
+                in your network.
+              </p>
+              <p>
+                For routine appointments &mdash; a GP visit, blood work, a dental cleaning &mdash; you
+                don&apos;t need a major hospital. Most prepagas have networks of smaller clinics and
+                consultorios (private practices) spread across neighborhoods. In Palermo, Recoleta,
+                and Belgrano, finding a doctor who speaks at least some English is not difficult.
+                In other neighborhoods or outside the capital, ask your prepaga for a list of
+                English-speaking providers before you need one urgently.
+              </p>
+            </div>
             <div className="grid md:grid-cols-2 gap-6">
               {topHospitals.map((hospital) => (
                 <Card key={hospital.name}>
@@ -289,7 +367,22 @@ export default function HealthcarePage() {
       <section className="py-16 bg-muted/30">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto">
-            <h2 className="text-3xl font-bold mb-8 text-center">Typical Medical Costs</h2>
+            <h2 className="text-3xl font-bold mb-6">What Healthcare Costs Without Insurance</h2>
+            <div className="prose prose-lg max-w-none text-muted-foreground space-y-4 mb-8">
+              <p>
+                Even without prepaga coverage, private healthcare in Argentina is affordable by
+                international standards. A GP consultation runs $35&ndash;70 &mdash; roughly what an American
+                might pay as a copay <em>with</em> insurance. An ER visit at a private hospital costs
+                $120&ndash;360 for most non-surgical situations. These are out-of-pocket prices, paid
+                at the time of service, with no surprise bills arriving weeks later.
+              </p>
+              <p>
+                That said, prepaga insurance is still worth it for anyone staying more than a
+                few months. A single specialist consultation plus imaging could easily cost $200&ndash;400
+                out of pocket, which is more than a month of mid-range prepaga coverage. The
+                insurance pays for itself the moment you need anything beyond a basic checkup.
+              </p>
+            </div>
             <Card>
               <CardContent className="pt-6">
                 <div className="space-y-4">

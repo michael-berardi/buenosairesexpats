@@ -268,6 +268,30 @@ export default function GuidesPage() {
         </div>
       </section>
 
+      {/* Editorial Intro */}
+      <section className="py-12">
+        <div className="container mx-auto px-4">
+          <div className="max-w-3xl mx-auto prose prose-lg text-stone-700">
+            <p>
+              Moving to Buenos Aires is one of those decisions that sounds straightforward until you
+              actually start doing it. The visa paperwork, the banking situation, the unwritten social
+              rules — there is a lot that Google searches and Reddit threads get wrong or leave out entirely.
+              These guides were written by expats who have navigated all of it firsthand, and they are
+              updated regularly as Argentina&apos;s rules and prices shift (which happens more often than
+              you would expect).
+            </p>
+            <p>
+              If you are just starting out, begin with the First Week guide — it covers the immediate
+              essentials like getting a SIM card, loading your SUBE transit card, and setting up
+              MercadoPago so you can actually pay for things. From there, the Getting Started guide
+              walks you through your first 90 days in a logical order. The rest of the library covers
+              specific topics in depth: visas, banking, healthcare, neighborhoods, taxes, and the
+              cultural nuances that make daily life in Argentina so different from what most expats expect.
+            </p>
+          </div>
+        </div>
+      </section>
+
       {/* Featured Guide */}
       <section className="py-12 border-b">
         <div className="container mx-auto px-4">

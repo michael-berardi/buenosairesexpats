@@ -303,7 +303,22 @@ export default function CostOfLivingPage() {
       {/* Detailed Expenses */}
       <section className="section-padding bg-muted/30">
         <div className="container mx-auto px-4">
-          <h2 className="font-serif heading-md mb-12 text-center">Detailed Expense Breakdown</h2>
+          <h2 className="font-serif heading-md mb-4 text-center">Detailed Expense Breakdown</h2>
+          <div className="max-w-3xl mx-auto mb-10">
+            <p className="text-body text-center mb-4">
+              The numbers below come from tracking actual expat spending and cross-referencing
+              against community reports. Two things to keep in mind: prices in Argentina shift
+              quickly as the peso adjusts, and where you live changes costs dramatically. A coffee
+              in Puerto Madero costs twice what it does in Villa Crespo. Rent in Palermo Soho is
+              a different planet from Almagro. The ranges below assume you&apos;re living in a
+              middle-class neighborhood, not the most expensive block in the city.
+            </p>
+            <p className="text-body text-center">
+              All prices are in USD, converted at the MEP dollar rate. If you&apos;re earning in
+              dollars, euros, or pounds, these numbers represent what your money actually buys
+              on the ground.
+            </p>
+          </div>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto items-stretch">
             {expenseCategories.map((category) => (
               <div key={category.title} className="card-feature h-full flex flex-col">
