@@ -22,7 +22,7 @@ import {
 
 export const metadata: Metadata = {
   title: "Palermo Dining Guide | Don Julio",
-  description: "The ultimate guide to Palermo's culinary scene. Home to Don Julio, Best Restaurant in Latin America 2024, and the vibrant heart of Buenos Aires dining.",
+  description: "The ultimate guide to Palermo's culinary scene. Home to Don Julio, Best Restaurant in Latin America 2024, and the heart of Buenos Aires dining culture.",
   keywords: ["Palermo restaurants", "Don Julio Buenos Aires", "Crizia restaurant", "Michelin star Palermo", "best restaurants BA"],
   openGraph: {
     title: "Palermo Dining Guide | Don Julio",
@@ -241,7 +241,7 @@ export default function PalermoDiningPage() {
             </h1>
             <p className="text-xl text-stone-300 mb-8 leading-relaxed max-w-2xl">
               The beating heart of Buenos Aires&apos; culinary scene. Home to Don Julio, 
-              Best Restaurant in Latin America 2024, and the city&apos;s most vibrant dining culture.
+              Best Restaurant in Latin America 2024, and the city&apos;s most exciting dining culture.
             </p>
             <div className="flex flex-wrap gap-4 text-sm text-stone-300">
               <span className="flex items-center gap-2">

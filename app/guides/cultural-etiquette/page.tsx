@@ -311,7 +311,7 @@ export default function CulturalEtiquettePage() {
               Greeting Customs: The Famous Kiss
             </h2>
             <p className="text-center text-muted-foreground mb-8">
-              The single cheek kiss (beso) is the cornerstone of Argentine social interaction. 
+              The single cheek kiss (beso) is the foundation of Argentine social interaction. 
               Master this and you're halfway to fitting in.
             </p>
             <Card>

@@ -1002,7 +1002,7 @@ For all the hassle, there are moments of genuine connection:
 - The kid who gave me a free candy because I looked sad
 - The puppet show that made a whole car laugh together
 - The violinist who played my favorite song and nodded when I sang along
-n
+
 These moments don't make the uncomfortable interactions worth it, exactly. But they add something to the experience of the city - a sense that you're never alone, even when you're surrounded by strangers.
 
 ## The Bottom Line
