@@ -21,7 +21,7 @@
         {
           "type": "host",
           "value": {
-            "re": "^(?:www\\.buenosairesexpats\\.com|buenosairesexpats(?:-michael-berardis-projects|-michael-berardi-michael-berardis-projects)?\\.vercel\\.app)$"
+            "re": "^(?:www\\.buenosairesexpats\\.com|buenosairesexpats(?:-[^.]+)*\\.vercel\\.app)$"
           }
         }
       ],
