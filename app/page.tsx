@@ -163,7 +163,7 @@ const popularGuides = [
     readTime: "10 min",
   },
   {
-    image: "/images/visa-digital-nomad.jpg",
+    image: "/images/food-dining-hero.webp",
     badge: "Essential",
     badgeClass: "badge-primary",
     title: "Dining Guide: Michelin & Beyond",
