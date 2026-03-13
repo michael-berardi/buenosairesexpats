@@ -116,7 +116,9 @@ export const countriesBase: CountryData[] = [
       "Do I need a passport for flights?",
       "Can I work legally in Argentina?"
     ],
-    notes: "Paraguayan citizens can enter with their Cedula de Identidad and enjoy Mercosur privileges including simplified residency pathways."
+    notes: "Paraguayan citizens can enter with their Cedula de Identidad and enjoy Mercosur privileges including simplified residency pathways.",
+    image: "/images/countries/paraguay-landmark.jpg",
+    imageAlt: "Palacio de los López in Asunción - representing Paraguayan travelers to Argentina"
   },
   {
     slug: "bolivia",
@@ -132,7 +134,9 @@ export const countriesBase: CountryData[] = [
       "Do I need a yellow fever certificate?",
       "Can I extend my stay beyond 90 days?"
     ],
-    notes: "Bolivian citizens benefit from Mercosur membership, allowing entry with national ID card. Popular border crossings include Villazon-La Quiaca and Yacuiba."
+    notes: "Bolivian citizens benefit from Mercosur membership, allowing entry with national ID card. Popular border crossings include Villazon-La Quiaca and Yacuiba.",
+    image: "/images/countries/bolivia-landmark.jpg",
+    imageAlt: "Lake Titicaca and Copacabana - representing Bolivian travelers to Argentina"
   },
   {
     slug: "peru",
@@ -167,7 +171,9 @@ export const countriesBase: CountryData[] = [
       "How long can I stay in Argentina?",
       "Do I need to show proof of funds?"
     ],
-    notes: "Ecuadorian citizens enjoy visa-free entry for 90 days. ID card entry is permitted when arriving from Mercosur countries."
+    notes: "Ecuadorian citizens enjoy visa-free entry for 90 days. ID card entry is permitted when arriving from Mercosur countries.",
+    image: "/images/countries/ecuador-landmark.jpg",
+    imageAlt: "Quito historic center with Cotopaxi volcano - representing Ecuadorian travelers to Argentina"
   },
   {
     slug: "colombia",
@@ -203,7 +209,9 @@ export const countriesBase: CountryData[] = [
       "Can I extend my stay?",
       "What if I have a temporary passport?"
     ],
-    notes: "Venezuelan citizens receive 60 days (not 90) but can enter with national ID. Argentina recognizes expired Venezuelan passports under certain conditions due to the ongoing crisis."
+    notes: "Venezuelan citizens receive 60 days (not 90) but can enter with national ID. Argentina recognizes expired Venezuelan passports under certain conditions due to the ongoing crisis.",
+    image: "/images/countries/venezuela-landmark.jpg",
+    imageAlt: "Angel Falls cascading down Auyán-tepui - representing Venezuelan travelers to Argentina"
   },
   // North America
   {
@@ -487,7 +495,9 @@ export const countriesBase: CountryData[] = [
       "Can I extend my 90-day stay?",
       "Do I need travel insurance for Argentina?"
     ],
-    notes: "Singaporean citizens enjoy visa-free entry for 90 days. Most flights connect through Dubai, Doha, or European hubs such as Madrid. Argentina and Singapore maintain growing trade relations, and Buenos Aires is an increasingly popular destination for Southeast Asian travelers exploring South America."
+    notes: "Singaporean citizens enjoy visa-free entry for 90 days. Most flights connect through Dubai, Doha, or European hubs such as Madrid. Argentina and Singapore maintain growing trade relations, and Buenos Aires is an increasingly popular destination for Southeast Asian travelers exploring South America.",
+    image: "/images/countries/singapore-landmark.jpg",
+    imageAlt: "Marina Bay Sands and Gardens by the Bay - representing Singaporean travelers to Argentina"
   },
   // Additional European Countries (Batch 2)
   {
@@ -543,7 +553,9 @@ export const countriesBase: CountryData[] = [
       "What flights connect Vienna to Buenos Aires?",
       "Do I need to register with local authorities?"
     ],
-    notes: "Austrian citizens enjoy visa-free entry for 90 days. Argentina and Austria have a bilateral Working Holiday Visa agreement allowing young adults to live and work in Argentina for up to one year. Flights from Vienna typically connect through Madrid or Frankfurt. A small Austrian-Argentine community exists, particularly in Patagonia, with historical ties dating back to 19th-century immigration."
+    notes: "Austrian citizens enjoy visa-free entry for 90 days. Argentina and Austria have a bilateral Working Holiday Visa agreement allowing young adults to live and work in Argentina for up to one year. Flights from Vienna typically connect through Madrid or Frankfurt. A small Austrian-Argentine community exists, particularly in Patagonia, with historical ties dating back to 19th-century immigration.",
+    image: "/images/countries/austria-landmark.jpg",
+    imageAlt: "Vienna State Opera House and Ringstrasse - representing Austrian travelers to Argentina"
   },
   {
     slug: "sweden",
@@ -560,7 +572,9 @@ export const countriesBase: CountryData[] = [
       "Can I extend my 90-day stay?",
       "Is there a Swedish community in Argentina?"
     ],
-    notes: "Swedish citizens can visit visa-free for 90 days. There are no direct flights from Scandinavia; most routes connect through Madrid, London, or Frankfurt. A small Swedish community existed historically in Misiones province, and Buenos Aires hosts a Scandinavian social club. Sweden and Argentina cooperate on renewable energy and sustainability initiatives."
+    notes: "Swedish citizens can visit visa-free for 90 days. There are no direct flights from Scandinavia; most routes connect through Madrid, London, or Frankfurt. A small Swedish community existed historically in Misiones province, and Buenos Aires hosts a Scandinavian social club. Sweden and Argentina cooperate on renewable energy and sustainability initiatives.",
+    image: "/images/countries/sweden-landmark.jpg",
+    imageAlt: "Stockholm old town Gamla Stan waterfront - representing Swedish travelers to Argentina"
   },
   {
     slug: "norway",
@@ -577,7 +591,9 @@ export const countriesBase: CountryData[] = [
       "What is the best flight route from Oslo to Buenos Aires?",
       "Can I extend my tourist stay?"
     ],
-    notes: "Norwegian citizens enjoy visa-free entry for 90 days. Argentina and Norway have a bilateral Working Holiday Visa agreement for young adults aged 18-30. There are no direct flights from Norway; most routes connect through Madrid or London. Norway and Argentina share interests in fisheries, energy, and Antarctic research, with both countries maintaining scientific bases in Antarctica."
+    notes: "Norwegian citizens enjoy visa-free entry for 90 days. Argentina and Norway have a bilateral Working Holiday Visa agreement for young adults aged 18-30. There are no direct flights from Norway; most routes connect through Madrid or London. Norway and Argentina share interests in fisheries, energy, and Antarctic research, with both countries maintaining scientific bases in Antarctica.",
+    image: "/images/countries/norway-landmark.jpg",
+    imageAlt: "Bergen harbor with colorful Bryggen buildings - representing Norwegian travelers to Argentina"
   },
   {
     slug: "denmark",
@@ -594,7 +610,9 @@ export const countriesBase: CountryData[] = [
       "What is the best flight route from Copenhagen to Buenos Aires?",
       "Can I work remotely from Argentina as a Dane?"
     ],
-    notes: "Danish citizens can visit visa-free for 90 days. Argentina and Denmark have a bilateral Working Holiday Visa agreement allowing young adults to live and work in Argentina for up to one year. No direct flights exist from Copenhagen; most travelers connect through Madrid or London. Denmark and Argentina maintain trade relations particularly in agriculture and renewable energy."
+    notes: "Danish citizens can visit visa-free for 90 days. Argentina and Denmark have a bilateral Working Holiday Visa agreement allowing young adults to live and work in Argentina for up to one year. No direct flights exist from Copenhagen; most travelers connect through Madrid or London. Denmark and Argentina maintain trade relations particularly in agriculture and renewable energy.",
+    image: "/images/countries/denmark-landmark.jpg",
+    imageAlt: "Copenhagen Nyhavn harbor - representing Danish travelers to Argentina"
   },
   {
     slug: "finland",
@@ -611,7 +629,9 @@ export const countriesBase: CountryData[] = [
       "Can I extend my 90-day stay?",
       "Is Argentina safe for Finnish travelers?"
     ],
-    notes: "Finnish citizens enjoy visa-free entry for 90 days. There are no direct flights from Finland; travelers typically connect through Madrid, London, or Frankfurt. Finland and Argentina share diplomatic ties and cooperate on technology and innovation. Patagonia is a particularly popular destination for Finnish travelers drawn to outdoor adventures and glacier trekking."
+    notes: "Finnish citizens enjoy visa-free entry for 90 days. There are no direct flights from Finland; travelers typically connect through Madrid, London, or Frankfurt. Finland and Argentina share diplomatic ties and cooperate on technology and innovation. Patagonia is a particularly popular destination for Finnish travelers drawn to outdoor adventures and glacier trekking.",
+    image: "/images/countries/finland-landmark.jpg",
+    imageAlt: "Helsinki Cathedral and Senate Square - representing Finnish travelers to Argentina"
   },
   {
     slug: "ireland",
@@ -647,7 +667,9 @@ export const countriesBase: CountryData[] = [
       "What is the best flight route from Warsaw to Buenos Aires?",
       "Can I extend my tourist stay?"
     ],
-    notes: "Polish citizens enjoy visa-free entry for 90 days. Argentina is home to a large Polish diaspora, especially concentrated in the suburbs of Berazategui and Dock Sud in Greater Buenos Aires. Polish cultural centers, churches, and community organizations maintain active ties to Poland. Flights from Warsaw typically connect through Madrid or Frankfurt."
+    notes: "Polish citizens enjoy visa-free entry for 90 days. Argentina is home to a large Polish diaspora, especially concentrated in the suburbs of Berazategui and Dock Sud in Greater Buenos Aires. Polish cultural centers, churches, and community organizations maintain active ties to Poland. Flights from Warsaw typically connect through Madrid or Frankfurt.",
+    image: "/images/countries/poland-landmark.jpg",
+    imageAlt: "Kraków Main Market Square and Cloth Hall - representing Polish travelers to Argentina"
   },
   {
     slug: "czech-republic",
@@ -664,7 +686,9 @@ export const countriesBase: CountryData[] = [
       "Can I extend my 90-day stay?",
       "Are there any Czech communities in Argentina?"
     ],
-    notes: "Czech citizens can visit visa-free for 90 days. A small but historic Czech community exists in Argentina, part of the broader Central European immigration wave of the 19th and early 20th centuries. Flights from Prague connect through Madrid, Frankfurt, or Paris. Czech and Argentine beer cultures have surprising parallels, with craft brewing thriving in both countries."
+    notes: "Czech citizens can visit visa-free for 90 days. A small but historic Czech community exists in Argentina, part of the broader Central European immigration wave of the 19th and early 20th centuries. Flights from Prague connect through Madrid, Frankfurt, or Paris. Czech and Argentine beer cultures have surprising parallels, with craft brewing thriving in both countries.",
+    image: "/images/countries/czech-republic-landmark.jpg",
+    imageAlt: "Prague Castle and Charles Bridge - representing Czech travelers to Argentina"
   },
   {
     slug: "greece",
@@ -681,7 +705,9 @@ export const countriesBase: CountryData[] = [
       "What is the best flight route from Athens to Buenos Aires?",
       "Can I extend my tourist stay?"
     ],
-    notes: "Greek citizens enjoy visa-free entry for 90 days. A small Greek community has been present in Buenos Aires since the early 20th century, maintaining cultural organizations and an Orthodox church. Flights from Athens typically connect through Madrid or Rome. Both Greece and Argentina share Mediterranean-influenced food cultures and a passion for football."
+    notes: "Greek citizens enjoy visa-free entry for 90 days. A small Greek community has been present in Buenos Aires since the early 20th century, maintaining cultural organizations and an Orthodox church. Flights from Athens typically connect through Madrid or Rome. Both Greece and Argentina share Mediterranean-influenced food cultures and a passion for football.",
+    image: "/images/countries/greece-landmark.jpg",
+    imageAlt: "Athens Acropolis and Parthenon - representing Greek travelers to Argentina"
   },
   {
     slug: "hungary",
@@ -698,7 +724,9 @@ export const countriesBase: CountryData[] = [
       "What is the best flight route from Budapest to Buenos Aires?",
       "Can I extend my 90-day stay?"
     ],
-    notes: "Hungarian citizens can visit visa-free for 90 days. A small Hungarian-Argentine community exists, with roots in immigration waves from the late 19th century through post-World War II. Flights from Budapest connect through Madrid, Frankfurt, or Rome. Both countries share a strong cafe culture tradition and a passion for chess and classical music."
+    notes: "Hungarian citizens can visit visa-free for 90 days. A small Hungarian-Argentine community exists, with roots in immigration waves from the late 19th century through post-World War II. Flights from Budapest connect through Madrid, Frankfurt, or Rome. Both countries share a strong cafe culture tradition and a passion for chess and classical music.",
+    image: "/images/countries/hungary-landmark.jpg",
+    imageAlt: "Budapest Parliament Building on Danube River - representing Hungarian travelers to Argentina"
   },
   {
     slug: "romania",
@@ -715,7 +743,9 @@ export const countriesBase: CountryData[] = [
       "What is the best flight route from Bucharest to Buenos Aires?",
       "Can I extend my tourist stay?"
     ],
-    notes: "Romanian citizens enjoy visa-free entry for 90 days. Romanian and Spanish share Latin roots, making it significantly easier for Romanian speakers to learn Spanish compared to other European language backgrounds. Flights from Bucharest typically connect through Madrid or Rome. A small Romanian community in Argentina dates back to early 20th-century immigration."
+    notes: "Romanian citizens enjoy visa-free entry for 90 days. Romanian and Spanish share Latin roots, making it significantly easier for Romanian speakers to learn Spanish compared to other European language backgrounds. Flights from Bucharest typically connect through Madrid or Rome. A small Romanian community in Argentina dates back to early 20th-century immigration.",
+    image: "/images/countries/romania-landmark.jpg",
+    imageAlt: "Bran Castle in Transylvania - representing Romanian travelers to Argentina"
   },
   {
     slug: "bulgaria",
@@ -732,7 +762,9 @@ export const countriesBase: CountryData[] = [
       "Can I extend my 90-day stay?",
       "Are there any Bulgarian communities in Argentina?"
     ],
-    notes: "Bulgarian citizens can visit visa-free for 90 days. Flights from Sofia typically connect through Madrid, Rome, or Frankfurt. While there is no large Bulgarian diaspora in Argentina, both countries share a history of European immigration influences and maintain diplomatic relations. Buenos Aires is increasingly popular among Eastern European digital nomads."
+    notes: "Bulgarian citizens can visit visa-free for 90 days. Flights from Sofia typically connect through Madrid, Rome, or Frankfurt. While there is no large Bulgarian diaspora in Argentina, both countries share a history of European immigration influences and maintain diplomatic relations. Buenos Aires is increasingly popular among Eastern European digital nomads.",
+    image: "/images/countries/bulgaria-landmark.jpg",
+    imageAlt: "Alexander Nevsky Cathedral in Sofia - representing Bulgarian travelers to Argentina"
   },
   {
     slug: "croatia",
@@ -749,7 +781,9 @@ export const countriesBase: CountryData[] = [
       "What is the best flight route from Zagreb to Buenos Aires?",
       "Can I connect with the Croatian diaspora in Argentina?"
     ],
-    notes: "Croatian citizens enjoy visa-free entry for 90 days. Argentina is home to one of the largest Croatian diasporas in the world, with communities concentrated in Buenos Aires and throughout Patagonia. Croatian cultural clubs, churches, and organizations are active across the country, and many Argentines of Croatian descent maintain strong ties to their heritage. Flights from Zagreb connect through Madrid or Frankfurt."
+    notes: "Croatian citizens enjoy visa-free entry for 90 days. Argentina is home to one of the largest Croatian diasporas in the world, with communities concentrated in Buenos Aires and throughout Patagonia. Croatian cultural clubs, churches, and organizations are active across the country, and many Argentines of Croatian descent maintain strong ties to their heritage. Flights from Zagreb connect through Madrid or Frankfurt.",
+    image: "/images/countries/croatia-landmark.jpg",
+    imageAlt: "Dubrovnik Old Town walls and Adriatic Sea - representing Croatian travelers to Argentina"
   },
   {
     slug: "slovakia",
@@ -766,7 +800,9 @@ export const countriesBase: CountryData[] = [
       "Can I extend my 90-day stay?",
       "Are there Slovak communities in Argentina?"
     ],
-    notes: "Slovak citizens can visit visa-free for 90 days. A small Slovak community exists in Argentina as part of the broader Central European immigration history. Flights from Bratislava connect through Vienna and then Madrid or Frankfurt. Both countries share strong agricultural traditions, and Argentine wine is increasingly popular in Slovakia."
+    notes: "Slovak citizens can visit visa-free for 90 days. A small Slovak community exists in Argentina as part of the broader Central European immigration history. Flights from Bratislava connect through Vienna and then Madrid or Frankfurt. Both countries share strong agricultural traditions, and Argentine wine is increasingly popular in Slovakia.",
+    image: "/images/countries/slovakia-landmark.jpg",
+    imageAlt: "Bratislava Castle on Danube River - representing Slovak travelers to Argentina"
   },
   {
     slug: "slovenia",
@@ -783,7 +819,9 @@ export const countriesBase: CountryData[] = [
       "What is the best flight route from Ljubljana to Buenos Aires?",
       "Can I extend my tourist stay?"
     ],
-    notes: "Slovenian citizens enjoy visa-free entry for 90 days. Argentina has a notable Slovenian community, primarily in Buenos Aires and Mendoza, with cultural organizations and community centers maintaining ties to Slovenia. Flights from Ljubljana connect through major European hubs such as Frankfurt or Madrid. Both countries share a love of outdoor sports and wine culture."
+    notes: "Slovenian citizens enjoy visa-free entry for 90 days. Argentina has a notable Slovenian community, primarily in Buenos Aires and Mendoza, with cultural organizations and community centers maintaining ties to Slovenia. Flights from Ljubljana connect through major European hubs such as Frankfurt or Madrid. Both countries share a love of outdoor sports and wine culture.",
+    image: "/images/countries/slovenia-landmark.jpg",
+    imageAlt: "Lake Bled with island church - representing Slovenian travelers to Argentina"
   },
   {
     slug: "luxembourg",
@@ -799,7 +837,9 @@ export const countriesBase: CountryData[] = [
       "What is the best flight route from Luxembourg to Buenos Aires?",
       "Can I extend my 90-day stay?"
     ],
-    notes: "Luxembourgish citizens can visit visa-free for 90 days. Flights from Luxembourg typically connect through Paris, Madrid, or Frankfurt. Luxembourg and Argentina maintain diplomatic and financial ties, and Buenos Aires is a popular South American destination for Luxembourgish travelers seeking cultural experiences and Patagonian adventures."
+    notes: "Luxembourgish citizens can visit visa-free for 90 days. Flights from Luxembourg typically connect through Paris, Madrid, or Frankfurt. Luxembourg and Argentina maintain diplomatic and financial ties, and Buenos Aires is a popular South American destination for Luxembourgish travelers seeking cultural experiences and Patagonian adventures.",
+    image: "/images/countries/luxembourg-landmark.jpg",
+    imageAlt: "Grand Ducal Palace in Luxembourg City - representing Luxembourgish travelers to Argentina"
   },
   {
     slug: "estonia",
@@ -816,7 +856,9 @@ export const countriesBase: CountryData[] = [
       "Can I extend my 90-day stay?",
       "Can I use my Estonian digital residency documents?"
     ],
-    notes: "Estonian citizens enjoy visa-free entry for 90 days. Flights from Tallinn connect through major European hubs such as Frankfurt, Madrid, or London. While there is no significant Estonian diaspora in Argentina, both countries have embraced digital innovation, and Buenos Aires is an increasingly attractive destination for Estonian digital nomads and tech professionals."
+    notes: "Estonian citizens enjoy visa-free entry for 90 days. Flights from Tallinn connect through major European hubs such as Frankfurt, Madrid, or London. While there is no significant Estonian diaspora in Argentina, both countries have embraced digital innovation, and Buenos Aires is an increasingly attractive destination for Estonian digital nomads and tech professionals.",
+    image: "/images/countries/estonia-landmark.jpg",
+    imageAlt: "Tallinn Old Town medieval walls and towers - representing Estonian travelers to Argentina"
   },
   {
     slug: "latvia",
@@ -833,7 +875,9 @@ export const countriesBase: CountryData[] = [
       "Can I extend my 90-day stay?",
       "Are there any Baltic communities in Argentina?"
     ],
-    notes: "Latvian citizens can visit visa-free for 90 days. Flights from Riga connect through Madrid, Frankfurt, or London. A small Baltic community exists in Argentina from early 20th-century immigration, though the Latvian presence is modest. Buenos Aires offers an appealing combination of European-influenced culture and South American warmth for Latvian travelers."
+    notes: "Latvian citizens can visit visa-free for 90 days. Flights from Riga connect through Madrid, Frankfurt, or London. A small Baltic community exists in Argentina from early 20th-century immigration, though the Latvian presence is modest. Buenos Aires offers an appealing combination of European-influenced culture and South American warmth for Latvian travelers.",
+    image: "/images/countries/latvia-landmark.jpg",
+    imageAlt: "Riga Art Nouveau district and House of Blackheads - representing Latvian travelers to Argentina"
   },
   {
     slug: "lithuania",
@@ -850,7 +894,9 @@ export const countriesBase: CountryData[] = [
       "What is the best flight route from Vilnius to Buenos Aires?",
       "Can I extend my tourist stay?"
     ],
-    notes: "Lithuanian citizens enjoy visa-free entry for 90 days. Argentina has a notable Lithuanian community, particularly concentrated in the city of Berisso near La Plata, where Lithuanian cultural festivals and organizations remain active to this day. Flights from Vilnius connect through Madrid, Frankfurt, or London. Berisso hosts an annual immigration festival celebrating its Lithuanian heritage."
+    notes: "Lithuanian citizens enjoy visa-free entry for 90 days. Argentina has a notable Lithuanian community, particularly concentrated in the city of Berisso near La Plata, where Lithuanian cultural festivals and organizations remain active to this day. Flights from Vilnius connect through Madrid, Frankfurt, or London. Berisso hosts an annual immigration festival celebrating its Lithuanian heritage.",
+    image: "/images/countries/lithuania-landmark.jpg",
+    imageAlt: "Vilnius Old Town and Gediminas Tower - representing Lithuanian travelers to Argentina"
   },
   {
     slug: "malta",
@@ -866,7 +912,9 @@ export const countriesBase: CountryData[] = [
       "What is the best flight route from Malta to Buenos Aires?",
       "Can I extend my 90-day stay?"
     ],
-    notes: "Maltese citizens can visit visa-free for 90 days. Flights from Malta connect through Rome, Madrid, or other European hubs. While there is no large Maltese community in Argentina, both countries share Mediterranean cultural influences, and Buenos Aires offers a familiar blend of European architecture and cafe culture for Maltese visitors."
+    notes: "Maltese citizens can visit visa-free for 90 days. Flights from Malta connect through Rome, Madrid, or other European hubs. While there is no large Maltese community in Argentina, both countries share Mediterranean cultural influences, and Buenos Aires offers a familiar blend of European architecture and cafe culture for Maltese visitors.",
+    image: "/images/countries/malta-landmark.jpg",
+    imageAlt: "Valletta Grand Harbor and fortifications - representing Maltese travelers to Argentina"
   },
   {
     slug: "iceland",
@@ -883,7 +931,9 @@ export const countriesBase: CountryData[] = [
       "Can I extend my 90-day stay?",
       "Is Patagonia a popular destination for Icelandic travelers?"
     ],
-    notes: "Icelandic citizens can visit visa-free for 90 days. There are no direct flights; travelers typically connect through London, Madrid, or other European hubs. Patagonia is particularly appealing to Icelandic visitors who appreciate dramatic landscapes, glaciers, and outdoor adventure. Both countries share interests in sustainable energy and natural resource conservation."
+    notes: "Icelandic citizens can visit visa-free for 90 days. There are no direct flights; travelers typically connect through London, Madrid, or other European hubs. Patagonia is particularly appealing to Icelandic visitors who appreciate dramatic landscapes, glaciers, and outdoor adventure. Both countries share interests in sustainable energy and natural resource conservation.",
+    image: "/images/countries/iceland-landmark.jpg",
+    imageAlt: "Reykjavik Hallgrímskirkja church and harbor - representing Icelandic travelers to Argentina"
   },
   {
     slug: "liechtenstein",
@@ -899,7 +949,9 @@ export const countriesBase: CountryData[] = [
       "What is the best flight route to Buenos Aires?",
       "Can I extend my tourist stay?"
     ],
-    notes: "Liechtenstein citizens enjoy visa-free entry for 90 days. As a microstate, Liechtenstein has no airport of its own; travelers fly from Zurich or other nearby Swiss or Austrian airports, connecting through Madrid or Frankfurt to Buenos Aires."
+    notes: "Liechtenstein citizens enjoy visa-free entry for 90 days. As a microstate, Liechtenstein has no airport of its own; travelers fly from Zurich or other nearby Swiss or Austrian airports, connecting through Madrid or Frankfurt to Buenos Aires.",
+    image: "/images/countries/liechtenstein-landmark.jpg",
+    imageAlt: "Vaduz Castle overlooking Rhine Valley - representing Liechtenstein travelers to Argentina"
   },
   {
     slug: "monaco",
@@ -915,7 +967,9 @@ export const countriesBase: CountryData[] = [
       "What is the best flight route from Monaco to Buenos Aires?",
       "Can I extend my 90-day stay?"
     ],
-    notes: "Monegasque citizens can visit visa-free for 90 days. Travelers fly from Nice airport, typically connecting through Paris or Madrid to Buenos Aires. Monaco and Argentina share connections through motorsport culture, with the Argentine Grand Prix historically drawing interest from Monaco-based racing enthusiasts."
+    notes: "Monegasque citizens can visit visa-free for 90 days. Travelers fly from Nice airport, typically connecting through Paris or Madrid to Buenos Aires. Monaco and Argentina share connections through motorsport culture, with the Argentine Grand Prix historically drawing interest from Monaco-based racing enthusiasts.",
+    image: "/images/countries/monaco-landmark.jpg",
+    imageAlt: "Monte Carlo Casino and Port Hercules - representing Monégasque travelers to Argentina"
   },
   {
     slug: "andorra",
@@ -931,7 +985,9 @@ export const countriesBase: CountryData[] = [
       "What is the best flight route to Buenos Aires?",
       "Can I extend my tourist stay?"
     ],
-    notes: "Andorran citizens enjoy visa-free entry for 90 days. As Andorra has no airport, travelers fly from Barcelona or Toulouse, connecting through Madrid or Paris to Buenos Aires. Both Andorra and Argentina share Catalan and Spanish cultural influences."
+    notes: "Andorran citizens enjoy visa-free entry for 90 days. As Andorra has no airport, travelers fly from Barcelona or Toulouse, connecting through Madrid or Paris to Buenos Aires. Both Andorra and Argentina share Catalan and Spanish cultural influences.",
+    image: "/images/countries/andorra-landmark.jpg",
+    imageAlt: "Andorra la Vella in Pyrenees mountains - representing Andorran travelers to Argentina"
   },
   {
     slug: "san-marino",
@@ -947,7 +1003,9 @@ export const countriesBase: CountryData[] = [
       "What is the best flight route to Buenos Aires?",
       "Are there San Marino community ties in Argentina?"
     ],
-    notes: "Sammarinese citizens can visit visa-free for 90 days. Travelers fly from nearby Italian airports such as Bologna or Rimini, connecting through Rome or Madrid. Given Argentina's massive Italian diaspora, Sammarinese visitors find a culturally familiar environment in Buenos Aires."
+    notes: "Sammarinese citizens can visit visa-free for 90 days. Travelers fly from nearby Italian airports such as Bologna or Rimini, connecting through Rome or Madrid. Given Argentina's massive Italian diaspora, Sammarinese visitors find a culturally familiar environment in Buenos Aires.",
+    image: "/images/countries/san-marino-landmark.jpg",
+    imageAlt: "Three Towers of San Marino on Mount Titano - representing San Marinese travelers to Argentina"
   },
   {
     slug: "vatican-city",
@@ -963,7 +1021,9 @@ export const countriesBase: CountryData[] = [
       "What documentation does a Vatican passport require?",
       "Are there special considerations for Vatican diplomatic travel?"
     ],
-    notes: "Vatican citizens enjoy visa-free entry for 90 days. Pope Francis (Jorge Mario Bergoglio) is Argentine, born and raised in Buenos Aires, making Argentina the first country in the Americas to produce a pope. Vatican passport holders typically travel through Rome's airports, connecting through Madrid or directly to Buenos Aires."
+    notes: "Vatican citizens enjoy visa-free entry for 90 days. Pope Francis (Jorge Mario Bergoglio) is Argentine, born and raised in Buenos Aires, making Argentina the first country in the Americas to produce a pope. Vatican passport holders typically travel through Rome's airports, connecting through Madrid or directly to Buenos Aires.",
+    image: "/images/countries/vatican-city-landmark.jpg",
+    imageAlt: "St Peters Basilica and Square - representing Vatican City travelers to Argentina"
   },
   // Additional Asia-Pacific Countries
   {
@@ -981,7 +1041,9 @@ export const countriesBase: CountryData[] = [
       "What is the best flight route from Kuala Lumpur to Buenos Aires?",
       "Do I need to show proof of return travel?"
     ],
-    notes: "Malaysian citizens receive 30 days visa-free, which is shorter than the standard 90 days granted to most exempt countries. Flights from Kuala Lumpur typically connect through Dubai, Doha, or a European hub. Malaysia and Argentina maintain trade relations, and Buenos Aires is an emerging destination for Malaysian travelers exploring South America."
+    notes: "Malaysian citizens receive 30 days visa-free, which is shorter than the standard 90 days granted to most exempt countries. Flights from Kuala Lumpur typically connect through Dubai, Doha, or a European hub. Malaysia and Argentina maintain trade relations, and Buenos Aires is an emerging destination for Malaysian travelers exploring South America.",
+    image: "/images/countries/malaysia-landmark.jpg",
+    imageAlt: "Kuala Lumpur Petronas Twin Towers - representing Malaysian travelers to Argentina"
   },
   {
     slug: "thailand",
@@ -998,7 +1060,9 @@ export const countriesBase: CountryData[] = [
       "Can I extend my 90-day stay?",
       "Do I need a yellow fever certificate?"
     ],
-    notes: "Thai citizens enjoy visa-free entry for 90 days. Flights from Bangkok typically connect through Dubai, Doha, or a European hub such as Madrid. Thailand and Argentina share a growing mutual interest in food culture, with Thai cuisine gaining popularity in Buenos Aires and Argentine beef finding markets in Thailand."
+    notes: "Thai citizens enjoy visa-free entry for 90 days. Flights from Bangkok typically connect through Dubai, Doha, or a European hub such as Madrid. Thailand and Argentina share a growing mutual interest in food culture, with Thai cuisine gaining popularity in Buenos Aires and Argentine beef finding markets in Thailand.",
+    image: "/images/countries/thailand-landmark.jpg",
+    imageAlt: "Bangkok Grand Palace and Wat Phra Kaew - representing Thai travelers to Argentina"
   },
   {
     slug: "hong-kong",
@@ -1015,7 +1079,9 @@ export const countriesBase: CountryData[] = [
       "Can I extend my 30-day stay in Argentina?",
       "What is the best flight route from Hong Kong to Buenos Aires?"
     ],
-    notes: "Hong Kong Special Administrative Region passport holders receive 30 days visa-free. British National (Overseas) passport holders may have different requirements and should verify before travel. Flights from Hong Kong typically connect through Dubai, Doha, or a European hub. Buenos Aires has a small but growing East Asian expat community."
+    notes: "Hong Kong Special Administrative Region passport holders receive 30 days visa-free. British National (Overseas) passport holders may have different requirements and should verify before travel. Flights from Hong Kong typically connect through Dubai, Doha, or a European hub. Buenos Aires has a small but growing East Asian expat community.",
+    image: "/images/countries/hong-kong-landmark.jpg",
+    imageAlt: "Victoria Harbor and Hong Kong skyline - representing Hong Kong travelers to Argentina"
   },
   {
     slug: "macao",
@@ -1031,7 +1097,9 @@ export const countriesBase: CountryData[] = [
       "What is the best flight route from Macao to Buenos Aires?",
       "Can I extend my 30-day stay?"
     ],
-    notes: "Macao Special Administrative Region passport holders receive 30 days visa-free. Flights connect through Hong Kong or mainland Chinese hubs, then via Dubai, Doha, or a European city to Buenos Aires. Both Macao and Buenos Aires share Portuguese colonial heritage, offering an interesting cultural connection for travelers."
+    notes: "Macao Special Administrative Region passport holders receive 30 days visa-free. Flights connect through Hong Kong or mainland Chinese hubs, then via Dubai, Doha, or a European city to Buenos Aires. Both Macao and Buenos Aires share Portuguese colonial heritage, offering an interesting cultural connection for travelers.",
+    image: "/images/countries/macao-landmark.jpg",
+    imageAlt: "Ruins of St Pauls and Senado Square - representing Macanese travelers to Argentina"
   },
   {
     slug: "israel",
@@ -1048,7 +1116,9 @@ export const countriesBase: CountryData[] = [
       "Are there direct flights from Tel Aviv to Buenos Aires?",
       "Are there any special security procedures for Israeli travelers?"
     ],
-    notes: "Israeli citizens enjoy visa-free entry for 90 days. Argentina is home to the largest Jewish community in Latin America, with over 200,000 members concentrated in Buenos Aires neighborhoods like Once and Belgrano. The community maintains synagogues, schools, cultural centers, and kosher restaurants. Flights from Tel Aviv typically connect through Madrid, Rome, or Sao Paulo."
+    notes: "Israeli citizens enjoy visa-free entry for 90 days. Argentina is home to the largest Jewish community in Latin America, with over 200,000 members concentrated in Buenos Aires neighborhoods like Once and Belgrano. The community maintains synagogues, schools, cultural centers, and kosher restaurants. Flights from Tel Aviv typically connect through Madrid, Rome, or Sao Paulo.",
+    image: "/images/countries/israel-landmark.jpg",
+    imageAlt: "Jerusalem Western Wall and Dome of the Rock - representing Israeli travelers to Argentina"
   },
   {
     slug: "turkey",
@@ -1065,7 +1135,9 @@ export const countriesBase: CountryData[] = [
       "Is there a Turkish community in Buenos Aires?",
       "Can I extend my 90-day stay?"
     ],
-    notes: "Turkish citizens can visit visa-free for 90 days. Turkish Airlines operates direct flights from Istanbul to Buenos Aires, making Argentina one of the most accessible South American destinations for Turkish travelers. Argentina has a significant population of Arab descent (approximately 3.5 million of Syrian and Lebanese origin), sharing cultural overlap with Turkey's Ottoman-era connections to the Levant."
+    notes: "Turkish citizens can visit visa-free for 90 days. Turkish Airlines operates direct flights from Istanbul to Buenos Aires, making Argentina one of the most accessible South American destinations for Turkish travelers. Argentina has a significant population of Arab descent (approximately 3.5 million of Syrian and Lebanese origin), sharing cultural overlap with Turkey's Ottoman-era connections to the Levant.",
+    image: "/images/countries/turkey-landmark.jpg",
+    imageAlt: "Istanbul Blue Mosque and Bosphorus strait - representing Turkish travelers to Argentina"
   },
   {
     slug: "south-africa",
@@ -1082,7 +1154,9 @@ export const countriesBase: CountryData[] = [
       "What is the best flight route from Johannesburg to Buenos Aires?",
       "Can I extend my 90-day stay?"
     ],
-    notes: "South African citizens enjoy visa-free entry for 90 days. There are no direct flights from South Africa; most routes connect through Sao Paulo, with a total journey time of approximately 14-16 hours. Both countries are major wine-producing nations, and Argentine Malbec and South African Pinotage represent complementary New World wine traditions. Rugby and polo also provide shared sporting connections."
+    notes: "South African citizens enjoy visa-free entry for 90 days. There are no direct flights from South Africa; most routes connect through Sao Paulo, with a total journey time of approximately 14-16 hours. Both countries are major wine-producing nations, and Argentine Malbec and South African Pinotage represent complementary New World wine traditions. Rugby and polo also provide shared sporting connections.",
+    image: "/images/countries/south-africa-landmark.jpg",
+    imageAlt: "Cape Town Table Mountain and waterfront - representing South African travelers to Argentina"
   },
   {
     slug: "qatar",
@@ -1099,7 +1173,9 @@ export const countriesBase: CountryData[] = [
       "Is there a halal food scene in Buenos Aires?",
       "Can I extend my 90-day stay?"
     ],
-    notes: "Qatari citizens can visit visa-free for 90 days. Qatar Airways connects Doha to Buenos Aires via Sao Paulo, offering premium service on this route. Argentina has approximately 3.5 million residents of Arab descent (primarily Syrian and Lebanese origin), which has fostered a culture that includes Middle Eastern food, customs, and an appreciation for Arab heritage. Halal dining options are available in Buenos Aires."
+    notes: "Qatari citizens can visit visa-free for 90 days. Qatar Airways connects Doha to Buenos Aires via Sao Paulo, offering premium service on this route. Argentina has approximately 3.5 million residents of Arab descent (primarily Syrian and Lebanese origin), which has fostered a culture that includes Middle Eastern food, customs, and an appreciation for Arab heritage. Halal dining options are available in Buenos Aires.",
+    image: "/images/countries/qatar-landmark.jpg",
+    imageAlt: "Doha Museum of Islamic Art and Corniche - representing Qatari travelers to Argentina"
   },
   {
     slug: "united-arab-emirates",
@@ -1116,7 +1192,9 @@ export const countriesBase: CountryData[] = [
       "Is there halal food available in Buenos Aires?",
       "Can I extend my 90-day stay?"
     ],
-    notes: "UAE citizens enjoy visa-free entry for 90 days. Emirates connects Dubai to Buenos Aires via Sao Paulo, and Etihad offers similar routing from Abu Dhabi. Argentina's large Arab-descent population (approximately 3.5 million of Syrian and Lebanese origin) means visitors from the Gulf will find cultural familiarity, including Middle Eastern restaurants and mosques in Buenos Aires."
+    notes: "UAE citizens enjoy visa-free entry for 90 days. Emirates connects Dubai to Buenos Aires via Sao Paulo, and Etihad offers similar routing from Abu Dhabi. Argentina's large Arab-descent population (approximately 3.5 million of Syrian and Lebanese origin) means visitors from the Gulf will find cultural familiarity, including Middle Eastern restaurants and mosques in Buenos Aires.",
+    image: "/images/countries/united-arab-emirates-landmark.jpg",
+    imageAlt: "Dubai Burj Khalifa and downtown skyline - representing Emirati travelers to Argentina"
   },
   {
     slug: "georgia",
@@ -1133,7 +1211,9 @@ export const countriesBase: CountryData[] = [
       "Can I extend my 90-day stay?",
       "Are there any Georgian communities in Argentina?"
     ],
-    notes: "Georgian citizens can visit visa-free for 90 days. Flights from Tbilisi connect through Istanbul (Turkish Airlines offers the most convenient routing) or through European hubs such as Frankfurt or Madrid. While there is no significant Georgian diaspora in Argentina, both countries share a deep wine culture, with Georgia being one of the oldest wine-producing regions in the world and Argentina being a New World leader."
+    notes: "Georgian citizens can visit visa-free for 90 days. Flights from Tbilisi connect through Istanbul (Turkish Airlines offers the most convenient routing) or through European hubs such as Frankfurt or Madrid. While there is no significant Georgian diaspora in Argentina, both countries share a deep wine culture, with Georgia being one of the oldest wine-producing regions in the world and Argentina being a New World leader.",
+    image: "/images/countries/georgia-landmark.jpg",
+    imageAlt: "Tbilisi Narikala Fortress and Old Town - representing Georgian travelers to Argentina"
   },
   {
     slug: "barbados",
@@ -1149,7 +1229,9 @@ export const countriesBase: CountryData[] = [
       "What is the best flight route from Barbados to Buenos Aires?",
       "Can I extend my 90-day stay?"
     ],
-    notes: "Barbadian citizens enjoy visa-free entry for 90 days. Flights from Barbados connect through Miami, Panama City, or Bogota to Buenos Aires. Buenos Aires offers Caribbean visitors a culturally rich alternative destination in the Americas."
+    notes: "Barbadian citizens enjoy visa-free entry for 90 days. Flights from Barbados connect through Miami, Panama City, or Bogota to Buenos Aires. Buenos Aires offers Caribbean visitors a culturally rich alternative destination in the Americas.",
+    image: "/images/countries/barbados-landmark.jpg",
+    imageAlt: "Bridgetown Parliament Buildings - representing Barbadian travelers to Argentina"
   },
   {
     slug: "trinidad-and-tobago",
@@ -1165,7 +1247,9 @@ export const countriesBase: CountryData[] = [
       "What is the best flight route from Port of Spain to Buenos Aires?",
       "Can I extend my 90-day stay?"
     ],
-    notes: "Trinidadian and Tobagonian citizens can visit visa-free for 90 days. Flights from Port of Spain connect through Miami, Panama City, or Bogota to Buenos Aires. Both Trinidad and Argentina share a lively carnival culture, with Buenos Aires hosting its own murga and carnival celebrations."
+    notes: "Trinidadian and Tobagonian citizens can visit visa-free for 90 days. Flights from Port of Spain connect through Miami, Panama City, or Bogota to Buenos Aires. Both Trinidad and Argentina share a lively carnival culture, with Buenos Aires hosting its own murga and carnival celebrations.",
+    image: "/images/countries/trinidad-and-tobago-landmark.jpg",
+    imageAlt: "Port of Spain Queens Park Savannah - representing Trinidadian travelers to Argentina"
   },
   {
     slug: "jamaica",
@@ -1181,7 +1265,9 @@ export const countriesBase: CountryData[] = [
       "Can I extend my 30-day stay in Argentina?",
       "What is the best flight route from Kingston to Buenos Aires?"
     ],
-    notes: "Jamaican citizens receive 30 days visa-free, shorter than the 90 days granted to most exempt countries. Flights from Kingston connect through Miami or Panama City to Buenos Aires. Both Jamaica and Argentina share a deep musical heritage, with reggae and tango representing distinct but equally passionate cultural expressions."
+    notes: "Jamaican citizens receive 30 days visa-free, shorter than the 90 days granted to most exempt countries. Flights from Kingston connect through Miami or Panama City to Buenos Aires. Both Jamaica and Argentina share a deep musical heritage, with reggae and tango representing distinct but equally passionate cultural expressions.",
+    image: "/images/countries/jamaica-landmark.jpg",
+    imageAlt: "Kingston Devon House and Blue Mountains - representing Jamaican travelers to Argentina"
   },
   {
     slug: "grenada",
@@ -1197,7 +1283,9 @@ export const countriesBase: CountryData[] = [
       "Can I extend my 30-day stay?",
       "What is the best flight route from Grenada to Buenos Aires?"
     ],
-    notes: "Grenadian citizens receive 30 days visa-free. Flights from Grenada connect through Miami, Bogota, or Panama City to Buenos Aires. Argentina offers Caribbean travelers a unique South American cultural experience with its European-influenced architecture and cuisine."
+    notes: "Grenadian citizens receive 30 days visa-free. Flights from Grenada connect through Miami, Bogota, or Panama City to Buenos Aires. Argentina offers Caribbean travelers a unique South American cultural experience with its European-influenced architecture and cuisine.",
+    image: "/images/countries/grenada-landmark.jpg",
+    imageAlt: "St Georges harbor and Fort George - representing Grenadian travelers to Argentina"
   },
   {
     slug: "saint-lucia",
@@ -1213,7 +1301,9 @@ export const countriesBase: CountryData[] = [
       "What is the best flight route from Saint Lucia to Buenos Aires?",
       "Can I extend my 90-day stay?"
     ],
-    notes: "Saint Lucian citizens enjoy visa-free entry for 90 days. Flights from Saint Lucia connect through Miami or Caribbean hubs to Buenos Aires. Both islands and Argentina share French and Spanish colonial influences in their cultural heritage."
+    notes: "Saint Lucian citizens enjoy visa-free entry for 90 days. Flights from Saint Lucia connect through Miami or Caribbean hubs to Buenos Aires. Both islands and Argentina share French and Spanish colonial influences in their cultural heritage.",
+    image: "/images/countries/saint-lucia-landmark.jpg",
+    imageAlt: "Pitons twin volcanic peaks - representing Saint Lucian travelers to Argentina"
   },
   {
     slug: "saint-vincent-and-the-grenadines",
@@ -1229,7 +1319,9 @@ export const countriesBase: CountryData[] = [
       "What is the best flight route to Buenos Aires?",
       "Can I extend my 90-day stay?"
     ],
-    notes: "Citizens of Saint Vincent and the Grenadines can visit visa-free for 90 days. Flights connect through Barbados, Miami, or Panama City to Buenos Aires. Argentina represents an accessible and culturally rich South American destination for Eastern Caribbean travelers."
+    notes: "Citizens of Saint Vincent and the Grenadines can visit visa-free for 90 days. Flights connect through Barbados, Miami, or Panama City to Buenos Aires. Argentina represents an accessible and culturally rich South American destination for Eastern Caribbean travelers.",
+    image: "/images/countries/saint-vincent-and-the-grenadines-landmark.jpg",
+    imageAlt: "Bequia harbor and Grenadine islands - representing Vincentian travelers to Argentina"
   },
   {
     slug: "saint-kitts-and-nevis",
@@ -1245,7 +1337,9 @@ export const countriesBase: CountryData[] = [
       "What is the best flight route to Buenos Aires?",
       "Can I extend my 90-day stay?"
     ],
-    notes: "Citizens of Saint Kitts and Nevis enjoy visa-free entry for 90 days. Flights connect through Miami, San Juan, or Caribbean hubs to Buenos Aires. Buenos Aires offers a sophisticated urban experience with European architecture and world-class dining."
+    notes: "Citizens of Saint Kitts and Nevis enjoy visa-free entry for 90 days. Flights connect through Miami, San Juan, or Caribbean hubs to Buenos Aires. Buenos Aires offers a sophisticated urban experience with European architecture and world-class dining.",
+    image: "/images/countries/saint-kitts-and-nevis-landmark.jpg",
+    imageAlt: "Brimstone Hill Fortress - representing Kittitian travelers to Argentina"
   },
   {
     slug: "dominica",
@@ -1261,7 +1355,9 @@ export const countriesBase: CountryData[] = [
       "What is the best flight route from Dominica to Buenos Aires?",
       "Is Dominica different from the Dominican Republic for visa purposes?"
     ],
-    notes: "Dominican citizens (Commonwealth of Dominica, not to be confused with the Dominican Republic) can visit visa-free for 90 days. Flights connect through Barbados, Miami, or other Caribbean hubs to Buenos Aires. Dominica passport holders should note that the Dominican Republic has different, visa-required status."
+    notes: "Dominican citizens (Commonwealth of Dominica, not to be confused with the Dominican Republic) can visit visa-free for 90 days. Flights connect through Barbados, Miami, or other Caribbean hubs to Buenos Aires. Dominica passport holders should note that the Dominican Republic has different, visa-required status.",
+    image: "/images/countries/dominica-landmark.jpg",
+    imageAlt: "Trafalgar Falls and rainforest - representing Dominican travelers to Argentina"
   },
   {
     slug: "fiji",
@@ -1277,7 +1373,9 @@ export const countriesBase: CountryData[] = [
       "What is the best flight route from Fiji to Buenos Aires?",
       "Can I extend my 90-day stay?"
     ],
-    notes: "Fijian citizens enjoy visa-free entry for 90 days. Flights from Fiji typically route through Auckland, then connect to Buenos Aires via Santiago or directly. Argentina is one of the more accessible South American destinations for Pacific Islanders, and Patagonia offers landscapes that appeal to travelers from Oceania."
+    notes: "Fijian citizens enjoy visa-free entry for 90 days. Flights from Fiji typically route through Auckland, then connect to Buenos Aires via Santiago or directly. Argentina is one of the more accessible South American destinations for Pacific Islanders, and Patagonia offers landscapes that appeal to travelers from Oceania.",
+    image: "/images/countries/fiji-landmark.jpg",
+    imageAlt: "Suva harbor and colonial architecture - representing Fijian travelers to Argentina"
   },
   {
     slug: "kazakhstan",
@@ -1294,7 +1392,9 @@ export const countriesBase: CountryData[] = [
       "What is the best flight route from Almaty or Nur-Sultan to Buenos Aires?",
       "Can I extend beyond 30 days?"
     ],
-    notes: "Kazakhstani citizens receive 30 days visa-free within any calendar year, meaning multiple visits cannot exceed 30 days total per year. Flights from Kazakhstan connect through Istanbul (Turkish Airlines), Dubai, or European hubs to Buenos Aires. Both countries are major agricultural producers with growing trade relations in grain and livestock."
+    notes: "Kazakhstani citizens receive 30 days visa-free within any calendar year, meaning multiple visits cannot exceed 30 days total per year. Flights from Kazakhstan connect through Istanbul (Turkish Airlines), Dubai, or European hubs to Buenos Aires. Both countries are major agricultural producers with growing trade relations in grain and livestock.",
+    image: "/images/countries/kazakhstan-landmark.jpg",
+    imageAlt: "Almaty cityscape with Tien Shan mountains - representing Kazakh travelers to Argentina"
   },
   {
     slug: "mongolia",
@@ -1310,7 +1410,9 @@ export const countriesBase: CountryData[] = [
       "What is the best flight route from Ulaanbaatar to Buenos Aires?",
       "Can I extend my 90-day stay?"
     ],
-    notes: "Mongolian citizens can visit visa-free for 90 days. Flights from Ulaanbaatar connect through Beijing, Seoul, or Istanbul to Buenos Aires. Both Mongolia and Patagonia share vast steppe landscapes and strong equestrian traditions, making the Argentine pampas a culturally resonant destination for Mongolian travelers."
+    notes: "Mongolian citizens can visit visa-free for 90 days. Flights from Ulaanbaatar connect through Beijing, Seoul, or Istanbul to Buenos Aires. Both Mongolia and Patagonia share vast steppe landscapes and strong equestrian traditions, making the Argentine pampas a culturally resonant destination for Mongolian travelers.",
+    image: "/images/countries/mongolia-landmark.jpg",
+    imageAlt: "Ulaanbaatar Gandantegchinlen Monastery - representing Mongolian travelers to Argentina"
   },
   {
     slug: "russia",
@@ -1327,7 +1429,9 @@ export const countriesBase: CountryData[] = [
       "Are there any current travel restrictions for Russian citizens?",
       "Is there a Russian community in Buenos Aires?"
     ],
-    notes: "Russian citizens enjoy visa-free entry for 90 days within any 180-day period. Buenos Aires has seen a growing Russian-speaking community since 2022, with concentrations in Palermo and Puerto Madero. Flights connect through Istanbul (Turkish Airlines) or Dubai, as direct European routing may be limited. Argentina maintains diplomatic relations with Russia and has not imposed travel restrictions on Russian citizens."
+    notes: "Russian citizens enjoy visa-free entry for 90 days within any 180-day period. Buenos Aires has seen a growing Russian-speaking community since 2022, with concentrations in Palermo and Puerto Madero. Flights connect through Istanbul (Turkish Airlines) or Dubai, as direct European routing may be limited. Argentina maintains diplomatic relations with Russia and has not imposed travel restrictions on Russian citizens.",
+    image: "/images/countries/russia-landmark.jpg",
+    imageAlt: "Moscow Red Square and Saint Basils Cathedral - representing Russian travelers to Argentina"
   },
   {
     slug: "ukraine",
@@ -1344,7 +1448,9 @@ export const countriesBase: CountryData[] = [
       "Is there a Ukrainian community in Buenos Aires?",
       "What documents do I need with a wartime-issued passport?"
     ],
-    notes: "Ukrainian citizens enjoy visa-free entry for 90 days within any 180-day period. Argentina has a significant Ukrainian diaspora, with Ukrainian Orthodox churches, schools, and cultural centers in Buenos Aires and Misiones province. The Ukrainian community in Argentina dates back to the late 19th century and maintains active cultural organizations. Flights currently connect through European hubs or Istanbul to Buenos Aires."
+    notes: "Ukrainian citizens enjoy visa-free entry for 90 days within any 180-day period. Argentina has a significant Ukrainian diaspora, with Ukrainian Orthodox churches, schools, and cultural centers in Buenos Aires and Misiones province. The Ukrainian community in Argentina dates back to the late 19th century and maintains active cultural organizations. Flights currently connect through European hubs or Istanbul to Buenos Aires.",
+    image: "/images/countries/ukraine-landmark.jpg",
+    imageAlt: "Kyiv Pechersk Lavra monastery complex - representing Ukrainian travelers to Argentina"
   },
   {
     slug: "belarus",
@@ -1361,7 +1467,9 @@ export const countriesBase: CountryData[] = [
       "What is the best flight route from Minsk to Buenos Aires?",
       "Are there any travel restrictions for Belarusian citizens?"
     ],
-    notes: "Belarusian citizens enjoy visa-free entry for 90 days within any calendar year. Flights from Minsk connect through Istanbul, Dubai, or available European hubs to Buenos Aires. While there is no large Belarusian diaspora in Argentina, the broader Eastern European community in Buenos Aires provides a welcoming environment for Slavic-speaking travelers."
+    notes: "Belarusian citizens enjoy visa-free entry for 90 days within any calendar year. Flights from Minsk connect through Istanbul, Dubai, or available European hubs to Buenos Aires. While there is no large Belarusian diaspora in Argentina, the broader Eastern European community in Buenos Aires provides a welcoming environment for Slavic-speaking travelers.",
+    image: "/images/countries/belarus-landmark.jpg",
+    imageAlt: "Minsk Independence Square and Government House - representing Belarusian travelers to Argentina"
   },
   {
     slug: "serbia",
@@ -1378,7 +1486,9 @@ export const countriesBase: CountryData[] = [
       "What is the best flight route from Belgrade to Buenos Aires?",
       "Can I extend my 90-day stay?"
     ],
-    notes: "Serbian citizens can visit visa-free for 90 days. Argentina has a notable Serbian diaspora, part of the broader Yugoslav immigration to Buenos Aires and Patagonia throughout the 20th century. Serbian cultural clubs and Orthodox churches exist in Buenos Aires. Flights from Belgrade connect through Madrid, Istanbul, or other European hubs."
+    notes: "Serbian citizens can visit visa-free for 90 days. Argentina has a notable Serbian diaspora, part of the broader Yugoslav immigration to Buenos Aires and Patagonia throughout the 20th century. Serbian cultural clubs and Orthodox churches exist in Buenos Aires. Flights from Belgrade connect through Madrid, Istanbul, or other European hubs.",
+    image: "/images/countries/serbia-landmark.jpg",
+    imageAlt: "Belgrade Kalemegdan Fortress - representing Serbian travelers to Argentina"
   },
   {
     slug: "montenegro",
@@ -1395,7 +1505,9 @@ export const countriesBase: CountryData[] = [
       "Can I extend my 90-day stay?",
       "Is there a Montenegrin community in Argentina?"
     ],
-    notes: "Montenegrin citizens enjoy visa-free entry for 90 days. Montenegrins share the broader Yugoslav diaspora presence in Argentina, with communities in Buenos Aires and Patagonia. Flights from Podgorica connect through Belgrade, Istanbul, or other European hubs to Buenos Aires. Both countries share a coastal culture and appreciation for Mediterranean-style cuisine."
+    notes: "Montenegrin citizens enjoy visa-free entry for 90 days. Montenegrins share the broader Yugoslav diaspora presence in Argentina, with communities in Buenos Aires and Patagonia. Flights from Podgorica connect through Belgrade, Istanbul, or other European hubs to Buenos Aires. Both countries share a coastal culture and appreciation for Mediterranean-style cuisine.",
+    image: "/images/countries/montenegro-landmark.jpg",
+    imageAlt: "Kotor Bay and medieval Old Town - representing Montenegrin travelers to Argentina"
   },
   {
     slug: "north-macedonia",
@@ -1412,7 +1524,9 @@ export const countriesBase: CountryData[] = [
       "Can I extend my 90-day stay?",
       "Are there Macedonian communities in Argentina?"
     ],
-    notes: "Macedonian citizens can visit visa-free for 90 days. Part of the broader Balkan diaspora in Argentina, small Macedonian communities exist within the Yugoslav immigrant networks in Buenos Aires. Flights from Skopje connect through Istanbul, Vienna, or other European hubs to Buenos Aires."
+    notes: "Macedonian citizens can visit visa-free for 90 days. Part of the broader Balkan diaspora in Argentina, small Macedonian communities exist within the Yugoslav immigrant networks in Buenos Aires. Flights from Skopje connect through Istanbul, Vienna, or other European hubs to Buenos Aires.",
+    image: "/images/countries/north-macedonia-landmark.jpg",
+    imageAlt: "Skopje Stone Bridge and Kale Fortress - representing Macedonian travelers to Argentina"
   },
   {
     slug: "bosnia-and-herzegovina",
@@ -1429,7 +1543,9 @@ export const countriesBase: CountryData[] = [
       "What is the best flight route from Sarajevo to Buenos Aires?",
       "Can I extend my 90-day stay?"
     ],
-    notes: "Bosnian citizens enjoy visa-free entry for 90 days. Argentina received Bosnian refugees during the 1990s Yugoslav wars, and a small but active Bosnian community exists in Buenos Aires. Flights from Sarajevo connect through Istanbul, Vienna, or other European hubs. The community maintains cultural ties through social organizations and occasional cultural events."
+    notes: "Bosnian citizens enjoy visa-free entry for 90 days. Argentina received Bosnian refugees during the 1990s Yugoslav wars, and a small but active Bosnian community exists in Buenos Aires. Flights from Sarajevo connect through Istanbul, Vienna, or other European hubs. The community maintains cultural ties through social organizations and occasional cultural events.",
+    image: "/images/countries/bosnia-and-herzegovina-landmark.jpg",
+    imageAlt: "Sarajevo Latin Bridge and Old Town - representing Bosnian travelers to Argentina"
   },
   {
     slug: "albania",
@@ -1446,7 +1562,9 @@ export const countriesBase: CountryData[] = [
       "Can I extend my 90-day stay?",
       "Are there Albanian communities in Argentina?"
     ],
-    notes: "Albanian citizens can visit visa-free for 90 days. While there is no large Albanian diaspora in Argentina, a small community exists within the broader Balkan immigrant networks. Flights from Tirana connect through Istanbul, Rome, or Madrid to Buenos Aires. Both countries share Mediterranean cultural influences and a strong tradition of hospitality."
+    notes: "Albanian citizens can visit visa-free for 90 days. While there is no large Albanian diaspora in Argentina, a small community exists within the broader Balkan immigrant networks. Flights from Tirana connect through Istanbul, Rome, or Madrid to Buenos Aires. Both countries share Mediterranean cultural influences and a strong tradition of hospitality.",
+    image: "/images/countries/albania-landmark.jpg",
+    imageAlt: "Tirana Skanderbeg Square - representing Albanian travelers to Argentina"
   },
   {
     slug: "armenia",
@@ -1463,7 +1581,9 @@ export const countriesBase: CountryData[] = [
       "What is the best flight route from Yerevan to Buenos Aires?",
       "Can I connect with the Armenian diaspora in Argentina?"
     ],
-    notes: "Armenian citizens enjoy visa-free entry for 90 days within any 180-day period. Argentina is home to one of the largest Armenian diaspora communities in the world, concentrated primarily in Buenos Aires, especially the Palermo neighborhood. Armenian churches, schools, cultural centers, newspapers, and community organizations thrive across the city. Flights from Yerevan connect through Istanbul, Dubai, or European hubs to Buenos Aires."
+    notes: "Armenian citizens enjoy visa-free entry for 90 days within any 180-day period. Argentina is home to one of the largest Armenian diaspora communities in the world, concentrated primarily in Buenos Aires, especially the Palermo neighborhood. Armenian churches, schools, cultural centers, newspapers, and community organizations thrive across the city. Flights from Yerevan connect through Istanbul, Dubai, or European hubs to Buenos Aires.",
+    image: "/images/countries/armenia-landmark.jpg",
+    imageAlt: "Yerevan Cascade Complex with Mount Ararat - representing Armenian travelers to Argentina"
   },
   // Visa-Required Countries (Batch 5 - to reach 100 total)
   {
@@ -1487,7 +1607,9 @@ export const countriesBase: CountryData[] = [
     },
     processingTime: "2-4 weeks",
     visaFee: "$150-200 USD",
-    notes: "Indian citizens must obtain a visa before traveling to Argentina. Apply at the Argentine Embassy in New Delhi or Consulate General in Mumbai. The application process requires proof of financial means, travel itinerary, and accommodation details. While there is no large Indian diaspora in Argentina, Buenos Aires has a growing Indian cultural presence with yoga centers, Indian restaurants, and Bollywood film screenings."
+    notes: "Indian citizens must obtain a visa before traveling to Argentina. Apply at the Argentine Embassy in New Delhi or Consulate General in Mumbai. The application process requires proof of financial means, travel itinerary, and accommodation details. While there is no large Indian diaspora in Argentina, Buenos Aires has a growing Indian cultural presence with yoga centers, Indian restaurants, and Bollywood film screenings.",
+    image: "/images/countries/india-landmark.jpg",
+    imageAlt: "Taj Mahal in Agra at sunrise - representing Indian travelers to Argentina"
   },
   {
     slug: "china",
@@ -1510,7 +1632,9 @@ export const countriesBase: CountryData[] = [
     },
     processingTime: "2-4 weeks",
     visaFee: "$150-200 USD",
-    notes: "Chinese citizens must obtain a visa before traveling. Argentina has an embassy in Beijing and consulates in Shanghai and Guangzhou, providing multiple application points. Buenos Aires has an established Chinatown (Barrio Chino) in Belgrano, with Chinese supermarkets, restaurants, and cultural celebrations including Chinese New Year. The Chinese-Argentine community has grown significantly since the 1990s and is one of the largest in South America."
+    notes: "Chinese citizens must obtain a visa before traveling. Argentina has an embassy in Beijing and consulates in Shanghai and Guangzhou, providing multiple application points. Buenos Aires has an established Chinatown (Barrio Chino) in Belgrano, with Chinese supermarkets, restaurants, and cultural celebrations including Chinese New Year. The Chinese-Argentine community has grown significantly since the 1990s and is one of the largest in South America.",
+    image: "/images/countries/china-landmark.jpg",
+    imageAlt: "Great Wall of China at Badaling - representing Chinese travelers to Argentina"
   },
   {
     slug: "pakistan",
@@ -1532,7 +1656,9 @@ export const countriesBase: CountryData[] = [
     },
     processingTime: "3-4 weeks",
     visaFee: "$150-200 USD",
-    notes: "Pakistani citizens must obtain a visa before traveling. There is no Argentine embassy or consulate in Pakistan, so applicants must apply through the nearest diplomatic mission in New Delhi, India or Beijing, China, which adds complexity and time to the process. Courier services or in-person visits may be required for biometric submission. Argentina's large Arab-descent population provides some cultural familiarity for Pakistani visitors."
+    notes: "Pakistani citizens must obtain a visa before traveling. There is no Argentine embassy or consulate in Pakistan, so applicants must apply through the nearest diplomatic mission in New Delhi, India or Beijing, China, which adds complexity and time to the process. Courier services or in-person visits may be required for biometric submission. Argentina's large Arab-descent population provides some cultural familiarity for Pakistani visitors.",
+    image: "/images/countries/pakistan-landmark.jpg",
+    imageAlt: "Lahore Badshahi Mosque and Fort - representing Pakistani travelers to Argentina"
   },
   {
     slug: "bangladesh",
@@ -1554,7 +1680,9 @@ export const countriesBase: CountryData[] = [
     },
     processingTime: "3-4 weeks",
     visaFee: "$150-200 USD",
-    notes: "Bangladeshi citizens must obtain a visa before traveling. The nearest Argentine diplomatic mission is in New Delhi, India, requiring either travel to India for in-person application or use of courier services. The process can be more time-consuming due to the absence of a local embassy. Applicants should begin the process well in advance of planned travel dates and prepare comprehensive financial documentation."
+    notes: "Bangladeshi citizens must obtain a visa before traveling. The nearest Argentine diplomatic mission is in New Delhi, India, requiring either travel to India for in-person application or use of courier services. The process can be more time-consuming due to the absence of a local embassy. Applicants should begin the process well in advance of planned travel dates and prepare comprehensive financial documentation.",
+    image: "/images/countries/bangladesh-landmark.jpg",
+    imageAlt: "Dhaka Ahsan Manzil Pink Palace - representing Bangladeshi travelers to Argentina"
   },
   {
     slug: "philippines",
@@ -1576,7 +1704,9 @@ export const countriesBase: CountryData[] = [
     },
     processingTime: "2-4 weeks",
     visaFee: "$150-200 USD",
-    notes: "Filipino citizens must obtain a visa before traveling. The nearest Argentine diplomatic missions are in Tokyo or Canberra, requiring either travel to Japan or Australia for in-person application or use of courier services. Both the Philippines and Argentina were Spanish colonies, sharing linguistic roots and Catholic cultural traditions. Flights from Manila connect through long-haul routes via Dubai, Doha, or transpacific through Los Angeles."
+    notes: "Filipino citizens must obtain a visa before traveling. The nearest Argentine diplomatic missions are in Tokyo or Canberra, requiring either travel to Japan or Australia for in-person application or use of courier services. Both the Philippines and Argentina were Spanish colonies, sharing linguistic roots and Catholic cultural traditions. Flights from Manila connect through long-haul routes via Dubai, Doha, or transpacific through Los Angeles.",
+    image: "/images/countries/philippines-landmark.jpg",
+    imageAlt: "Manila Intramuros walled city - representing Filipino travelers to Argentina"
   },
   {
     slug: "vietnam",
@@ -1598,7 +1728,9 @@ export const countriesBase: CountryData[] = [
     },
     processingTime: "2-4 weeks",
     visaFee: "$150-200 USD",
-    notes: "Vietnamese citizens must obtain a visa before traveling. The nearest Argentine diplomatic missions are in Beijing, China or Bangkok, Thailand, adding complexity to the application process. Applicants should plan ahead and allow extra time for document submission and processing. Flights from Vietnam connect through Dubai, Doha, or East Asian hubs to reach Buenos Aires."
+    notes: "Vietnamese citizens must obtain a visa before traveling. The nearest Argentine diplomatic missions are in Beijing, China or Bangkok, Thailand, adding complexity to the application process. Applicants should plan ahead and allow extra time for document submission and processing. Flights from Vietnam connect through Dubai, Doha, or East Asian hubs to reach Buenos Aires.",
+    image: "/images/countries/vietnam-landmark.jpg",
+    imageAlt: "Hanoi Hoan Kiem Lake and Ngoc Son Temple - representing Vietnamese travelers to Argentina"
   },
   {
     slug: "indonesia",
@@ -1620,7 +1752,9 @@ export const countriesBase: CountryData[] = [
     },
     processingTime: "2-4 weeks",
     visaFee: "$150-200 USD",
-    notes: "Indonesian citizens must obtain a visa before traveling. The nearest Argentine diplomatic missions are in Canberra, Australia or Tokyo, Japan. The absence of a local embassy means applicants may need to travel or use courier services for document submission. Flights from Jakarta connect through Dubai, Doha, or Singapore, then through a European hub or Sao Paulo to Buenos Aires."
+    notes: "Indonesian citizens must obtain a visa before traveling. The nearest Argentine diplomatic missions are in Canberra, Australia or Tokyo, Japan. The absence of a local embassy means applicants may need to travel or use courier services for document submission. Flights from Jakarta connect through Dubai, Doha, or Singapore, then through a European hub or Sao Paulo to Buenos Aires.",
+    image: "/images/countries/indonesia-landmark.jpg",
+    imageAlt: "Bali Tanah Lot temple - representing Indonesian travelers to Argentina"
   },
   {
     slug: "nigeria",
@@ -1643,7 +1777,9 @@ export const countriesBase: CountryData[] = [
     },
     processingTime: "3-4 weeks",
     visaFee: "$150-200 USD",
-    notes: "Nigerian citizens must obtain a visa before traveling. Argentina has an embassy in Abuja that handles visa applications directly, making the process more straightforward than for countries without local representation. A yellow fever vaccination certificate is required for travelers arriving from Nigeria. Flights connect through Addis Ababa, Dubai, or European hubs such as Madrid to Buenos Aires."
+    notes: "Nigerian citizens must obtain a visa before traveling. Argentina has an embassy in Abuja that handles visa applications directly, making the process more straightforward than for countries without local representation. A yellow fever vaccination certificate is required for travelers arriving from Nigeria. Flights connect through Addis Ababa, Dubai, or European hubs such as Madrid to Buenos Aires.",
+    image: "/images/countries/nigeria-landmark.jpg",
+    imageAlt: "Lagos Eko Atlantic skyline - representing Nigerian travelers to Argentina"
   },
   {
     slug: "egypt",
@@ -1666,7 +1802,9 @@ export const countriesBase: CountryData[] = [
     },
     processingTime: "2-4 weeks",
     visaFee: "$150-200 USD",
-    notes: "Egyptian citizens must obtain a visa before traveling. Argentina has an embassy in Cairo for direct visa applications. Argentina is home to approximately 3.5 million people of Arab descent (primarily Syrian and Lebanese origin), making it one of the largest Arab diaspora communities outside the Middle East. Egyptian visitors will find Arabic cultural influences in Buenos Aires, including Middle Eastern restaurants, mosques, and cultural centers."
+    notes: "Egyptian citizens must obtain a visa before traveling. Argentina has an embassy in Cairo for direct visa applications. Argentina is home to approximately 3.5 million people of Arab descent (primarily Syrian and Lebanese origin), making it one of the largest Arab diaspora communities outside the Middle East. Egyptian visitors will find Arabic cultural influences in Buenos Aires, including Middle Eastern restaurants, mosques, and cultural centers.",
+    image: "/images/countries/egypt-landmark.jpg",
+    imageAlt: "Giza Pyramids and Sphinx - representing Egyptian travelers to Argentina"
   },
   {
     slug: "kenya",
@@ -1688,7 +1826,9 @@ export const countriesBase: CountryData[] = [
     },
     processingTime: "3-4 weeks",
     visaFee: "$150-200 USD",
-    notes: "Kenyan citizens must obtain a visa before traveling. The nearest Argentine diplomatic mission is in Pretoria, South Africa, requiring either travel to South Africa or use of courier services for document submission. A yellow fever certificate may be required. Flights from Nairobi connect through Addis Ababa, Dubai, or Johannesburg, then via Sao Paulo to Buenos Aires."
+    notes: "Kenyan citizens must obtain a visa before traveling. The nearest Argentine diplomatic mission is in Pretoria, South Africa, requiring either travel to South Africa or use of courier services for document submission. A yellow fever certificate may be required. Flights from Nairobi connect through Addis Ababa, Dubai, or Johannesburg, then via Sao Paulo to Buenos Aires.",
+    image: "/images/countries/kenya-landmark.jpg",
+    imageAlt: "Nairobi National Park with city skyline - representing Kenyan travelers to Argentina"
   },
   {
     slug: "morocco",
@@ -1711,7 +1851,9 @@ export const countriesBase: CountryData[] = [
     },
     processingTime: "2-4 weeks",
     visaFee: "$150-200 USD",
-    notes: "Moroccan citizens must obtain a visa before traveling. Argentina has an embassy in Rabat for direct visa applications. Argentina's massive Arab-descent population (approximately 3.5 million of Syrian and Lebanese origin) means Moroccan visitors will find cultural familiarity in Buenos Aires, including Arabic-influenced cuisine, mosques, and cultural centers. Flights from Casablanca connect through Madrid or Paris to Buenos Aires."
+    notes: "Moroccan citizens must obtain a visa before traveling. Argentina has an embassy in Rabat for direct visa applications. Argentina's massive Arab-descent population (approximately 3.5 million of Syrian and Lebanese origin) means Moroccan visitors will find cultural familiarity in Buenos Aires, including Arabic-influenced cuisine, mosques, and cultural centers. Flights from Casablanca connect through Madrid or Paris to Buenos Aires.",
+    image: "/images/countries/morocco-landmark.jpg",
+    imageAlt: "Marrakech Jemaa el-Fnaa square and Koutoubia Mosque - representing Moroccan travelers to Argentina"
   },
   {
     slug: "saudi-arabia",
@@ -1734,7 +1876,9 @@ export const countriesBase: CountryData[] = [
     },
     processingTime: "2-4 weeks",
     visaFee: "$150-200 USD",
-    notes: "Saudi citizens must obtain a visa before traveling. Argentina has an embassy in Riyadh for direct visa processing. Argentina's approximately 3.5 million residents of Arab descent (primarily Syrian and Lebanese origin) have created a welcoming environment for Arab visitors, with mosques, halal restaurants, and Arabic cultural institutions in Buenos Aires. Flights from Riyadh connect through Sao Paulo to Buenos Aires."
+    notes: "Saudi citizens must obtain a visa before traveling. Argentina has an embassy in Riyadh for direct visa processing. Argentina's approximately 3.5 million residents of Arab descent (primarily Syrian and Lebanese origin) have created a welcoming environment for Arab visitors, with mosques, halal restaurants, and Arabic cultural institutions in Buenos Aires. Flights from Riyadh connect through Sao Paulo to Buenos Aires.",
+    image: "/images/countries/saudi-arabia-landmark.jpg",
+    imageAlt: "Riyadh Kingdom Centre Tower - representing Saudi travelers to Argentina"
   },
   {
     slug: "iran",
@@ -1756,7 +1900,9 @@ export const countriesBase: CountryData[] = [
     },
     processingTime: "4-6 weeks",
     visaFee: "$150-200 USD",
-    notes: "Iranian citizens must obtain a visa before traveling. There is no Argentine embassy in Iran, so applicants must apply through the nearest diplomatic mission, such as in Ankara (Turkey) or Abu Dhabi (UAE). Additional security screening may apply, and processing times tend to be longer than for other nationalities. Applicants should prepare comprehensive documentation and begin the process well in advance."
+    notes: "Iranian citizens must obtain a visa before traveling. There is no Argentine embassy in Iran, so applicants must apply through the nearest diplomatic mission, such as in Ankara (Turkey) or Abu Dhabi (UAE). Additional security screening may apply, and processing times tend to be longer than for other nationalities. Applicants should prepare comprehensive documentation and begin the process well in advance.",
+    image: "/images/countries/iran-landmark.jpg",
+    imageAlt: "Isfahan Naqsh-e Jahan Square - representing Iranian travelers to Argentina"
   },
   {
     slug: "algeria",
@@ -1778,7 +1924,9 @@ export const countriesBase: CountryData[] = [
     },
     processingTime: "3-4 weeks",
     visaFee: "$150-200 USD",
-    notes: "Algerian citizens must obtain a visa before traveling. There is no Argentine embassy in Algeria; the nearest diplomatic missions are in Madrid, Spain or Paris, France, which may be more accessible given French-language ties. Argentina's large Arab-descent population provides cultural familiarity for Algerian visitors. Flights from Algiers connect through Madrid or Paris to Buenos Aires."
+    notes: "Algerian citizens must obtain a visa before traveling. There is no Argentine embassy in Algeria; the nearest diplomatic missions are in Madrid, Spain or Paris, France, which may be more accessible given French-language ties. Argentina's large Arab-descent population provides cultural familiarity for Algerian visitors. Flights from Algiers connect through Madrid or Paris to Buenos Aires.",
+    image: "/images/countries/algeria-landmark.jpg",
+    imageAlt: "Algiers Casbah and Mediterranean waterfront - representing Algerian travelers to Argentina"
   },
   {
     slug: "cuba",
@@ -1801,7 +1949,9 @@ export const countriesBase: CountryData[] = [
     },
     processingTime: "2-4 weeks",
     visaFee: "$150-200 USD",
-    notes: "Cuban citizens must obtain a visa before traveling. Argentina has an embassy in Havana for direct visa applications. Both countries share a Spanish-speaking heritage and historical political connections. A growing Cuban community in Buenos Aires has formed since the 2000s, and Cuban music and culture have a strong presence in the Argentine capital. Flights from Havana connect through Panama City or Mexico City to Buenos Aires."
+    notes: "Cuban citizens must obtain a visa before traveling. Argentina has an embassy in Havana for direct visa applications. Both countries share a Spanish-speaking heritage and historical political connections. A growing Cuban community in Buenos Aires has formed since the 2000s, and Cuban music and culture have a strong presence in the Argentine capital. Flights from Havana connect through Panama City or Mexico City to Buenos Aires.",
+    image: "/images/countries/cuba-landmark.jpg",
+    imageAlt: "Havana Capitolio and Malecón waterfront - representing Cuban travelers to Argentina"
   },
   {
     slug: "dominican-republic",
@@ -1824,7 +1974,9 @@ export const countriesBase: CountryData[] = [
     },
     processingTime: "2-4 weeks",
     visaFee: "$150-200 USD",
-    notes: "Dominican citizens must obtain a visa before traveling. Argentina has an embassy in Santo Domingo for direct visa processing. Both countries share Spanish language and Caribbean-Latin cultural connections. Dominican baseball culture has some parallels with Argentina's passion for sports, and merengue music has found audiences in Buenos Aires. Flights from Santo Domingo connect through Miami, Panama City, or Bogota."
+    notes: "Dominican citizens must obtain a visa before traveling. Argentina has an embassy in Santo Domingo for direct visa processing. Both countries share Spanish language and Caribbean-Latin cultural connections. Dominican baseball culture has some parallels with Argentina's passion for sports, and merengue music has found audiences in Buenos Aires. Flights from Santo Domingo connect through Miami, Panama City, or Bogota.",
+    image: "/images/countries/dominican-republic-landmark.jpg",
+    imageAlt: "Santo Domingo Colonial Zone and Cathedral - representing Dominican travelers to Argentina"
   },
   {
     slug: "haiti",
@@ -1846,7 +1998,9 @@ export const countriesBase: CountryData[] = [
     },
     processingTime: "3-4 weeks",
     visaFee: "$150-200 USD",
-    notes: "Haitian citizens must obtain a visa before traveling. There is no Argentine embassy in Haiti; the nearest diplomatic mission is in Santo Domingo, Dominican Republic. This requires Haitian applicants to either travel to the Dominican Republic or use courier services. The application process requires comprehensive documentation including financial proof, travel itinerary, and accommodation details. Flights connect through Santo Domingo, Miami, or Panama City."
+    notes: "Haitian citizens must obtain a visa before traveling. There is no Argentine embassy in Haiti; the nearest diplomatic mission is in Santo Domingo, Dominican Republic. This requires Haitian applicants to either travel to the Dominican Republic or use courier services. The application process requires comprehensive documentation including financial proof, travel itinerary, and accommodation details. Flights connect through Santo Domingo, Miami, or Panama City.",
+    image: "/images/countries/haiti-landmark.jpg",
+    imageAlt: "Citadelle Laferrière fortress - representing Haitian travelers to Argentina"
   },
   {
     slug: "costa-rica",
@@ -1863,7 +2017,9 @@ export const countriesBase: CountryData[] = [
       "Can I extend my 90-day stay?",
       "Do I need proof of return travel?"
     ],
-    notes: "Costa Rican citizens enjoy visa-free entry for 90 days. Both countries share Spanish language and strong environmental conservation values. Flights from San Jose connect through Panama City, Bogota, or Lima to Buenos Aires. Costa Rica and Argentina maintain cordial diplomatic relations, and Buenos Aires offers Costa Rican travelers a rich cultural experience with its European-influenced architecture and world-class gastronomy."
+    notes: "Costa Rican citizens enjoy visa-free entry for 90 days. Both countries share Spanish language and strong environmental conservation values. Flights from San Jose connect through Panama City, Bogota, or Lima to Buenos Aires. Costa Rica and Argentina maintain cordial diplomatic relations, and Buenos Aires offers Costa Rican travelers a rich cultural experience with its European-influenced architecture and world-class gastronomy.",
+    image: "/images/countries/costa-rica-landmark.jpg",
+    imageAlt: "San José National Theatre - representing Costa Rican travelers to Argentina"
   }
 ];
 
