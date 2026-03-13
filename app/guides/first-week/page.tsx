@@ -238,7 +238,7 @@ const days = [
         detail:
           "Language exchanges (intercambios) happen almost every night in BA. Mundolingo (multiple locations, free), Mate Club (Palermo, structured), and BA Language Exchange (various venues) are the biggest. Even if your Spanish is zero, go -- everyone speaks English and wants to practice.",
         proTip:
-          "Meetup.com has dozens of active Buenos Aires groups: hiking, photography, book clubs, tech meetups, and more. The BA Tech community is particularly vibrant and welcoming to newcomers.",
+          "Meetup.com has dozens of active Buenos Aires groups: hiking, photography, book clubs, tech meetups, and more. The BA Tech community is particularly active and welcoming to newcomers.",
       },
     ],
   },

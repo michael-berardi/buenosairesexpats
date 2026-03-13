@@ -198,7 +198,7 @@ export default function StudentVisaPage() {
             </h1>
             <p className="text-xl text-muted-foreground mb-6">
               World-class education at a fraction of the cost. 
-              Free tuition at public universities, work permissions, and a vibrant student life in Buenos Aires.
+              Free tuition at public universities, work permissions, and an active student life in Buenos Aires.
             </p>
             <div className="flex flex-wrap justify-center gap-4 text-sm mb-6">
               <div className="flex items-center gap-2">

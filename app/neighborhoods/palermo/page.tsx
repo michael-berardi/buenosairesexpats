@@ -113,7 +113,7 @@ export default function PalermoPage() {
               Palermo
             </h1>
             <p className="text-xl text-white/90 mb-6 drop-shadow-md">
-              The heart of expat life in Buenos Aires. Trendy cafes, vibrant nightlife, 
+              The heart of expat life in Buenos Aires. Trendy cafes, lively nightlife,
               beautiful parks, and the largest English-speaking community.
             </p>
             <div className="flex flex-wrap justify-center gap-4 text-sm text-white/90">

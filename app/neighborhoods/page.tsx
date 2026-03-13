@@ -45,7 +45,7 @@ const neighborhoods = [
     expatScore: 10,
     bestFor: ["Young professionals", "Digital nomads", "Nightlife lovers"],
     description: "The most popular neighborhood for expats. Divided into trendy Palermo Soho with boutique shops and cafes, Palermo Hollywood with nightlife, and peaceful Palermo Botánico near the parks.",
-    highlights: ["Best restaurants and cafes", "Vibrant nightlife", "Large parks", "Expat community"],
+    highlights: ["Best restaurants and cafes", "Lively nightlife", "Large parks", "Expat community"],
     considerations: ["Higher rent prices", "Can be noisy", "Touristy in some areas"],
     editorial: "Palermo is where 80% of expats end up, and honestly? There's a good reason for that. The restaurant scene is world-class, the parks are beautiful, and you'll bump into other expats constantly. The downside: you'll pay a premium for what's essentially the 'safe choice.' If you're here for 3 months, Palermo is perfect. If you're staying longer, look at Villa Crespo.",
   },

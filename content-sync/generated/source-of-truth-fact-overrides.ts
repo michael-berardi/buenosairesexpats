@@ -1516,7 +1516,7 @@ export const expatProfilesFactOverrides = {
     ],
     "patch": {
       "seoDescription": "Andrew Venture - New Zealand expat and digital nomad living in Buenos Aires",
-      "bio": "Andrew moved to Buenos Aires from Southeast Asia, seeking a US-friendly timezone and a burgeoning digital nomad scene. As a Kiwi expat, he brings a practical perspective on navigating the blue dollar, finding great steaks and malbec, and discovering hidden gems like Eco Parque. His advice for newcomers: research Western Union options, don't try to import anything, and make time to explore Argentina beyond the capital.",
+      "bio": "Andrew moved to Buenos Aires from Southeast Asia, seeking a US-friendly timezone and a growing digital nomad scene. As a Kiwi expat, he brings a practical perspective on navigating the blue dollar, finding great steaks and malbec, and discovering hidden gems like Eco Parque. His advice for newcomers: research Western Union options, don't try to import anything, and make time to explore Argentina beyond the capital.",
       "status": "active",
       "truthSync": {
         "canonicalKey": "expat-profile:andrew-venture",

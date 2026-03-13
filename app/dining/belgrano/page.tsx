@@ -49,7 +49,7 @@ const restaurants = [
     phone: "+54 11 4786-3523",
     website: "https://www.instagram.com/cantinachinatown",
     price: "$$",
-    description: "An authentic standout in Buenos Aires' vibrant Barrio Chino. This bustling neighborhood institution serves traditional Chinese dishes that go far beyond the usual tourist fare. The hand-pulled noodles, dumplings, and regional preparations draw crowds from across the city.",
+    description: "An authentic standout in Buenos Aires' Barrio Chino. This popular neighborhood institution serves traditional Chinese dishes that go far beyond the usual tourist fare. The hand-pulled noodles, dumplings, and regional preparations draw crowds from across the city.",
     mustTry: ["Hand-pulled noodles", "Dumplings", "Peking duck", "Sichuan specialties"],
     reservations: "Walk-in preferred",
     dressCode: "Casual",

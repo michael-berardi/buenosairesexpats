@@ -299,7 +299,7 @@ const neighborhoodDetails: Record<string, Omit<NeighborhoodResult, "score">> = {
       "Largest English-speaking expat community",
     ],
     whyYou:
-      "Based on your answers, you value walkability, social connection, and a vibrant food and nightlife scene. Palermo delivers all three in spades. You'll find your tribe at coworking spaces like AreaTres or Selina, and you'll never run out of new restaurants to try.",
+      "Based on your answers, you value walkability, social connection, and a lively food and nightlife scene. Palermo delivers all three in spades. You'll find your tribe at coworking spaces like AreaTres or Selina, and you'll never run out of new restaurants to try.",
   },
   recoleta: {
     name: "Recoleta",
