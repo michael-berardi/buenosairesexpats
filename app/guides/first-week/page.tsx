@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { StructuredData } from "@/components/structured-data";
 import { LuceroLegalCTA } from "@/components/lucero-legal-cta";
@@ -26,12 +25,10 @@ import {
   Globe,
   Shield,
   Sun,
-  Moon,
   ArrowRight,
   Clock,
   Star,
   CheckCircle,
-  AlertTriangle,
   Lightbulb,
   Wallet,
   Wifi,
@@ -468,6 +465,55 @@ export default function FirstWeekPage() {
         </div>
       </section>
 
+      <section className="py-16 bg-stone-50 border-y border-stone-200">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto">
+            <h2 className="text-3xl font-bold mb-6 text-stone-900">
+              How to Use This Week Without Burning Energy
+            </h2>
+            <div className="space-y-5 text-lg leading-relaxed text-stone-600">
+              <p>
+                The first week in Buenos Aires feels easier when you stop trying to solve
+                everything at once. Most newcomers arrive with the right instinct but the wrong
+                sequence: they start apartment hunting before they understand the city, worry
+                about long-term banking before they can pay for lunch, or spend hours comparing
+                neighborhoods they have not walked. The goal of this guide is to give you a sane
+                order of operations so the city starts feeling usable before it starts feeling
+                overwhelming.
+              </p>
+              <p>
+                Think of the week in layers. The first layer is immediate survival: transport,
+                data, cash, and a meal. The second is daily function: learning your barrio,
+                figuring out how payments work, and finding the places you will actually reuse.
+                Only after that does it make sense to push into bigger decisions like housing,
+                health coverage, or visa planning. If you follow that progression, Buenos Aires
+                usually feels much more coherent by day five than it does on the airport ride in.
+              </p>
+            </div>
+            <div className="mt-10 grid gap-4 md:grid-cols-3">
+              <div className="rounded-xl border border-stone-200 bg-white p-5">
+                <h3 className="font-semibold text-stone-900 mb-2">Start with function</h3>
+                <p className="text-sm text-stone-600">
+                  Prioritize connectivity, payments, and transport before lifestyle upgrades.
+                </p>
+              </div>
+              <div className="rounded-xl border border-stone-200 bg-white p-5">
+                <h3 className="font-semibold text-stone-900 mb-2">Walk before deciding</h3>
+                <p className="text-sm text-stone-600">
+                  A neighborhood only makes sense after you have spent real time moving through it.
+                </p>
+              </div>
+              <div className="rounded-xl border border-stone-200 bg-white p-5">
+                <h3 className="font-semibold text-stone-900 mb-2">Delay irreversible choices</h3>
+                <p className="text-sm text-stone-600">
+                  Longer leases, visa strategy, and monthly commitments get easier once the first week is stable.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Quick Links / Day Navigator */}
       <section className="py-6 bg-white border-b sticky top-16 z-40 shadow-sm">
         <div className="container mx-auto px-4">
@@ -560,6 +606,34 @@ export default function FirstWeekPage() {
         </section>
       ))}
 
+      <section className="py-16 bg-stone-50 border-y border-stone-200">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto">
+            <h2 className="text-3xl font-bold mb-6 text-stone-900">
+              What Usually Goes Wrong in Week One
+            </h2>
+            <div className="space-y-5 text-lg leading-relaxed text-stone-600">
+              <p>
+                The most common mistake is treating Buenos Aires like a city that will explain
+                itself instantly. It will not. Payment habits, meal times, service rhythms, and
+                rental expectations become legible through repetition, not through one article or
+                one errand. People who expect instant fluency usually interpret that friction as a
+                sign that the city is disorganized, when in practice it often means they are still
+                trying to operate on the tempo of somewhere else.
+              </p>
+              <p>
+                The second mistake is making expensive choices from a tourist frame of mind.
+                Locking into the first neighborhood, overpaying for a temporary rental, or
+                assuming a border run will solve a long stay can all create avoidable stress. A
+                better first week is usually quieter: learn the city, pay attention to what feels
+                repeatable, and let the bigger commitments wait until your daily life has started
+                to make sense.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* FAQ Section */}
       <section className="py-16 bg-white">
         <div className="container mx-auto px-4">
@@ -567,6 +641,13 @@ export default function FirstWeekPage() {
             <h2 className="text-3xl font-bold mb-8 text-center text-stone-900">
               Frequently Asked Questions
             </h2>
+            <p className="text-lg leading-relaxed text-stone-600 mb-8 text-center">
+              By the end of the first week, most remaining questions are no longer about where to
+              buy a SIM card or how to ride the Subte. They shift toward confidence: whether the
+              city feels safe enough, how much cash buffer you actually need, and whether your
+              original neighborhood choice still makes sense now that you have a few days of real
+              experience behind it. These are the questions that come up most often at that stage.
+            </p>
             <div className="space-y-4">
               {faqs.map((faq, index) => (
                 <details
@@ -594,6 +675,14 @@ export default function FirstWeekPage() {
             <h2 className="text-2xl font-bold mb-6 text-center">
               Continue Your BA Journey
             </h2>
+            <p className="text-lg leading-relaxed text-stone-600 text-center max-w-3xl mx-auto mb-8">
+              By this point, you should know which parts of Buenos Aires already feel intuitive
+              and which parts still need a deeper read. Some people need to settle the housing
+              question next. Others need to understand visa timelines, healthcare, or the real
+              cost of staying longer than a trial month. These next guides are the ones that
+              usually help you move from a decent first week into a version of city life that is
+              actually sustainable.
+            </p>
             <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
               <Link
                 href="/neighborhoods/quiz"

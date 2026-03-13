@@ -27,7 +27,7 @@ export default function AboutPage() {
       <section className="py-16 md:py-20">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto">
-            <h2 className="font-serif text-3xl md:text-4xl font-bold mb-8">What You&apos;ll Find Here</h2>
+            <h2 className="font-serif text-3xl md:text-4xl font-bold mb-8">Editorial Scope</h2>
             <div className="space-y-5 text-lg leading-relaxed text-muted-foreground">
               <p>
                 Buenos Aires Expats is a guide for people considering a move to Buenos Aires. We
@@ -54,7 +54,7 @@ export default function AboutPage() {
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto">
             <h2 className="font-serif text-3xl md:text-4xl font-bold mb-8">
-              How We Make Money
+              Funding and Disclosure
             </h2>
             <div className="space-y-5 text-lg leading-relaxed text-muted-foreground">
               <p>
@@ -80,12 +80,56 @@ export default function AboutPage() {
         </div>
       </section>
 
+      <section className="py-16 md:py-20">
+        <div className="container mx-auto px-4">
+          <div className="max-w-3xl mx-auto">
+            <h2 className="font-serif text-3xl md:text-4xl font-bold mb-8">
+              Using the Guide Well
+            </h2>
+            <div className="space-y-5 text-lg leading-relaxed text-muted-foreground">
+              <p>
+                The site works best when you use it to narrow a decision, not to replace every
+                professional conversation you may eventually need. If you are deciding between
+                Palermo and Belgrano, estimating a realistic first-month budget, or learning how
+                daily systems like SUBE and MercadoPago fit together, a detailed guide is usually
+                enough to get you moving in the right direction.
+              </p>
+              <p>
+                The handoff point is when the move starts carrying real consequences. Signed
+                leases, school calendars, visa deadlines, foreign income questions, and anything
+                involving residency strategy usually need more than another article. That is why
+                we try to be explicit about where editorial guidance ends and where local legal or
+                tax advice should begin.
+              </p>
+            </div>
+
+            <div className="mt-10 rounded-2xl border bg-card p-6 md:p-8">
+              <h3 className="text-xl font-semibold mb-4">Signals that you&apos;re beyond DIY research</h3>
+              <ul className="space-y-3 text-base text-muted-foreground">
+                <li className="flex items-start gap-3">
+                  <span className="text-primary font-bold mt-0.5">&mdash;</span>
+                  <span>You have a real move date and need to sequence housing, paperwork, and travel correctly.</span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <span className="text-primary font-bold mt-0.5">&mdash;</span>
+                  <span>Your visa or residency path depends on income structure, family status, or multiple passports.</span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <span className="text-primary font-bold mt-0.5">&mdash;</span>
+                  <span>You&apos;re making a commitment that becomes expensive if you misunderstand the rules.</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* What We Don't Do */}
       <section className="py-16 md:py-20">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto">
             <h2 className="font-serif text-3xl md:text-4xl font-bold mb-8">
-              What We Don&apos;t Do
+              Editorial Boundaries
             </h2>
             <ul className="space-y-4 text-lg text-muted-foreground">
               <li className="flex items-start gap-3">
@@ -121,7 +165,7 @@ export default function AboutPage() {
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto text-center">
             <h2 className="font-serif text-3xl md:text-4xl font-bold mb-6">
-              Get in Touch
+              Contact the Team
             </h2>
             <p className="text-lg text-muted-foreground mb-8">
               Have questions, suggestions, or feedback? We&apos;d love to hear from you.
