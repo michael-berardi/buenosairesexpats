@@ -1,19 +1,74 @@
 {
-  "generatedAt": "2026-03-08T16:49:54.503Z",
-  "totalFindings": 0,
+  "generatedAt": "2026-03-13T12:39:57.546Z",
+  "totalFindings": 3,
   "findingsBySeverity": {
     "critical": 0,
-    "high": 0,
+    "high": 3,
     "medium": 0,
     "low": 0
   },
   "findingsByCategory": {
-    "official-mismatch": 0,
+    "official-mismatch": 3,
     "unverified-claim": 0,
     "review-date-missing": 0,
     "review-date-stale": 0,
     "coverage-gap": 0
   },
-  "findings": [],
+  "findings": [
+    {
+      "id": "official-mismatch:dubaitoargentina:resource-article:visa-types-student-visa",
+      "severity": "high",
+      "category": "official-mismatch",
+      "title": "Public-university tuition claim conflicts with 2025 reform baseline",
+      "detail": "The current public reform baseline says state universities may charge non-permanent residents, so broad free-tuition claims for all foreigners or all DNI holders need review.",
+      "siteId": "dubaitoargentina",
+      "recordId": "dubaitoargentina:resource-article:visa-types-student-visa",
+      "canonicalKey": "resource-article:visa-types-student-visa",
+      "sourcePath": "/Users/libertydesignstudio/dev/dubaitoargentina.com/lib/site-data.ts",
+      "officialSourceUrls": [
+        "https://www.argentina.gob.ar/noticias/el-gobierno-nacional-puso-en-marcha-una-profunda-reforma-del-regimen-migratorio",
+        "https://www.argentina.gob.ar/normativa/nacional/decreto-366-2025-413924/texto",
+        "https://www.argentina.gob.ar/migraciones/preguntas-frecuentes-residencias",
+        "https://www.argentina.gob.ar/migraciones/comision-nacional-para-los-refugiados/preguntas-frecuentes-conare"
+      ],
+      "recommendedAction": "Reframe higher-education language around the current institution-by-status baseline instead of assuming universal free tuition."
+    },
+    {
+      "id": "official-mismatch:uaeargentina:resource-article:city-fit-buenos-aires-students",
+      "severity": "high",
+      "category": "official-mismatch",
+      "title": "Public-university tuition claim conflicts with 2025 reform baseline",
+      "detail": "The current public reform baseline says state universities may charge non-permanent residents, so broad free-tuition claims for all foreigners or all DNI holders need review.",
+      "siteId": "uaeargentina",
+      "recordId": "uaeargentina:resource-article:city-fit-buenos-aires-students",
+      "canonicalKey": "resource-article:city-fit-buenos-aires-students",
+      "sourcePath": "/Users/libertydesignstudio/dev/uaeargentina.com/lib/site-data.ts",
+      "officialSourceUrls": [
+        "https://www.argentina.gob.ar/noticias/el-gobierno-nacional-puso-en-marcha-una-profunda-reforma-del-regimen-migratorio",
+        "https://www.argentina.gob.ar/normativa/nacional/decreto-366-2025-413924/texto",
+        "https://www.argentina.gob.ar/migraciones/preguntas-frecuentes-residencias",
+        "https://www.argentina.gob.ar/migraciones/comision-nacional-para-los-refugiados/preguntas-frecuentes-conare"
+      ],
+      "recommendedAction": "Reframe higher-education language around the current institution-by-status baseline instead of assuming universal free tuition."
+    },
+    {
+      "id": "official-mismatch:uaeargentina:resource-article:visa-types-student-visa",
+      "severity": "high",
+      "category": "official-mismatch",
+      "title": "Public-university tuition claim conflicts with 2025 reform baseline",
+      "detail": "The current public reform baseline says state universities may charge non-permanent residents, so broad free-tuition claims for all foreigners or all DNI holders need review.",
+      "siteId": "uaeargentina",
+      "recordId": "uaeargentina:resource-article:visa-types-student-visa",
+      "canonicalKey": "resource-article:visa-types-student-visa",
+      "sourcePath": "/Users/libertydesignstudio/dev/uaeargentina.com/lib/site-data.ts",
+      "officialSourceUrls": [
+        "https://www.argentina.gob.ar/noticias/el-gobierno-nacional-puso-en-marcha-una-profunda-reforma-del-regimen-migratorio",
+        "https://www.argentina.gob.ar/normativa/nacional/decreto-366-2025-413924/texto",
+        "https://www.argentina.gob.ar/migraciones/preguntas-frecuentes-residencias",
+        "https://www.argentina.gob.ar/migraciones/comision-nacional-para-los-refugiados/preguntas-frecuentes-conare"
+      ],
+      "recommendedAction": "Reframe higher-education language around the current institution-by-status baseline instead of assuming universal free tuition."
+    }
+  ],
   "officialFactsReviewedAt": "2026-03-08"
 }
