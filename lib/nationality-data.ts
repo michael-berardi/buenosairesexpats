@@ -1165,7 +1165,7 @@ export const countriesBase: CountryData[] = [
       "What is the best flight route from Port of Spain to Buenos Aires?",
       "Can I extend my 90-day stay?"
     ],
-    notes: "Trinidadian and Tobagonian citizens can visit visa-free for 90 days. Flights from Port of Spain connect through Miami, Panama City, or Bogota to Buenos Aires. Both Trinidad and Argentina share a vibrant carnival culture, with Buenos Aires hosting its own murga and carnival celebrations."
+    notes: "Trinidadian and Tobagonian citizens can visit visa-free for 90 days. Flights from Port of Spain connect through Miami, Panama City, or Bogota to Buenos Aires. Both Trinidad and Argentina share a lively carnival culture, with Buenos Aires hosting its own murga and carnival celebrations."
   },
   {
     slug: "jamaica",
@@ -1510,7 +1510,7 @@ export const countriesBase: CountryData[] = [
     },
     processingTime: "2-4 weeks",
     visaFee: "$150-200 USD",
-    notes: "Chinese citizens must obtain a visa before traveling. Argentina has an embassy in Beijing and consulates in Shanghai and Guangzhou, providing multiple application points. Buenos Aires has a vibrant Chinatown (Barrio Chino) in Belgrano, with Chinese supermarkets, restaurants, and cultural celebrations including Chinese New Year. The Chinese-Argentine community has grown significantly since the 1990s and is one of the largest in South America."
+    notes: "Chinese citizens must obtain a visa before traveling. Argentina has an embassy in Beijing and consulates in Shanghai and Guangzhou, providing multiple application points. Buenos Aires has an established Chinatown (Barrio Chino) in Belgrano, with Chinese supermarkets, restaurants, and cultural celebrations including Chinese New Year. The Chinese-Argentine community has grown significantly since the 1990s and is one of the largest in South America."
   },
   {
     slug: "pakistan",
@@ -1863,7 +1863,7 @@ export const countriesBase: CountryData[] = [
       "Can I extend my 90-day stay?",
       "Do I need proof of return travel?"
     ],
-    notes: "Costa Rican citizens enjoy visa-free entry for 90 days. Both countries share Spanish language and strong environmental conservation values. Flights from San Jose connect through Panama City, Bogota, or Lima to Buenos Aires. Costa Rica and Argentina maintain cordial diplomatic relations, and Buenos Aires offers Costa Rican travelers a vibrant cultural experience with its European-influenced architecture and world-class gastronomy."
+    notes: "Costa Rican citizens enjoy visa-free entry for 90 days. Both countries share Spanish language and strong environmental conservation values. Flights from San Jose connect through Panama City, Bogota, or Lima to Buenos Aires. Costa Rica and Argentina maintain cordial diplomatic relations, and Buenos Aires offers Costa Rican travelers a rich cultural experience with its European-influenced architecture and world-class gastronomy."
   }
 ];
 
