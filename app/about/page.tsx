@@ -127,9 +127,9 @@ export default function AboutPage() {
               Have questions, suggestions, or feedback? We&apos;d love to hear from you.
             </p>
             <Button asChild size="lg">
-              <Link href="mailto:hello@buenosairesexpats.com">
+              <Link href="/contact">
                 <Mail className="w-4 h-4 mr-2" />
-                Email Us
+                Contact Us
               </Link>
             </Button>
           </div>

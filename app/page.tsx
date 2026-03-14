@@ -851,12 +851,12 @@ export default function Home() {
               </Button>
             </div>
             <p className="text-primary-foreground/60 text-sm mt-4">
-              Questions? Reach us at{" "}
+              Questions?{" "}
               <a
-                href="mailto:hello@buenosairesexpats.com"
+                href="/contact"
                 className="underline underline-offset-2 hover:text-primary-foreground/80"
               >
-                hello@buenosairesexpats.com
+                Contact us
               </a>
             </p>
           </div>

@@ -23,8 +23,8 @@ export function Footer() {
               {t("footer.description") as string}
             </p>
             <p className="text-sm text-muted-foreground mt-2">
-              <a href="mailto:hello@buenosairesexpats.com" className="hover:text-foreground transition-colors">
-                hello@buenosairesexpats.com
+              <a href="/contact" className="hover:text-foreground transition-colors">
+                Contact Us
               </a>
             </p>
           </div>
